@@ -1,0 +1,97 @@
+name: Flight Price Tracker (DFW ⇄ ORD)
+
+on:
+  schedule:
+    # 13:00 UTC daily ≈ 8:00 AM America/Chicago (CDT) / 7:00 AM (CST)
+    - cron: "0 13 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: flight-price-tracker
+  cancel-in-progress: false
+
+jobs:
+  check-price:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check flight prices
+        run: python scripts/check_flight_price.py
+
+      - name: Build GitHub Pages site
+        run: python scripts/build_site.py
+
+      - name: Commit and push updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/history.json data/latest_summary.json docs/index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Update flight price data ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+
+      - name: Post/update GitHub issue notification
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const summary = JSON.parse(fs.readFileSync('data/latest_summary.json', 'utf8'));
+            const title = "✈️ DFW ⇄ ORD Weekend Flight Price Tracker";
+            const { owner, repo } = context.repo;
+
+            const openIssues = await github.rest.issues.listForRepo({
+              owner, repo, state: 'open', labels: 'flight-price-tracker', per_page: 100,
+            });
+            let issue = openIssues.data.find((i) => i.title === title);
+
+            const pagesUrl = `https://${owner}.github.io/${repo}/`;
+
+            const statusLine = summary.status === 'ok'
+              ? `**Round-trip price:** $${summary.price.toLocaleString()} ${summary.currency} — ${(summary.airlines || []).join(', ') || 'unknown airline'} (${summary.segments} flight segment(s))`
+              : `**Check failed:** ${summary.error}`;
+
+            const body = [
+              `**Weekend:** ${summary.weekend_start} (Fri) → ${summary.weekend_end} (Sun)`,
+              `**Route:** ${summary.from_airport} ⇄ ${summary.to_airport}`,
+              statusLine,
+              summary.trend ? `**Trend vs. last successful check:** ${summary.trend}` : '',
+              '',
+              `📊 Full price history: ${pagesUrl}`,
+              '',
+              `_Last checked: ${summary.checked_at}_`,
+            ].filter(Boolean).join('\n');
+
+            if (!issue) {
+              issue = (await github.rest.issues.create({
+                owner, repo, title, body, labels: ['flight-price-tracker'],
+              })).data;
+            } else {
+              await github.rest.issues.update({
+                owner, repo, issue_number: issue.number, body,
+              });
+            }
+
+            const commentBody = summary.status === 'ok'
+              ? `Update: $${summary.price.toLocaleString()} ${summary.currency}${summary.trend ? ' (' + summary.trend + ')' : ''} — checked ${summary.checked_at}`
+              : `Update: check failed (${summary.error}) — checked ${summary.checked_at}`;
+
+            await github.rest.issues.createComment({
+              owner, repo, issue_number: issue.number, body: commentBody,
+            });
