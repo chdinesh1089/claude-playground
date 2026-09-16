@@ -18,23 +18,23 @@
 <body>
 <h1>&#9992;&#65039; DFW &harr; ORD Weekend Flight Prices</h1>
 <p class="meta">Round-trip economy, Friday &rarr; Sunday, 1 adult. Checked daily via GitHub Actions against Google Flights.</p>
-<h2>Current tracked weekend: —</h2>
+<h2>Current tracked weekend: 2026-09-18</h2>
 <canvas id="priceChart"></canvas>
 <h2>History</h2>
 <table>
 <thead><tr><th>Checked (UTC)</th><th>Weekend</th><th>Price</th><th>Airline(s) / notes</th></tr></thead>
 <tbody>
-<tr><td colspan="4">No data yet &mdash; check back after the next run.</td></tr>
+<tr><td>2026-09-16T17:23:53Z</td><td>2026-09-18 &rarr; 2026-09-20</td><td>$500</td><td>American</td></tr>
 </tbody>
 </table>
 <script>
 new Chart(document.getElementById('priceChart'), {
   type: 'line',
   data: {
-    labels: [],
+    labels: ["2026-09-16T17:23:53Z"],
     datasets: [{
       label: 'Round-trip price (USD)',
-      data: [],
+      data: [500],
       borderColor: '#2563eb',
       backgroundColor: 'rgba(37,99,235,0.1)',
       tension: 0.2,
