@@ -24,17 +24,17 @@
 <table>
 <thead><tr><th>Checked (UTC)</th><th>Weekend</th><th>Price</th><th>Airline(s) / notes</th></tr></thead>
 <tbody>
-<tr><td>2026-09-17T17:23:06Z</td><td>2026-09-18 &rarr; 2026-09-20</td><td>$592</td><td>American</td></tr><tr><td>2026-09-16T17:23:53Z</td><td>2026-09-18 &rarr; 2026-09-20</td><td>$500</td><td>American</td></tr>
+<tr><td>2026-09-18T16:50:55Z</td><td>2026-09-18 &rarr; 2026-09-20</td><td>$386</td><td>Frontier</td></tr><tr><td>2026-09-17T17:23:06Z</td><td>2026-09-18 &rarr; 2026-09-20</td><td>$592</td><td>American</td></tr><tr><td>2026-09-16T17:23:53Z</td><td>2026-09-18 &rarr; 2026-09-20</td><td>$500</td><td>American</td></tr>
 </tbody>
 </table>
 <script>
 new Chart(document.getElementById('priceChart'), {
   type: 'line',
   data: {
-    labels: ["2026-09-16T17:23:53Z", "2026-09-17T17:23:06Z"],
+    labels: ["2026-09-16T17:23:53Z", "2026-09-17T17:23:06Z", "2026-09-18T16:50:55Z"],
     datasets: [{
       label: 'Round-trip price (USD)',
-      data: [500, 592],
+      data: [500, 592, 386],
       borderColor: '#2563eb',
       backgroundColor: 'rgba(37,99,235,0.1)',
       tension: 0.2,
