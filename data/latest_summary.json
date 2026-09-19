@@ -1,16 +1,11 @@
 {
-  "checked_at": "2026-09-18T16:50:55Z",
+  "checked_at": "2026-09-19T16:10:10Z",
   "weekend_start": "2026-09-18",
   "weekend_end": "2026-09-20",
   "from_airport": "DFW",
   "to_airport": "ORD",
   "currency": "USD",
-  "status": "ok",
-  "price": 386,
-  "airlines": [
-    "Frontier"
-  ],
-  "segments": 2,
-  "fare_type": "F9",
-  "trend": "down $206 from $592"
+  "status": "error",
+  "error": "FlightsNotFound: no flights found; received error",
+  "trend": null
 }
