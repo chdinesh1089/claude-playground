@@ -53,5 +53,15 @@
     "currency": "USD",
     "status": "error",
     "error": "FlightsNotFound: no flights found; received error"
+  },
+  {
+    "checked_at": "2026-09-20T16:38:38Z",
+    "weekend_start": "2026-09-18",
+    "weekend_end": "2026-09-20",
+    "from_airport": "DFW",
+    "to_airport": "ORD",
+    "currency": "USD",
+    "status": "error",
+    "error": "FlightsNotFound: no flights found; received error"
   }
 ]
