@@ -63,5 +63,20 @@
     "currency": "USD",
     "status": "error",
     "error": "FlightsNotFound: no flights found; received error"
+  },
+  {
+    "checked_at": "2026-09-21T18:24:06Z",
+    "weekend_start": "2026-09-25",
+    "weekend_end": "2026-09-27",
+    "from_airport": "DFW",
+    "to_airport": "ORD",
+    "currency": "USD",
+    "status": "ok",
+    "price": 458,
+    "airlines": [
+      "Contour Airlines"
+    ],
+    "segments": 2,
+    "fare_type": "LF"
   }
 ]
