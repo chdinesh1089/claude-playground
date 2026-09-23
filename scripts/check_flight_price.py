@@ -62,12 +62,13 @@ def fetch_price(friday: date, sunday: date) -> dict:
             airline_names = {a.code: a.name for a in result.metadata.airlines}
             best = min(result, key=lambda f: f.price)
 
+            # For round-trip searches Google returns outbound legs only; the
+            # price is the cheapest round trip starting with that outbound.
             return {
                 "status": "ok",
                 "price": best.price,
                 "airlines": [airline_names.get(code, code) for code in best.airlines],
-                "segments": len(best.flights),
-                "fare_type": best.type,
+                "outbound_stops": len(best.flights) - 1,
             }
         except Exception as exc:  # noqa: BLE001 - want to record *any* failure
             last_error = f"{type(exc).__name__}: {exc}"

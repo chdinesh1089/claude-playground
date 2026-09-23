@@ -1,42 +1,4 @@
-#!/usr/bin/env python3
-"""Render the site root index.html listing every app under aiapps/<slug>/.
-
-To publish a new app, add a self-contained aiapps/<slug>/index.html. Its
-<title> and optional <meta name="description"> become the listing entry.
-"""
-from __future__ import annotations
-
-import re
-from html import escape, unescape
-from pathlib import Path
-
-AIAPPS_DIR = Path("aiapps")
-LANDING_PATH = Path("index.html")
-
-TITLE_RE = re.compile(r"<title>(.*?)</title>", re.IGNORECASE | re.DOTALL)
-DESC_RE = re.compile(
-    r'<meta\s+name=["\']description["\']\s+content=["\'](.*?)["\']', re.IGNORECASE | re.DOTALL
-)
-
-
-def discover_apps() -> list[dict]:
-    apps = []
-    for page in sorted(AIAPPS_DIR.glob("*/index.html")):
-        head = page.read_text(errors="replace")[:20000]
-        title = TITLE_RE.search(head)
-        desc = DESC_RE.search(head)
-        slug = page.parent.name
-        apps.append(
-            {
-                "slug": slug,
-                "title": unescape(title.group(1).strip()) if title else slug,
-                "description": unescape(desc.group(1).strip()) if desc else "",
-            }
-        )
-    return apps
-
-
-PAGE_TEMPLATE = """<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -78,25 +40,9 @@ a.app:hover, a.app:focus-visible { border-color: var(--accent); }
 <h1>aiapps</h1>
 <p class="sub">Small tools and pages built in this repo.</p>
 <ul>
-__ITEMS__
+<li><a class="app" href="aiapps/flight-price-tracker/"><div class="app-title">DFW ⇄ ORD Weekend Fares</div><div class="app-desc">Daily-checked round-trip economy price for the next Friday to Sunday weekend, DFW to ORD.</div><div class="app-path">/aiapps/flight-price-tracker/</div></a></li>
+<li><a class="app" href="aiapps/tmux-cheatsheet/"><div class="app-title">tmux cheatsheet</div><div class="app-path">/aiapps/tmux-cheatsheet/</div></a></li>
 </ul>
 </main>
 </body>
 </html>
-"""
-
-
-def main() -> None:
-    items = []
-    for app in discover_apps():
-        desc = f'<div class="app-desc">{escape(app["description"])}</div>' if app["description"] else ""
-        items.append(
-            f'<li><a class="app" href="aiapps/{escape(app["slug"])}/">'
-            f'<div class="app-title">{escape(app["title"])}</div>{desc}'
-            f'<div class="app-path">/aiapps/{escape(app["slug"])}/</div></a></li>'
-        )
-    LANDING_PATH.write_text(PAGE_TEMPLATE.replace("__ITEMS__", "\n".join(items)))
-
-
-if __name__ == "__main__":
-    main()

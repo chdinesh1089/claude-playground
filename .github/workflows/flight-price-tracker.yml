@@ -41,9 +41,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/history.json data/latest_summary.json docs/
+          git add data/history.json data/latest_summary.json aiapps/ index.html
           if ! git diff --cached --quiet; then
             git commit -m "Update flight price data ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+            git pull --rebase
             git push
           else
             echo "No changes to commit"
@@ -66,7 +67,7 @@ jobs:
             const pagesUrl = `https://${owner}.github.io/${repo}/aiapps/flight-price-tracker/`;
 
             const statusLine = summary.status === 'ok'
-              ? `**Round-trip price:** $${summary.price.toLocaleString()} ${summary.currency} — ${(summary.airlines || []).join(', ') || 'unknown airline'} (${summary.segments} flight segment(s))`
+              ? `**Round-trip price:** $${summary.price.toLocaleString()} ${summary.currency} — ${(summary.airlines || []).join(', ') || 'unknown airline'} (${summary.outbound_stops === 0 ? 'nonstop' : summary.outbound_stops + ' stop(s)'} outbound)`
               : `**Check failed:** ${summary.error}`;
 
             const body = [

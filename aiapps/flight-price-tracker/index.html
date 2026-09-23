@@ -1,140 +1,10 @@
-#!/usr/bin/env python3
-"""Render data/history.json into aiapps/flight-price-tracker/index.html."""
-from __future__ import annotations
-
-import json
-from datetime import date, datetime
-from html import escape
-from pathlib import Path
-from zoneinfo import ZoneInfo
-
-HISTORY_PATH = Path("data/history.json")
-OUTPUT_PATH = Path("aiapps/flight-price-tracker/index.html")
-
-FROM_AIRPORT = "DFW"
-TO_AIRPORT = "ORD"
-LOCAL_TZ = ZoneInfo("America/Chicago")
-
-
-def outbound_stops(entry: dict) -> int | None:
-    if "outbound_stops" in entry:
-        return entry["outbound_stops"]
-    # Older records stored the outbound leg count as "segments".
-    if "segments" in entry:
-        return entry["segments"] - 1
-    return None
-
-
-def stops_label(stops: int | None) -> str:
-    if stops is None:
-        return "—"
-    if stops == 0:
-        return "Nonstop"
-    return f"{stops} stop" + ("s" if stops > 1 else "")
-
-
-def local_time(iso_utc: str) -> datetime:
-    return datetime.fromisoformat(iso_utc.replace("Z", "+00:00")).astimezone(LOCAL_TZ)
-
-
-def fmt_checked(iso_utc: str) -> str:
-    return local_time(iso_utc).strftime("%b %-d, %-I:%M %p CT")
-
-
-def fmt_day(iso_date: str) -> str:
-    return date.fromisoformat(iso_date).strftime("%a %b %-d")
-
-
-def weekend_label(entry: dict) -> str:
-    return f"{fmt_day(entry['weekend_start'])} → {fmt_day(entry['weekend_end'])}"
-
-
-def build_hero(history: list[dict]) -> str:
-    if not history:
-        return '<p class="empty">No checks yet. The first one runs on the next scheduled job.</p>'
-
-    latest = history[-1]
-    ok_entries = [h for h in history if h.get("status") == "ok"]
-    last_ok = ok_entries[-1] if ok_entries else None
-
-    parts = []
-    if latest.get("status") != "ok":
-        parts.append(
-            '<p class="status status-critical"><span aria-hidden="true">&#9888;</span> '
-            f"Latest check failed ({escape(fmt_checked(latest['checked_at']))}): "
-            f"{escape(latest.get('error') or 'unknown error')}</p>"
-        )
-
-    if last_ok is None:
-        return "\n".join(parts)
-
-    delta_html = ""
-    if len(ok_entries) >= 2:
-        diff = last_ok["price"] - ok_entries[-2]["price"]
-        if diff > 0:
-            delta_html = f'<span class="delta delta-up">&#9650; ${diff:,.0f} since previous check</span>'
-        elif diff < 0:
-            delta_html = f'<span class="delta delta-down">&#9660; ${-diff:,.0f} since previous check</span>'
-        else:
-            delta_html = '<span class="delta">No change since previous check</span>'
-
-    airlines = ", ".join(last_ok.get("airlines") or []) or "Unknown airline"
-    parts.append(
-        f"""<div class="tile">
-  <div class="tile-label">Cheapest round trip &middot; {escape(weekend_label(last_ok))}</div>
-  <div class="tile-value">${last_ok['price']:,.0f}</div>
-  {delta_html}
-  <div class="tile-meta">{escape(airlines)} &middot; {escape(stops_label(outbound_stops(last_ok)))} outbound &middot; checked {escape(fmt_checked(last_ok['checked_at']))}</div>
-</div>"""
-    )
-    return "\n".join(parts)
-
-
-def build_rows(history: list[dict]) -> str:
-    rows = []
-    for h in reversed(history):
-        checked = escape(fmt_checked(h["checked_at"]))
-        weekend = escape(weekend_label(h))
-        if h.get("status") == "ok":
-            rows.append(
-                f'<tr><td>{checked}</td><td class="num">${h["price"]:,.0f}</td><td>{weekend}</td>'
-                f"<td>{escape(', '.join(h.get('airlines') or []) or '—')}</td>"
-                f"<td>{escape(stops_label(outbound_stops(h)))}</td></tr>"
-            )
-        else:
-            rows.append(
-                f'<tr><td>{checked}</td><td class="num">—</td><td>{weekend}</td>'
-                f'<td colspan="2" class="wrap"><span class="status-critical"><span aria-hidden="true">&#9888;</span> Failed:</span> '
-                f"{escape((h.get('error') or 'unknown error')[:160])}</td></tr>"
-            )
-    return "\n".join(rows)
-
-
-def chart_points(history: list[dict]) -> tuple[str | None, list[dict]]:
-    if not history:
-        return None, []
-    current = history[-1]
-    points = [
-        {
-            "t": h["checked_at"],
-            "label": fmt_checked(h["checked_at"]),
-            "price": h["price"],
-            "airline": ", ".join(h.get("airlines") or []),
-            "stops": stops_label(outbound_stops(h)),
-        }
-        for h in history
-        if h.get("weekend_start") == current["weekend_start"] and h.get("status") == "ok"
-    ]
-    return weekend_label(current), points
-
-
-PAGE_TEMPLATE = """<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Daily-checked round-trip economy price for the next Friday to Sunday weekend, __FROM__ to __TO__.">
-<title>__FROM__ ⇄ __TO__ Weekend Fares</title>
+<meta name="description" content="Daily-checked round-trip economy price for the next Friday to Sunday weekend, DFW to ORD.">
+<title>DFW ⇄ ORD Weekend Fares</title>
 <style>
 :root {
   color-scheme: light;
@@ -232,16 +102,21 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <body>
 <main>
 <p class="crumb"><a href="../../">&larr; aiapps</a></p>
-<h1>__FROM__ ⇄ __TO__ weekend fares</h1>
+<h1>DFW ⇄ ORD weekend fares</h1>
 <p class="sub">Cheapest round-trip economy fare for one adult, flying out Friday and back Sunday. Checked daily on Google Flights.</p>
 
 <section class="card">
-__HERO__
+<div class="tile">
+  <div class="tile-label">Cheapest round trip &middot; Fri Sep 25 → Sun Sep 27</div>
+  <div class="tile-value">$550</div>
+  <span class="delta delta-up">&#9650; $92 since previous check</span>
+  <div class="tile-meta">American &middot; Nonstop outbound &middot; checked Sep 23, 12:36 PM CT</div>
+</div>
 </section>
 
 <section class="card">
 <h2>Price trend for the upcoming weekend</h2>
-<p class="chart-sub">__CHART_SUB__</p>
+<p class="chart-sub">Fri Sep 25 → Sun Sep 27 · each dot is one daily check</p>
 <div class="chart" id="chart">
   <svg id="chart-svg" role="img" aria-label="Round-trip price by check date"></svg>
   <div class="tooltip" id="tooltip"></div>
@@ -254,16 +129,23 @@ __HERO__
 <table>
 <thead><tr><th>Checked</th><th class="num">Price</th><th>Weekend</th><th>Airline</th><th>Outbound</th></tr></thead>
 <tbody>
-__ROWS__
+<tr><td>Sep 23, 12:36 PM CT</td><td class="num">$550</td><td>Fri Sep 25 → Sun Sep 27</td><td>American</td><td>Nonstop</td></tr>
+<tr><td>Sep 22, 12:27 PM CT</td><td class="num">$458</td><td>Fri Sep 25 → Sun Sep 27</td><td>Contour Airlines</td><td>1 stop</td></tr>
+<tr><td>Sep 21, 1:24 PM CT</td><td class="num">$458</td><td>Fri Sep 25 → Sun Sep 27</td><td>Contour Airlines</td><td>1 stop</td></tr>
+<tr><td>Sep 20, 11:38 AM CT</td><td class="num">—</td><td>Fri Sep 18 → Sun Sep 20</td><td colspan="2" class="wrap"><span class="status-critical"><span aria-hidden="true">&#9888;</span> Failed:</span> FlightsNotFound: no flights found; received error</td></tr>
+<tr><td>Sep 19, 11:10 AM CT</td><td class="num">—</td><td>Fri Sep 18 → Sun Sep 20</td><td colspan="2" class="wrap"><span class="status-critical"><span aria-hidden="true">&#9888;</span> Failed:</span> FlightsNotFound: no flights found; received error</td></tr>
+<tr><td>Sep 18, 11:50 AM CT</td><td class="num">$386</td><td>Fri Sep 18 → Sun Sep 20</td><td>Frontier</td><td>1 stop</td></tr>
+<tr><td>Sep 17, 12:23 PM CT</td><td class="num">$592</td><td>Fri Sep 18 → Sun Sep 20</td><td>American</td><td>1 stop</td></tr>
+<tr><td>Sep 16, 12:23 PM CT</td><td class="num">$500</td><td>Fri Sep 18 → Sun Sep 20</td><td>American</td><td>1 stop</td></tr>
 </tbody>
 </table>
 </div>
 </section>
 
-<footer>Generated __GENERATED__. Prices are spot checks, not guaranteed fares.</footer>
+<footer>Generated Sep 23, 2026 1:49 PM CT. Prices are spot checks, not guaranteed fares.</footer>
 </main>
 
-<script type="application/json" id="points">__POINTS__</script>
+<script type="application/json" id="points">[{"t": "2026-09-21T18:24:06Z", "label": "Sep 21, 1:24 PM CT", "price": 458, "airline": "Contour Airlines", "stops": "1 stop"}, {"t": "2026-09-22T17:27:18Z", "label": "Sep 22, 12:27 PM CT", "price": 458, "airline": "Contour Airlines", "stops": "1 stop"}, {"t": "2026-09-23T17:36:35Z", "label": "Sep 23, 12:36 PM CT", "price": 550, "airline": "American", "stops": "Nonstop"}]</script>
 <script>
 (function () {
   const points = JSON.parse(document.getElementById("points").textContent);
@@ -382,31 +264,3 @@ __ROWS__
 </script>
 </body>
 </html>
-"""
-
-
-def main() -> None:
-    history = json.loads(HISTORY_PATH.read_text()) if HISTORY_PATH.exists() else []
-    weekend, points = chart_points(history)
-    chart_sub = f"{weekend} · each dot is one daily check" if weekend else "No data yet"
-    rows = build_rows(history) or '<tr><td colspan="5">No checks yet.</td></tr>'
-
-    replacements = {
-        "__FROM__": FROM_AIRPORT,
-        "__TO__": TO_AIRPORT,
-        "__HERO__": build_hero(history),
-        "__CHART_SUB__": escape(chart_sub),
-        "__ROWS__": rows,
-        "__GENERATED__": escape(datetime.now(LOCAL_TZ).strftime("%b %-d, %Y %-I:%M %p CT")),
-        "__POINTS__": json.dumps(points).replace("</", "<\\/"),
-    }
-    html = PAGE_TEMPLATE
-    for key, value in replacements.items():
-        html = html.replace(key, value)
-
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_PATH.write_text(html)
-
-
-if __name__ == "__main__":
-    main()
