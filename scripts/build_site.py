@@ -260,7 +260,7 @@ __ROWS__
 </div>
 </section>
 
-<footer>Generated __GENERATED__. Prices are spot checks, not guaranteed fares.</footer>
+<footer>Last check __LAST_CHECK__. Prices are spot checks, not guaranteed fares.</footer>
 </main>
 
 <script type="application/json" id="points">__POINTS__</script>
@@ -397,7 +397,7 @@ def main() -> None:
         "__HERO__": build_hero(history),
         "__CHART_SUB__": escape(chart_sub),
         "__ROWS__": rows,
-        "__GENERATED__": escape(datetime.now(LOCAL_TZ).strftime("%b %-d, %Y %-I:%M %p CT")),
+        "__LAST_CHECK__": escape(fmt_checked(history[-1]["checked_at"])) if history else "never",
         "__POINTS__": json.dumps(points).replace("</", "<\\/"),
     }
     html = PAGE_TEMPLATE
