@@ -27,14 +27,15 @@ RETRY_DELAY_SECONDS = 15
 def next_weekend() -> tuple[date, date]:
     """Return (friday, sunday) for the closest upcoming Fri->Sun weekend.
 
-    If today is already Friday/Saturday/Sunday, that weekend is used.
+    If today is Friday, that weekend is used (same-day departure). If
+    today is Saturday or Sunday, this weekend's Friday has already
+    passed as a bookable departure date, so we roll forward to *next*
+    Friday instead.
     """
     today = date.today()
     weekday = today.weekday()  # Mon=0 ... Fri=4, Sat=5, Sun=6
-    if weekday in (4, 5, 6):
-        friday = today - timedelta(days=weekday - 4)
-    else:
-        friday = today + timedelta(days=4 - weekday)
+    days_ahead = (4 - weekday) % 7
+    friday = today + timedelta(days=days_ahead)
     sunday = friday + timedelta(days=2)
     return friday, sunday
 

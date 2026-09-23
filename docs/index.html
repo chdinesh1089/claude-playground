@@ -3,48 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DFW &harr; ORD Weekend Flight Prices</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<title>aiapps</title>
 <style>
-  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
-  h1 { font-size: 1.5rem; }
-  table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; font-size: 0.9rem; }
-  th, td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid #e0e0e0; }
-  th { background: #f5f5f5; }
-  .meta { color: #666; font-size: 0.9rem; }
-  canvas { max-height: 320px; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 700px; margin: 3rem auto; padding: 0 1rem; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; }
+  ul { list-style: none; padding: 0; }
+  li { padding: 1rem 0; border-bottom: 1px solid #e0e0e0; }
+  a { font-size: 1.1rem; text-decoration: none; color: #2563eb; }
+  a:hover { text-decoration: underline; }
+  p { margin: 0.3rem 0 0; color: #666; font-size: 0.9rem; }
 </style>
 </head>
 <body>
-<h1>&#9992;&#65039; DFW &harr; ORD Weekend Flight Prices</h1>
-<p class="meta">Round-trip economy, Friday &rarr; Sunday, 1 adult. Checked daily via GitHub Actions against Google Flights.</p>
-<h2>Current tracked weekend: 2026-09-25</h2>
-<canvas id="priceChart"></canvas>
-<h2>History</h2>
-<table>
-<thead><tr><th>Checked (UTC)</th><th>Weekend</th><th>Price</th><th>Airline(s) / notes</th></tr></thead>
-<tbody>
-<tr><td>2026-09-23T17:36:35Z</td><td>2026-09-25 &rarr; 2026-09-27</td><td>$550</td><td>American</td></tr><tr><td>2026-09-22T17:27:18Z</td><td>2026-09-25 &rarr; 2026-09-27</td><td>$458</td><td>Contour Airlines</td></tr><tr><td>2026-09-21T18:24:06Z</td><td>2026-09-25 &rarr; 2026-09-27</td><td>$458</td><td>Contour Airlines</td></tr><tr><td>2026-09-20T16:38:38Z</td><td>2026-09-18 &rarr; 2026-09-20</td><td>—</td><td>FlightsNotFound: no flights found; received error</td></tr><tr><td>2026-09-19T16:10:10Z</td><td>2026-09-18 &rarr; 2026-09-20</td><td>—</td><td>FlightsNotFound: no flights found; received error</td></tr><tr><td>2026-09-18T16:50:55Z</td><td>2026-09-18 &rarr; 2026-09-20</td><td>$386</td><td>Frontier</td></tr><tr><td>2026-09-17T17:23:06Z</td><td>2026-09-18 &rarr; 2026-09-20</td><td>$592</td><td>American</td></tr><tr><td>2026-09-16T17:23:53Z</td><td>2026-09-18 &rarr; 2026-09-20</td><td>$500</td><td>American</td></tr>
-</tbody>
-</table>
-<script>
-new Chart(document.getElementById('priceChart'), {
-  type: 'line',
-  data: {
-    labels: ["2026-09-21T18:24:06Z", "2026-09-22T17:27:18Z", "2026-09-23T17:36:35Z"],
-    datasets: [{
-      label: 'Round-trip price (USD)',
-      data: [458, 458, 550],
-      borderColor: '#2563eb',
-      backgroundColor: 'rgba(37,99,235,0.1)',
-      tension: 0.2,
-      fill: true
-    }]
-  },
-  options: {
-    scales: { y: { beginAtZero: false } }
-  }
-});
-</script>
+<h1>aiapps</h1>
+<ul>
+<li><a href="aiapps/flight-price-tracker/"><strong>DFW ↔ ORD Weekend Flight Prices</strong></a><p>Daily-checked round-trip economy price for the next upcoming Friday→Sunday weekend.</p></li>
+<li><a href="aiapps/tmux-cheatsheet/"><strong>tmux Cheat Sheet</strong></a><p>Quick-reference tmux commands and key bindings.</p></li>
+</ul>
 </body>
 </html>

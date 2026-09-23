@@ -33,13 +33,15 @@ jobs:
         run: python scripts/check_flight_price.py
 
       - name: Build GitHub Pages site
-        run: python scripts/build_site.py
+        run: |
+          python scripts/build_site.py
+          python scripts/build_apps_index.py
 
       - name: Commit and push updates
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/history.json data/latest_summary.json docs/index.html
+          git add data/history.json data/latest_summary.json docs/
           if ! git diff --cached --quiet; then
             git commit -m "Update flight price data ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
             git push
@@ -61,7 +63,7 @@ jobs:
             });
             let issue = openIssues.data.find((i) => i.title === title);
 
-            const pagesUrl = `https://${owner}.github.io/${repo}/`;
+            const pagesUrl = `https://${owner}.github.io/${repo}/aiapps/flight-price-tracker/`;
 
             const statusLine = summary.status === 'ok'
               ? `**Round-trip price:** $${summary.price.toLocaleString()} ${summary.currency} — ${(summary.airlines || []).join(', ') || 'unknown airline'} (${summary.segments} flight segment(s))`

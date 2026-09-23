@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 HISTORY_PATH = Path("data/history.json")
-OUTPUT_PATH = Path("docs/index.html")
+OUTPUT_PATH = Path("docs/aiapps/flight-price-tracker/index.html")
 
 FROM_AIRPORT = "DFW"
 TO_AIRPORT = "ORD"
@@ -56,6 +56,7 @@ def main() -> None:
 </style>
 </head>
 <body>
+<p class="meta"><a href="../../">&larr; All apps</a></p>
 <h1>&#9992;&#65039; {FROM_AIRPORT} &harr; {TO_AIRPORT} Weekend Flight Prices</h1>
 <p class="meta">Round-trip economy, Friday &rarr; Sunday, 1 adult. Checked daily via GitHub Actions against Google Flights.</p>
 <h2>Current tracked weekend: {latest_weekend or "—"}</h2>
