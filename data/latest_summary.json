@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-09-22T17:27:18Z",
+  "checked_at": "2026-09-23T17:36:35Z",
   "weekend_start": "2026-09-25",
   "weekend_end": "2026-09-27",
   "from_airport": "DFW",
   "to_airport": "ORD",
   "currency": "USD",
   "status": "ok",
-  "price": 458,
+  "price": 550,
   "airlines": [
-    "Contour Airlines"
+    "American"
   ],
-  "segments": 2,
-  "fare_type": "LF",
-  "trend": "unchanged"
+  "segments": 1,
+  "fare_type": "AA",
+  "trend": "up $92 from $458"
 }
