@@ -8,6 +8,7 @@ Small self-hosted apps, published with GitHub Pages at
 | `/` | Landing page listing every app (generated) |
 | `/aiapps/flight-price-tracker/` | DFW ⇄ ORD weekend fare tracker (generated daily) |
 | `/aiapps/tmux-cheatsheet/` | tmux cheat sheet (static) |
+| `/aiapps/paper-plane/` | *The Paper Plane*, a one-minute story animated in three.js (static) |
 
 ## How the site is laid out
 
@@ -19,6 +20,15 @@ Jekyll so files are served exactly as committed.
 `publish-site.yml` then regenerates the landing page (`index.html`), using
 the page's `<title>` and optional `<meta name="description">` for the
 listing. You don't need to register it anywhere.
+
+## The Paper Plane
+
+`aiapps/paper-plane/index.html` is a self-contained three.js animation: every
+object is built from primitives in code, and the whole scene is a pure function
+of one timeline value, so the scrubber can jump anywhere. `three.module.min.js`
+next to it is three.js r186 (MIT), bundled and minified with esbuild so the page
+has no CDN dependency. Keyboard: Space play/pause, ←/→ skip 5 s, R restart.
+Honors `prefers-reduced-motion` (no camera shake, softer lightning).
 
 ## Flight Price Tracker
 
