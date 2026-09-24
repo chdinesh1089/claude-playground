@@ -23,12 +23,24 @@ listing. You don't need to register it anywhere.
 
 ## The Paper Plane
 
-`aiapps/paper-plane/index.html` is a self-contained three.js animation: every
-object is built from primitives in code, and the whole scene is a pure function
-of one timeline value, so the scrubber can jump anywhere. `three.module.min.js`
-next to it is three.js r186 (MIT), bundled and minified with esbuild so the page
-has no CDN dependency. Keyboard: Space play/pause, ←/→ skip 5 s, R restart.
-Honors `prefers-reduced-motion` (no camera shake, softer lightning).
+`aiapps/paper-plane/index.html` is a self-contained three.js animation. Every
+object is built in code (no model or image files), and the whole scene is a
+pure function of one timeline value, so the scrubber can jump anywhere.
+
+- **Look:** physically based sky with sun position by time of day, image-based
+  lighting captured from that sky, soft sun shadows, ACES tone mapping, bloom,
+  reflective lake, per-pixel farmland shader, and night city lights that come on
+  in a wave.
+- **Motion:** the flight path is a clamped C2 cubic spline in time, so speed and
+  acceleration never jump; the plane banks from its real lateral acceleration.
+- **Smoothness:** render resolution adapts to the device's frame rate; city
+  geometry is merged (about 100–150 draw calls per frame); shaders are compiled
+  behind the title card.
+- `three-bundle.min.js` is three.js r186 (MIT) plus the Sky, post-processing and
+  BufferGeometryUtils add-ons, bundled and minified with esbuild so the page has
+  no CDN dependency.
+- Keyboard: Space play/pause, ←/→ skip 5 s, R restart. Honors
+  `prefers-reduced-motion` (no camera drift or turbulence shake, softer lightning).
 
 ## Flight Price Tracker
 
