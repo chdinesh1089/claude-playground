@@ -108,5 +108,19 @@
     ],
     "segments": 1,
     "fare_type": "AA"
+  },
+  {
+    "checked_at": "2026-09-24T17:40:00Z",
+    "weekend_start": "2026-09-25",
+    "weekend_end": "2026-09-27",
+    "from_airport": "DFW",
+    "to_airport": "ORD",
+    "currency": "USD",
+    "status": "ok",
+    "price": 550,
+    "airlines": [
+      "American"
+    ],
+    "outbound_stops": 0
   }
 ]

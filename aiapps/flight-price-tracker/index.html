@@ -109,8 +109,8 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <div class="tile">
   <div class="tile-label">Cheapest round trip &middot; Fri Sep 25 → Sun Sep 27</div>
   <div class="tile-value">$550</div>
-  <span class="delta delta-up">&#9650; $92 since previous check</span>
-  <div class="tile-meta">American &middot; Nonstop outbound &middot; checked Sep 23, 12:36 PM CT</div>
+  <span class="delta">No change since previous check</span>
+  <div class="tile-meta">American &middot; Nonstop outbound &middot; checked Sep 24, 12:40 PM CT</div>
 </div>
 </section>
 
@@ -129,6 +129,7 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <table>
 <thead><tr><th>Checked</th><th class="num">Price</th><th>Weekend</th><th>Airline</th><th>Outbound</th></tr></thead>
 <tbody>
+<tr><td>Sep 24, 12:40 PM CT</td><td class="num">$550</td><td>Fri Sep 25 → Sun Sep 27</td><td>American</td><td>Nonstop</td></tr>
 <tr><td>Sep 23, 12:36 PM CT</td><td class="num">$550</td><td>Fri Sep 25 → Sun Sep 27</td><td>American</td><td>Nonstop</td></tr>
 <tr><td>Sep 22, 12:27 PM CT</td><td class="num">$458</td><td>Fri Sep 25 → Sun Sep 27</td><td>Contour Airlines</td><td>1 stop</td></tr>
 <tr><td>Sep 21, 1:24 PM CT</td><td class="num">$458</td><td>Fri Sep 25 → Sun Sep 27</td><td>Contour Airlines</td><td>1 stop</td></tr>
@@ -142,10 +143,10 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 </div>
 </section>
 
-<footer>Last check Sep 23, 12:36 PM CT. Prices are spot checks, not guaranteed fares.</footer>
+<footer>Last check Sep 24, 12:40 PM CT. Prices are spot checks, not guaranteed fares.</footer>
 </main>
 
-<script type="application/json" id="points">[{"t": "2026-09-21T18:24:06Z", "label": "Sep 21, 1:24 PM CT", "price": 458, "airline": "Contour Airlines", "stops": "1 stop"}, {"t": "2026-09-22T17:27:18Z", "label": "Sep 22, 12:27 PM CT", "price": 458, "airline": "Contour Airlines", "stops": "1 stop"}, {"t": "2026-09-23T17:36:35Z", "label": "Sep 23, 12:36 PM CT", "price": 550, "airline": "American", "stops": "Nonstop"}]</script>
+<script type="application/json" id="points">[{"t": "2026-09-21T18:24:06Z", "label": "Sep 21, 1:24 PM CT", "price": 458, "airline": "Contour Airlines", "stops": "1 stop"}, {"t": "2026-09-22T17:27:18Z", "label": "Sep 22, 12:27 PM CT", "price": 458, "airline": "Contour Airlines", "stops": "1 stop"}, {"t": "2026-09-23T17:36:35Z", "label": "Sep 23, 12:36 PM CT", "price": 550, "airline": "American", "stops": "Nonstop"}, {"t": "2026-09-24T17:40:00Z", "label": "Sep 24, 12:40 PM CT", "price": 550, "airline": "American", "stops": "Nonstop"}]</script>
 <script>
 (function () {
   const points = JSON.parse(document.getElementById("points").textContent);

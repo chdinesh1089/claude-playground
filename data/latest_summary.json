@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-23T17:36:35Z",
+  "checked_at": "2026-09-24T17:40:00Z",
   "weekend_start": "2026-09-25",
   "weekend_end": "2026-09-27",
   "from_airport": "DFW",
@@ -10,7 +10,6 @@
   "airlines": [
     "American"
   ],
-  "segments": 1,
-  "fare_type": "AA",
-  "trend": "up $92 from $458"
+  "outbound_stops": 0,
+  "trend": "unchanged"
 }
