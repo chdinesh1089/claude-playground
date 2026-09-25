@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-09-24T17:40:00Z",
+  "checked_at": "2026-09-25T17:39:30Z",
   "weekend_start": "2026-09-25",
   "weekend_end": "2026-09-27",
   "from_airport": "DFW",
   "to_airport": "ORD",
   "currency": "USD",
   "status": "ok",
-  "price": 550,
+  "price": 593,
   "airlines": [
     "American"
   ],
   "outbound_stops": 0,
-  "trend": "unchanged"
+  "trend": "up $43 from $550"
 }
