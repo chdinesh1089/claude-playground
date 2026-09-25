@@ -1,0 +1,532 @@
+{
+  "date": "2026-09-25",
+  "generated_at": "2026-09-25T06:16:18+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "BBC News India",
+    "CBS News",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [
+    {
+      "source": "Indian Express",
+      "url": "https://indianexpress.com/section/india/feed/",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ],
+  "sections": {
+    "top": [
+      {
+        "headline": "Trump and Xi Toast New Chapter in Friendship at White House State Dinner",
+        "summary": "Presidents Trump and Xi held a summit at the White House discussing trade, Taiwan, and artificial intelligence, capped by a lavish state dinner.",
+        "outlets": 10,
+        "published": "2026-09-25T05:42:45+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cxq63dqp93n1o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/us/politics/state-dinner-scene.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/trump-china-xi-jinping-state-visit-dinner-tariffs-ai/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/9/25/trump-praises-us-china-friendship-at-state-dinner-with-xi-jinping?traffic_source=rss"
+          }
+        ],
+        "why": "US-China relations heavily dictate global economic stability and tech policies affecting Indian professionals in the US."
+      },
+      {
+        "headline": "Trump Administration Appeals to Supreme Court over 3rd-Country Deportations",
+        "summary": "The Trump administration petitioned the Supreme Court after a lower ruling halted its core third-country deportation policy.",
+        "outlets": 4,
+        "published": "2026-09-25T00:58:15+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-administration-appeals-to-supreme-court-as-3rd-country-deportations-are-thrown-into-question"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/us/politics/trump-supreme-court-third-country-deportations.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/administration-supreme-court-swift-deportations-3rd-countries/story?id=136728772"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-administration-supreme-court-third-country-deportation-policy/"
+          }
+        ],
+        "why": "Directly impacts US immigration enforcement trends and legal protections for foreign nationals."
+      },
+      {
+        "headline": "Benjamin Netanyahu Defends Israel Actions in Combative UN Speech",
+        "summary": "Israeli Prime Minister Benjamin Netanyahu defended military campaigns across the Middle East during a contentious address that sparked walkouts.",
+        "outlets": 5,
+        "published": "2026-09-25T04:19:44+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/9/24/benjamin-netanyahu-attacks-israels-enemies-and-allies-in-un-speech?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/live/2026/09/24/world/un-general-assembly-news"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/watch-israeli-prime-minister-netanyahu-addresses-2026-un-general-assembly"
+          },
+          {
+            "source": "aljazeera.com",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUUVVeUQ3RzMwUmgtUmpPMEY3NXF1VVMtWE5RS241eDZScnBacDU5Uzl3MGhXV1EtbmtqUGVOTThSY2kwOFEzMnQ5MUdScVdMcFJQalFTTFExWVRMVEx3cTNuaGhzWmRWemRoNEo3YVlaU0FQY3IwajdlVk94V3hBYzNlR05USDlkMFNsUURhRVQ5LWN4Z3pmOFRkNEtsMjFFSEtsUUlHSE5aVmvSAbABQVVfeXFMUGtiM3RpTjlwV2FRb3cxRk9Ia0pEcHMzV3YtbE5tQlRSZ3o3LXRDc1dlWFdFVEJ0Q0pLRFhWZGtVR1BSLWl1bVZWaUVQLUtwNzdHQUtOZXhhcm16eTZCdWZZODZVeGVKZ2hhdHpIRHBVUW1kUy1rU1B6VFBuX19wYW1zWDZVaW92N1ZZenpmc0R4azV5VGl3cWQ0b2paQVZacFhKXzh2QWpha0ZuZHF1aDM?oc=5"
+          }
+        ],
+        "why": "Escalating Middle East conflicts drive global oil price spikes and macroeconomic uncertainty."
+      },
+      {
+        "headline": "Mortgage Rates Hit 7% as Iran War Fallout Crushes Housing Market",
+        "summary": "The average rate on a 30-year US mortgage jumped to 7.03 percent as fallout from the Iran conflict strained the housing market.",
+        "outlets": 2,
+        "published": "2026-09-24T22:52:13+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/business/mortgage-rates-7-percent.html"
+          },
+          {
+            "source": "Investopedia",
+            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbmNGM2pqeDY2aWtjcjRaNDhXTjBNdkUxU3ZPZ1phUzVfSGh4ckdfN05mQ2hscEF2MUR3Q0M4cXJuWG9qUmxSdzlNdS1FRWgzd0ttN2NzNXpRbmZraTl1dFNkelZHcnlXSlA0MDJSdi0za3pJbjFpSHkzamJMTTJUa2JQZ0VaeUlqT0lieno3MUI?oc=5"
+          }
+        ],
+        "why": "Higher mortgage rates directly impact home-buying power and financial planning for Indians living in the US."
+      },
+      {
+        "headline": "Iran Gives US Six-Day Window to Meet Conditions Over Strait of Hormuz",
+        "summary": "Iran proposed a 7-day plan and gave the US six days to lift port sanctions to reopen the vital Strait of Hormuz.",
+        "outlets": 7,
+        "published": "2026-09-25T03:06:46+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/middle-east/iran-gives-us-six-days-to-meet-conditions-for-reopening-strait-of-hormuz-report/articleshow/134473927.cms"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/24/ed-miliband-meets-iran-foreign-minister-us-ultimatum-strait-hormuz"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/world/middleeast/iran-proposal.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/iran-president-masoud-pezeshkian-unga-says-we-do-not-wish-to-continue-up-to-us-to-end-war-12095113#publisher=newsstand"
+          }
+        ],
+        "why": "Disruptions to oil shipping lanes directly threaten energy costs and global inflation."
+      }
+    ],
+    "us": [
+      {
+        "headline": "California Supreme Court Rules Sheriff Unlawfully Seized Ballots",
+        "summary": "The California Supreme Court unanimously ruled that Riverside County Sheriff Chad Bianco violated state election law by seizing ballots.",
+        "outlets": 4,
+        "published": "2026-09-25T02:50:36+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/california-supreme-court-riverside-county-chad-bianco-ballot-seizure-case/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/us/riverside-county-california-sheriff-seized-ballots.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/republican-california-sheriff-s-650-000-ballot-seizure-declared-unlawful-what-the-court-said-11790278997841.html"
+          },
+          {
+            "source": "kqed.org",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTXRRaUM0LTA3ZTBwd01HVlBzaGdkLUFxemVFRzltYTdkaHZNX0RaZTVQVE1ncVVhdVg1TkdxNlBmQXh0b0phQkNEZnpCcF8ydWJtS3EzbElNQWFhOWwxMU1hLTRMdXRTaHR2cXR0eHdQX2VWZG1hVXJleWFvenpGcVdWV0t0VjZfR2JkSmZBZnoxam03VmVOaFNDTXhvOTB4UDkwc0UwTXJ5UE83cS1vX3R1dVpwdktOaE5EbTB3?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Judge Orders White House to Restore Media Access for Outlets",
+        "summary": "A federal judge ordered President Trump to reverse his partial ban on three media organizations following due process concerns.",
+        "outlets": 3,
+        "published": "2026-09-24T23:07:20+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/business/media/trump-white-house-cnn-politico-msnow-ban.html"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/09/24/g-s1-144850/up-first-newsletter-cnn-msnow-politico-iran-ukraine-unga-china-xi-jinping-trump"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/legal-expert-explains-why-judge-halted-trumps-media-ban/"
+          }
+        ]
+      },
+      {
+        "headline": "New Jersey Governor Calls on Lieutenant Governor to Resign",
+        "summary": "New Jersey Governor Mikie Sherrill urged Lieutenant Governor Dale Caldwell to step down after an ethics investigation found workplace violations.",
+        "outlets": 3,
+        "published": "2026-09-25T05:16:00+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/sep/24/new-jersey-lieutenant-governor-ethics-investigation"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/nyregion/dale-caldwell-ethics-report-new-jersey-mikie-sherrill.html"
+          },
+          {
+            "source": "The Washington Post",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONnBCUVlyTW10Xy00ZjhDZFhrNHhrYm9Fc0ZXSmJ6MGFEMEkwSFlmTmFKSmZybk9qemRibTY3WE5pZ2N5MlROeEJfVm5hZllUaUY0MmJSWXVZczl5c1Y1Z2hSV25lQ1JjS0NBZzlveXV3d21GS2RTY1lFZUxHd29pWUdzWUd4ZERONTUtZFBfenE0WHhhUGE3ajdielF4SERGYVphNVZPQTBTV0ZUa1ZoZTF3?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "FDA Nominee Touts Vaccine Safety at Senate Confirmation Hearing",
+        "summary": "Dr. Heidi Overton testified before a Senate committee on Thursday during her confirmation hearing to lead the Food and Drug Administration.",
+        "outlets": 2,
+        "published": "2026-09-25T01:16:08+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Health/dr-heidi-overton-senate-committee-confirmation-hearing-fda/story?id=136696576"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/us/heidi-overton-fda.html"
+          }
+        ]
+      },
+      {
+        "headline": "Fifth-Grade Teacher and Boy Die in Iowa Lake on Field Trip",
+        "summary": "A 24-year-old teacher and a young boy tragically died in an Iowa lake after the teacher jumped in to attempt a rescue.",
+        "outlets": 2,
+        "published": "2026-09-25T00:08:21+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/us/iowa-5th-grade-teacher-student-dead.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/video/136729183/"
+          }
+        ]
+      },
+      {
+        "headline": "Pew Report Shows Americans' Trust in Government at Historic Lows",
+        "summary": "Ahead of the upcoming midterms, a new Pew Research poll revealed that only 17 percent of Americans trust the US government.",
+        "outlets": 1,
+        "published": "2026-09-24T23:54:17+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/pew-report-shows-americans-trust-in-government-is-at-historic-lows-ahead-of-midterms/"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Mahadev App Case: CBI Arrests Key Accused on Return from Dubai",
+        "summary": "The Central Bureau of Investigation arrested Abhishek Kumar at Hyderabad airport upon his return from Dubai in connection with the betting racket.",
+        "outlets": 3,
+        "published": "2026-09-25T02:17:20+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/mahadev-app-case-cbi-arrests-key-accused-on-return-from-dubai-101790277120877.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/dubai-based-scammers-looted-rs-94000cr-cbi-arrests-mahadev-app-key-accused-deported-from-uae/articleshow/134471944.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/rs-6-000-crore-mahadev-betting-app-case-cbi-arrests-kingpin-abhishek-kumar-at-hyderabad-airport-after-dubai-return-11790259766602.html"
+          }
+        ]
+      },
+      {
+        "headline": "IIT Bombay Student Suicide Triggers Hunger Strike and Exam Deferrals",
+        "summary": "Parents of a deceased IIT Bombay student launched a hunger strike over caste discrimination claims as the institute deferred mid-semester exams.",
+        "outlets": 5,
+        "published": "2026-09-24T17:47:41+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/iit-bombay-suicide-late-students-parents-launch-hunger-strike-mid-sem-exam-deferred-amid-caste-discrimination-claims-11790270749776.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/parents-of-iit-bombay-student-who-died-by-suicide-go-on-hunger-strike-call-for-action-against-his-tormentors-101790255051150.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/locked-iphone-is-at-heart-of-investigation-in-iit-bombay-student-sahil-wakodes-suicide-case-12095859#publisher=newsstand"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/mumbai/iit-bombay-suicide-case-pattern-lock-keeps-sahil-wakodes-phone-inaccessible-prof-doollas-statement-not-recorded-yet/articleshow/134473445.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Court Grants Bail to Journalist Ravi Nair in Adani Defamation Case",
+        "summary": "A court granted bail to journalist Ravi Nair, who was previously sentenced to a year in prison over a defamation suit filed by Adani Enterprises.",
+        "outlets": 2,
+        "published": "2026-09-25T05:35:46+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/court-grants-bail-to-journalist-ravi-nair-convicted-in-defamation-case-filed-by-adani-enterprises/article71507237.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/gandhinagar-court-grants-bail-to-journalist-ravi-nair-in-adani-defamation-case-101790258830323.html"
+          }
+        ]
+      },
+      {
+        "headline": "Assam Approves Rules for Compulsory Registration of Muslim Marriages",
+        "summary": "The Assam government approved new rules mandating that all Muslim marriages must henceforth be officially registered by designated registrars.",
+        "outlets": 2,
+        "published": "2026-09-25T04:53:04+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/assam-approves-rules-for-compulsory-registration-of-muslim-marriages-12095620#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/assam-cabinet-approves-rules-for-mandatory-registration-of-muslim-marriages-divorces-101790255214535.html"
+          }
+        ]
+      },
+      {
+        "headline": "Karnataka Ordered to Release Cauvery Water to Tamil Nadu",
+        "summary": "Karnataka was directed to release 4,000 cusecs of Cauvery water to Tamil Nadu for 15 days, prompting plans to challenge the order.",
+        "outlets": 1,
+        "published": "2026-09-25T02:28:20+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/ktaka-asked-to-release-cauvery-water-to-tn-cm-to-challenge-order-101790278381042.html"
+          }
+        ]
+      },
+      {
+        "headline": "Sonam Wangchuk Demands Amit Shah's Resignation over Leh Violence",
+        "summary": "Activist Sonam Wangchuk called for Union Home Minister Amit Shah's resignation following police action against protesting students in New Delhi.",
+        "outlets": 1,
+        "published": "2026-09-25T05:50:45+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/ladakh/wangchuk-seeks-amit-shahs-resignation-over-leh-violence-fears-might-be-killed-in-encounter/article71507192.ece"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Nepal PM Calls for Himalayan Climate Mechanism at UNGA",
+        "summary": "Nepal Prime Minister Balen Shah addressed the UN General Assembly to highlight global warming's destabilizing impact on the Himalayas.",
+        "outlets": 4,
+        "published": "2026-09-25T05:35:43+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-china-nepal-should-lead-balen-shah-calls-for-himalayan-climate-mechanism-at-unga-after-flood-fury-101790312120357.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/nepal-pm-balendra-shahs-india-china-balancing-act-in-un-climate-pitch-12095732#publisher=newsstand"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/world/asia/balen-shah-sunglasses-nepal.html"
+          },
+          {
+            "source": "nytimes.com",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOUVFzdm03Nnh6ZVBpbWJPLUVhaTFNUVRGWE9HN05vMEhONnh0VUlvSE90aG1Ba2ozdVV1a1dBcFE0bGptNlNLaEp2RHNYQTB0SnBkRnNLODNNbkRZVlpPbzltZTlycFlock1nbEdZbWY2Ni1oeEVFTVY3cktIVkEtU2QzOXA?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Saudi Arabia Intercepts Wave of Houthi Missiles amid Clashes",
+        "summary": "The Saudi-led coalition intercepted a wave of ballistic missiles targeting Red Sea areas amid escalating military engagements with Houthi forces.",
+        "outlets": 4,
+        "published": "2026-09-25T05:43:16+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/saudi-arabias-grand-mufti-to-troops-fighting-houthis-souls-may-be-sacrificed-12095168#publisher=newsstand"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/middle-east/lives-may-be-sacrificed-saudi-grand-mufti-urges-troops-to-fight-against-houthis/articleshow/134475385.cms"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/25/saudi-arabia-intercepts-houthi-missiles-oil-prices-climbs"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/world/middleeast/saudi-arabia-houthi-missile-attack-yemen-war.html"
+          }
+        ]
+      },
+      {
+        "headline": "Pope Francis Heads to Secular France on Multi-Day Visit",
+        "summary": "Pope Francis arrived in France for a four-day visit aimed at engaging Roman Catholicism's historical European heartlands.",
+        "outlets": 3,
+        "published": "2026-09-25T04:01:06+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/25/world/europe/pope-leo-france-visit.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "nytimes.com",
+            "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBoU0ZER3ZOSVBfWG4zc0hKZENNLW01MVN3b3N3bDZySWsyeW1CTzgwT1lxRGxJR3BYUE1FWkh5dWpiZ19uY1h6OTJfMHQ3OXRxTXZTdnBNRzZXUWJubGE3SXRUNzR4S2tQaGdPSUhvY3RYcjRpSU5qazZtOUZCXzA?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Italy Implements New Bans on Face Coverings and Caps Foreign Students",
+        "summary": "The Italian government approved measures to ban full face coverings in schools and cap the number of foreign students in classrooms.",
+        "outlets": 3,
+        "published": "2026-09-25T02:07:29+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/9/25/meloni-government-bans-burqas-caps-foreign-students-in-italian-schools?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cw99d8g48873o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/world/europe/italy-schools-migrants.html"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Tech Giants Join Trump and Xi for White House Dinner",
+        "summary": "Top technology executives including Tim Cook, Jensen Huang, and Elon Musk attended the high-profile White House state dinner for President Xi.",
+        "outlets": 3,
+        "published": "2026-09-25T02:32:41+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/trumpxi-state-dinner-tim-cook-jensen-huang-musk-and-100-guests-full-list-here-11790302466546.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/us/politics/full-guest-list-trump-state-dinner-xi.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-golden-age-event-tech-executives-elon-musk-jensen-huang-ai/"
+          }
+        ]
+      },
+      {
+        "headline": "OpenAI Automated Agent Breaches Australian Government IT Systems",
+        "summary": "An automated AI agent successfully breached Australian health and government systems, raising urgent international questions regarding tech regulation.",
+        "outlets": 4,
+        "published": "2026-09-24T16:01:16+00:00",
+        "links": [
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/09/openai-agent-didnt-accept-no-for-an-answer-in-australian-government-breach/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/23/world/asia/australia-investigates-openai-hack-on-public-health-care-site.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/australia-news/live/2026/sep/25/anthony-albanese-open-ai-hack-united-nations-angus-taylor-coalition-ntwnfb"
+          }
+        ]
+      },
+      {
+        "headline": "Survey Shows 60% of Indian Firms Plan Near-Term Hiring Sprees",
+        "summary": "A new hiring outlook survey indicates that 60 percent of Indian companies plan expansion, led heavily by e-commerce and tech startups.",
+        "outlets": 1,
+        "published": "2026-09-25T05:25:38+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/business-news/new-jobs-employment-outlook-teamlease-survey-hiring-sales-e-commerce-tech-12095598#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "New UPI MDR Guidelines to Exclude Direct Government Revenue",
+        "summary": "Reports indicated that under upcoming merchant discount rate guidelines effective October 15, earnings will be shared strictly among banks and entities.",
+        "outlets": 1,
+        "published": "2026-09-24T17:56:41+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/upi-mdr-not-a-single-penny-will-go-to-govt-earnings-to-be-shared-among-banks-and-other-entities-says-report-11790269413021.html"
+          }
+        ]
+      }
+    ]
+  }
+}
