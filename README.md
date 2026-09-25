@@ -9,6 +9,7 @@ Small self-hosted apps, published with GitHub Pages at
 | `/aiapps/flight-price-tracker/` | DFW ⇄ ORD weekend fare tracker (generated daily) |
 | `/aiapps/tmux-cheatsheet/` | tmux cheat sheet (static) |
 | `/aiapps/paper-plane/` | *The Paper Plane*, a one-minute story animated in three.js (static) |
+| `/aiapps/flappy-3d/` | *Flap 3D*, a glossy 3D flappy-bird-style game (static) |
 
 ## How the site is laid out
 
@@ -36,11 +37,25 @@ pure function of one timeline value, so the scrubber can jump anywhere.
 - **Smoothness:** render resolution adapts to the device's frame rate; city
   geometry is merged (about 100–150 draw calls per frame); shaders are compiled
   behind the title card.
-- `three-bundle.min.js` is three.js r186 (MIT) plus the Sky, post-processing and
+- `aiapps/lib/three-bundle.min.js` (shared by both 3D apps) is three.js r186 (MIT) plus the Sky, post-processing and
   BufferGeometryUtils add-ons, bundled and minified with esbuild so the page has
   no CDN dependency.
 - Keyboard: Space play/pause, ←/→ skip 5 s, R restart. Honors
   `prefers-reduced-motion` (no camera drift or turbulence shake, softer lightning).
+
+## Flap 3D
+
+`aiapps/flappy-3d/index.html`: tap, click, Space, ↑ or W to flap; P pauses.
+
+- Fixed 120 Hz physics with interpolated rendering, so it plays the same at any
+  frame rate. Speed rises, gaps tighten, and from 15 points some pipes slide.
+- Same rendering pipeline as The Paper Plane (sky, image-based lighting,
+  shadows, bloom, adaptive resolution); the sky runs from morning to night as
+  the score climbs.
+- Feather puffs, score rings, crash flash/shake/slow-mo (off with
+  `prefers-reduced-motion`), synthesized WebAudio sound with a mute button.
+- Best score and mute are kept in `localStorage`; medals at 10/20/30/40.
+- `window.game` exposes read-only state for automated tests.
 
 ## Flight Price Tracker
 
