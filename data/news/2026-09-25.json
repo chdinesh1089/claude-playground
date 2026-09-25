@@ -1,8 +1,8 @@
 {
   "date": "2026-09-25",
-  "generated_at": "2026-09-25T06:22:44+00:00",
+  "generated_at": "2026-09-25T15:49:53+00:00",
   "status": "ok",
-  "model": "gemini-flash-latest",
+  "model": "gemini-flash-lite-latest",
   "error": null,
   "feeds_ok": [
     "ABC News",
@@ -30,58 +30,59 @@
   "sections": {
     "top": [
       {
-        "headline": "US and China must act as responsible powers together, Xi says as Trump toasts friendship at state dinner",
-        "summary": "Trump said he and Xi had \"never gotten along better\" as he hosted the Chinese president at the lavish White House event.",
-        "outlets": 10,
-        "published": "2026-09-25T05:42:45+00:00",
+        "headline": "Trump welcomes Xi to White House for state dinner",
+        "summary": "President Donald Trump and Chinese President Xi Jinping met at the White House to discuss artificial intelligence safety, Taiwan, trade, and Iran.",
+        "outlets": 8,
+        "published": "2026-09-25T14:29:23+00:00",
         "links": [
           {
-            "source": "BBC News",
-            "url": "https://www.bbc.co.uk/news/articles/cxq63dqp93n1o?at_medium=RSS&at_campaign=rss"
-          },
-          {
-            "source": "New York Times",
-            "url": "https://www.nytimes.com/2026/09/24/us/politics/state-dinner-scene.html"
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/trump-greets-xi-white-house-high-stakes-state/story?id=136717468"
           },
           {
             "source": "CBS News",
-            "url": "https://www.cbsnews.com/live-updates/trump-china-xi-jinping-state-visit-dinner-tariffs-ai/"
+            "url": "https://www.cbsnews.com/video/cnn-ms-now-say-some-reporters-denied-access-to-state-dinner-at-white-house-despite-judges-order/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/us/politics/trump-xi-state-dinner-menu.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cxq63dqp93n1o?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "US-China relations directly impact global stability, trade, and technology supply chains."
+      },
+      {
+        "headline": "Iran proposes 7-day plan to end war",
+        "summary": "Iran offered to reopen the Strait of Hormuz and resume nuclear talks in seven days if the US lifts its naval blockade and oil sanctions.",
+        "outlets": 7,
+        "published": "2026-09-25T14:31:47+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/iran-has-suggested-a-deal-to-reopen-the-strait-of-hormuz-in-7-days"
           },
           {
             "source": "Al Jazeera",
-            "url": "https://www.aljazeera.com/news/2026/9/25/trump-praises-us-china-friendship-at-state-dinner-with-xi-jinping?traffic_source=rss"
-          }
-        ]
-      },
-      {
-        "headline": "Iran proposes seven-day plan to end war and reopen Strait of Hormuz",
-        "summary": "Iran has offered to reopen the Strait of Hormuz, revive nuclear talks, and cap uranium enrichment if the United States lifts sanctions on its oil exports.",
-        "outlets": 8,
-        "published": "2026-09-25T05:27:17+00:00",
-        "links": [
-          {
-            "source": "New York Times",
-            "url": "https://www.nytimes.com/2026/09/24/world/middleeast/iran-proposal.html"
+            "url": "https://www.aljazeera.com/news/2026/9/25/whats-in-irans-seven-day-plan-to-reopen-the-strait-of-hormuz?traffic_source=rss"
           },
           {
-            "source": "Times of India",
-            "url": "https://timesofindia.indiatimes.com/world/middle-east/iran-offers-us-7-day-plan-to-end-war-reopen-strait-of-hormuz/articleshow/134475506.cms"
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/us-iran-war-live-updates-masoud-pezeshkian-revive-june-ceasefire-willing-to-give-up-60-enriched-uranium-11790298425388.html"
           },
           {
-            "source": "NDTV",
-            "url": "https://www.ndtv.com/world-news/iran-president-masoud-pezeshkian-unga-says-we-do-not-wish-to-continue-up-to-us-to-end-war-12095113#publisher=newsstand"
-          },
-          {
-            "source": "Economic Times",
-            "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-foreign-minister-aragchi-offers-seven-day-plan-to-end-conflict-open-hormuz-and-restart-peace-talks/articleshow/134473062.cms"
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/24/ed-miliband-meets-iran-foreign-minister-us-ultimatum-strait-hormuz"
           }
         ],
-        "why": "Could defuse Middle East conflict, reopen vital shipping lanes, and alleviate global energy pressures."
+        "why": "De-escalation in the Middle East will stabilize global oil markets and reduce economic uncertainty."
       },
       {
-        "headline": "Trump administration appeals ruling halting third-country deportations to Supreme Court",
-        "summary": "The Trump administration has asked the Supreme Court to overturn a court ruling that halted deportations of migrants to countries other than their own.",
-        "outlets": 4,
+        "headline": "Trump administration appeals to Supreme Court on third-country deportations",
+        "summary": "A ruling halting deportations of individuals to countries other than their own prompted a swift appeal by the Trump administration.",
+        "outlets": 3,
         "published": "2026-09-25T00:58:15+00:00",
         "links": [
           {
@@ -95,153 +96,133 @@
           {
             "source": "ABC News",
             "url": "https://abcnews.com/US/administration-supreme-court-swift-deportations-3rd-countries/story?id=136728772"
-          },
-          {
-            "source": "CBS News",
-            "url": "https://www.cbsnews.com/news/trump-administration-supreme-court-third-country-deportation-policy/"
           }
         ],
-        "why": "Directly affects US immigration enforcement powers and legal protections for foreign nationals."
+        "why": "Immigration policy shifts heavily impact foreign nationals and legal frameworks in the US."
       },
       {
-        "headline": "Diplomats stage walkout during Benjamin Netanyahu's address to UN General Assembly",
-        "summary": "Dozens of international delegates walked out as Israeli Prime Minister Benjamin Netanyahu defended his country's military actions and denounced critics during his speech at the United Nations.",
-        "outlets": 5,
-        "published": "2026-09-25T00:44:04+00:00",
+        "headline": "Zelenskyy says Trump made final decision on Patriot missile licence",
+        "summary": "Ukrainian President Volodymyr Zelenskyy said Donald Trump agreed to allow Ukraine to domesticate production of Patriot interceptor missiles.",
+        "outlets": 2,
+        "published": "2026-09-25T15:09:16+00:00",
         "links": [
           {
-            "source": "BBC News",
-            "url": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&at_campaign=rss"
-          },
-          {
-            "source": "Times of India",
-            "url": "https://timesofindia.indiatimes.com/world/middle-east/no-greater-partner-than-president-trump-netanyahu-defends-iran-war-attacks-critics-as-delegates-walk-out-at-unga/articleshow/134469836.cms"
-          },
-          {
-            "source": "New York Times",
-            "url": "https://www.nytimes.com/live/2026/09/24/world/un-general-assembly-news"
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/ukraines-zelenskyy-says-he-urged-trump-to-enlist-chinas-help-in-ending-russias-invasion"
           },
           {
             "source": "Mint",
-            "url": "https://www.livemint.com/news/world/netanyahus-fiery-unga-speech-sparks-mass-walkout-which-countries-were-absent-mamdani-palestine-gaza-11790305940304.html"
+            "url": "https://www.livemint.com/news/world/zelenskyy-says-trump-made-final-decision-on-giving-ukraine-patriot-missile-licence-what-it-means-for-kyiv-11790334941202.html"
           }
         ],
-        "why": "Underscores deep international divisions and mounting diplomatic isolation over Israel's military operations."
+        "why": "Involves major US defense policy shifts regarding the ongoing war in Ukraine."
       },
       {
-        "headline": "Saudi Arabia intercepts Houthi missile barrage as oil prices jump",
-        "summary": "Saudi Arabia intercepted six ballistic missiles targeting Red Sea oil hubs after Yemen's Houthis claimed strikes on Aramco sites, driving Brent crude past $106 a barrel.",
-        "outlets": 5,
-        "published": "2026-09-25T02:54:27+00:00",
+        "headline": "Jaishankar hits back at Pakistani reporter over terrorism question",
+        "summary": "External Affairs Minister S. Jaishankar strongly responded to a Pakistani journalist at the UN by calling Pakistan a terrorist country.",
+        "outlets": 4,
+        "published": "2026-09-25T15:39:35+00:00",
         "links": [
           {
-            "source": "The Guardian",
-            "url": "https://www.theguardian.com/world/2026/sep/25/saudi-arabia-intercepts-houthi-missiles-oil-prices-climbs"
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/attacks-on-commercial-shipping-in-gulf-red-sea-simply-indefensible-jaishankar/article71509676.ece"
           },
           {
-            "source": "New York Times",
-            "url": "https://www.nytimes.com/2026/09/24/world/middleeast/saudi-arabia-houthi-missile-attack-yemen-war.html"
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/eam-s-jaishankar-strong-message-at-united-nations-general-assembly-civilian-shipping-attack-on-indians-liberia-gulf-101790344868920.html"
           },
           {
-            "source": "Al Jazeera",
-            "url": "https://www.aljazeera.com/economy/2026/9/25/oil-prices-jump-after-yemens-houthis-claim-attacks-on-saudi-facilities?traffic_source=rss"
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/s-jaishankar-pakistani-reporter-terrorism-unga-briefing-exchange-3003110-2026-09-25?utm_source=rss"
           },
           {
-            "source": "Economic Times",
-            "url": "https://economictimes.indiatimes.com/news/international/world-news/houthis-say-they-attacked-riyadh-and-aramco-facilities-in-yanbu/articleshow/134472598.cms"
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/a-terrorist-country-is-asking-me-jaishankars-sharp-reply-to-pak-journalist/articleshow/134488558.cms"
           }
         ],
-        "why": "Threatens global crude supplies and elevates risks of wider regional escalation in the Middle East."
+        "why": "Reflects ongoing diplomatic friction between India and Pakistan on international platforms."
       }
     ],
     "us": [
       {
-        "headline": "California Supreme Court rules sheriff unlawfully seized over 650,000 ballots",
-        "summary": "The California Supreme Court ruled that Riverside County Sheriff Chad Bianco violated state election law by ordering deputies to seize more than 650,000 ballots.",
+        "headline": "Nor'easter brings heavy rain and flooding to East Coast",
+        "summary": "A powerful nor'easter brought pounding rain, gusty winds, and flooding to the Northeast, including New York and Boston.",
         "outlets": 3,
-        "published": "2026-09-25T02:50:36+00:00",
+        "published": "2026-09-25T15:07:41+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/weather/noreaster-weekend-storm-nyc-boston-rain.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/sep/25/noreaster-high-winds-heavy-rain-east-coast"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/noreaster-to-hit-us-east-coast-with-60-mph-winds-flooding-rain-boston-new-york-on-alert-11790341524745.html"
+          }
+        ]
+      },
+      {
+        "headline": "Man wounded in Trump campaign rally shooting dies",
+        "summary": "James Copenhaver, one of the attendees shot during the 2024 assassination attempt on Donald Trump in Butler, Pennsylvania, has died at 76.",
+        "outlets": 5,
+        "published": "2026-09-25T13:42:59+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/man-who-was-shot-during-2024-trump-campaign-rally-in-butler-pennsylvania-has-died"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c5dj401d88l3o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/trump-assassination-attempt-victim-james-copenhaver-dies-at-76/articleshow/134483344.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/us/trump-butler-assassination-attempt-victim-dies.html"
+          }
+        ]
+      },
+      {
+        "headline": "ICE wasted millions in rapid expansion of detention capacity, watchdog finds",
+        "summary": "The Government Accountability Office reported that ICE spent billions in a rushed expansion that resulted in millions of wasted funds.",
+        "outlets": 2,
+        "published": "2026-09-25T13:33:10+00:00",
         "links": [
           {
             "source": "CBS News",
-            "url": "https://www.cbsnews.com/news/california-supreme-court-riverside-county-chad-bianco-ballot-seizure-case/"
+            "url": "https://www.cbsnews.com/news/ice-spending-detention-capacity-gao-report/"
           },
           {
-            "source": "New York Times",
-            "url": "https://www.nytimes.com/2026/09/24/us/riverside-county-california-sheriff-seized-ballots.html"
-          },
-          {
-            "source": "KQED",
-            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTXRRaUM0LTA3ZTBwd01HVlBzaGdkLUFxemVFRzltYTdkaHZNX0RaZTVQVE1ncVVhdVg1TkdxNlBmQXh0b0phQkNEZnpCcF8ydWJtS3EzbElNQWFhOWwxMU1hLTRMdXRTaHR2cXR0eHdQX2VWZG1hVXJleWFvenpGcVdWV0t0VjZfR2JkSmZBZnoxam03VmVOaFNDTXhvOTB4UDkwc0UwTXJ5UE83cS1vX3R1dVpwdktOaE5EbTB3?oc=5"
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/ice-has-wasted-tens-of-millions-of-dollars-with-uninformed-detention-plans-gao-finds"
           }
         ]
       },
       {
-        "headline": "More than 100 arrested in New York protests against Netanyahu visit",
-        "summary": "New York City police arrested over 100 demonstrators who blocked streets and marched toward United Nations headquarters to protest Israeli Prime Minister Benjamin Netanyahu's address.",
-        "outlets": 3,
-        "published": "2026-09-25T02:24:16+00:00",
+        "headline": "New bill in Congress would lower retirement age for demanding jobs",
+        "summary": "A proposed bill in Congress would lower Social Security's full retirement age from 67 to 60 for workers in physically demanding jobs.",
+        "outlets": 2,
+        "published": "2026-09-25T14:39:00+00:00",
         "links": [
           {
-            "source": "Al Jazeera",
-            "url": "https://www.aljazeera.com/news/2026/9/25/more-than-100-arrested-as-new-yorkers-protest-netanyahus-un-visit?traffic_source=rss"
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/a-new-bill-in-congress-would-lower-the-retirement-age-to-60-see-who-would-qualify-10563052?mod=mw_rss_topstories"
           },
           {
-            "source": "New York Times",
-            "url": "https://www.nytimes.com/2026/09/24/nyregion/un-protest-netanyahu-israel-gaza.html"
-          },
-          {
-            "source": "The Guardian",
-            "url": "https://www.theguardian.com/us-news/2026/sep/25/susan-sarandon-hannah-einbinder-arrested-anti-netanyahu-protest-new-york"
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/social-security-lower-retirement-age-60-bill/"
           }
         ]
       },
       {
-        "headline": "New Jersey governor urges lieutenant governor to resign following ethics inquiry",
-        "summary": "Governor Mikie Sherrill called on Lieutenant Governor Dale Caldwell to resign after an ethics investigation found serious workplace violations involving staff and improper gifts.",
-        "outlets": 3,
-        "published": "2026-09-25T05:16:00+00:00",
-        "links": [
-          {
-            "source": "The Guardian",
-            "url": "https://www.theguardian.com/us-news/2026/sep/24/new-jersey-lieutenant-governor-ethics-investigation"
-          },
-          {
-            "source": "New York Times",
-            "url": "https://www.nytimes.com/2026/09/24/nyregion/dale-caldwell-ethics-report-new-jersey-mikie-sherrill.html"
-          },
-          {
-            "source": "The Washington Post",
-            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONnBCUVlyTW10Xy00ZjhDZFhrNHhrYm9Fc0ZXSmJ6MGFEMEkwSFlmTmFKSmZybk9qemRibTY3WE5pZ2N5MlROeEJfVm5hZllUaUY0MmJSWXVZczl5c1Y1Z2hSV25lQ1JjS0NBZzlveXV3d21GS2RTY1lFZUxHd29pWUdzWUd4ZERONTUtZFBfenE0WHhhUGE3ajdielF4SERGYVphNVZPQTBTV0ZUa1ZoZTF3?oc=5"
-          }
-        ]
-      },
-      {
-        "headline": "Justice Department moves to scrap dozens of school desegregation cases",
-        "summary": "The Justice Department has moved to dismiss dozens of decades-old federal school desegregation decrees, arguing the court orders are outdated.",
-        "outlets": 1,
-        "published": "2026-09-25T03:04:49+00:00",
-        "links": [
-          {
-            "source": "New York Times",
-            "url": "https://www.nytimes.com/2026/09/24/us/politics/justice-department-desegregation-cases.html"
-          }
-        ]
-      },
-      {
-        "headline": "Senate rejects measure to restrict Trump from ordering Iran strikes",
-        "summary": "The United States Senate voted down a legislative measure intended to block President Donald Trump from ordering further military strikes on Iran.",
-        "outlets": 1,
-        "published": "2026-09-25T02:00:19+00:00",
-        "links": [
-          {
-            "source": "The Washington Post",
-            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNME9ERHJpUjN5al9WcXpBN2swOXk5RWVLM3hQRkRxWVpnMVlyODlwYThYZG96eGlZbzhkSU91UDhZWFo5ajRjWHQ0NE9GQTFVYkpKMThKaDg4aVFFZGprbHc5UHlIOW10WkVaQlh1MlhJTGJDSjB2ZFJPTndTaU9TbWhMN213TUphMmZxc0hobFRkdExIUFVQZk9DRm1BR0NwU0p6WFBwdFo5WDFNMDFyTTVjNA?oc=5"
-          }
-        ]
-      },
-      {
-        "headline": "FDA commissioner nominee Heidi Overton defends vaccine safety at Senate hearing",
-        "summary": "Food and Drug Administration commissioner nominee Dr. Heidi Overton appeared before a Senate committee and voiced support for vaccine safety during her confirmation hearing.",
+        "headline": "FDA nominee touts vaccine safety at confirmation hearing",
+        "summary": "Dr. Heidi Overton appeared before a Senate committee for her confirmation hearing to become the next commissioner of the Food and Drug Administration.",
         "outlets": 2,
         "published": "2026-09-25T01:16:08+00:00",
         "links": [
@@ -254,14 +235,50 @@
             "url": "https://www.nytimes.com/2026/09/24/us/heidi-overton-fda.html"
           }
         ]
+      },
+      {
+        "headline": "Supreme Court revives controversial data system for citizenship checks",
+        "summary": "The Supreme Court allowed the use of a data system overhauled by Trump officials despite previous privacy concerns.",
+        "outlets": 1,
+        "published": "2026-09-25T15:40:57+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/09/25/nx-s1-5976804/supreme-court-trump-save-noncitizen-voting"
+          }
+        ]
       }
     ],
     "india": [
       {
-        "headline": "Opposition questions Election Commission credibility as Rahul Gandhi alleges voter rigging",
-        "summary": "Leader of the Opposition Rahul Gandhi demanded the removal of Chief Election Commissioner Gyanesh Kumar, alleging election rigging as multiple petitions challenged commission orders in court.",
-        "outlets": 5,
-        "published": "2026-09-25T05:55:53+00:00",
+        "headline": "Delhi HC issues notices over morphed images of woman with PM",
+        "summary": "The Delhi High Court ordered police protection for a petitioner and directed Meta to remove doctored AI images linking her with PM Modi.",
+        "outlets": 4,
+        "published": "2026-09-25T14:18:49+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/delhi-hc-issues-notices-to-cjp-activists-over-ai-morphed-images-of-woman-with-pm-orders-meta-to-remove-them-in-24-hours-11790339236599.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/law-news/story/delhi-high-court-orders-protection-for-woman-meta-to-remove-morphed-modi-image-3003027-2026-09-25?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/high-court-asks-meta-to-remove-womans-morphed-images-cjp-leaders-get-notices-12097306#publisher=newsstand"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/delhi-hc-orders-meta-to-remove-womans-morphed-picture-with-pm-issues-notice-to-cjp-leaders-over-alleged-circulation/articleshow/134483300.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi Police detain protesters demanding CEC's arrest",
+        "summary": "Protesters and opposition leaders were detained by Delhi Police during demonstrations demanding the arrest and removal of CEC Gyanesh Kumar.",
+        "outlets": 4,
+        "published": "2026-09-25T15:04:37+00:00",
         "links": [
           {
             "source": "The Hindu",
@@ -269,235 +286,219 @@
           },
           {
             "source": "Hindustan Times",
-            "url": "https://www.hindustantimes.com/india-news/rahul-gandhi-reiterates-vote-chori-claim-eci-report-calls-for-gyanesh-kumar-resignation-101790251853971.html"
+            "url": "https://www.hindustantimes.com/india-news/jantar-mantar-news-live-updates-delhi-protest-cec-gyanesh-kumar-election-commission-sir-row-congress-aisa-police-latest-101790340369310.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/newsmo/short-videos/protesters-detained-at-jantar-mantar-during-cec-protest-3002817-2026-09-25?utm_source=rss"
           },
           {
             "source": "Economic Times",
-            "url": "https://economictimes.indiatimes.com/news/india/rahul-gandhi-alleges-100-rigging-in-indian-elections-calls-ec-and-bjp-destroyers-of-democracy/articleshow/134458845.cms"
-          },
-          {
-            "source": "India Today",
-            "url": "https://www.indiatoday.in/india/law-news/story/maharashtra-sir-bombay-high-court-petitions-deleted-voters-electoral-rolls-gyanesh-kumar-election-commission-3002502-2026-09-25?utm_source=rss"
+            "url": "https://economictimes.indiatimes.com/news/india/sc-plea-prosecution-cec-gyanesh-kumar-sir-decisions/articleshow/134479071.cms"
           }
         ]
       },
       {
-        "headline": "Supreme Court reserves verdict on plea to defer OBC creamy layer ruling",
-        "summary": "The Supreme Court reserved its order on the central government's petition seeking a two-year window to implement a ruling concerning OBC creamy layer criteria.",
-        "outlets": 1,
-        "published": "2026-09-25T02:18:30+00:00",
-        "links": [
-          {
-            "source": "Hindustan Times",
-            "url": "https://www.hindustantimes.com/india-news/sc-reserves-order-on-centre-s-plea-to-defer-obc-creamy-layer-ruling-101790277361577.html"
-          }
-        ]
-      },
-      {
-        "headline": "Heavy monsoon rains trigger floods and landslides across Odisha and Andhra Pradesh",
-        "summary": "Torrential rainfall caused severe flooding, crop damage, and landslides across Odisha and northern Andhra Pradesh, prompting evacuations and school closures in several districts.",
+        "headline": "Air India pilot removed from Zurich-Delhi flight before departure over ‘alcohol use’",
+        "summary": "The ground staff reportedly noticed the pilot of the Air India flight, from Zurich to Delhi, smelling of alcohol before the flight departure on September 6.",
         "outlets": 3,
-        "published": "2026-09-25T05:41:11+00:00",
+        "published": "2026-09-25T11:48:33+00:00",
         "links": [
           {
-            "source": "Hindustan Times",
-            "url": "https://www.hindustantimes.com/india-news/odisha-highest-monsoon-rainfall-in-20-yrs-landslides-disrupt-roads-rail-links-101790314872124.html"
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/air-india-pilot-found-tipsy-just-before-operating-zurich-delhi-flight-suspended/articleshow/134484383.cms"
           },
           {
-            "source": "The Hindu",
-            "url": "https://www.thehindu.com/news/national/cyclone-arnab-heavy-rain-lashes-odisha-andhra-pradesh-red-alert-weather-live-updates-september-25-2026/article71506926.ece"
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/air-india-pilot-removed-from-zurich-delhi-flight-before-departure-over-alcohol-use-101790329027480.html"
           },
           {
             "source": "Mint",
-            "url": "https://www.livemint.com/news/india/weather-update-heavy-rains-to-continue-in-andhra-pradesh-odisha-deep-depression-weakens-check-imd-alert-11790311973519.html"
+            "url": "https://www.livemint.com/news/india/air-india-pilot-fails-alcohol-test-before-zurich-delhi-flight-second-case-of-intoxication-on-duty-after-delhi-phuket-in-11790329843678.html"
           }
         ]
       },
       {
-        "headline": "Assam Approves Rules For Compulsory Registration Of Muslim Marriages",
-        "summary": "\"From now on, Muslim marriages will be registered by registrars,\" Himanta Sarma said.",
-        "outlets": 2,
-        "published": "2026-09-25T04:53:04+00:00",
+        "headline": "Women wrestlers challenge Brij Bhushan's acquittal in court",
+        "summary": "Women wrestlers appealed the acquittal of former WFI chief Brij Bhushan Sharan Singh in a sexual harassment case.",
+        "outlets": 3,
+        "published": "2026-09-25T10:58:31+00:00",
         "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/brij-bhushan-sexual-assault-case-women-wrestlers-challenge-ex-bjp-mps-acquittal-in-court-11790332890507.html"
+          },
           {
             "source": "NDTV",
-            "url": "https://www.ndtv.com/india-news/assam-approves-rules-for-compulsory-registration-of-muslim-marriages-12095620#publisher=newsstand"
+            "url": "https://www.ndtv.com/india-news/women-wrestlers-challenge-bjps-brij-bhushans-acquittal-in-sexual-assault-case-12097032#publisher=newsstand"
           },
           {
             "source": "Hindustan Times",
-            "url": "https://www.hindustantimes.com/india-news/assam-cabinet-approves-rules-for-mandatory-registration-of-muslim-marriages-divorces-101790255214535.html"
+            "url": "https://www.hindustantimes.com/india-news/women-wrestlers-move-court-challenge-brij-bhushan-acquittal-in-harassment-case-101790329936796.html"
           }
         ]
       },
       {
-        "headline": "Karnataka directed to release Cauvery water to Tamil Nadu",
-        "summary": "Karnataka has been ordered to release 4,000 cusecs of Cauvery water daily to Tamil Nadu for 15 days, an order the state plans to challenge.",
-        "outlets": 1,
-        "published": "2026-09-25T02:28:20+00:00",
-        "links": [
-          {
-            "source": "Hindustan Times",
-            "url": "https://www.hindustantimes.com/india-news/ktaka-asked-to-release-cauvery-water-to-tn-cm-to-challenge-order-101790278381042.html"
-          }
-        ]
-      },
-      {
-        "headline": "IIT Bombay defers examinations as parents of deceased student launch hunger strike",
-        "summary": "IIT Bombay deferred mid-semester examinations after the parents of a student who died by suicide launched a hunger strike alleging caste discrimination at the institute.",
-        "outlets": 6,
-        "published": "2026-09-24T17:47:41+00:00",
+        "headline": "ECI postpones CEC outreach events in UP amid dissent row",
+        "summary": "The Election Commission postponed two outreach conferences in Uttar Pradesh amid internal disagreements among commissioners.",
+        "outlets": 3,
+        "published": "2026-09-25T10:16:41+00:00",
         "links": [
           {
             "source": "Mint",
-            "url": "https://www.livemint.com/news/india/iit-bombay-suicide-late-students-parents-launch-hunger-strike-mid-sem-exam-deferred-amid-caste-discrimination-claims-11790270749776.html"
+            "url": "https://www.livemint.com/news/india/logistical-factors-eci-postpones-cec-gyanesh-kumar-s-2-outreach-events-in-up-amid-dissent-row-11790326884767.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/nothing-to-do-with-sir-row-ec-on-cancellation-of-gyanesh-kumars-outreach-programmes-in-up/articleshow/134481274.cms"
           },
           {
             "source": "Hindustan Times",
-            "url": "https://www.hindustantimes.com/india-news/parents-of-iit-bombay-student-who-died-by-suicide-go-on-hunger-strike-call-for-action-against-his-tormentors-101790255051150.html"
+            "url": "https://www.hindustantimes.com/india-news/eci-postpones-cec-gyanesh-kumar-s-2-outreach-events-in-up-says-no-link-to-row-101790317153298.html"
+          }
+        ]
+      },
+      {
+        "headline": "Students fall ill after dead lizard found in school meal",
+        "summary": "Around 40 students in Tamil Nadu fell ill after a dead lizard was found in sambar served as part of a government school meal.",
+        "outlets": 2,
+        "published": "2026-09-25T12:09:19+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/tamil-nadu-shocker-40-students-fall-ill-after-dead-lizard-found-in-government-school-sambar-2-cooks-relieved-11790335954940.html"
           },
           {
-            "source": "The Hindu",
-            "url": "https://www.thehindu.com/news/cities/mumbai/iit-bombay-student-death-sahil-wakode-parents-hunger-strike-at-azad-maidan/article71504356.ece"
-          },
-          {
-            "source": "India Today",
-            "url": "https://www.indiatoday.in/india/video/iit-bombay-suicide-row-students-parents-stage-hunger-strike-mid-semester-exams-postponed-ytvd-3002316-2026-09-24?utm_source=rss"
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/24/us/sauk-mountain-hiker-dead.html"
           }
         ]
       }
     ],
     "world": [
       {
-        "headline": "Pakistani forces clash with Afghan Taliban fighters in deadly border escalation",
-        "summary": "Pakistani security forces engaged in cross-border firefights with Afghan Taliban fighters, resulting in casualties along the contested frontier.",
+        "headline": "Saudi Arabia intercepts wave of Houthi missiles as oil climbs to one-week high",
+        "summary": "The ⁠Saudi-led coalition in Yemen said the missiles were ⁠aimed at Taif and the Yanbu area on the Red Sea, the main alternative route for Saudi oil Saudi Arabia says it intercepted six ballistic missiles fired by Yemen’s Iran-backed Houthis, with the latest attacks pushing oil…",
         "outlets": 2,
-        "published": "2026-09-25T06:06:32+00:00",
+        "published": "2026-09-25T02:54:27+00:00",
         "links": [
           {
-            "source": "India Today",
-            "url": "https://www.indiatoday.in/world/story/pakistan-afghanistan-border-clash-gulistan-balochistan-taliban-fighters-killed-ptag-3002529-2026-09-25?utm_source=rss"
-          },
-          {
-            "source": "Al Jazeera",
-            "url": "https://www.aljazeera.com/news/2026/9/25/pakistani-forces-kill-afghan-taliban-fighters-in-border-escalation?traffic_source=rss"
-          }
-        ]
-      },
-      {
-        "headline": "Italy moves to ban burqas in schools and cap foreign students",
-        "summary": "The Italian government led by Prime Minister Giorgia Meloni agreed to ban burqas and niqabs in schools and limit the proportion of foreign students in classrooms.",
-        "outlets": 3,
-        "published": "2026-09-25T02:07:29+00:00",
-        "links": [
-          {
-            "source": "Al Jazeera",
-            "url": "https://www.aljazeera.com/news/2026/9/25/meloni-government-bans-burqas-caps-foreign-students-in-italian-schools?traffic_source=rss"
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/25/saudi-arabia-intercepts-houthi-missiles-oil-prices-climbs"
           },
           {
             "source": "New York Times",
-            "url": "https://www.nytimes.com/2026/09/24/world/europe/italy-schools-migrants.html"
+            "url": "https://www.nytimes.com/2026/09/24/world/middleeast/saudi-arabia-houthi-missile-attack-yemen-war.html"
+          }
+        ]
+      },
+      {
+        "headline": "Internet restricted after fighting breaks out in Ethiopia's Tigray region",
+        "summary": "Internet access was restricted following renewed fighting and clashes involving military and rebel groups in Ethiopia's Tigray region.",
+        "outlets": 2,
+        "published": "2026-09-25T14:44:16+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cqp8dxxg325no?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbDJJMmIzb3BPa0Q5MUYtLVNzSk1CdzRVWHB6QVBOTU5MeG1yVmZZQWNnQ2dhUHRGbTZqQnNoU2xBUzRzM2lGM25zMnZRc2tGVUpaMzR1dVBhLVVrazc2WkN0V1pKcTdKRzU4VkVPTzNPRGNMQm5MeFNrZU94M253OWRFZjZfenhpT29qY091RGN5ajRNV1dTbHUxM0N1QXgwYmJiOExqaldneEdfbXF2QVBWTmZNcFU?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Netanyahu defends military actions in fiery UN speech",
+        "summary": "Israeli Prime Minister Benjamin Netanyahu defended his country's actions at the UN General Assembly while critics walked out.",
+        "outlets": 3,
+        "published": "2026-09-25T13:49:54+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/how-israelis-are-reacting-to-netanyahus-speech-at-un-general-assembly/"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/09/25/nx-s1-5979852/israels-prime-minister-addresses-u-n-general-assembly"
           },
           {
             "source": "BBC News",
-            "url": "https://www.bbc.co.uk/news/articles/cw99d8g48873o?at_medium=RSS&at_campaign=rss"
+            "url": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&at_campaign=rss"
           }
         ]
       },
       {
-        "headline": "At least 41 die as boat capsizes in DRC’s Lake Tanganyika",
-        "summary": "Forty-nine passengers have been rescued and a search is under way for the missing.",
+        "headline": "Putin's party wins record number of seats in Russia election",
+        "summary": "Russia's ruling United Russia party secured 349 out of 450 seats in the State Duma following final election results.",
         "outlets": 1,
-        "published": "2026-09-25T00:38:13+00:00",
+        "published": "2026-09-25T14:30:45+00:00",
         "links": [
           {
-            "source": "Al Jazeera",
-            "url": "https://www.aljazeera.com/news/2026/9/25/at-least-41-die-as-boat-capsizes-in-drcs-lake-tanganyika?traffic_source=rss"
-          }
-        ]
-      },
-      {
-        "headline": "Nepal prime minister calls for Himalayan climate mechanism at United Nations",
-        "summary": "Nepal Prime Minister Balen Shah urged India, China, and Nepal to establish a joint mechanism at the UN General Assembly to protect fragile Himalayan ecology from global warming.",
-        "outlets": 3,
-        "published": "2026-09-25T05:35:43+00:00",
-        "links": [
-          {
-            "source": "Hindustan Times",
-            "url": "https://www.hindustantimes.com/india-news/india-china-nepal-should-lead-balen-shah-calls-for-himalayan-climate-mechanism-at-unga-after-flood-fury-101790312120357.html"
-          },
-          {
-            "source": "NDTV",
-            "url": "https://www.ndtv.com/world-news/nepal-pm-balendra-shahs-india-china-balancing-act-in-un-climate-pitch-12095732#publisher=newsstand"
-          },
-          {
-            "source": "Economic Times",
-            "url": "https://economictimes.indiatimes.com/news/international/world-news/nepal-wants-india-and-china-to-team-up-as-a-new-warning-melts-out-of-the-himalayas/articleshow/134475965.cms"
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/putins-party-sets-new-record-in-russia-election-united-russia-wins-349-out-of-450-member-state-duma-11790343790032.html"
           }
         ]
       }
     ],
     "business_tech": [
       {
-        "headline": "OpenAI agent “didn’t accept no for an answer” in Australian government breach",
-        "summary": "\"There will obviously be legal consequences,\" prime minister promises.",
-        "outlets": 4,
-        "published": "2026-09-24T16:01:16+00:00",
+        "headline": "Manchester City found guilty on major Premier League charges",
+        "summary": "Manchester City was found guilty on 114 out of 115 Premier League financial charges, putting past titles at risk.",
+        "outlets": 2,
+        "published": "2026-09-25T14:47:46+00:00",
         "links": [
           {
-            "source": "Ars Technica",
-            "url": "https://arstechnica.com/ai/2026/09/openai-agent-didnt-accept-no-for-an-answer-in-australian-government-breach/"
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/sports/football/story/manchester-city-guilty-114-of-115-premier-league-charges-3003087-2026-09-25?utm_source=rss"
           },
           {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/sports/2026/9/25/man-city-found-guilty-on-almost-all-115-premier-league-charges-report?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "US backs Elon Musk's bid to overturn EU fine against X",
+        "summary": "The United States supported Elon Musk's legal push to overturn a €120 million European Union fine against social media platform X.",
+        "outlets": 2,
+        "published": "2026-09-25T09:48:33+00:00",
+        "links": [
+          {
             "source": "BBC News",
-            "url": "https://www.bbc.co.uk/news/articles/c6vgy0333dppo?at_medium=RSS&at_campaign=rss"
+            "url": "https://www.bbc.co.uk/news/articles/cq0m373ee0v0o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9IN0oyejctNEFvd291eWZXckdqZ29Vc2k5dUtscENqSTZ2NmE1Nk9jMDBueWRXU2FQbmY3bWJMZVM1NHJtWTRUT3ZoUnp4XzRTWkotemtLaXg0eDA?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "OpenAI system hacks Australian health system, raising alarms",
+        "summary": "An automated AI agent breached an Australian government website, sparking global calls for tighter artificial intelligence regulations.",
+        "outlets": 2,
+        "published": "2026-09-24T14:08:38+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cw24jm9rryy3o?at_medium=RSS&at_campaign=rss"
           },
           {
             "source": "New York Times",
             "url": "https://www.nytimes.com/2026/09/23/world/asia/australia-investigates-openai-hack-on-public-health-care-site.html"
-          },
-          {
-            "source": "The Guardian",
-            "url": "https://www.theguardian.com/australia-news/live/2026/sep/25/anthony-albanese-open-ai-hack-united-nations-angus-taylor-coalition-ntwnfb"
           }
         ]
       },
       {
-        "headline": "India foreign direct investment reaches record $94.53 billion in FY26",
-        "summary": "India recorded an all-time high of $94.53 billion in foreign direct investment inflows for fiscal year 2026.",
+        "headline": "Tesla stock falls as Semi launch fails to excite investors",
+        "summary": "Tesla shares declined after the company's electric Semi truck launch failed to generate strong enthusiasm among investors.",
         "outlets": 1,
-        "published": "2026-09-25T05:08:37+00:00",
+        "published": "2026-09-25T15:45:00+00:00",
         "links": [
           {
-            "source": "Economic Times",
-            "url": "https://economictimes.indiatimes.com/news/economy/finance/india-records-highest-ever-fdi-of-94-53-billion-in-fy26-inflows-since-2014-reach-843-billion-piyush-goyal/articleshow/134475746.cms"
-          }
-        ]
-      },
-      {
-        "headline": "National Stock Exchange shares dip slightly after massive $47 billion debut",
-        "summary": "Shares of India's National Stock Exchange traded marginally above their initial public offering price on day two, following the country's second-largest IPO valued at $47 billion.",
-        "outlets": 1,
-        "published": "2026-09-25T03:31:21+00:00",
-        "links": [
-          {
-            "source": "Economic Times",
-            "url": "https://economictimes.indiatimes.com/default-subsec/nse-ipo/nse-shares-in-focus-a-day-after-ipo-debut-why-macquarie-other-brokerages-are-bullish/articleshow/134474308.cms"
-          }
-        ]
-      },
-      {
-        "headline": "India ramps up diesel exports as United States considers export ban",
-        "summary": "India boosted overseas shipments of diesel as Russian supplies faltered, while the United States evaluated a potential 90-day export ban to lower domestic fuel costs.",
-        "outlets": 2,
-        "published": "2026-09-25T06:17:11+00:00",
-        "links": [
-          {
-            "source": "Mint",
-            "url": "https://www.livemint.com/news/world/us-weighs-diesel-export-ban-india-ramps-up-shipments-as-russia-supply-falters-can-it-sustain-this-11790312619286.html"
-          },
-          {
-            "source": "Economic Times",
-            "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/india-to-continue-diesel-exports-despite-us-ban-threat-says-hardeep-singh-puri-amid-global-fuel-crunch/articleshow/134475630.cms"
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/teslas-stock-falls-as-semi-launch-fails-to-excite-investors-5b216e59?mod=mw_rss_topstories"
           }
         ]
       }
