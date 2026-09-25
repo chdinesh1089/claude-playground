@@ -63,7 +63,7 @@ FEEDS = [
     ("NDTV", "india", "https://feeds.feedburner.com/ndtvnews-top-stories"),
     ("Hindustan Times", "india", "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"),
     ("Times of India", "india", "https://timesofindia.indiatimes.com/rssfeedstopstories.cms"),
-    ("BBC News India", "india", "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml"),
+    ("BBC News", "india", "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml"),
     ("Google News India", "india", "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en"),
     ("BBC News", "world", "https://feeds.bbci.co.uk/news/world/rss.xml"),
     ("The Guardian", "world", "https://www.theguardian.com/world/rss"),
@@ -452,36 +452,41 @@ ALWAYS_OK = set(
 )
 
 
-def unsupported_names(text: str, source: str) -> list[str]:
-    """Capitalized words (other than a sentence's first) that the feeds never used.
-    Catches a model "correcting" a name from stale memory (e.g. a former pope)."""
-    source = source.lower()
+def words(text: str) -> set[str]:
+    return set(re.findall(r"[a-z]+", text.lower()))
+
+
+def unsupported_names(text: str, vocab: set[str]) -> list[str]:
+    """Capitalized words (other than a sentence's first) that no feed used today.
+    Catches a model "correcting" a name from stale memory (e.g. a former pope).
+    vocab is every word in today's feeds: checking only the story's own text
+    flagged harmless expansions ("Donald" Trump, "Chief Election Commissioner")."""
     bad = []
     for sentence in re.split(r"(?<=[.!?:;])\s+", text):
         for word in re.findall(r"[A-Za-z][A-Za-z.'’-]*", sentence)[1:]:
-            w = re.sub(r"['’]s$", "", word).strip(".-'’").lower()
-            if not word[0].isupper() or len(w) < 3 or w in ALWAYS_OK or w in source:
+            w = re.sub(r"[^a-z]", "", re.sub(r"['’]s$", "", word).lower())
+            if not word[0].isupper() or len(w) < 3 or w in ALWAYS_OK or w in vocab:
                 continue
             # Demonyms: "Indian" <- India, "Israeli" <- Israel, "Chinese" <- China.
-            if any(w.endswith(suf) and w[: -len(suf)] in source for suf in ("n", "an", "ian", "i", "ese", "ish")):
+            if any(w.endswith(suf) and (w[: -len(suf)] in vocab or w[: -len(suf)] + "a" in vocab)
+                   for suf in ("n", "an", "ian", "i", "ese", "ish")):
                 continue
             bad.append(word)
     return bad
 
 
 def story(c: dict, headline: str | None = None, summary: str | None = None, why: str | None = None,
-          extra: list[dict] = ()) -> dict:
+          extra: list[dict] = (), vocab: set[str] = frozenset()) -> dict:
     merged = dict(c)
     for e in extra:  # other clusters Gemini said are the same story
         merged["links"] = merged["links"] + e["links"]
         merged["outlets"] = merged["outlets"] + [o for o in e["outlets"] if o not in merged["outlets"]]
-        merged["text"] = merged["text"] + " " + e["text"]
     if headline or summary:
-        bad = unsupported_names(f"{headline or ''}. {summary or ''}", merged["text"])
+        bad = unsupported_names(f"{headline or ''}. {summary or ''}", vocab)
         if bad:
             print(f"  kept the feed's wording for {c['id']}: Gemini used {bad} not in the feeds", file=sys.stderr)
             headline = summary = why = None
-    if why and unsupported_names(why, merged["text"]):
+    if why and unsupported_names(why, vocab):
         why = None
     out = {
         "headline": clean(headline or c["title"], 160),
@@ -497,6 +502,7 @@ def story(c: dict, headline: str | None = None, summary: str | None = None, why:
 
 def assemble(clusters: list[dict], picked: dict | None) -> dict:
     by_id = {c["id"]: c for c in clusters}
+    vocab = words(" ".join(c["text"] for c in clusters))
     used: set[str] = set()
     sections: dict[str, list[dict]] = {k: [] for k in SECTIONS}
 
@@ -511,7 +517,7 @@ def assemble(clusters: list[dict], picked: dict | None) -> dict:
                 used.update(ids)
                 sections[key].append(
                     story(by_id[ids[0]], entry.get("headline"), entry.get("summary"),
-                          entry.get("why") if key == "top" else None, [by_id[i] for i in ids[1:]])
+                          entry.get("why") if key == "top" else None, [by_id[i] for i in ids[1:]], vocab)
                 )
 
     if picked is not None:

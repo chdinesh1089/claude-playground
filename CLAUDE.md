@@ -141,8 +141,10 @@ Don't use a CDN.
 - Gemini can "correct" names from stale memory (the lite model wrote "Pope
   Francis" for a Pope Leo story). The prompt forbids it, and
   `unsupported_names()` checks every capitalized non-initial word of the
-  headline and summary against the feeds' text for that story. On a miss, that
-  story keeps the outlet's own headline and blurb, and the log says so.
+  headline and summary, by whole word, against all of today's feed text
+  (checking only the story's own text flagged harmless expansions such as
+  "Donald" Trump). On a miss, that story keeps the outlet's own headline and
+  blurb, and the log says so.
 - Outlets are identified by hostname without `www.`, so Google News copies
   of a story don't count as extra outlets. Don't collapse to the registrable
   domain: Times of India and Economic Times share `indiatimes.com`.
@@ -222,6 +224,8 @@ Newest first. Add one line per change.
 - 2026-09-25: Daily Briefing, after the first live run: model list fixed
   (2.5-flash is gone for new keys, longer 503 backoff), a name-grounding check,
   outlets deduped by host, 403 feeds replaced, actions moved to Node 24 versions.
+  The name check matches whole words against the day's vocabulary, after the
+  second live run showed false alarms.
 - 2026-09-25: Daily Briefing review fixes: per-region candidate quota,
   JSON-mode fallback, empty feeds count as failed, issue text can't @-mention.
 - 2026-09-25: Added the Daily Briefing (`aiapps/daily-briefing/`): RSS feeds
