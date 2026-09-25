@@ -130,9 +130,13 @@ Don't use a CDN.
   hint), drops items older than 36 h, and groups the same story by headline
   word overlap. Stories are ranked by outlet count and freshness, and ids
   `s1…` are assigned in that order.
-- Up to 220 candidates go to Gemini in one call through its
-  OpenAI-compatible endpoint (`GEMINI_URL`, Bearer key, JSON reply). Models are
-  tried in order: `NEWS_MODEL`, then `DEFAULT_MODELS`. The prompt is written
+- Up to 220 candidates (50 reserved per feed region, so India and world
+  stories aren't crowded out) go to Gemini in one call through its
+  OpenAI-compatible endpoint (`GEMINI_URL`, Bearer key, JSON mode, retried
+  without JSON mode on HTTP 400). Models are tried in order: `NEWS_MODEL`,
+  then `DEFAULT_MODELS`. Never log or print the key.
+- A feed that errors or returns no items goes in `feeds_failed`; fix or
+  replace its URL in `FEEDS` when the page footer lists it. The prompt is written
   for an Indian reader living in the US (US immigration/visas and US-India
   news get priority). Sections and sizes are defined in `SECTIONS`: top 5, US 6,
   India 6, world 4, business & tech 4.
@@ -203,6 +207,8 @@ Keys: Space, ←/→, R.
 
 Newest first. Add one line per change.
 
+- 2026-09-25: Daily Briefing review fixes: per-region candidate quota,
+  JSON-mode fallback, empty feeds count as failed, issue text can't @-mention.
 - 2026-09-25: Added the Daily Briefing (`aiapps/daily-briefing/`): RSS feeds
   picked and summarized by Gemini, a daily workflow, and a new issue each day.
 

@@ -30,6 +30,7 @@ KEEP_DAYS = 14
 LOCAL_TZ = ZoneInfo("America/Chicago")
 MAX_AGE_HOURS = 36
 MAX_CANDIDATES = 220
+PER_REGION = 50  # candidates reserved for each feed region before the rest fill by score
 
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 # NEWS_MODEL (set in the workflow) is tried first; the rest are fallbacks.
@@ -176,13 +177,17 @@ def fetch_feed(feed: tuple[str, str, str]) -> tuple[tuple[str, str, str], list[d
     source, region, url = feed
     last_err = None
     for attempt in range(2):
+        if attempt:
+            time.sleep(3)
         try:
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/xml, text/xml, */*"})
             with urllib.request.urlopen(req, timeout=20) as resp:
-                return feed, parse_feed(resp.read(), source, region), None
+                items = parse_feed(resp.read(), source, region)
+            if items:
+                return feed, items, None
+            last_err = "feed returned no items"
         except Exception as exc:  # noqa: BLE001 - any feed failure is recorded and skipped
             last_err = f"{type(exc).__name__}: {exc}"
-            time.sleep(2)
     return feed, None, last_err
 
 
@@ -331,9 +336,25 @@ Candidates:
 """
 
 
+def candidates(clusters: list[dict]) -> list[dict]:
+    """The best stories overall, but with PER_REGION reserved for each region so
+    single-outlet India or world stories aren't crowded out by fresher US ones."""
+    chosen, per_region = set(), {}
+    for c in clusters:
+        n = per_region.get(c["region"], 0)
+        if n < PER_REGION:
+            per_region[c["region"]] = n + 1
+            chosen.add(c["id"])
+    for c in clusters:
+        if len(chosen) >= MAX_CANDIDATES:
+            break
+        chosen.add(c["id"])
+    return [c for c in clusters if c["id"] in chosen][:MAX_CANDIDATES]
+
+
 def candidate_lines(clusters: list[dict], now: datetime) -> str:
     lines = []
-    for c in clusters[:MAX_CANDIDATES]:
+    for c in candidates(clusters):
         age = "?"
         if c["published"]:
             age = str(round((now - datetime.fromisoformat(c["published"])).total_seconds() / 3600))
@@ -342,15 +363,11 @@ def candidate_lines(clusters: list[dict], now: datetime) -> str:
     return "\n".join(lines)
 
 
-def call_gemini(prompt: str, api_key: str, model: str) -> dict:
-    body = json.dumps(
-        {
-            "model": model,
-            "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.2,
-            "response_format": {"type": "json_object"},
-        }
-    ).encode()
+def call_gemini(prompt: str, api_key: str, model: str, json_mode: bool = True) -> dict:
+    request = {"model": model, "messages": [{"role": "user", "content": prompt}], "temperature": 0.2}
+    if json_mode:
+        request["response_format"] = {"type": "json_object"}
+    body = json.dumps(request).encode()
     req = urllib.request.Request(
         GEMINI_URL,
         data=body,
@@ -360,6 +377,8 @@ def call_gemini(prompt: str, api_key: str, model: str) -> dict:
         payload = json.loads(resp.read())
     text = payload["choices"][0]["message"]["content"] or ""
     text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip())
+    if not text.startswith("{") and "{" in text:
+        text = text[text.index("{"): text.rindex("}") + 1]
     picked = json.loads(text)
     if not isinstance(picked, dict) or not any(isinstance(picked.get(k), list) for k in SECTIONS):
         raise ValueError(f"unexpected reply: {text[:200]}")
@@ -376,14 +395,18 @@ def summarize(clusters: list[dict], now: datetime) -> tuple[dict | None, str | N
     prompt = PROMPT.format(candidates=candidate_lines(clusters, now), **{k: n for k, (_, n) in SECTIONS.items()})
     errors = []
     for model in models:
+        json_mode = True
         for attempt in range(3):
             try:
-                print(f"Asking {model} (attempt {attempt + 1})…")
-                return call_gemini(prompt, api_key, model), model, None
+                print(f"Asking {model} (attempt {attempt + 1}{'' if json_mode else ', no JSON mode'})…")
+                return call_gemini(prompt, api_key, model, json_mode), model, None
             except urllib.error.HTTPError as exc:
                 detail = exc.read().decode(errors="replace")[:300]
                 errors.append(f"{model}: HTTP {exc.code} {detail}")
                 print(f"  {errors[-1]}", file=sys.stderr)
+                if exc.code == 400 and json_mode:
+                    json_mode = False  # the endpoint may not accept response_format
+                    continue
                 if exc.code in (400, 401, 403, 404):
                     break  # bad model name or key; retrying won't help
             except Exception as exc:  # noqa: BLE001

@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 from datetime import date as Date, datetime
 from html import escape
 from pathlib import Path
@@ -240,6 +241,12 @@ def render_page(rec: dict, prev_day: str | None, next_day: str | None, is_index:
 """
 
 
+def md(text: str) -> str:
+    """Make feed text safe in issue Markdown: no @-mentions, no broken links."""
+    text = text.replace("@", "@\u200b").replace("#", "#\u200b")
+    return re.sub(r"([\\\[\]*_`<>])", r"\\\1", text)
+
+
 def issue(rec: dict) -> dict:
     owner_repo = os.environ.get("GITHUB_REPOSITORY", "chdinesh1089/claude-playground")
     owner, repo = owner_repo.split("/", 1)
@@ -248,10 +255,10 @@ def issue(rec: dict) -> dict:
     top = (rec.get("sections") or {}).get("top") or []
     for i, s in enumerate(top, 1):
         link = (s.get("links") or [{}])[0].get("url")
-        head = f"[{s['headline']}]({link})" if link else s["headline"]
-        lines.append(f"{i}. **{head}** — {s.get('summary', '')}")
+        head = f"[{md(s['headline'])}](<{link}>)" if link else md(s["headline"])
+        lines.append(f"{i}. **{head}** — {md(s.get('summary', ''))}")
     if rec["status"] != "ok":
-        lines += ["", f"⚠️ Status: `{rec['status']}` — {rec.get('error') or ''}"]
+        lines += ["", f"⚠️ Status: {rec['status']} — {md(rec.get('error') or '')}"]
     return {"title": f"📰 Daily Briefing — {long_date(rec['date'])}", "body": "\n".join(lines)}
 
 
