@@ -1,0 +1,80 @@
+name: Daily News Briefing
+
+on:
+  schedule:
+    # 11:13 UTC ≈ 6:13 AM America/Chicago (CDT) / 5:13 AM (CST). Scheduled runs
+    # often start late, so this leaves slack to be ready by ~7:30 AM Central.
+    - cron: "13 11 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: daily-news-briefing
+  cancel-in-progress: false
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch and summarize news
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Optional repo variable to pin a different Gemini model.
+          NEWS_MODEL: ${{ vars.NEWS_MODEL }}
+        run: python scripts/fetch_news.py
+
+      - name: Build pages
+        run: |
+          python scripts/build_news.py --issue "$RUNNER_TEMP/issue.json"
+          python scripts/build_apps_index.py
+
+      - name: Commit and push updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A data/news aiapps/daily-briefing index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "Update daily news briefing ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+            git pull --rebase
+            git push
+          else
+            echo "No changes to commit"
+          fi
+
+      - name: Open today's issue and close the previous one
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const { title, body } = JSON.parse(fs.readFileSync(`${process.env.RUNNER_TEMP}/issue.json`, 'utf8'));
+            const { owner, repo } = context.repo;
+            const label = 'daily-briefing';
+
+            const open = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: 'open', labels: label, per_page: 100,
+            });
+            let issue = open.find((i) => i.title === title);
+            if (issue) {
+              // Re-run on the same day: refresh the body instead of a duplicate issue.
+              await github.rest.issues.update({ owner, repo, issue_number: issue.number, body });
+            } else {
+              issue = (await github.rest.issues.create({ owner, repo, title, body, labels: [label] })).data;
+            }
+            for (const old of open) {
+              if (old.number === issue.number) continue;
+              await github.rest.issues.update({
+                owner, repo, issue_number: old.number, state: 'closed', state_reason: 'completed',
+              });
+            }
+            core.notice(`Briefing issue: ${issue.html_url}`);

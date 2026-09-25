@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Briefing</title>
+<meta name="description" content="A 3-minute morning read: top US, India and world news with links to the full stories. Updated daily.">
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e;
+  --muted: #7a7873; --border: rgba(11,11,11,0.10); --accent: #2a78d6;
+  --accent-soft: rgba(42,120,214,0.10); --warn-bg: #fdf3e1; --warn-ink: #7a4b00;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #f4f4f2; --ink-2: #c3c2b7;
+    --muted: #8f8d86; --border: rgba(255,255,255,0.10); --accent: #5c9eea;
+    --accent-soft: rgba(92,158,234,0.14); --warn-bg: #2d2412; --warn-ink: #f0c874;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --ink: #f4f4f2; --ink-2: #c3c2b7;
+  --muted: #8f8d86; --border: rgba(255,255,255,0.10); --accent: #5c9eea;
+  --accent-soft: rgba(92,158,234,0.14); --warn-bg: #2d2412; --warn-ink: #f0c874;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 64px; }
+body { margin: 0; background: var(--page); color: var(--ink);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%; }
+main { max-width: 680px; margin: 0 auto; padding: 28px 16px 48px; }
+header .kicker { color: var(--accent); font-size: 13px; font-weight: 600;
+  letter-spacing: .06em; text-transform: uppercase; margin: 0; }
+h1 { font-size: 28px; line-height: 1.2; font-weight: 700; margin: 4px 0 6px; letter-spacing: -.01em; }
+.sub { color: var(--muted); font-size: 14px; margin: 0; }
+nav.jump { position: sticky; top: 0; z-index: 2; background: var(--page);
+  display: flex; gap: 6px; overflow-x: auto; padding: 12px 0; margin: 12px 0 4px;
+  border-bottom: 1px solid var(--border); scrollbar-width: none; }
+nav.jump::-webkit-scrollbar { display: none; }
+nav.jump a { flex: none; font-size: 14px; color: var(--ink-2); text-decoration: none;
+  padding: 5px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
+nav.jump a:hover, nav.jump a:focus-visible { color: var(--accent); border-color: var(--accent); }
+.notice { background: var(--warn-bg); color: var(--warn-ink); border-radius: 10px;
+  padding: 10px 14px; font-size: 14px; margin: 16px 0 0; }
+section { margin-top: 28px; }
+h2 { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 4px; }
+ol { list-style: none; margin: 0; padding: 0; }
+li.story { padding: 14px 0; border-bottom: 1px solid var(--border); }
+li.story:last-child { border-bottom: 0; }
+.top li.story { display: grid; grid-template-columns: 28px 1fr; }
+.num { color: var(--accent); font-weight: 700; font-size: 18px; line-height: 1.35; }
+.headline { font-size: 17px; font-weight: 600; line-height: 1.35; color: var(--ink);
+  text-decoration: none; }
+.top .headline { font-size: 18px; }
+a.headline:hover, a.headline:focus-visible { color: var(--accent); text-decoration: underline; }
+.summary { color: var(--ink-2); margin: 4px 0 0; }
+.why { margin: 6px 0 0; font-size: 14px; color: var(--ink-2); background: var(--accent-soft);
+  border-radius: 6px; padding: 4px 8px; display: inline-block; }
+.why b { color: var(--accent); font-weight: 600; }
+.meta { color: var(--muted); font-size: 13px; margin: 6px 0 0; }
+.meta a { color: var(--muted); }
+.meta a:hover { color: var(--accent); }
+.empty { color: var(--muted); font-size: 14px; padding: 8px 0; }
+footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--border);
+  color: var(--muted); font-size: 13px; }
+.days { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 12px; font-size: 15px; }
+.days a { color: var(--accent); text-decoration: none; }
+.days a:hover { text-decoration: underline; }
+footer p { margin: 6px 0; }
+@media (max-width: 420px) { h1 { font-size: 24px; } .top li.story { grid-template-columns: 24px 1fr; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+<p class="kicker">Daily Briefing</p>
+<h1>Coming soon</h1>
+<p class="sub">Updates every morning</p>
+</header>
+<nav class="jump" aria-label="Sections"></nav>
+<p class="notice">No briefing yet. The first one appears after the next daily run.</p>
+<p class="empty">No stories in this edition.</p>
+<footer>
+<div class="days"><span></span><span></span></div>
+<p>Ranked by how many outlets cover each story. Headlines link to the original reporting.</p>
+<p>Sources: .</p>
+</footer>
+</main>
+<script>
+document.querySelectorAll('time[data-rel]').forEach(function (el) {
+  var h = (Date.now() - Date.parse(el.getAttribute('datetime'))) / 36e5;
+  if (!(h >= 0) || h > 36) return;
+  el.textContent = h < 1 ? Math.max(1, Math.round(h * 60)) + 'm ago' : Math.round(h) + 'h ago';
+});
+</script>
+</body>
+</html>

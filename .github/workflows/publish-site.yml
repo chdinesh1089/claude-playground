@@ -7,6 +7,7 @@ on:
       - "aiapps/**"
       - "scripts/build_apps_index.py"
       - "scripts/build_site.py"
+      - "scripts/build_news.py"
   workflow_dispatch: {}
 
 permissions:
@@ -31,6 +32,7 @@ jobs:
       - name: Build site
         run: |
           python scripts/build_site.py
+          python scripts/build_news.py
           python scripts/build_apps_index.py
 
       - name: Commit and push updates

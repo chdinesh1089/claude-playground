@@ -15,7 +15,7 @@ if printf '%s' "$cmd" | grep -Eq 'git[[:space:]]+add|commit[^;&|]*[[:space:]]-[a
   files=$(printf '%s\n%s\n' "$files" "$(git status --porcelain --untracked-files=all | cut -c4-)")
 fi
 
-relevant=$(printf '%s\n' "$files" | grep -Ev '^(data/|index\.html$|aiapps/flight-price-tracker/index\.html$)' | grep -v '^$' || true)
+relevant=$(printf '%s\n' "$files" | grep -Ev '^(data/|index\.html$|aiapps/flight-price-tracker/index\.html$|aiapps/daily-briefing/[^/]+\.html$)' | grep -v '^$' || true)
 [ -z "$relevant" ] && exit 0
 printf '%s\n' "$files" | grep -qx 'CLAUDE.md' && exit 0
 
