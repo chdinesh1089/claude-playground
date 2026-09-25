@@ -18,6 +18,7 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
@@ -34,7 +35,9 @@ PER_REGION = 50  # candidates reserved for each feed region before the rest fill
 
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
 # NEWS_MODEL (set in the workflow) is tried first; the rest are fallbacks.
-DEFAULT_MODELS = ["gemini-flash-latest", "gemini-2.5-flash", "gemini-flash-lite-latest"]
+# gemini-2.5-flash is closed to new API keys (404), so it's not listed. The lite
+# model is the last resort: it's more likely to "correct" names from memory.
+DEFAULT_MODELS = ["gemini-flash-latest", "gemini-3.8-flash", "gemini-flash-lite-latest"]
 
 # Section id -> (heading, how many items). Order is the page order.
 SECTIONS = {
@@ -56,7 +59,7 @@ FEEDS = [
     ("ABC News", "us", "https://feeds.abcnews.com/abcnews/topstories"),
     ("Google News US", "us", "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en"),
     ("The Hindu", "india", "https://www.thehindu.com/news/national/feeder/default.rss"),
-    ("Indian Express", "india", "https://indianexpress.com/section/india/feed/"),
+    ("India Today", "india", "https://www.indiatoday.in/rss/home"),
     ("NDTV", "india", "https://feeds.feedburner.com/ndtvnews-top-stories"),
     ("Hindustan Times", "india", "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"),
     ("Times of India", "india", "https://timesofindia.indiatimes.com/rssfeedstopstories.cms"),
@@ -66,7 +69,8 @@ FEEDS = [
     ("The Guardian", "world", "https://www.theguardian.com/world/rss"),
     ("Al Jazeera", "world", "https://www.aljazeera.com/xml/rss/all.xml"),
     ("New York Times", "world", "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"),
-    ("CNBC", "business_tech", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
+    ("MarketWatch", "business_tech", "https://feeds.content.dowjones.io/public/rss/mw_topstories"),
+    ("Economic Times", "business_tech", "https://economictimes.indiatimes.com/rssfeedstopstories.cms"),
     ("New York Times", "business_tech", "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"),
     ("Mint", "business_tech", "https://www.livemint.com/rss/news"),
     ("Ars Technica", "business_tech", "https://feeds.arstechnica.com/arstechnica/index"),
@@ -116,6 +120,12 @@ def parse_date(s: str) -> datetime | None:
     return dt.astimezone(timezone.utc)
 
 
+def domain(url: str) -> str:
+    """Host without www. Not the registrable domain: Times of India and Economic
+    Times both live on indiatimes.com."""
+    return (urllib.parse.urlsplit(url).hostname or "").lower().removeprefix("www.")
+
+
 def local(tag: str) -> str:
     return tag.rsplit("}", 1)[-1]
 
@@ -147,12 +157,13 @@ def parse_feed(xml_bytes: bytes, source: str, region: str) -> list[dict]:
             _text(fields.get("pubDate")) or _text(fields.get("published"))
             or _text(fields.get("updated")) or _text(fields.get("date"))
         )
-        outlet = source
+        outlet, site = source, domain(link)
         if source.startswith("Google News"):
             # Google News titles end in " - Outlet"; <source> names the outlet.
             src = fields.get("source")
             if src is not None and _text(src):
                 outlet = _text(src)
+                site = domain(src.get("url", "")) or outlet.lower()
             if title.endswith(" - " + outlet):
                 title = title[: -len(" - " + outlet)]
             if blurb.startswith(title):  # its description just repeats the headline
@@ -164,6 +175,7 @@ def parse_feed(xml_bytes: bytes, source: str, region: str) -> list[dict]:
                 "title": title,
                 "link": link.strip(),
                 "source": outlet,
+                "site": site,
                 "feed": source,
                 "region": region,
                 "blurb": blurb if blurb != title else "",
@@ -202,6 +214,13 @@ def fetch_all() -> tuple[list[dict], list[str], list[dict]]:
                 ok.append(source)
                 items.extend(got)
                 print(f"  {len(got):3d} items  {source}  {url}")
+    # Name each site the way our own feeds do ("nytimes.com" -> "New York Times").
+    names = {}
+    for it in items:
+        if not it["feed"].startswith("Google News"):
+            names.setdefault(it["site"], it["source"])
+    for it in items:
+        it["source"] = names.get(it["site"], it["source"])
     return items, sorted(set(ok)), failed
 
 
@@ -247,9 +266,10 @@ def cluster(items: list[dict], now: datetime) -> list[dict]:
     out = []
     for c in clusters:
         its = c["items"]
-        outlets = []
+        outlets, sites = [], set()
         for it in its:
-            if it["source"] not in outlets:
+            if it["site"] not in sites:
+                sites.add(it["site"])
                 outlets.append(it["source"])
         regions = sorted(it["region"] for it in its)
         lead = next((it for it in its if it["blurb"]), its[0])
@@ -261,6 +281,8 @@ def cluster(items: list[dict], now: datetime) -> list[dict]:
                 "published": max((it["published"] for it in its if it["published"]), default=None),
                 "outlets": outlets,
                 "links": [{"source": it["source"], "url": it["link"]} for it in its],
+                # Everything the feeds said about this story, to fact-check Gemini's wording.
+                "text": " ".join(f'{it["title"]} {it["blurb"]}' for it in its),
             }
         )
     for c in out:
@@ -320,10 +342,15 @@ Rules:
   event, and minor sports (cricket or other sports only if genuinely major).
 - If several ids are the same story, list them all in "ids" (most detailed
   first).
-- "headline": a plain, factual headline of at most 12 words. No clickbait.
+- "headline": a plain, factual headline of at most 12 words, in sentence case
+  (capitalize only the first word and proper nouns). No clickbait.
 - "summary": one sentence of at most 30 words stating what happened. Use only
   facts present in the candidate lines. Never invent numbers, names or quotes.
-- "why" (top stories only): at most 15 words on why it matters to this reader.
+- Copy names of people, places and organizations exactly as the candidate
+  lines give them. Your own knowledge may be out of date: never replace or
+  "correct" a name, title or office-holder from memory.
+- "why" (top stories only): at most 15 words on why it matters. Mention an
+  India or Indian-American angle only when the story really has one.
 - If a section has fewer good stories than asked, return fewer.
 
 Reply with JSON only, in exactly this shape:
@@ -412,11 +439,35 @@ def summarize(clusters: list[dict], now: datetime) -> tuple[dict | None, str | N
             except Exception as exc:  # noqa: BLE001
                 errors.append(f"{model}: {type(exc).__name__}: {exc}")
                 print(f"  {errors[-1]}", file=sys.stderr)
-            time.sleep(10 * (attempt + 1))
+            time.sleep(30 * (attempt + 1))  # 503 "high demand" spikes last a while
     return None, None, errors[-1] if errors else "unknown error"
 
 
 # ------------------------------------------------------------ assemble ----
+
+ALWAYS_OK = set(
+    "us u.s. usa america american americans un uk eu nato ai ceo gdp covid monday tuesday wednesday "
+    "thursday friday saturday sunday january february march april may june july august september "
+    "october november december".split()
+)
+
+
+def unsupported_names(text: str, source: str) -> list[str]:
+    """Capitalized words (other than a sentence's first) that the feeds never used.
+    Catches a model "correcting" a name from stale memory (e.g. a former pope)."""
+    source = source.lower()
+    bad = []
+    for sentence in re.split(r"(?<=[.!?:;])\s+", text):
+        for word in re.findall(r"[A-Za-z][A-Za-z.'’-]*", sentence)[1:]:
+            w = re.sub(r"['’]s$", "", word).strip(".-'’").lower()
+            if not word[0].isupper() or len(w) < 3 or w in ALWAYS_OK or w in source:
+                continue
+            # Demonyms: "Indian" <- India, "Israeli" <- Israel, "Chinese" <- China.
+            if any(w.endswith(suf) and w[: -len(suf)] in source for suf in ("n", "an", "ian", "i", "ese", "ish")):
+                continue
+            bad.append(word)
+    return bad
+
 
 def story(c: dict, headline: str | None = None, summary: str | None = None, why: str | None = None,
           extra: list[dict] = ()) -> dict:
@@ -424,6 +475,14 @@ def story(c: dict, headline: str | None = None, summary: str | None = None, why:
     for e in extra:  # other clusters Gemini said are the same story
         merged["links"] = merged["links"] + e["links"]
         merged["outlets"] = merged["outlets"] + [o for o in e["outlets"] if o not in merged["outlets"]]
+        merged["text"] = merged["text"] + " " + e["text"]
+    if headline or summary:
+        bad = unsupported_names(f"{headline or ''}. {summary or ''}", merged["text"])
+        if bad:
+            print(f"  kept the feed's wording for {c['id']}: Gemini used {bad} not in the feeds", file=sys.stderr)
+            headline = summary = why = None
+    if why and unsupported_names(why, merged["text"]):
+        why = None
     out = {
         "headline": clean(headline or c["title"], 160),
         "summary": clean(summary or c["blurb"], 320),

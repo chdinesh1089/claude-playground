@@ -134,9 +134,21 @@ Don't use a CDN.
   stories aren't crowded out) go to Gemini in one call through its
   OpenAI-compatible endpoint (`GEMINI_URL`, Bearer key, JSON mode, retried
   without JSON mode on HTTP 400). Models are tried in order: `NEWS_MODEL`,
-  then `DEFAULT_MODELS`. Never log or print the key.
+  then `DEFAULT_MODELS` (`gemini-flash-latest`, `gemini-3.8-flash`, then the
+  lite model as a last resort). `gemini-2.5-flash` returns 404 for new keys.
+  `gemini-flash-latest` sometimes returns 503 "high demand", so retries wait
+  30 s, then 60 s. Never log or print the key.
+- Gemini can "correct" names from stale memory (the lite model wrote "Pope
+  Francis" for a Pope Leo story). The prompt forbids it, and
+  `unsupported_names()` checks every capitalized non-initial word of the
+  headline and summary against the feeds' text for that story. On a miss, that
+  story keeps the outlet's own headline and blurb, and the log says so.
+- Outlets are identified by hostname without `www.`, so Google News copies
+  of a story don't count as extra outlets. Don't collapse to the registrable
+  domain: Times of India and Economic Times share `indiatimes.com`.
 - A feed that errors or returns no items goes in `feeds_failed`; fix or
-  replace its URL in `FEEDS` when the page footer lists it. The prompt is written
+  replace its URL in `FEEDS` when the page footer lists it. Indian Express and
+  CNBC return 403 to GitHub runners, so they were replaced. The prompt is written
   for an Indian reader living in the US (US immigration/visas and US-India
   news get priority). Sections and sizes are defined in `SECTIONS`: top 5, US 6,
   India 6, world 4, business & tech 4.
@@ -207,6 +219,9 @@ Keys: Space, ←/→, R.
 
 Newest first. Add one line per change.
 
+- 2026-09-25: Daily Briefing, after the first live run: model list fixed
+  (2.5-flash is gone for new keys, longer 503 backoff), a name-grounding check,
+  outlets deduped by host, 403 feeds replaced, actions moved to Node 24 versions.
 - 2026-09-25: Daily Briefing review fixes: per-region candidate quota,
   JSON-mode fallback, empty feeds count as failed, issue text can't @-mention.
 - 2026-09-25: Added the Daily Briefing (`aiapps/daily-briefing/`): RSS feeds
