@@ -1,0 +1,491 @@
+{
+  "date": "2026-09-27",
+  "generated_at": "2026-09-27T15:40:13+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "H-1B visa system faces major changes under Trump administration",
+        "summary": "The US H-1B visa system could look significantly different within a year as federal investigators widen a probe into alleged misuse of the foreign-worker programme.",
+        "outlets": 2,
+        "published": "2026-09-27T13:59:06+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/nri/work/h-1b-visa-under-the-scanner-trump-admin-signals-major-changes-to-system-in-365-days/articleshow/134521356.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/we-have-handcuffs-ready-trump-admin-warns-of-major-h-1b-changes-as-visa-fraud-crackdown-widens/articleshow/134519521.cms"
+          }
+        ],
+        "why": "Directly impacts Indian professionals in the US relying on H-1B visas."
+      },
+      {
+        "headline": "Trump rejects Iran's seven-day plan to reopen Strait of Hormuz",
+        "summary": "President Trump rejected a seven-day plan presented by Iran to reopen the Strait of Hormuz and return to negotiations for a lasting end to the war.",
+        "outlets": 9,
+        "published": "2026-09-27T15:01:20+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-7-day-proposal/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/26/trump-dismiss-iran-seven-day-peace-deal-hormuz"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-insists-on-diplomatic-solution-after-trump-rejects-peace-plan/articleshow/134513218.cms"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/09/26/nx-s1-5981990/trump-rejects-iranian-deal-strait-of-hormuz"
+          }
+        ],
+        "why": "Major escalation in the Middle East conflict affecting global oil prices and economic stability."
+      },
+      {
+        "headline": "Russia and other countries back India's bid for permanent UNSC seat",
+        "summary": "Russia has backed India's bid for a permanent seat on the UN Security Council, while opposing additional seats for Western countries.",
+        "outlets": 4,
+        "published": "2026-09-27T06:27:31+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/russia-backs-indias-bid-for-a-permanent-seat-on-the-united-nations-security-council/articleshow/134515820.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/russia-other-countries-back-indias-bid-for-permanent-seat-at-unsc-lavrov-opposes-additional-seats-to-western-nations-11790484808113.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/at-un-russia-backs-indias-bid-for-permanent-security-council-seat-101790471089996.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/un-security-council-seat-2028-29-tajikistan-says-bid-is-about-peace-not-status-ptag-3004333-2026-09-27?utm_source=rss"
+          }
+        ],
+        "why": "Significant diplomatic milestone for India's global geopolitical standing."
+      },
+      {
+        "headline": "Nor'easter turns deadly as it lashes Northeast with rain and wind",
+        "summary": "A powerful nor'easter brought heavy rain, destructive winds, and flooding from Delaware up to Massachusetts, leaving over 130,000 without power.",
+        "outlets": 6,
+        "published": "2026-09-27T15:28:23+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/northeast-lashed-noreaster-rain-wind-flooding/story?id=136794208"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ck1wxxzn5jndo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/one-dead-hundreds-of-flights-cancelled-power-lines-hit-as-noreaster-storm-batters-parts-of-us-what-we-know-so-far-11790479673409.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/powerful-noreaster-floods-northeast-leaves-over-130000-without-power-as-high-tides-threaten-coast"
+          }
+        ],
+        "why": "Severe weather disruption affecting millions across the US Northeast."
+      },
+      {
+        "headline": "House Democrats plan vast oversight of Trump administration",
+        "summary": "House Democrats are planning extensive oversight of the Trump administration, with impeachment cited as an option by party leaders.",
+        "outlets": 2,
+        "published": "2026-09-26T21:53:39+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/house-democrats-plan-vast-oversight-of-trump-administration-impeachment-is-an-option"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/wireStory/house-democrats-plan-vast-oversight-trump-administration-impeachment-136778557"
+          }
+        ],
+        "why": "Major domestic political showdown in US governance."
+      }
+    ],
+    "us": [
+      {
+        "headline": "White House bars CNN from travelling with Trump on Air Force One",
+        "summary": "CNN was excluded from flying with US President Donald Trump for his trip to Tennessee, sparking a standoff between the network and the White House.",
+        "outlets": 3,
+        "published": "2026-09-27T14:38:00+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cxq633770y16o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/26/business/media/trump-white-house-tv-pool-cnn.html"
+          },
+          {
+            "source": "Politico",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPY3lTN3RJYm1ndDQ4SkRjLVJibDdWa2l4YzB0S1M1cVVfMTBzNWJBNHhsUHU5clMyVlpINWJxWnR0Y1NsdFRiNTIwQUY0VS1SaGsxRXFmWlZPQndhTk56US1HUThVaXI3WEI5MktnQm53cWJtVjQ3TVZJck96NDk5Z0dGQ3J5RlN5eFdZZA?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Sen. John Fetterman says Democrats could take back Senate",
+        "summary": "Democratic Sen. John Fetterman of Pennsylvania stated that it is entirely possible his party wins control of the Senate in the upcoming midterm elections.",
+        "outlets": 1,
+        "published": "2026-09-27T13:48:52+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/john-fetterman-democrats-senate-midterm-plans/"
+          }
+        ]
+      },
+      {
+        "headline": "Ramaswamy and Acton clash in Ohio governor's race",
+        "summary": "The Ohio governor's race pits former presidential candidate Vivek Ramaswamy against Democrat Amy Acton in a rare Democratic pickup opportunity.",
+        "outlets": 1,
+        "published": "2026-09-27T12:06:23+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/09/27/nx-s1-5976743/ohio-governors-race-ramaswamy-and-acton-clash-in-rare-democratic-pickup-opportunity"
+          }
+        ]
+      },
+      {
+        "headline": "Only 3% of US sickle cell patients receive red blood cell exchange",
+        "summary": "Researchers found that various factors block US sufferers of sickle cell disease from receiving an effective and widely available treatment.",
+        "outlets": 1,
+        "published": "2026-09-27T12:00:04+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/society/2026/sep/27/sickle-cell-patients-red-blood-cell-exchange"
+          }
+        ]
+      },
+      {
+        "headline": "Smithsonian becomes latest front in Trump's culture war",
+        "summary": "The Smithsonian has faced withering pressure and scrutiny from the Trump administration as part of ongoing cultural policy battles.",
+        "outlets": 1,
+        "published": "2026-09-27T11:00:12+00:00",
+        "links": [
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/tech-policy/2026/09/how-the-smithsonian-became-the-latest-front-in-trumps-culture-war/"
+          }
+        ]
+      },
+      {
+        "headline": "Daylight Saving Time 2026 to end on November 1",
+        "summary": "Clocks across most of the US will move back by one hour on November 1, giving Americans an extra hour of sleep after Halloween.",
+        "outlets": 1,
+        "published": "2026-09-27T15:07:14+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/daylight-saving-time-2026-why-americans-will-get-an-extra-hour-on-november-1-after-halloween-11790518620317.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Amit Shah Flags Off India's 1st LNG-Powered Train From Gujarat's Sabarmati",
+        "summary": "The initiative is aimed at reducing dependence on conventional diesel fuel and promoting the use of alternative energy sources in railway operations.",
+        "outlets": 4,
+        "published": "2026-09-27T14:55:45+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/amit-shah-flags-off-indias-1st-lng-powered-train-from-gujarats-sabarmati-12105888#publisher=newsstand"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/transportation/railways/indias-first-lng-powered-train-is-here-1400-hp-power-cars-to-replace-nearly-40-of-diesel-use-while-cutting-carbon-dioxide-nitrogen-oxides-particulate-emissions/articleshow/134519987.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/pm-modis-mann-ki-baat-top-quotes-from-surgical-strike-to-amla-ashok-singhal-and-most-beautiful-tribute-to-bapu-11790501389057.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPZ1psQ1VXYVBHeDFyb3BBTUFwTDE2YlpaN005dWF5N3hQOWdsNmo4bmgyVGpiTXdzdlhrQ05Od2tJbDN0bmljazF5RzJiZmk3MUdqZXozQVNJckZsYWFhM2tDckJxSGZaOTBwNGQweDNSZ1RsVEc4d2Y5RVZ5cE1HeWRvZHR4eGthWWI1dFNVaE1aTnVBY2NPYjZGM3ljMmptcnBOdkU3V2wyelZXaF9PTFRJaGxBcERXMi1tWjZrRXlkSWU2aEtBTGdnQ25vV0dhOUpNS3ZWMjRuaWdsMUYzWEtRTTlEQV9OZ3kyeVBhUC1jMlE?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "LPU students protest on highway over unverified rape claims",
+        "summary": "Students at Lovely Professional University protested against unverified claims of a campus rape, leading to unrest and blocked national highways.",
+        "outlets": 4,
+        "published": "2026-09-27T14:59:43+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/chandigarh/lpu-row-escalates-police-lathicharge-students-after-highway-blockade-stone-pelting-reported/articleshow/134522175.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/students-protesting-outside-lovely-professional-university-clash-with-police-vehicles-set-on-fire-3004320-2026-09-27?utm_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/private-university-students-hold-protest-block-highway-over-unverified-gangrape-report-lovely-professional-university/articleshow/134514408.cms"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/punjab/punjab-varsity-students-protest-block-highway-over-rape-of-female-student/article71515254.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi minister Parvesh Verma caught on video slapping man",
+        "summary": "Delhi PWD Minister Parvesh Verma was captured on video unexpectedly slapping a young man during a road inspection in Tilak Nagar.",
+        "outlets": 3,
+        "published": "2026-09-27T10:43:54+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/delhi/oye-maar-kisse-raha-hai-delhi-minister-parvesh-verma-slaps-man-during-road-inspection-aap-shares-video/articleshow/134518513.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/grabbed-by-neck-threatened-to-kill-me-man-slapped-by-parvesh-verma-alleges-assault-by-bjp-workers-aap-viral-video-101790517293780.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQM3dNZ0tMM1E1RXprV21EUF9NdDE3dzd2Uk9DazF4a0hhSEVaYkd6Q3NIZ2g1ME8tYUNubFB2U3ctcEVkXzN2LXR4T3BaV0FZbzVzRWZZRnBYaktDNmF4T1BWN1NZdEJ3N3NKbUZqcUVTcG9xcElBLUxTWGMzbmc4U1pZbEJmQ0h1M185M0VmQU9md3FDVUtxM1dJNzRqZkV5RHFzYXlvNEY?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Floods and landslides kill at least 56 people in India",
+        "summary": "Authorities reported an increasing death toll over three days as heavy monsoon rivers rose above danger levels in parts of India and Nepal.",
+        "outlets": 1,
+        "published": "2026-09-27T12:06:41+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/9/27/floods-and-landslides-kill-at-least-56-people-in-india-12-in-nepal?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Tamil Nadu CM Vijay to launch one-gram gold ring scheme",
+        "summary": "Tamil Nadu Chief Minister Vijay is set to launch a one-gram gold ring scheme for newborns in government hospitals starting from June.",
+        "outlets": 2,
+        "published": "2026-09-27T09:03:11+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/tamil-nadu-cm-vijay-to-launch-one-gram-gold-ring-scheme-for-newborns-in-government-hospitals-101790498445615.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/tamil-nadu-cm-vijay-to-launch-1-gram-gold-ring-scheme-for-newborns-on-monday-sept-28/articleshow/134514254.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Amritsar Police arrest two individuals over pro-Khalistan graffiti",
+        "summary": "Amritsar Police have arrested two people in connection with the appearance of pro-Khalistan graffiti in the city.",
+        "outlets": 1,
+        "published": "2026-09-27T06:59:24+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/amritsar-police-arrest-2-over-pro-khalistan-graffiti-probe-us-links/articleshow/134516093.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Two mass shootings in South Africa leave 27 dead",
+        "summary": "Two separate mass shooting attacks hours apart left 27 dead in South Africa amidst ongoing struggles against gang-related armed violence.",
+        "outlets": 6,
+        "published": "2026-09-27T14:09:22+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ck5ywnp075d1o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/27/mass-shootings-south-africa-johannesburg-cape-town"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/09/27/nx-s1-5982488/south-africa-mass-shootings-killed-38-week"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/27/world/africa/south-africa-mass-shootings-tavern.html"
+          }
+        ]
+      },
+      {
+        "headline": "Five arrested near UK air base used by US forces",
+        "summary": "British police arrested five men close to the RAF Fairford air base on suspicion of offenses under the terrorism and explosives acts.",
+        "outlets": 10,
+        "published": "2026-09-27T15:36:20+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/england-raf-fairford-us-military-air-force-bomb-disposal/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/27/world/europe/raf-fairford-airbase-arrests.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/uk-police-arrest-5-men-near-an-air-base-used-by-u-s-on-suspicion-of-preparing-a-terrorist-act"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/5-arrested-for-terrorist-activity-near-uk-airbase-used-by-us-in-iran-war-12105850#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Photos: Pope Leo draws hundreds of thousands for open-air Mass in Paris",
+        "summary": "Pope Leo XIV celebrates an open-air mass for hundreds of thousands of believers on the Champs-Elysees.",
+        "outlets": 3,
+        "published": "2026-09-27T08:22:01+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/gallery/2026/9/27/photos-pope-leo-draws-hundreds-of-thousands-for-open-air-mass-in-paris?traffic_source=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/pope-leo-draws-800000-people-to-central-paris-for-open-air-mass-on-iconic-square"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/26/pope-leo-celebrates-open-air-mass-before-700000-people-in-paris"
+          }
+        ]
+      },
+      {
+        "headline": "Swiss voters reject stricter neutrality rules for Nato cooperation",
+        "summary": "Swiss voters decisively rejected a proposal by 70% to tighten centuries-old neutrality rules that would have curbed cooperation with Nato.",
+        "outlets": 2,
+        "published": "2026-09-27T15:05:21+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/27/swiss-vote-reject-stricter-neutrality-rules-nato"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/9/27/swiss-voters-set-to-reject-tighter-neutrality-rules-in-referendum?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Mobile retailers protest proposed 0.4% MDR on UPI payments",
+        "summary": "Mobile retailers and trade associations have called for merchant UPI payments to continue under the existing zero-MDR structure, prompting a Supreme Court plea.",
+        "outlets": 4,
+        "published": "2026-09-27T13:34:36+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/no-upi-day-on-october-2-mobile-retailers-protest-proposed-0-4-mdr-on-payments-11790513884544.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/mobile-phone-retailers-to-protest-against-upi-mdr-charges-on-october-2-101790500699886.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/law-news/story/upi-mdr-supreme-court-plea-merchant-payments-rs-2000-threshold-ptag-3004039-2026-09-27?utm_source=rss"
+          },
+          {
+            "source": "Rediff",
+            "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQRzhkbkkyTTQ3LVNRY2FNaFdEYWhFT1ByNFpmRWlKMXN2WmhwWkNPbEdHWjJTLWZYRzlxaDlJM1NiX0xjR2RXWnc2Z0pkanU4VTRMYUlneWlyN01sQVZaNmc2YjUtbDYwWjRzUEhJaDdxNDY4RG5kek5pYjIwRnUyTmVvdDEycGpmN3k5VC1KT19nLU14V0NodWNlM3NiSGFrT1pVWVZFem53VGlfOFlzVEthRDF6MWhwYnNQMDJ1SlRzV290S21XSWpBZDJHYWZ4NGlVck5TMDBLQjlfd0xv?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Nationwide bank strike called as RBI orders branches open",
+        "summary": "Branches of new generation private sector banks will remain open during a three-day nationwide bank strike approved by the Reserve Bank of India.",
+        "outlets": 3,
+        "published": "2026-09-27T15:03:26+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/bank-strike-tomorrow-nationwide-will-online-services-work-which-banks-open-hdfc-icici-axis-bank-ufbu-latest-news-101790519555537.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/wealth/save/bank-holiday-today-september-27-are-banks-open-or-closed-due-to-union-strike/articleshow/134485708.cms"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNNkJVVHRwX0Y0QnRKdWlHUVFFZ0YzeXRvX0JXY3B4eWxEZTIzeF9oQ1l1clBzbG4zMVJJaXBpdVZqWDBZRnZIQ3pjUFRtUldLVUlSdTdJWWxoSEg3eU1JUjRVNFdnSlFZRjJfc05tR2tCNjJDNFM0ZkVyeUNuaFBEb1c2VTV1VEpzUmN6WDBRX0ZJZDB1ZFo5NUdvVU1NR2I4V2pOTUJ3dzFKMUtJMVRfRnlaMnVjVzdoWUFScmxFSjFtSDJOdHZtWC1la0x2MDFIejl6RGdnVEdrVWxITkRNcG0yMNIB6gFBVV95cUxNYjZXQjQ2SS02OFdQd0RSNDNMYy0yZVVhOV9uSkpTRUd4TG9sYUh5eVdvb3NiRVhjNWp0Zk03ZXdPNDdGRmRONTRuZWFzQ2RicDN0bzZ0Ujd1NmJxRXlwNjV2dTJHM1hvRHZGclZqWEo2ak9qV0FSSS01eG0zQnhlNHdnZUhvcHhqWExLMlNkX0dkZS1xRWkwVERBS2ZCYkphNnkxTjNYQ25ncGNRS051dmQzRHlFaGY5WklIZk9WLVBVV3hSbjRvRzJxSzFDcjJUX1ptYWUtNFhuM3k2dnluMWlnME5GWjdtY3c?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Datacenter developers accused of skirting US pollution rules",
+        "summary": "Environmental groups warned that datacenter developers are manipulating the EPA's air pollution permitting process to avoid emission controls and scrutiny.",
+        "outlets": 1,
+        "published": "2026-09-27T14:00:06+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/sep/27/datacenter-developers-us-pollution-rules"
+          }
+        ]
+      },
+      {
+        "headline": "Job titles disappear as tech workers become 'technical staff'",
+        "summary": "The use of the generic title 'Member of the Technical Staff' has risen significantly among employees at top artificial intelligence companies.",
+        "outlets": 1,
+        "published": "2026-09-27T09:01:00+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/27/business/members-of-technical-staff-artificial-intelligence.html"
+          }
+        ]
+      }
+    ]
+  }
+}
