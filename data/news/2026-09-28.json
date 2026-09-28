@@ -1,0 +1,506 @@
+{
+  "date": "2026-09-28",
+  "generated_at": "2026-09-28T18:36:29+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "China and the U.S. pledge to cut tariffs on $60 billion in goods",
+        "summary": "The United States and China unveiled separate lists covering thousands of products to ease trade tensions before further negotiations.",
+        "outlets": 6,
+        "published": "2026-09-28T18:05:11+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/28/business/china-us-summit-tariffs.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/us-china-release-list-of-imported-goods-worth-30-billion-that-could-see-tariff-reductions-check-here-11790583301036.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/u-s-and-china-release-product-lists-for-tariff-cuts-after-trump-xi-meeting"
+          },
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/the-u-s-and-china-agree-to-60-billion-in-tariff-cuts-on-products-like-dolls-and-fireworks-rare-earths-remain-a-sticking-point-e4667872?mod=mw_rss_topstories"
+          }
+        ],
+        "why": "Bilateral trade shifts impact global markets and economic sentiment."
+      },
+      {
+        "headline": "SpaceX launches massive Starship into orbit for 1st time",
+        "summary": "SpaceX successfully achieved orbit with its biggest rocket yet, though the flight was ultimately cut short.",
+        "outlets": 8,
+        "published": "2026-09-28T18:22:07+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/spacex-launches-massive-starship-into-orbit-for-1st-time-flight-ends-early-12111518#publisher=newsstand"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/spacex-launches-starship-on-giant-rockets-first-flight-to-orbit/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/science/spacexs-supersized-starship-launches-into-orbit-for-the-first-time"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/science/spacexs-starship-rocket-launches-on-14th-flight-first-headed-to-orbit/articleshow/134544433.cms"
+          }
+        ],
+        "why": "Major aerospace milestone with implications for commercial satellite deployment."
+      },
+      {
+        "headline": "Trump administration rolls back Biden-era fuel economy standards",
+        "summary": "Regulators estimate the new rules will result in an average of 34.9 miles per gallon by model year 2031, down from an earlier projection of 50.4 mpg.",
+        "outlets": 7,
+        "published": "2026-09-28T18:30:59+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-fuel-economy-standards-biden-rules/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/28/climate/trump-gas-cars-mileage-standards.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Business/trump-administration-rolls-back-fuel-economy-standards-automakers/story?id=136818690"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/09/28/nx-s1-5918509/car-fuel-efficiency-cafe-standards-rollback"
+          }
+        ]
+      },
+      {
+        "headline": "Iran says it's up to Trump to choose between war and diplomacy",
+        "summary": "President Trump rejected Tehran's latest peace proposal, raising the prospect of a protracted war and pushing oil prices higher.",
+        "outlets": 5,
+        "published": "2026-09-28T18:01:40+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-talks-strait-of-hormuz/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/27/us/politics/iran-war-republicans-midterms-trump.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/mediators-still-working-on-u-s-iran-deal-after-trump-rejected-latest-tehran-proposal"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/mediators-working-to-broker-us-iran-deal-even-after-trump-rejected-latest-tehran-proposal/articleshow/134547104.cms"
+          }
+        ],
+        "why": "Escalating Middle East tensions directly impact global energy markets and oil prices."
+      },
+      {
+        "headline": "Marine Le Pen hails RN senate surge as 'milestone' towards French presidency",
+        "summary": "National Rally and its allies gained a record 14 seats in the French senate following an indirect vote by local officials.",
+        "outlets": 1,
+        "published": "2026-09-28T17:24:32+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/28/french-election-2026-far-right-senate-elections"
+          }
+        ],
+        "why": "Shifts the political balance in France ahead of upcoming presidential elections."
+      }
+    ],
+    "us": [
+      {
+        "headline": "DOJ asks Supreme Court to allow policy ending medical care for transgender inmates",
+        "summary": "The Trump administration asked the Supreme Court to revive a policy cutting off medical interventions and social accommodations for transgender inmates.",
+        "outlets": 2,
+        "published": "2026-09-28T16:52:12+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-supreme-court-transgender-inmate-treatments-bureau-of-prisons/"
+          },
+          {
+            "source": "CNN",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUGpRaTFkZjBxaERaVXU3bjRIX1hzdXY3OHdFVEtSb09laTBEZklJNEk5SG9TZ1BqSDB2X3Fnb3Bta0pEOHhhLTBVUzZFTklHRjJRdmt3UFRjTlpRT1RvQ0V1d2poMmdRZUlLb1FsUWpmbXZFR294LTctWHUzRk9MWXpfSFVtN2JKdXp0eWt5dU1hekpoRlk2M09NYlhXYk1EYXc?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "US prosecutors reopen case of alleged gang rape at Cornell University",
+        "summary": "The Tompkins County district attorney will revisit the decision not to pursue criminal charges after a civil lawsuit was filed.",
+        "outlets": 5,
+        "published": "2026-09-28T18:11:07+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c5wyzrm0n74ro?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/09/28/nx-s1-5983480/cornell-fraternity-rape-chi-phi-case-updates"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/district-attorney-reopens-case-alleged-cornell-university-gang/story?id=136806149"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/28/nyregion/cornell-chi-phi-fraternity-assault.html"
+          }
+        ]
+      },
+      {
+        "headline": "Trump to announce largest steel plant in U.S. history will be built in Iowa",
+        "summary": "The plant is expected to create 1,750 permanent jobs in Iowa, a White House official said.",
+        "outlets": 3,
+        "published": "2026-09-28T18:15:36+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-steel-plant-iowa/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/watch-live-trump-announces-new-steel-plant-project-in-iowa"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/trump-announce-new-15b-steel-plant-white-house/story?id=136821451"
+          }
+        ]
+      },
+      {
+        "headline": "Trump had private dinner with Anthropic CEO Dario Amodei",
+        "summary": "The dinner comes as Amodei has warned about the exponential growth of AI and called for safeguards rejected by the president.",
+        "outlets": 2,
+        "published": "2026-09-28T17:40:44+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-dario-amodei-anthropic-dinner/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/27/us/politics/trump-amodei-anthropic-artificial-intelligence.html"
+          }
+        ]
+      },
+      {
+        "headline": "Embarrassing breach at F.B.I. fuels fears of harm to its employees",
+        "summary": "The F.B.I. said in an internal memo that hackers may have stolen sensitive information on all of its employees.",
+        "outlets": 1,
+        "published": "2026-09-28T18:28:39+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/28/us/politics/fbi-shinyhunters-damage.html"
+          }
+        ]
+      },
+      {
+        "headline": "US midterms 2026: Elon Musk, Greg Brockman, Yass among billionaires funding political campaigns",
+        "summary": "As US midterm elections near, billionaires are donating primarily to Republicans, with Elon Musk leading contributions.",
+        "outlets": 1,
+        "published": "2026-09-28T18:29:07+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/us-midterms-2026-elon-musk-greg-brockman-yass-among-billionaires-funding-political-campaigns-mostly-republican-11790619133004.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Tukaram Mundhe's Maharashtra FDA suspends licence of Kyani cafe in Mumbai",
+        "summary": "The Maharashtra FDA suspended food licences and seized goods following alleged hygiene violations at the 122-year-old establishment.",
+        "outlets": 4,
+        "published": "2026-09-28T18:29:11+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/tukaram-mundhes-maharashtra-fda-suspends-licence-of-122-year-old-kyani-cafe-in-mumbai-heres-what-inspection-found-11790613345327.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/kyani-co-fssai-licence-suspended-what-tukaram-mundhe-led-maharashtra-fda-found-inside-mumbais-more-than-100-year-old-irani-cafe/articleshow/134546610.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/irani-cafe-kyani-and-co-in-mumbai-licence-cancelled-maharashtra-fda-scanner-tukaram-mundhe-rat-droppings-lizards-found-101790609344402.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/maharashtra/story/kyani-co-mumbai-fda-tukaram-mundhe-inspection-historic-irani-cafe-licence-suspended-hygiene-lapses-3005093-2026-09-28?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Collegium recommends 3 high court chief justices as Supreme Court judges",
+        "summary": "The collegium recommended the name of Justice Devendra Kumar Upadhyaya alongside two other high court chief justices.",
+        "outlets": 3,
+        "published": "2026-09-28T16:26:44+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-collegium-recommends-sunita-agarwal-devendra-upadhyaya-aparesh-singh-3005175-2026-09-28?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/collegium-recommends-3-high-court-chief-justices-as-supreme-court-judges-12110647#publisher=newsstand"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/3-high-court-chief-justices-recommended-for-elevation-to-supreme-court/articleshow/134545684.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court directs CBSE to extend 3rd language policy exemption to Class 6",
+        "summary": "The bench directed that Class 6 students be given the same comfort as Class 7 students regarding the policy.",
+        "outlets": 3,
+        "published": "2026-09-28T10:30:06+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/grant-same-comfort-says-sc-exempting-class-6-students-from-3-language-policy-101790591348806.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/education-today/news/story/supreme-court-asks-cbse-to-give-class-6-same-third-language-exemption-as-class-7-3004748-2026-09-28?utm_source=rss"
+          },
+          {
+            "source": "Bar and Bench",
+            "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUlAyNGxVa1FRWTNZc04yakhUVXlFajVfZ3c1NzhrV0VVNUlGV2M3S1g1ZVpzRXVvcHhRX1dGbHhXMTUzendQejBkbnJqVmd6QnEtMmpTSWdtQU80dXF0ZExZRzgzUmwydFFHSG9Zbm5HVEI5S1gySTVIZkRQaThFNzJlZWpkZG90U3V3emRzbTdSdktaOU5EZWlaTmVoWXdCcHBTNWFVTUVLd0w4RDROalM5cFlrQmNHS0t2ZTF1YWItMjdoMi14U0szWWZ2SjlJcmhVcW93TnFucUXSAegBQVVfeXFMTmVyMlBQdmpNVHVBVklwMU5zLW1rblIzSnRiaEozc1NYOGhQWlJEbjN0YWhzZld6N2VvTl9KTUF0ZkhLejZ5V2d1YkNxX1FhOVduQnhKNUZYTXRxQ0FLYUxhM1ktSTFjV0w3UEdqTm8yekxsSGVaRmJ1clZrMWxEbThXUEpFd2R1VUpJbXBfRkFab05UWl9NSFM0UVFxam8tbzhRZW85a2drajFBY2gyRElaRDVwWlZzMXBIQWhXdWt3VGtIZm10Y0U3NDdqNE5wNHJwTlZRM1BLdUQ5TThOVXlselBjckNNTg?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Congress stages protest in Kalaburagi demanding CEC Gyanesh Kumar’s resignation",
+        "summary": "The local Congress unit protested outside the Deputy Commissioner's office alleging electoral bias.",
+        "outlets": 2,
+        "published": "2026-09-28T18:17:17+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/karnataka/congress-stages-protest-in-kalaburagi-demanding-cec-gyanesh-kumars-resignation/article71519999.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/ask-for-pm-modi-resignation-directly-arvind-kejriwal-to-cjp-abhijeet-dipke-amid-eci-row-cec-gyanesh-kumar-101790604699398.html"
+          }
+        ]
+      },
+      {
+        "headline": "Asian Games: India set up blockbuster hockey semifinal vs arch-rivals Pakistan",
+        "summary": "Defending champions India thrashed Bangladesh 10-0 in a rain-hit match to finish their group campaign.",
+        "outlets": 2,
+        "published": "2026-09-28T17:24:57+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/sports/asian-games/story/india-vs-pakistan-asian-games-2026-hockey-semi-final-bangladesh-3005226-2026-09-28?utm_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/sports/asian-games-2026/asian-games-2026-india-to-face-arch-rivals-pakistan-in-hockey-semi-final/articleshow/134545161.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Russia trials over, this engine will soon power India's new stealth drones",
+        "summary": "India's homegrown Kaveri dry engine completed high-altitude and flight trials in Russia with a peak dry thrust of 48.5 kN.",
+        "outlets": 1,
+        "published": "2026-09-28T18:05:12+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/russia-trials-over-this-engine-will-soon-power-indias-new-stealth-drones-12111462#publisher=newsstand"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Mexico's Pacific coast braces for Hurricane Polo",
+        "summary": "The category-three storm is approaching the state of Baja California Sur on Mexico's northern Pacific coast.",
+        "outlets": 3,
+        "published": "2026-09-28T11:05:49+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cw8d3z5y7958o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/sep/27/hurricane-nolo-hawaii-hurricane-polo-mexico"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/hurricane-nolo-gains-speed-as-it-moves-away-from-hawaii-but-high-winds-flash-floods-are-still-risk"
+          }
+        ]
+      },
+      {
+        "headline": "Five UK nationals arrested near RAF Fairford released on bail",
+        "summary": "British counterterrorism police released five men on bail after conducting extensive interviews following a security incident.",
+        "outlets": 5,
+        "published": "2026-09-28T17:31:14+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/uk-news/2026/sep/28/men-arrested-raf-fairford-counter-terrorism-police"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/27/world/europe/raf-fairford-airbase-arrests.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/International/tipster-raf-fairford-plot-partial-picture-british-minister/story?id=136815488"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/uk-police-say-5-men-arrested-near-a-u-s-run-air-base-will-be-released-on-bail"
+          }
+        ]
+      },
+      {
+        "headline": "Ebola cases surpass 8,000 as DRC struggles to control outbreak",
+        "summary": "Fatalities neared 4,000 across the DRC as health workers battle community anger and a vaccine-resistant strain.",
+        "outlets": 2,
+        "published": "2026-09-28T16:26:18+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/9/28/ebola-cases-surpass-8000-as-drc-struggles-to-control-outbreak?traffic_source=rss"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUWZEN0ZKSVBBLTVNdk1iWEFlaUxEVzBaSkpXNkhxUWpOV1lmbEROM1VpSmo3SEg4aHZ5eHFQTTVfWlFSeVY0eW84Q3NOSHVZVkg2NGNmT09JQ05tSE1nRG01SkxuSG82cUd5WGJIVEhNZHh0TXVJOExlMDZ3NWhDbGJrOFhqd1RJYzNDMzNBOXdRWHNUbE92OGtPV3h2TlhtcEpjTmc3Qi1HU0xFT2xlaHcxcw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Russian strike on Kyiv’s science academy kills at least one",
+        "summary": "A Russian jet-powered drone hit the National Academy of Sciences in central Kyiv during a daytime attack.",
+        "outlets": 4,
+        "published": "2026-09-28T15:16:50+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/28/russia-strike-on-kyiv-science-academy-drone-ukraine"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/28/world/europe/urkaine-drone-attack-kyiv-academy-sciences.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/9/28/russia-strike-sets-national-academy-of-sciences-of-ukraine-ablaze?traffic_source=rss"
+          },
+          {
+            "source": "Financial Times",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNX014MGdGQjRfQzhKdk9GR29UaFo5TVNHYlBjZUc3SWpEaDVJSE1vQUd2RDZQUVZjM0ppTXQzcXJKaERablJzY2FIUFRQbW1vY2I5SWNTV0gtRkdqUUZhaUJIa3NucDU2Z1c0NkhVQ2JfY01DcnVnUmxBdjFKN2RiQmJTM3c?oc=5"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Bill Gates Foundation to shut down in 2045: Why some Americans reject its $400m ‘gift’",
+        "summary": "The Bill Gates Foundation committed $1 billion for equitable AI development in education and healthcare.",
+        "outlets": 2,
+        "published": "2026-09-28T14:55:36+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/global-trends/us-news-bill-gates-foundation-to-shut-down-in-2045-by-then-it-plans-to-help-millions-of-americans-gain-valuable-skills-with-400-million-ai-investment/articleshow/134545596.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/technology/tech-news/bill-gates-foundation-to-shutdown-in-2045-by-that-year-it-aims-to-help-millions-of-americans-with-a-skill-it-donated-400-million-for-but-why-some-do-not-agree-with-this-gift/articleshow/134529898.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Tata Trusts propose merging 2 firms with Tata Sons to avoid RBI listing mandate",
+        "summary": "Tata Trusts put forth a plan to merge Tata Electronics Systems and Tata Consulting Engineers into Tata Sons.",
+        "outlets": 3,
+        "published": "2026-09-28T14:51:10+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/business/india-business/tata-trusts-propose-merging-2-firms-with-tata-sons-to-avoid-rbi-listing-mandate-nbfc-tag/articleshow/134545466.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/tata-trusts-proposes-strategic-reorganisation-of-tata-sons-to-exit-nbfc-ambit-avoid-listing-3005030-2026-09-28?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/tata-trusts-tata-sons-noel-tata-n-chandrasekaran-tata-trusts-plan-tata-sons-shake-up-to-sidestep-stock-market-listing-rules-12110630#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Nvidia adds $150 billion to massive stock buyback, the largest ever",
+        "summary": "The chip giant increased its buyback program, bringing the total remaining authorized amount to $235 billion.",
+        "outlets": 1,
+        "published": "2026-09-28T18:01:42+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/28/business/nvidia-stock-buyback.html"
+          }
+        ]
+      },
+      {
+        "headline": "Paramount rolls out $44 billion bond sale to fund Warner Bros. takeover",
+        "summary": "Paramount Skydance began selling bonds in US dollars and euros to finance its acquisition of Warner Bros. Discovery.",
+        "outlets": 1,
+        "published": "2026-09-28T16:49:21+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/paramount-rolls-out-44-billion-bond-sale-to-fund-warner-bros-takeover/articleshow/134547217.cms"
+          }
+        ]
+      }
+    ]
+  }
+}
