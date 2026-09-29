@@ -1,0 +1,453 @@
+{
+  "date": "2026-09-29",
+  "generated_at": "2026-09-29T16:53:52+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "H-1B visas may look ‘very different’ in a year: What it could mean for Indians in US",
+        "summary": "US Labor Department Inspector General Anthony D’Esposito says the H-1B-linked foreign-labour system could change significantly within a year as investigators pursue alleged fraud, exploitation and potential human trafficking.",
+        "outlets": 1,
+        "published": "2026-09-29T14:31:26+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/h1b-visas-may-look-very-different-in-a-year-what-it-could-mean-for-indians-in-us-11790690065246.html"
+          }
+        ]
+      },
+      {
+        "headline": "Trump administration rolls back Biden-era fuel economy standards",
+        "summary": "Regulators estimate the new rule will result in an average of 34.9 miles per gallon by model year 2031, down from an earlier projection of 50.4 mpg.",
+        "outlets": 4,
+        "published": "2026-09-28T20:04:14+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-fuel-economy-standards-biden-rules/"
+          },
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/cars/2026/09/trump-cuts-fuel-economy-standards-back-to-2014-levels/"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/09/29/nx-s1-5983537/pete-buttigieg-reaction-trump-fuel-economy-standards-rollback"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/what-trumps-rollback-of-fuel-economy-standards-means-for-drivers"
+          }
+        ]
+      },
+      {
+        "headline": "SpaceX Starship reaches orbit in historic first before early return",
+        "summary": "SpaceX achieved its first successful Starship orbital flight and deployed 26 Starlink satellites before an engine malfunction forced an early return.",
+        "outlets": 4,
+        "published": "2026-09-29T01:42:27+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/video-spacexs-starship-reaches-orbit-in-historic-first-but-flight-ends-early-6-things-to-know-11790644936579.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/science/how-spacexs-latest-starship-engine-failure-could-affect-nasas-moon-mission-artemis-programme/articleshow/134569523.cms"
+          },
+          {
+            "source": "Yahoo News Singapore",
+            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRmFQM3JraTR5SDFGbTU4REMwMXkxLS1ueHUzRmNFNGNwLTVrNnFJdGdpanA3RnBFX21idmdoWUU2NWRqLXgyaXM2Z2syUHN1UmJJQ21sTUtBbkNXSFJ2bC1BcWdpUmZQek1HeGRKOVlOcXNzYjN6Um15em50YjJJTVZ3?oc=5"
+          },
+          {
+            "source": "WANE 15",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSmNSdVFxbm0tN19Mc2Rvc25oM3p2U0hubzRaY01KN3p1R0s4ekt1NjVqVkgzeUx2TmVpVVc1VE9Rb0tUUlVDcFQ3TXJTVG8tazU4OWtXVlpmRWZNVml0b1BwUTBrQnlIZnJZNVoyM0tfNGZzQUdyX0J3WjdFbjNONUNUcm5tb2NfVXRyTXlLd1ZpdFRuS3ZrV3NfMVFsUdIBowFBVV95cUxPZGRLRmFSVFhVWWJMMmRvSEpiTnlfNFc4Wjl4a0xlSmpGMDRTWlliM2czOTNBYmR6UHpqYnlQMWNCbW5TOXQ2b29tTDNsVnFHMFBFdXdfYzg0VmdzZEdPOGt5b25lX3R4WDNsNmJnOTRuc0V5eURIdDJ5S2RQdTVtcU9USXpiWFZjWHpwMldQQWZYbGJJc3JBRjIyUmw5V2ZyVl9j?oc=5"
+          }
+        ],
+        "why": "A major milestone for commercial space flight and NASA's future Moon missions."
+      },
+      {
+        "headline": "Estonia blames Russia for arson attack on drone maker",
+        "summary": "Estonian and NATO leaders expressed full support after officials attributed an August arson attack on a drone manufacturer in Tallinn to Russian special services.",
+        "outlets": 5,
+        "published": "2026-09-29T14:20:39+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/29/estonia-blames-russia-arson-attack-drone-maker-ukraine"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/29/world/europe/estonia-russia-ukraine-milrem-fire.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/9/29/estonia-says-russia-ordered-august-arson-attack-on-defence?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6m27l4er4jxo?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "Heightens geopolitical tensions between Russia and NATO allies."
+      },
+      {
+        "headline": "Iran's currency crashes to record low amid sanctions",
+        "summary": "The Iranian rial plunged past 2.5 million per dollar as international sanctions, a U.S. naval blockade, and ongoing conflict battered the economy.",
+        "outlets": 2,
+        "published": "2026-09-29T15:58:07+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/irans-currency-hits-a-new-record-low-as-war-erodes-the-countrys-economic-stability"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/iran-rial-crashes-past-2-5-million-per-dollar-war-sanctions-push-currency-to-new-low-11790689155848.html"
+          }
+        ],
+        "why": "Deepens the economic crisis in the Middle East with global repercussions."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Former special counsel Jack Smith defends Trump probes",
+        "summary": "Jack Smith testified before congressional judiciary committees, stating he stands by his decisions to charge Donald Trump.",
+        "outlets": 3,
+        "published": "2026-09-29T14:47:04+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/jack-smiths-opening-statement-trump-engaged-in-serious-crimes-against-our-nation/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/watch-jack-smith-says-he-would-prosecute-trump-again-for-serious-crimes-against-our-nation"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/former-special-counsel-jack-smith-testify-senate-trump/story?id=136828779"
+          }
+        ]
+      },
+      {
+        "headline": "News organizations ask court to block White House access ban",
+        "summary": "Three media outlets banished from White House grounds asked a federal court to block the ban during ongoing litigation.",
+        "outlets": 4,
+        "published": "2026-09-29T14:21:00+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/09/29/nx-s1-5984349/news-organizations-court-white-house-ban"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/three-us-news-organisations-ask-federal-court-to-block-white-house-order-of-access-ban-until-case-is-resolved-11790662879001.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/28/business/trump-cnn-ms-now-politico-white-house-ban.html"
+          },
+          {
+            "source": "AP News",
+            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVDUwMklnSXFrUWlISkJ1ck1YY1VOT2FBSDRCYWhicEhJTmYzRWhhdjI5MWZ2WE1VbWlKbWc2bzFuWTNqT2xjZVhUMzNTZ1NnRVEyM1RneXVfZ0Q2TDMyRkxqcVdic0U5NEJxb2N4OFVjaDBPZmszQ1A2S0lMMHFpX3hMdGt0ZUVoZDlaSG53?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "CDC reports two measles deaths as U.S. cases hit high",
+        "summary": "Pennsylvania reported over 900 measles cases, driving a nationwide outbreak to its highest level in 35 years.",
+        "outlets": 1,
+        "published": "2026-09-29T15:08:58+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/9/29/cdc-reports-two-measles-deaths-us-as-cases-hit-35-year-high?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "ICE plans 5,000 new hires to support deportation drive",
+        "summary": "Immigration and Customs Enforcement plans a massive staff expansion to assist with federal deportation operations.",
+        "outlets": 1,
+        "published": "2026-09-29T15:23:36+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/29/us/ice-hiring-immigration-enforcement-vetting.html"
+          }
+        ]
+      },
+      {
+        "headline": "U.S. job openings fall and hiring remains weak",
+        "summary": "Job openings declined by 256,000 to 7.079 million at the end of August as the labor market held steady.",
+        "outlets": 1,
+        "published": "2026-09-29T16:16:34+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/us-employment-data-august-job-openings-fall-layoffs-decline-as-labour-market-holds-steady-11790697954384.html"
+          }
+        ]
+      },
+      {
+        "headline": "Republican senator blocks bill to protect Kennedy Center",
+        "summary": "Senator Mike Lee blocked a bipartisan safeguard measure intended to prevent the demolition of the Kennedy Center.",
+        "outlets": 1,
+        "published": "2026-09-29T15:04:13+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/culture/2026/sep/29/bill-trump-demolish-kennedy-center"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Four CISF personnel killed in Kathua fratricide incident",
+        "summary": "An assistant commandant, a sub-inspector, and two constables were killed in a shooting at a hydroelectric project in Jammu and Kashmir.",
+        "outlets": 5,
+        "published": "2026-09-29T15:47:29+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/four-cisf-personnel-killed-in-fratricide-incident-in-kathua-accused-held/article71525156.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/4-cisf-personnel-killed-in-fratricide-incident-in-jks-kathua/articleshow/134569385.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/cisf-jawan-opens-fire-at-colleagues-at-camp-in-jks-kathua-4-seriously-injured-3005964-2026-09-29?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/cisf-jawan-kills-four-colleagues-in-alleged-fratricide-case-in-j-ks-kathua-accused-arrested-101790693787934.html"
+          }
+        ]
+      },
+      {
+        "headline": "India rejects Turkish president's Kashmir remarks at UN",
+        "summary": "New Delhi dismissed unwarranted references to Jammu and Kashmir made by the Turkish president during his UNGA address.",
+        "outlets": 4,
+        "published": "2026-09-29T16:49:04+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/india-rejects-kashmir-references-in-turkish-presidents-unga-address-as-unwarranted/article71525225.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-rejects-turkish-president-erdogans-kashmir-remarks-at-unga-unwarranted-no-locus-standi-101790689693460.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/india-hits-back-at-turkish-president-erdogans-unga-remarks-on-kashmir-says-no-external-party-has-locus-standi-3005968-2026-09-29?utm_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/no-locus-standi-india-rejects-turkey-president-erdogans-remarks-on-kashmir-at-unga/articleshow/134568765.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Indian athletes shine as Asian Games medal tally passes 50",
+        "summary": "Neeru Dhanda won gold in the women's trap event and the women's 4x400m relay team triumphed at the Asian Games.",
+        "outlets": 2,
+        "published": "2026-09-29T13:52:30+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/sports/asian-games-2026/asian-games-2026-day-10-two-golds-from-neeru-dhanda-womens-4x400m-relay-take-india-past-50-medals/articleshow/134568551.cms"
+          },
+          {
+            "source": "olympics.com",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcWkzQWUzUlp1cHlmUnBLOEUyMnFVVkZPX2dncmxPTm5sWkpaYXBCalpuTnlvM1JlZThqQzJOc2tCYWF1dy1UazRPSkJnYzBzRFBVekJiNGNUZmtDa1MzYzl5VlRhdTVhRkF2d1hyT3BBdHc0LVhKUnVmZl9uN0NORWdlclIwWDNkMDNuNjVjVkszNkNxdi1kQw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "India sets lower foodgrain production target for 2026-27",
+        "summary": "The government targeted 373.93 million tonnes of foodgrain production for the upcoming crop year amid weather impact concerns.",
+        "outlets": 1,
+        "published": "2026-09-29T15:08:25+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india-trims-2026-27-foodgrain-target-as-weather-risks-rise-11790688741057.html"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court proposes adding unpaid traffic fines to bills",
+        "summary": "The Supreme Court suggested recovering roughly ₹20,000 crore in unpaid traffic fines by adding them to electricity bills.",
+        "outlets": 1,
+        "published": "2026-09-29T15:22:33+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/have-any-traffic-challan-still-unpaid-the-amount-may-be-added-to-your-electricity-bill-11790694597281.html"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi High Court questions FSSAI over Red Bull descriptor",
+        "summary": "The court questioned food safety regulators about whether a proper notice was issued before ordering Red Bull to stop using 'Energy Drink'.",
+        "outlets": 2,
+        "published": "2026-09-29T07:06:24+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/cons-products/food/delhi-hc-sets-aside-fssai-order-red-bull-remove-energy-term-drinks/articleshow/134559250.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/delhi-high-court-questions-fssai-over-order-to-red-bull-was-a-notice-issued-first-101790652919047.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Dozens killed in Myanmar military airstrike on market",
+        "summary": "An airstrike on a bustling market in rebel territory in Myanmar resulted in at least 50 civilian deaths.",
+        "outlets": 1,
+        "published": "2026-09-29T15:20:14+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/29/world/asia/myanmar-airstrike-rakhine-market.html"
+          }
+        ]
+      },
+      {
+        "headline": "Evicted Woman Set to Return Home as Spain Announces Plans to Fix Housing Crisis",
+        "summary": "The eviction of an 87-year-old set off protests in the country, which has an acute housing shortage. The government presented legislation to protect renters.",
+        "outlets": 2,
+        "published": "2026-09-29T15:06:48+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/29/world/europe/spain-housing-eviction-maricarmen-abascal-madrid-protests.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/29/spanish-government-approves-measures-ease-housing-crisis-outcry-eviction"
+          }
+        ]
+      },
+      {
+        "headline": "Malaysia begins controversial repatriation of asylum seekers",
+        "summary": "Human rights groups raised concerns as Malaysia commenced the return of around 5,000 asylum seekers to Myanmar.",
+        "outlets": 1,
+        "published": "2026-09-29T13:29:04+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckj06542e5neo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Tankers Are Loading Oil Again From a Vital Saudi Pipeline",
+        "summary": "Saudi authorities had taken the pipeline offline this month after it was damaged in a drone attack by an Iranian-backed Iraqi militia.",
+        "outlets": 1,
+        "published": "2026-09-29T16:29:22+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/29/business/oil-saudi-east-west-pipeline.html"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "OpenAI halts GPT-6.1 model release over safety concerns",
+        "summary": "OpenAI decided not to release its new AI model due to unresolved safety concerns and performance tradeoffs.",
+        "outlets": 3,
+        "published": "2026-09-29T02:04:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/openai-halts-gpt-astra-safety-concerns/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/28/technology/openai-astra-safety.html"
+          },
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/09/openai-says-planned-gpt-6-1-is-too-insecure-to-release/"
+          }
+        ]
+      },
+      {
+        "headline": "CoinSwitch swings to profitability in FY26 with rising revenue",
+        "summary": "Crypto platform CoinSwitch reported an adjusted EBITDA profit as its annual revenue surged 150% to ₹324.19 crore.",
+        "outlets": 1,
+        "published": "2026-09-29T13:54:16+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/cryptocurrency/coinswitch-swings-to-profitability-in-fy26-as-crypto-platforms-revenue-climbs-150-to-rs-324-crore/articleshow/134568684.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Manchester City denies Premier League financial wrongdoing",
+        "summary": "Manchester City insisted on its innocence following a ruling finding the club guilty of financial breaches over nine seasons.",
+        "outlets": 2,
+        "published": "2026-09-29T16:47:27+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/sports/football/story/manchester-city-reaction-guilty-financial-charges-english-premier-league-3006060-2026-09-29?utm_source=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/sports/2026/9/29/man-city-guilty-of-all-serious-financial-breach-charges-premier-league?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Indian firm building U.S. steel mill tied to Russia",
+        "summary": "Essar, the Indian firm behind a $15 billion U.S. steel factory announced by Trump, previously utilized Russian financing to manage debts.",
+        "outlets": 1,
+        "published": "2026-09-29T14:23:40+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/9/29/indian-firm-building-15bn-trump-announced-steel-mill-has-deep-russia-ties?traffic_source=rss"
+          }
+        ]
+      }
+    ]
+  }
+}
