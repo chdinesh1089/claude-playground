@@ -1,0 +1,454 @@
+{
+  "date": "2026-09-30",
+  "generated_at": "2026-09-30T16:49:40+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Live Updates: Passengers Arrive in Israel After Cockpit Clash on FlyDubai Flight",
+        "summary": "Passengers intervened and “prevented a disaster” after one pilot stabbed another during a flight from Dubai, Prime Minister Benjamin Netanyahu said. The motive for the attack was not clear.",
+        "outlets": 7,
+        "published": "2026-09-30T16:47:21+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/live/2026/09/30/world/dubai-flight-tel-aviv-israel-pilots"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/9/30/flydubai-flight-to-israel-diverted-after-attack-on-pilot?traffic_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/nri/latest-updates/flydubai-dubai-tel-aviv-flight-sends-emergency-alert-diverted-over-saudi-arabia/articleshow/134584603.cms"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/live/2026/sep/30/dubai-israel-saudi-arabia-flydubai-flight-diversion-pilots-fight-latest-news-updates"
+          }
+        ]
+      },
+      {
+        "headline": "U.S. military completes withdrawal of troops from Iraq",
+        "summary": "The Pentagon announced the formal completion of U.S. troop withdrawals from Iraq, ending a military mission that began with the 2003 invasion.",
+        "outlets": 5,
+        "published": "2026-09-30T14:07:39+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/u-s-military-says-its-withdrawal-of-troops-from-iraq-for-islamic-state-fight-is-complete"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c65ym1dyn92mo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/sep/30/pentagon-formal-withdrawal-troops-iraq"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/30/world/middleeast/iraq-us-troop-withdrawal.html"
+          }
+        ],
+        "why": "Marks the definitive end of a two-decade major U.S. Middle East military campaign."
+      },
+      {
+        "headline": "Supreme Court allows rapid deportations to third countries",
+        "summary": "The Supreme Court paused a lower court order, allowing the Trump administration to continue rapid third-country deportations without prior notice.",
+        "outlets": 3,
+        "published": "2026-09-29T23:01:44+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/supreme-court-rules-trump-administration-continue-deporting-migrants/story?id=136867487"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/news-wrap-supreme-court-allows-trumps-deportations-to-third-countries-for-now"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/sep/30/burundi-third-country-deportations-trump-immigration"
+          }
+        ],
+        "why": "Major legal victory for the administration's hardline immigration agenda."
+      },
+      {
+        "headline": "Russia launches massive strikes on Ukrainian energy infrastructure",
+        "summary": "Russia carried out its largest attack on Ukraine's energy grid since spring, targeting 11 regions including residential areas and railways.",
+        "outlets": 2,
+        "published": "2026-09-30T14:53:02+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckjw5jx2l393o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "bbc.com",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1icHVKQnZxeWZhcmgzbnpQWEZHbjZXMmM3UWZBZFF1b2V4elRMV3RrZEhEUW55eV9oeVNGSERzUVlmeDJMTEZrYWR0M2t1ck5yeVNqSzNhcDI3N2M?oc=5"
+          }
+        ],
+        "why": "Escalates the energy warfare ahead of winter, compounding Ukraine's economic and combat strains."
+      },
+      {
+        "headline": "US EB-5 visa fees jump significantly for green card applicants",
+        "summary": "US EB-5 investor visa fees have increased substantially, creating new financial hurdles for applicants seeking green cards.",
+        "outlets": 1,
+        "published": "2026-09-30T13:51:52+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/us-eb-5-fees-jump-what-it-means-for-indians-seeking-green-cards-through-investment-11790775003771.html"
+          }
+        ],
+        "why": "Directly impacts Indian nationals relying on the EB-5 category for U.S. residency."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Wall Street rises following slower inflation data",
+        "summary": "U.S. stocks gained after data showed inflation slowed last month, boosting investor sentiment and easing rate hike concerns.",
+        "outlets": 2,
+        "published": "2026-09-30T15:34:20+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/sep/30/inflation-report-interest-rates-fed"
+          },
+          {
+            "source": "cnbc.com",
+            "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9mT1J0cFBqQy1oclZ1Vi1mazZCcjh5NlhQWlloZ3BTbFVWdW1vYnJFYlZ4UGx2aFJwX0l3a0tMTHVKMkpjSW9tZ3NMWkE2TjBLRzRidlAyMVJ4LVlHVm40clhZWGRxWk8yMGdwUlRfamROdUJXT3hz0gF8QVVfeXFMT294cWNsT2RVb3Z1UUtXaWtlQlRQQUFqZmtmWDhKZHJ5N3c4QkZUWHQtN1BBeGp4OFViYm8wVWVUeGRHMXFZSVlZVkQycTlSU0toTkM3Q3IxZGpnWk1UY1RGQVNxNXZvYjViVWYzeUs4MWFPQTZORDczUkd5bQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "New York prosecutors reopen Cornell University rape investigation",
+        "summary": "Prosecutors reopened an investigation into an alleged gang rape at Cornell University following a civil lawsuit filed by the victim.",
+        "outlets": 3,
+        "published": "2026-09-30T08:30:00+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/new-york-prosecutors-reopen-investigation-into-alleged-rape-at-cornell-university"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/cornell-university-rape-case-district-attorney-campus-police-interview/"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPalNNbG15VEZrei1veWdBNWszSVB4ak5CTWpPRHd2a3hkenpqbGYtQVY5aHo0S0tsRlVaank1X3h6eVFjSjRaT2ZSMGpxdm9OdDVJZm1aUnBjbjRHdTRFNUlUOFNEV21RR1N5ZTh5YU0tdVI5NFcwc1lILUhtcjRKci0ycnhfa0VlVUFKcGJwemtISnY2R1AydzFadWdpZ3VCVEJ2X1h0Vmh1MnlFdW5TRTdwODFza18tQ0otTUNxNjFKb0RrTkNDRzlJUjZLY2dCbmZndzNoVEhhYXYwcEhkemQ1cmJ3SXFLdGRWOWI0WEN0akJKM3fSAfsBQVVfeXFMTU9YN0V0QnQtMHlZXzVPQnhaUEhtNnhGTWhwSEdoNFJNYzBJUTMwSlBSeFFFelpWb1MtMWJEdXRTVEFsTkdyTktQTXh6V1RBVXdGTS1WQXBoQUZ4WFlYcDJwSmpUWVE0WlVmUkd1d1NWX1FGZGQ5VjJsY2dXb2JqX00xZ0hyQVhFQUx2NzN5Z3JRZXZZb0VLWWRMakRYa2c3OVZiUUpkVTdTSHp6ZDFkbVpJT1NMMGotcWJpUEJLakhLMGxYcWhfY1dycnJ6R3FQT2VGXzRYdS01MDQ2YmtkdGVFV0pIbC1QLTF2dW94dUNTcWljRldrR08wRU0?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Pentagon changes overseas voter forms amid Republican push",
+        "summary": "The Pentagon made last-minute changes to absentee voting forms for overseas U.S. citizens, removing categories targeted by Republicans.",
+        "outlets": 1,
+        "published": "2026-09-30T16:32:12+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/09/30/nx-s1-5978976/military-voter-registration-overseas-citizens-absentee-voting"
+          }
+        ]
+      },
+      {
+        "headline": "Court temporarily halts Tennessee execution of Christa Pike",
+        "summary": "A last-minute court order temporarily halted Tennessee's plans to execute Christa Pike, who was convicted of a 1996 murder.",
+        "outlets": 2,
+        "published": "2026-09-30T16:05:51+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/what-to-know-christa-pike-first-woman-executed-tennessee-200-years/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/30/us/christa-pike-stay-execution-tennessee.html"
+          }
+        ]
+      },
+      {
+        "headline": "New SNAP rules take effect as millions lose benefits",
+        "summary": "New food stamp rules took effect, following a period where more than 5 million Americans lost benefits.",
+        "outlets": 1,
+        "published": "2026-09-30T16:38:38+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/snap-benefits-millions-lost-obbba-work-requirements/"
+          }
+        ]
+      },
+      {
+        "headline": "Senator Hawley introduces bill to curb Flock camera abuse",
+        "summary": "Senator Josh Hawley introduced legislation to establish guardrails and prevent the abuse of Flock cameras and AI surveillance tech.",
+        "outlets": 1,
+        "published": "2026-09-30T15:59:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/sen-hawley-takes-aim-at-flock-cameras/"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Indian Coast Guard seizes over Rs 3,000 crore in drugs",
+        "summary": "The Coast Guard and Gujarat ATS seized over 500 kg of heroin and methamphetamine from an Iranian dhow, arresting five Pakistani crew members.",
+        "outlets": 2,
+        "published": "2026-09-30T06:55:41+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/3000-crore-drug-haul-busted-how-coast-guard-tracked-iranian-dhow-with-5-pakistani-crew-11790748592359.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/iranian-boat-pakistani-crew-held-with-drugs-worth-rs-3-000-crore-as-coast-guard-busts-smuggling-bid-arabian-sea-101790735009134.html"
+          }
+        ]
+      },
+      {
+        "headline": "IMD reports monsoon rainfall at fourth-lowest since 2001",
+        "summary": "Southwest monsoon rainfall reached 87% of the long-period average, ranking as the fourth-lowest since 2001.",
+        "outlets": 3,
+        "published": "2026-09-30T15:42:00+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/monsoon-rainfall-in-2026-fourth-lowest-since-2001-says-imd-11790769632110.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-monsoon-ends-12-6-below-normal-fourth-lowest-rainfall-since-2001-101790781168990.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/indias-monsoon-rainfall-ends-13-below-normal-fourth-lowest-since-2001/articleshow/134596710.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Jharkhand CM Hemant Soren charged in land fraud case",
+        "summary": "A Ranchi PMLA court framed charges against Jharkhand Chief Minister Hemant Soren in connection with an alleged land fraud case.",
+        "outlets": 2,
+        "published": "2026-09-30T15:23:47+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/jharkhand-cm-hemant-soren-charged-in-pmla-case-over-alleged-8-86-acre-land-fraud-case-101790781828161.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/law-news/story/hemant-soren-bargayin-land-scam-jharkhand-high-court-rejects-plea-pmla-case-continues-3006742-2026-09-30?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi High Court denies bail to Umar Khalid and Sharjeel Imam",
+        "summary": "The Delhi High Court dismissed third bail pleas by Umar Khalid and Sharjeel Imam in connection with the 2020 Delhi riots UAPA case.",
+        "outlets": 2,
+        "published": "2026-09-30T07:05:36+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/delhi-riots-2020-hc-refuses-bail-to-umar-khalid-sharjeel-imam-in-uapa-case-11790751790224.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/umar-khalid-sharjeel-imam-denied-bail-by-delhi-high-court-in-2020-riots-case-101790749336728.html"
+          }
+        ]
+      },
+      {
+        "headline": "Bombay High Court stays bail for Sachin Waze in Antilia case",
+        "summary": "The Bombay High Court stayed a special NIA court order that had granted bail to Sachin Waze in the Antilia bomb scare case.",
+        "outlets": 2,
+        "published": "2026-09-30T08:49:42+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/antilia-bomb-scare-bombay-hc-stays-nia-court-order-granting-bail-to-sachin-waze-101790758182607.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/antilia-bomb-scare-bombay-hc-bench-recuses-from-hearing-nias-appeal-against-bail-to-ex-cop-sachin-waze-11790750532783.html"
+          }
+        ]
+      },
+      {
+        "headline": "MEA warns Indians against traveling to Russia to join army",
+        "summary": "The Ministry of External Affairs warned citizens to avoid the dangerous path of traveling to Russia to join military contracts.",
+        "outlets": 1,
+        "published": "2026-09-30T16:14:23+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/avoid-dangerous-path-of-travelling-to-russia-to-join-army-mea/article71529610.ece"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Morocco names female prime minister in historic first",
+        "summary": "King of Morocco named Fatima Ezzahra El Mansouri as prime minister, marking a historic first for the North African nation.",
+        "outlets": 2,
+        "published": "2026-09-30T14:14:29+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/29/world/middleeast/morocco-first-woman-prime-minister.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/moroccos-king-appoints-fatima-zahra-mansouri-as-countrys-1st-woman-prime-minister"
+          }
+        ]
+      },
+      {
+        "headline": "UK sees strong indications of Iranian involvement in RAF base incident",
+        "summary": "The British prime minister stated there were strong indications Iran played a part in an incident at R.A.F. Fairford.",
+        "outlets": 5,
+        "published": "2026-09-30T16:38:31+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/30/world/europe/uk-iran-raf-fairford-burnham.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/uk-fairford-air-base-iran-played-part-incident-pm-burnham-says/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/uk-news/2026/sep/30/strong-indications-that-iran-played-role-in-raf-fairford-incident-says-burnham"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/macron-says-welcome-back-after-uk-pm-floats-idea-of-rejoining-european-union-12121522#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Malaysia begins repatriation of migrants to Myanmar",
+        "summary": "Malaysia commenced the repatriation of undocumented migrants to Myanmar despite warnings from critics over safety risks.",
+        "outlets": 2,
+        "published": "2026-09-30T06:43:18+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/29/world/asia/malaysia-repatriation-myanmar-migrants-asylum.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/sep/30/malaysia-begins-myanmar-repatriations-despite-warnings-from-un-and-rights-groups"
+          }
+        ]
+      },
+      {
+        "headline": "Hundreds detained in France during violent student protests",
+        "summary": "French high school students staged protests over teacher shortages and crowded classrooms, leading to numerous detentions.",
+        "outlets": 2,
+        "published": "2026-09-30T16:40:17+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/30/world/europe/france-student-protest-arrests.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/9/30/whats-behind-french-student-protests-that-turned-violent?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Cabinet approves Rs 1.86 lakh crore Green Energy Corridor",
+        "summary": "The Cabinet approved a massive green energy transmission project to evacuate up to 135 gigawatts of renewable energy across states.",
+        "outlets": 1,
+        "published": "2026-09-30T16:14:20+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/business/union-cabinet-passes-green-energy-corridor/article71528006.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Apple Pay debuts in India with Axis Bank support",
+        "summary": "Apple Pay launched in India with initial support for Axis Bank cards, though UPI support was absent at launch.",
+        "outlets": 2,
+        "published": "2026-09-30T13:07:23+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/technology/video/apple-pay-debuts-in-india-axis-bank-card-support-no-upi-at-launch-how-it-works-ytvd-3006725-2026-09-30?utm_source=rss"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQM3lSYVpGVkxLa0gzcUJRS29tOEJBb0hkOFV0OWZKVEVEcE9yNVVKZ29iTnpMM0pYZGJ3N1ZFVjNfdTNwcHR5bmw4Q2tmUlJnazd2M3VqNWRFU3loZ0FHXzM4clQ2Q1AwNGxPRElCLW1LaVkxdkYzU3oxRlhtZ2xoNFlzQnZWUjIzeGUzS05ocjI0WlcwTXk5U2FIT0NsbGM5bnVqTlhKaUVuR2E5cVZkZGpRRjFUUDUwbXRFVEotU3ZSRHBmSnJZeDNLc0I3Y1ZPWmRwUENVNUo?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "FTC investigates OpenAI and Anthropic over consumer harms",
+        "summary": "The FTC launched an investigation into OpenAI and Anthropic to examine potential unfair practices and AI safety threats.",
+        "outlets": 2,
+        "published": "2026-09-30T15:58:41+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/30/technology/ftc-openai-anthropic-investigation.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/ftc-investigation-openai-anthropic-ai-safety/"
+          }
+        ]
+      },
+      {
+        "headline": "Condé Nast CEO Roger Lynch leaves to run Mattel",
+        "summary": "Roger Lynch departed his role leading Condé Nast after more than seven years to become the chief executive of Mattel.",
+        "outlets": 1,
+        "published": "2026-09-30T16:12:08+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/09/30/business/media/conde-nast-roger-lynch-steps-down.html"
+          }
+        ]
+      }
+    ]
+  }
+}
