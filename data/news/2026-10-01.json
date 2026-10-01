@@ -1,0 +1,503 @@
+{
+  "date": "2026-10-01",
+  "generated_at": "2026-10-01T17:22:56+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Indian pilot hailed as hero after fending off co-pilot in cockpit attack",
+        "summary": "Capt. Smit Machchhar suffered stab wounds while fending off an attack from his co-pilot on a Flydubai flight, saving the lives of around 170 people on board.",
+        "outlets": 9,
+        "published": "2026-10-01T15:04:32+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cje3r3z7g0zzo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/flydubai-incident-captain-smit-machchhar-stabbed-israel-bound-flight-diverted-to-saudi-arabia-what-happened-timeline-11790854396291.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/who-is-smit-machchhar-hero-indian-pilot-from-mumbai-saved-lives-on-flydubai-flight-to-israel-despite-being-stabbed-101790820714090.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/assengers-describe-stopping-pilots-alleged-attempt-to-crash-israel-bound-flight"
+          }
+        ],
+        "why": "An Indian pilot's extraordinary bravery saved hundreds of lives on an international flight."
+      },
+      {
+        "headline": "Trump’s $100,000 H-1B fee blocked again, bringing relief to tech workers",
+        "summary": "US District Judge Haywood Gilliam ruled that immigration services and the State Department failed to follow required rule-making procedures before implementing the fee.",
+        "outlets": 1,
+        "published": "2026-10-01T15:11:08+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/trumps-100-000-h-1b-fee-blocked-again-relief-for-indian-it-firms-tech-professionals-what-we-know-11790864350158.html"
+          }
+        ],
+        "why": "Directly impacts Indian IT professionals, tech workers, and US immigration policy."
+      },
+      {
+        "headline": "Tennessee pauses executions after Christa Pike survives two lethal injection attempts",
+        "summary": "Gov. Bill Lee ordered a review of the state's lethal injection process after the botched attempt to put Christa Pike to death, leaving her hospitalized.",
+        "outlets": 5,
+        "published": "2026-10-01T16:45:35+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmn4540d4z87o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/what-to-know-christa-pike-first-woman-executed-tennessee-200-years/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/tennessee-governor-halts-executions-after-christa-gail-pike-survives-lethal-injection-attempt"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/01/us/tennessee-executions-christa-pike-lee-review.html"
+          }
+        ],
+        "why": "A major legal and ethical controversy surrounding the death penalty in the United States."
+      },
+      {
+        "headline": "SpaceX launches new crew to International Space Station successfully",
+        "summary": "Four astronauts rocketed into orbit on Thursday on a space station mission that will stretch into next year, replacing crew members heading home.",
+        "outlets": 6,
+        "published": "2026-10-01T16:22:30+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/01/spacex-nasa-watkins-launch"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/science/spacex-launches-crew-13-4-nasa-astronauts-sent-to-iss-for-6-month-mission-focused-on-human-health/articleshow/134622892.cms"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/spacex-launch-space-station-crew-6-month-mission/"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/01/nx-s1-5987698/nasa-crew-13-spacex-international-space-station-iss"
+          }
+        ],
+        "why": "A major milestone in international space exploration with diverse representation."
+      },
+      {
+        "headline": "Japan raises residency fees significantly amid anxiety over foreigners",
+        "summary": "Prime Minister Sanae Takaichi is making it harder for immigrants to stay in the country, drawing criticism that it hurts Japan's ability to address labor shortages.",
+        "outlets": 3,
+        "published": "2026-10-01T14:41:13+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/01/world/asia/japan-raises-residency-fees-2000-percent-amid-anxiety-over-foreigners.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6y8z8xeg8j1o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/science/swiss-glaciers-lost-more-than-5-of-ice-volume-in-2026-heat-waves-and-low-winter-snow-accelerated-the-thaw"
+          }
+        ],
+        "why": "Reflects shifting global immigration and residency policies in major economies."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Supreme court to review policy to detain immigrants challenging deportation",
+        "summary": "Justices will consider whether immigrants have a right to a hearing to determine if they should remain detained while challenging their possible deportation.",
+        "outlets": 6,
+        "published": "2026-10-01T17:14:13+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/live/2026/oct/01/tennessee-governor-halts-executions-christa-pike-lethal-injection-donald-trump-hegseth-musk-us-politics-latest-news-updates"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/01/us/politics/supreme-court-trump-migrant-detention.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/supreme-court-trump-mandatory-detention-policy-rhoney-v-barbosa-da-cunha/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/supreme-court-grants-review-of-trump-administrations-mandatory-detention-policy-for-immigrants"
+          }
+        ]
+      },
+      {
+        "headline": "Trump sending $500 ACA refund checks to nearly 1 million Americans",
+        "summary": "Some families with more than one affected person could receive multiple payments via check or direct deposit, an administration official told CBS News.",
+        "outlets": 2,
+        "published": "2026-10-01T12:27:10+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/global-trends/us-news-trump-500-obamacare-refund-nearly-1-million-americans-in-these-us-states-to-get-checks-who-qualifies/articleshow/134619102.cms"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-obamacare-500-refund-checks/"
+          }
+        ]
+      },
+      {
+        "headline": "Mortgage rates hit highest level since 2023, turning buyers to ARMs",
+        "summary": "The average 30-year, fixed-rate home loan rose to 7.28 percent, prompting more buyers to turn to adjustable-rate mortgages.",
+        "outlets": 2,
+        "published": "2026-10-01T17:07:25+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/01/business/adjustable-mortgage-rates.html"
+          },
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/30-year-mortgage-rate-posts-biggest-jump-in-four-years-e288f596?mod=mw_rss_topstories"
+          }
+        ]
+      },
+      {
+        "headline": "Rapper Rick Ross arrested and charged with domestic violence in Miami",
+        "summary": "Rapper Rick Ross was arrested Thursday on felony battery by strangulation and misdemeanor battery charges involving domestic violence, jail records show.",
+        "outlets": 3,
+        "published": "2026-10-01T16:59:30+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/GMA/Culture/rapper-rick-ross-arrested-domestic-violence-battery-charges/story?id=136917882"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/music/2026/oct/01/rick-ross-arrest-miami-battery-strangulation"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/rick-ross-arrested-miami-beach-battery-strangulation/"
+          }
+        ]
+      },
+      {
+        "headline": "Two dead and one missing in medical helicopter crash near California coast",
+        "summary": "The aircraft went down near Catalina Island on Wednesday night with five people aboard, and two survivors were retrieved with injuries.",
+        "outlets": 2,
+        "published": "2026-10-01T13:46:26+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/01/us/helicopter-crash-catalina-island-california.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/medical-helicopter-crashes-off-californias-catalina-island-2-killed-and-1-missing/articleshow/134617189.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Chinese hackers impersonate AI experts to target US policy minds",
+        "summary": "TA419 hackers used deceptive tactics to impersonate real figures, such as a former White House AI official, to target policy targets.",
+        "outlets": 1,
+        "published": "2026-10-01T16:28:41+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/economy/2026/10/1/chinese-hackers-impersonated-ai-experts-to-target-us-policy-minds?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Shubman Gill hits double century as India chases down West Indies total",
+        "summary": "Shubman Gill hits a career-best 223 not out as India sensationally chases down West Indies' 405-7 in the second ODI in Guwahati.",
+        "outlets": 2,
+        "published": "2026-10-01T08:11:59+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/sport/cricket/articles/cqwyz07g0e5yo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Sky Sports",
+            "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQVC0yRnZzTmpmVUdRVUhMTDA0cTZNN2pHX2FjcDJBQ2F4MVFqeXNzd1R5cUVzclJOemw1TzZSVTFzX3VoWkxCQVRiQmYta0U1cUI3bmlWejBWNjlEaUVrYVJnQzlPMk1iNVZTbWJSRG1ycnRRb0VpN1VUU2t3eXh1TDktQUs1SGQ1MHJiNE9LR2lfcnc1VHhLZzR2VHhpQ0lrR1NZUm5wUHg3Qk1FaGROejFGUGRPZ3k2cXNQYkxXdkJlWVZYbFRaay1qODBJZmpWR2hQdTVSOGNKVTl5ZFJ1LXRtWndUUHZLaEFuN0lrV3VDV1FPeXp0Z09fOFNvZHItQ1V1Zw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Harwinder Kumar deported from UAE and arrested by NIA in murder case",
+        "summary": "The suspect was deported from the UAE and arrested by the NIA in connection with the VHP's Vikas Prabhakar murder case in Punjab.",
+        "outlets": 2,
+        "published": "2026-10-01T15:31:15+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/vhp-leader-killing-nia-arrests-uae-deported-fugitive-harwinder-kumar-accused-of-providing-funding-logistics/articleshow/134622769.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/harwinder-kumar-deported-from-uae-arrested-by-nia-in-vikas-prabhakar-murder-case-101790859559993.html"
+          }
+        ]
+      },
+      {
+        "headline": "Eight students from Pune drown while holidaying at beach in Maharashtra",
+        "summary": "Part of a group of 48 individuals, the eight students ventured into the sea and were swept away after misjudging the depth and current.",
+        "outlets": 5,
+        "published": "2026-10-01T15:08:58+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/8-students-from-pune-drown-while-holidaying-near-beach-in-maharashtras-raigad-12126333#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/pune-coaching-institute-takes-students-to-diveagar-beach-on-outing-8-drown-101790865198265.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/pune/motionless-bodies-desperate-hands-heartbreaking-scenes-at-diveagar-beach-as-locals-fight-to-save-pune-students-what-we-know/articleshow/134621926.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/cities/story/8-students-drown-during-pune-private-coaching-class-trip-to-raigads-diveagar-beach-7-bodies-found-3007580-2026-10-01?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "India's ODI World Cup 2027 schedule and full fixtures announced",
+        "summary": "The schedule and full fixtures for the upcoming ODI World Cup have been officially released, detailing venues and match dates.",
+        "outlets": 3,
+        "published": "2026-10-01T17:04:45+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/sports/cricket/story/india-odi-world-cup-2027-schedule-full-fixtures-venues-details-3007727-2026-10-01?utm_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/sports/cricket/news/india-world-cup-2027-match-schedule-full-fixture-list-dates-venues-and-timings/articleshow/134623549.cms"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/sports/cricket/icc-odi-world-cup-2027-full-schedule-fixtures-match-dates-venues-india-time-table-teams/articleshow/134623092.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Eight former Maoists clear Class 10 exam in Chhattisgarh's Bastar",
+        "summary": "Surrendered Maoist cadres in Chhattisgarh’s Bastar have cleared the Class 10 exam as they pursue education and new career plans.",
+        "outlets": 2,
+        "published": "2026-10-01T16:31:21+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/from-guns-to-classrooms-eight-former-maoists-clear-class-10-exam-in-chhattisgarh-s-bastar-101790872281549.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/education-today/news/story/bastar-ex-maoists-class-10-results-three-surrendered-cadres-get-first-division-3007492-2026-10-01?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "British Sikh activist Jagtar Singh Johal freed on bail after years in prison",
+        "summary": "The British Sikh activist arrested in connection with alleged terror offenses has been released from a Delhi prison after a long detention.",
+        "outlets": 2,
+        "published": "2026-10-01T16:27:05+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cxr50yln55rgo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/01/british-sikh-activist-jagtar-singh-johal-released-delhi-jail-india"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Netanyahu says Flydubai co-pilot was suicidal and radicalized",
+        "summary": "Prime Minister Benjamin Netanyahu said the co-pilot who attacked the captain had undergone Islamist radical indoctrination and shouted that he wanted to die.",
+        "outlets": 8,
+        "published": "2026-10-01T15:41:10+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/flydubai-netanyahu-israel-captain-machachhar-omani-co-pilot-was-suicidal-12126854#publisher=newsstand"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/benjamin-netanyahu-says-flydubai-co-pilot-underwent-islamist-radical-indoctrination/articleshow/134620049.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/middle-east/kill-me-kill-me-netanyahu-reveals-words-of-indoctrinated-flydubai-co-pilot-after-being-subdued/articleshow/134619038.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/fact-check/story/flydubai-flight-1073-viral-video-fact-check-easyjet-london-glasgow-clip-misidentified-3007429-2026-10-01?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Pakistan launches deadly air attacks on neighboring Afghanistan",
+        "summary": "Pakistan carried out airstrikes in Afghanistan resulting in casualties, amid growing regional tensions and a reported toll on militants and civilians.",
+        "outlets": 3,
+        "published": "2026-10-01T16:40:45+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/pakistan-airstrikes-afghanistan-22-terrorists-killed-taliban-civilian-deaths-ptag-3007706-2026-10-01?utm_source=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbmRRVHF2dW9BcElUaFo3SEZlX0hvSHlUaHpWNTIzdzd5LXhTems2V1VnWjk5SFdIZV8xajNKZnBDbmhDYm84RVlkbUF1cEhmenZvMmtsZEFlUDl5Rmw2TTF3SWI1NWxUeEs2clh1VVJ2Y25FT1Vqb0x3emZGVGd2SDFuQ0c5aS0tYUo1bXBTdk1pWThWVXFvN1RteEptZ3NSQ3RocDhkMGVWMXc0enfSAbMBQVVfeXFMTmFOeW1ZYjR2RkJPSUJUdFdESjZqdVR1VlRCVjVTMFdYNjhLRUY5SjFhZFNldGx5YTlXcGJlMEdVY0RCWXl6RDg0Sks0aHo3Ukt6dU9xWHNMTl9yNl9yZmNPWE4zUm1nenAtWHEyUm1zbVJTbUg5YmpKRFlSYXV3aURPZU9MdUE2ZmozeElaMzJRcGxjd0lTeHdkakRFcVpKMVVZay1xTWVPSm1XRjNaX014VU0?oc=5"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB6elp2YzdSdEdpTGoxYkJDOWdybC1GSjU3bDRwNUVFcEhxOEVrVGh5WXBiZlZYQ3oxMjlXOHZiODYxWUNFanJKOHNLa1N2aFIxbnkzbC1Qa2JDVHc?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "UK-Iran national arrested under Terrorism Act over RAF Fairford incident",
+        "summary": "Counter-terrorism police arrest 27-year-old in Westminster, while second man questioned under caution Detectives have arrested a dual UK-Iranian national on suspicion of terrorism offences as part of an investigation into a suspected plot near RAF Fairford. Counter-terrorism…",
+        "outlets": 4,
+        "published": "2026-10-01T17:02:01+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/uk-news/2026/oct/01/uk-iran-national-arrested-terrorism-act-raf-fairford"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/01/world/europe/uk-iran-terrorism-raf-fairford.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/1/british-police-arrest-uk-iranian-national-over-airbase-incident?traffic_source=rss"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ZTmxHQ3phYnZ3M01jeTF1S09wYzUxLWt2VzctMjFOMkNOZmN5cnhkRjNHQWxxaUIyYTh5dThnNnJJQ2d4LTRfb19zZTJQbk9LUTR4RUJ3c2RsQzQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Swiss glaciers vanished by nearly a fifth in recent years, scientists say",
+        "summary": "Researchers warned that severe heat waves and low winter snow accelerated the thaw, causing massive ice loss across European glaciers.",
+        "outlets": 1,
+        "published": "2026-10-01T16:58:40+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/01/world/europe/switzerland-glaciers-melting-climate.html"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Google launches Gemini 4 Argon, its most powerful AI model yet",
+        "summary": "Google has unveiled Gemini 4 Argon, topping multiple benchmarks against competitor models and targeting coding, legal, and finance industries.",
+        "outlets": 2,
+        "published": "2026-10-01T04:37:23+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/technology/tech-news/google-unveils-gemini-4-argon-its-most-powerful-ai-model-yet-ceo-sundar-pichai-says-were-going-to-make-it-available-as-soon-as-we-can-and-as-/articleshow/134608054.cms"
+          },
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/google/2026/09/google-announces-gemini-4-argon-ai-model-but-you-cant-use-it-yet/"
+          }
+        ]
+      },
+      {
+        "headline": "HDFC Bank picks Anup Bagchi as managing director and CEO",
+        "summary": "The appointment marks a leadership transition at HDFC Bank, with the incumbent MD and CEO completing his tenure in October 2026.",
+        "outlets": 3,
+        "published": "2026-10-01T14:06:05+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/hdfc-bank-picks-anup-bagchi-as-managing-director-ceo-12126349#publisher=newsstand"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/banking/finance/banking/meet-anup-bagchi-the-icici-veteran-taking-hdfc-banks-top-job/articleshow/134620467.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/hdfc-bank-to-appoint-anup-bagchi-as-next-ceo-for-three-year-term-3007544-2026-10-01?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Global bond sell-off intensifies as US Treasury yields hit high",
+        "summary": "Fears that the US deficit is unsustainable drove yields on Treasury bills and UK gilts to multi-decade highs during a global market sell-off.",
+        "outlets": 1,
+        "published": "2026-10-01T15:55:50+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/oct/01/global-bond-sell-off-uk-long-term-borrowing-costs-us-bond-yield"
+          }
+        ]
+      },
+      {
+        "headline": "Coal India production rises 9.2% in September as monsoons ease",
+        "summary": "Coal India reported an increase in production, noting that output is expected to pick up further with the conclusion of the monsoon season.",
+        "outlets": 1,
+        "published": "2026-10-01T16:35:29+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/business/Economy/coal-india-production-up-92-in-september/article71534280.ece"
+          }
+        ]
+      }
+    ]
+  }
+}
