@@ -1,0 +1,503 @@
+{
+  "date": "2026-10-02",
+  "generated_at": "2026-10-02T16:38:38+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Indian pilot Smit Machchhar hailed as hero after subduing cockpit attacker",
+        "summary": "Captain Smit Machchhar successfully unlocked a cockpit door and thwarted an attack by his co-pilot on a flydubai flight to Israel, earning widespread praise.",
+        "outlets": 10,
+        "published": "2026-10-02T11:23:27+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/2/flydubai-pilot-describes-opening-cockpit-door-during-attack?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c639m98gde00o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/02/indian-pilot-smit-machchhar-recalls-flydubai-cockpit-attack"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/injured-under-attack-but-one-last-push-3-chilling-details-indian-pilot-smit-machchhar-gave-pm-modi-on-flydubai-nightmare-101790943224504.html"
+          }
+        ],
+        "why": "An Indian national's heroic actions saved a flight, drawing high-level praise from Prime Minister Modi."
+      },
+      {
+        "headline": "G7 nations agree to release 100 million barrels of oil reserves",
+        "summary": "World leaders confirmed a coordinated release of 100 million barrels of oil and diesel to address surging energy prices.",
+        "outlets": 11,
+        "published": "2026-10-02T16:16:28+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/g7-nations-agree-to-release-100-million-barrels-of-oil-including-diesel"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-europe-diesel-oil-release/"
+          },
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/europes-leaders-rush-to-release-diesel-from-stockpiles-as-fuel-shock-hangs-over-u-s-midterms-80bf0f38?mod=mw_rss_topstories"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/europe-diesel-stocks-release-trump-fuel-prices-mid-term-elections-3008346-2026-10-02?utm_source=rss"
+          }
+        ],
+        "why": "Crucial for global energy markets and inflation trends affecting consumers worldwide."
+      },
+      {
+        "headline": "US job growth slows sharply in September as unemployment rises",
+        "summary": "Employers added 29,000 jobs in September while the unemployment rate ticked up to 4.2 percent amid economic headwinds.",
+        "outlets": 6,
+        "published": "2026-10-02T14:52:16+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/september-jobs-report-us-hiring-labor-market/"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/02/nx-s1-5989140/jobs-labor-wages-federal-reserve"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/economy/disappointing-29000-jobs-added-in-september-as-unemployment-ticks-up"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/economy/2026/10/2/us-job-growth-slows-as-unemployment-rises-before-midterm-elections?traffic_source=rss"
+          }
+        ],
+        "why": "Directly impacts the US economy and labor market conditions ahead of the midterm elections."
+      },
+      {
+        "headline": "Protests erupt in India demanding election chief's resignation",
+        "summary": "Thousands rallied in Delhi and Mumbai to call for Chief Election Commissioner Gyanesh Kumar's resignation over electoral roll revisions.",
+        "outlets": 7,
+        "published": "2026-10-02T16:21:30+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/rahul-gandhi-demands-cec-gyanesh-kumars-resignation-as-protests-erupt-in-delhi-mumbai/articleshow/134643388.cms"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/700-detained-as-delhi-mumbai-see-big-protests-against-gyanesh-kumar-12130718#publisher=newsstand"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/cec-gyanesh-kumar-must-resign-cjp-india-bloc-youth-wings-to-protest-in-delhi-mumbai-from-oct-2-full-plan-11790916644460.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/cjp-warns-of-jantar-mantar-2-0-as-thousands-attend-mumbai-protest-seeking-cecs-ouster/articleshow/134643097.cms"
+          }
+        ],
+        "why": "Significant political unrest in India involving mass protests against the election commission."
+      },
+      {
+        "headline": "Fires and arrests grip France as student protests escalate",
+        "summary": "Widespread demonstrations over teacher shortages and education standards have shut hundreds of schools across France.",
+        "outlets": 5,
+        "published": "2026-10-02T15:09:33+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/02/student-protests-shut-schools-across-france"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/france-student-protests-riots-paris-violence-schools-closed/"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/why-are-french-students-taking-to-the-streets-around-400-schools-shut-as-protests-spread-across-the-country-11790945864117.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ck3r5dxxwqzpo?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "Major European social unrest posing a serious challenge to the French government."
+      }
+    ],
+    "us": [
+      {
+        "headline": "New York attorney general appointed special prosecutor in Cornell gang-rape case",
+        "summary": "State Attorney General Letitia James will take over the investigation into an alleged gang-rape at Cornell University.",
+        "outlets": 5,
+        "published": "2026-10-02T16:26:00+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/02/new-york-cornell-alleged-gang-rape-kathy-hochul"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cqvg04718lr9o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/01/insider/cornell-rape-investigation-news-reporting.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/cornell-university-case-letitia-james-special-prosecutor/"
+          }
+        ]
+      },
+      {
+        "headline": "Trump to name Jay Clayton as A.I. Czar",
+        "summary": "The administration plans to appoint Jay Clayton to help develop new policies and regulations for artificial intelligence.",
+        "outlets": 4,
+        "published": "2026-10-02T16:10:44+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/02/us/politics/trump-jay-clayton-ai-czar.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/2/reports-trump-to-name-intel-chief-clayton-as-ai-tsar?traffic_source=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-likely-jay-clayton-ai-czar-sources-say/"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/global-trends/jay-clayton-the-man-trump-may-put-in-charge-of-americas-ai-race/articleshow/134641918.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Border czar Homan responds to lawsuit over American killed by ICE agent",
+        "summary": "Family members of Renee Good are suing the U.S. government after she was shot and killed by an ICE agent in Minneapolis.",
+        "outlets": 2,
+        "published": "2026-10-02T14:33:16+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/renee-goods-family-suing-after-ice-agent-fatally-shot-her-border-czar-homan-responds/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwly7y5gvxlmo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Feds charge Gaza man in $1.7 million Hamas fundraising scheme",
+        "summary": "Prosecutors allege Saleem Alzaq helped operate a campaign claiming to provide humanitarian aid while funding Hamas.",
+        "outlets": 1,
+        "published": "2026-10-02T16:17:32+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/hamas-fundraising-scheme-gaza/"
+          }
+        ]
+      },
+      {
+        "headline": "Trump warns Republicans about Texas and Michigan ahead of midterms",
+        "summary": "President Trump cautioned that the party is worried about holding key states in the upcoming midterm elections.",
+        "outlets": 1,
+        "published": "2026-10-02T14:58:58+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/trump-warns-republicans-texas-michigan-ahead-midterms/story?id=136946201"
+          }
+        ]
+      },
+      {
+        "headline": "US Coast Guard intercepts ship carrying fuel to Cuba",
+        "summary": "A large cargo ship suspected of using dark fleet tactics was boarded and taken to Mexico amid ongoing embargoes.",
+        "outlets": 2,
+        "published": "2026-10-02T15:13:23+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/02/us-coast-guard-says-it-has-intercepted-ship-carrying-fuel-to-cuba"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/02/world/americas/coast-guard-cuba-ships-oil.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "India formally maps 28 places in Ladakh on official survey",
+        "summary": "India added 28 locations and geographical features in Ladakh to official maps amid ongoing tensions with China.",
+        "outlets": 3,
+        "published": "2026-10-02T10:23:08+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india-formally-names-28-places-and-features-in-ladakh-on-official-map-amid-china-s-push-why-it-matters-11790930338366.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/28-geographical-features-in-ladakh-formally-identified-on-survey-of-india-map-101790924692819.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/centre-formally-marks-28-strategic-ladakh-sites-including-lac-friction-points-on-official-map/articleshow/134632919.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Hockey legend Pargat Singh named Punjab Congress chief",
+        "summary": "Pargat Singh took over leadership of the Punjab Congress ahead of upcoming assembly elections.",
+        "outlets": 4,
+        "published": "2026-10-02T16:20:45+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/congress-appoints-aradhana-mishra-mona-as-uttar-pradesh-chief-replacing-ajay-rai-3008435-2026-10-02?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/hockey-legend-pargat-singh-named-punjab-congress-chief-months-ahead-of-polls-12131223#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/congress-appoints-aradhna-mishra-mona-as-new-up-chief-imran-masood-working-president-ahead-of-2027-polls-101790957268714.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/2027-elections-congress-appoints-pargat-singh-as-punjab-president-after-raja-warrings-resignation/articleshow/134643102.cms"
+          }
+        ]
+      },
+      {
+        "headline": "President Murmu assents to Gujarat Uniform Civil Code Bill",
+        "summary": "Gujarat became the second state after Uttarakhand to enact a comprehensive Uniform Civil Code.",
+        "outlets": 2,
+        "published": "2026-10-02T11:45:34+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/gujarat-ucc-bill-gets-president-murmu-s-assent-becomes-2nd-state-after-uttarakhand-101790941535248.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/after-president-murmus-nod-gujarat-becomes-2nd-indian-state-to-get-uniform-civil-code-3008022-2026-10-02?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Actor Dino Morea questioned in Mumbai desilting scam probe",
+        "summary": "Dino Morea faced hours of questioning regarding financial irregularities in a municipal desilting contract.",
+        "outlets": 2,
+        "published": "2026-10-02T14:47:27+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/actor-dino-morea-questioned-for-6-hours-in-rs-65-crore-mumbai-desilting-scam-12131011#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/mithi-river-desilting-case-mumbai-police-question-bollywood-actor-dino-morea-101790928273548.html"
+          }
+        ]
+      },
+      {
+        "headline": "Tamil Nadu removes Hindi lettering from state signboards",
+        "summary": "The Tamil Nadu government removed Hindi text from a signboard and suspended two highways department officials.",
+        "outlets": 2,
+        "published": "2026-10-02T14:37:52+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/mk-stalin-attacks-vijay-government-over-hindi-signboard-in-tamil-nadu-12130971#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/opinion/story/sathankulam-hindi-signboard-row-vijay-tamil-nadu-language-policy-3008276-2026-10-02?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "IIT Bombay professor interrogated over student suicide allegations",
+        "summary": "Police questioned Professor Suryanarayana Doolla following parental allegations of caste discrimination tied to a student's death.",
+        "outlets": 1,
+        "published": "2026-10-02T16:03:29+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/iit-bombay-professor-suryanarayana-doolla-interrogated-for-8-hours-over-sahil-wakode-suicide-12131304#publisher=newsstand"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Ethiopia and Eritrea cut diplomatic ties amid northern conflict",
+        "summary": "Diplomatic relations severed as Ethiopian forces battle rebel fighters in the northern region.",
+        "outlets": 2,
+        "published": "2026-10-02T16:08:25+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/2/ethiopia-eritrea-break-ties-does-the-conflict-risk-becoming-regional-war?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Ebola death toll surpasses 4,000 in DR Congo",
+        "summary": "The DR Congo continues to struggle with a severe Ebola outbreak that has displaced thousands of residents.",
+        "outlets": 2,
+        "published": "2026-10-02T13:17:00+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/2/ebola-death-toll-surpasses-4000-as-dr-congo-struggles-to-suppress-outbreak?traffic_source=rss"
+          },
+          {
+            "source": "AP News",
+            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNR1VBSzQ3aTR1RkVYN2ZCOFBNdnhSQmVIYU1PZWdLNlo5VGxVWU1zS2ZMSXBFOEptUTFiQW4xREZDRUVNbGwzeEtpcFBRckJZdkRUV0s0d2ZNQnZEY0VfbG53QVF5Y2FFZmZmcDRiRENqaVFmdG1LNE9UcUlvOEtzRzRHYS1lbE9pdnZVdVJTSQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Spanish parliament rejects government housing decrees",
+        "summary": "Lawmakers voted down housing affordability measures as critics argued the rules would tighten the market.",
+        "outlets": 2,
+        "published": "2026-10-02T15:01:08+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/2/spains-parliament-rejects-govt-housing-decrees-amid-mass-protests?traffic_source=rss"
+          },
+          {
+            "source": "AP News",
+            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSER5andpMFpUc19KTEg1M2RoOHZqSmdrd2FzN2Z5dmQ3WUdhRzgySzlvTGdiSS1YQWgyMk45QkFNcmNlRDBLSnVwZ1UtVGs5TnVBQ1Z1dnpuU2RHM25YVmduY1NObTRhLUtYSUt5VDZVX2ZWRGxoU0h5d0pDNVI4dHRKLXBMb1NYVFRZazhNUXE3VWEzVEdn?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "RAF Fairford incident: UK arrests dual British-Iranian national over suspected terror plot | What we know",
+        "summary": "UK counter-terrorism police have arrested a 27-year-old dual British-Iranian national over suspected preparation of terrorist acts linked to the RAF Fairford incident. The arrest comes amid claims of possible Iranian involvement and a separate warning by Israel.",
+        "outlets": 2,
+        "published": "2026-10-02T09:10:05+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/raf-fairford-incident-uk-arrests-dual-british-iranian-national-over-suspected-terror-plot-what-we-know-11790914176761.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdXlxMzFuZ1htdmVRUUd0a2VqZTR5c1dGN2o0ZmtHYWJ1eFhacS1faTlPbXd5VVhJVkM3eFdPN2FGbFdaNFFySEJjSGpHWU1qTGFuaWNLNFhFTkNmZzFPeFZTUlc4SmtCX0NBQWlFa0ZobkJ0VjZENEtUeDROSmxibW95a1VSZ1kzaVZWQkZVQzlVWjRUVWI1YXU1UHM1VGJFdzlRNdIBqgFBVV95cUxPV24yTFZWU1VGNVZzdHp3TEJtZDlVVzZveUpnTlJOcWJTMkFuZWxyMlRIT1Rkbjl5YlJMcEhkQk96X3RiNlBWUXFXbURoUDVUUFVfckVudnc1TGNKVmRzeGJDcDRpWV9acm9ta2lfc2pVNF90Vi1Selp3eFZRNVZpME1qY0RpSGN2QnRxb0o5SHlwemFuV052SzlwczlweDM3REExVS1ZS2NOdw?oc=5"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Skydance adopted as name for combined Paramount and Warner Bros.",
+        "summary": "Tech scion David Ellison will run the newly merged entertainment company under the Skydance banner.",
+        "outlets": 3,
+        "published": "2026-10-02T16:15:32+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/02/business/media/skydance-paramount-warner-bros.html"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/entertainment/1004016/paramount-warner-bros-skydance-megamerger-name"
+          },
+          {
+            "source": "The Hollywood Reporter",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbXg2Z3BVQjBubW05TUZsWTFtMElhNHY3QnFYbm95UzhPMzZRend6d2RzQWtwTlEyVmhucHFDRGRqaTN6Y0lWQ0tnRzBrYzdVcnVrUFNNQThUQVJ0Vnc3NjRJbk9PZlNwQUhRUnFEZVZjTUVVcHZZWS1GdktfODBxb19rc1FtZVJUQW41SENWWDA5dmpVaWNxb0dSSDBhd1NYY1lUY1JXczl0c08tdk1jbjl4M2tvZjdOTlM0NFR0WmNLRnM?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Threat to ban US diesel exports sets off global alarms",
+        "summary": "Soaring fuel prices and potential export restrictions threaten major trading partners and domestic truckers.",
+        "outlets": 2,
+        "published": "2026-10-02T12:36:10+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/01/business/diesel-prices-us-exports.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/oct/02/uk-is-not-facing-diesel-shortage-despite-fears-of-trump-export-ban-minister-says"
+          }
+        ]
+      },
+      {
+        "headline": "Nasdaq hits record high as weaker jobs data cools rate hikes",
+        "summary": "U.S. stocks advanced and Treasury yields fell as soft employment numbers lowered expectations for imminent Fed rate hikes.",
+        "outlets": 2,
+        "published": "2026-10-02T15:48:45+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/why-us-stocks-are-rising-nasdaq-hits-record-after-weaker-jobs-data-cools-rate-hike-bets-nike-shares-drop-on-forecast/articleshow/134642197.cms"
+          },
+          {
+            "source": "cnbc.com",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1JVkxRTDJXTzczbVFZVDBDb3NJTmZjRW1TdzVVeUFUbkFVV0RKMDdxSDVtb2ZOU2R1NzFqT2kwem9MOTRsbUdZTUZ2a3ctYXNRN2lWYXdycU10YVBIdVk3a2VVa3FrMjlUZjVHOUVDZ3BPTGFNOGZKQ9IBfkFVX3lxTE1GWVluaGw5M2xYLV9aZ0dYX19YSDJxNXlYcFdLakUwQ3FYSTFDQnJkNWlNUGFGSDRjZXcwWDR3NFllbXg5UzA1V1BWYlgwYlVaYTZFRHB0ZWRIeHp5akduM3RlMnR3TTFBR3RoZjh0SmtnSDVtM2s1OVZENVU2Zw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Wall Street moves toward all-night stock trading exchanges",
+        "summary": "US equity exchanges prepare to keep lights on longer as markets shift toward round-the-clock trading.",
+        "outlets": 1,
+        "published": "2026-10-02T14:59:09+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/sleepless-on-wall-street-all-night-stock-exchanges-coming-soon/articleshow/134642205.cms"
+          }
+        ]
+      }
+    ]
+  }
+}
