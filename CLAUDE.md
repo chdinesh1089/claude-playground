@@ -31,8 +31,9 @@ standard library.
 | `aiapps/tmux-cheatsheet/` | tmux cheat sheet (uploaded by the user) | static |
 | `aiapps/paper-plane/` | *The Paper Plane*, 71 s three.js story | static |
 | `aiapps/flappy-3d/` | *Flap 3D*, a three.js flappy-bird-style game | static |
-| `aiapps/dholakpur-call/` | *Dholakpur Call*, WebRTC video calls as 3D Chhota Bheem characters (face + hands) | static |
+| `aiapps/dholakpur-call/` | *Dholakpur Call*, WebRTC video calls as 3D Chhota Bheem characters or VRM avatars (face + hands) | static; `avatars/` holds 6 bundled VRMs + thumbnails |
 | `aiapps/lib/three-bundle.min.js` | Shared three.js r186 + add-ons bundle | built manually (see below) |
+| `aiapps/lib/three-vrm.min.js` | `@pixiv/three-vrm` 3.5.5 + the r186 GLTFLoader, `three` external | built manually (see below) |
 | `aiapps/lib/mediapipe/` | MediaPipe Tasks Vision 1.0.1 + Face and Hand Landmarker models (~24 MB) | vendored from npm (see `NOTICE.md`) |
 
 ## Branches and deploy
@@ -98,7 +99,11 @@ should score several points.
   `lockSize(i)` (stops the adaptive size, so screenshots are 960×720),
   `thumbsReady`, `snapshot()` (renders and returns a PNG data URL; the
   WebGL canvas has no preserved buffer, so don't read `canvas` directly),
-  `avatar` and `canvas`. Add
+  `avatar`, `canvas`, `loadAvatar(id)` (a promise), `avatarPNG(id)` (a
+  transparent 640×480 PNG of a VRM avatar; that's how `avatars/<id>.png`
+  are made, then scaled to 320×240 with ffmpeg) and `signal` (the
+  signalling socket state). `?debug` logs signalling messages and ICE
+  candidates. Add
   `?signal=ws://127.0.0.1:9000/peerjs` to use a local PeerJS server
   (`npm i peer`, then `PeerServer({port: 9000, host: '127.0.0.1', path: '/'})`;
   pass the host, or it fails to bind IPv6 here). For a fake camera, launch
@@ -109,7 +114,14 @@ should score several points.
   `storage.googleapis.com/mediapipe-assets/{thumb_up,victory,pointing_up}.jpg`;
   overlay them next to the face with ffmpeg to test hand tracking end to end.
   In SwiftShader the 3D page drops to 480×360 and builds all six characters
-  in about 9 s.
+  in about 9 s. **Launch multi-browser call tests with
+  `--disable-features=WebRtcHideLocalIpsWithMdns`**: here every candidate is
+  an mDNS `.local` host (STUN is unreachable), and the third browser often
+  can't resolve them, so its connections stall at ICE `new` and get dropped
+  after 30 s. That's the sandbox, not the app.
+  The sandbox can't reach arweave or IPFS gateways; the 100Avatars VRMs
+  come from `github.com/PolygonalMind/100Avatars` (clone with
+  `--filter=blob:none --no-checkout`, then check out only the files you need).
 
 The sandbox can't reach `*.github.io`, Google Flights, the news feeds or the
 Gemini API. Test the briefing offline by serving sample RSS files and a fake
@@ -125,6 +137,14 @@ add-on): make an `entry.js` that does `export * from 'three'` and re-exports
 `npx esbuild entry.js --bundle --format=esm --minify --outfile=aiapps/lib/three-bundle.min.js`.
 Apps load it with an import map: `{"imports":{"three":"../lib/three-bundle.min.js"}}`.
 Don't use a CDN.
+
+Rebuilding `three-vrm.min.js`: `npm i three@0.186.0 @pixiv/three-vrm esbuild`, make an
+`entry.js` that re-exports `GLTFLoader` from
+`./node_modules/three/examples/jsm/loaders/GLTFLoader.js` (a relative path, because
+`--external:three` also externalises `three/addons/*`) plus `VRMLoaderPlugin`,
+`VRMUtils`, `VRMHumanBoneName` and `VRMExpressionPresetName` from `@pixiv/three-vrm`, then
+`npx esbuild entry.js --bundle --format=esm --minify --external:three --outfile=…`
+and keep the license comment at the top.
 
 ## Flight tracker
 
@@ -216,8 +236,8 @@ Don't use a CDN.
   MediaPipe's handedness label. A hand counts as lost after
   `max(300 ms, 2.5 × detection interval)`; then it eases to a resting pose
   by the hip.
-- Avatars (`CHARS`: Bheem, Chutki, Raju, Kalia, Jaggu, Indumati) are fully
-  procedural. Nothing is loaded except the bundle. In `buildCharacter()`:
+- Built-in characters (`CHARS`: Bheem, Chutki, Raju, Kalia, Jaggu, Indumati)
+  are fully procedural. In `buildCharacter()`:
   - The head is a sphere deformed by `makeShape()`, with four morph
     targets (`MORPHS`: jaw drop, cheek puff, left and right smile).
     `PHI0` puts the sphere seam at the back.
@@ -236,6 +256,31 @@ Don't use a CDN.
   - Chutki's braids are verlet chains with a draped rest shape. Their
     collisions also move the previous position, so they never add speed.
   - The tuft and jhumkas are springs driven by head motion.
+- **VRM avatars.** Six open-source avatars from 100Avatars by Polygonal Mind
+  are bundled in `avatars/` (Dino Kid, Jenny, Jimmy, Gnome, Kate, Super
+  Grandpa); their credits are in `avatars/CREDITS.md`.
+  - The embedded VRM meta says CC0, but the GitHub repo ships CC BY 4.0, so
+    the app and CREDITS.md credit Polygonal Mind.
+  - Users can also load their own `.vrm` ("Your own .vrm"). It stays in the
+    browser as a blob URL under the id `custom`, and peers see only the video
+    and the avatar's name: messages carry `cname`, and tile labels show it.
+  - Avatars load on demand through `loadAvatar()`. The picker shows the
+    pre-rendered `avatars/<id>.png` over the background, so the lobby doesn't
+    download every model.
+  - `buildVrmCharacter()` drives the normalised humanoid. It frames the
+    whole head (hats included) to 2.75 units with its top at y = 1.25.
+    - Spine, chest, neck and head share the head rotation; each local
+      rotation is the world delta conjugated by the parent's world rotation,
+      which works for both VRM 0 and VRM 1.
+    - Arms use two-bone IK to the tracked wrist. The rig can't stretch, so
+      out-of-reach hands are pulled in.
+    - The hand aligns knuckle direction and the index-to-pinky axis, and
+      each finger bone swings toward its landmark segment.
+  - Expressions map onto `aa/ih/ou/ee/oh`, blinks (the avatar's left eye is
+    on the image right) and `happy/angry/sad/surprised` when present. Models
+    with ARKit "perfect sync" shapes get MediaPipe's raw blendshapes by name.
+  - `vrm.update()` runs spring bones. Toon materials render at exposure .85.
+  - Touch devices start at 640×480 with a 512 shadow map.
 - The stage has ACES tone mapping, `PCFShadowMap` shadows from the key
   light, a fill light, two rims, a PMREM studio environment, and the painted
   Dholakpur background blurred like a lens. Output size adapts:
@@ -258,7 +303,7 @@ Don't use a CDN.
   on a pre-negotiated data channel (`negotiated: true, id: 0`).
 - `vision_bundle.mjs` is patched so MediaPipe's usage logger never POSTs to
   `odml.pa.googleapis.com`. Redo the patch if MediaPipe is upgraded.
-- `localStorage` keys: `dholakpur:name`, `dholakpur:char`, `dholakpur:bg`.
+- `localStorage` keys: `dholakpur:name`, `dholakpur:char` (never `custom`), `dholakpur:bg`.
 
 ## Landing page
 
@@ -314,6 +359,10 @@ Keys: Space, ←/→, R.
 
 Newest first. Add one line per change.
 
+- 2026-10-03: Dholakpur Call supports VRM avatars: six CC0/CC-BY avatars
+  from Polygonal Mind's 100Avatars, plus your own `.vrm`. Face, head, arms
+  and fingers drive the humanoid rig. Added `lib/three-vrm.min.js`, phone
+  defaults and `?debug` signalling logs.
 - 2026-10-03: Dholakpur Call is now 3D (three.js, procedural characters
   with morphs, glossy eyes, 3D lips, hair shells, shadows, blurred
   background) with hand tracking. Arms and fingers follow your hands, so

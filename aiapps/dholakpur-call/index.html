@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Dholakpur Call</title>
-<meta name="description" content="Video calls where you become a 3D Chhota Bheem, Chutki, Raju, Kalia, Jaggu or Indumati in real time. Your expressions, head and hands carry over, so you can wave. Peer-to-peer WebRTC, and your real face never leaves the browser.">
+<meta name="description" content="Video calls where you become a 3D Chhota Bheem, Chutki, Raju, Kalia, Jaggu or Indumati, an open-source VRM avatar, or your own .vrm, in real time. Your expressions, head and hands carry over, so you can wave. Peer-to-peer WebRTC, and your real face never leaves the browser.">
 <meta name="theme-color" content="#1c130c">
 <style>
 :root {
@@ -103,6 +103,10 @@ button { cursor: pointer; }
 .char-btn canvas { display: block; width: 100%; aspect-ratio: 4 / 3; }
 .char-btn span { display: block; padding: 4px 0 6px; font-size: 13px; font-weight: 600; }
 .char-btn[aria-pressed=true] { border-color: var(--saffron); background: var(--panel-2); }
+.char-btn.upload .plus { aspect-ratio: 4 / 3; display: grid; place-items: center; font-size: 34px; color: var(--muted); }
+.chars-sub { grid-column: 1 / -1; margin: 8px 2px 0; font-size: 13px; color: var(--muted); }
+.chars-sub span { font-size: 12px; }
+.chars-sub a { color: var(--saffron-2); }
 .seg { display: inline-flex; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
 .seg button { border: 0; background: none; padding: 6px 14px; border-radius: 999px; color: var(--muted); }
 .seg button[aria-pressed=true] { background: var(--panel-2); color: var(--text); }
@@ -185,6 +189,7 @@ button { cursor: pointer; }
   width: min(420px, calc(100% - 32px));
   background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 12px; box-shadow: 0 16px 48px rgba(0,0,0,.5); z-index: 20;
+  max-height: calc(100vh - 120px); overflow-y: auto;
 }
 .popover .chars { grid-template-columns: repeat(3, 1fr); }
 
@@ -301,11 +306,13 @@ button { cursor: pointer; }
   <form id="chatForm" autocomplete="off"><input id="chatInput" maxlength="500" placeholder="Message everyone"><button type="submit">Send</button></form>
 </aside>
 <div id="toast" hidden></div>
+<input type="file" id="vrmFile" accept=".vrm" hidden>
 
 <script type="importmap">{"imports":{"three":"../lib/three-bundle.min.js"}}</script>
 <script type="module">
 import * as THREE from 'three';
 import { FaceLandmarker, HandLandmarker } from '../lib/mediapipe/vision_bundle.mjs';
+import { GLTFLoader, VRMLoaderPlugin, VRMUtils } from '../lib/three-vrm.min.js';
 
 const $ = s => document.querySelector(s);
 const TAU = Math.PI * 2;
@@ -426,7 +433,13 @@ const CHARS = {
     longHair: true, crown: true, tikka: true, jhumka: true,
   },
 };
+// Open-source avatars: 100Avatars by Polygonal Mind (see avatars/CREDITS.md)
+for (const [id, name, file] of [
+  ['dino', 'Dino Kid', '045_DinoKid'], ['jenny', 'Jenny', '052_Jennifer'], ['jimmy', 'Jimmy', '003_Jimmy'],
+  ['gnome', 'Gnome', '047_David'], ['kate', 'Kate', '038_Kate'], ['grandpa', 'Super Grandpa', '004_OldMoustache'],
+]) CHARS[id] = { name, vrm: `avatars/100Avatars_${file}.vrm`, thumb: `avatars/${id}.png` };
 const CHAR_IDS = Object.keys(CHARS);
+const charName = id => CHARS[id]?.name || 'Bheem';
 
 /* ---------- head shape and morphs ---------- */
 function makeShape(hp) {
@@ -1329,8 +1342,11 @@ catch (e) {
   document.body.innerHTML = '<p style="padding:40px 16px;text-align:center">Dholakpur Call needs WebGL, which this browser has turned off.</p>';
   throw e;
 }
+// Phones start smaller (the adaptive size can still step up) with a lighter shadow map.
+const touch = matchMedia('(pointer: coarse)').matches;
+if (touch) sizeIdx = 2;
 renderer.setPixelRatio(1);
-renderer.setSize(...SIZES[0], false);
+renderer.setSize(...SIZES[sizeIdx], false);
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.02;
 renderer.shadowMap.enabled = true;
@@ -1345,7 +1361,7 @@ scene.add(new THREE.HemisphereLight('#d6ebff', '#8a6440', .8));
 const keyLight = new THREE.DirectionalLight('#fff0dc', 2.6);
 keyLight.position.set(-4, 6, 8);
 keyLight.castShadow = true;
-keyLight.shadow.mapSize.set(1024, 1024);
+keyLight.shadow.mapSize.setScalar(touch ? 512 : 1024);
 keyLight.shadow.radius = 4;
 keyLight.shadow.bias = -.0004;
 keyLight.shadow.normalBias = .02;
@@ -1450,14 +1466,216 @@ function background(name) {
 
 /* ---------- characters on stage ---------- */
 const built = {};
-function getCharacter(id) { return built[id] || (built[id] = buildCharacter(id)); }
+function getCharacter(id) {
+  if (!CHARS[id]) id = 'bheem';
+  if (built[id]) return built[id];
+  if (CHARS[id]?.vrm) { loadAvatar(id).catch(() => {}); return null; }
+  return (built[id] = buildCharacter(id));
+}
 let current = null;
 function showCharacter(id) {
-  const c = getCharacter(id);
+  // a VRM that is still downloading keeps the previous character on stage
+  const c = getCharacter(id) || current || getCharacter('bheem');
   if (current === c) return;
   if (current) scene.remove(current.root);
   current = c; c.reset();
   scene.add(c.root);
+}
+
+/* =====================================================================
+   Open-source VRM avatars. The same tracking drives the humanoid rig:
+   the head turn is spread over spine, neck and head, arms reach the
+   tracked wrist with two-bone IK, and every finger bone points along the
+   matching hand landmarks. Expressions map onto whatever presets the
+   model has, and models with the 52 ARKit shapes ("perfect sync") get the
+   raw MediaPipe blendshapes directly.
+   ===================================================================== */
+const vrmLoader = new GLTFLoader();
+vrmLoader.register(p => new VRMLoaderPlugin(p));
+const loading = {};
+function loadAvatar(id) {
+  if (built[id]) return Promise.resolve(built[id]);
+  if (loading[id]) return loading[id];
+  const src = CHARS[id].vrm, url = new URL(src, location.href).href;
+  return (loading[id] = vrmLoader.loadAsync(url)
+    .then(g => {
+      if (!g.userData.vrm) throw new Error('That file is not a VRM avatar');
+      const c = buildVrmCharacter(id, g.userData.vrm);
+      if (CHARS[id]?.vrm === src) built[id] = c;   // ignore a load that was replaced meanwhile
+      return c;
+    })
+    .catch(e => { console.error(e); delete loading[id]; throw e; }));
+}
+
+const FINGERS = [
+  ['Thumb', ['Metacarpal', 'Proximal', 'Distal'], [1, 2, 3, 4]],
+  ['Index', ['Proximal', 'Intermediate', 'Distal'], [5, 6, 7, 8]],
+  ['Middle', ['Proximal', 'Intermediate', 'Distal'], [9, 10, 11, 12]],
+  ['Ring', ['Proximal', 'Intermediate', 'Distal'], [13, 14, 15, 16]],
+  ['Little', ['Proximal', 'Intermediate', 'Distal'], [17, 18, 19, 20]],
+];
+
+function buildVrmCharacter(id, vrm) {
+  if (vrm.meta?.metaVersion === '0') VRMUtils.rotateVRM0(vrm);
+  VRMUtils.removeUnnecessaryVertices(vrm.scene);
+  VRMUtils.combineSkeletons(vrm.scene);
+  vrm.scene.traverse(o => { if (o.isMesh) { o.frustumCulled = false; o.castShadow = o.receiveShadow = true; } });
+  const H = vrm.humanoid, B = n => H.getNormalizedBoneNode(n);
+  if (!H.normalizedHumanBonesRoot.parent) vrm.scene.add(H.normalizedHumanBonesRoot);
+  const root = new THREE.Group();
+  root.add(vrm.scene);
+
+  // frame it like a webcam: the whole head (hats and hoods included) fits the same
+  // height, with its top just under the edge of the frame
+  vrm.scene.updateMatrixWorld(true);
+  const box = new THREE.Box3().setFromObject(vrm.scene);
+  const hp = B('head').getWorldPosition(V3());
+  const s = 2.75 / Math.max(.05, box.max.y - hp.y);
+  vrm.scene.scale.setScalar(s);
+  vrm.scene.position.set(-hp.x * s, 1.25 - box.max.y * s, -hp.z * s);
+  root.updateMatrixWorld(true);
+  const R0 = vrm.scene.getWorldQuaternion(new THREE.Quaternion()), R0i = R0.clone().invert();
+  const wp = n => n.getWorldPosition(V3());
+  // rest directions in the bones' own frame (normalised bones rest at identity)
+  const dirLocal = (a, b) => wp(b).sub(wp(a)).applyQuaternion(R0i).normalize();
+
+  const arms = [['L', 'right', -1], ['R', 'left', 1]].map(([key, pre, side]) => {
+    const up = B(pre + 'UpperArm'), lo = B(pre + 'LowerArm'), hand = B(pre + 'Hand');
+    if (!up || !lo || !hand) return null;
+    const fingers = [];
+    for (const [fn, segs, lm] of FINGERS) {
+      let prev = null;
+      segs.forEach((sg, k) => {
+        const bone = B(pre + fn + sg);
+        if (!bone) return;
+        const next = k < segs.length - 1 ? B(pre + fn + segs[k + 1]) : null;
+        const dir = next ? dirLocal(bone, next) : prev ? prev.clone() : dirLocal(hand, bone);
+        fingers.push({ bone, first: !prev, dir, from: lm[k], to: lm[k + 1], q: new THREE.Quaternion() });
+        prev = dir;
+      });
+    }
+    const mid = B(pre + 'MiddleProximal'), idx = B(pre + 'IndexProximal'), lit = B(pre + 'LittleProximal');
+    return {
+      key, side, up, lo, hand, fingers,
+      upDir: dirLocal(up, lo), loDir: dirLocal(lo, hand),
+      a: wp(up).distanceTo(wp(lo)), b: wp(lo).distanceTo(wp(hand)),
+      handF: mid ? dirLocal(hand, mid) : dirLocal(lo, hand),
+      handS: idx && lit ? dirLocal(lit, idx) : V3(0, 0, 1).applyQuaternion(R0i),
+      pts: HAND_CANON.map(() => V3()), init: false,
+    };
+  }).filter(Boolean);
+
+  const em = vrm.expressionManager;
+  const exprNames = new Set(em ? em.expressions.map(e => e.expressionName) : []);
+  const byLower = {};
+  for (const n of exprNames) byLower[n.toLowerCase()] = n;
+  const perfectSync = 'jawopen' in byLower && 'eyeblinkleft' in byLower;
+  const set = (n, v) => { if (exprNames.has(n)) em.setValue(n, clamp(v)); };
+  const ownBlinks = exprNames.has('blinkLeft') && exprNames.has('blinkRight');
+
+  const chain = [['spine', .15], ['chest', .1], ['upperChest', .05], ['neck', .3], ['head', .4]].filter(([n]) => B(n));
+  const total = chain.reduce((a, [, k]) => a + k, 0);
+  const Q = new THREE.Quaternion(), Qd = new THREE.Quaternion(), Qi = new THREE.Quaternion(), Qu = new THREE.Quaternion(), Qpar = new THREE.Quaternion(),
+    Ql = new THREE.Quaternion(), Qh = new THREE.Quaternion(), Qhead = new THREE.Quaternion(), e = new THREE.Euler();
+  const Mr = new THREE.Matrix4(), Mw = new THREE.Matrix4();
+  const a = V3(), b = V3(), c = V3(), S = V3(), E = V3(), rest = HAND_CANON.map(() => V3());
+
+  function aim(bone, Qp, restDir, want, out) {
+    a.copy(restDir).applyQuaternion(Qp);
+    Qd.setFromUnitVectors(a, want.normalize());
+    out.copy(Qd).multiply(Qp);
+    bone.quaternion.copy(Qi.copy(Qp).invert()).multiply(out);
+    return out;
+  }
+  function frame3(f, s, m) {
+    const x = c.copy(f).normalize(), z = V3().crossVectors(x, s).normalize(), y = V3().crossVectors(z, x);
+    return m.makeBasis(x, y, z);
+  }
+  function restHandPts(arm, S, o) {
+    // relaxed hand hanging by the side, fingers down, thumb forward
+    const L = arm.a + arm.b, k = L * .2;
+    const w = b.copy(S).add(a.set(arm.side * L * .12, -L * .97, L * .12));
+    HAND_CANON.forEach(([x, y, z], i) => o[i].set(w.x + arm.side * z * k, w.y - y * k, w.z - x * k));
+    return o;
+  }
+
+  function update(st, dt) {
+    const f = st.face;
+    root.position.set(f.x, f.y, f.z);
+    root.updateMatrixWorld(true);
+    // spine, neck and head share the head rotation
+    Q.copy(R0);
+    for (const [n, k] of chain) {
+      const w = k / total;
+      e.set(-f.pitch * w, f.yaw * w, -f.roll * w, 'YXZ'); Qd.setFromEuler(e);
+      const bone = B(n);
+      bone.quaternion.copy(Qi.copy(Q).invert()).multiply(Qd).multiply(Q);
+      Q.multiply(bone.quaternion);
+    }
+    e.set(-f.pitch, f.yaw, -f.roll, 'YXZ'); Qhead.setFromEuler(e);
+    root.updateMatrixWorld(true);
+
+    for (const arm of arms) {
+      arm.up.getWorldPosition(S);
+      const tracked = st.hands?.[arm.key];
+      const target = tracked || restHandPts(arm, S, rest);
+      if (!arm.init) { arm.pts.forEach((p, i) => p.copy(target[i])); arm.init = true; }
+      const k = 1 - Math.exp(-dt / (tracked ? .04 : .22));
+      arm.pts.forEach((p, i) => p.lerp(target[i], k));
+      const P = arm.pts;
+      // the rig can't stretch, so pull the whole hand within reach
+      b.subVectors(P[0], S);
+      const over = b.length() - (arm.a + arm.b) * .995;
+      if (over > 0) { b.normalize().multiplyScalar(-over); P.forEach(p => p.add(b)); }
+      // elbow: two-bone IK, bending out, down and back
+      const L = S.distanceTo(P[0]), x = clamp((arm.a * arm.a - arm.b * arm.b + L * L) / (2 * L), 0, arm.a);
+      const h = Math.sqrt(Math.max(0, arm.a * arm.a - x * x));
+      b.subVectors(P[0], S).normalize();
+      c.set(arm.side * .9, -1, -.5).normalize(); c.addScaledVector(b, -c.dot(b)).normalize();
+      E.copy(S).addScaledVector(b, x).addScaledVector(c, h);
+      arm.up.parent.getWorldQuaternion(Qpar);
+      aim(arm.up, Qpar, arm.upDir, b.subVectors(E, S), Qu);
+      aim(arm.lo, Qu, arm.loDir, b.subVectors(P[0], E), Ql);
+      // wrist: line up the knuckle direction and the index-to-pinky axis
+      frame3(arm.handF, arm.handS, Mr);
+      frame3(b.subVectors(P[9], P[0]), V3().subVectors(P[5], P[17]), Mw);
+      Qh.setFromRotationMatrix(Mw.multiply(Mr.transpose()));
+      arm.hand.quaternion.copy(Qi.copy(Ql).invert()).multiply(Qh);
+      let Qp = Qh;
+      for (const fb of arm.fingers) {
+        aim(fb.bone, fb.first ? Qh : Qp, fb.dir, b.subVectors(P[fb.to], P[fb.from]), fb.q);
+        Qp = fb.q;
+      }
+    }
+
+    // expressions
+    const open = clamp(f.jaw - f.close * .5), pk = Math.max(f.pucker, f.funnel), sm = (f.smileL + f.smileR) / 2;
+    if (perfectSync && lastRaw && performance.now() - lastSeen < 600) {
+      for (const [k2, v] of Object.entries(lastRaw.b)) if (byLower[k2.toLowerCase()]) set(byLower[k2.toLowerCase()], v);
+    } else {
+      set('aa', open * (1 - pk * .7));
+      set('oh', f.funnel * .8);
+      set('ou', f.pucker * (1 - open * .4));
+      set('ee', clamp(sm * .8 + f.stretch * .5) * (1 - pk));
+      set('ih', sm * .35 * (1 - pk));
+      // the avatar faces us, so its left eye is on the image right
+      if (ownBlinks) { set('blinkLeft', f.blinkR); set('blinkRight', f.blinkL); }
+      else set('blink', clamp(((f.blinkL + f.blinkR) / 2 - .25) / .6));
+      set('happy', sm);
+      set('angry', (f.browDownL + f.browDownR) / 2);
+      set('sad', (f.frownL + f.frownR) / 2 * .8);
+      set('surprised', clamp((f.browInner + (f.wideL + f.wideR) / 2) / 1.6));
+    }
+    if (vrm.lookAt) { vrm.lookAt.autoUpdate = false; vrm.lookAt.yaw = f.gx * 20; vrm.lookAt.pitch = -f.gy * 15; }
+    vrm.update(dt);
+  }
+
+  return {
+    id, root, update, vrm,
+    title: vrm.meta?.name || vrm.meta?.title || '',
+    mouthWorld: o => B('head').getWorldPosition(o).add(a.set(0, .45, .9).applyQuaternion(Qhead)),
+    reset() { arms.forEach(x => { x.init = false; }); vrm.springBoneManager?.reset(); },
+  };
 }
 
 /* =====================================================================
@@ -1772,6 +1990,7 @@ function frame(now) {
     sparkPos.needsUpdate = true;
   }
   scene.background = background(bg);
+  renderer.toneMappingExposure = current.vrm ? .85 : 1.02;
   renderer.render(scene, camera);
   adaptSize(now, dt);
   updateSpeaking();
@@ -1804,14 +2023,18 @@ document.addEventListener('visibilitychange', () => ticker.postMessage(document.
 const thumbCam = new THREE.PerspectiveCamera(19, 4 / 3, .5, 80);
 thumbCam.position.set(0, -.25, 10.5);
 thumbCam.lookAt(0, -.4, 0);
-const thumbs = {};
+const thumbs = {};       // id -> 320x240 canvas
 const thumbSlots = {};   // id -> canvases in the pickers
+const thumbImgs = {};    // id -> pre-rendered VRM avatar on a transparent background
+function paintSlots(id) {
+  for (const slot of thumbSlots[id] || []) if (thumbs[id]) slot.getContext('2d').drawImage(thumbs[id], 0, 0, slot.width, slot.height);
+}
 function renderThumb(id) {
   const c = getCharacter(id), prev = current;
+  if (!c) return;
   if (current) scene.remove(current.root);
   scene.add(c.root); c.reset();
   const f = { ...NEUTRAL_FACE, smileL: .55, smileR: .55, yaw: -.18, gx: .1 };
-  c.update({ face: f, hands: {} }, .016, 0);
   for (let i = 0; i < 30; i++) c.update({ face: f, hands: {} }, .016, i * .016);   // let springs settle
   scene.background = background(bg);
   renderer.setSize(320, 240, false);
@@ -1821,7 +2044,20 @@ function renderThumb(id) {
   renderer.setSize(...SIZES[sizeIdx], false);
   scene.remove(c.root);
   if (prev) { scene.add(prev.root); current = prev; } else current = null;
-  for (const slot of thumbSlots[id] || []) slot.getContext('2d').drawImage(t, 0, 0, slot.width, slot.height);
+  paintSlots(id);
+}
+// Bundled avatars use a pre-rendered picture over the current background, so
+// the lobby doesn't download every model just to show the picker.
+function imageThumb(id) {
+  const img = thumbImgs[id] || (thumbImgs[id] = Object.assign(new Image(), { src: CHARS[id].thumb }));
+  const draw = () => {
+    const t = thumbs[id] || (thumbs[id] = Object.assign(document.createElement('canvas'), { width: 320, height: 240 }));
+    const g = t.getContext('2d');
+    g.drawImage(background(bg).image, 192, 96, 640, 480, 0, 0, 320, 240);
+    g.drawImage(img, 0, 0, 320, 240);
+    paintSlots(id);
+  };
+  if (img.complete && img.naturalWidth) draw(); else img.addEventListener('load', draw, { once: true });
 }
 function thumbnail(id) {
   const c = document.createElement('canvas');
@@ -1833,6 +2069,11 @@ function thumbnail(id) {
 function buildPicker(el, onPick) {
   el.textContent = '';
   for (const id of CHAR_IDS) {
+    if (CHARS[id].vrm && !el.querySelector('.chars-sub')) {
+      const h = document.createElement('div'); h.className = 'chars-sub';
+      h.innerHTML = 'Open-source avatars <span>by <a href="https://github.com/PolygonalMind/100Avatars" target="_blank" rel="noopener">Polygonal Mind</a></span>';
+      el.append(h);
+    }
     const b = document.createElement('button');
     b.type = 'button'; b.className = 'char-btn'; b.dataset.id = id;
     b.setAttribute('aria-pressed', String(id === character));
@@ -1841,24 +2082,35 @@ function buildPicker(el, onPick) {
     b.addEventListener('click', () => { onPick(id); b.blur(); });
     el.append(b);
   }
+  const up = document.createElement('button');
+  up.type = 'button'; up.className = 'char-btn upload';
+  up.innerHTML = '<div class="plus">+</div><span>Your own .vrm</span>';
+  up.addEventListener('click', () => { $('#vrmFile').click(); up.blur(); });
+  el.append(up);
 }
 function setCharacter(id) {
+  if (!CHARS[id]) return;
   character = id;
-  store.set('dholakpur:char', id);
+  if (!CHARS[id].custom) store.set('dholakpur:char', id);
   for (const b of document.querySelectorAll('.char-btn')) b.setAttribute('aria-pressed', String(b.dataset.id === id));
-  broadcast({ t: 'char', char: id });
+  if (CHARS[id].vrm && !built[id]) {
+    toast(`Loading ${charName(id)}…`);
+    loadAvatar(id).catch(e => toast(`Couldn't load ${charName(id)}: ${e.message}`));
+  }
+  broadcast({ t: 'char', char: id, cname: charName(id) });
   const me = tiles.get('me');
-  if (me) me.setLabel(myName(), id, !micOn);
+  if (me) me.setLabel(myName(), charName(id), !micOn);
 }
 let thumbsQueued = false;
 function rebuildPickers() {
   for (const k in thumbSlots) thumbSlots[k].length = 0;
   buildPicker($('#lobbyChars'), setCharacter);
   buildPicker($('#callChars'), id => { setCharacter(id); $('#charPop').hidden = true; });
-  // build and photograph each character in idle slices so the page stays responsive
+  for (const id of CHAR_IDS) if (CHARS[id].thumb) imageThumb(id);
+  // build and photograph the procedural characters in idle slices so the page stays responsive
   if (thumbsQueued) return;
   thumbsQueued = true;
-  const order = [character, ...CHAR_IDS.filter(i => i !== character)];
+  const order = [character, ...CHAR_IDS.filter(i => i !== character)].filter(i => CHARS[i] && !CHARS[i].thumb && (!CHARS[i].vrm || built[i]));
   const step = () => {
     const id = order.shift();
     if (!id) { thumbsQueued = false; return; }
@@ -1868,6 +2120,30 @@ function rebuildPickers() {
   setTimeout(step, 0);
 }
 rebuildPickers();
+
+// Your own avatar: the file stays in this browser; others only see the video.
+$('#vrmFile').addEventListener('change', async e => {
+  const file = e.target.files[0];
+  e.target.value = '';
+  if (!file) return;
+  if (CHARS.custom) { URL.revokeObjectURL(CHARS.custom.vrm); delete built.custom; delete loading.custom; delete thumbs.custom; }
+  CHARS.custom = { name: 'My avatar', vrm: URL.createObjectURL(file), custom: true };
+  if (!CHAR_IDS.includes('custom')) CHAR_IDS.push('custom');
+  toast('Loading your avatar…');
+  try {
+    const c = await loadAvatar('custom');
+    CHARS.custom.name = cleanName(c.title || 'My avatar').slice(0, 20);
+    rebuildPickers();
+    renderThumb('custom');
+    setCharacter('custom');
+  } catch (err) {
+    toast("Couldn't use that file. Is it a .vrm avatar?");
+    delete CHARS.custom;
+    CHAR_IDS.splice(CHAR_IDS.indexOf('custom'), 1);
+    if (character === 'custom') setCharacter(store.get('dholakpur:char') in CHARS ? store.get('dholakpur:char') : 'bheem');
+    rebuildPickers();
+  }
+});
 
 /* ---------- lobby ---------- */
 const nameInput = $('#name');
@@ -1976,6 +2252,7 @@ function wireSignal(s) {
 }
 
 function onSignal(m) {
+  if (params.has('debug')) console.log('signal in', m.type, m.src, m.payload?.kind || '');
   const src = m.src;
   if (!src || !src.startsWith(`dhk-${room}-`) || src === sig.id) return;
   if (m.type === 'EXPIRE' || m.type === 'LEAVE') {
@@ -1989,7 +2266,7 @@ function onSignal(m) {
     // can't both offer at once (the server can also replay a stale hello).
     if (peers.has(src)) return;
     if (sig.id < src) createPeer(src, pl);
-    else if (!pl.ack) sig.send('OFFER', src, { kind: 'hello', ack: true, name: myName(), char: character });
+    else if (!pl.ack) sig.send('OFFER', src, { kind: 'hello', ack: true, name: myName(), char: character, cname: charName(character) });
     return;
   }
   let p = peers.get(src);
@@ -2014,6 +2291,7 @@ async function handleSignal(p, pl) {
     }
     for (const c of p.pendingIce.splice(0)) await pc.addIceCandidate(c).catch(() => {});
   } else if (pl.kind === 'ice') {
+    if (params.has('debug')) console.log('ice in', p.id, pl.candidate?.candidate, !!pc.remoteDescription);
     if (!pc.remoteDescription) { p.pendingIce.push(pl.candidate); return; }
     try { await pc.addIceCandidate(pl.candidate); }
     catch (e) { if (!p.ignoreOffer) console.warn('ice', e); }
@@ -2024,7 +2302,7 @@ function createPeer(id, info = {}) {
   const pc = new RTCPeerConnection({ iceServers: ICE });
   const p = {
     id, pc, polite: sig.id > id, makingOffer: false, ignoreOffer: false, queue: Promise.resolve(), pendingIce: [],
-    name: cleanName(info.name), char: CHARS[info.char] ? info.char : 'bheem', muted: false, stream: null, dc: null,
+    name: cleanName(info.name), char: String(info.char || ''), cname: cleanName(info.cname || CHARS[info.char]?.name || ''), muted: false, stream: null, dc: null,
   };
   peers.set(id, p);
   for (const tr of outStream.getTracks()) pc.addTrack(tr, outStream);
@@ -2033,11 +2311,15 @@ function createPeer(id, info = {}) {
     try {
       p.makingOffer = true;
       await pc.setLocalDescription();
-      sig.send('OFFER', id, { kind: 'sdp', sdp: pc.localDescription, name: myName(), char: character });
+      sig.send('OFFER', id, { kind: 'sdp', sdp: pc.localDescription, name: myName(), char: character, cname: charName(character) });
     } catch (e) { console.warn('offer', e); }
     finally { p.makingOffer = false; }
   };
   pc.onicecandidate = e => { if (e.candidate) sig.send('CANDIDATE', id, { kind: 'ice', candidate: e.candidate }); };
+  if (params.has('debug')) {
+    pc.addEventListener('icecandidate', e => console.log('ice out', id, e.candidate?.candidate || 'end'));
+    pc.addEventListener('iceconnectionstatechange', () => console.log('ice state', id, pc.iceConnectionState, pc.iceGatheringState));
+  }
   pc.ontrack = e => {
     p.stream = e.streams[0] || p.stream || new MediaStream();
     if (!e.streams[0]) p.stream.addTrack(e.track);
@@ -2055,7 +2337,7 @@ function createPeer(id, info = {}) {
   // Both sides create the same pre-negotiated channel, so it needs no extra signalling.
   const dc = pc.createDataChannel('chat', { negotiated: true, id: 0 });
   p.dc = dc;
-  dc.onopen = () => sendTo(p, { t: 'hi', name: myName(), char: character, muted: !micOn });
+  dc.onopen = () => sendTo(p, { t: 'hi', name: myName(), char: character, cname: charName(character), muted: !micOn });
   dc.onmessage = e => onData(p, e.data);
   tileFor(id).setWaiting('Connecting…');
   renderLabels(p);
@@ -2082,15 +2364,15 @@ function broadcast(msg) { for (const p of peers.values()) sendTo(p, msg); }
 function onData(p, raw) {
   let m; try { m = JSON.parse(raw); } catch { return; }
   if (m.t === 'hi') {
-    p.name = cleanName(m.name); p.char = CHARS[m.char] ? m.char : p.char; p.muted = !!m.muted;
-    if (!p.connectedOnce) { p.connectedOnce = true; sysMsg(`${p.name} joined`); toast(`${p.name} joined as ${CHARS[p.char].name}`); }
-  } else if (m.t === 'char' && CHARS[m.char]) p.char = m.char;
+    p.name = cleanName(m.name); p.char = String(m.char || ''); p.cname = cleanName(m.cname || CHARS[m.char]?.name || ''); p.muted = !!m.muted;
+    if (!p.connectedOnce) { p.connectedOnce = true; sysMsg(`${p.name} joined`); toast(`${p.name} joined as ${p.cname}`); }
+  } else if (m.t === 'char') { p.char = String(m.char || ''); p.cname = cleanName(m.cname || CHARS[m.char]?.name || ''); }
   else if (m.t === 'mute') p.muted = !!m.muted;
   else if (m.t === 'name') p.name = cleanName(m.name);
   else if (m.t === 'chat' && typeof m.text === 'string') addMsg(p.name, m.text.slice(0, 500), false);
   renderLabels(p);
 }
-function renderLabels(p) { tiles.get(p.id)?.setLabel(p.name, p.char, p.muted); }
+function renderLabels(p) { tiles.get(p.id)?.setLabel(p.name, p.cname || CHARS[p.char]?.name || '', p.muted); }
 
 /* ---------- joining and leaving ---------- */
 $('#joinBtn').addEventListener('click', join);
@@ -2115,10 +2397,10 @@ async function join() {
   state = 'call';
   $('#lobby').hidden = true; $('.back').hidden = true; $('#call').hidden = false;
   const me = tileFor('me', true);
-  me.setLabel(myName(), character, !micOn);
+  me.setLabel(myName(), charName(character), !micOn);
   updateBar();
   layout();
-  for (let s = 0; s < MAX_SLOTS; s++) if (s !== mySlot) sig.send('OFFER', slotId(s), { kind: 'hello', name: myName(), char: character });
+  for (let s = 0; s < MAX_SLOTS; s++) if (s !== mySlot) sig.send('OFFER', slotId(s), { kind: 'hello', name: myName(), char: character, cname: charName(character) });
   sysMsg(`You joined room ${room}`);
 }
 
@@ -2169,11 +2451,11 @@ function tileFor(id, self = false) {
     },
     analyser: () => self ? analyser : an,
     setWaiting(t) { waiting.textContent = t; waiting.hidden = !t; },
-    setLabel(name, ch, muted) {
+    setLabel(name, chName, muted) {
       label.textContent = '';
       if (muted) label.insertAdjacentHTML('beforeend', MIC_OFF_SVG);
       const n = document.createElement('span'); n.textContent = self ? `${name} (you)` : name;
-      const as = document.createElement('span'); as.className = 'as'; as.textContent = `as ${CHARS[ch]?.name || ''}`;
+      const as = document.createElement('span'); as.className = 'as'; as.textContent = chName ? `as ${chName}` : '';
       label.append(n, as);
     },
     showReal(on) {
@@ -2242,7 +2524,7 @@ function toggleMic() {
   micOn = !micOn;
   micTrack.enabled = micOn;
   broadcast({ t: 'mute', muted: !micOn });
-  tiles.get('me')?.setLabel(myName(), character, !micOn);
+  tiles.get('me')?.setLabel(myName(), charName(character), !micOn);
   updateBar();
 }
 $('#micBtn').addEventListener('click', e => { toggleMic(); e.currentTarget.blur(); });
@@ -2339,8 +2621,32 @@ window.call = {
   handPose: handLandmarks,
   get hands() { const n = performance.now(); return { L: !!rawHands.L && handFresh('L', n), R: !!rawHands.R && handFresh('R', n), raw: rawHands }; },
   get size() { return SIZES[sizeIdx]; },
+  get signal() { return sig ? { id: sig.id, ws: sig.ws?.readyState } : null; },
   lockSize(i) { sizeLocked = true; sizeIdx = i; renderer.setSize(...SIZES[i], false); },
-  get thumbsReady() { return CHAR_IDS.every(id => thumbs[id]); },
+  get thumbsReady() { return CHAR_IDS.every(id => thumbs[id] || (CHARS[id].thumb && thumbImgs[id]?.complete)); },
+  loadAvatar,
+  // Renders a bundled avatar on a transparent background (used to make avatars/<id>.png).
+  async avatarPNG(id) {
+    const c = await loadAvatar(id);
+    const r = this._r || (this._r = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true }));
+    r.setSize(640, 480, false); r.toneMapping = renderer.toneMapping; r.toneMappingExposure = renderer.toneMappingExposure;
+    r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFShadowMap; r.setClearColor(0, 0);
+    const prev = current, env = scene.environment, bgSave = scene.background;
+    if (current) scene.remove(current.root);
+    scene.add(c.root); c.reset();
+    const f = { ...NEUTRAL_FACE, smileL: .55, smileR: .55, yaw: -.18, gx: .1 };
+    for (let i = 0; i < 30; i++) c.update({ face: f, hands: {} }, .016, i * .016);
+    scene.background = null; scene.environment = null;
+    const cam = new THREE.PerspectiveCamera(25, 4 / 3, .5, 80);
+    cam.position.set(0, -.3, 10.5); cam.lookAt(0, -.45, 0);
+    r.render(scene, cam);
+    const url = r.domElement.toDataURL('image/png');
+    scene.background = bgSave; scene.environment = env;
+    scene.remove(c.root);
+    if (prev) scene.add(prev.root);
+    current = prev;
+    return url;
+  },
   snapshot() { renderer.render(scene, camera); return out.toDataURL('image/png'); },
   canvas: out,
   get avatar() { return current; },
