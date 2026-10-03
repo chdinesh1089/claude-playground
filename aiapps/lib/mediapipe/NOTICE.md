@@ -7,6 +7,8 @@
   it never sends anything.
 - `face_landmarker.task`: the float16 v1 Face Landmarker model from
   `storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/`.
+- `hand_landmarker.task`: the float16 v1 Hand Landmarker model from
+  `storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/`.
 
 Copyright Google LLC. Licensed under the Apache License, Version 2.0:
 https://www.apache.org/licenses/LICENSE-2.0

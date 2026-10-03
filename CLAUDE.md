@@ -31,9 +31,9 @@ standard library.
 | `aiapps/tmux-cheatsheet/` | tmux cheat sheet (uploaded by the user) | static |
 | `aiapps/paper-plane/` | *The Paper Plane*, 71 s three.js story | static |
 | `aiapps/flappy-3d/` | *Flap 3D*, a three.js flappy-bird-style game | static |
-| `aiapps/dholakpur-call/` | *Dholakpur Call*, WebRTC video calls as Chhota Bheem characters | static |
+| `aiapps/dholakpur-call/` | *Dholakpur Call*, WebRTC video calls as 3D Chhota Bheem characters (face + hands) | static |
 | `aiapps/lib/three-bundle.min.js` | Shared three.js r186 + add-ons bundle | built manually (see below) |
-| `aiapps/lib/mediapipe/` | MediaPipe Tasks Vision 1.0.1 + Face Landmarker model (~16 MB) | vendored from npm (see `NOTICE.md`) |
+| `aiapps/lib/mediapipe/` | MediaPipe Tasks Vision 1.0.1 + Face and Hand Landmarker models (~24 MB) | vendored from npm (see `NOTICE.md`) |
 
 ## Branches and deploy
 
@@ -92,14 +92,24 @@ should score several points.
 - Dholakpur Call: `window.call`, with `state` (`lobby|call|left`), `room`,
   `slot`, `character`, `setCharacter(id)`, `tracking`, `face`, `raw`,
   `peers()` (connection, signalling and ICE state), a writable `debugFace`
-  (overrides tracked values, e.g. `{jaw: 1}`) and `canvas`. Add
+  (overrides tracked values, e.g. `{jaw: 1}`), a writable `debugHands`
+  (`{L, R}` of 21 normalised landmarks; build them with
+  `handPose(x, y, size, angle, curl, mirror)`), `hands`, `size`,
+  `lockSize(i)` (stops the adaptive size, so screenshots are 960×720),
+  `thumbsReady`, `snapshot()` (renders and returns a PNG data URL; the
+  WebGL canvas has no preserved buffer, so don't read `canvas` directly),
+  `avatar` and `canvas`. Add
   `?signal=ws://127.0.0.1:9000/peerjs` to use a local PeerJS server
   (`npm i peer`, then `PeerServer({port: 9000, host: '127.0.0.1', path: '/'})`;
   pass the host, or it fails to bind IPv6 here). For a fake camera, launch
   Chromium with `--use-fake-ui-for-media-stream --use-fake-device-for-media-stream
   --use-file-for-fake-video-capture=face.y4m`. Use **Y4M**, because Chrome
   shows MJPEG as solid green. A usable face photo is `skimage/data/astronaut.png`
-  in the scikit-image wheel on PyPI; Wikimedia is blocked.
+  in the scikit-image wheel on PyPI; Wikimedia is blocked. Hand photos are at
+  `storage.googleapis.com/mediapipe-assets/{thumb_up,victory,pointing_up}.jpg`;
+  overlay them next to the face with ffmpeg to test hand tracking end to end.
+  In SwiftShader the 3D page drops to 480×360 and builds all six characters
+  in about 9 s.
 
 The sandbox can't reach `*.github.io`, Google Flights, the news feeds or the
 Gemini API. Test the briefing offline by serving sample RSS files and a fake
@@ -183,25 +193,55 @@ Don't use a CDN.
 ## Dholakpur Call
 
 - One page: lobby (preview, name, character, background), then the call.
-  MediaPipe Face Landmarker (VIDEO mode, GPU delegate with a CPU fallback)
-  reads 52 blendshapes plus landmarks from the camera. Each frame a cartoon is
-  drawn on a 640×480 canvas, and `canvas.captureStream(30)` is the video
-  track that gets sent. The raw camera goes out only if the user turns on
-  "Real me" (`replaceTrack`, after a confirm).
+  MediaPipe Face Landmarker (52 blendshapes plus landmarks) and Hand
+  Landmarker (2 hands × 21 landmarks) run in VIDEO mode on the camera, GPU
+  delegate with a CPU fallback. Hands run every other frame if they take over
+  22 ms. A three.js scene (the shared r186 bundle, through an import map)
+  renders the avatar to a 4:3 WebGL canvas, and `canvas.captureStream(30)` is
+  the video track that gets sent. The raw camera goes out only if the user
+  turns on "Real me" (`replaceTrack`, after a confirm).
 - MediaPipe names blendshape sides from the **subject's** point of view, so
   `...Left` is on the right of the unmirrored image (verified by covering one
-  eye in a test photo). `imgSide()` maps the names. The output canvas is
+  eye in a test photo). `imgSide()` maps the names. The output is
   unmirrored, and only the self tile is mirrored with CSS.
 - Head pose comes from landmarks 33/263 (eye corners) and 10/152 (forehead
   and chin) using their z values. `PITCH0` is the forehead-to-chin lean on a
   level face. "Set neutral" stores a per-user baseline for the blendshapes
-  and the pose.
-- Characters (`CHARS`): Bheem, Chutki, Raju, Kalia, Jaggu, Indumati. All are
-  procedural 2.5D: features sit on a sphere, `makeProjector()` projects them
-  through yaw and pitch, the head rolls around the neck, and the features are
-  clipped to the head outline. The hooks are `behind`, `body`, `afterHead`,
-  `mask` (clipped) and `front`. Holding the mouth wide open for 0.8 s fires
-  the laddoo power-up.
+  and the pose. Every tracked value goes through a One Euro filter
+  (`filterCfg`), then a 30 ms ease, and rendering runs at up to 60 fps.
+- Head and hands share one mapping: the camera frame spans `FRAME_W` (5.6)
+  world units, so a hand beside your face lands beside the avatar's. Hand
+  depth comes from how big the hand looks next to the face. Hands are
+  assigned to the image-left or image-right arm by wrist x, not by
+  MediaPipe's handedness label. A hand counts as lost after
+  `max(300 ms, 2.5 × detection interval)`; then it eases to a resting pose
+  by the hip.
+- Avatars (`CHARS`: Bheem, Chutki, Raju, Kalia, Jaggu, Indumati) are fully
+  procedural. Nothing is loaded except the bundle. In `buildCharacter()`:
+  - The head is a sphere deformed by `makeShape()`, with four morph
+    targets (`MORPHS`: jaw drop, cheek puff, left and right smile).
+    `PHI0` puts the sphere seam at the back.
+  - Skin, hair, eye, torso and laddoo textures are painted per texel
+    (`paintCanvas` + `dirFromUV`).
+  - Hair is a shell with an alpha-tested strand texture. The hairline
+    shape comes from `hairDef` (`front`/`side`/`back` heights, `spikes`,
+    `part`).
+  - Eyes are a glossy eyeball that rotates for gaze, hemisphere lids that
+    rotate to blink and squint, a lash line, and a catchlight.
+  - Brows and lips are `DynTube`s rebuilt each frame on the skin surface.
+  - The mouth interior is a 256×180 canvas decal that follows the morphed
+    skin (`face.lift` applies the same morph math as the GPU).
+  - Arms are two-bone IK from the shoulder to the tracked wrist; arms and
+    fingers are instanced cylinders and spheres.
+  - Chutki's braids are verlet chains with a draped rest shape. Their
+    collisions also move the previous position, so they never add speed.
+  - The tuft and jhumkas are springs driven by head motion.
+- The stage has ACES tone mapping, `PCFShadowMap` shadows from the key
+  light, a fill light, two rims, a PMREM studio environment, and the painted
+  Dholakpur background blurred like a lens. Output size adapts:
+  `SIZES` steps down from 960×720 when frames average over 40 ms, and back
+  up after 5 checks under 22 ms. Picker thumbnails are rendered by the same
+  rig, one character per idle slice.
 - When the tab is hidden, a Web Worker timer keeps rendering, since rAF
   stops and the video others see would freeze otherwise.
 - Signalling uses the free PeerJS cloud server (`wss://0.peerjs.com/peerjs`,
@@ -274,6 +314,10 @@ Keys: Space, ←/→, R.
 
 Newest first. Add one line per change.
 
+- 2026-10-03: Dholakpur Call is now 3D (three.js, procedural characters
+  with morphs, glossy eyes, 3D lips, hair shells, shadows, blurred
+  background) with hand tracking. Arms and fingers follow your hands, so
+  you can wave. Added the vendored Hand Landmarker model.
 - 2026-10-03: Added Dholakpur Call (`aiapps/dholakpur-call/`): WebRTC mesh
   calls where MediaPipe face tracking drives procedural Chhota Bheem
   characters. Vendored MediaPipe into `aiapps/lib/mediapipe/`, with its
