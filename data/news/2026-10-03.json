@@ -1,0 +1,442 @@
+{
+  "date": "2026-10-03",
+  "generated_at": "2026-10-03T15:08:47+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Flydubai co-pilot attacked captain with axe, UAE official says",
+        "summary": "The man accused of trying to take over the Israel-bound jet is named as Hamam al-Hammami by several media outlets.",
+        "outlets": 6,
+        "published": "2026-10-03T14:27:33+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c61wv7lgex13o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/03/flydubai-co-pilot-used-crash-axe-to-attack-captain-says-uae"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/flydubai-co-pilot-attacked-captain-smit-crash-axe-tried-to-take-control-of-plane-terrorist-attack-uae-prosecutors-3008634-2026-10-03?utm_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/flydubai-co-pilot-attacked-pilot-with-axe-attempted-terrorist-attack-uae-says/articleshow/134653470.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Hiring slows and unemployment ticks up in latest U.S. jobs report",
+        "summary": "The latest U.S. jobs report showed faltering numbers, and the national unemployment rate ticked up to 4.2%.",
+        "outlets": 2,
+        "published": "2026-10-03T14:45:18+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/hiring-slows-unemployment-ticks-up-in-latest-jobs-report/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/02/business/economy/jobs-report-unemployment.html"
+          }
+        ],
+        "why": "Directly impacts the U.S. economy and job market for Indian professionals."
+      },
+      {
+        "headline": "New U.S. visa bond rule targets certain foreign nationals",
+        "summary": "The new U.S. visa bond rule requires certain foreign nationals to pay a bond ranging from $10,000 to $20,000.",
+        "outlets": 1,
+        "published": "2026-10-03T10:41:53+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/20000-us-visa-bond-rule-should-indians-be-worried-check-the-complete-list-of-affected-countries-11791022971829.html"
+          }
+        ],
+        "why": "Directly affects Indian nationals applying for certain U.S. visas and immigration."
+      },
+      {
+        "headline": "India secures discharge of 140 soldiers from Russian army",
+        "summary": "India and Russia discussed bilateral ties, with around 140 Indians discharged from the Russian army and India seeking updates on 55 others.",
+        "outlets": 1,
+        "published": "2026-10-03T10:47:37+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/140-indians-discharged-from-russian-army-govt-seeks-moscow-update-on-55-balanced-trade-push-11791022101263.html"
+          }
+        ],
+        "why": "Directly concerns the safety and repatriation of Indian nationals from a conflict zone."
+      },
+      {
+        "headline": "Judge halts border wall construction in Texas' Big Bend region",
+        "summary": "A federal court in Texas issued a ruling temporarily blocking construction of a border wall across the state's Big Bend region.",
+        "outlets": 3,
+        "published": "2026-10-02T23:10:59+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/judge-halts-border-wall-construction-in-texas-big-bend-region-for-now"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/02/us/border-wall-big-bend-texas.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/wireStory/judge-temporarily-blocks-border-wall-construction-texas-big-136961010"
+          }
+        ],
+        "why": "Major U.S. federal court ruling on immigration and border infrastructure."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Luigi Mangione arrest bodycam video released in CEO killing case",
+        "summary": "New video shows the moment police arrested Luigi Mangione in a Pennsylvania McDonald's after he pleaded guilty to federal charges.",
+        "outlets": 2,
+        "published": "2026-10-03T14:40:12+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/luigi-mangione-arrest-bodycam-video-released/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/videos/cmewelkydwwyo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "U.S. Supreme Court faces another term jam-packed with controversy",
+        "summary": "The Supreme Court term opens with major test cases on religion, guns, and climate change alongside its emergency docket.",
+        "outlets": 1,
+        "published": "2026-10-03T09:00:00+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/03/nx-s1-5986341/supreme-court-term-religion-guns-environment-immigration"
+          }
+        ]
+      },
+      {
+        "headline": "Hegseth creates Pentagon Office of Religious Affairs reporting directly to him",
+        "summary": "Defense Secretary Pete Hegseth has established a new Pentagon office focusing on religious affairs under his direct supervision.",
+        "outlets": 2,
+        "published": "2026-10-02T17:32:44+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/hegseth-creates-a-pentagon-office-of-religious-affairs-that-reports-directly-to-him"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/wireStory/pete-hegseth-creates-pentagon-office-religious-affairs-reporting-136939778"
+          }
+        ]
+      },
+      {
+        "headline": "U.S.-Russia talks on Ukraine involve oil deal tied to Trump allies",
+        "summary": "President Vladimir V. Putin brought up a sale of Russian energy assets with President Trump’s envoys, raising conflict of interest questions.",
+        "outlets": 2,
+        "published": "2026-10-03T14:07:03+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/03/us/politics/kushner-witkoff-russia-oil-deal.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQWGh4bVBhaHFGNmFtUU5OdGhKSXliUTQwSFJUa0FTQlhkeHhrd1AzTkZGMjJadmRxVnBzeVc2YTJhT2NEdFhqOXBuUWpMem5ncWJOczZScHVlUmlfZlZ1blhwNnUtb2xmMnJGRHJVakdGekZKNWtCQk11ZjU3cUZCd2w0bmJuRE5MV3FWRmdiUHNicldiWlM1eDBRbWVYdmUxMVQwOUJ1bXhOMk5kSl9ad1Y4akVDYjBRNjNESTZTYlZFaHJ6TmNZc043T25KWnZaOFNSNWYtVkNkNlRtQW80ZFNEb3pyLU5SdF91Ri12dHdLNFlsLWZJd2d3VFFUTk9vQ3BVTVVRVzFHZmV2VkYwWkhUUERjUQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Former Florida Representative David Rivera sentenced in lobbying case",
+        "summary": "David Rivera was sentenced to 10 years for secretly lobbying officials in Washington on behalf of the Venezuelan government.",
+        "outlets": 2,
+        "published": "2026-10-02T20:47:44+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/02/us/david-rivera-prison-sentence.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/former-gop-rep-david-rivera-sentenced-to-10-years-for-secret-venezuela-lobbying"
+          }
+        ]
+      },
+      {
+        "headline": "U.S. government to send one-time $90 payment to Medicare seniors",
+        "summary": "The U.S. government will send a one-time $90 payment to more than 20 million seniors enrolled in Medicare to offset premium costs.",
+        "outlets": 1,
+        "published": "2026-10-03T13:48:21+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/03/trump-payment-seniors-medicare"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "India extradites drug kingpin Navpreet Singh from Turkey",
+        "summary": "Navpreet Singh, who managed to obtain Turkish citizenship under a fake name, has been extradited back to India.",
+        "outlets": 3,
+        "published": "2026-10-03T10:48:36+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/veil-after-veil-india-extradites-drug-kingpin-navpreet-singh-from-turkey-12133805#publisher=newsstand"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/who-is-navpreet-singh-amit-shah-says-hardened-narco-trafficking-kingpin-brought-back-to-india-from-trkiye-11791008767829.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-secures-narco-trafficking-kingpin-navpreet-singh-deportation-from-turkey-heroin-navab-virk-amit-shah-101791002660648.html"
+          }
+        ]
+      },
+      {
+        "headline": "Man dies after relief packet dropped from helicopter hits him",
+        "summary": "A man died in Bihar's Saran after relief materials dropped from a helicopter struck his head and chest.",
+        "outlets": 2,
+        "published": "2026-10-03T14:47:26+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/bihar/man-dies-after-relief-packet-dropped-from-helicopter-falls-on-his-head-in-bihars-saran/article71540772.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/man-dies-woman-and-2-children-injured-during-iaf-helicopter-relief-operation-in-flood-hit-bihar-101791011087324.html"
+          }
+        ]
+      },
+      {
+        "headline": "Pakistan summons Indian diplomat to protest killing of two by BSF",
+        "summary": "Pakistan summoned an Indian diplomat to protest the killing of two suspected Pakistani intruders by BSF troops along the border.",
+        "outlets": 2,
+        "published": "2026-10-03T14:46:50+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/pakistan-summons-indian-diplomat-protests-killing-of-two-people-by-bsf/article71541148.ece"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/3/pakistan-summons-indian-diplomat-over-border-killing-of-two-pakistanis?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "At least five workers killed in boiler explosion in Andhra Pradesh",
+        "summary": "Five workers were killed and over 10 others injured in a boiler explosion at a pharma unit in Andhra Pradesh's Sri City SEZ.",
+        "outlets": 2,
+        "published": "2026-10-03T07:03:45+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/at-least-five-workers-killed-in-boiler-explosion-at-pharma-unit-in-andhra-pradeshs-sri-city-sez-tirupati-district-101791004160025.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPRWk2TXZqUlQ2aGxIZk9fTGtNUWppQmdybllDX3haU1F5c0Jqdk5QWGpMT0JrZm5GZXpkampsdDZHYVh2WUI3dFZIRmpQaE9PVE1XUmppR3BkaElkeVo3VGR4akZlTURySGxlak9YWTdSLVI2a2FUU0g1MDFMU1M0SHRkbFdIRDVGbWRWaXR6SmZ6Zk5xWjFXTWRPSUJ1NFN4SjJjcDNlRGhURUdDd0VYZjVtOGZiMFBkTEQ0LUxtZ1h2WTR3VkMwTlNGbGp6UE1TOTUyb0doX2VlbDdQZWfSAeQBQVVfeXFMUFRLdFl1bG1UcUs0aDNyVEtiamdRcUROd3FLcDZKS1FiaFVlMFFiWTBNVkVxdWVIVm1lOEZwN0tGWFpiaDZ4REM5TVVoZ0huT1NuN09mRzJvdk1qZ05NS0dwa3dBNkNzU0NGRFBLT3BabVdRNURyOGE5SG1PUVhHcFNRVHdIVVF6Zmt0Zi1jc2RORHZOUklGVVhhMjhoTHUxUlJXODRtc1RfeU90QUN4T1pIN0FHVmdoU0pYWFhZdDBzLUkyVlQtd1g2aXJsS2ExTmZGR25uSFFUZ0tnb1Z5V3NGZ1dl?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Private fuel retailer Nayara Energy hikes petrol and diesel prices",
+        "summary": "Nayara Energy increased petrol prices by Rs 5 and diesel by Rs 3 per litre amidst stable rates by state-owned retailers.",
+        "outlets": 2,
+        "published": "2026-10-03T09:05:29+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/private-fuel-retailer-nayara-energy-hikes-petrol-price-by-rs-5-diesel-by-rs-3-per-litre-12133419#publisher=newsstand"
+          },
+          {
+            "source": "Moneycontrol.com",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNY2ZON091VkdTMzcyWWZLRUhKZHB2cjhfYVRrUU9wXzJPYWlPc1BYc203OVhjWVFSYzBjdnhMTUJNT1RLcXdtdjhMLVRIeUd3NkI4THRhV041ZVRjdTdteGJSREhVdDMwSzJRQ3VuR3BOQkFWNFFEVl9kZXZqZTZIc2xjOVpUeDZ6RHNNZlJ4RnV5czQwM0hsTXpnRE1jalJmWmt4bmVuMEs4QdIBrwFBVV95cUxPTGNUeTViRV9SMGVQVkN6dzRHbE9qdGNUb2xYMnhUTHQ3UzBHS2R2cmpwQmR5M3RsVThwSDB5SG4tNG14ZVFWSU5MNUI5SzBDUHd0MkdOTGVJcWYtSzFEaVpTT2ZhRmV3aWZ3M3laMWdpel9OU1pLOEd4U3hKTl9Yc09uY0tOdEwtb25UOXl3ZnRvWUJ2bnBnU0UtbzVJSVFwLVVzWHEyXzVKcDNtR0RN?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Man found dead after jumping from 41st floor in Noida",
+        "summary": "A 28-year-old man staying alone at an Airbnb in Noida died after jumping from the 41st floor following reported depression.",
+        "outlets": 2,
+        "published": "2026-10-03T09:53:15+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/noida/im-depressed-what-man-told-ac-repair-workers-before-jumping-from-41st-floor-of-noida-supernova-building/articleshow/134656324.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/gurugram-man-jumps-from-41st-floor-of-noida-society-dies-police-supernova-spira-sector-94-101791018382128.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Tens of thousands protest Spain's housing crisis across cities",
+        "summary": "Protests erupted in Madrid and other Spanish cities after parliament rejected rental protection measures.",
+        "outlets": 3,
+        "published": "2026-10-03T13:56:51+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/real-estate/news/50-cities-70000-protesters-spains-housing-crisis-fuels-nationwide-anger/articleshow/134660989.cms"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm2kej47095no?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBWM3dISGk4VU14ZGF5LXdOaDZhbFoxNlF1aXR1aDNBT0tWcF9vZUlVdlJvSkRJdUp6YVJpbDE2bjNBdjBqbEo0ZVhMWGUzd1Z2RnFyYWZ0dzhUNnc?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "France faces high school protests and school blockades",
+        "summary": "Students angry over the state of the education system have blockaded hundreds of schools, leading to numerous arrests.",
+        "outlets": 2,
+        "published": "2026-10-03T15:00:00+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/03/world/europe/high-school-student-protest-what-to-know.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/french-high-school-engulfed-in-flames-as-student-protests-continue?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Russia hits second major bridge in Ukraine's capital Kyiv",
+        "summary": "A Russian strike hit the Pivnichnyi Bridge in Kyiv following repeat attacks on another major bridge in the capital.",
+        "outlets": 2,
+        "published": "2026-10-03T12:59:10+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c83vqxzdg1yko?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/3/five-killed-as-kyiv-and-moscow-trade-strikes-russia-hits-second-bridge?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "North Korea launches ballistic missile towards sea",
+        "summary": "North Korea fired a ballistic missile towards the sea following heightened tensions and disputes with Seoul.",
+        "outlets": 2,
+        "published": "2026-10-03T10:56:32+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/defence/international/north-korea-test-fires-ballistic-missile-after-seoul-demands-apology-for-landmine-blast/articleshow/134657464.cms"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/03/north-korea-launches-ballistic-missile-after-seoul-demands-apology-over-wounded-soldiers"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "OpenAI safety employee quits and sounds the alarm in editorial",
+        "summary": "David Robinson, who wrote safety reports for major model releases at OpenAI, resigned from his position and spoke out.",
+        "outlets": 2,
+        "published": "2026-10-03T14:31:56+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/openai-safety-employee-quits-calls-for-nuclear-level-safeguards/articleshow/134661414.cms"
+          }
+        ]
+      },
+      {
+        "headline": "D-Mart reports 18 percent rise in standalone revenue for Q2",
+        "summary": "Avenue Supermarts reported an 18.4 percent rise in standalone revenue from operations to Rs 19,206.18 crore for the second quarter.",
+        "outlets": 1,
+        "published": "2026-10-03T10:06:18+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/d-mart-q2-revenue-rise-18-pc-to-rs-19206-cr-store-count-at-518/articleshow/134656472.cms"
+          }
+        ]
+      },
+      {
+        "headline": "RBI governor warns against complacency amid external headwinds",
+        "summary": "Governor Malhotra flagged global debt, AI valuations, leverage, and cyber risk as potential threats to financial stability.",
+        "outlets": 2,
+        "published": "2026-10-03T11:39:24+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/rbi-governor-warns-against-complacency-amid-external-headwinds-11791020910405.html"
+          },
+          {
+            "source": "The Economic Times",
+            "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxNRkZyNGZVSU4yZFg0M3hmZE9PdTlZVTYzMjBlT3QxWDdWbzhuYmxiWmRFWGJGSkFUcDNKZUtCaE8zQkJrRkpPbkZiTC05b0lkSXRvNG1MSmNlNGwxY3ZqR2hyS01rRWFCR29wLVhiQWxXZlIyMlhEYWtVZXdGTUVadzJBSVo3YWliN0RxTENManA4ZnpidXJSb0VydGFPQUo0ZFQ2U1Atbms3RWhxbm1BaVAwUDdCMmZHM0VoZk5iRi1MdVZqV2VzdnZqbGtkY3NlekZ2Z1cyZFlpalBWUXpBY0xvSnFHeWJ3LXk1bHBaMWp5c3F6aUdtMEtkU1JCeUtiYTE2aUEwNU5uWUltRWN4MVlPenhkdGpQeHJaTXN1U28zZnlLTklPWVdsSnVBOFJSRzRMR3huUXozMnR0OXB5aA?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "As AI agents begin shopping, brands change their sales pitch",
+        "summary": "Marketers are racing to win over bots immune to traditional marketing tactics by using logic and data instead.",
+        "outlets": 1,
+        "published": "2026-10-03T12:00:06+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/03/business/dealbook/ai-agent-marketing.html"
+          }
+        ]
+      }
+    ]
+  }
+}
