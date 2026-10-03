@@ -31,7 +31,9 @@ standard library.
 | `aiapps/tmux-cheatsheet/` | tmux cheat sheet (uploaded by the user) | static |
 | `aiapps/paper-plane/` | *The Paper Plane*, 71 s three.js story | static |
 | `aiapps/flappy-3d/` | *Flap 3D*, a three.js flappy-bird-style game | static |
+| `aiapps/dholakpur-call/` | *Dholakpur Call*, WebRTC video calls as Chhota Bheem characters | static |
 | `aiapps/lib/three-bundle.min.js` | Shared three.js r186 + add-ons bundle | built manually (see below) |
+| `aiapps/lib/mediapipe/` | MediaPipe Tasks Vision 1.0.1 + Face Landmarker model (~16 MB) | vendored from npm (see `NOTICE.md`) |
 
 ## Branches and deploy
 
@@ -87,6 +89,17 @@ doesn't count as a regression. Test hooks:
   (use it to screenshot each time of day).
 A simple bot that presses Space whenever `birdY` drops below `nextGap().y`
 should score several points.
+- Dholakpur Call: `window.call`, with `state` (`lobby|call|left`), `room`,
+  `slot`, `character`, `setCharacter(id)`, `tracking`, `face`, `raw`,
+  `peers()` (connection, signalling and ICE state), a writable `debugFace`
+  (overrides tracked values, e.g. `{jaw: 1}`) and `canvas`. Add
+  `?signal=ws://127.0.0.1:9000/peerjs` to use a local PeerJS server
+  (`npm i peer`, then `PeerServer({port: 9000, host: '127.0.0.1', path: '/'})`;
+  pass the host, or it fails to bind IPv6 here). For a fake camera, launch
+  Chromium with `--use-fake-ui-for-media-stream --use-fake-device-for-media-stream
+  --use-file-for-fake-video-capture=face.y4m`. Use **Y4M**, because Chrome
+  shows MJPEG as solid green. A usable face photo is `skimage/data/astronaut.png`
+  in the scikit-image wheel on PyPI; Wikimedia is blocked.
 
 The sandbox can't reach `*.github.io`, Google Flights, the news feeds or the
 Gemini API. Test the briefing offline by serving sample RSS files and a fake
@@ -167,6 +180,46 @@ Don't use a CDN.
   any data exists it writes a placeholder. Relative times ("3h ago") are filled
   in by a small inline script so the HTML stays deterministic.
 
+## Dholakpur Call
+
+- One page: lobby (preview, name, character, background), then the call.
+  MediaPipe Face Landmarker (VIDEO mode, GPU delegate with a CPU fallback)
+  reads 52 blendshapes plus landmarks from the camera. Each frame a cartoon is
+  drawn on a 640×480 canvas, and `canvas.captureStream(30)` is the video
+  track that gets sent. The raw camera goes out only if the user turns on
+  "Real me" (`replaceTrack`, after a confirm).
+- MediaPipe names blendshape sides from the **subject's** point of view, so
+  `...Left` is on the right of the unmirrored image (verified by covering one
+  eye in a test photo). `imgSide()` maps the names. The output canvas is
+  unmirrored, and only the self tile is mirrored with CSS.
+- Head pose comes from landmarks 33/263 (eye corners) and 10/152 (forehead
+  and chin) using their z values. `PITCH0` is the forehead-to-chin lean on a
+  level face. "Set neutral" stores a per-user baseline for the blendshapes
+  and the pose.
+- Characters (`CHARS`): Bheem, Chutki, Raju, Kalia, Jaggu, Indumati. All are
+  procedural 2.5D: features sit on a sphere, `makeProjector()` projects them
+  through yaw and pitch, the head rolls around the neck, and the features are
+  clipped to the head outline. The hooks are `behind`, `body`, `afterHead`,
+  `mask` (clipped) and `front`. Holding the mouth wide open for 0.8 s fires
+  the laddoo power-up.
+- When the tab is hidden, a Web Worker timer keeps rendering, since rAF
+  stops and the video others see would freeze otherwise.
+- Signalling uses the free PeerJS cloud server (`wss://0.peerjs.com/peerjs`,
+  key `peerjs`). It speaks the raw WebSocket protocol, with no SDK. Each
+  person claims `dhk-<room>-<slot>` (slots 0–5, `ID-TAKEN` means try the next
+  one), then sends a `hello` to the other five ids. **Only the lower id sends
+  the first offer**, and the higher id answers a hello with an `ack`. That
+  matters because the server queues messages for offline ids for a few
+  seconds and replays them to whoever claims the id. Two-sided offers lost
+  ICE candidates and stalled at `new`. Perfect negotiation still handles
+  renegotiation. Early candidates are buffered, and the offerer restarts ICE
+  after 10 s. Media is a full mesh, with STUN only. `?turn=…&turnUser=…&turnPass=…`
+  adds a TURN server. Chat, names, mute state and character changes travel
+  on a pre-negotiated data channel (`negotiated: true, id: 0`).
+- `vision_bundle.mjs` is patched so MediaPipe's usage logger never POSTs to
+  `odml.pa.googleapis.com`. Redo the patch if MediaPipe is upgraded.
+- `localStorage` keys: `dholakpur:name`, `dholakpur:char`, `dholakpur:bg`.
+
 ## Landing page
 
 `build_apps_index.py` finds every `aiapps/*/index.html` and lists it using
@@ -221,6 +274,10 @@ Keys: Space, ←/→, R.
 
 Newest first. Add one line per change.
 
+- 2026-10-03: Added Dholakpur Call (`aiapps/dholakpur-call/`): WebRTC mesh
+  calls where MediaPipe face tracking drives procedural Chhota Bheem
+  characters. Vendored MediaPipe into `aiapps/lib/mediapipe/`, with its
+  usage logging disabled.
 - 2026-09-25: Daily Briefing, after the first live run: model list fixed
   (2.5-flash is gone for new keys, longer 503 backoff), a name-grounding check,
   outlets deduped by host, 403 feeds replaced, actions moved to Node 24 versions.

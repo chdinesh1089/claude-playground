@@ -1,0 +1,1715 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dholakpur Call</title>
+<meta name="description" content="Video calls where your face becomes Chhota Bheem, Chutki, Raju, Kalia, Jaggu or Indumati in real time, keeping your expressions. Peer-to-peer WebRTC, and your real face never leaves the browser.">
+<meta name="theme-color" content="#1c130c">
+<style>
+:root {
+  --bg: #1c130c;
+  --panel: #2a1d12;
+  --panel-2: #36261a;
+  --line: #4a3524;
+  --text: #fbefe1;
+  --muted: #c9b29a;
+  --saffron: #ff9a2e;
+  --saffron-2: #ffb85c;
+  --green: #3fae5a;
+  --red: #e5484d;
+  --radius: 16px;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.45 ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+}
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; }
+[hidden] { display: none !important; }
+
+/* ---------- Lobby ---------- */
+#lobby {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 48px 16px 40px;
+}
+.lobby-card {
+  width: min(1040px, 100%);
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+@media (max-width: 820px) { .lobby-card { grid-template-columns: 1fr; gap: 20px; } }
+.brand h1 {
+  margin: 0 0 4px;
+  font-size: clamp(26px, 4vw, 36px);
+  letter-spacing: -0.01em;
+}
+.brand h1 span { color: var(--saffron); }
+.brand p { margin: 0 0 18px; color: var(--muted); }
+.preview {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #0f0a06;
+  border: 1px solid var(--line);
+}
+.preview canvas, .preview video {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transform: scaleX(-1);
+}
+.preview .start-cam {
+  position: absolute; inset: 0; margin: auto;
+  width: max-content; height: max-content;
+  padding: 12px 20px; border-radius: 999px; border: 0;
+  background: var(--saffron); color: #2a1300; font-weight: 700;
+  box-shadow: 0 6px 24px rgba(0,0,0,.35);
+}
+.chip {
+  position: absolute; left: 12px; bottom: 12px;
+  padding: 5px 10px; border-radius: 999px;
+  background: rgba(20, 12, 6, .72); color: var(--text);
+  font-size: 13px; display: flex; gap: 6px; align-items: center;
+  backdrop-filter: blur(6px);
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+.dot.ok { background: var(--green); }
+.dot.warn { background: var(--saffron); }
+.dot.bad { background: var(--red); }
+.privacy { margin: 10px 2px 0; color: var(--muted); font-size: 13px; }
+
+.form { display: grid; gap: 16px; }
+.field label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.field input[type=text] {
+  width: 100%; padding: 11px 14px; border-radius: 12px;
+  background: var(--panel); border: 1px solid var(--line); outline: none;
+}
+.field input[type=text]:focus { border-color: var(--saffron); }
+.chars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.char-btn {
+  padding: 0; border-radius: 12px; overflow: hidden;
+  background: var(--panel); border: 2px solid var(--line);
+  text-align: center;
+}
+.char-btn canvas { display: block; width: 100%; aspect-ratio: 4 / 3; }
+.char-btn span { display: block; padding: 4px 0 6px; font-size: 13px; font-weight: 600; }
+.char-btn[aria-pressed=true] { border-color: var(--saffron); background: var(--panel-2); }
+.seg { display: inline-flex; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+.seg button { border: 0; background: none; padding: 6px 14px; border-radius: 999px; color: var(--muted); }
+.seg button[aria-pressed=true] { background: var(--panel-2); color: var(--text); }
+.primary {
+  width: 100%; padding: 14px; border: 0; border-radius: 14px;
+  background: var(--saffron); color: #2a1300; font-weight: 800; font-size: 16px;
+}
+.primary:disabled { opacity: .55; cursor: default; }
+.room-note { color: var(--muted); font-size: 13px; margin: -6px 2px 0; }
+.room-note code { color: var(--saffron-2); }
+.err { color: #ffb4b4; font-size: 13px; margin: 0; }
+
+/* ---------- Call ---------- */
+#call { position: fixed; inset: 0; display: flex; flex-direction: column; }
+#grid {
+  flex: 1; min-height: 0;
+  display: grid; gap: 10px; padding: 12px 12px 0;
+  grid-template-columns: repeat(var(--cols, 1), minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
+  align-content: center;
+}
+.tile {
+  position: relative; border-radius: var(--radius); overflow: hidden;
+  background: #0f0a06; border: 2px solid transparent;
+  min-height: 0; transition: border-color .15s;
+}
+.tile.speaking { border-color: var(--saffron); }
+.tile video, .tile canvas {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: contain; background: #0f0a06;
+}
+.tile.self video, .tile.self canvas { transform: scaleX(-1); }
+.tile .label {
+  position: absolute; left: 10px; bottom: 10px; max-width: calc(100% - 20px);
+  padding: 4px 10px; border-radius: 999px; font-size: 13px;
+  background: rgba(20, 12, 6, .72); backdrop-filter: blur(6px);
+  display: flex; gap: 6px; align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.tile .label .as { color: var(--muted); }
+.tile .label svg { width: 14px; height: 14px; flex: none; color: var(--red); }
+.tile .waiting {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  color: var(--muted); font-size: 14px; text-align: center; padding: 16px;
+}
+.tile .real-warn {
+  position: absolute; top: 10px; left: 10px;
+  padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700;
+  background: var(--red); color: #fff;
+}
+.empty-room {
+  border: 2px dashed var(--line); border-radius: var(--radius);
+  display: grid; place-items: center; text-align: center; padding: 20px; color: var(--muted);
+}
+.empty-room b { color: var(--text); display: block; font-size: 17px; margin-bottom: 6px; }
+.empty-room button { margin-top: 12px; }
+
+#bar {
+  display: flex; justify-content: center; align-items: center; gap: 8px; flex-wrap: wrap;
+  padding: 12px 12px calc(12px + env(safe-area-inset-bottom));
+}
+.ctl {
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 46px; min-width: 46px; padding: 0 14px; justify-content: center;
+  border-radius: 999px; border: 1px solid var(--line); background: var(--panel);
+}
+.ctl svg { width: 20px; height: 20px; flex: none; }
+.ctl.off { background: var(--red); border-color: var(--red); color: #fff; }
+.ctl.warn { background: #5a2020; border-color: var(--red); }
+.ctl.leave { background: var(--red); border-color: var(--red); color: #fff; }
+.ctl .txt { font-size: 14px; }
+.ctl .badge {
+  min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px;
+  background: var(--saffron); color: #2a1300; font-size: 11px; font-weight: 800;
+  display: inline-grid; place-items: center;
+}
+@media (max-width: 640px) { .ctl .txt { display: none; } .ctl { padding: 0 11px; min-width: 44px; height: 44px; } #bar { gap: 6px; } }
+
+.popover {
+  position: fixed; bottom: calc(80px + env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%);
+  width: min(420px, calc(100% - 32px));
+  background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 12px; box-shadow: 0 16px 48px rgba(0,0,0,.5); z-index: 20;
+}
+.popover .chars { grid-template-columns: repeat(3, 1fr); }
+
+#chat {
+  position: fixed; top: 0; right: 0; bottom: 0; width: min(360px, 100%);
+  background: var(--panel); border-left: 1px solid var(--line);
+  display: flex; flex-direction: column; z-index: 30;
+}
+@media (min-width: 760px) { body.chat-open #call { right: 360px; } }
+#chat header { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+#chat header b { font-size: 16px; }
+#chat header button { border: 0; background: none; padding: 6px; border-radius: 8px; }
+#chat header button svg { width: 20px; height: 20px; display: block; }
+#msgs { flex: 1; overflow-y: auto; padding: 12px 14px; display: flex; flex-direction: column; gap: 10px; }
+.msg .who { font-size: 12px; color: var(--muted); }
+.msg .body { overflow-wrap: anywhere; }
+.msg.me .who { color: var(--saffron-2); }
+.msg.sys { color: var(--muted); font-size: 13px; font-style: italic; }
+#chatForm { display: flex; gap: 8px; padding: 12px 14px calc(12px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); }
+#chatForm input { flex: 1; min-width: 0; padding: 10px 12px; border-radius: 12px; background: var(--bg); border: 1px solid var(--line); outline: none; }
+#chatForm button { border: 0; border-radius: 12px; padding: 0 14px; background: var(--saffron); color: #2a1300; font-weight: 700; }
+
+#toast {
+  position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+  max-width: calc(100% - 32px);
+  padding: 10px 16px; border-radius: 999px; z-index: 40;
+  background: var(--panel-2); border: 1px solid var(--line);
+  box-shadow: 0 8px 30px rgba(0,0,0,.4); font-size: 14px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.back { position: fixed; top: 10px; left: 12px; color: var(--muted); font-size: 13px; text-decoration: none; }
+.back:hover { color: var(--text); }
+</style>
+</head>
+<body>
+<a class="back" href="../../">← All apps</a>
+
+<!-- ============ Lobby ============ -->
+<main id="lobby">
+  <div class="lobby-card">
+    <section>
+      <div class="brand">
+        <h1>Dholakpur <span>Call</span></h1>
+        <p>Join a video call as Chhota Bheem and friends. Your character copies your expressions live.</p>
+      </div>
+      <div class="preview" id="lobbyPreview">
+        <button class="start-cam" id="startCam" type="button">Turn on camera</button>
+        <div class="chip" id="trackChip"><span class="dot"></span><span>Camera off</span></div>
+      </div>
+      <p class="privacy">Face tracking runs in your browser. Other people get only the cartoon, never your camera, unless you turn on "Real me".</p>
+    </section>
+    <section class="form">
+      <div class="field">
+        <label for="name">Your name</label>
+        <input type="text" id="name" maxlength="32" placeholder="e.g. Dinesh" autocomplete="nickname">
+      </div>
+      <div class="field">
+        <label>Character</label>
+        <div class="chars" id="lobbyChars"></div>
+      </div>
+      <div class="field">
+        <label>Background</label>
+        <div class="seg" id="bgSeg">
+          <button type="button" data-bg="village" aria-pressed="true">Dholakpur</button>
+          <button type="button" data-bg="plain" aria-pressed="false">Plain</button>
+        </div>
+      </div>
+      <button class="primary" id="joinBtn" type="button">Start a meeting</button>
+      <p class="room-note" id="roomNote"></p>
+      <p class="err" id="lobbyErr" hidden></p>
+    </section>
+  </div>
+</main>
+
+<!-- ============ Call ============ -->
+<div id="call" hidden>
+  <div id="grid"></div>
+  <div id="bar">
+    <button class="ctl" id="micBtn" type="button" title="Mute (M)"></button>
+    <button class="ctl" id="charBtn" type="button" title="Change character (C)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5s1.3 2 3.5 2 3.5-2 3.5-2"/><path d="M9 9.5h.01M15 9.5h.01"/></svg>
+      <span class="txt">Character</span>
+    </button>
+    <button class="ctl" id="neutralBtn" type="button" title="Relax your face, then click to set it as neutral">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+      <span class="txt">Set neutral</span>
+    </button>
+    <button class="ctl" id="realBtn" type="button" title="Send your real camera instead of the cartoon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+      <span class="txt">Real me</span>
+    </button>
+    <button class="ctl" id="inviteBtn" type="button" title="Copy invite link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>
+      <span class="txt">Invite</span>
+    </button>
+    <button class="ctl" id="chatBtn" type="button" title="Chat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span class="txt">Chat</span><span class="badge" id="chatBadge" hidden>0</span>
+    </button>
+    <button class="ctl leave" id="leaveBtn" type="button" title="Leave call">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5M21 12H9"/></svg>
+      <span class="txt">Leave</span>
+    </button>
+  </div>
+  <div class="popover" id="charPop" hidden>
+    <div class="chars" id="callChars"></div>
+  </div>
+</div>
+
+<aside id="chat" hidden>
+  <header><b>Chat</b><button type="button" id="chatClose" aria-label="Close chat">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg></button></header>
+  <div id="msgs"></div>
+  <form id="chatForm" autocomplete="off"><input id="chatInput" maxlength="500" placeholder="Message everyone"><button type="submit">Send</button></form>
+</aside>
+<div id="toast" hidden></div>
+
+<script type="module">
+import { FaceLandmarker } from '../lib/mediapipe/vision_bundle.mjs';
+
+const $ = s => document.querySelector(s);
+const W = 640, H = 480, TAU = Math.PI * 2;
+const clamp = (v, a = 0, b = 1) => v < a ? a : v > b ? b : v;
+const lerp = (a, b, t) => a + (b - a) * t;
+const params = new URLSearchParams(location.search);
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} },
+};
+
+// MediaPipe names blendshapes after the subject's own left/right, so the
+// subject's left eye shows up on the right of the (unmirrored) camera image.
+const imgSide = side => side === 'R' ? 'Left' : 'Right';
+
+/* =====================================================================
+   Characters. Each is drawn procedurally on a 2.5D head: features sit on
+   a sphere and are projected through the tracked yaw and pitch, and the
+   whole head rolls around the neck.
+   ===================================================================== */
+const OUTLINE = '#3a2213';
+
+function hairline(base, dip, part = 0) {
+  return u => base + dip * u * u + part * Math.max(0, 1 - Math.abs(u) * 6);
+}
+
+const CHARS = {
+  bheem: {
+    name: 'Bheem', skin: '#c9864a', shade: '#a6652f', hair: '#16100c', brow: '#16100c',
+    eyeRx: .17, eyeRy: .21, pupil: .085, browW: .085, mouthW: .40, nose: 'button', scale: 1,
+    line: hairline(-.52, .26),
+    body(ctx, d) {
+      bareTorso(ctx, d, this.skin, this.shade);
+      // orange sash across the chest and the dhoti waistband below
+      ctx.save();
+      ctx.beginPath(); torsoPath(ctx, d); ctx.clip();
+      ctx.fillStyle = '#f07d1a';
+      ctx.beginPath();
+      ctx.moveTo(d.bx - d.R * 1.3, d.by - d.R * .1);
+      ctx.lineTo(d.bx - d.R * .85, d.by - d.R * .3);
+      ctx.lineTo(d.bx + d.R * 1.45, d.by + d.R * 1.6);
+      ctx.lineTo(d.bx + d.R * .9, d.by + d.R * 1.75);
+      ctx.closePath(); ctx.fill();
+      ctx.fillStyle = '#d4630c';
+      ctx.fillRect(d.bx - d.R * 2, d.by + d.R * 1.95, d.R * 4, d.R * 2);
+      ctx.restore();
+    },
+    front(ctx, d) {
+      // the curl of hair on top
+      const p = d.P(.08, -.9);
+      ctx.fillStyle = this.hair;
+      ctx.beginPath();
+      ctx.moveTo(p.x - d.R * .2, p.y + d.R * .05);
+      ctx.bezierCurveTo(p.x - d.R * .2, p.y - d.R * .35, p.x + d.R * .3, p.y - d.R * .45, p.x + d.R * .32, p.y - d.R * .2);
+      ctx.bezierCurveTo(p.x + d.R * .22, p.y - d.R * .28, p.x + d.R * .02, p.y - d.R * .25, p.x + d.R * .12, p.y + d.R * .05);
+      ctx.closePath(); ctx.fill();
+    },
+  },
+  chutki: {
+    name: 'Chutki', skin: '#f0bc90', shade: '#d39a6c', hair: '#1c1311', brow: '#2a1a14',
+    eyeRx: .165, eyeRy: .2, pupil: .085, browW: .045, mouthW: .34, nose: 'small', lashes: true,
+    lip: '#c04456', blush: .5, scale: .97,
+    line: hairline(-.46, .2, .12),
+    body(ctx, d) {
+      clothTorso(ctx, d, '#e85d8f', '#c9406f', this.skin);
+      trimNeck(ctx, d, '#f6c544');
+    },
+    afterHead(ctx, d) {
+      // two braids with pink ribbons, hanging in front of the shoulders
+      for (const s of [-1, 1]) {
+        const top = d.P(s * .9, .1, .3);
+        ctx.fillStyle = this.hair;
+        for (let i = 0; i < 7; i++) {
+          const y = top.y + d.R * (.1 + i * .22);
+          const x = top.x + s * d.R * (.05 + i * .02);
+          ctx.beginPath(); ctx.ellipse(x, y, d.R * .13, d.R * .14, 0, 0, TAU); ctx.fill();
+        }
+        const ex = top.x + s * d.R * .19, ey = top.y + d.R * 1.62;
+        ctx.fillStyle = '#ff4f8b';
+        ctx.beginPath();
+        ctx.moveTo(ex, ey); ctx.lineTo(ex - d.R * .17, ey - d.R * .1); ctx.lineTo(ex - d.R * .17, ey + d.R * .1); ctx.closePath();
+        ctx.moveTo(ex, ey); ctx.lineTo(ex + d.R * .17, ey - d.R * .1); ctx.lineTo(ex + d.R * .17, ey + d.R * .1); ctx.closePath();
+        ctx.fill();
+      }
+    },
+    front(ctx, d) {
+      bindi(ctx, d, '#d41f3a', .055);
+      earrings(ctx, d, '#f2c230', 'stud');
+    },
+  },
+  raju: {
+    name: 'Raju', skin: '#e3a066', shade: '#c2804a', hair: '#17110d', brow: '#17110d',
+    eyeRx: .19, eyeRy: .23, pupil: .095, browW: .06, mouthW: .36, nose: 'small', scale: .92,
+    line: hairline(-.5, .3),
+    body(ctx, d) {
+      clothTorso(ctx, d, '#ffc93c', '#e3a91c', this.skin);
+      trimNeck(ctx, d, '#d9372b');
+    },
+    front(ctx, d) {
+      // fringe spikes
+      ctx.fillStyle = this.hair;
+      for (const u of [-.32, -.1, .12, .34]) {
+        const p = d.P(u, -.52);
+        ctx.beginPath();
+        ctx.moveTo(p.x - d.R * .14 * p.sx, p.y - d.R * .05);
+        ctx.lineTo(p.x + d.R * .02 * p.sx, p.y + d.R * .13);
+        ctx.lineTo(p.x + d.R * .12 * p.sx, p.y - d.R * .06);
+        ctx.closePath(); ctx.fill();
+      }
+      // red tilak
+      const t = d.P(0, -.36);
+      ctx.fillStyle = '#d4252e';
+      ctx.beginPath(); ctx.ellipse(t.x, t.y, d.R * .03 * t.sx, d.R * .075 * t.sy, 0, 0, TAU); ctx.fill();
+    },
+  },
+  kalia: {
+    name: 'Kalia', skin: '#e4a874', shade: '#c4875a', hair: '#16100c', brow: '#16100c',
+    eyeRx: .135, eyeRy: .165, pupil: .07, browW: .1, mouthW: .44, nose: 'big', scale: 1.1,
+    headW: 1.08, chin: 1.04, doubleChin: true,
+    line: hairline(-.55, .3),
+    body(ctx, d) {
+      clothTorso(ctx, d, '#f3e6c8', '#d8c7a2', this.skin, 1.18);
+      // open green vest
+      ctx.save(); ctx.beginPath(); torsoPath(ctx, d, 1.18); ctx.clip();
+      ctx.fillStyle = '#2f8a4e';
+      for (const s of [-1, 1]) {
+        ctx.beginPath();
+        ctx.moveTo(d.bx + s * d.R * .35, d.by - d.R * .2);
+        ctx.lineTo(d.bx + s * d.R * 2.2, d.by - d.R * .2);
+        ctx.lineTo(d.bx + s * d.R * 2.2, d.by + d.R * 3);
+        ctx.lineTo(d.bx + s * d.R * .55, d.by + d.R * 3);
+        ctx.closePath(); ctx.fill();
+      }
+      ctx.restore();
+    },
+    front(ctx, d) {
+      // tuft and sideburns
+      const p = d.P(-.05, -.93);
+      ctx.fillStyle = this.hair;
+      ctx.beginPath();
+      ctx.moveTo(p.x - d.R * .16, p.y + d.R * .06);
+      ctx.quadraticCurveTo(p.x - d.R * .1, p.y - d.R * .4, p.x + d.R * .2, p.y - d.R * .32);
+      ctx.quadraticCurveTo(p.x + d.R * .04, p.y - d.R * .18, p.x + d.R * .14, p.y + d.R * .06);
+      ctx.closePath(); ctx.fill();
+      for (const s of [-1, 1]) {
+        const q = d.P(s * .9, -.1, .4);
+        if (q.z < .05) continue;
+        ctx.beginPath(); ctx.ellipse(q.x, q.y, d.R * .08 * q.sx, d.R * .2, 0, 0, TAU); ctx.fill();
+      }
+    },
+  },
+  jaggu: {
+    name: 'Jaggu', skin: '#7a4a25', shade: '#5e361a', face: '#f1c9a0', hair: '#5e361a', brow: '#3b220f',
+    eyeRx: .15, eyeRy: .17, pupil: .095, browW: .035, mouthW: .5, nose: 'monkey', scale: 1, monkey: true,
+    lid: '#f1c9a0',
+    body(ctx, d) {
+      bareTorso(ctx, d, this.skin, this.shade, 1.05);
+      ctx.save(); ctx.beginPath(); torsoPath(ctx, d, 1.05); ctx.clip();
+      ctx.fillStyle = '#d9a873';
+      ctx.beginPath(); ctx.ellipse(d.bx, d.by + d.R * 1.9, d.R * .8, d.R * 1.5, 0, 0, TAU); ctx.fill();
+      ctx.restore();
+    },
+    mask(ctx, d) {
+      // peach face mask: two eye patches and a muzzle
+      ctx.fillStyle = this.face;
+      for (const s of [-1, 1]) {
+        const p = d.P(s * .3, -.08);
+        ctx.beginPath(); ctx.ellipse(p.x, p.y, d.R * .33 * p.sx, d.R * .36 * p.sy, 0, 0, TAU); ctx.fill();
+      }
+      const m = d.P(0, .4);
+      ctx.beginPath(); ctx.ellipse(m.x, m.y + d.R * d.f.jaw * .08, d.R * .6 * m.sx, d.R * (.46 + d.f.jaw * .08) * m.sy, 0, 0, TAU); ctx.fill();
+    },
+    front(ctx, d) {
+      // fur tufts on top
+      ctx.fillStyle = this.skin;
+      const t = d.P(0, -.95, .5);
+      for (const a of [-.5, 0, .5]) {
+        ctx.beginPath();
+        ctx.moveTo(t.x - d.R * .12 + a * d.R * .3, t.y + d.R * .1);
+        ctx.lineTo(t.x + a * d.R * .5, t.y - d.R * .22);
+        ctx.lineTo(t.x + d.R * .12 + a * d.R * .3, t.y + d.R * .1);
+        ctx.closePath(); ctx.fill();
+      }
+    },
+  },
+  indumati: {
+    name: 'Indumati', skin: '#f3c7a1', shade: '#d6a57b', hair: '#1f130f', brow: '#2a1a14',
+    eyeRx: .16, eyeRy: .2, pupil: .082, browW: .04, mouthW: .33, nose: 'small', lashes: true,
+    lip: '#b92c47', blush: .45, scale: .97,
+    line: hairline(-.44, .18, .12),
+    behind(ctx, d) {
+      // long hair falling behind the shoulders
+      ctx.fillStyle = this.hair;
+      ctx.beginPath();
+      ctx.moveTo(d.hx - d.R * 1.05, d.hy);
+      ctx.bezierCurveTo(d.hx - d.R * 1.25, d.hy + d.R * 1.2, d.hx - d.R * 1.45, d.hy + d.R * 2, d.hx - d.R * 1.3, d.hy + d.R * 2.6);
+      ctx.lineTo(d.hx + d.R * 1.3, d.hy + d.R * 2.6);
+      ctx.bezierCurveTo(d.hx + d.R * 1.45, d.hy + d.R * 2, d.hx + d.R * 1.25, d.hy + d.R * 1.2, d.hx + d.R * 1.05, d.hy);
+      ctx.closePath(); ctx.fill();
+    },
+    body(ctx, d) {
+      clothTorso(ctx, d, '#8a44b0', '#6d3190', this.skin);
+      trimNeck(ctx, d, '#f2c230');
+      // necklace
+      ctx.strokeStyle = '#f2c230'; ctx.lineWidth = d.R * .05; ctx.lineCap = 'round';
+      ctx.beginPath(); ctx.ellipse(d.bx, d.by - d.R * .05, d.R * .42, d.R * .4, 0, .15 * Math.PI, .85 * Math.PI); ctx.stroke();
+      ctx.fillStyle = '#d41f3a';
+      ctx.beginPath(); ctx.arc(d.bx, d.by + d.R * .38, d.R * .07, 0, TAU); ctx.fill();
+    },
+    front(ctx, d) {
+      // crown
+      const c = d.P(0, -.86, .6);
+      ctx.save(); ctx.translate(c.x, c.y); ctx.scale(c.sx, 1);
+      ctx.fillStyle = '#f2c230'; ctx.strokeStyle = '#b8860b'; ctx.lineWidth = d.R * .02;
+      ctx.beginPath();
+      const w = d.R * .55, h = d.R * .38;
+      ctx.moveTo(-w, 0); ctx.lineTo(-w * .85, -h * .7); ctx.lineTo(-w * .45, -h * .35); ctx.lineTo(0, -h);
+      ctx.lineTo(w * .45, -h * .35); ctx.lineTo(w * .85, -h * .7); ctx.lineTo(w, 0); ctx.closePath();
+      ctx.fill(); ctx.stroke();
+      ctx.fillStyle = '#d41f3a';
+      ctx.beginPath(); ctx.arc(0, -h * .45, d.R * .07, 0, TAU); ctx.fill();
+      ctx.restore();
+      // maang tikka
+      const t = d.P(0, -.47);
+      ctx.strokeStyle = '#f2c230'; ctx.lineWidth = d.R * .02;
+      ctx.beginPath(); ctx.moveTo(t.x, t.y - d.R * .14); ctx.lineTo(t.x, t.y); ctx.stroke();
+      ctx.fillStyle = '#d41f3a';
+      ctx.beginPath(); ctx.ellipse(t.x, t.y + d.R * .03, d.R * .045 * t.sx, d.R * .06, 0, 0, TAU); ctx.fill();
+      earrings(ctx, d, '#f2c230', 'jhumka');
+    },
+  },
+};
+const CHAR_IDS = Object.keys(CHARS);
+
+/* ---------- body helpers ---------- */
+function torsoPath(ctx, d, wide = 1) {
+  const { bx, by, R } = d, sw = R * 1.55 * wide;
+  ctx.moveTo(bx - sw, by + R * 3);
+  ctx.lineTo(bx - sw, by + R * .55);
+  ctx.quadraticCurveTo(bx - sw, by - R * .05, bx - R * .5, by - R * .12);
+  ctx.lineTo(bx + R * .5, by - R * .12);
+  ctx.quadraticCurveTo(bx + sw, by - R * .05, bx + sw, by + R * .55);
+  ctx.lineTo(bx + sw, by + R * 3);
+  ctx.closePath();
+}
+function bareTorso(ctx, d, skin, shade, wide = 1) {
+  ctx.fillStyle = skin;
+  ctx.beginPath(); torsoPath(ctx, d, wide); ctx.fill();
+  ctx.strokeStyle = shade; ctx.lineWidth = d.R * .035; ctx.lineCap = 'round';
+  ctx.beginPath();
+  ctx.moveTo(d.bx - d.R * .75, d.by + d.R * .85); ctx.quadraticCurveTo(d.bx - d.R * .35, d.by + d.R * 1.05, d.bx - d.R * .05, d.by + d.R * .8);
+  ctx.moveTo(d.bx + d.R * .75, d.by + d.R * .85); ctx.quadraticCurveTo(d.bx + d.R * .35, d.by + d.R * 1.05, d.bx + d.R * .05, d.by + d.R * .8);
+  ctx.stroke();
+}
+function clothTorso(ctx, d, cloth, shade, skin, wide = 1) {
+  ctx.fillStyle = cloth;
+  ctx.beginPath(); torsoPath(ctx, d, wide); ctx.fill();
+  ctx.fillStyle = skin;
+  ctx.beginPath(); ctx.ellipse(d.bx, d.by - d.R * .1, d.R * .42, d.R * .38, 0, 0, Math.PI); ctx.fill();
+  ctx.strokeStyle = shade; ctx.lineWidth = d.R * .03;
+  ctx.beginPath(); ctx.moveTo(d.bx - d.R * 1.1 * wide, d.by + d.R * .6); ctx.lineTo(d.bx - d.R * 1.1 * wide, d.by + d.R * 2.5);
+  ctx.moveTo(d.bx + d.R * 1.1 * wide, d.by + d.R * .6); ctx.lineTo(d.bx + d.R * 1.1 * wide, d.by + d.R * 2.5); ctx.stroke();
+}
+function trimNeck(ctx, d, color) {
+  ctx.strokeStyle = color; ctx.lineWidth = d.R * .07;
+  ctx.beginPath(); ctx.ellipse(d.bx, d.by - d.R * .1, d.R * .45, d.R * .42, 0, .03 * Math.PI, .97 * Math.PI); ctx.stroke();
+}
+function bindi(ctx, d, color, r) {
+  const p = d.P(0, -.38);
+  ctx.fillStyle = color;
+  ctx.beginPath(); ctx.ellipse(p.x, p.y, d.R * r * p.sx, d.R * r, 0, 0, TAU); ctx.fill();
+}
+function earrings(ctx, d, color, kind) {
+  for (const s of [-1, 1]) {
+    const p = d.P(s * .97, .28, .25);
+    if (p.z < -.05) continue;
+    ctx.fillStyle = color;
+    if (kind === 'stud') {
+      ctx.beginPath(); ctx.arc(p.x, p.y + d.R * .05, d.R * .05, 0, TAU); ctx.fill();
+    } else {
+      ctx.beginPath(); ctx.arc(p.x, p.y + d.R * .02, d.R * .035, 0, TAU); ctx.fill();
+      ctx.beginPath();
+      ctx.moveTo(p.x, p.y + d.R * .05);
+      ctx.lineTo(p.x - d.R * .08, p.y + d.R * .2); ctx.lineTo(p.x + d.R * .08, p.y + d.R * .2); ctx.closePath(); ctx.fill();
+    }
+  }
+}
+
+/* ---------- face rendering ---------- */
+function makeProjector(hx, hy, R, yaw, pitch) {
+  const cy = Math.cos(yaw), sy = Math.sin(yaw), cp = Math.cos(pitch), sp = Math.sin(pitch);
+  return (u, v, depth = 1) => {
+    const w = Math.sqrt(Math.max(0, 1 - u * u - v * v)) * depth;
+    const x1 = u * cy + w * sy, w1 = -u * sy + w * cy;
+    const v2 = v * cp - w1 * sp, w2 = v * sp + w1 * cp;
+    const au = Math.asin(clamp(u, -.98, .98)), av = Math.asin(clamp(v, -.98, .98));
+    return {
+      x: hx + x1 * R, y: hy + v2 * R, z: w2,
+      sx: clamp(Math.cos(au + yaw) / Math.cos(au), .15, 1.15),
+      sy: clamp(Math.cos(av - pitch) / Math.cos(av), .3, 1.15),
+    };
+  };
+}
+
+function headPath(ctx, d, ch) {
+  const { hx, hy, R, f } = d;
+  const rx = R * (ch.headW || 1) * (1 + f.puff * .08);
+  const chinY = R * ((ch.chin || 1) + f.jaw * .1);
+  const chinX = hx + Math.sin(f.yaw) * R * .3;
+  ctx.beginPath();
+  ctx.moveTo(hx - rx, hy);
+  ctx.ellipse(hx, hy, rx, R, 0, Math.PI, 0);
+  ctx.bezierCurveTo(hx + rx, hy + R * .62, chinX + R * .62, hy + chinY, chinX, hy + chinY);
+  ctx.bezierCurveTo(chinX - R * .62, hy + chinY, hx - rx, hy + R * .62, hx - rx, hy);
+  ctx.closePath();
+  return { chinX, chinY };
+}
+
+function drawHead(ctx, d, ch) {
+  const { hx, hy, R } = d;
+  const { chinX, chinY } = headPath(ctx, d, ch);
+  const g = ctx.createRadialGradient(hx - R * .35, hy - R * .45, R * .2, hx, hy, R * 1.25);
+  g.addColorStop(0, ch.light || mix(ch.skin, '#ffffff', .12));
+  g.addColorStop(1, ch.skin);
+  ctx.fillStyle = g;
+  ctx.fill();
+  ctx.strokeStyle = OUTLINE; ctx.globalAlpha = .55; ctx.lineWidth = R * .03; ctx.stroke(); ctx.globalAlpha = 1;
+  if (ch.doubleChin) {
+    ctx.strokeStyle = ch.shade; ctx.lineWidth = R * .03;
+    ctx.beginPath(); ctx.ellipse(chinX, hy + chinY - R * .1, R * .3, R * .08, 0, .15 * Math.PI, .85 * Math.PI); ctx.stroke();
+  }
+}
+
+function drawHair(ctx, d, ch) {
+  if (!ch.line) return;
+  const { hx, hy, R, P } = d;
+  ctx.save();
+  ctx.beginPath(); ctx.ellipse(hx, hy, R * (ch.headW || 1) * 1.06, R * 1.07, 0, 0, TAU); ctx.clip();
+  ctx.beginPath();
+  const n = 28;
+  for (let i = 0; i <= n; i++) {
+    const u = -1 + 2 * i / n;
+    let p = P(u * .995, ch.line(u));
+    if (p.z < 0) { // behind the silhouette: pin it to the outline
+      const dx = p.x - hx, dy = p.y - hy, k = R / Math.max(1e-3, Math.hypot(dx, dy));
+      p = { x: hx + dx * k, y: hy + dy * k };
+    }
+    i ? ctx.lineTo(p.x, p.y) : ctx.moveTo(p.x, p.y);
+  }
+  ctx.lineTo(hx + R * 2, hy - R * .1);
+  ctx.lineTo(hx + R * 2, hy - R * 2);
+  ctx.lineTo(hx - R * 2, hy - R * 2);
+  ctx.lineTo(hx - R * 2, hy - R * .1);
+  ctx.closePath();
+  ctx.fillStyle = ch.hair; ctx.fill();
+  ctx.restore();
+}
+
+function drawEar(ctx, d, ch, s) {
+  const p = d.P(s * .98, .08, .2);
+  const R = d.R;
+  if (ch.monkey) {
+    const q = d.P(s * .98, -.05, .2);
+    ctx.fillStyle = ch.skin;
+    ctx.beginPath(); ctx.ellipse(q.x + s * R * .12, q.y, R * .3 * Math.max(.4, q.sx), R * .3, 0, 0, TAU); ctx.fill();
+    ctx.fillStyle = '#e8a08e';
+    ctx.beginPath(); ctx.ellipse(q.x + s * R * .12, q.y, R * .18 * Math.max(.4, q.sx), R * .19, 0, 0, TAU); ctx.fill();
+    return;
+  }
+  ctx.fillStyle = ch.skin;
+  ctx.beginPath(); ctx.ellipse(p.x + s * R * .04, p.y, R * .14 * Math.max(.45, p.sx), R * .2, 0, 0, TAU); ctx.fill();
+  ctx.strokeStyle = ch.shade; ctx.lineWidth = R * .03;
+  ctx.beginPath(); ctx.ellipse(p.x + s * R * .04, p.y, R * .07 * Math.max(.45, p.sx), R * .11, 0, -.5 * Math.PI, .5 * Math.PI, s < 0); ctx.stroke();
+}
+
+function drawEye(ctx, d, ch, s) {
+  const { R, f } = d;
+  const side = s < 0 ? 'L' : 'R'; // image left / right
+  const p = d.P(s * .34, -.04, .95);
+  if (p.z < .05) return;
+  const blink = f['blink' + side], squint = f['squint' + side], wide = f['wide' + side];
+  const open = clamp(1 - blink - squint * .3);
+  const rx = R * ch.eyeRx, ry = R * ch.eyeRy * (1 + wide * .2);
+  ctx.save();
+  ctx.translate(p.x, p.y); ctx.scale(p.sx, p.sy);
+  ctx.lineCap = 'round';
+  if (open < .12) {
+    ctx.strokeStyle = OUTLINE; ctx.lineWidth = R * .035;
+    ctx.beginPath();
+    const happy = (f.smileL + f.smileR) / 2 > .35;
+    if (happy) ctx.moveTo(-rx, ry * .1), ctx.quadraticCurveTo(0, -ry * .7, rx, ry * .1);
+    else ctx.moveTo(-rx, 0), ctx.quadraticCurveTo(0, ry * .45, rx, 0);
+    ctx.stroke();
+  } else {
+    ctx.beginPath(); ctx.ellipse(0, 0, rx, ry, 0, 0, TAU);
+    ctx.fillStyle = '#fffaf2'; ctx.fill();
+    ctx.save(); ctx.clip();
+    const pr = R * ch.pupil * (1 - wide * .12);
+    const px = f.gx * rx * .5, py = f.gy * ry * .4 + ry * .05;
+    ctx.fillStyle = '#120b07';
+    ctx.beginPath(); ctx.ellipse(px, py, pr, pr * 1.1, 0, 0, TAU); ctx.fill();
+    ctx.fillStyle = '#ffffff';
+    ctx.beginPath(); ctx.arc(px - pr * .35, py - pr * .4, pr * .32, 0, TAU); ctx.fill();
+    // upper lid comes down as the eye closes, lower lid rises with a squint
+    const lid = ch.lid || ch.skin;
+    ctx.fillStyle = lid;
+    const ly = -ry + 2 * ry * (1 - open) * .95;
+    ctx.beginPath(); ctx.moveTo(-rx - 2, -ry - 2); ctx.lineTo(rx + 2, -ry - 2); ctx.lineTo(rx + 2, ly); ctx.quadraticCurveTo(0, ly + ry * .25, -rx - 2, ly); ctx.closePath(); ctx.fill();
+    if (squint > .05) {
+      const sy = ry - ry * .55 * squint;
+      ctx.beginPath(); ctx.moveTo(-rx - 2, ry + 2); ctx.lineTo(rx + 2, ry + 2); ctx.lineTo(rx + 2, sy); ctx.quadraticCurveTo(0, sy - ry * .2, -rx - 2, sy); ctx.closePath(); ctx.fill();
+    }
+    if (open < .97) {
+      ctx.strokeStyle = OUTLINE; ctx.lineWidth = R * .03;
+      ctx.beginPath(); ctx.moveTo(-rx, ly); ctx.quadraticCurveTo(0, ly + ry * .25, rx, ly); ctx.stroke();
+    }
+    ctx.restore();
+    ctx.strokeStyle = OUTLINE; ctx.lineWidth = R * .03;
+    ctx.beginPath(); ctx.ellipse(0, 0, rx, ry, 0, 0, TAU); ctx.stroke();
+    if (ch.lashes) {
+      ctx.lineWidth = R * .025;
+      const ly2 = Math.max(-ry, -ry + 2 * ry * (1 - open) * .95);
+      for (let i = 0; i < 3; i++) {
+        const a = -Math.PI / 2 + s * (.55 + i * .3);
+        const x = Math.cos(a) * rx, y = Math.max(ly2, Math.sin(a) * ry);
+        ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + s * R * .07, y - R * .05); ctx.stroke();
+      }
+    }
+  }
+  ctx.restore();
+}
+
+function drawBrow(ctx, d, ch, s) {
+  const { R, f } = d;
+  const side = s < 0 ? 'L' : 'R';
+  const p = d.P(s * .34, -.34, .95);
+  if (p.z < .05) return;
+  const inner = f.browInner, outer = f['browUp' + side], down = f['browDown' + side];
+  const yIn = R * (-.13 * inner - .03 * outer + .1 * down);
+  const yOut = R * (-.04 * inner - .12 * outer + .03 * down);
+  const half = R * .17;
+  ctx.save(); ctx.translate(p.x, p.y); ctx.scale(p.sx, p.sy);
+  ctx.strokeStyle = ch.brow; ctx.lineWidth = R * ch.browW; ctx.lineCap = 'round';
+  ctx.beginPath();
+  ctx.moveTo(-s * half, yIn);
+  ctx.quadraticCurveTo(0, (yIn + yOut) / 2 - R * .06, s * half, yOut);
+  ctx.stroke();
+  ctx.restore();
+}
+
+function drawNose(ctx, d, ch) {
+  const { R } = d;
+  const p = d.P(0, .18, 1.08);
+  ctx.save(); ctx.translate(p.x, p.y); ctx.scale(p.sx, p.sy);
+  ctx.strokeStyle = ch.shade; ctx.fillStyle = ch.shade; ctx.lineCap = 'round';
+  if (ch.nose === 'monkey') {
+    ctx.fillStyle = '#5e361a';
+    ctx.beginPath(); ctx.ellipse(-R * .06, 0, R * .035, R * .05, .3, 0, TAU); ctx.ellipse(R * .06, 0, R * .035, R * .05, -.3, 0, TAU); ctx.fill();
+  } else if (ch.nose === 'big') {
+    ctx.lineWidth = R * .035;
+    ctx.beginPath(); ctx.arc(0, 0, R * .1, .15 * Math.PI, .85 * Math.PI); ctx.stroke();
+  } else if (ch.nose === 'button') {
+    ctx.lineWidth = R * .035;
+    ctx.beginPath(); ctx.arc(0, -R * .01, R * .075, .1 * Math.PI, .9 * Math.PI); ctx.stroke();
+  } else {
+    ctx.lineWidth = R * .03;
+    ctx.beginPath(); ctx.arc(0, 0, R * .05, .15 * Math.PI, .85 * Math.PI); ctx.stroke();
+  }
+  ctx.restore();
+}
+
+function drawMouth(ctx, d, ch) {
+  const { R, f } = d;
+  const smile = (f.smileL + f.smileR) / 2;
+  const open = clamp(f.jaw - f.close * .5);
+  const pk = Math.max(f.pucker, f.funnel);
+  const p = d.P(clamp(f.shift, -1, 1) * .12, .5 + open * .04, 1);
+  d.mouth = { x: p.x, y: p.y };
+  ctx.save(); ctx.translate(p.x, p.y); ctx.scale(p.sx, p.sy);
+  ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+  const lineCol = ch.lip || OUTLINE;
+  if (pk > .45 && smile < .4) {
+    // "ooh": a round mouth that opens with the jaw
+    const rx = R * (.11 - .03 * pk), ry = R * (.09 + .22 * open);
+    ctx.fillStyle = ch.lip || mix(ch.skin, '#8a2b2b', .5);
+    ctx.beginPath(); ctx.ellipse(0, ry * .3, rx + R * .05, ry + R * .05, 0, 0, TAU); ctx.fill();
+    ctx.fillStyle = '#4a1414';
+    ctx.beginPath(); ctx.ellipse(0, ry * .3, rx * .65, ry * .7, 0, 0, TAU); ctx.fill();
+    ctx.restore();
+    return;
+  }
+  const hw = R * ch.mouthW * (1 + .42 * smile + .3 * f.stretch - .4 * pk) / 2;
+  const yL = R * (-.12 * f.smileL + .08 * f.frownL);
+  const yR = R * (-.12 * f.smileR + .08 * f.frownR);
+  const h = R * .42 * open;
+  const ends = (yL + yR) / 2;
+  if (h < R * .035) {
+    ctx.strokeStyle = lineCol; ctx.lineWidth = R * .038;
+    ctx.beginPath(); ctx.moveTo(-hw, yL); ctx.quadraticCurveTo(0, 2 * (R * .03 * smile) - ends, hw, yR); ctx.stroke();
+    if (smile > .3) {
+      ctx.lineWidth = R * .025;
+      ctx.beginPath();
+      ctx.moveTo(-hw - R * .03, yL - R * .04); ctx.quadraticCurveTo(-hw - R * .06, yL, -hw - R * .02, yL + R * .04);
+      ctx.moveTo(hw + R * .03, yR - R * .04); ctx.quadraticCurveTo(hw + R * .06, yR, hw + R * .02, yR + R * .04);
+      ctx.stroke();
+    }
+    ctx.restore();
+    return;
+  }
+  const top = -h * .28 - R * .01 * smile;
+  const bot = h * .72 + R * .06 * smile;
+  ctx.beginPath();
+  ctx.moveTo(-hw, yL);
+  ctx.quadraticCurveTo(0, 2 * top - ends, hw, yR);
+  ctx.quadraticCurveTo(0, 2 * bot - ends, -hw, yL);
+  ctx.closePath();
+  ctx.fillStyle = '#4a1414'; ctx.fill();
+  ctx.save(); ctx.clip();
+  ctx.fillStyle = '#fffdf7';
+  ctx.fillRect(-hw, top - R * .3, hw * 2, R * .3 + R * .065 + R * .02 * smile);
+  ctx.fillStyle = '#e0626a';
+  ctx.beginPath(); ctx.ellipse(0, bot + h * .05, hw * .55, Math.max(R * .04, h * .38), 0, 0, TAU); ctx.fill();
+  ctx.restore();
+  ctx.strokeStyle = lineCol; ctx.lineWidth = R * .035; ctx.stroke();
+  ctx.restore();
+}
+
+function drawBlush(ctx, d, ch) {
+  const smile = (d.f.smileL + d.f.smileR) / 2;
+  const a = (ch.blush || 0) * .6 + smile * .35 + d.f.puff * .3;
+  if (a < .02) return;
+  for (const s of [-1, 1]) {
+    const p = d.P(s * .56, .28, .9);
+    if (p.z < .1) continue;
+    ctx.fillStyle = `rgba(255, 105, 105, ${clamp(a, 0, .5)})`;
+    ctx.beginPath(); ctx.ellipse(p.x, p.y - d.R * .04 * smile, d.R * (.13 + d.f.puff * .05) * p.sx, d.R * .08, 0, 0, TAU); ctx.fill();
+  }
+}
+
+function mix(a, b, t) {
+  const pa = parseInt(a.slice(1), 16), pb = parseInt(b.slice(1), 16);
+  const c = [16, 8, 0].map(sh => Math.round(lerp((pa >> sh) & 255, (pb >> sh) & 255, t)));
+  return '#' + c.map(v => v.toString(16).padStart(2, '0')).join('');
+}
+
+/* ---------- backgrounds ---------- */
+const bgCache = {};
+function background(name) {
+  if (bgCache[name]) return bgCache[name];
+  const c = document.createElement('canvas'); c.width = W; c.height = H;
+  const g = c.getContext('2d');
+  if (name === 'plain') {
+    const gr = g.createLinearGradient(0, 0, 0, H);
+    gr.addColorStop(0, '#ffcf8a'); gr.addColorStop(1, '#ff9a5a');
+    g.fillStyle = gr; g.fillRect(0, 0, W, H);
+    g.fillStyle = 'rgba(255,255,255,.18)';
+    for (let i = 0; i < 9; i++) { g.beginPath(); g.arc(40 + i * 75, 60 + (i % 3) * 140, 18 + (i % 4) * 8, 0, TAU); g.fill(); }
+  } else {
+    const sky = g.createLinearGradient(0, 0, 0, H * .7);
+    sky.addColorStop(0, '#7fcdf7'); sky.addColorStop(1, '#fde6b1');
+    g.fillStyle = sky; g.fillRect(0, 0, W, H);
+    // sun
+    const sun = g.createRadialGradient(540, 80, 10, 540, 80, 90);
+    sun.addColorStop(0, 'rgba(255,230,120,1)'); sun.addColorStop(.35, 'rgba(255,214,90,.9)'); sun.addColorStop(1, 'rgba(255,214,90,0)');
+    g.fillStyle = sun; g.fillRect(420, 0, 220, 200);
+    // clouds
+    g.fillStyle = 'rgba(255,255,255,.9)';
+    for (const [x, y, s] of [[110, 70, 1], [330, 45, .8]]) {
+      for (const [dx, dy, r] of [[0, 0, 22], [24, -10, 26], [50, 0, 20], [26, 6, 22]]) { g.beginPath(); g.arc(x + dx * s, y + dy * s, r * s, 0, TAU); g.fill(); }
+    }
+    // far palace
+    g.fillStyle = '#e8b866';
+    g.fillRect(250, 210, 140, 70);
+    for (const [x, r] of [[270, 18], [320, 30], [370, 18]]) {
+      g.beginPath(); g.arc(x, 210, r, Math.PI, 0); g.fill();
+      g.fillRect(x - 2, 210 - r - 14, 4, 14);
+    }
+    // hills
+    g.fillStyle = '#86c46e';
+    g.beginPath(); g.moveTo(0, 290); g.quadraticCurveTo(160, 200, 330, 270); g.quadraticCurveTo(480, 320, 640, 240); g.lineTo(640, 480); g.lineTo(0, 480); g.fill();
+    g.fillStyle = '#5fa64f';
+    g.beginPath(); g.moveTo(0, 340); g.quadraticCurveTo(200, 290, 380, 330); g.quadraticCurveTo(520, 355, 640, 320); g.lineTo(640, 480); g.lineTo(0, 480); g.fill();
+    // ground path
+    g.fillStyle = '#e7c487';
+    g.beginPath(); g.moveTo(230, 480); g.quadraticCurveTo(300, 380, 330, 335); g.lineTo(350, 335); g.quadraticCurveTo(380, 400, 470, 480); g.fill();
+    // huts
+    for (const [x, y, s] of [[70, 300, 1], [545, 290, .9]]) {
+      g.fillStyle = '#d99a5c'; g.fillRect(x - 40 * s, y, 80 * s, 50 * s);
+      g.fillStyle = '#6b3d1c'; g.fillRect(x - 10 * s, y + 18 * s, 20 * s, 32 * s);
+      g.fillStyle = '#c98d2e';
+      g.beginPath(); g.moveTo(x - 55 * s, y + 4 * s); g.lineTo(x, y - 42 * s); g.lineTo(x + 55 * s, y + 4 * s); g.closePath(); g.fill();
+      g.strokeStyle = '#a87020'; g.lineWidth = 2;
+      for (let i = -3; i <= 3; i++) { g.beginPath(); g.moveTo(x + i * 6 * s, y - 34 * s); g.lineTo(x + i * 14 * s, y + 2 * s); g.stroke(); }
+    }
+    // tree
+    g.fillStyle = '#7a4a25'; g.fillRect(150, 230, 14, 90);
+    g.fillStyle = '#3f9446';
+    for (const [dx, dy, r] of [[0, 0, 34], [-28, 14, 26], [28, 14, 26], [0, -26, 26]]) { g.beginPath(); g.arc(157 + dx, 220 + dy, r, 0, TAU); g.fill(); }
+  }
+  return (bgCache[name] = c);
+}
+
+/* ---------- full scene ---------- */
+function drawLaddoo(ctx, x, y, r) {
+  const g = ctx.createRadialGradient(x - r * .3, y - r * .3, r * .1, x, y, r);
+  g.addColorStop(0, '#ffd27a'); g.addColorStop(1, '#f39a1e');
+  ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, r, 0, TAU); ctx.fill();
+  ctx.fillStyle = 'rgba(190,100,10,.55)';
+  for (let i = 0; i < 9; i++) {
+    const a = i * 2.4, rr = r * (.25 + (i % 3) * .22);
+    ctx.beginPath(); ctx.arc(x + Math.cos(a) * rr, y + Math.sin(a) * rr, r * .07, 0, TAU); ctx.fill();
+  }
+}
+
+function drawScene(ctx, f, chId, t, opts = {}) {
+  const ch = CHARS[chId] || CHARS.bheem;
+  ctx.drawImage(background(opts.bg || 'village'), 0, 0);
+  const breathe = reduceMotion ? 0 : Math.sin(t * 1.6) * 2;
+  const R = 100 * f.s * (ch.scale || 1);
+  const hx = W / 2 + f.x, hy = 196 + f.y + breathe;
+  const d = { hx, hy, R, f, P: makeProjector(hx, hy, R, f.yaw, f.pitch), bx: W / 2 + f.x * .8, by: hy + R * 1.22 + breathe * .5 };
+
+  if (opts.power > 0) {
+    const a = opts.power;
+    const pulse = reduceMotion ? 1 : 1 + .08 * Math.sin(t * 9);
+    const g = ctx.createRadialGradient(hx, hy, R * .6, hx, hy, R * 2.3 * pulse);
+    g.addColorStop(0, `rgba(255,220,90,${.75 * a})`); g.addColorStop(1, 'rgba(255,200,60,0)');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  }
+
+  ch.behind?.(ctx, d);
+  ch.body(ctx, d);
+  // neck
+  ctx.fillStyle = ch.skin;
+  ctx.fillRect(d.bx - R * .3, hy + R * .55, R * .6, d.by - hy - R * .4);
+  ctx.fillStyle = ch.shade; ctx.globalAlpha = .55;
+  ctx.beginPath(); ctx.ellipse(hx + Math.sin(f.yaw) * R * .3, hy + R * .98, R * .32, R * .1, 0, 0, Math.PI); ctx.fill();
+  ctx.globalAlpha = 1;
+
+  ctx.save();
+  const px = hx, py = hy + R * .9;
+  ctx.translate(px, py); ctx.rotate(f.roll); ctx.translate(-px, -py);
+  const ears = [-1, 1].map(s => ({ s, z: d.P(s * .98, .08, .2).z }));
+  for (const e of ears) if (e.z < .3) drawEar(ctx, d, ch, e.s);
+  drawHead(ctx, d, ch);
+  drawHair(ctx, d, ch);
+  for (const e of ears) if (e.z >= .3) drawEar(ctx, d, ch, e.s);
+  ch.afterHead?.(ctx, d);
+  // features stay inside the head outline when it turns
+  ctx.save();
+  headPath(ctx, d, ch); ctx.clip();
+  ch.mask?.(ctx, d);
+  drawBlush(ctx, d, ch);
+  drawEye(ctx, d, ch, -1); drawEye(ctx, d, ch, 1);
+  drawBrow(ctx, d, ch, -1); drawBrow(ctx, d, ch, 1);
+  drawNose(ctx, d, ch);
+  drawMouth(ctx, d, ch);
+  ctx.restore();
+  ch.front?.(ctx, d);
+  ctx.restore();
+
+  if (opts.power > 0 && !reduceMotion) {
+    ctx.fillStyle = '#fff4b0';
+    for (let i = 0; i < 8; i++) {
+      const a = t * 2 + i * TAU / 8, r = R * (1.55 + .15 * Math.sin(t * 5 + i));
+      const x = hx + Math.cos(a) * r, y = hy + Math.sin(a) * r * .9, s = 6 + 3 * Math.sin(t * 7 + i);
+      ctx.globalAlpha = opts.power;
+      ctx.beginPath(); ctx.moveTo(x, y - s); ctx.lineTo(x + s * .3, y - s * .3); ctx.lineTo(x + s, y); ctx.lineTo(x + s * .3, y + s * .3);
+      ctx.lineTo(x, y + s); ctx.lineTo(x - s * .3, y + s * .3); ctx.lineTo(x - s, y); ctx.lineTo(x - s * .3, y - s * .3); ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+  }
+  return d;
+}
+
+/* =====================================================================
+   Face state: tracking targets, smoothing and neutral calibration.
+   ===================================================================== */
+const NEUTRAL_FACE = {
+  x: 0, y: 0, s: 1, yaw: 0, pitch: 0, roll: 0,
+  blinkL: 0, blinkR: 0, squintL: 0, squintR: 0, wideL: 0, wideR: 0, gx: 0, gy: 0,
+  browInner: 0, browUpL: 0, browUpR: 0, browDownL: 0, browDownR: 0,
+  jaw: 0, close: 0, smileL: 0, smileR: 0, frownL: 0, frownR: 0,
+  pucker: 0, funnel: 0, stretch: 0, shift: 0, puff: 0,
+};
+const face = { ...NEUTRAL_FACE };     // what gets drawn
+let target = { ...NEUTRAL_FACE };     // latest measurement
+let baseline = null;                  // raw blendshapes + pose at "Set neutral"
+let lastRaw = null;
+let lastSeen = -1e9;
+const FAST = new Set(['blinkL', 'blinkR', 'jaw', 'close']);
+
+function measure(res, vw, vh) {
+  const lm = res.faceLandmarks?.[0];
+  const cats = res.faceBlendshapes?.[0]?.categories;
+  if (!lm || !cats) return null;
+  const b = {};
+  for (const c of cats) b[c.categoryName] = c.score;
+  const pt = i => [lm[i].x * vw, lm[i].y * vh, lm[i].z * vw];
+  const a = pt(33), c = pt(263), top = pt(10), chin = pt(152);
+  const sub = (p, q) => [p[0] - q[0], p[1] - q[1], p[2] - q[2]];
+  const dot = (p, q) => p[0] * q[0] + p[1] * q[1] + p[2] * q[2];
+  const norm = p => { const l = Math.hypot(...p) || 1; return p.map(v => v / l); };
+  const X = norm(sub(c, a));
+  let Y = sub(chin, top); Y = norm(sub(Y, X.map(v => v * dot(Y, X))));
+  const Z = [X[1] * Y[2] - X[2] * Y[1], X[2] * Y[0] - X[0] * Y[2], X[0] * Y[1] - X[1] * Y[0]];
+  return {
+    b,
+    yaw: Math.asin(clamp(-Z[0], -1, 1)),
+    pitch: Math.asin(clamp(Z[1], -1, 1)),
+    roll: Math.atan2(X[1], X[0]),
+    cx: (a[0] + c[0] + top[0] + chin[0]) / 4 / vw,
+    cy: (a[1] + c[1] + top[1] + chin[1]) / 4 / vh,
+    size: Math.hypot(...sub(chin, top).slice(0, 2)) / vh,
+  };
+}
+
+function toTarget(m) {
+  const base = baseline || { b: {}, yaw: 0, pitch: PITCH0, roll: 0 };
+  const B = name => {
+    const v = m.b[name] || 0, z = base.b[name] || 0;
+    return clamp((v - z) / Math.max(.2, 1 - z));
+  };
+  const S = (stem, side, suffix = '') => B(stem + imgSide(side) + suffix);
+  const gain = (v, k) => clamp(v * k);
+  const lookR = (S('eyeLookOut', 'R') + S('eyeLookIn', 'L')) / 2;
+  const lookL = (S('eyeLookIn', 'R') + S('eyeLookOut', 'L')) / 2;
+  const lookUp = (B('eyeLookUpLeft') + B('eyeLookUpRight')) / 2;
+  const lookDown = (B('eyeLookDownLeft') + B('eyeLookDownRight')) / 2;
+  return {
+    x: clamp((m.cx - .5) * W * .6, -170, 170),
+    y: clamp((m.cy - .5) * H * .35, -60, 60),
+    s: clamp(Math.sqrt(m.size / .42), .8, 1.2),
+    yaw: clamp((m.yaw - base.yaw) * 1.1, -.75, .75),
+    pitch: clamp((m.pitch - base.pitch) * 1.1, -.5, .5),
+    roll: clamp(m.roll - base.roll, -.6, .6),
+    blinkL: clamp((S('eyeBlink', 'L') - .2) / .4), blinkR: clamp((S('eyeBlink', 'R') - .2) / .4),
+    squintL: gain(S('eyeSquint', 'L'), 1.3), squintR: gain(S('eyeSquint', 'R'), 1.3),
+    wideL: gain(S('eyeWide', 'L'), 2), wideR: gain(S('eyeWide', 'R'), 2),
+    gx: clamp((lookR - lookL) * 2, -1, 1), gy: clamp((lookDown - lookUp) * 1.8, -1, 1),
+    browInner: gain(B('browInnerUp'), 1.4),
+    browUpL: gain(S('browOuterUp', 'L'), 1.5), browUpR: gain(S('browOuterUp', 'R'), 1.5),
+    browDownL: gain(S('browDown', 'L'), 1.6), browDownR: gain(S('browDown', 'R'), 1.6),
+    jaw: gain(B('jawOpen'), 1.8), close: gain(B('mouthClose'), 1.5),
+    smileL: gain(S('mouthSmile', 'L'), 1.25), smileR: gain(S('mouthSmile', 'R'), 1.25),
+    frownL: gain(S('mouthFrown', 'L'), 1.8), frownR: gain(S('mouthFrown', 'R'), 1.8),
+    pucker: gain(B('mouthPucker'), 1.3), funnel: gain(B('mouthFunnel'), 1.4),
+    stretch: gain((B('mouthStretchLeft') + B('mouthStretchRight')) / 2, 1.5),
+    shift: clamp((S('mouth', 'R') - S('mouth', 'L')) * 2, -1, 1),
+    puff: gain(B('cheekPuff'), 1.8),
+  };
+}
+// The forehead-to-chin line leans back a little on a level face.
+const PITCH0 = -0.2;
+
+function smoothFace(dt) {
+  const kFast = 1 - Math.exp(-dt / .035), kSlow = 1 - Math.exp(-dt / .07);
+  for (const k in face) face[k] = lerp(face[k], target[k], FAST.has(k) ? kFast : kSlow);
+}
+
+/* =====================================================================
+   Camera, tracking and the render loop
+   ===================================================================== */
+const out = document.createElement('canvas');
+out.width = W; out.height = H;
+const octx = out.getContext('2d');
+const camVideo = document.createElement('video');
+camVideo.muted = true; camVideo.playsInline = true;
+
+let camStream = null, micTrack = null, canvasTrack = null;
+let landmarker = null, trackState = 'off';
+let character = CHARS[store.get('dholakpur:char')] ? store.get('dholakpur:char') : 'bheem';
+let bg = store.get('dholakpur:bg') === 'plain' ? 'plain' : 'village';
+let micLevel = 0, analyser = null, audioCtx = null;
+let lastVideoTime = -1, lastFrame = 0, lastDraw = 0;
+let openTimer = 0, laddoo = null, ladCooldown = 0;
+let debugFace = null;
+
+async function loadLandmarker() {
+  const base = new URL('../lib/mediapipe/', import.meta.url).href;
+  const fileset = { wasmLoaderPath: base + 'vision_wasm_internal.js', wasmBinaryPath: base + 'vision_wasm_internal.wasm' };
+  const opts = delegate => ({
+    baseOptions: { modelAssetPath: base + 'face_landmarker.task', delegate },
+    runningMode: 'VIDEO', numFaces: 1, outputFaceBlendshapes: true,
+  });
+  try { return await FaceLandmarker.createFromOptions(fileset, opts('GPU')); }
+  catch (e) { console.warn('GPU delegate failed, using CPU', e); return FaceLandmarker.createFromOptions(fileset, opts('CPU')); }
+}
+const landmarkerReady = loadLandmarker()
+  .then(l => { landmarker = l; if (trackState === 'loading') setTrack('searching'); })
+  .catch(e => { console.error(e); setTrack('failed'); });
+
+function setTrack(s) {
+  trackState = s;
+  const chip = $('#trackChip');
+  const [cls, text] = {
+    off: ['', 'Camera off'], loading: ['warn', 'Loading face tracking…'], searching: ['warn', 'Looking for your face…'],
+    ok: ['ok', 'Tracking your face'], failed: ['bad', 'Face tracking unavailable'], nocam: ['bad', 'No camera: voice moves the mouth'],
+  }[s];
+  chip.querySelector('.dot').className = 'dot ' + cls;
+  chip.lastElementChild.textContent = text;
+}
+
+async function startMedia() {
+  if (camStream) return;
+  $('#startCam').hidden = true;
+  let stream = null;
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({
+      video: { width: { ideal: 640 }, height: { ideal: 480 }, facingMode: 'user' },
+      audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true },
+    });
+  } catch (e) {
+    console.warn('camera+mic failed', e);
+    for (const c of [{ video: { facingMode: 'user' } }, { audio: true }]) {
+      try { stream = await navigator.mediaDevices.getUserMedia(c); break; } catch {}
+    }
+  }
+  camStream = stream || new MediaStream();
+  micTrack = camStream.getAudioTracks()[0] || null;
+  if (camStream.getVideoTracks().length) {
+    camVideo.srcObject = new MediaStream(camStream.getVideoTracks());
+    await camVideo.play().catch(() => {});
+    setTrack(landmarker ? 'searching' : trackState === 'failed' ? 'failed' : 'loading');
+  } else {
+    setTrack('nocam');
+  }
+  if (micTrack) {
+    try {
+      audioCtx = audioCtx || new AudioContext();
+      analyser = audioCtx.createAnalyser(); analyser.fftSize = 512;
+      audioCtx.createMediaStreamSource(new MediaStream([micTrack])).connect(analyser);
+    } catch {}
+  }
+  if (!stream) showErr('No camera or microphone available. You can still join and watch.');
+}
+
+function level(an) {
+  if (!an) return 0;
+  const buf = new Uint8Array(an.fftSize);
+  an.getByteTimeDomainData(buf);
+  let sum = 0;
+  for (const v of buf) sum += (v - 128) * (v - 128);
+  return Math.sqrt(sum / buf.length) / 128;
+}
+
+function frame(now) {
+  if (now - lastDraw < 30) return;
+  const dt = Math.min(.1, (now - (lastFrame || now)) / 1000);
+  lastFrame = lastDraw = now;
+  const tracking = landmarker && camVideo.readyState >= 2 && camVideo.videoWidth;
+  if (tracking && camVideo.currentTime !== lastVideoTime) {
+    lastVideoTime = camVideo.currentTime;
+    try {
+      const m = measure(landmarker.detectForVideo(camVideo, now), camVideo.videoWidth, camVideo.videoHeight);
+      if (m) { lastRaw = m; target = toTarget(m); lastSeen = now; if (trackState !== 'ok') setTrack('ok'); }
+      else if (now - lastSeen > 600 && trackState === 'ok') setTrack('searching');
+    } catch (e) { console.error(e); }
+  }
+  micLevel = lerp(micLevel, level(analyser), .5);
+  const lost = now - lastSeen > 600;
+  if (lost) {
+    // hold still, ease back to neutral, blink now and then, and let the voice move the mouth
+    target = { ...NEUTRAL_FACE, x: target.x * .98, y: target.y * .98, s: target.s };
+    const tt = now / 1000;
+    target.blinkL = target.blinkR = (tt % 4) < .12 ? 1 : 0;
+    target.jaw = clamp((micLevel - .02) * 8);
+  }
+  if (debugFace) Object.assign(target, debugFace);
+  smoothFace(dt);
+
+  // open wide and hold for a laddoo power-up
+  openTimer = face.jaw > .55 ? openTimer + dt : 0;
+  const t = now / 1000;
+  if (openTimer > .8 && t > ladCooldown) { laddoo = { t0: t }; ladCooldown = t + 6; openTimer = 0; }
+  let power = 0;
+  if (laddoo) {
+    const e = t - laddoo.t0;
+    if (e > 3.6) laddoo = null;
+    else if (e > .7) power = Math.min(1, (e - .7) * 4) * Math.min(1, (3.6 - e) * 2);
+  }
+  const d = drawScene(octx, face, character, t, { bg, power });
+  if (laddoo && t - laddoo.t0 <= .7 && d.mouth) {
+    const e = (t - laddoo.t0) / .7, sx = W - 50, sy = H - 30;
+    const x = lerp(sx, d.mouth.x, e), y = lerp(sy, d.mouth.y, e) - Math.sin(e * Math.PI) * 120;
+    drawLaddoo(octx, x, y, 22 * (1 - e * .5));
+  }
+  updateSpeaking();
+}
+
+// Background tabs stop requestAnimationFrame, which would freeze the video
+// others see. A worker timer keeps frames coming while the tab is hidden.
+const ticker = new Worker(URL.createObjectURL(new Blob(
+  ['let id;onmessage=e=>{clearInterval(id);if(e.data)id=setInterval(()=>postMessage(0),e.data)}'],
+  { type: 'text/javascript' })));
+ticker.onmessage = () => frame(performance.now());
+document.addEventListener('visibilitychange', () => ticker.postMessage(document.hidden ? 33 : 0));
+
+/* =====================================================================
+   Character pickers
+   ===================================================================== */
+function thumbnail(id) {
+  const c = document.createElement('canvas');
+  c.width = 240; c.height = 180;
+  const g = c.getContext('2d');
+  const tmp = document.createElement('canvas'); tmp.width = W; tmp.height = H;
+  drawScene(tmp.getContext('2d'), { ...NEUTRAL_FACE, smileL: .5, smileR: .5 }, id, 0, { bg });
+  g.drawImage(tmp, W / 2 - 180, 40, 360, 270, 0, 0, 240, 180);
+  return c;
+}
+function buildPicker(el, onPick) {
+  el.textContent = '';
+  for (const id of CHAR_IDS) {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'char-btn'; b.dataset.id = id;
+    b.setAttribute('aria-pressed', String(id === character));
+    b.append(thumbnail(id));
+    const s = document.createElement('span'); s.textContent = CHARS[id].name; b.append(s);
+    b.addEventListener('click', () => { onPick(id); b.blur(); });
+    el.append(b);
+  }
+}
+function setCharacter(id) {
+  character = id;
+  store.set('dholakpur:char', id);
+  for (const b of document.querySelectorAll('.char-btn')) b.setAttribute('aria-pressed', String(b.dataset.id === id));
+  broadcast({ t: 'char', char: id });
+  const me = tiles.get('me');
+  if (me) me.setLabel(myName(), id, !micOn);
+}
+function rebuildPickers() {
+  buildPicker($('#lobbyChars'), setCharacter);
+  buildPicker($('#callChars'), id => { setCharacter(id); $('#charPop').hidden = true; });
+}
+rebuildPickers();
+
+/* ---------- lobby ---------- */
+const nameInput = $('#name');
+nameInput.value = store.get('dholakpur:name') || '';
+nameInput.addEventListener('input', () => store.set('dholakpur:name', nameInput.value.trim()));
+const myName = () => nameInput.value.trim().slice(0, 32) || 'Guest';
+
+for (const b of document.querySelectorAll('#bgSeg button')) {
+  b.setAttribute('aria-pressed', String(b.dataset.bg === bg));
+  b.addEventListener('click', () => {
+    bg = b.dataset.bg; store.set('dholakpur:bg', bg);
+    for (const o of document.querySelectorAll('#bgSeg button')) o.setAttribute('aria-pressed', String(o === b));
+    rebuildPickers();
+  });
+}
+
+const ROOM_RE = /^[a-z0-9]{4,16}$/;
+let room = location.hash.slice(1).toLowerCase();
+if (!ROOM_RE.test(room)) room = '';
+function updateRoomNote() {
+  $('#joinBtn').textContent = room ? 'Join meeting' : 'Start a meeting';
+  $('#roomNote').innerHTML = room
+    ? `You're joining room <code>${room}</code>.`
+    : 'You\'ll get a link to share with up to 5 friends.';
+}
+updateRoomNote();
+window.addEventListener('hashchange', () => {
+  if (state !== 'lobby') return;
+  const r = location.hash.slice(1).toLowerCase();
+  room = ROOM_RE.test(r) ? r : '';
+  updateRoomNote();
+});
+
+$('#lobbyPreview').prepend(out);
+$('#startCam').addEventListener('click', () => { ensureAudio(); startMedia(); });
+function ensureAudio() { try { audioCtx = audioCtx || new AudioContext(); audioCtx.resume(); } catch {} }
+function showErr(msg) { const e = $('#lobbyErr'); e.textContent = msg; e.hidden = !msg; }
+
+/* =====================================================================
+   Signalling over the PeerJS cloud server (no SDK, just its WebSocket
+   protocol). Everyone in a room claims one of six ids, dhk-<room>-<slot>,
+   and says hello to the other five. Media goes peer to peer.
+   ===================================================================== */
+const SIGNAL_URL = params.get('signal') || 'wss://0.peerjs.com/peerjs';
+const MAX_SLOTS = 6;
+const ICE = [{ urls: ['stun:stun.l.google.com:19302', 'stun:stun1.l.google.com:19302'] }];
+if (params.get('turn')) ICE.push({ urls: params.get('turn'), username: params.get('turnUser') || '', credential: params.get('turnPass') || '' });
+
+const randId = n => Array.from(crypto.getRandomValues(new Uint8Array(n)), v => 'abcdefghijkmnpqrstuvwxyz23456789'[v % 32]).join('');
+const slotId = s => `dhk-${room}-${s}`;
+
+class Signal {
+  constructor(id) { this.id = id; this.token = randId(12); this.ws = null; this.onmessage = null; this.onlost = null; this.closed = false; }
+  open() {
+    return new Promise((resolve, reject) => {
+      const ws = new WebSocket(`${SIGNAL_URL}?key=peerjs&id=${encodeURIComponent(this.id)}&token=${this.token}&version=1.5.4`);
+      this.ws = ws;
+      let opened = false;
+      const timer = setTimeout(() => { if (!opened) { reject(new Error('timeout')); ws.close(); } }, 10000);
+      ws.onmessage = e => {
+        let m; try { m = JSON.parse(e.data); } catch { return; }
+        if (m.type === 'OPEN') { opened = true; clearTimeout(timer); this.beat = setInterval(() => this.raw({ type: 'HEARTBEAT' }), 5000); resolve(); }
+        else if (m.type === 'ID-TAKEN') { clearTimeout(timer); reject(new Error('taken')); ws.close(); }
+        else if (m.type === 'ERROR' && !opened) { clearTimeout(timer); reject(new Error(m.payload?.msg || 'error')); }
+        else this.onmessage?.(m);
+      };
+      ws.onclose = () => {
+        clearInterval(this.beat); clearTimeout(timer);
+        if (!opened) reject(new Error('closed'));
+        else if (!this.closed) this.onlost?.();
+      };
+    });
+  }
+  raw(m) { if (this.ws?.readyState === 1) this.ws.send(JSON.stringify(m)); }
+  send(type, dst, payload) { this.raw({ type, dst, payload }); }
+  close() { this.closed = true; clearInterval(this.beat); this.ws?.close(); }
+}
+
+let state = 'lobby', sig = null, mySlot = -1, micOn = true, realOn = false;
+let outStream = null;
+const peers = new Map();   // remote id -> peer
+const tiles = new Map();   // 'me' | remote id -> tile
+
+async function claimSlot() {
+  for (let s = 0; s < MAX_SLOTS; s++) {
+    const cand = new Signal(slotId(s));
+    try { await cand.open(); mySlot = s; return cand; }
+    catch (e) { if (e.message !== 'taken') throw e; }
+  }
+  throw new Error('full');
+}
+
+async function reconnectSignal() {
+  // Calls already running are peer to peer and keep going; this only matters for newcomers.
+  for (let i = 0; state === 'call' && i < 20; i++) {
+    await new Promise(r => setTimeout(r, Math.min(15000, 1000 * 2 ** i)));
+    if (state !== 'call') return;
+    const again = new Signal(sig.id);
+    again.token = sig.token;
+    try { await again.open(); wireSignal(again); sig = again; return; } catch {}
+  }
+}
+function wireSignal(s) {
+  s.onmessage = onSignal;
+  s.onlost = () => { toast('Lost the signalling server, reconnecting…'); reconnectSignal(); };
+}
+
+function onSignal(m) {
+  const src = m.src;
+  if (!src || !src.startsWith(`dhk-${room}-`) || src === sig.id) return;
+  if (m.type === 'EXPIRE' || m.type === 'LEAVE') {
+    const p = peers.get(src);
+    if (p && (m.type === 'LEAVE' || p.pc.connectionState !== 'connected')) removePeer(src, m.type === 'LEAVE');
+    return;
+  }
+  const pl = m.payload || {};
+  if (pl.kind === 'hello') {
+    // Only the lower id ever makes the first offer, so two people meeting
+    // can't both offer at once (the server can also replay a stale hello).
+    if (peers.has(src)) return;
+    if (sig.id < src) createPeer(src, pl);
+    else if (!pl.ack) sig.send('OFFER', src, { kind: 'hello', ack: true, name: myName(), char: character });
+    return;
+  }
+  let p = peers.get(src);
+  if (!p) {
+    if (pl.kind !== 'sdp' || pl.sdp?.type !== 'offer') return;
+    p = createPeer(src, pl);
+  }
+  p.queue = p.queue.then(() => handleSignal(p, pl)).catch(e => console.warn('signal', e));
+}
+
+async function handleSignal(p, pl) {
+  const pc = p.pc;
+  if (pl.kind === 'sdp') {
+    const desc = pl.sdp;
+    const collision = desc.type === 'offer' && (p.makingOffer || pc.signalingState !== 'stable');
+    p.ignoreOffer = !p.polite && collision;
+    if (p.ignoreOffer) return;
+    await pc.setRemoteDescription(desc);
+    if (desc.type === 'offer') {
+      await pc.setLocalDescription();
+      sig.send('ANSWER', p.id, { kind: 'sdp', sdp: pc.localDescription });
+    }
+    for (const c of p.pendingIce.splice(0)) await pc.addIceCandidate(c).catch(() => {});
+  } else if (pl.kind === 'ice') {
+    if (!pc.remoteDescription) { p.pendingIce.push(pl.candidate); return; }
+    try { await pc.addIceCandidate(pl.candidate); }
+    catch (e) { if (!p.ignoreOffer) console.warn('ice', e); }
+  }
+}
+
+function createPeer(id, info = {}) {
+  const pc = new RTCPeerConnection({ iceServers: ICE });
+  const p = {
+    id, pc, polite: sig.id > id, makingOffer: false, ignoreOffer: false, queue: Promise.resolve(), pendingIce: [],
+    name: cleanName(info.name), char: CHARS[info.char] ? info.char : 'bheem', muted: false, stream: null, dc: null,
+  };
+  peers.set(id, p);
+  for (const tr of outStream.getTracks()) pc.addTrack(tr, outStream);
+  if (realOn) swapVideo(p);
+  pc.onnegotiationneeded = async () => {
+    try {
+      p.makingOffer = true;
+      await pc.setLocalDescription();
+      sig.send('OFFER', id, { kind: 'sdp', sdp: pc.localDescription, name: myName(), char: character });
+    } catch (e) { console.warn('offer', e); }
+    finally { p.makingOffer = false; }
+  };
+  pc.onicecandidate = e => { if (e.candidate) sig.send('CANDIDATE', id, { kind: 'ice', candidate: e.candidate }); };
+  pc.ontrack = e => {
+    p.stream = e.streams[0] || p.stream || new MediaStream();
+    if (!e.streams[0]) p.stream.addTrack(e.track);
+    tileFor(id).setStream(p.stream);
+  };
+  pc.onconnectionstatechange = () => {
+    const st = pc.connectionState;
+    if (st === 'connected') { clearTimeout(p.dropTimer); p.dropTimer = null; tileFor(id).setWaiting(''); }
+    else if (st === 'failed') { pc.restartIce(); p.dropTimer ??= setTimeout(() => removePeer(id), 15000); }
+    else if (st === 'disconnected') { tileFor(id).setWaiting('Reconnecting…'); p.dropTimer ??= setTimeout(() => removePeer(id), 15000); }
+    else if (st === 'closed') removePeer(id);
+  };
+  p.kickTimer = setTimeout(() => { if (pc.connectionState !== 'connected' && !p.polite) pc.restartIce(); }, 10000);
+  p.dropTimer = setTimeout(() => { if (pc.connectionState !== 'connected') removePeer(id); }, 30000);
+  // Both sides create the same pre-negotiated channel, so it needs no extra signalling.
+  const dc = pc.createDataChannel('chat', { negotiated: true, id: 0 });
+  p.dc = dc;
+  dc.onopen = () => sendTo(p, { t: 'hi', name: myName(), char: character, muted: !micOn });
+  dc.onmessage = e => onData(p, e.data);
+  tileFor(id).setWaiting('Connecting…');
+  renderLabels(p);
+  layout();
+  return p;
+}
+
+function removePeer(id, announce = true) {
+  const p = peers.get(id);
+  if (!p) return;
+  peers.delete(id);
+  clearTimeout(p.dropTimer); clearTimeout(p.kickTimer);
+  try { p.pc.close(); } catch {}
+  tiles.get(id)?.remove();
+  tiles.delete(id);
+  if (announce && p.connectedOnce) sysMsg(`${p.name} left`);
+  layout();
+}
+
+function cleanName(n) { return String(n || 'Guest').replace(/[\u0000-\u001f]/g, '').trim().slice(0, 32) || 'Guest'; }
+function sendTo(p, msg) { if (p.dc?.readyState === 'open') p.dc.send(JSON.stringify(msg)); }
+function broadcast(msg) { for (const p of peers.values()) sendTo(p, msg); }
+
+function onData(p, raw) {
+  let m; try { m = JSON.parse(raw); } catch { return; }
+  if (m.t === 'hi') {
+    p.name = cleanName(m.name); p.char = CHARS[m.char] ? m.char : p.char; p.muted = !!m.muted;
+    if (!p.connectedOnce) { p.connectedOnce = true; sysMsg(`${p.name} joined`); toast(`${p.name} joined as ${CHARS[p.char].name}`); }
+  } else if (m.t === 'char' && CHARS[m.char]) p.char = m.char;
+  else if (m.t === 'mute') p.muted = !!m.muted;
+  else if (m.t === 'name') p.name = cleanName(m.name);
+  else if (m.t === 'chat' && typeof m.text === 'string') addMsg(p.name, m.text.slice(0, 500), false);
+  renderLabels(p);
+}
+function renderLabels(p) { tiles.get(p.id)?.setLabel(p.name, p.char, p.muted); }
+
+/* ---------- joining and leaving ---------- */
+$('#joinBtn').addEventListener('click', join);
+async function join() {
+  const btn = $('#joinBtn');
+  btn.disabled = true; showErr('');
+  ensureAudio();
+  try {
+    await startMedia();
+    if (!room) { room = randId(8); history.replaceState(null, '', '#' + room); }
+    btn.textContent = 'Connecting…';
+    sig = await claimSlot();
+    wireSignal(sig);
+  } catch (e) {
+    console.error(e);
+    btn.disabled = false; updateRoomNote();
+    showErr(e.message === 'full' ? 'This room is full (6 people).' : 'Could not reach the signalling server. Check your connection and try again.');
+    return;
+  }
+  canvasTrack = out.captureStream(30).getVideoTracks()[0];
+  outStream = new MediaStream([canvasTrack, ...(micTrack ? [micTrack] : [])]);
+  state = 'call';
+  $('#lobby').hidden = true; $('.back').hidden = true; $('#call').hidden = false;
+  const me = tileFor('me', true);
+  me.setLabel(myName(), character, !micOn);
+  updateBar();
+  layout();
+  for (let s = 0; s < MAX_SLOTS; s++) if (s !== mySlot) sig.send('OFFER', slotId(s), { kind: 'hello', name: myName(), char: character });
+  sysMsg(`You joined room ${room}`);
+}
+
+function leave() {
+  if (state !== 'call') return;
+  state = 'left';
+  for (const id of peers.keys()) sig?.send('LEAVE', id, {});
+  for (const p of peers.values()) try { p.pc.close(); } catch {}
+  peers.clear();
+  setTimeout(() => sig?.close(), 100);
+  camStream?.getTracks().forEach(t => t.stop());
+  canvasTrack?.stop();
+  location.hash = '';
+  location.reload();
+}
+$('#leaveBtn').addEventListener('click', leave);
+window.addEventListener('pagehide', () => { if (state === 'call') for (const id of peers.keys()) sig?.send('LEAVE', id, {}); });
+
+/* =====================================================================
+   Tiles, layout and controls
+   ===================================================================== */
+const MIC_OFF_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l22 22M9 9v3a3 3 0 0 0 5.1 2.1M15 9.3V4a3 3 0 0 0-5.9-.6"/><path d="M17 16.9A7 7 0 0 1 5 12v-2m14 0v2c0 .8-.1 1.5-.4 2.2M12 19v4M8 23h8"/></svg>';
+const MIC_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>';
+
+function tileFor(id, self = false) {
+  if (tiles.has(id)) return tiles.get(id);
+  const el = document.createElement('div');
+  el.className = 'tile' + (self ? ' self' : '');
+  const label = document.createElement('div'); label.className = 'label';
+  const waiting = document.createElement('div'); waiting.className = 'waiting'; waiting.hidden = true;
+  let video = null, an = null;
+  if (self) {
+    el.append(out);
+    video = camVideo;
+  } else {
+    video = document.createElement('video');
+    video.autoplay = true; video.playsInline = true;
+    el.append(video);
+  }
+  el.append(waiting, label);
+  const tile = {
+    el, video, level: 0,
+    setStream(s) {
+      if (video.srcObject !== s) { video.srcObject = s; video.play().catch(() => {}); }
+      if (!an && s.getAudioTracks().length && audioCtx) {
+        try { an = audioCtx.createAnalyser(); an.fftSize = 512; audioCtx.createMediaStreamSource(s).connect(an); } catch {}
+      }
+    },
+    analyser: () => self ? analyser : an,
+    setWaiting(t) { waiting.textContent = t; waiting.hidden = !t; },
+    setLabel(name, ch, muted) {
+      label.textContent = '';
+      if (muted) label.insertAdjacentHTML('beforeend', MIC_OFF_SVG);
+      const n = document.createElement('span'); n.textContent = self ? `${name} (you)` : name;
+      const as = document.createElement('span'); as.className = 'as'; as.textContent = `as ${CHARS[ch]?.name || ''}`;
+      label.append(n, as);
+    },
+    showReal(on) {
+      el.querySelector('.real-warn')?.remove();
+      if (on) {
+        el.prepend(camVideo); out.remove();
+        const w = document.createElement('div'); w.className = 'real-warn'; w.textContent = 'Others see your real camera';
+        el.append(w);
+      } else {
+        camVideo.remove(); el.prepend(out);
+      }
+    },
+    remove() { el.remove(); },
+  };
+  tiles.set(id, tile);
+  $('#grid').append(el);
+  return tile;
+}
+
+function layout() {
+  const grid = $('#grid');
+  grid.querySelector('.empty-room')?.remove();
+  let n = tiles.size;
+  if (state === 'call' && peers.size === 0) {
+    const e = document.createElement('div'); e.className = 'empty-room';
+    e.innerHTML = '<div><b>Waiting for friends</b>Share the invite link. Anyone who opens it joins this call.<br><button class="ctl" type="button">Copy invite link</button></div>';
+    e.querySelector('button').onclick = invite;
+    grid.append(e); n++;
+  }
+  // pick the column count that gives the biggest 4:3 tiles
+  const r = grid.getBoundingClientRect();
+  let cols = 1, best = 0;
+  for (let c = 1; c <= n; c++) {
+    const rows = Math.ceil(n / c);
+    const w = Math.min((r.width - 12 * c) / c, ((r.height - 12 * rows) / rows) * 4 / 3);
+    if (w > best + 1) { best = w; cols = c; }
+  }
+  grid.style.setProperty('--cols', cols);
+}
+window.addEventListener('resize', layout);
+
+let speakTick = 0;
+function updateSpeaking() {
+  if (state !== 'call' || ++speakTick % 3) return;
+  for (const [id, t] of tiles) {
+    const l = id === 'me' ? (micOn ? micLevel : 0) : level(t.analyser());
+    t.level = lerp(t.level, l, .5);
+    t.el.classList.toggle('speaking', t.level > .035);
+  }
+}
+
+function updateBar() {
+  const mic = $('#micBtn');
+  mic.innerHTML = (micOn ? MIC_SVG : MIC_OFF_SVG) + `<span class="txt">${micOn ? 'Mute' : 'Unmute'}</span>`;
+  mic.classList.toggle('off', !micOn);
+  mic.disabled = !micTrack;
+  const real = $('#realBtn');
+  real.classList.toggle('warn', realOn);
+  real.querySelector('.txt').textContent = realOn ? 'Back to cartoon' : 'Real me';
+  real.disabled = !camStream?.getVideoTracks().length;
+  $('#neutralBtn').disabled = !landmarker || !camStream?.getVideoTracks().length;
+}
+
+function toggleMic() {
+  if (!micTrack) return;
+  micOn = !micOn;
+  micTrack.enabled = micOn;
+  broadcast({ t: 'mute', muted: !micOn });
+  tiles.get('me')?.setLabel(myName(), character, !micOn);
+  updateBar();
+}
+$('#micBtn').addEventListener('click', e => { toggleMic(); e.currentTarget.blur(); });
+
+function swapVideo(p) {
+  const sender = p.pc.getSenders().find(s => s.track?.kind === 'video' || s === p.videoSender);
+  p.videoSender = sender;
+  sender?.replaceTrack(realOn ? camStream.getVideoTracks()[0] : canvasTrack);
+}
+$('#realBtn').addEventListener('click', e => {
+  e.currentTarget.blur();
+  if (!realOn && !confirm('Send your real camera to everyone in the call?')) return;
+  realOn = !realOn;
+  for (const p of peers.values()) swapVideo(p);
+  tiles.get('me')?.showReal(realOn);
+  updateBar();
+});
+
+$('#neutralBtn').addEventListener('click', e => {
+  e.currentTarget.blur();
+  if (!lastRaw || performance.now() - lastSeen > 600) { toast('Look at the camera first'); return; }
+  baseline = { b: { ...lastRaw.b }, yaw: lastRaw.yaw, pitch: lastRaw.pitch, roll: lastRaw.roll };
+  toast('Neutral face saved');
+});
+
+$('#charBtn').addEventListener('click', e => { e.currentTarget.blur(); $('#charPop').hidden = !$('#charPop').hidden; });
+document.addEventListener('pointerdown', e => {
+  if (!$('#charPop').hidden && !e.target.closest('#charPop, #charBtn')) $('#charPop').hidden = true;
+});
+
+async function invite() {
+  const url = location.href.split('#')[0] + '#' + room;
+  try { await navigator.clipboard.writeText(url); toast('Invite link copied'); }
+  catch { prompt('Copy this invite link', url); }
+}
+$('#inviteBtn').addEventListener('click', e => { e.currentTarget.blur(); invite(); });
+
+/* ---------- chat ---------- */
+let unread = 0;
+function setChat(open) {
+  $('#chat').hidden = !open;
+  document.body.classList.toggle('chat-open', open);
+  layout();
+  if (open) { unread = 0; $('#chatInput').focus(); }
+  $('#chatBadge').hidden = !unread; $('#chatBadge').textContent = unread;
+}
+$('#chatBtn').addEventListener('click', e => { e.currentTarget.blur(); setChat($('#chat').hidden); });
+$('#chatClose').addEventListener('click', () => setChat(false));
+$('#chatForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const text = $('#chatInput').value.trim();
+  if (!text) return;
+  $('#chatInput').value = '';
+  broadcast({ t: 'chat', text });
+  addMsg('You', text, true);
+});
+function addMsg(who, text, me) {
+  const m = document.createElement('div'); m.className = 'msg' + (me ? ' me' : '');
+  const a = document.createElement('div'); a.className = 'who'; a.textContent = who;
+  const b = document.createElement('div'); b.className = 'body'; b.textContent = text;
+  m.append(a, b); $('#msgs').append(m); $('#msgs').scrollTop = 1e9;
+  if (!me && $('#chat').hidden) { unread++; setChat(false); toast(`${who}: ${text}`); }
+}
+function sysMsg(text) {
+  const m = document.createElement('div'); m.className = 'msg sys'; m.textContent = text;
+  $('#msgs').append(m); $('#msgs').scrollTop = 1e9;
+}
+
+let toastTimer;
+function toast(text) {
+  const t = $('#toast'); t.textContent = text; t.hidden = false;
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => { t.hidden = true; }, 2600);
+}
+
+document.addEventListener('keydown', e => {
+  if (state !== 'call') return;
+  if (e.key === 'Escape') { $('#charPop').hidden = true; setChat(false); return; }
+  if (e.target.closest('input, textarea') || e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === 'm' || e.key === 'M') toggleMic();
+  else if (e.key === 'c' || e.key === 'C') setCharacter(CHAR_IDS[(CHAR_IDS.indexOf(character) + 1) % CHAR_IDS.length]);
+});
+
+landmarkerReady.then(updateBar);
+
+// Test hooks
+window.call = {
+  get state() { return state; }, get room() { return room; }, get slot() { return mySlot; },
+  get character() { return character; }, setCharacter,
+  get tracking() { return trackState; }, get face() { return { ...face }; }, get raw() { return lastRaw; },
+  peers: () => [...peers.values()].map(p => ({ id: p.id, name: p.name, char: p.char, state: p.pc.connectionState, sig: p.pc.signalingState, ice: p.pc.iceConnectionState, muted: p.muted })),
+  set debugFace(v) { debugFace = v; }, get debugFace() { return debugFace; },
+  canvas: out,
+};
+
+(function loop(now) { if (!document.hidden) frame(now); requestAnimationFrame(loop); })(performance.now());
+</script>
+</body>
+</html>
