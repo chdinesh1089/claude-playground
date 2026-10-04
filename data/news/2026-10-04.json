@@ -1,0 +1,490 @@
+{
+  "date": "2026-10-04",
+  "generated_at": "2026-10-04T15:48:30+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Israeli PM Netanyahu praises Indian pilot Smit Machchhar after flydubai cockpit attack",
+        "summary": "Israeli Prime Minister Benjamin Netanyahu invited Indian pilot Smit Machchhar to light a celebratory flame after Machchhar thwarted an alleged terrorist attack by the co-pilot aboard a flydubai flight.",
+        "outlets": 5,
+        "published": "2026-10-04T03:26:41+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/hero-for-the-world-netanyahu-invites-pm-modi-flydubai-pilot-machchhar-to-light-celebratory-flame-on-independence-day-11791083585871.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/netanyahu-invites-pm-modi-flydubai-captain-smit-machchhar-to-light-israel-independence-day-flame-highest-honor-101791054708344.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c61wv7lgex13o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOVBfaElMMkNHTDhSU1JFYWlQVVFsVVZhRFppSURCWXRXXzNxS2FhX0VnVlcyeDRyTUI0YkUzbXozQzVnNUlpcVhYMjg1cGEtOFJYT1JLSG1TbS1GSkpwVzJNUVc3eUdCSGJCRUgtV0RQNUVTSi1tODE5QUlrOFBBT0huQ1VpMGZwQWYxRmlrcWY2eW5NRUdRM3d1NGw5N2xCX2pjamtDV3hPZ1I2bFY3WDJmT2kwSXVDSlpoUXRheDY1Q2PSAcoBQVVfeXFMTkpFdTh2NnZyamhkemtwbXFXZkdHQzhaS1BJN0Eyc2pFcWhqeU4tNnBPd1dCcmw3cEVjWEhvWDdfNTc4SXZMQUJSRzJvdmZSTGtNOXNOclE2YldFR2NLd1htVW9iWl9FTS1lbVpoQUxKVllMS051U25qTDdaeGVoTzhDUzBtYkMxUk5nWjFSRXNxaDZMUGZUN1poOGNCNDRrM0JfMHF1djdad3pKNzVqQjFheDRoc19rejlKWlBscHZYTjhhVGJPSmNEQQ?oc=5"
+          }
+        ],
+        "why": "An Indian pilot is internationally praised for preventing an airborne terrorist attack on an Israel-bound flight."
+      },
+      {
+        "headline": "President Donald Trump creates 'Super Intelligence Force' AI task force",
+        "summary": "President Donald Trump announced the formation of a 'Super Intelligence Force' AI task force and named intelligence chief Jay Clayton as the new White House AI czar.",
+        "outlets": 8,
+        "published": "2026-10-04T14:30:37+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/president-donald-trump-announces-creation-super-intelligence-force/story?id=136986122"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/ai-super-intelligence-force-trump-jay-clayton/"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/us-news/story/donald-trump-super-intelligence-force-us-advanced-ai-efforts-3009351-2026-10-04?utm_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/trump-announces-super-intelligence-force-to-keep-us-ahead-in-ai-race/articleshow/134675211.cms"
+          }
+        ],
+        "why": "Major US policy shift in artificial intelligence governance led by the administration."
+      },
+      {
+        "headline": "Indian-Run Pharma Plant In Ukraine Destroyed In Russian Drone Attacks, 1 Killed",
+        "summary": "Kusum group company in Ukraine: Visuals of the attack showed a huge plume of smoke coming from the area where the drones struck",
+        "outlets": 6,
+        "published": "2026-10-04T09:18:40+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/exclusive-indian-run-pharma-plant-of-kusum-group-in-ukraine-destroyed-in-russian-drone-attacks-1-killed-12136476#publisher=newsstand"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/04/russia-strikes-kyiv-bridge-german-chancellor-merz-visits-ukraine"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/defence/russia-to-intensify-strikes-on-ukraine-after-zelenskiy-interview/articleshow/134673975.cms"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/4/russian-strike-hits-kyiv-bridge-as-german-chancellor-visits-ukraine?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Brazil votes in deeply polarized presidential election between Lula and Bolsonaro",
+        "summary": "Incumbent leftist leader Luiz Inacio Lula da Silva faces right-wing challenger Flávio Bolsonaro in a high-stakes, deeply polarized presidential election.",
+        "outlets": 4,
+        "published": "2026-10-04T15:40:54+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/brazils-presidential-vote-pits-trump-ally-against-incumbent-lula"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/4/lula-and-bolsonaro-vote-in-brazils-polarised-presidential-election?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6wyz0r2n0djo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/04/brazil-presidential-election-lula-flavio-bolsonaro"
+          }
+        ],
+        "why": "Major geopolitical election in Latin America shaping global alignments."
+      },
+      {
+        "headline": "India hikes deepwater natural gas price ceiling for difficult fields",
+        "summary": "The Indian government raised the ceiling price for natural gas produced from difficult fields to $9.89 per million British thermal units.",
+        "outlets": 1,
+        "published": "2026-10-04T12:16:03+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/india-hikes-deepwater-gas-price-ceiling-to-9-89-for-difficult-fields-reliance-bp-s-kg-d6-to-benefit-11791115682791.html"
+          }
+        ],
+        "why": "Direct economic impact on major Indian energy producers like Reliance and BP."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Trump urges people to call Senator Tom Cotton over daylight saving bill",
+        "summary": "President Trump urged citizens to call Senator Tom Cotton of Arkansas, accusing him of blocking a bill to cement daylight saving time.",
+        "outlets": 2,
+        "published": "2026-10-04T01:59:15+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/03/us/trump-tom-cotton-cellphone-number.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-urges-calls-to-arkansas-sen-tom-cotton-in-push-for-permanent-daylight-saving-time"
+          }
+        ]
+      },
+      {
+        "headline": "US Coast Guard searches for missing medical transport plane off Massachusetts",
+        "summary": "The US Coast Guard discovered debris while searching for a missing medical transport plane that vanished off the coast of Massachusetts with six people onboard.",
+        "outlets": 4,
+        "published": "2026-10-04T14:00:20+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/04/missing-air-ambulance-massachusetts-debris-found"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cme3x85013llo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/03/g-s1-146338/plane-missing-coast-guard-search-massachusetts"
+          },
+          {
+            "source": "WCVB",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVkJxaE4xWUpMdGdGejI2V2RGNWpvRV9YNjdITlZHbEZiYjlIcDVjd2VBRlFBd2hNczZkWF9NX3d3UlJ5QWdmSHFRWkMwZ0FYeFpDeFJqbnpneVJmTUZQMDFRNkI3bS10ZXdFRVBxU3hSZV9RUVU3QlpFdTl0SjFIM3VlMUlXZThMMFA3R1MxZDdzTjlRMlpLemNOSWdmdw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court gears up for new term with major cases",
+        "summary": "The US Supreme Court is preparing for a new term featuring major legal battles concerning climate change, immigration, and gun laws.",
+        "outlets": 1,
+        "published": "2026-10-04T11:00:16+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQeHhLbll6SXZpZkc0dkIxLXRrODVNNXRCcHZqYlZCZFVMMFFaYnR4Um50Y2ZXOTV2b1B6YlhleDh2NVRVd0kxWUpDU0lBQ1owLU9RY3VKb05WdG1JY2JxdXRidW1PcGhzQTdWMXppc2NXYi1yRlFxLWIwT0FIVDVmZHdXeWJNakE3ZGk0ek9QZ0xIVm8?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Polls show Democrats leading governor races in traditional Republican territory",
+        "summary": "Recent polls reflect Democratic advantages in gubernatorial races in states like Texas, Iowa, and Alaska amid economic and political dissatisfaction.",
+        "outlets": 1,
+        "published": "2026-10-04T14:46:52+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/04/us/politics/governors-poll-democrats-lead.html"
+          }
+        ]
+      },
+      {
+        "headline": "Iowa approves foreign-owned steel plant project in swing district",
+        "summary": "President Trump announced that the largest steel plant in U.S. history will be built in Iowa, sparking intense debate.",
+        "outlets": 1,
+        "published": "2026-10-04T14:40:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/iowa-steel-plant-mesabi-metallics-essar-group/"
+          }
+        ]
+      },
+      {
+        "headline": "Senator Mark Kelly reports high energy among Democratic voters for midterms",
+        "summary": "Democratic Senator Mark Kelly stated during an interview that he has observed significant energy and frustration among voters ahead of the midterm elections.",
+        "outlets": 1,
+        "published": "2026-10-04T15:16:57+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/mark-kelly-arizona-democrat-face-the-nation-transcript-10-04-2026/"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Keralam orders probe against CEC Gyanesh Kumar over 2006 road project case",
+        "summary": "Keralam ordered an investigation against Chief Election Commissioner Gyanesh Kumar over allegations tied to a 2006 road project case.",
+        "outlets": 6,
+        "published": "2026-10-04T06:59:03+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/keralam-orders-probe-against-cec-gyanesh-kumar-over-2006-road-project-case-101791097143666.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/politics/keralam-home-minister-ramesh-chennithala-orders-vigilance-probe-against-gyanesh-kumar-over-2006-case/articleshow/134669609.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/more-trouble-for-gyanesh-kumar-keralam-orders-probe-in-2006-case-linked-to-malaysian-mans-suicide-what-we-know-so-far-11791079182352.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/andhra-pradesh/sharmila-reiterates-demand-for-cec-gyanesh-kumars-resignation/article71544002.ece"
+          }
+        ]
+      },
+      {
+        "headline": "'Drunk' driver attacks BJP MLA Ritu Baran Sarmah in Assam",
+        "summary": "An intoxicated truck driver attacked BJP MLA Ritu Baran Sarmah outside his office in Guwahati, injuring two home guards.",
+        "outlets": 2,
+        "published": "2026-10-04T14:42:48+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/guwahati/pulled-out-a-dagger-drunk-truck-driver-attacks-bjp-mla-ritu-baran-in-assam/articleshow/134676730.cms"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/drunk-truck-driver-charges-with-dagger-at-assam-bjp-mla-ritu-baran-sarmah-arrested-12136794#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Navy sailor arrested for allegedly leaking classified information to Pakistan",
+        "summary": "An Indian Navy sailor was arrested after police uncovered suspicious digital activity and found he shared sensitive information with a Pakistani intelligence operative.",
+        "outlets": 2,
+        "published": "2026-10-04T15:13:18+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/Visakhapatnam/navy-sailor-arrested-for-allegedly-leaking-classified-information-to-pakistani-intelligence-operative/article71544101.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/indian-navy-sailor-honey-trapped-lured-into-sharing-classified-data-with-pakistani-operative-101791104939880.html"
+          }
+        ]
+      },
+      {
+        "headline": "Three women journalists accuse Delhi police of sexual harassment at Jantar Mantar",
+        "summary": "Three women journalists accused Delhi police officers of sexual harassment during a demonstration at Jantar Mantar, prompting an official probe.",
+        "outlets": 2,
+        "published": "2026-10-04T06:24:53+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/jantar-mantar-protest-cec-gyanesh-kumar-women-journalists-sexual-harassment-101791094824346.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/delhi-police-misconduct-journalist-claim-rahul-gandhi-amit-shah-cjp-jantar-mantar-protest-gyanesh-kumar-resignation-ptag-3009066-2026-10-04?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Suvendu Adhikari promises law against land and love jihad in Bengal",
+        "summary": "CM Suvendu announced plans for Bengal to introduce legislation against land and love jihad and implement a Uniform Civil Code within six months.",
+        "outlets": 2,
+        "published": "2026-10-04T11:47:36+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/bengal-to-bring-law-against-land-and-love-jihad-implement-ucc-in-6-months-cm-suvendu/articleshow/134674290.cms"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/new-law-against-love-jihad-and-land-jihad-in-6-months-ucc-like-uttarakhand-gujarat-suvendu-adhikaris-big-promise-in-bengal/articleshow/134673607.cms"
+          }
+        ]
+      },
+      {
+        "headline": "India summons Pakistan envoy over infiltration bids and border claims",
+        "summary": "India summoned Pakistan's envoy to protest infiltration attempts while rejecting allegations of civilian killings by the BSF along the Punjab border.",
+        "outlets": 2,
+        "published": "2026-10-03T16:40:29+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/india-summons-pakistan-envoy-over-alleged-cross-border-infiltration-rejects-ferozepur-claims/articleshow/134663046.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/pakistan-summons-indian-envoy-after-bsf-shoots-dead-2-men-near-punjab-border-101791027418771.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "U.S. Marine arrested for alleged murder of woman in Okinawa, Japan",
+        "summary": "Japanese police arrested a U.S. Marine in connection with the robbery and murder of a woman on the island of Okinawa.",
+        "outlets": 6,
+        "published": "2026-10-04T15:15:09+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/04/nx-s1-5990790/us-marine-arrested-for-alleged-murder-woman-on-okinawa"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cme3xw4yy28do?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/04/marine-arrested-japan-suspicion-murder"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/us-marine-arrested-japan-accused-murder-okinawa/"
+          }
+        ]
+      },
+      {
+        "headline": "Ethiopian rebel forces withdraw from Tigray regional capital Mekelle",
+        "summary": "Pro-government forces took control of Mekelle after rebel forces withdrew from the Tigray regional capital amid intensifying regional conflict.",
+        "outlets": 4,
+        "published": "2026-10-04T13:33:05+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cqm249v07j4xo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/4/government-forces-seize-capital-of-ethiopias-tigray-region-from-rebels?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/02/world/africa/ethiopia-tigray-conflict.html"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVXVqai1NbFo5LVhWcnM3RElRUWVwa21sQ3p6dVhFXzBwQVBtN3BGR09DOGZhaXV5Z09BQ0RXN0JfODgtS2VoeUVqV3I0OFd3cVFjMzNLSGV3QnBidDY4eTVIUzc4YThTalE0b3JNRndHbHhQdW43S3MxN25NOWRnckZKUDU2MGl3V1YtZUVaRG5IMF9PUTVWMVM3NUptZGdkaUlYSDdLcTQxMlVxMWlkcg?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Over 400 schools in France to close amid ongoing student protests",
+        "summary": "More than 400 schools across France will close as student unrest continues following dozens of arson incidents and injuries to staff members.",
+        "outlets": 2,
+        "published": "2026-10-04T15:08:23+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/04/schools-france-closed-protests-planned"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/french-student-protests-escalate-up-to-500-schools-to-remain-closed-on-monday-5-october-11791118109393.html"
+          }
+        ]
+      },
+      {
+        "headline": "Yemen announces military campaign to reclaim land from Iran-backed Houthis",
+        "summary": "The Yemeni president's announcement comes amid an exchange of strikes between the Houthis and the Saudi-led coalition.",
+        "outlets": 6,
+        "published": "2026-10-04T14:25:59+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cx8dzj9vpp01o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/yemen-launches-major-counteroffensive-against-houthis-to-recapture-bab-el-mandeb-al-alimi-3009399-2026-10-04?utm_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/04/world/middleeast/houthis-oil-attack-saudi-arabia-yemen.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/defence/houthis-claim-missile-drone-strikes-on-aramco-facilities-in-saudi-arabia/articleshow/134676524.cms"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Apple devices see steep discounts during Amazon Prime Day",
+        "summary": "Amazon's October Prime Day deals featured significant price cuts on Apple products including AirPods Pro, MacBook Air, and the iPad Mini.",
+        "outlets": 2,
+        "published": "2026-10-04T13:00:00+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/gadgets/1004242/airpods-pro-3-amazon-october-prime-day-deal-sale"
+          },
+          {
+            "source": "9to5Mac",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB4OU81QXpwdUt5WmNtN2NBY2l0SUpOVEVialVpN0xKdHBUeTZKdnRlQUtRajViMTV0NGJtRGZEd1U0bXNoc2lJVjlGcklVWEtjNkx1dllobms0UWFLUkRqcGtfdGZsSlJCQmJDRnBkYldmLUF0WVBjYg?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "RBI Governor Shaktikanta Das attributes economic resilience to broad reforms",
+        "summary": "Shaktikanta Das stated at the Kautilya Economic Conclave that India's economic resilience to global shocks stems from foundational reforms like GST and digital payments.",
+        "outlets": 2,
+        "published": "2026-10-04T14:20:37+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/indias-resilience-not-accidental-outcome-of-broad-reforms-shaktikanta-das-11791112649117.html"
+          },
+          {
+            "source": "Moneycontrol.com",
+            "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNeThtRTVRcGdqdEdFTk1IRF9ncmtibU53dnB2MDRoNjd4MFd5dXdBTUlvV0pUV1N6R0hla1BNT19TOUtnaGVxQ0pVbnJCN0JRRjhEaEdvV3V0MFJPeDRnX3dHdnZnamdzZVE2emFENHd6U1FVR1YwOXRCQ3otQVJsam1KSDRkcENGNm9pRjAxV09XRHk4aUpGRFRRZ3JPYlJPNUpha0JwZWVQVFhaWGZidXM0UDI4UkFGZEltSTdsVHNBTnhid05xb1pGX3lGRGl4eDRYSEUtNDVmMTBB0gHiAUFVX3lxTFA5SV9QRzZDQWkzMDFDbUZXY19CbWRJLVIwUlJyN2ZkbkVjd1hyZmF0ZWsyZG45dWN2YnIyUUZudEdCdy1vQXZ4Tm54WTRjUVdiM2MtU0JhOUZCakxfelR1c2F3VUlpdUdIX0h0aUJSRk9DRVpZS3hHSHgtR0tzek00dVJRZGw3eFlJU05OelJReTd2X1hFLTJJSERncXE2cHE5UmVpUURWWldUX29BQldFMGI5Tm5YcTN6YzlaclZpVFJJNXQ3SDVPdDZsTjV1TFFuUDZhNTUtNWh0N1Yyb2F6SFE?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Google co-founder Sergey Brin donates $102 million to oppose California tax",
+        "summary": "Google co-founder Sergey Brin became the largest individual contributor against California's proposed billionaire wealth tax by donating $102 million.",
+        "outlets": 1,
+        "published": "2026-10-04T10:53:22+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/04/jacob-rees-mogg-tucker-carlson-adolf-hitler-second-world-war-uk-armed-forces-vladimir-putin"
+          }
+        ]
+      },
+      {
+        "headline": "OPEC+ agrees to keep November oil output targets steady",
+        "summary": "OPEC+ members reached an agreement to maintain their existing oil production quotas and keep November output targets steady.",
+        "outlets": 1,
+        "published": "2026-10-04T12:09:48+00:00",
+        "links": [
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxObkpnNDluR1haTkdBX3RldWlkX2pySlFJWlFIdmZhaGt1NTFuYlVJS3Nkc2VNQlJ4bXN2LTc1VTF1SWViaVloM1Y4U1JndkpESXNfb2IxazBFS3RTVjRpUUhVeWNURVNtd2dKcWxRMjdoTEFiRTdwd1FrWEw2OUx4NUY5U1hkNFBqVjUxZlJyVVlQNFBEUmVPVTBYejluWWhMZF9xZlNrQmFqU0R4ZlJGc0N5QzJ0ckNfN0dYdkFQalpkVkk?oc=5"
+          }
+        ]
+      }
+    ]
+  }
+}
