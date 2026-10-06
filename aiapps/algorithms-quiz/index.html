@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CSE 5311 midterm practice: true/false and multiple-choice questions on lectures 1–11 (through red-black trees), with explanations, spaced review and saved progress.">
+<title>Algorithms Quiz</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --raised: #ffffff; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+  --border: rgba(11,11,11,.12); --accent: #2a78d6; --accent-ink: #ffffff; --accent-soft: rgba(42,120,214,.10);
+  --good: #1f8a4c; --good-soft: rgba(31,138,76,.12); --bad: #c8382e; --bad-soft: rgba(200,56,46,.10);
+  --warn: #b7791f; --track: rgba(11,11,11,.08);
+  --node-b: #1d1d1b; --node-r: #d23a2f; --node-p: #ffffff; --node-ink: #ffffff; --edge: #898781;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --raised: #222220; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+    --border: rgba(255,255,255,.12); --accent: #3987e5; --accent-ink: #ffffff; --accent-soft: rgba(57,135,229,.16);
+    --good: #3fb871; --good-soft: rgba(63,184,113,.15); --bad: #ef6a5f; --bad-soft: rgba(239,106,95,.14);
+    --warn: #e0a440; --track: rgba(255,255,255,.10);
+    --node-b: #000000; --node-r: #e0473c; --node-p: #2a2a28; --node-ink: #ffffff; --edge: #8f8e86;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --raised: #222220; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+  --border: rgba(255,255,255,.12); --accent: #3987e5; --accent-ink: #ffffff; --accent-soft: rgba(57,135,229,.16);
+  --good: #3fb871; --good-soft: rgba(63,184,113,.15); --bad: #ef6a5f; --bad-soft: rgba(239,106,95,.14);
+  --warn: #e0a440; --track: rgba(255,255,255,.10);
+  --node-b: #000000; --node-r: #e0473c; --node-p: #2a2a28; --node-ink: #ffffff; --edge: #8f8e86;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 20px 16px 64px; }
+a { color: var(--accent); }
+button { font: inherit; color: inherit; }
+code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .92em; }
+code { background: var(--track); padding: .05em .35em; border-radius: 5px; overflow-wrap: anywhere; }
+sup, sub { font-size: .72em; line-height: 0; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.top { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; min-height: 36px; }
+.top .grow { flex: 1; min-width: 0; }
+.back { font-size: 14px; font-weight: 600; text-decoration: none; }
+.back:hover { text-decoration: underline; }
+.icon { width: 36px; height: 36px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); cursor: pointer; display: grid; place-items: center; flex: none; }
+.icon svg { width: 18px; height: 18px; }
+h1 { font-size: 24px; line-height: 1.25; margin: 0 0 4px; }
+h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2); margin: 28px 0 10px; }
+.sub { color: var(--ink-2); margin: 0; }
+.small { font-size: 13px; color: var(--muted); }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 18px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 10px 12px; }
+.stat b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
+.stat span { font-size: 12px; color: var(--ink-2); }
+.modes { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+.mode { text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; cursor: pointer; }
+.mode:hover:not(:disabled) { border-color: var(--accent); }
+.mode:disabled { opacity: .5; cursor: default; }
+.mode b { display: block; }
+.mode span { font-size: 13px; color: var(--ink-2); }
+.mode.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.mode.primary span { color: inherit; opacity: .9; }
+.resume { display: flex; align-items: center; gap: 12px; margin-top: 18px; border-color: var(--accent); background: var(--accent-soft); }
+.resume .grow { flex: 1; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.topic { position: relative; display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px 12px 44px; cursor: pointer; }
+.topic:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.topic input { position: absolute; left: 14px; top: 15px; width: 18px; height: 18px; accent-color: var(--accent); margin: 0; }
+.topic .t { font-weight: 600; }
+.topic .m { font-size: 12px; color: var(--muted); }
+.bar { height: 6px; border-radius: 3px; background: var(--track); margin-top: 8px; overflow: hidden; display: flex; }
+.bar i { display: block; height: 100%; }
+.bar .g { background: var(--good); }
+.bar .s { background: var(--accent); opacity: .45; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.row.space { justify-content: space-between; }
+.btn { border: 1px solid var(--border); background: var(--surface); border-radius: 10px; padding: 8px 14px; cursor: pointer; font-weight: 600; font-size: 14px; }
+.btn:hover:not(:disabled) { border-color: var(--accent); }
+.btn:disabled { opacity: .45; cursor: default; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn.ghost { background: none; border-color: transparent; color: var(--ink-2); }
+.btn.ghost:hover { color: var(--ink); }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.seg button { border: 0; background: var(--surface); padding: 6px 12px; cursor: pointer; font-size: 14px; }
+.seg button + button { border-left: 1px solid var(--border); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.settings { display: grid; gap: 12px; }
+.settings label.l { display: block; font-size: 13px; color: var(--ink-2); margin-bottom: 4px; }
+/* quiz */
+.qhead { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.chip { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 999px; background: var(--track); color: var(--ink-2); }
+.chip.kind { background: var(--accent-soft); color: var(--accent); }
+.progress { height: 4px; background: var(--track); border-radius: 2px; margin: 10px 0 16px; overflow: hidden; }
+.progress i { display: block; height: 100%; background: var(--accent); transition: width .25s; }
+.timer { font-variant-numeric: tabular-nums; font-weight: 600; }
+.timer.low { color: var(--bad); }
+.q { font-size: 19px; line-height: 1.5; margin: 14px 0 6px; outline: none; }
+.hint { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+.figure { overflow-x: auto; margin: 6px 0 14px; padding: 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; text-align: center; }
+svg.tree { max-width: 100%; height: auto; }
+svg.tree line { stroke: var(--edge); stroke-width: 1.6; }
+svg.tree circle { stroke-width: 1.6; }
+svg.tree .nB circle { fill: var(--node-b); stroke: var(--node-b); }
+svg.tree .nR circle { fill: var(--node-r); stroke: var(--node-r); }
+svg.tree .nP circle { fill: var(--node-p); stroke: var(--ink-2); }
+svg.tree text { font: 600 13px system-ui, sans-serif; text-anchor: middle; dominant-baseline: central; }
+svg.tree .nB text, svg.tree .nR text { fill: var(--node-ink); }
+svg.tree .nP text { fill: var(--ink); }
+.legend { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: -1px; margin: 0 4px 0 10px; }
+.opts { display: grid; gap: 10px; margin-top: 8px; }
+.opts.tf { grid-template-columns: 1fr 1fr; }
+.opt { display: flex; align-items: flex-start; gap: 12px; width: 100%; text-align: left; background: var(--raised); border: 1.5px solid var(--border); border-radius: 12px; padding: 12px 14px; cursor: pointer; min-height: 52px; }
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; }
+.opt .k { flex: none; width: 26px; height: 26px; border-radius: 7px; display: grid; place-items: center; font-size: 13px; font-weight: 700; background: var(--track); color: var(--ink-2); margin-top: 1px; }
+.opt .tx { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.opt .mark { flex: none; font-weight: 700; font-size: 13px; margin-top: 3px; }
+.opts.tf .opt { justify-content: center; align-items: center; font-weight: 600; font-size: 17px; }
+.opts.tf .opt .tx { flex: none; }
+.opt.sel { border-color: var(--accent); background: var(--accent-soft); }
+.opt.sel .k { background: var(--accent); color: var(--accent-ink); }
+.opt.right { border-color: var(--good); background: var(--good-soft); }
+.opt.right .k { background: var(--good); color: #fff; }
+.opt.right .mark { color: var(--good); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.opt.wrong .k { background: var(--bad); color: #fff; }
+.opt.wrong .mark { color: var(--bad); }
+.opt.missed { border-color: var(--good); border-style: dashed; }
+.opt.missed .mark { color: var(--good); }
+.feedback { margin-top: 16px; border-radius: 12px; padding: 14px 16px; border: 1px solid var(--border); background: var(--surface); }
+.feedback.ok { border-color: var(--good); }
+.feedback.no { border-color: var(--bad); }
+.feedback .verdict { font-weight: 700; margin-bottom: 4px; }
+.feedback.ok .verdict { color: var(--good); }
+.feedback.no .verdict { color: var(--bad); }
+.feedback .ref { font-size: 13px; color: var(--muted); margin-top: 8px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 16px; }
+.actions .grow { flex: 1; }
+.flag[aria-pressed="true"] { color: var(--warn); border-color: var(--warn); }
+.dots { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 18px; }
+.dot { width: 28px; height: 28px; border-radius: 7px; border: 1px solid var(--border); background: var(--surface); font-size: 12px; cursor: pointer; font-variant-numeric: tabular-nums; padding: 0; }
+.dot.a { background: var(--accent-soft); border-color: var(--accent); }
+.dot.cur { outline: 2px solid var(--accent); outline-offset: 1px; }
+.keys { font-size: 12px; color: var(--muted); margin-top: 22px; }
+kbd { font: 600 11px ui-monospace, Menlo, monospace; border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 5px; padding: 0 5px; background: var(--surface); color: var(--ink-2); }
+/* results */
+.score { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.score b { font-size: 44px; line-height: 1; font-variant-numeric: tabular-nums; }
+.tbl { display: grid; gap: 8px; }
+.trow { display: grid; grid-template-columns: minmax(0, 1fr) 70px auto; gap: 10px; align-items: center; }
+.trow .bar { margin: 0; height: 8px; }
+.trow .n { font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; text-align: right; }
+details.rev { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); margin-bottom: 8px; }
+details.rev summary { cursor: pointer; padding: 10px 14px; display: flex; gap: 10px; align-items: baseline; list-style: none; }
+details.rev summary::-webkit-details-marker { display: none; }
+details.rev summary .m { flex: none; font-weight: 700; width: 18px; }
+details.rev summary .m.ok { color: var(--good); }
+details.rev summary .m.no { color: var(--bad); }
+details.rev summary .s { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+details.rev[open] summary .s { white-space: normal; }
+details.rev .body { padding: 0 14px 14px 42px; font-size: 15px; }
+details.rev .body p { margin: 6px 0; }
+.empty { text-align: center; padding: 40px 16px; color: var(--ink-2); }
+footer { margin-top: 36px; font-size: 13px; color: var(--muted); }
+footer p { margin: 6px 0; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 560px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .q { font-size: 17px; }
+  h1 { font-size: 21px; }
+  .trow { grid-template-columns: minmax(0, 1fr) 54px auto; }
+  details.rev .body { padding-left: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<main id="app" aria-live="polite"></main>
+<input type="file" id="importFile" accept="application/json,.json" hidden>
+
+<script type="application/json" id="bank">
+[]
+</script>
+
+<script>
+'use strict';
+// Lectures 1–11 of UTA CSE 5311 (Dr. Junzhou Huang), up to the midterm. Questions are original; refs are to CLRS 3e.
+const TOPICS = [
+  { id: 'L1', t: 'Introduction', d: 'Aug 21', ch: 'CLRS 1, 2.1–2.2' },
+  { id: 'L2', t: 'Growth of functions', d: 'Aug 21', ch: 'CLRS 3' },
+  { id: 'L3', t: 'Divide and conquer', d: 'Aug 28', ch: 'CLRS 2.3, 4.1–4.4' },
+  { id: 'L4', t: 'Master theorem', d: 'Aug 28', ch: 'CLRS 4.5' },
+  { id: 'L5', t: 'Fast Fourier Transform', d: 'Sep 4', ch: 'CLRS 30' },
+  { id: 'L6', t: 'Heapsort', d: 'Sep 4', ch: 'CLRS 6' },
+  { id: 'L7', t: 'Quicksort', d: 'Sep 11', ch: 'CLRS 7' },
+  { id: 'L8', t: 'Sorting in linear time', d: 'Sep 11', ch: 'CLRS 8' },
+  { id: 'L9', t: 'Medians & order statistics', d: 'Sep 18', ch: 'CLRS 9' },
+  { id: 'L10', t: 'Binary search trees', d: 'Sep 18', ch: 'CLRS 12' },
+  { id: 'L11', t: 'Red-black trees', d: 'Sep 25', ch: 'CLRS 13' },
+];
+const TOPIC = Object.fromEntries(TOPICS.map(t => [t.id, t]));
+const BANK = JSON.parse(document.getElementById('bank').textContent).filter(q => TOPIC[q.topic]);
+const BY_ID = new Map(BANK.map(q => [q.id, q]));
+const DAY = 864e5;
+const INTERVALS = [0, 0, 1, 3, 7, 14];      // days until due again, by Leitner box 1..5
+const MASTERED = 3;                         // box ≥ 3: right at least twice in a row
+const MOCK = { tf: 10, mc: 10, minutes: 30 }; // the midterm's T/F + MC section: 10 × 1 pt + 10 × 3 pts
+const MODE_NAMES = { practice: 'Practice', test: 'Test', mock: 'Midterm mock', mistakes: 'Review mistakes', due: 'Due for review', flagged: 'Flagged' };
+const KIND = { tf: 'True or false', mc: 'Choose one', ms: 'Select all that apply' };
+const LETTERS = 'ABCDE';
+
+// ---------- storage (every access guarded: private mode / blocked storage must still work) ----------
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('algoquiz:' + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem('algoquiz:' + k, JSON.stringify(v)); } catch { /* storage unavailable */ } },
+  del(k) { try { localStorage.removeItem('algoquiz:' + k); } catch { /* storage unavailable */ } },
+};
+let progress = cleanProgress(store.get('progress', {}));
+let prefs = Object.assign({ topics: TOPICS.map(t => t.id), len: 20, types: 'all', theme: 'auto' }, store.get('prefs', {}));
+let session = cleanSession(store.get('session', null));
+let view = session ? (session.finished ? 'results' : 'quiz') : 'home';
+
+function cleanProgress(p) {
+  const out = {};
+  if (p && typeof p === 'object') for (const [id, v] of Object.entries(p)) {
+    if (v && typeof v === 'object') out[id] = { box: +v.box || 0, due: +v.due || 0, seen: +v.seen || 0, right: +v.right || 0, last: v.last === true ? true : v.last === false ? false : null, flag: !!v.flag };
+  }
+  return out;
+}
+function cleanSession(s) {
+  if (!s || !Array.isArray(s.ids) || !s.ids.length || !s.ids.every(id => BY_ID.has(id))) return null;
+  for (const id of s.ids) { const q = BY_ID.get(id); if (q.type !== 'tf' && (!s.perm?.[id] || s.perm[id].length !== q.options.length)) return null; }
+  return s;
+}
+const saveProgress = () => store.set('progress', progress);
+const savePrefs = () => store.set('prefs', prefs);
+const saveSession = () => session ? store.set('session', session) : store.del('session');
+
+// ---------- helpers ----------
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+function fmt(s) { // plain text + `code`, ^{sup}, _{sub}, newlines
+  return String(s).split('`').map((part, i) => {
+    if (i % 2) return '<code>' + esc(part) + '</code>';
+    let h = esc(part), prev;
+    do { prev = h; h = h.replace(/\^\{([^{}]*)\}/g, '<sup>$1</sup>').replace(/_\{([^{}]*)\}/g, '<sub>$1</sub>'); } while (h !== prev);
+    return h.replace(/\n/g, '<br>');
+  }).join('');
+}
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
+const pct = (a, b) => b ? Math.round(100 * a / b) : 0;
+function clock(ms) { const s = Math.max(0, Math.round(ms / 1000)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; }
+const sameSet = (a, b) => a.length === b.length && [...a].sort().every((v, i) => v === [...b].sort()[i]);
+function isRight(q, a) {
+  if (a === undefined || a === null) return false;
+  if (q.type === 'ms') return Array.isArray(a) && a.length > 0 && sameSet(a, q.answer);
+  return a === q.answer;
+}
+function answerText(q, a, perm) {
+  if (a === undefined || a === null || (Array.isArray(a) && !a.length)) return '—';
+  if (q.type === 'tf') return a ? 'True' : 'False';
+  const list = (Array.isArray(a) ? a : [a]).map(i => [perm ? perm.indexOf(i) : i, i]).sort((x, y) => x[0] - y[0]);
+  return list.map(([k, i]) => `${perm ? LETTERS[k] + '. ' : ''}${fmt(q.options[i])}`).join('; ');
+}
+
+// ---------- spaced repetition (Leitner boxes) ----------
+function record(id, ok) {
+  const p = progress[id] || (progress[id] = { box: 0, due: 0, seen: 0, right: 0, last: null, flag: false });
+  p.seen++;
+  if (ok) p.right++;
+  p.box = ok ? Math.min(5, Math.max(1, p.box) + 1) : 1;
+  p.due = Date.now() + INTERVALS[p.box] * DAY;
+  p.last = ok;
+  saveProgress();
+}
+const P = id => progress[id] || { box: 0, due: 0, seen: 0, right: 0, last: null, flag: false };
+const isDue = id => P(id).seen > 0 && P(id).due <= Date.now();
+const isMistake = id => P(id).last === false;
+function topicStats(tid) {
+  const qs = BANK.filter(q => q.topic === tid);
+  let seen = 0, mastered = 0, right = 0, tries = 0;
+  for (const q of qs) { const p = P(q.id); if (p.seen) seen++; if (p.box >= MASTERED) mastered++; right += p.right; tries += p.seen; }
+  return { n: qs.length, seen, mastered, acc: pct(right, tries), tries };
+}
+
+// ---------- building a session ----------
+function typeOk(q) { return prefs.types === 'all' || (prefs.types === 'tf' ? q.type === 'tf' : q.type !== 'tf'); }
+function pool(topics) { return BANK.filter(q => topics.includes(q.topic) && typeOk(q)).map(q => q.id); }
+function take(ids) { return prefs.len === 'all' ? ids : ids.slice(0, prefs.len); }
+function smartPick(ids) {
+  // weakest first: last answer wrong, then never seen, then due, then the rest; random within each tier
+  const now = Date.now();
+  const tier = id => { const p = P(id); return p.last === false ? 0 : !p.seen ? 1 : p.due <= now ? 2 : 3; };
+  return shuffle(take(shuffle(ids.slice()).sort((a, b) => tier(a) - tier(b))));
+}
+function mockPick() {
+  // stratified across lectures, like the real midterm's 10 T/F + 10 MC section
+  const pick = (filter, n) => {
+    const byTopic = TOPICS.map(t => shuffle(BANK.filter(q => q.topic === t.id && filter(q)).map(q => q.id)));
+    const out = [];
+    for (let r = 0; out.length < n && byTopic.some(l => l.length); r++) for (const l of shuffle(byTopic.slice())) if (l.length && out.length < n) out.push(l.pop());
+    return out;
+  };
+  return [...pick(q => q.type === 'tf', MOCK.tf), ...shuffle(pick(q => q.type !== 'tf', MOCK.mc))];
+}
+function start(mode, ids, extra = {}) {
+  if (!ids.length) return;
+  session = { mode, ids, i: 0, ans: {}, done: {}, perm: {}, elapsed: 0, limit: 0, finished: false, ...extra };
+  for (const id of ids) { const q = BY_ID.get(id); if (q.type !== 'tf') session.perm[id] = shuffle([...q.options.keys()]); }
+  if (mode === 'mock') session.limit = MOCK.minutes * 60e3;
+  saveSession();
+  go('quiz');
+}
+function startMode(mode, topicOverride) {
+  const topics = topicOverride || prefs.topics;
+  const all = BANK.map(q => q.id);
+  if (mode === 'practice') return start('practice', smartPick(pool(topics)), { topics });
+  if (mode === 'test') return start('test', take(shuffle(pool(topics))), { topics });
+  if (mode === 'mock') return start('mock', mockPick());
+  if (mode === 'mistakes') return start('mistakes', shuffle(all.filter(isMistake)));
+  if (mode === 'due') return start('due', take(all.filter(isDue).sort((a, b) => P(a).box - P(b).box || P(a).due - P(b).due)));
+  if (mode === 'flagged') return start('flagged', all.filter(id => P(id).flag));
+}
+const graded = () => session && (session.mode === 'test' || session.mode === 'mock'); // no feedback until the end
+
+// ---------- tree figures: preorder "KEY[R|B](LEFT,RIGHT)" ----------
+function parseTree(s) {
+  let i = 0;
+  function node() {
+    let tok = '';
+    while (i < s.length && !'(),'.includes(s[i])) tok += s[i++];
+    tok = tok.trim();
+    let n = null;
+    if (tok) {
+      const m = /^(.+?)([RB])$/.exec(tok);
+      n = m ? { key: m[1], color: m[2] } : { key: tok, color: null };
+    }
+    if (s[i] === '(') {
+      i++;
+      const l = node(); let r = null;
+      if (s[i] === ',') { i++; r = node(); }
+      if (s[i] === ')') i++;
+      if (n) { n.l = l; n.r = r; }
+    }
+    return n;
+  }
+  return node();
+}
+function treeSVG(s) {
+  const root = parseTree(s);
+  if (!root) return '';
+  const nodes = [], edges = [];
+  let x = 0, depth = 0, colored = false;
+  (function walk(n, d) {
+    if (!n) return;
+    walk(n.l, d + 1); n.x = x++; n.d = d; depth = Math.max(depth, d); nodes.push(n); if (n.color) colored = true; walk(n.r, d + 1);
+    for (const c of [n.l, n.r]) if (c) edges.push([n, c]);
+  })(root, 0);
+  const W = 42, H = 58, R = 17, pad = 22;
+  const w = Math.max(1, x - 1) * W + 2 * pad, h = depth * H + 2 * pad;
+  const X = n => pad + n.x * W, Y = n => pad + n.d * H;
+  const svg = `<svg class="tree" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" role="img" aria-label="${colored ? 'Red-black' : 'Binary'} tree, preorder ${esc(s)}">`
+    + edges.map(([a, b]) => `<line x1="${X(a)}" y1="${Y(a)}" x2="${X(b)}" y2="${Y(b)}"/>`).join('')
+    + nodes.map(n => `<g class="n${n.color || 'P'}"><circle cx="${X(n)}" cy="${Y(n)}" r="${R}"/><text x="${X(n)}" y="${Y(n)}"${n.key.length > 3 ? ' style="font-size:10px"' : ''}>${esc(n.key)}</text></g>`).join('')
+    + '</svg>';
+  const legend = colored ? `<div class="legend"><i style="background:var(--node-b)"></i>black<i style="background:var(--node-r)"></i>red · NIL leaves not drawn (they are black)</div>` : '';
+  return `<div class="figure">${svg}${legend}</div>`;
+}
+
+// ---------- views ----------
+const app = document.getElementById('app');
+function go(v) { view = v; render(); window.scrollTo(0, 0); }
+function render() {
+  app.innerHTML = view === 'quiz' ? quizView() : view === 'results' ? resultsView() : homeView();
+  if (view === 'quiz') { const q = document.getElementById('qtext'); if (q) q.focus({ preventScroll: true }); tick(); }
+}
+const THEME_ICON = {
+  auto: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18" /><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>',
+  light: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+  dark: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>',
+};
+const themeBtn = () => `<button class="icon" data-act="theme" title="Theme: ${prefs.theme}" aria-label="Theme: ${prefs.theme}. Click to change.">${THEME_ICON[prefs.theme]}</button>`;
+
+function homeView() {
+  const all = BANK.map(q => q.id);
+  const seen = all.filter(id => P(id).seen).length, mastered = all.filter(id => P(id).box >= MASTERED).length;
+  const nMist = all.filter(isMistake).length, nDue = all.filter(isDue).length, nFlag = all.filter(id => P(id).flag).length;
+  const selPool = pool(prefs.topics).length;
+  const lenLabel = prefs.len === 'all' ? `all ${selPool}` : Math.min(prefs.len, selPool);
+  let h = `<div class="top"><a class="back" href="../../">← aiapps</a><div class="grow"></div>${themeBtn()}</div>
+  <h1>CSE 5311 · Algorithms practice</h1>
+  <p class="sub">Lectures 1–11, through red-black trees. ${BANK.length} true/false and multiple-choice questions with explanations, written from the lecture slides and keyed to CLRS 3e.</p>
+  <div class="stats">
+    <div class="stat"><b>${seen}<span style="font-size:13px;font-weight:400"> / ${BANK.length}</span></b><span>questions seen</span></div>
+    <div class="stat"><b>${pct(mastered, BANK.length)}%</b><span>mastered</span></div>
+    <div class="stat"><b>${nDue}</b><span>due for review</span></div>
+    <div class="stat"><b>${nMist}</b><span>to fix (last try wrong)</span></div>
+  </div>`;
+  if (session && !session.finished) {
+    const answered = session.ids.filter(id => session.done[id] || session.ans[id] !== undefined).length;
+    h += `<div class="card resume"><div class="grow"><b>Resume ${esc(MODE_NAMES[session.mode])}</b><div class="small">${answered} of ${session.ids.length} answered</div></div>
+      <button class="btn ghost" data-act="discard">Discard</button><button class="btn primary" data-act="resume">Resume</button></div>`;
+  }
+  h += `<h2>Study</h2><div class="modes">
+    <button class="mode primary" data-act="mode" data-mode="practice" ${selPool ? '' : 'disabled'}><b>Practice</b><span>${lenLabel} questions from the selected lectures, weakest first. Feedback after each answer.</span></button>
+    <button class="mode" data-act="mode" data-mode="due" ${nDue ? '' : 'disabled'}><b>Due for review · ${nDue}</b><span>Spaced repetition: questions come back after 1, 3, 7, 14 days.</span></button>
+    <button class="mode" data-act="mode" data-mode="mistakes" ${nMist ? '' : 'disabled'}><b>Review mistakes · ${nMist}</b><span>Everything you got wrong last time, across all lectures.</span></button>
+    <button class="mode" data-act="mode" data-mode="flagged" ${nFlag ? '' : 'disabled'}><b>Flagged · ${nFlag}</b><span>Questions you starred to revisit or ask about.</span></button>
+  </div>
+  <h2>Exam practice</h2><div class="modes">
+    <button class="mode" data-act="mode" data-mode="mock"><b>Midterm mock</b><span>${MOCK.tf} true/false (1 pt) + ${MOCK.mc} multiple choice (3 pts), all lectures, ${MOCK.minutes}-minute timer. Answers at the end.</span></button>
+    <button class="mode" data-act="mode" data-mode="test" ${selPool ? '' : 'disabled'}><b>Test</b><span>${lenLabel} questions from the selected lectures, no feedback until you finish.</span></button>
+  </div>
+  <h2>Lectures</h2>
+  <div class="row space" style="margin-bottom:10px"><span class="small">${prefs.topics.length} of ${TOPICS.length} selected · ${selPool} questions</span>
+    <span class="row"><button class="btn ghost" data-act="topics-all">All</button><button class="btn ghost" data-act="topics-none">None</button></span></div>
+  <div class="topics">`;
+  for (const t of TOPICS) {
+    const s = topicStats(t.id);
+    h += `<label class="topic"><input type="checkbox" data-act="topic" value="${t.id}" ${prefs.topics.includes(t.id) ? 'checked' : ''}>
+      <div class="t">${t.id} · ${esc(t.t)}</div>
+      <div class="m">${t.d} · ${esc(t.ch)} · ${s.n} questions</div>
+      <div class="bar" aria-hidden="true"><i class="g" style="width:${pct(s.mastered, s.n)}%"></i><i class="s" style="width:${pct(s.seen - s.mastered, s.n)}%"></i></div>
+      <div class="m">${s.seen ? `${s.mastered} mastered · ${s.seen} seen · ${s.acc}% correct` : 'not started'}</div></label>`;
+  }
+  h += `</div>
+  <h2>Settings</h2>
+  <div class="card settings">
+    <div><span class="l small">Questions per round</span>
+      <div class="seg" role="group">${[10, 20, 40, 'all'].map(n => `<button data-act="len" data-v="${n}" aria-pressed="${prefs.len === n}">${n === 'all' ? 'All' : n}</button>`).join('')}</div></div>
+    <div><span class="l small">Question types</span>
+      <div class="seg" role="group">${[['all', 'Both'], ['tf', 'True/false'], ['mc', 'Multiple choice']].map(([v, l]) => `<button data-act="types" data-v="${v}" aria-pressed="${prefs.types === v}">${l}</button>`).join('')}</div></div>
+    <div><span class="l small">Progress is saved in this browser. Move it to another device with export/import.</span>
+      <div class="row"><button class="btn" data-act="export">Export progress</button><button class="btn" data-act="import">Import…</button><button class="btn ghost" data-act="reset">Reset all progress</button></div></div>
+  </div>
+  <footer>
+    <p><b>How it works.</b> Each question sits in a Leitner box. A right answer moves it up a box and schedules it later (1, 3, 7, then 14 days); a wrong answer sends it back to box 1. "Mastered" means right at least twice in a row.</p>
+    <p>Keys: <kbd>1</kbd>–<kbd>5</kbd> or <kbd>A</kbd>–<kbd>E</kbd> pick, <kbd>T</kbd>/<kbd>F</kbd> true/false, <kbd>Enter</kbd> check / next, <kbd>R</kbd> show answer, <kbd>S</kbd> flag, <kbd>Esc</kbd> home.</p>
+    <p>Course: <a href="https://ranger.uta.edu/~huang/teaching/CSE5311.htm">CSE 5311, UT Arlington</a>. Questions are original, written from the lecture topics; the slide page and CLRS section are shown with each answer. Unofficial study aid.</p>
+  </footer>`;
+  return h;
+}
+
+function curQ() { return BY_ID.get(session.ids[session.i]); }
+function quizView() {
+  const q = curQ(), id = q.id, n = session.ids.length, t = TOPIC[q.topic];
+  const isGraded = graded(), done = !!session.done[id], a = session.ans[id];
+  const sel = session.sel?.[id] || [];
+  let h = `<div class="top"><button class="btn ghost" data-act="home" style="padding-left:0">← Home</button><div class="grow"></div>
+    ${isGraded ? `<span class="timer" id="timer"></span>` : `<span class="small">${session.ids.filter(x => session.done[x] && isRight(BY_ID.get(x), session.ans[x])).length} right</span>`}
+    ${themeBtn()}</div>
+  <div class="qhead"><span class="chip">${t.id} · ${esc(t.t)}</span><span class="chip kind">${KIND[q.type]}</span><span class="grow"></span>
+    <span class="small">${esc(MODE_NAMES[session.mode])} · ${session.i + 1} / ${n}</span></div>
+  <div class="progress"><i style="width:${pct(session.i + (done ? 1 : 0), n)}%"></i></div>
+  <div class="q" id="qtext" tabindex="-1">${fmt(q.q)}</div>
+  ${q.tree ? treeSVG(q.tree) : ''}
+  <div class="hint">${q.type === 'ms' ? 'Select every correct option, then check.' : ''}</div>`;
+
+  const reveal = done && !isGraded;
+  if (q.type === 'tf') {
+    h += `<div class="opts tf" role="group" aria-label="Answer">` + [true, false].map(v => {
+      let cls = '', mark = '';
+      if (reveal) { if (v === q.answer) { cls = 'right'; mark = a === v ? '✓' : ''; } else if (a === v) { cls = 'wrong'; mark = '✗'; } }
+      else if (a === v) cls = 'sel';
+      return `<button class="opt ${cls}" data-act="pick" data-v="${v}" ${reveal ? 'disabled' : ''}><span class="k">${v ? 'T' : 'F'}</span><span class="tx">${v ? 'True' : 'False'}</span>${mark ? `<span class="mark">${mark}</span>` : ''}</button>`;
+    }).join('') + `</div>`;
+  } else {
+    const perm = session.perm[id];
+    const chosen = q.type === 'ms' ? (done || isGraded ? (a || []) : sel) : [a];
+    h += `<div class="opts" role="group" aria-label="Options">` + perm.map((oi, k) => {
+      const isSel = chosen.includes(oi), isAns = q.type === 'ms' ? q.answer.includes(oi) : q.answer === oi;
+      let cls = '', mark = '';
+      if (reveal) {
+        if (isAns && isSel) { cls = 'right'; mark = '✓'; }
+        else if (isAns) { cls = q.type === 'ms' ? 'missed' : 'right'; mark = q.type === 'ms' ? 'missed' : ''; }
+        else if (isSel) { cls = 'wrong'; mark = '✗'; }
+      } else if (isSel) cls = 'sel';
+      return `<button class="opt ${cls}" data-act="pick" data-v="${oi}" ${reveal ? 'disabled' : ''} ${q.type === 'ms' && !reveal ? `role="checkbox" aria-checked="${isSel}"` : ''}><span class="k">${LETTERS[k]}</span><span class="tx">${fmt(q.options[oi])}</span>${mark ? `<span class="mark">${mark}</span>` : ''}</button>`;
+    }).join('') + `</div>`;
+  }
+
+  if (reveal) {
+    const ok = isRight(q, a);
+    const correct = q.type === 'tf' ? (q.answer ? 'True' : 'False') : q.type === 'mc' ? LETTERS[session.perm[id].indexOf(q.answer)] : q.answer.map(i => LETTERS[session.perm[id].indexOf(i)]).sort().join(', ');
+    h += `<div class="feedback ${ok ? 'ok' : 'no'}" role="status"><div class="verdict">${ok ? 'Correct' : a === null ? `Answer: ${correct}` : `Not quite. Answer: ${correct}`}</div>
+      <div>${fmt(q.explain)}</div><div class="ref">${esc(q.ref)} · Lecture ${t.id.slice(1)} slides, p. ${q.slide}</div></div>`;
+  }
+
+  const flagged = P(id).flag;
+  const flagBtn = `<button class="btn flag" data-act="flag" aria-pressed="${flagged}" title="Flag (S)">${flagged ? '★ Flagged' : '☆ Flag'}</button>`;
+  h += `<div class="actions">`;
+  if (isGraded) {
+    const last = session.i === n - 1;
+    h += `<button class="btn" data-act="prev" ${session.i ? '' : 'disabled'}>← Prev</button>${flagBtn}<span class="grow"></span>
+      ${last ? `<button class="btn primary" data-act="finish">Finish ${session.mode === 'mock' ? 'mock' : 'test'}</button>` : `<button class="btn primary" data-act="next">Next →</button>`}`;
+  } else if (!done) {
+    h += `<button class="btn ghost" data-act="dunno" title="Show answer (R)">I don't know</button>${flagBtn}<span class="grow"></span>
+      ${q.type === 'ms' ? `<button class="btn primary" data-act="check" ${sel.length ? '' : 'disabled'}>Check</button>` : ''}`;
+  } else {
+    h += `${flagBtn}<span class="grow"></span><button class="btn primary" data-act="next">${session.i === n - 1 ? 'See results' : 'Next →'}</button>`;
+  }
+  h += `</div>`;
+  if (isGraded) {
+    h += `<div class="dots" aria-label="Jump to question">` + session.ids.map((x, k) => {
+      const ans = session.ans[x], has = ans !== undefined && !(Array.isArray(ans) && !ans.length);
+      return `<button class="dot ${has ? 'a' : ''} ${k === session.i ? 'cur' : ''}" data-act="jump" data-v="${k}" aria-label="Question ${k + 1}${has ? ', answered' : ''}">${k + 1}</button>`;
+    }).join('') + `</div>`;
+  }
+  h += `<div class="keys">${q.type === 'tf' ? '<kbd>T</kbd>/<kbd>F</kbd>' : '<kbd>A</kbd>–<kbd>' + LETTERS[q.options.length - 1] + '</kbd>'} answer ·
+    ${isGraded ? '<kbd>←</kbd>/<kbd>→</kbd> move' : `<kbd>Enter</kbd> ${q.type === 'ms' ? 'check / ' : ''}next · <kbd>R</kbd> show answer`} · <kbd>S</kbd> flag · <kbd>Esc</kbd> home</div>`;
+  return h;
+}
+
+function resultsView() {
+  const ids = session.ids, qs = ids.map(id => BY_ID.get(id));
+  const right = qs.filter(q => isRight(q, session.ans[q.id]));
+  let h = `<div class="top"><button class="btn ghost" data-act="home" style="padding-left:0">← Home</button><div class="grow"></div>${themeBtn()}</div>
+    <h1>${esc(MODE_NAMES[session.mode])} results</h1><div class="card" style="margin-top:14px"><div class="score"><b>${pct(right.length, qs.length)}%</b>
+    <span>${right.length} of ${qs.length} correct${graded() ? ` · ${clock(session.elapsed)}` : ''}</span></div>`;
+  if (session.mode === 'mock') {
+    const pts = qs.reduce((s, q) => s + (isRight(q, session.ans[q.id]) ? (q.type === 'tf' ? 1 : 3) : 0), 0);
+    const max = qs.reduce((s, q) => s + (q.type === 'tf' ? 1 : 3), 0);
+    h += `<p class="sub" style="margin-top:8px">Exam scoring: <b>${pts} / ${max} points</b> (true/false 1 pt, multiple choice 3 pts, all-or-nothing). On the real midterm this section is 40 of 100 points; the rest is open questions like the homework.</p>`;
+  }
+  h += `</div><h2>By lecture</h2><div class="card tbl">`;
+  const byT = TOPICS.map(t => { const tq = qs.filter(q => q.topic === t.id); return { t, n: tq.length, r: tq.filter(q => isRight(q, session.ans[q.id])).length }; })
+    .filter(x => x.n).sort((a, b) => a.r / a.n - b.r / b.n || b.n - a.n);
+  for (const x of byT) {
+    h += `<div class="trow"><div><div class="small" style="color:var(--ink)">${x.t.id} · ${esc(x.t.t)}</div><div class="bar"><i class="g" style="width:${pct(x.r, x.n)}%"></i></div></div>
+      <span class="n">${x.r}/${x.n}</span><button class="btn" data-act="drill" data-v="${x.t.id}" ${x.r === x.n ? 'disabled' : ''}>Drill</button></div>`;
+  }
+  h += `</div><div class="actions"><button class="btn primary" data-act="retry" ${right.length === qs.length ? 'disabled' : ''}>Retry ${qs.length - right.length === 1 ? 'the miss' : `the ${qs.length - right.length} misses`}</button><button class="btn" data-act="home">Home</button></div>
+    <h2>Every question</h2>`;
+  for (const q of qs) {
+    const a = session.ans[q.id], ok = isRight(q, a);
+    const correct = answerText(q, q.answer, session.perm[q.id]);
+    h += `<details class="rev"${ok ? '' : ' open'}><summary><span class="m ${ok ? 'ok' : 'no'}">${ok ? '✓' : '✗'}</span><span class="s">${fmt(q.q)}</span></summary><div class="body">
+      ${q.tree ? treeSVG(q.tree) : ''}
+      ${q.type !== 'tf' ? `<ol type="A" style="margin:6px 0;padding-left:22px">${session.perm[q.id].map(oi => `<li>${fmt(q.options[oi])}</li>`).join('')}</ol>` : ''}
+      <p><b>You:</b> ${answerText(q, a, session.perm[q.id])}</p><p><b>Answer:</b> ${correct}</p><p>${fmt(q.explain)}</p>
+      <p class="small">${esc(q.ref)} · Lecture ${q.topic.slice(1)} slides, p. ${q.slide}</p></div></details>`;
+  }
+  return h;
+}
+
+// ---------- actions ----------
+function pick(raw) {
+  const q = curQ(), id = q.id;
+  if (session.done[id] && !graded()) return;
+  const v = q.type === 'tf' ? raw === true || raw === 'true' : +raw;
+  if (q.type === 'ms') {
+    const cur = (graded() ? session.ans[id] : session.sel?.[id]) || [];
+    const next = cur.includes(v) ? cur.filter(x => x !== v) : [...cur, v].sort((a, b) => a - b);
+    if (graded()) session.ans[id] = next; else (session.sel || (session.sel = {}))[id] = next;
+  } else if (graded()) session.ans[id] = v;
+  else return submit(v);
+  saveSession(); render();
+}
+function submit(v) {
+  const q = curQ();
+  if (session.done[q.id]) return;
+  session.ans[q.id] = v; session.done[q.id] = true;
+  record(q.id, isRight(q, v));
+  saveSession(); render();
+}
+function next() {
+  if (!graded() && !session.done[curQ().id]) return;
+  if (session.i < session.ids.length - 1) { session.i++; saveSession(); go('quiz'); }
+  else finish();
+}
+function finish() {
+  if (graded()) for (const id of session.ids) {
+    const a = session.ans[id];
+    if (a !== undefined && !(Array.isArray(a) && !a.length)) record(id, isRight(BY_ID.get(id), a));
+    else record(id, false); // unanswered counts as a miss, so it comes back in review
+  }
+  session.finished = true; saveSession(); go('results');
+}
+function home() { if (session?.finished) { session = null; saveSession(); } go('home'); }
+function applyTheme() { if (prefs.theme === 'auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.dataset.theme = prefs.theme; }
+function exportData() { return { app: 'algoquiz', version: 1, exported: new Date().toISOString(), progress, prefs }; }
+function importData(obj) {
+  const p = obj && typeof obj === 'object' ? (obj.progress || obj) : null;
+  if (!p || typeof p !== 'object' || Array.isArray(p)) throw new Error('Not an Algorithms Quiz progress file.');
+  progress = cleanProgress(p); saveProgress();
+  if (obj.prefs && typeof obj.prefs === 'object') { prefs = Object.assign(prefs, obj.prefs); savePrefs(); applyTheme(); }
+}
+
+app.addEventListener('click', e => {
+  const b = e.target.closest('[data-act]');
+  if (!b || b.disabled) return;
+  const act = b.dataset.act, v = b.dataset.v;
+  if (e.detail && b.tagName === 'BUTTON') b.blur(); // keep keyboard shortcuts working after a mouse click
+  switch (act) {
+    case 'mode': return startMode(b.dataset.mode);
+    case 'resume': return go(session.finished ? 'results' : 'quiz');
+    case 'discard': if (confirm('Discard this unfinished round?')) { session = null; saveSession(); render(); } return;
+    case 'topics-all': prefs.topics = TOPICS.map(t => t.id); savePrefs(); return render();
+    case 'topics-none': prefs.topics = []; savePrefs(); return render();
+    case 'len': prefs.len = v === 'all' ? 'all' : +v; savePrefs(); return render();
+    case 'types': prefs.types = v; savePrefs(); return render();
+    case 'theme': prefs.theme = { auto: 'light', light: 'dark', dark: 'auto' }[prefs.theme]; savePrefs(); applyTheme(); return render();
+    case 'export': {
+      const blob = new Blob([JSON.stringify(exportData(), null, 1)], { type: 'application/json' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'algoquiz-progress.json';
+      document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000); return;
+    }
+    case 'import': return document.getElementById('importFile').click();
+    case 'reset': if (confirm('Erase all progress, flags and the current round? This cannot be undone.')) { progress = {}; saveProgress(); session = null; saveSession(); render(); } return;
+    case 'home': return home();
+    case 'pick': return pick(v);
+    case 'check': return submit((session.sel?.[curQ().id]) || []);
+    case 'dunno': return submit(null);
+    case 'next': return next();
+    case 'prev': if (session.i) { session.i--; saveSession(); go('quiz'); } return;
+    case 'jump': session.i = +v; saveSession(); return go('quiz');
+    case 'finish': {
+      const left = session.ids.filter(id => { const a = session.ans[id]; return a === undefined || (Array.isArray(a) && !a.length); }).length;
+      if (!left || confirm(`${plural(left, 'question')} unanswered. Finish anyway?`)) finish();
+      return;
+    }
+    case 'flag': { const p = progress[curQ().id] || (progress[curQ().id] = { box: 0, due: 0, seen: 0, right: 0, last: null, flag: false }); p.flag = !p.flag; saveProgress(); return render(); }
+    case 'drill': session = null; return startMode('practice', [v]);
+    case 'retry': { const miss = session.ids.filter(id => !isRight(BY_ID.get(id), session.ans[id])); session = null; return start('practice', shuffle(miss)); }
+  }
+});
+app.addEventListener('change', e => {
+  const c = e.target;
+  if (c.dataset.act === 'topic') {
+    prefs.topics = TOPICS.map(t => t.id).filter(id => id === c.value ? c.checked : prefs.topics.includes(id));
+    savePrefs(); render();
+    const again = app.querySelector(`input[value="${c.value}"]`); if (again) again.focus();
+  }
+});
+document.getElementById('importFile').addEventListener('change', async e => {
+  const f = e.target.files[0]; e.target.value = '';
+  if (!f) return;
+  try {
+    const obj = JSON.parse(await f.text());
+    if (Object.keys(progress).length && !confirm('Replace your current progress with the imported file?')) return;
+    importData(obj); render();
+  } catch (err) { alert('Could not import: ' + err.message); }
+});
+
+document.addEventListener('keydown', e => {
+  if (e.ctrlKey || e.metaKey || e.altKey || e.target.matches('input, textarea, select')) return;
+  if (e.key === 'Escape') { if (view !== 'home') { e.preventDefault(); home(); } return; }
+  if (view !== 'quiz') return;
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('button, a, summary')) return; // let the focused control act
+  const q = curQ(), k = e.key.toLowerCase(), done = session.done[q.id], isGraded = graded();
+  const act = (fn, ...args) => { e.preventDefault(); fn(...args); };
+  if (k === 's') return act(() => app.querySelector('[data-act="flag"]')?.click());
+  if (q.type === 'tf' && (k === 't' || k === '1')) return act(pick, true);
+  if (q.type === 'tf' && (k === 'f' || k === '2')) return act(pick, false);
+  if (q.type !== 'tf') {
+    let slot = -1;
+    if (/^[1-5]$/.test(k)) slot = +k - 1; else if (k.length === 1 && 'abcde'.includes(k)) slot = 'abcde'.indexOf(k);
+    if (slot >= 0 && slot < q.options.length) return act(pick, session.perm[q.id][slot]);
+  }
+  if (isGraded) {
+    if (e.key === 'ArrowRight' || e.key === 'Enter') return act(() => session.i < session.ids.length - 1 ? next() : app.querySelector('[data-act="finish"]')?.click());
+    if (e.key === 'ArrowLeft') return act(() => app.querySelector('[data-act="prev"]')?.click());
+    return;
+  }
+  if (!done && k === 'r') return act(submit, null);
+  if (!done && e.key === 'Enter' && q.type === 'ms' && session.sel?.[q.id]?.length) return act(submit, session.sel[q.id]);
+  if (done && (e.key === 'Enter' || e.key === 'ArrowRight')) return act(next);
+});
+
+// ---------- timer: counts only while the quiz is on screen ----------
+let lastTick = performance.now();
+function tick() {
+  const el = document.getElementById('timer');
+  if (!el || !session) return;
+  el.textContent = session.limit ? `⏱ ${clock(session.limit - session.elapsed)}` : `⏱ ${clock(session.elapsed)}`;
+  el.classList.toggle('low', !!session.limit && session.limit - session.elapsed < 5 * 60e3);
+}
+setInterval(() => {
+  const now = performance.now(), dt = Math.min(now - lastTick, 2000); lastTick = now;
+  if (view !== 'quiz' || !graded() || session.finished || document.hidden) return;
+  session.elapsed += dt;
+  if (session.limit && session.elapsed >= session.limit) { session.elapsed = session.limit; finish(); return; }
+  if (Math.floor(session.elapsed / 5000) !== Math.floor((session.elapsed - dt) / 5000)) saveSession();
+  tick();
+}, 1000);
+addEventListener('pagehide', () => { if (session) saveSession(); });
+
+// Test hook for headless checks.
+window.quiz = {
+  bank: BANK, topics: TOPICS,
+  get view() { return view; }, get session() { return session; }, get progress() { return progress; }, get prefs() { return prefs; },
+  current: () => view === 'quiz' ? curQ() : null,
+  start: startMode, pick, submit, next, finish, home, exportData, importData,
+  correctAnswer: () => curQ().answer,
+};
+
+applyTheme();
+render();
+</script>
+</body>
+</html>

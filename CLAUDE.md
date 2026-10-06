@@ -32,6 +32,7 @@ standard library.
 | `aiapps/paper-plane/` | *The Paper Plane*, 71 s three.js story | static |
 | `aiapps/flappy-3d/` | *Flap 3D*, a three.js flappy-bird-style game | static |
 | `aiapps/dholakpur-call/` | *Dholakpur Call*, WebRTC video calls as 3D Chhota Bheem characters or VRM avatars (face + hands) | static; `avatars/` holds 6 bundled VRMs + thumbnails |
+| `aiapps/algorithms-quiz/` | CSE 5311 (UTA) midterm practice: T/F + multiple choice on lectures 1–11, spaced review | static; question bank is inline JSON |
 | `aiapps/lib/three-bundle.min.js` | Shared three.js r186 + add-ons bundle | built manually (see below) |
 | `aiapps/lib/three-vrm.min.js` | `@pixiv/three-vrm` 3.5.5 + the r186 GLTFLoader, `three` external | built manually (see below) |
 | `aiapps/lib/mediapipe/` | MediaPipe Tasks Vision 1.0.1 + Face and Hand Landmarker models (~24 MB) | vendored from npm (see `NOTICE.md`) |
@@ -305,6 +306,32 @@ and keep the license comment at the top.
   `odml.pa.googleapis.com`. Redo the patch if MediaPipe is upgraded.
 - `localStorage` keys: `dholakpur:name`, `dholakpur:char` (never `custom`), `dholakpur:bg`.
 
+## Algorithms Quiz
+
+- Practice questions for UTA CSE 5311 (Dr. Huang), lectures 1–11 (intro through
+  red-black trees, the midterm's scope), keyed to CLRS 3e. The course slides
+  are at `ranger.uta.edu/~huang/teaching/CSE5311/CSE5311_Lecture<N>.pdf`; they
+  are reference only and are **never committed**. Questions are original.
+- The bank is the `<script type="application/json" id="bank">` block, one
+  question per line: `{id, topic: "L1".."L11", type: "tf"|"mc"|"ms", q,
+  options?, answer, explain, ref, slide, tree?}`. `answer` is a bool (tf), an
+  option index (mc) or a sorted index list (ms, "select all that apply").
+  `slide` is the page in that lecture's PDF. Never reuse or renumber an `id`:
+  saved progress is keyed by it.
+- Text supports `` `code` ``, `^{sup}`, `_{sub}` and newlines. `tree` is a
+  preorder string `KEY[R|B](LEFT,RIGHT)` (`8B(,12R)`) drawn as an SVG.
+  Options are shuffled per round, so never write "all of the above" or
+  "both a and c"; use `ms` instead.
+- Modes: Practice (weakest first: last-wrong, unseen, due), Test, Midterm mock
+  (10 T/F + 10 MC like the real exam, 30-minute timer), Review mistakes, Due
+  (Leitner boxes 1–5, 0/1/3/7/14 days), Flagged.
+- `localStorage` keys: `algoquiz:progress` (per id `{box, due, seen, right,
+  last, flag}`), `algoquiz:prefs`, `algoquiz:session` (the round in progress,
+  so a reload resumes). Export/Import moves progress between devices.
+- Test hook: `window.quiz`, with `view` (`home|quiz|results`), `session`,
+  `progress`, `bank`, `current()`, `start(mode)`, `pick(v)`, `submit(v)`,
+  `next()`, `finish()`, `home()`, `exportData()` and `importData(obj)`.
+
 ## Landing page
 
 `build_apps_index.py` finds every `aiapps/*/index.html` and lists it using
@@ -359,6 +386,9 @@ Keys: Space, ←/→, R.
 
 Newest first. Add one line per change.
 
+- 2026-10-06: Added the Algorithms Quiz (`aiapps/algorithms-quiz/`): CSE 5311
+  midterm practice from the lecture slides, with T/F, single- and multi-answer
+  questions, explanations, drawn trees, spaced review and saved progress.
 - 2026-10-03: Dholakpur Call supports VRM avatars: six CC0/CC-BY avatars
   from Polygonal Mind's 100Avatars, plus your own `.vrm`. Face, head, arms
   and fingers drive the humanoid rig. Added `lib/three-vrm.min.js`, phone
