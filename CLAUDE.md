@@ -315,6 +315,10 @@ and keep the license comment at the top.
 - `TOPICS` titles follow the course syllabus; each CLRS range is what that
   lecture's slides actually cover (L1 already defines O/Ω/Θ, L2 has merge sort
   and Karatsuba, L3 the master method), not the textbook's chapter order.
+- 259 questions, 21–27 per lecture, about 43% T/F. Every computed answer
+  (heap, partition, counting/radix, select, BST and RB-tree traces, recurrences)
+  was checked against Python reference code that follows the CLRS pseudocode;
+  do the same for any new trace question.
 - The bank is the `<script type="application/json" id="bank">` block, one
   question per line: `{id, topic: "L1".."L11", type: "tf"|"mc"|"ms", q,
   options?, answer, explain, ref, slide, tree?}`. `answer` is a bool (tf), an
