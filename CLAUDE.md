@@ -312,6 +312,9 @@ and keep the license comment at the top.
   red-black trees, the midterm's scope), keyed to CLRS 3e. The course slides
   are at `ranger.uta.edu/~huang/teaching/CSE5311/CSE5311_Lecture<N>.pdf`; they
   are reference only and are **never committed**. Questions are original.
+- `TOPICS` titles follow the course syllabus; each CLRS range is what that
+  lecture's slides actually cover (L1 already defines O/Ω/Θ, L2 has merge sort
+  and Karatsuba, L3 the master method), not the textbook's chapter order.
 - The bank is the `<script type="application/json" id="bank">` block, one
   question per line: `{id, topic: "L1".."L11", type: "tf"|"mc"|"ms", q,
   options?, answer, explain, ref, slide, tree?}`. `answer` is a bool (tf), an
