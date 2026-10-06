@@ -1,0 +1,506 @@
+{
+  "date": "2026-10-06",
+  "generated_at": "2026-10-06T17:12:02+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Paramount closes merger with Warner Bros. Discovery to form Skydance",
+        "summary": "After a legal battle, the two Hollywood giants have become one, though the new company is saddled with debt.",
+        "outlets": 5,
+        "published": "2026-10-06T16:25:23+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/06/business/media/paramount-warner-bros-discovery-skydance.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/paramount-warner-bros-discovery-deal-skydance/"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/business/inside-hollywoods-biggest-plot-twist-how-paramount-closed-110-billion-warner-bros-deal-to-create-skydance/articleshow/134742253.cms"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/06/g-s1-146626/up-first-newsletter-election-day-skydance-christa-pike-russia-plague-scare"
+          }
+        ],
+        "why": "Major consolidation in the entertainment industry affecting global media giants."
+      },
+      {
+        "headline": "Fort Hood shooter Nidal Hasan to be executed by firing squad, Pentagon says",
+        "summary": "The Trump administration has approved a plan to execute former Army Maj. Nidal Hasan, who killed 13 people in a 2009 shooting.",
+        "outlets": 3,
+        "published": "2026-10-06T15:37:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/nidal-hasan-firing-squad-trump/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cq8ezkkkrpy1o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOT2FoV0ZoOUhMcUlvWGtqbFo4WHBHa3hvSXEwVHQ2eWU3elBtOEdlVWhEUkJIN2xVdzdsWVBNSXFHM183cHVmdmx3OTZ3bFB2SGxCaFMyMmFvR19ZQnBXcWFNZUhQdjVvR0dlU0JCekpabHFES2xuS3JmTFhrdnlqQVJueENsWURKQWNVbFl2enZfXzE4NGhWU2JaR0diREhOLXBR0gGoAUFVX3lxTFB6eFJVWUx5NzN0RUU5Q2JVSDdXNzQySlg3THZYVS1Ld2Zhd1RwQkdoS2RPRHZGQ2Njd19zZU5Dak0yUjV0ZllsTHVCaFZudERfRUE3MEY0d1lCZmpBekJBMkZxQVg5dkxaQ09Mek5nRW04NzF1bHgwN3dmUi1PeWlsbnZORl9KakYxUWFmWUhuSFktRGRBd1pJc1lSMDk4QjgtYnRTTFhtSg?oc=5"
+          }
+        ],
+        "why": "High-profile capital punishment decision by the US government."
+      },
+      {
+        "headline": "Ukraine launches major drone attack on Russia's Moscow region, killing two",
+        "summary": "Russia stated that 290 drones targeted Moscow and nearby regions in the overnight Ukrainian assault.",
+        "outlets": 1,
+        "published": "2026-10-06T12:42:19+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/6/ukraine-launches-major-drone-attack-on-russias-moscow-region-killing-two?traffic_source=rss"
+          }
+        ],
+        "why": "Escalation of the ongoing conflict directly hitting the Russian capital."
+      },
+      {
+        "headline": "11 Indians Injured After Panama-Flagged Vessel Attacked In Hormuz: Centre",
+        "summary": "The vessel, MT On Peace, carried 19 crew members, including 17 Indian nationals. In total, 12 crew members -- 11 of them Indian -- sustained injuries in the strike, according to the Ministry of External Affairs.",
+        "outlets": 3,
+        "published": "2026-10-06T11:16:32+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/11-indians-injured-after-panama-flagged-vessel-attacked-in-hormuz-centre-12145899#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-condemns-attack-on-panama-flagged-vessel-off-oman-coast-after-11-citizens-injured-101791284106852.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/flydubai-hero-indian-pilot-suffers-skull-fracture-memory-issues-co-pilot-may-have-intended-to-kill-him-new-details-11791288303331.html"
+          }
+        ]
+      },
+      {
+        "headline": "Rahul, Priyanka among 260 detained during INDIA bloc march to ECI in Delhi",
+        "summary": "High drama unfolded as opposition leaders marched toward the Election Commission office and were detained by police in Delhi.",
+        "outlets": 5,
+        "published": "2026-10-06T17:00:47+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/newsmo/short-videos/priyanka-gandhi-climbs-gate-to-reach-detained-rahul-gandhi-at-kingsway-camp-3011174-2026-10-06?utm_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/rahul-gandhi-priyanka-vadra-detained-by-police-amid-protest-against-cec-gyanesh-kumar-at-akashvani-bhawan/articleshow/134743537.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/gyanesh-kumar-news-live-updates-india-bloc-march-cjp-protest-jantar-mantar-form-6-sc-abhijeet-dipke-rahul-gandhi-eci-cec-101791255458441.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/Delhi/rahul-gandhi-priyanka-gandhi-detention-india-bloc-march-eci/article71552678.ece"
+          }
+        ],
+        "why": "Major political confrontation involving top Indian opposition leaders and electoral authorities."
+      }
+    ],
+    "us": [
+      {
+        "headline": "White House defends Trump comment to let Iran take out LA and San Diego",
+        "summary": "The White House defended Donald Trump's remarks about Iranian threats, stating he was warning of the risk of a nuclear Iran.",
+        "outlets": 9,
+        "published": "2026-10-06T16:22:37+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6r7yn8pknyxo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/california-screamin-trump-says-iran-taking-out-la-and-san-diego-would-be-small-price-to-pay/articleshow/134745356.cms"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-suggests-allowing-iran-take-out-la-and-san-diego-during-campaign-rally/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/06/republican-trump-iran-los-angeles-san-diego"
+          }
+        ]
+      },
+      {
+        "headline": "U.S. trade deficit hits 17-month high despite Trump's tariffs",
+        "summary": "Imports and the trade deficit have ballooned in recent months, defying administration efforts to reduce it through tariffs.",
+        "outlets": 2,
+        "published": "2026-10-06T15:01:36+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/06/business/economy/us-trade-deficit.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/us-trade-deficit-widens-despite-trumps-tariffs-what-august-data-tells-us-11791293635945.html"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court tangles over a major climate change case",
+        "summary": "The justices began their new term with a landmark dispute over whether local governments can hold oil companies liable for climate damages.",
+        "outlets": 3,
+        "published": "2026-10-06T07:13:04+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/05/us/politics/supreme-court-climate-change-oil.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/supreme-court-hears-case-on-holding-energy-companies-liable-for-climate-change"
+          },
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/tech-policy/2026/10/big-oil-asks-supreme-court-to-kill-climate-lawsuits-before-trial/"
+          }
+        ]
+      },
+      {
+        "headline": "Alito says Supreme Court can't stem rise of emergency appeals",
+        "summary": "Justice Samuel Alito told the Associated Press in a rare interview that he is not pleased with rhetoric about the court from Donald Trump.",
+        "outlets": 2,
+        "published": "2026-10-06T14:25:51+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/alito-says-supreme-court-cant-stem-rise-of-emergency-appeals-not-pleased-with-trumps-rhetoric"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/06/opinion/trump-supreme-court-decisions.html"
+          }
+        ]
+      },
+      {
+        "headline": "Hispanic voters moving towards Democrats, CBS News poll shows",
+        "summary": "Hispanic and Latino voters are veering towards the Democratic Party amid rising frustrations over the Trump administration's economic policies.",
+        "outlets": 2,
+        "published": "2026-10-06T14:43:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/hispanic-voters-moving-towards-democrats-cbs-news-poll-shows/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/05/us/hispanic-voters-trump-poll-approval.html"
+          }
+        ]
+      },
+      {
+        "headline": "Top Super PAC for Senate Democrats Raises Record $151 Million in Third Quarter",
+        "summary": "Democratic Senate candidates have generally out-raised Republicans, but are struggling to match outside spending from Trump-affiliated groups.",
+        "outlets": 1,
+        "published": "2026-10-06T14:32:23+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/06/us/politics/senate-majority-pac-democrats.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Air Marshal Ashutosh Dixit: Meet India's new Air Force chief",
+        "summary": "Ashutosh Dixit has been appointed as the new Air Force chief after nearly four decades of operational and senior command service.",
+        "outlets": 5,
+        "published": "2026-10-06T14:22:05+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/air-marshal-ashutosh-dixit-meet-indias-new-air-force-chief-who-served-in-operation-sindoor-op-rakshak-11791295575819.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/who-is-air-marshal-ashutosh-dixit-op-sindoor-and-safed-sagar-veteran-appointed-new-iaf-chief-101791291766914.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/defence/news/air-marshal-ashutosh-dixit-appointed-new-iaf-chief-to-take-over-from-oct-31/articleshow/134741833.cms"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/defence/air-marshal-ashutosh-dixit-appointed-new-chief-of-air-force-replacing-amar-preet-singh/articleshow/134741756.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Bhuvneshwar returns as India announce T20I and India A squads for New Zealand series",
+        "summary": "Bhuvneshwar Kumar has been reinstated to the Indian T20I squad by the BCCI, with Shreyas Iyer taking the helm as captain.",
+        "outlets": 4,
+        "published": "2026-10-06T16:52:30+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/sports/cricket/bhuvneshwar-kumar-returns-after-four-years-as-india-name-new-zealand-t20i-india-a-squads-check-complete-list-of-players/articleshow/134744605.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/bhuvneshwar-kumar-returns-as-india-announces-t20i-and-india-a-squads-for-new-zealand-series/articleshow/134744386.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.aajtak.in/sports/cricket/story/india-and-india-a-squads-for-new-zealand-tour-announced-bhuvneshwar-kumar-back-with-team-aksp-dskc-2663229-2026-10-06?utm_source=rss"
+          },
+          {
+            "source": "Cricbuzz",
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUXVVd3VCcFh2NS1PLVphN0N3blNqd0tOdlk0bEhYZk9Wc0l2MDBBZ3Y3SlN0aUlIelE4SzhWM002Umd1NHdhZUpNTnJEM1VpMmNoeU11OENpWkhQLXFJa2tSd182NVZub3dTektsOG4tb3BoOEc5Q3ZTM0hUaGR4X0NLYXUyQkkwQVNZbUpZb3VpZmwtdWc?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Smriti Mandhana replaces Harmanpreet Kaur as India captain",
+        "summary": "Smriti Mandhana has been appointed as the new captain of the Indian women's cricket team following Harmanpreet Kaur's resignation.",
+        "outlets": 3,
+        "published": "2026-10-06T15:52:04+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/sports/cricket/news/smriti-mandhana-replaces-harmanpreet-kaur-as-india-captain-very-special-honour/articleshow/134744766.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/sports/cricket/story/smriti-mandhana-named-new-india-womens-captain-replaces-harmanpreet-3011111-2026-10-06?utm_source=rss"
+          },
+          {
+            "source": "ICC",
+            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVE9Yd1pjZEI0ZGQtOVI4d29EREVTcHFLVEN3UDJsX0w3R05fTGlMUjBwc1luS2NfTjJpcXkzcmk3bXBGaGs0REFHX2xwYU5XU1NRc09DbVN2VThVZGxNVS1TV3N4VkN1ZmcxXzVkbGZtT0ZoUjVMM095WVdPbjZ4VGtPZw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "2 Arrested Over Pak-Linked Spy Module In Andhra, Many Naval Personnel Among Suspects",
+        "summary": "\"Operation Firewall 2026\" was launched last Thursday as part of an ongoing probe into the alleged espionage module involving 18 suspects, including 13 naval personnel.",
+        "outlets": 2,
+        "published": "2026-10-06T13:59:55+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/andhra-pradesh-2-arrested-over-pak-linked-spy-module-many-naval-personnel-among-suspects-12146949#publisher=newsstand"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/defence/naval-staffer-among-two-arrested-for-spying-for-pakistak-andhra-police/articleshow/134739947.cms"
+          }
+        ]
+      },
+      {
+        "headline": "CBI conducts raid at Punjab CM Mann's camp office, FIR filed against OSD",
+        "summary": "The CBI is investigating allegations of corruption that ensnare Punjab Chief Minister Bhagwant Mann's OSD and other officials.",
+        "outlets": 2,
+        "published": "2026-10-06T13:40:39+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/chandigarh/cbi-raid-at-bhagwant-manns-camp-office-fir-against-osd-cm-hits-back-at-bjp/articleshow/134741930.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/cbi-raids-residence-of-punjab-cm-osd-rajbir-ghuman-bhagwant-mann-claims-bjp-is-rattled-ed-crpf-jawans-mohali-101791291810507.html"
+          }
+        ]
+      },
+      {
+        "headline": "3 new Supreme Court judges take oath, strength rises to 37",
+        "summary": "Chief Justice Surya Kant administered the oath of office to three new judges at a ceremony held at the Supreme Court.",
+        "outlets": 2,
+        "published": "2026-10-06T13:26:59+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/3-new-supreme-court-judges-take-oath-strength-rises-to-37-12146749#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/for-the-first-time-ever-three-new-supreme-court-judges-to-take-oath-in-the-afternoon-101791261006508.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Former German spy chief arrested on suspicion of treason and espionage",
+        "summary": "August Hanning's former chief of staff was also arrested on suspicion of aiding and abetting attempted treason.",
+        "outlets": 6,
+        "published": "2026-10-06T14:47:54+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/defence/who-is-august-hanning-the-former-german-spy-chief-accused-of-receiving-2000-secret-documents/articleshow/134741598.cms"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/6/former-german-spy-chief-arrested-on-suspicion-of-treason-and-espionage?traffic_source=rss"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/06/g-s1-146630/germany-ex-spy-chief-state-secrets"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/august-hanning-arrest-former-bnd-chief-germany-espionage-investigation-ptag-3010766-2026-10-06?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Student protests expand to more than 40 French cities",
+        "summary": "Union members, parents, and teachers joined demonstrations, broadening a movement that has closed hundreds of high schools.",
+        "outlets": 2,
+        "published": "2026-10-06T17:08:44+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/live/2026/10/06/world/france-protests-students-schools"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/france-high-schools-closed-biggest-day-student-protests-decades/"
+          }
+        ]
+      },
+      {
+        "headline": "Germany's far right claims its first statehouse speaker since 1945",
+        "summary": "After winning a state election last month, the Alternative for Germany became the first far-right party to oversee a state legislature since the Nazi era.",
+        "outlets": 2,
+        "published": "2026-10-06T15:54:36+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/06/world/europe/germany-afd-saxony-anhalt.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/06/germany-afd-first-far-right-tobias-rausch-speaker-since-war"
+          }
+        ]
+      },
+      {
+        "headline": "The separatist Parti Québécois wins Quebec election, reviving sovereignty push",
+        "summary": "The separatist party secured a minority victory in the Quebec election and vowed to hold an independence referendum in the future.",
+        "outlets": 2,
+        "published": "2026-10-06T11:09:31+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/05/world/canada/quebec-election-parti-quebecois-separatism.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/crly09gz7ew4o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Nobel Prize in Physics is awarded to Francis Halzen for work on neutrinos",
+        "summary": "The Nobel Committee honored Francis Halzen for his scientific leadership of a telescope within the ice at the South Pole.",
+        "outlets": 7,
+        "published": "2026-10-06T16:36:32+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/06/science/nobel-prize-physics.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/6/francis-halzen-wins-nobel-prize-in-physics-for-work-on-ghost-particles?traffic_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/nobel-prize-in-physics-2026-francis-halzen-wins-for-discovery-of-high-energy-neutrinos-of-astrophysical-origin-12145347#publisher=newsstand"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/06/g-s1-146622/nobel-prize-physics"
+          }
+        ]
+      },
+      {
+        "headline": "Cabinet okays integrated transport planning authority, ₹10,000-crore SME fund",
+        "summary": "The government approved a commitment to the SME Growth Fund and an integrated transport planning authority for infrastructure projects.",
+        "outlets": 3,
+        "published": "2026-10-06T12:46:15+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/cabinet-okays-integrated-transport-planning-authority-10-000-crore-sme-fund-11791285220408.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/cabinet-approves-integrated-transport-logistics-authority-for-unified-road-rail-planning-101791285499542.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/cabinet-approves-proposal-to-set-up-integrated-transport-and-logistics-authority/article71551117.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Asos warns customer data may be compromised after 'unauthorised' app access",
+        "summary": "Shares in fashion company Asos fell 11% after its app systems were accessed by an unidentified third party.",
+        "outlets": 1,
+        "published": "2026-10-06T15:06:35+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/oct/06/asos-hack-notification-website-app"
+          }
+        ]
+      },
+      {
+        "headline": "US software shares hit 2026 highs as AI disruption fears ease",
+        "summary": "US software stocks are scaling up to fresh highs as improving earnings expectations ease concerns over artificial intelligence disruption.",
+        "outlets": 1,
+        "published": "2026-10-06T14:35:33+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/us-stocks-us-software-shares-scale-fresh-2026-highs-as-ai-disruption-worries-fade/articleshow/134743282.cms"
+          }
+        ]
+      }
+    ]
+  }
+}
