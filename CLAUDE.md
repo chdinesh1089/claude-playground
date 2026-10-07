@@ -33,6 +33,7 @@ standard library.
 | `aiapps/flappy-3d/` | *Flap 3D*, a three.js flappy-bird-style game | static |
 | `aiapps/dholakpur-call/` | *Dholakpur Call*, WebRTC video calls as 3D Chhota Bheem characters or VRM avatars (face + hands) | static; `avatars/` holds 6 bundled VRMs + thumbnails |
 | `aiapps/algorithms-quiz/` | CSE 5311 (UTA) midterm practice: T/F + multiple choice on lectures 1–11, spaced review | static; question bank is inline JSON |
+| `aiapps/db-design-practice/` | Elmasri & Navathe 6e assigned exercises: worked ER/EER (min, max) diagrams, mappings, self-checks, quiz | static; diagrams are drawn by an inline SVG renderer |
 | `aiapps/lib/three-bundle.min.js` | Shared three.js r186 + add-ons bundle | built manually (see below) |
 | `aiapps/lib/three-vrm.min.js` | `@pixiv/three-vrm` 3.5.5 + the r186 GLTFLoader, `three` external | built manually (see below) |
 | `aiapps/lib/mediapipe/` | MediaPipe Tasks Vision 1.0.1 + Face and Hand Landmarker models (~24 MB) | vendored from npm (see `NOTICE.md`) |
@@ -339,6 +340,29 @@ and keep the license comment at the top.
   `progress`, `bank`, `current()`, `start(mode)`, `pick(v)`, `submit(v)`,
   `next()`, `finish()`, `home()`, `exportData()` and `importData(obj)`.
 
+## DB Design Practice
+
+- The exercises the user's professor assigned from *Fundamentals of Database
+  Systems* (Elmasri & Navathe, 6th ed.): 7.16, 7.19, 7.22 (ER with (min, max)
+  + relational mapping), 7.17, 7.23 (general), 8.17, 8.18 (EER + mapping),
+  3.13–3.15 (keys and foreign keys). Prompts are **paraphrased**, answers are
+  original; never paste book text or figures. The book PDF is not committed.
+- `EXERCISES` holds each exercise: `prompt`, `hints`, `sections` (each
+  `{h, html?, diagram?, rels?}`, collapsed until opened) and `check` (the
+  self-check list). `BANK` is the quiz (`tag` ER|EER|MAP|REL, `ex` links a
+  question to an exercise; `answer` is a bool, an index or a sorted list).
+- Diagrams use the book's Chen notation and are built in `DIAGRAMS` with the
+  `ER(w, h)` builder: `E`, `R`, `A`, `attrs(of, dir, specs)` (`_key`,
+  `~partial`, `{multi}`, `/derived`, `[name, [children]]`), `L(rel, ent,
+  '(min,max)', {side, off, ax, lx, ly})` and `S` (specialization circle).
+  (min, max) labels sit next to the entity they describe. Check a layout by
+  screenshotting `erSVG(dbp.DIAGRAMS[name]())`.
+- Relations: `{n, a: '*Pk Attr …', fk: ['A, B → REL'], u, step, note}`.
+- `localStorage` key `dbpractice:v1` (`ex` checks/notes/open sections, `q`
+  quiz results, `theme`). Test hook: `window.dbp` (`open(id)`,
+  `startQuiz(tag)`, `pick`, `checkMs`, `next`, `quiz`, `state`, `BANK`,
+  `DIAGRAMS`).
+
 ## Landing page
 
 `build_apps_index.py` finds every `aiapps/*/index.html` and lists it using
@@ -393,6 +417,9 @@ Keys: Space, ←/→, R.
 
 Newest first. Add one line per change.
 
+- 2026-10-07: Added DB Design Practice (`aiapps/db-design-practice/`): the
+  assigned Elmasri & Navathe exercises with worked (min, max) ER/EER diagrams,
+  relational mappings, self-checks and a 74-question drill.
 - 2026-10-06: Added the Algorithms Quiz (`aiapps/algorithms-quiz/`): CSE 5311
   midterm practice from the lecture slides, with T/F, single- and multi-answer
   questions, explanations, drawn trees, spaced review and saved progress.

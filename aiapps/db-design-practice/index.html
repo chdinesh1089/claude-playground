@@ -1,0 +1,1318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Database design practice for the assigned Elmasri &amp; Navathe 6e exercises (7.16, 7.17, 7.19, 7.22, 7.23, 8.17, 8.18, 3.13–3.15): worked ER/EER diagrams with (min, max), relational mappings, self-check rubrics and a quiz.">
+<title>DB Design Practice</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --raised: #ffffff; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+  --border: rgba(11,11,11,.12); --accent: #2a78d6; --accent-ink: #ffffff; --accent-soft: rgba(42,120,214,.10);
+  --good: #1f8a4c; --good-soft: rgba(31,138,76,.12); --bad: #c8382e; --bad-soft: rgba(200,56,46,.10);
+  --warn: #b7791f; --track: rgba(11,11,11,.08);
+  --er-stroke: #3d3c39; --er-e: #e4eefb; --er-r: #fbeedd; --er-a: #ffffff; --er-s: #ffffff; --er-mm: #b23a2f; --er-line: #6d6c67;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --raised: #222220; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+    --border: rgba(255,255,255,.12); --accent: #3987e5; --accent-ink: #ffffff; --accent-soft: rgba(57,135,229,.16);
+    --good: #3fb871; --good-soft: rgba(63,184,113,.15); --bad: #ef6a5f; --bad-soft: rgba(239,106,95,.14);
+    --warn: #e0a440; --track: rgba(255,255,255,.10);
+    --er-stroke: #c9c8be; --er-e: #1d2c40; --er-r: #3a2d1b; --er-a: #1f1f1d; --er-s: #1f1f1d; --er-mm: #ff8a7d; --er-line: #8f8e86;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d; --surface: #1a1a19; --raised: #222220; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+  --border: rgba(255,255,255,.12); --accent: #3987e5; --accent-ink: #ffffff; --accent-soft: rgba(57,135,229,.16);
+  --good: #3fb871; --good-soft: rgba(63,184,113,.15); --bad: #ef6a5f; --bad-soft: rgba(239,106,95,.14);
+  --warn: #e0a440; --track: rgba(255,255,255,.10);
+  --er-stroke: #c9c8be; --er-e: #1d2c40; --er-r: #3a2d1b; --er-a: #1f1f1d; --er-s: #1f1f1d; --er-mm: #ff8a7d; --er-line: #8f8e86;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 820px; margin: 0 auto; padding: 20px 16px 64px; }
+a { color: var(--accent); }
+button { font: inherit; color: inherit; }
+code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; }
+code { background: var(--track); padding: .05em .35em; border-radius: 5px; overflow-wrap: anywhere; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.top { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; min-height: 36px; }
+.top .grow { flex: 1; min-width: 0; }
+.back { font-size: 14px; font-weight: 600; text-decoration: none; background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0; }
+.back:hover { text-decoration: underline; }
+.icon { width: 36px; height: 36px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); cursor: pointer; display: grid; place-items: center; flex: none; }
+.icon svg { width: 18px; height: 18px; }
+h1 { font-size: 24px; line-height: 1.25; margin: 0 0 4px; }
+h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2); margin: 28px 0 10px; }
+h3 { font-size: 17px; margin: 0; }
+.sub { color: var(--ink-2); margin: 0; }
+.small { font-size: 13px; color: var(--muted); }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.ex { text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; cursor: pointer; display: flex; flex-direction: column; gap: 2px; }
+.ex:hover { border-color: var(--accent); }
+.ex .n { font-weight: 700; font-variant-numeric: tabular-nums; }
+.ex .t { font-weight: 600; }
+.ex .m { font-size: 12px; color: var(--muted); }
+.ex.done { border-color: var(--good); }
+.bar { height: 6px; border-radius: 3px; background: var(--track); margin-top: 6px; overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--good); }
+.modes { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+.mode { text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; cursor: pointer; }
+.mode:hover:not(:disabled) { border-color: var(--accent); }
+.mode:disabled { opacity: .5; cursor: default; }
+.mode b { display: block; }
+.mode span { font-size: 13px; color: var(--ink-2); }
+.mode.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.mode.primary span { color: inherit; opacity: .9; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.btn { border: 1px solid var(--border); background: var(--surface); border-radius: 10px; padding: 8px 14px; cursor: pointer; font-weight: 600; font-size: 14px; }
+.btn:hover:not(:disabled) { border-color: var(--accent); }
+.btn:disabled { opacity: .45; cursor: default; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn.ghost { background: none; border-color: transparent; color: var(--ink-2); }
+.btn.sm { padding: 4px 10px; font-size: 13px; }
+.chip { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 999px; background: var(--track); color: var(--ink-2); }
+.chip.kind { background: var(--accent-soft); color: var(--accent); }
+/* exercise page */
+.prompt { font-size: 15.5px; }
+.prompt p { margin: 0 0 8px; }
+.prompt ul, .prompt ol, .ans ul, .ans ol { margin: 6px 0 10px; padding-left: 22px; }
+.prompt li, .ans li { margin: 3px 0; }
+.howto { border-left: 3px solid var(--accent); padding: 8px 12px; background: var(--accent-soft); border-radius: 0 10px 10px 0; font-size: 14.5px; margin: 14px 0 0; }
+textarea { width: 100%; min-height: 110px; font: 14px/1.5 ui-monospace, Menlo, Consolas, monospace; color: var(--ink); background: var(--raised); border: 1px solid var(--border); border-radius: 10px; padding: 10px; resize: vertical; }
+details.sec { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); margin-bottom: 10px; }
+details.sec > summary { cursor: pointer; padding: 12px 14px; font-weight: 700; list-style: none; display: flex; align-items: center; gap: 10px; }
+details.sec > summary::-webkit-details-marker { display: none; }
+details.sec > summary::before { content: '▸'; color: var(--muted); transition: transform .15s; }
+details.sec[open] > summary::before { transform: rotate(90deg); }
+details.sec > summary .grow { flex: 1; }
+details.sec > summary .small { font-weight: 400; }
+.ans { padding: 0 14px 14px; font-size: 15px; }
+.ans p { margin: 8px 0; }
+.ans h4 { margin: 14px 0 4px; font-size: 14px; text-transform: uppercase; letter-spacing: .05em; color: var(--ink-2); }
+.tbl { width: 100%; border-collapse: collapse; font-size: 14px; margin: 6px 0; }
+.tbl th, .tbl td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.tbl th { font-size: 12px; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; }
+.tbl td.mm { font-family: ui-monospace, Menlo, monospace; font-weight: 700; color: var(--er-mm); white-space: nowrap; }
+.scroll { overflow-x: auto; }
+.dia { position: relative; overflow: auto; background: var(--raised); border: 1px solid var(--border); border-radius: 12px; margin: 8px 0; -webkit-overflow-scrolling: touch; }
+.dia svg { display: block; width: 100%; height: auto; }
+.dia.zoom svg { width: auto; }
+.dia-bar { display: flex; gap: 8px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+svg.er text { font: 12px system-ui, -apple-system, "Segoe UI", sans-serif; fill: var(--ink); text-anchor: middle; dominant-baseline: central; }
+svg.er .lbl { font-weight: 600; }
+svg.er .ln { stroke: var(--er-line); stroke-width: 1.3; fill: none; }
+svg.er .shape { stroke: var(--er-stroke); stroke-width: 1.4; }
+svg.er .E { fill: var(--er-e); }
+svg.er .R { fill: var(--er-r); }
+svg.er .A { fill: var(--er-a); }
+svg.er .S { fill: var(--er-s); }
+svg.er .noFill { fill: none; }
+svg.er .dash { stroke-dasharray: 4 3; }
+svg.er .ul { stroke: var(--ink); stroke-width: 1; }
+svg.er .mm { font: 700 12px ui-monospace, Menlo, monospace; fill: var(--er-mm); }
+svg.er .role { font-style: italic; font-size: 11px; fill: var(--ink-2); }
+svg.er .note { text-anchor: start; font-size: 12px; fill: var(--ink-2); }
+svg.er .defattr { font-style: italic; fill: var(--ink-2); }
+.legend { font-size: 12.5px; color: var(--muted); margin: 4px 0 0; }
+.rels { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; margin: 8px 0; }
+.rel { min-width: 0; }
+details.sec, .card { min-width: 0; max-width: 100%; }
+.rel .rn { font-weight: 700; font-size: 14px; letter-spacing: .02em; }
+.rel .rn .step { font-weight: 500; font-size: 12px; color: var(--muted); margin-left: 8px; }
+.rel table { border-collapse: collapse; margin: 3px 0; }
+.rel td { border: 1px solid var(--er-stroke); padding: 4px 9px; font-size: 13.5px; white-space: nowrap; background: var(--raised); }
+.rel td.pk { text-decoration: underline; text-underline-offset: 3px; font-weight: 600; }
+.rel td.fk { font-style: italic; color: var(--accent); }
+.rel .fks { font-size: 13px; color: var(--ink-2); }
+.rel .fks code { font-size: 12px; }
+.check { display: flex; gap: 10px; align-items: flex-start; padding: 6px 0; cursor: pointer; font-size: 15px; }
+.check input { width: 18px; height: 18px; margin: 3px 0 0; accent-color: var(--good); flex: none; }
+.check:has(input:checked) span { color: var(--ink-2); text-decoration: line-through; text-decoration-color: var(--muted); }
+.pill-good { color: var(--good); font-weight: 700; }
+/* quiz */
+.progress { height: 4px; background: var(--track); border-radius: 2px; margin: 10px 0 16px; overflow: hidden; }
+.progress i { display: block; height: 100%; background: var(--accent); transition: width .25s; }
+.q { font-size: 18.5px; line-height: 1.5; margin: 14px 0 6px; outline: none; }
+.hint { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+.opts { display: grid; gap: 10px; margin-top: 8px; }
+.opts.tf { grid-template-columns: 1fr 1fr; }
+.opt { display: flex; align-items: flex-start; gap: 12px; width: 100%; text-align: left; background: var(--raised); border: 1.5px solid var(--border); border-radius: 12px; padding: 12px 14px; cursor: pointer; min-height: 48px; }
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; }
+.opt .k { flex: none; width: 26px; height: 26px; border-radius: 7px; display: grid; place-items: center; font-size: 13px; font-weight: 700; background: var(--track); color: var(--ink-2); margin-top: 1px; }
+.opt .tx { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.opt .mark { flex: none; font-weight: 700; font-size: 13px; margin-top: 3px; }
+.opts.tf .opt { justify-content: center; align-items: center; font-weight: 600; font-size: 17px; }
+.opts.tf .opt .tx { flex: none; }
+.opt.sel { border-color: var(--accent); background: var(--accent-soft); }
+.opt.sel .k { background: var(--accent); color: var(--accent-ink); }
+.opt.right { border-color: var(--good); background: var(--good-soft); }
+.opt.right .k { background: var(--good); color: #fff; }
+.opt.right .mark { color: var(--good); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.opt.wrong .k { background: var(--bad); color: #fff; }
+.opt.wrong .mark { color: var(--bad); }
+.opt.missed { border-color: var(--good); border-style: dashed; }
+.opt.missed .mark { color: var(--good); }
+.feedback { margin-top: 16px; border-radius: 12px; padding: 14px 16px; border: 1px solid var(--border); background: var(--surface); }
+.feedback.ok { border-color: var(--good); }
+.feedback.no { border-color: var(--bad); }
+.feedback .verdict { font-weight: 700; margin-bottom: 4px; }
+.feedback.ok .verdict { color: var(--good); }
+.feedback.no .verdict { color: var(--bad); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 16px; }
+.actions .grow { flex: 1; }
+.score { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.score b { font-size: 44px; line-height: 1; font-variant-numeric: tabular-nums; }
+details.rev { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); margin-bottom: 8px; }
+details.rev summary { cursor: pointer; padding: 10px 14px; display: flex; gap: 10px; align-items: baseline; list-style: none; }
+details.rev summary::-webkit-details-marker { display: none; }
+details.rev summary .m { flex: none; font-weight: 700; width: 18px; }
+details.rev summary .m.ok { color: var(--good); }
+details.rev summary .m.no { color: var(--bad); }
+details.rev .body { padding: 0 14px 14px 42px; font-size: 15px; }
+details.rev .body p { margin: 6px 0; }
+kbd { font: 600 11px ui-monospace, Menlo, monospace; border: 1px solid var(--border); border-bottom-width: 2px; border-radius: 5px; padding: 0 5px; background: var(--surface); color: var(--ink-2); }
+footer { margin-top: 36px; font-size: 13px; color: var(--muted); }
+footer p { margin: 6px 0; }
+@media (max-width: 560px) {
+  h1 { font-size: 21px; }
+  .q { font-size: 17px; }
+  details.rev .body { padding-left: 14px; }
+  .ans { padding: 0 10px 12px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<main id="app" aria-live="polite"></main>
+<script>
+'use strict';
+// ---------- helpers ----------
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const fmt = s => esc(s).replace(/`([^`]+)`/g, '<code>$1</code>').replace(/\n/g, '<br>');
+const ul = items => '<ul>' + items.map(i => `<li>${i}</li>`).join('') + '</ul>';
+const pct = (a, b) => b ? Math.round(100 * a / b) : 0;
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function load(k, d) { try { const v = JSON.parse(localStorage.getItem(k)); return v && typeof v === 'object' ? v : d; } catch { return d; } }
+function save(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+
+// ---------- ER / EER diagram renderer ----------
+// Chen notation as in Elmasri & Navathe: rectangles (double = weak), diamonds (double = identifying),
+// ovals (underlined = key, dashed underline = partial key, double = multivalued, dashed = derived).
+// (min, max) sits on the line next to the entity it describes: each entity takes part in min..max instances.
+const measure = (() => {
+  const c = document.createElement('canvas').getContext('2d');
+  return (s, bold) => { c.font = `${bold ? 600 : 400} 12px system-ui, -apple-system, "Segoe UI", sans-serif`; return c.measureText(s).width; };
+})();
+function parseAttr(s) {
+  const a = { key: false, pkey: false, multi: false, derived: false };
+  for (;;) {
+    if (s[0] === '_') { a.key = true; s = s.slice(1); }
+    else if (s[0] === '~') { a.pkey = true; s = s.slice(1); }
+    else if (s[0] === '/') { a.derived = true; s = s.slice(1); }
+    else if (s[0] === '{') { a.multi = true; s = s.slice(1, -1); }
+    else break;
+  }
+  a.label = s;
+  return a;
+}
+function dims(o) {
+  const w = measure(o.label, o.t !== 'A');
+  if (o.t === 'E') return [Math.max(w / 2 + 14, 44), 17];
+  if (o.t === 'R') return [w / 2 * 1.42 + 12, 27];
+  if (o.t === 'S') return [12, 12];
+  return [w / 2 + 12 + (o.multi ? 3 : 0), 13 + (o.multi ? 2 : 0)];
+}
+function ER(w, h) {
+  const d = { w, h, nodes: [], by: {}, links: [], notes: [] };
+  let k = 0;
+  const add = o => { [o.hw, o.hh] = dims(o); d.nodes.push(o); d.by[o.id] = o; return o.id; };
+  d.E = (id, x, y, o = {}) => (add({ t: 'E', id, x, y, label: o.label || id, weak: !!o.weak }), d);
+  d.R = (id, x, y, o = {}) => (add({ t: 'R', id, x, y, label: o.label || id, ident: !!o.ident }), d);
+  d.A = (of, spec, x, y) => add({ ...parseAttr(spec), t: 'A', id: 'a' + k++, of, x, y });
+  // Place a row (n/s) or column (e/w) of attributes next to `of`. A spec can be [name, [children], childDir].
+  d.attrs = (of, dir, specs, o = {}) => {
+    const p = d.by[of], gap = o.gap ?? 8;
+    const items = specs.map(s => Array.isArray(s) ? { spec: s[0], kids: s[1], kdir: s[2] } : { spec: s });
+    for (const it of items) it.hw = dims({ ...parseAttr(it.spec), t: 'A' })[0];
+    if (dir === 'n' || dir === 's') {
+      const total = items.reduce((t, it) => t + 2 * it.hw, 0) + gap * (items.length - 1);
+      let x = p.x - total / 2 + (o.dx || 0);
+      const y = p.y + (dir === 'n' ? -1 : 1) * (p.hh + (o.d ?? 30) + 13);
+      for (const it of items) { it.id = d.A(of, it.spec, x + it.hw, y); x += 2 * it.hw + gap; }
+    } else {
+      const step = o.step ?? 31;
+      let y = p.y - (items.length - 1) * step / 2 + (o.dy || 0);
+      for (const it of items) { it.id = d.A(of, it.spec, p.x + (dir === 'e' ? 1 : -1) * (p.hw + (o.d ?? 26) + it.hw), y); y += step; }
+    }
+    for (const it of items) if (it.kids) d.attrs(it.id, it.kdir || dir, it.kids, { d: o.kd ?? 18, gap: 6, step: 29 });
+    return d;
+  };
+  // relationship–entity line with its (min, max); o: { role, side (+1/-1 which side of the line), off }
+  d.L = (r, e, mm, o = {}) => (d.links.push({ r, e, mm, ...o }), d);
+  // specialization circle: kind 'd' | 'o'; o.total → double line to the superclass; o.attr → defining attribute
+  d.S = (id, x, y, kind, sup, subs, o = {}) => {
+    add({ t: 'S', id, x, y, label: kind });
+    d.links.push({ spec: true, sup, c: id, total: !!o.total, attr: o.attr });
+    for (const s of subs) d.links.push({ sub: true, c: id, e: s });
+    return d;
+  };
+  d.note = (x, y, text) => (d.notes.push({ x, y, text }), d);
+  return d;
+}
+function edgeDist(o, ux, uy) {
+  if (o.t === 'E') return Math.min(o.hw / Math.max(Math.abs(ux), 1e-6), o.hh / Math.max(Math.abs(uy), 1e-6));
+  if (o.t === 'R') return 1 / (Math.abs(ux) / o.hw + Math.abs(uy) / o.hh);
+  if (o.t === 'S') return 12;
+  return 1 / Math.hypot(ux / o.hw, uy / o.hh);
+}
+function erSVG(d, label) {
+  const f = n => Math.round(n * 10) / 10;
+  let lines = '', shapes = '', texts = '';
+  const seg = (a, b, dbl) => {
+    if (!dbl) return `<line class="ln" x1="${f(a.x)}" y1="${f(a.y)}" x2="${f(b.x)}" y2="${f(b.y)}"/>`;
+    const L = Math.hypot(b.x - a.x, b.y - a.y) || 1, nx = -(b.y - a.y) / L * 2.2, ny = (b.x - a.x) / L * 2.2;
+    return `<line class="ln" x1="${f(a.x + nx)}" y1="${f(a.y + ny)}" x2="${f(b.x + nx)}" y2="${f(b.y + ny)}"/><line class="ln" x1="${f(a.x - nx)}" y1="${f(a.y - ny)}" x2="${f(b.x - nx)}" y2="${f(b.y - ny)}"/>`;
+  };
+  for (const n of d.nodes) if (n.t === 'A') lines += seg(n, d.by[n.of]);
+  for (const L of d.links) {
+    if (L.spec) {
+      const s = d.by[L.sup], c = d.by[L.c];
+      lines += seg(s, c, L.total);
+      if (L.attr) texts += `<text class="defattr" x="${f((s.x + c.x) / 2 + 10)}" y="${f((s.y + c.y) / 2)}" style="text-anchor:start">${esc(L.attr)}</text>`;
+    } else if (L.sub) {
+      const c = d.by[L.c], e = d.by[L.e];
+      lines += seg(c, e);
+      const len = Math.hypot(e.x - c.x, e.y - c.y), ux = (e.x - c.x) / len, uy = (e.y - c.y) / len, px = -uy, py = ux;
+      const mx = c.x + ux * len * 0.45, my = c.y + uy * len * 0.45;
+      // subset symbol: a cup opening toward the superclass
+      lines += `<path class="ln" style="stroke-width:1.6" d="M${f(mx + px * 7 - ux * 5)},${f(my + py * 7 - uy * 5)} Q${f(mx + ux * 9)},${f(my + uy * 9)} ${f(mx - px * 7 - ux * 5)},${f(my - py * 7 - uy * 5)}"/>`;
+    } else {
+      const r = d.by[L.r], e0 = d.by[L.e], e = { ...e0, x: e0.x + (L.ax || 0), y: e0.y + (L.ay || 0) };
+      lines += seg(r, e, L.dbl);
+      const dx = r.x - e.x, dy = r.y - e.y, len = Math.hypot(dx, dy), ux = dx / len, uy = dy / len;
+      const t = edgeDist(e, ux, uy) + (L.off ?? 16), side = L.side ?? 1;
+      const tx = L.lx ?? e.x + ux * t - uy * 13 * side, ty = L.ly ?? e.y + uy * t + ux * 13 * side;
+      texts += `<text class="mm" x="${f(tx)}" y="${f(ty)}">${esc(L.mm)}</text>`;
+      if (L.role) {
+        const t2 = edgeDist(e, ux, uy) + (L.roff ?? 16);
+        texts += `<text class="role" x="${f(e.x + ux * t2 + uy * 14 * side)}" y="${f(e.y + uy * t2 - ux * 14 * side)}">${esc(L.role)}</text>`;
+      }
+    }
+  }
+  for (const n of d.nodes) {
+    const x = f(n.x), y = f(n.y);
+    if (n.t === 'E') {
+      shapes += `<rect class="shape E" x="${f(n.x - n.hw)}" y="${f(n.y - n.hh)}" width="${f(2 * n.hw)}" height="${f(2 * n.hh)}"/>`;
+      if (n.weak) shapes += `<rect class="shape noFill" x="${f(n.x - n.hw + 4)}" y="${f(n.y - n.hh + 4)}" width="${f(2 * n.hw - 8)}" height="${f(2 * n.hh - 8)}"/>`;
+      texts += `<text class="lbl" x="${x}" y="${y}">${esc(n.label)}</text>`;
+    } else if (n.t === 'R') {
+      const dm = (a, b) => `${f(n.x - a)},${y} ${x},${f(n.y - b)} ${f(n.x + a)},${y} ${x},${f(n.y + b)}`;
+      shapes += `<polygon class="shape R" points="${dm(n.hw, n.hh)}"/>`;
+      if (n.ident) shapes += `<polygon class="shape noFill" points="${dm(n.hw - 8, n.hh - 5)}"/>`;
+      texts += `<text class="lbl" x="${x}" y="${y}">${esc(n.label)}</text>`;
+    } else if (n.t === 'S') {
+      shapes += `<circle class="shape S" cx="${x}" cy="${y}" r="12"/>`;
+      texts += `<text class="lbl" x="${x}" y="${f(n.y - 1)}">${esc(n.label)}</text>`;
+    } else {
+      shapes += `<ellipse class="shape A${n.derived ? ' dash' : ''}" cx="${x}" cy="${y}" rx="${f(n.hw)}" ry="${f(n.hh)}"/>`;
+      if (n.multi) shapes += `<ellipse class="shape noFill" cx="${x}" cy="${y}" rx="${f(n.hw - 3.5)}" ry="${f(n.hh - 3.5)}"/>`;
+      texts += `<text x="${x}" y="${y}">${esc(n.label)}</text>`;
+      if (n.key || n.pkey) {
+        const tw = measure(n.label) / 2;
+        texts += `<line class="ul${n.pkey ? ' dash' : ''}" x1="${f(n.x - tw)}" y1="${f(n.y + 7.5)}" x2="${f(n.x + tw)}" y2="${f(n.y + 7.5)}"/>`;
+      }
+    }
+  }
+  for (const nt of d.notes) texts += `<text class="note" x="${nt.x}" y="${nt.y}">${nt.text.split('\n').map((l, i) => `<tspan x="${nt.x}" dy="${i ? 16 : 0}">${esc(l)}</tspan>`).join('')}</text>`;
+  return `<svg class="er" viewBox="0 0 ${d.w} ${d.h}" width="${d.w}" height="${d.h}" role="img" aria-label="${esc(label)}">${lines}${shapes}${texts}</svg>`;
+}
+const LEGEND = 'Rectangle = entity (double = weak) · diamond = relationship (double = identifying) · oval = attribute (underlined = key, dashed underline = partial key, double = multivalued, dashed = derived). <b style="color:var(--er-mm)">(min, max)</b> is written next to the entity it describes: each entity of that type takes part in at least min and at most max instances of the relationship.';
+
+// ---------- relational schema renderer ----------
+// { n: 'NAME', a: '*Pk1 *Pk2 Attr …', fk: ['A, B → OTHER(X, Y)'], u: 'text', step: 'Step 1', note }
+function relHTML(rels) {
+  return '<div class="rels">' + rels.map(r => {
+    const fkAttrs = new Set((r.fk || []).flatMap(s => s.split('→')[0].split(',').map(x => x.trim())));
+    const cells = r.a.split(/\s+/).map(a => {
+      const pk = a[0] === '*', name = pk ? a.slice(1) : a;
+      return `<td class="${pk ? 'pk' : ''}${fkAttrs.has(name) ? ' fk' : ''}">${esc(name)}</td>`;
+    }).join('');
+    const extra = [...(r.fk || []).map(s => `FK <code>${esc(s)}</code>`), ...(r.u ? [esc(r.u)] : []), ...(r.note ? [r.note] : [])];
+    return `<div class="rel"><div class="rn">${esc(r.n)}${r.step ? `<span class="step">${esc(r.step)}</span>` : ''}</div>
+      <div class="scroll"><table><tr>${cells}</tr></table></div>${extra.length ? `<div class="fks">${extra.join(' · ')}</div>` : ''}</div>`;
+  }).join('') + '</div><p class="legend">Underlined = primary key. <span style="color:var(--accent);font-style:italic">Blue italic</span> = foreign key.</p>';
+}
+function mmTable(rows) {
+  return `<div class="scroll"><table class="tbl"><tr><th>Relationship</th><th>Entity</th><th>(min, max)</th><th>Why</th></tr>${rows.map(r =>
+    `<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td class="mm">${esc(r[2])}</td><td>${r[3]}</td></tr>`).join('')}</table></div>`;
+}
+
+// ---------- diagrams ----------
+const DIAGRAMS = {
+  university() {
+    const d = ER(1080, 740)
+      .E('STUDENT', 250, 400).E('DEPARTMENT', 830, 170)
+      .R('MAJOR', 540, 170).R('MINOR', 540, 300)
+      .R('OFFERS', 830, 335).E('COURSE', 830, 480)
+      .R('SECTION_OF', 830, 630, { ident: true }).E('SECTION', 560, 630, { weak: true })
+      .R('GRADE_REPORT', 250, 630);
+    d.attrs('DEPARTMENT', 'n', ['_Dname', '_Dcode', 'Office_no', 'Office_phone', 'College']);
+    d.attrs('COURSE', 'e', ['_Course_no', 'Cname', 'Description', 'Credit_hours', 'Level'], { step: 30 });
+    d.attrs('SECTION', 's', ['~Sec_no', '~Semester', '~Year', 'Instructor'], { d: 22 });
+    d.attrs('GRADE_REPORT', 's', ['Letter_grade', 'Numeric_grade'], { d: 14 });
+    d.attrs('STUDENT', 'w', ['Bdate', 'Sex', 'Class', 'Degree_program', 'Current_address', 'Current_phone', 'Permanent_phone'], { step: 30, d: 30, dy: 50 });
+    d.attrs('STUDENT', 'n', ['_Student_no', '_Ssn', ['Name', ['Fname', 'Minit', 'Lname']]], { dx: -50, d: 50 });
+    const pa = d.A('STUDENT', 'Permanent_address', 420, 470);
+    d.attrs(pa, 'e', ['Street', 'City', 'State', 'Zip'], { d: 18, step: 27, dy: 10 });
+    d.L('MAJOR', 'STUDENT', '(1,1)', { side: -1 }).L('MAJOR', 'DEPARTMENT', '(0,N)')
+      .L('MINOR', 'STUDENT', '(0,1)').L('MINOR', 'DEPARTMENT', '(0,N)', { side: -1 })
+      .L('OFFERS', 'DEPARTMENT', '(0,N)', { side: -1 }).L('OFFERS', 'COURSE', '(1,1)', { side: -1 })
+      .L('SECTION_OF', 'COURSE', '(0,N)', { side: -1 }).L('SECTION_OF', 'SECTION', '(1,1)')
+      .L('GRADE_REPORT', 'STUDENT', '(0,N)', { side: -1 }).L('GRADE_REPORT', 'SECTION', '(0,N)', { side: -1 });
+    return d;
+  },
+  airline() {
+    const d = ER(1270, 1110)
+      .E('AIRPORT', 190, 250).R('DEPARTURE_AIRPORT', 520, 150).R('ARRIVAL_AIRPORT', 520, 345)
+      .E('FLIGHT_LEG', 860, 250, { weak: true }).R('LEGS', 1070, 250, { ident: true }).E('FLIGHT', 1070, 420)
+      .R('FARES', 1070, 580, { ident: true }).E('FARE', 1070, 740, { weak: true })
+      .R('CAN_LAND', 190, 420).E('AIRPLANE_TYPE', 190, 580).R('TYPE', 190, 735).E('AIRPLANE', 190, 885)
+      .R('ASSIGNED', 470, 885).E('LEG_INSTANCE', 790, 885, { weak: true }).R('INSTANCE_OF', 840, 560, { ident: true })
+      .R('DEPARTS', 420, 610).R('ARRIVES', 600, 690)
+      .R('RESERVATION', 790, 1035, { ident: true }).E('SEAT', 470, 1035, { weak: true });
+    d.attrs('AIRPORT', 'n', ['_Airport_code', 'City', 'State', 'Name']);
+    d.attrs('DEPARTURE_AIRPORT', 'n', ['Scheduled_dep_time'], { d: 16 });
+    d.attrs('ARRIVAL_AIRPORT', 's', ['Scheduled_arr_time'], { d: 16 });
+    d.attrs('FLIGHT_LEG', 'n', ['~Leg_no']);
+    d.attrs('FLIGHT', 'w', ['_Number', 'Airline', 'Weekdays'], { d: 22 });
+    d.attrs('FARE', 'w', ['~Code', 'Amount', 'Restrictions'], { d: 22 });
+    d.attrs('AIRPLANE_TYPE', 'w', ['_Type_name', 'Max_seats', 'Company'], { d: 18 });
+    d.attrs('AIRPLANE', 's', ['_Airplane_id', 'Total_no_of_seats'], { d: 22, dx: 30 });
+    d.attrs('LEG_INSTANCE', 'e', ['~Date', 'No_of_avail_seats'], { d: 22 });
+    d.attrs('DEPARTS', 'w', ['Dep_time'], { d: 12 });
+    d.attrs('ARRIVES', 'e', ['Arr_time'], { d: 12 });
+    d.attrs('RESERVATION', 'e', ['Customer_name', 'Cphone'], { d: 16 });
+    d.attrs('SEAT', 'w', ['~Seat_no'], { d: 20 });
+    d.L('DEPARTURE_AIRPORT', 'AIRPORT', '(0,N)', { side: -1 }).L('DEPARTURE_AIRPORT', 'FLIGHT_LEG', '(1,1)')
+      .L('ARRIVAL_AIRPORT', 'AIRPORT', '(0,N)').L('ARRIVAL_AIRPORT', 'FLIGHT_LEG', '(1,1)', { side: -1 })
+      .L('LEGS', 'FLIGHT_LEG', '(1,1)', { side: -1 }).L('LEGS', 'FLIGHT', '(1,N)', { side: -1 })
+      .L('FARES', 'FLIGHT', '(0,N)', { side: -1 }).L('FARES', 'FARE', '(1,1)', { side: -1 })
+      .L('CAN_LAND', 'AIRPORT', '(0,N)', { side: -1 }).L('CAN_LAND', 'AIRPLANE_TYPE', '(0,N)', { side: -1 })
+      .L('TYPE', 'AIRPLANE_TYPE', '(0,N)', { side: -1 }).L('TYPE', 'AIRPLANE', '(1,1)', { side: -1 })
+      .L('ASSIGNED', 'AIRPLANE', '(0,N)', { side: -1 }).L('ASSIGNED', 'LEG_INSTANCE', '(1,1)', { side: -1 })
+      .L('INSTANCE_OF', 'FLIGHT_LEG', '(0,N)').L('INSTANCE_OF', 'LEG_INSTANCE', '(1,1)', { ax: 30, lx: 852, ly: 848 })
+      .L('DEPARTS', 'AIRPORT', '(0,N)', { side: 1, off: 70, ax: 10 }).L('DEPARTS', 'LEG_INSTANCE', '(1,1)', { ax: -50, lx: 706, ly: 850 })
+      .L('ARRIVES', 'AIRPORT', '(0,N)', { side: -1, off: 120, ax: 30 }).L('ARRIVES', 'LEG_INSTANCE', '(1,1)', { ax: -18, lx: 792, ly: 848 })
+      .L('RESERVATION', 'LEG_INSTANCE', '(0,N)', { side: -1 }).L('RESERVATION', 'SEAT', '(1,1)');
+    d.note(560, 1078, 'A LEG is a nonstop portion of a flight; a LEG_INSTANCE\nis that leg flown on one particular date.');
+    return d;
+  },
+  league() {
+    const d = ER(1060, 660)
+      .E('TEAM', 200, 175).R('HOME_TEAM', 500, 110).R('AWAY_TEAM', 500, 245).E('GAME', 800, 175)
+      .R('PLAYS_FOR', 200, 345).E('PLAYER', 200, 500).R('PLAYED_IN', 800, 500);
+    d.attrs('TEAM', 'n', ['_Team_name', 'City', 'Coach']);
+    d.attrs('GAME', 'e', ['_Game_id', 'Date', 'Time', 'Venue', 'Home_goals', 'Away_goals', '/Result'], { step: 30 });
+    d.attrs('PLAYER', 's', ['_Player_id', ['Name', ['Fname', 'Lname']], 'Bdate', 'Shirt_no'], { d: 26 });
+    d.attrs('PLAYED_IN', 's', ['Position', 'Minutes_played'], { d: 16 });
+    d.L('HOME_TEAM', 'TEAM', '(0,N)', { side: -1 }).L('HOME_TEAM', 'GAME', '(1,1)')
+      .L('AWAY_TEAM', 'TEAM', '(0,N)').L('AWAY_TEAM', 'GAME', '(1,1)', { side: -1 })
+      .L('PLAYS_FOR', 'TEAM', '(11,N)', { side: -1 }).L('PLAYS_FOR', 'PLAYER', '(1,1)', { side: -1 })
+      .L('PLAYED_IN', 'PLAYER', '(0,N)', { side: -1 }).L('PLAYED_IN', 'GAME', '(22,32)', { side: -1 });
+    return d;
+  },
+  nested() {
+    const d = ER(800, 420).E('STUDENT', 80, 200);
+    const pc = d.A('STUDENT', '{Previous_college}', 270, 200);
+    d.A(pc, 'College_name', 470, 40); d.A(pc, 'Start_date', 470, 82); d.A(pc, 'End_date', 470, 124);
+    const dg = d.A(pc, '{Degree}', 470, 200);
+    d.attrs(dg, 'e', ['Degree_name', 'Month', 'Year'], { d: 30, step: 30, dy: -12 });
+    const tr = d.A(pc, '{Transcript}', 470, 330);
+    d.attrs(tr, 'e', ['Course_name', 'Semester', 'Year', 'Grade'], { d: 30, step: 30, dy: 12 });
+    return d;
+  },
+  nestedAlt() {
+    const d = ER(960, 500)
+      .E('STUDENT', 100, 130).R('ATTENDED', 300, 130, { ident: true }).E('COLLEGE_ATTENDED', 560, 130, { weak: true })
+      .R('EARNED', 330, 290, { ident: true }).E('DEGREE', 330, 400, { weak: true })
+      .R('COMPLETED', 720, 290, { ident: true }).E('TRANSCRIPT_ENTRY', 720, 400, { weak: true });
+    d.attrs('STUDENT', 'n', ['_Ssn', 'Name'], { d: 22 });
+    d.attrs('COLLEGE_ATTENDED', 'n', ['~College_name', '~Start_date', 'End_date'], { d: 22 });
+    d.attrs('DEGREE', 's', ['~Degree_name', 'Month', 'Year'], { d: 22 });
+    d.attrs('TRANSCRIPT_ENTRY', 's', ['~Course_name', '~Semester', '~Year', 'Grade'], { d: 22 });
+    d.L('ATTENDED', 'STUDENT', '(0,N)').L('ATTENDED', 'COLLEGE_ATTENDED', '(1,1)', { side: -1 })
+      .L('EARNED', 'COLLEGE_ATTENDED', '(0,N)', { side: -1 }).L('EARNED', 'DEGREE', '(1,1)', { side: -1 })
+      .L('COMPLETED', 'COLLEGE_ATTENDED', '(0,N)').L('COMPLETED', 'TRANSCRIPT_ENTRY', '(1,1)', { side: -1 });
+    return d;
+  },
+  bank() {
+    const d = ER(880, 820)
+      .E('BANK', 130, 120).R('BRANCHES', 390, 120, { ident: true }).E('BANK_BRANCH', 680, 120, { weak: true })
+      .R('ACCTS', 430, 280).R('LOANS', 680, 280)
+      .E('ACCOUNT', 430, 440).E('LOAN', 680, 440)
+      .R('A_C', 430, 590).R('L_C', 680, 590).E('CUSTOMER', 430, 740);
+    d.attrs('BANK', 's', ['_Code', 'Name', 'Addr'], { d: 24 });
+    d.attrs('BANK_BRANCH', 'n', ['Addr', '~Branch_no'], { d: 24 });
+    d.attrs('ACCOUNT', 'w', ['_Acct_no', 'Balance', 'Type']);
+    d.attrs('LOAN', 'e', ['_Loan_no', 'Amount', 'Type']);
+    d.attrs('CUSTOMER', 'w', ['_Ssn', 'Name', 'Phone', 'Addr'], { step: 29 });
+    d.L('BRANCHES', 'BANK', '(1,N)').L('BRANCHES', 'BANK_BRANCH', '(1,1)')
+      .L('ACCTS', 'BANK_BRANCH', '(0,N)', { side: 1 }).L('ACCTS', 'ACCOUNT', '(1,1)', { side: -1 })
+      .L('LOANS', 'BANK_BRANCH', '(0,N)', { side: -1 }).L('LOANS', 'LOAN', '(1,1)')
+      .L('A_C', 'ACCOUNT', '(1,N)', { side: -1 }).L('A_C', 'CUSTOMER', '(0,N)', { side: -1 })
+      .L('L_C', 'LOAN', '(1,N)').L('L_C', 'CUSTOMER', '(0,N)', { side: -1, off: 40 });
+    return d;
+  },
+  bankEER() {
+    const d = ER(1290, 740)
+      .E('BANK', 130, 110).R('BRANCHES', 390, 110, { ident: true }).E('BANK_BRANCH', 640, 110, { weak: true })
+      .R('ACCTS', 380, 245).R('LOANS', 900, 245)
+      .E('ACCOUNT', 380, 375).R('A_C', 520, 375).E('CUSTOMER', 640, 375).R('L_C', 760, 375).E('LOAN', 900, 375)
+      .R('HAS_TRANS', 205, 375, { ident: true }).E('TRANSACTION', 150, 530, { weak: true })
+      .R('MAKES', 1075, 375, { ident: true }).E('PAYMENT', 1150, 530, { weak: true })
+      .E('SAVINGS_ACCT', 330, 625).E('CHECKING_ACCT', 490, 625)
+      .E('CAR_LOAN', 810, 625).E('HOME_LOAN', 970, 625);
+    d.S('accS', 380, 480, 'd', 'ACCOUNT', ['SAVINGS_ACCT', 'CHECKING_ACCT'], { total: true, attr: 'Acct_type' });
+    d.S('loanS', 900, 480, 'd', 'LOAN', ['CAR_LOAN', 'HOME_LOAN'], { total: true, attr: 'Loan_type' });
+    d.attrs('BANK', 's', ['_Code', 'Name', 'Addr'], { d: 22 });
+    d.attrs('BANK_BRANCH', 'n', ['Addr', '~Branch_no'], { d: 18 });
+    d.A('ACCOUNT', '_Acct_no', 270, 300); d.A('ACCOUNT', 'Balance', 470, 305); d.A('ACCOUNT', 'Acct_type', 300, 445);
+    d.A('LOAN', '_Loan_no', 1000, 300); d.A('LOAN', 'Amount', 800, 305); d.A('LOAN', 'Loan_type', 990, 445);
+    d.attrs('CUSTOMER', 's', ['_Ssn', 'Name', 'Phone', 'Addr'], { d: 22 });
+    d.attrs('TRANSACTION', 's', ['~Trans_no', 'Amount', 'Date'], { d: 20 });
+    d.attrs('TRANSACTION', 's', ['Time', 'Trans_type'], { d: 54 });
+    d.attrs('PAYMENT', 's', ['~Payment_no', 'Amount'], { d: 20 });
+    d.attrs('PAYMENT', 's', ['Date', 'Time'], { d: 54 });
+    d.attrs('SAVINGS_ACCT', 's', ['Interest_rate'], { d: 20 });
+    d.attrs('CHECKING_ACCT', 's', ['Overdraft_limit'], { d: 20 });
+    d.attrs('CAR_LOAN', 's', ['Vehicle_vin'], { d: 20 });
+    d.attrs('HOME_LOAN', 's', ['Property_addr'], { d: 20 });
+    d.L('BRANCHES', 'BANK', '(1,N)').L('BRANCHES', 'BANK_BRANCH', '(1,1)')
+      .L('ACCTS', 'BANK_BRANCH', '(0,N)', { side: -1, off: 30 }).L('ACCTS', 'ACCOUNT', '(1,1)', { side: -1 })
+      .L('LOANS', 'BANK_BRANCH', '(0,N)', { off: 40 }).L('LOANS', 'LOAN', '(1,1)')
+      .L('A_C', 'ACCOUNT', '(1,N)', { side: -1, off: 6 }).L('A_C', 'CUSTOMER', '(0,N)', { off: 6 })
+      .L('L_C', 'LOAN', '(1,N)', { off: 6 }).L('L_C', 'CUSTOMER', '(0,N)', { side: -1, off: 6 })
+      .L('HAS_TRANS', 'ACCOUNT', '(0,N)', { off: 4 }).L('HAS_TRANS', 'TRANSACTION', '(1,1)', { side: 1 })
+      .L('MAKES', 'LOAN', '(0,N)', { side: -1, off: 4 }).L('MAKES', 'PAYMENT', '(1,1)', { side: -1 });
+    return d;
+  },
+  olympics() {
+    const d = ER(1290, 860)
+      .E('FACILITY_TYPE', 160, 160).R('OF_TYPE', 160, 330).E('COMPLEX', 470, 330)
+      .R('HOLDS', 760, 330).E('EVENT', 1010, 330)
+      .E('ONE_SPORT', 350, 560).E('MULTISPORT', 560, 560)
+      .R('OFFICIATES', 1010, 500).E('OFFICIAL', 1010, 660)
+      .R('NEEDS', 880, 560).E('EQUIPMENT', 860, 760).R('MAINTAINS', 730, 600);
+    d.S('cS', 470, 450, 'd', 'COMPLEX', ['ONE_SPORT', 'MULTISPORT'], { total: true });
+    d.attrs('FACILITY_TYPE', 'n', ['_Type_name', 'Num_needed', 'Approx_budget'], { d: 22, dx: 40 });
+    d.attrs('COMPLEX', 'n', ['_Complex_id', 'Location', 'Chief_organizer', 'Total_area'], { d: 30 });
+    d.attrs('ONE_SPORT', 's', ['Sport'], { d: 20 });
+    d.attrs('MULTISPORT', 's', [['{Sport_area}', ['Sport', 'Location_indicator']]], { d: 20, kd: 16 });
+    d.attrs('EVENT', 'n', ['_Event_id', 'Name', 'Planned_date', 'Duration'], { d: 30, dx: 20 });
+    d.attrs('EVENT', 'e', ['Num_participants', 'Num_officials'], { d: 22 });
+    d.attrs('OFFICIAL', 'e', ['_Official_id', 'Name', 'Phone'], { d: 22 });
+    d.attrs('EQUIPMENT', 's', ['_Equip_id', 'Description'], { d: 20 });
+    d.attrs('NEEDS', 'e', ['Quantity'], { d: 12 });
+    d.attrs('MAINTAINS', 's', ['Quantity'], { d: 12 });
+    d.L('OF_TYPE', 'FACILITY_TYPE', '(0,N)').L('OF_TYPE', 'COMPLEX', '(1,1)')
+      .L('HOLDS', 'COMPLEX', '(1,N)').L('HOLDS', 'EVENT', '(1,1)')
+      .L('OFFICIATES', 'EVENT', '(1,N)', { side: -1 }).L('OFFICIATES', 'OFFICIAL', '(0,N)', { side: -1 })
+      .L('NEEDS', 'EVENT', '(0,N)', { off: 50 }).L('NEEDS', 'EQUIPMENT', '(0,N)', { lx: 894, ly: 722 })
+      .L('MAINTAINS', 'COMPLEX', '(0,N)', { side: -1, off: 90 }).L('MAINTAINS', 'EQUIPMENT', '(0,N)', { lx: 790, ly: 742 });
+    return d;
+  },
+};
+</script>
+<script>
+'use strict';
+// ---------- exercises ----------
+// Prompts are paraphrased from Elmasri & Navathe, Fundamentals of Database Systems, 6th ed.
+// Every answer below is original. Sections: { h, html } or { h, diagram, html } or { h, rels, html }.
+const EXERCISES = [
+{
+  id: '7.16', ch: 7, kind: 'ER + mapping', title: 'University transcripts',
+  prompt: `<p>Design an ER schema for a <b>UNIVERSITY</b> database that keeps students' transcripts. Give keys and structural constraints, and state your assumptions.</p>
+  ${ul([
+    '<b>Student:</b> name, student number, SSN, current address and phone, permanent address and phone, birth date, sex, class (freshman … graduate), major department, minor department (if any), degree program (B.A. … Ph.D.). Some applications need the city, state and ZIP of the permanent address, and the last name. SSN and student number are each unique.',
+    '<b>Department:</b> name, code, office number, office phone, college. Name and code are each unique.',
+    '<b>Course:</b> name, description, number (unique), semester hours, level, offering department.',
+    '<b>Section:</b> instructor, semester, year, course, section number. The section number tells apart sections of the same course in the same semester/year (1, 2, 3, …).',
+    '<b>Grade report:</b> student, section, letter grade, numeric grade (0–4).',
+  ])}`,
+  hints: [
+    'Which attributes must be <b>composite</b>? The requirement says some applications use the city/state/ZIP and the last name.',
+    '"Major department" and "minor department" are references to another entity type, so they become relationships, not attributes.',
+    'A section number is only unique for one course in one semester and year. What kind of entity type has a key that is only unique relative to its owner?',
+    'A grade report links a student and a section and carries two grades. That is an M:N relationship with attributes.',
+  ],
+  sections: [
+    { h: 'Assumptions', html: ul([
+      'Every student has exactly one major (declared). The minor is optional.',
+      'Instructor is kept as a simple attribute of SECTION (the requirements list it as a property of a section). If more instructor data were needed, it would become an INSTRUCTOR entity type with a 1:N TEACHES relationship.',
+      'A department may exist with no students or courses yet; a course may have no sections yet.',
+      'A grade report exists only once a student is enrolled in a section, so the student–section pairing is the GRADE_REPORT relationship itself.',
+    ]) },
+    { h: 'ER diagram with (min, max)', diagram: 'university', html: mmTable([
+      ['MAJOR', 'STUDENT', '(1,1)', 'Every student has exactly one major.'],
+      ['MAJOR', 'DEPARTMENT', '(0,N)', 'A department can be the major of many students, or none.'],
+      ['MINOR', 'STUDENT', '(0,1)', '"Minor department (if any)".'],
+      ['MINOR', 'DEPARTMENT', '(0,N)', ''],
+      ['OFFERS', 'DEPARTMENT', '(0,N)', 'A department offers many courses.'],
+      ['OFFERS', 'COURSE', '(1,1)', 'Each course has exactly one offering department.'],
+      ['SECTION_OF', 'COURSE', '(0,N)', 'A course can have many sections over time (or none yet).'],
+      ['SECTION_OF', 'SECTION', '(1,1)', 'Identifying relationship: a weak entity always has (1,1).'],
+      ['GRADE_REPORT', 'STUDENT', '(0,N)', 'A student has a grade in many sections.'],
+      ['GRADE_REPORT', 'SECTION', '(0,N)', 'A section has many graded students.'],
+    ]) + `<p><b>Keys.</b> STUDENT has two keys (Student_no and Ssn), DEPARTMENT has two (Dname and Dcode). SECTION is <b>weak</b>: its partial key is (Sec_no, Semester, Year), so a section is identified by Course_no + Sec_no + Semester + Year.</p>
+      <p><b>Composite attributes.</b> Name(Fname, Minit, Lname) and Permanent_address(Street, City, State, Zip), because applications use the parts.</p>` },
+    { h: 'Relational mapping', rels: [
+      { n: 'DEPARTMENT', step: 'Step 1', a: '*Dcode Dname Office_no Office_phone College', u: 'UNIQUE(Dname)' },
+      { n: 'STUDENT', step: 'Steps 1 + 4', a: '*Student_no Ssn Fname Minit Lname Bdate Sex Class Degree_program Cur_address Cur_phone Perm_street Perm_city Perm_state Perm_zip Perm_phone Major_dcode Minor_dcode',
+        fk: ['Major_dcode → DEPARTMENT(Dcode)', 'Minor_dcode → DEPARTMENT(Dcode)'], u: 'UNIQUE(Ssn); Major_dcode NOT NULL; Minor_dcode may be NULL' },
+      { n: 'COURSE', step: 'Steps 1 + 4', a: '*Course_no Cname Description Credit_hours Level Dcode', fk: ['Dcode → DEPARTMENT(Dcode)'], u: 'Dcode NOT NULL' },
+      { n: 'SECTION', step: 'Step 2 (weak)', a: '*Course_no *Semester *Year *Sec_no Instructor', fk: ['Course_no → COURSE(Course_no)'] },
+      { n: 'GRADE_REPORT', step: 'Step 5 (M:N)', a: '*Student_no *Course_no *Semester *Year *Sec_no Letter_grade Numeric_grade',
+        fk: ['Student_no → STUDENT(Student_no)', 'Course_no, Semester, Year, Sec_no → SECTION'] },
+    ], html: `<p><b>How each piece was mapped.</b></p>${ul([
+      'Composite attributes keep only their simple components (Fname, Minit, Lname; Perm_street … Perm_zip).',
+      'STUDENT has two keys: pick one as the primary key (Student_no) and declare the other UNIQUE.',
+      'MAJOR and MINOR are N:1, so each becomes a foreign key on the N side (STUDENT). MAJOR is total, so its FK is NOT NULL.',
+      'SECTION is weak: its primary key is the owner\'s key plus the partial key.',
+      'GRADE_REPORT is M:N: a new relation whose key combines both sides\' keys, with the relationship attributes. The FK to SECTION is the whole 4-attribute key.',
+    ])}` },
+  ],
+  check: [
+    'STUDENT has both Student_no and Ssn marked as keys.',
+    'Name and permanent address are composite.',
+    'Major and minor are relationships to DEPARTMENT, with (1,1) and (0,1) on the STUDENT side.',
+    'SECTION is a weak entity owned by COURSE with partial key (Sec_no, Semester, Year).',
+    'Grades are attributes of an M:N relationship between STUDENT and SECTION, not of STUDENT.',
+    'Every (min, max) is written next to the entity it describes.',
+    'Mapping: SECTION\'s PK includes Course_no; GRADE_REPORT has a 5-attribute PK and a 4-attribute FK to SECTION.',
+  ],
+},
+{
+  id: '7.19', ch: 7, kind: 'ER + mapping', title: 'Airline reservations',
+  prompt: `<p>Figure 7.20 in the book is an ER diagram for an <b>AIRLINE</b> reservation system: airports, flights split into legs, leg instances (a leg on one date), fares, airplane types and the airports they can land at, airplanes, and seat reservations.</p>
+  <p><b>Book question:</b> extract from the diagram the requirements and constraints that produced it, as precisely as possible. <b>Your assignment:</b> redraw it with (min, max) constraints, then map it to relations.</p>`,
+  hints: [
+    'There are four weak entity types: FLIGHT_LEG, LEG_INSTANCE, FARE and SEAT. Find each one\'s owner and partial key.',
+    'LEG_INSTANCE is weak with respect to FLIGHT_LEG, which is itself weak with respect to FLIGHT, so its full key has three parts.',
+    'CAN_LAND is the only M:N relationship.',
+    'Converting 1:N to (min, max): the "1" side entity gets (?,N); the "N" side entity gets (?,1). A double line means min ≥ 1.',
+  ],
+  sections: [
+    { h: 'Requirements read from the diagram (book question)', html: ul([
+      'Each <b>airport</b> has a unique code, a name, a city and a state.',
+      'Each <b>flight</b> has a unique number, an airline, and the weekdays on which it operates.',
+      'A flight is made of one or more numbered <b>legs</b> (nonstop segments). The leg number is unique only within its flight.',
+      'Each leg departs from exactly one airport at a scheduled departure time, and arrives at exactly one airport at a scheduled arrival time. An airport can serve many legs.',
+      'Each time a leg is flown on a date, that is a <b>leg instance</b>, identified by the date within the leg. It records the number of available seats, the airplane assigned (exactly one), and the actual departure and arrival airports and times.',
+      'Each flight has a set of <b>fares</b>. A fare code is unique within its flight; each fare has an amount and restrictions.',
+      'Each <b>airplane type</b> has a unique name, a maximum number of seats and a manufacturer. A type can land at many airports and an airport can handle many types.',
+      'Each <b>airplane</b> has a unique id, a total number of seats and exactly one type.',
+      'For each leg instance, <b>seats</b> are reserved by seat number (unique within that leg instance); a reservation stores the customer\'s name and phone.',
+    ]) + `<p><b>Constraints the diagram cannot show</b> (good to mention): the assigned airplane's type must be able to land at both airports; reservations can't exceed the airplane's seats; No_of_avail_seats = seats − reservations (derived); leg <i>i</i> arrives where leg <i>i</i>+1 departs.</p>` },
+    { h: 'ER diagram with (min, max)', diagram: 'airline', html: mmTable([
+      ['DEPARTURE_AIRPORT', 'FLIGHT_LEG', '(1,1)', 'Total participation: each leg departs from exactly one airport.'],
+      ['DEPARTURE_AIRPORT', 'AIRPORT', '(0,N)', 'An airport may have many departing legs, or none.'],
+      ['ARRIVAL_AIRPORT', 'FLIGHT_LEG / AIRPORT', '(1,1) / (0,N)', 'Same reasoning for arrivals.'],
+      ['LEGS', 'FLIGHT_LEG / FLIGHT', '(1,1) / (1,N)', 'Identifying. A flight has at least one leg. (The book draws FLIGHT\'s line single; (0,N) is the literal reading. Say which you use.)'],
+      ['INSTANCE_OF', 'LEG_INSTANCE / FLIGHT_LEG', '(1,1) / (0,N)', 'Identifying. A leg may not have been flown yet.'],
+      ['FARES', 'FARE / FLIGHT', '(1,1) / (0,N)', 'Identifying.'],
+      ['CAN_LAND', 'AIRPLANE_TYPE / AIRPORT', '(0,N) / (0,N)', 'M:N, both partial.'],
+      ['TYPE', 'AIRPLANE / AIRPLANE_TYPE', '(1,1) / (0,N)', 'Every airplane has exactly one type.'],
+      ['ASSIGNED', 'LEG_INSTANCE / AIRPLANE', '(1,1) / (0,N)', 'Every leg instance has exactly one airplane.'],
+      ['DEPARTS, ARRIVES', 'LEG_INSTANCE / AIRPORT', '(1,1) / (0,N)', 'Actual airports (can differ from the scheduled ones, e.g. a diversion).'],
+      ['RESERVATION', 'SEAT / LEG_INSTANCE', '(1,1) / (0,N)', 'Identifying. A seat entity exists only as a reservation on one leg instance.'],
+    ]) },
+    { h: 'Relational mapping', rels: [
+      { n: 'AIRPORT', step: 'Step 1', a: '*Airport_code Name City State' },
+      { n: 'FLIGHT', step: 'Step 1', a: '*Flight_number Airline Weekdays', note: 'Weekdays is one value such as "MTWRF". If you draw it as multivalued, Step 6 gives FLIGHT_WEEKDAY(<u>Flight_number, Weekday</u>).' },
+      { n: 'FLIGHT_LEG', step: 'Steps 2 + 4', a: '*Flight_number *Leg_number Departure_airport_code Scheduled_departure_time Arrival_airport_code Scheduled_arrival_time',
+        fk: ['Flight_number → FLIGHT', 'Departure_airport_code → AIRPORT', 'Arrival_airport_code → AIRPORT'] },
+      { n: 'LEG_INSTANCE', step: 'Steps 2 + 4', a: '*Flight_number *Leg_number *Date Number_of_available_seats Airplane_id Departure_airport_code Departure_time Arrival_airport_code Arrival_time',
+        fk: ['Flight_number, Leg_number → FLIGHT_LEG', 'Airplane_id → AIRPLANE', 'Departure_airport_code → AIRPORT', 'Arrival_airport_code → AIRPORT'] },
+      { n: 'FARE', step: 'Step 2', a: '*Flight_number *Fare_code Amount Restrictions', fk: ['Flight_number → FLIGHT'] },
+      { n: 'AIRPLANE_TYPE', step: 'Step 1', a: '*Airplane_type_name Max_seats Company' },
+      { n: 'CAN_LAND', step: 'Step 5 (M:N)', a: '*Airplane_type_name *Airport_code', fk: ['Airplane_type_name → AIRPLANE_TYPE', 'Airport_code → AIRPORT'] },
+      { n: 'AIRPLANE', step: 'Steps 1 + 4', a: '*Airplane_id Total_number_of_seats Airplane_type', fk: ['Airplane_type → AIRPLANE_TYPE'] },
+      { n: 'SEAT_RESERVATION', step: 'Step 2', a: '*Flight_number *Leg_number *Date *Seat_number Customer_name Customer_phone', fk: ['Flight_number, Leg_number, Date → LEG_INSTANCE'] },
+    ], html: `<p>This is exactly the book's AIRLINE schema (Figure 3.8), which is a good self-check. Notes:</p>${ul([
+      'Every 1:N relationship (DEPARTURE_AIRPORT, ARRIVAL_AIRPORT, TYPE, ASSIGNED, DEPARTS, ARRIVES) became a foreign key on the N side, and its attribute (e.g. Scheduled_departure_time) moved with it.',
+      'Weak entities nest: LEG_INSTANCE\'s key is FLIGHT_LEG\'s key (Flight_number, Leg_number) plus Date, and SEAT_RESERVATION adds Seat_number to that.',
+      'The identifying relationship RESERVATION has attributes; they go into the weak entity\'s relation.',
+      'Only CAN_LAND (M:N) needs its own relation. Total: 9 relations.',
+    ])}` },
+  ],
+  check: [
+    'Four weak entities (FLIGHT_LEG, LEG_INSTANCE, FARE, SEAT) each with (1,1) in their identifying relationship.',
+    'Every N-side entity in a 1:N relationship got (x,1); every 1-side got (x,N).',
+    'CAN_LAND is (0,N) on both sides.',
+    'LEG_INSTANCE\'s PK is (Flight_number, Leg_number, Date).',
+    'SEAT_RESERVATION\'s PK is 4 attributes, with a 3-attribute FK to LEG_INSTANCE.',
+    'You can list the requirements in words (the actual 7.19 question).',
+  ],
+},
+{
+  id: '7.22', ch: 7, kind: 'ER + mapping', title: 'Sports league',
+  prompt: `<p>Design an ER schema for a <b>sports league</b>. A team has many players, not all of whom play in every game. Track which players took part in each game for each team, the positions they played in that game, and the game's result. Pick a sport and state your assumptions.</p>`,
+  hints: [
+    'The position depends on both the player <i>and</i> the game. Where does an attribute like that belong?',
+    'A game is between exactly two teams. One clean way is two 1:N relationships (HOME and AWAY).',
+    'The result can be stored as scores and the winner derived.',
+    'Use the (min, max) numbers to say real things about the sport, e.g. a soccer game has at least 22 players.',
+  ],
+  sections: [
+    { h: 'Assumptions (soccer)', html: ul([
+      'A player is on exactly one team at a time (no mid-season transfers are recorded).',
+      'Each game has one home team and one away team, which must differ.',
+      'Each side starts 11 players and may use up to 5 substitutes, so 22 to 32 players appear in a game.',
+      'A player plays one position per game. If players can switch, make Position multivalued.',
+      'The result is stored as Home_goals and Away_goals; Result (win/draw/loss) is derived.',
+      'A team needs at least 11 players to be in the league.',
+    ]) },
+    { h: 'ER diagram with (min, max)', diagram: 'league', html: mmTable([
+      ['PLAYS_FOR', 'PLAYER', '(1,1)', 'Each player is on exactly one team.'],
+      ['PLAYS_FOR', 'TEAM', '(11,N)', 'A team needs at least 11 players.'],
+      ['HOME_TEAM', 'GAME', '(1,1)', 'Each game has exactly one home team.'],
+      ['HOME_TEAM', 'TEAM', '(0,N)', 'A team hosts many games.'],
+      ['AWAY_TEAM', 'GAME / TEAM', '(1,1) / (0,N)', 'Same for the visitors.'],
+      ['PLAYED_IN', 'PLAYER', '(0,N)', 'A player may sit out every game.'],
+      ['PLAYED_IN', 'GAME', '(22,32)', '11 starters per side, up to 5 subs per side.'],
+    ]) + `<p><b>Why Position is on PLAYED_IN:</b> it is a fact about a (player, game) pair. On PLAYER it would allow only one position for a whole career.</p>
+      <p><b>Not expressible in ER:</b> a player in PLAYED_IN must belong to the home or away team of that game, and home ≠ away. State these as extra constraints.</p>` },
+    { h: 'Relational mapping', rels: [
+      { n: 'TEAM', step: 'Step 1', a: '*Team_name City Coach' },
+      { n: 'PLAYER', step: 'Steps 1 + 4', a: '*Player_id Fname Lname Bdate Shirt_no Team_name', fk: ['Team_name → TEAM'], u: 'Team_name NOT NULL' },
+      { n: 'GAME', step: 'Steps 1 + 4', a: '*Game_id Date Time Venue Home_goals Away_goals Home_team Away_team', fk: ['Home_team → TEAM', 'Away_team → TEAM'], u: 'CHECK(Home_team <> Away_team); Result is derived, not stored' },
+      { n: 'PLAYED_IN', step: 'Step 5 (M:N)', a: '*Player_id *Game_id Position Minutes_played', fk: ['Player_id → PLAYER', 'Game_id → GAME'] },
+    ], html: `<p>The (22,32) and (11,N) minimums can't be enforced by keys or foreign keys; they need assertions or application checks. If players can move between teams, add Team_name to PLAYED_IN so each appearance records which side the player was on.</p>` },
+  ],
+  check: [
+    'Position (and any per-game stats) are attributes of the PLAYER–GAME relationship.',
+    'Each game is linked to exactly two teams with clear roles.',
+    'The result is stored (scores) or derived, and you said which.',
+    'You stated at least three assumptions.',
+    'Mapping: PLAYED_IN has PK (Player_id, Game_id); GAME has two FKs to TEAM.',
+  ],
+},
+{
+  id: '7.17', ch: 7, kind: 'General', title: 'Nested attribute: previous colleges',
+  prompt: `<p>Design one <b>attribute</b> of STUDENT that records previous college education. It has one entry per college attended. Each entry has the college name, start and end dates, degree entries (degrees earned there, if any) and transcript entries (courses completed there, if any). A degree entry has the degree name and the month and year awarded. A transcript entry has the course name, semester, year and grade. Use the book's notation: <code>{ }</code> for multivalued, <code>( )</code> for composite.</p>`,
+  hints: [
+    '"One entry per college" means the outer attribute is multivalued, and each entry has parts, so it is also composite.',
+    '"Degree entries" and "transcript entries" are lists inside each entry: multivalued again.',
+  ],
+  sections: [
+    { h: 'Answer', html: `<p style="font-size:16px"><code>{Previous_college(College_name, Start_date, End_date, {Degree(Degree_name, Month, Year)}, {Transcript(Course_name, Semester, Year, Grade)})}</code></p>
+      ${ul([
+        'Outer braces: a student has any number of previous colleges (multivalued).',
+        'Parentheses: each previous college is composite.',
+        'Inside, Degree and Transcript are themselves multivalued composite attributes.',
+        'Month and Year could also be grouped as a composite Date_awarded(Month, Year).',
+      ])}` },
+    { h: 'Drawn as ovals', diagram: 'nested' },
+    { h: 'Bonus (7.18): the same data with entity types only', diagram: 'nestedAlt', html: `<p>Each multivalued composite becomes a weak entity type. A student could attend the same college twice, so COLLEGE_ATTENDED's partial key is (College_name, Start_date).</p>` },
+    { h: 'Bonus: relational mapping', rels: [
+      { n: 'STUDENT', a: '*Ssn Name' },
+      { n: 'PREV_COLLEGE', step: 'Step 6', a: '*Ssn *College_name *Start_date End_date', fk: ['Ssn → STUDENT'] },
+      { n: 'PREV_DEGREE', step: 'Step 6 (nested)', a: '*Ssn *College_name *Start_date *Degree_name Month Year', fk: ['Ssn, College_name, Start_date → PREV_COLLEGE'] },
+      { n: 'PREV_TRANSCRIPT', step: 'Step 6 (nested)', a: '*Ssn *College_name *Start_date *Course_name *Semester *Year Grade', fk: ['Ssn, College_name, Start_date → PREV_COLLEGE'] },
+    ], html: '<p>Nested multivalued attributes map level by level: each inner relation carries the full key of the relation above it.</p>' },
+  ],
+  check: [
+    'The outer attribute uses { } (multivalued) and ( ) (composite).',
+    'Degree and Transcript are each { } inside the outer entry.',
+    'All 4 transcript components and 3 degree components are present.',
+    'You can explain the difference between { } and ( ).',
+  ],
+},
+{
+  id: '7.23', ch: 7, kind: 'General', title: 'Bank diagram questions',
+  prompt: `<p>Figure 7.21 is part of a <b>BANK</b> database: BANK —BRANCHES (identifying, 1:N)— BANK_BRANCH (weak) —ACCTS (1:N)— ACCOUNT, BANK_BRANCH —LOANS (1:N)— LOAN, ACCOUNT —A_C (M:N)— CUSTOMER, LOAN —L_C (M:N)— CUSTOMER. Double lines: BANK and BANK_BRANCH in BRANCHES; ACCOUNT in ACCTS and A_C; LOAN in LOANS and L_C.</p>
+  <ol type="a">
+    <li>List the strong entity types.</li>
+    <li>Is there a weak entity type? Give its name, partial key and identifying relationship.</li>
+    <li>What constraints do the partial key and identifying relationship express?</li>
+    <li>List every relationship type with the (min, max) of each participation. Justify.</li>
+    <li>List the user requirements that led to this design.</li>
+    <li>Each customer must have at least one account, may have at most two loans, and a branch may have at most 1,000 loans. How does this change the (min, max) constraints?</li>
+  </ol>`,
+  hints: ['A double line means total participation, which means min ≥ 1.', 'For (f), change only the three numbers that the new rules talk about.'],
+  sections: [
+    { h: '(a)–(c)', html: `<p><b>(a)</b> BANK, ACCOUNT, LOAN, CUSTOMER.</p>
+      <p><b>(b)</b> Yes: BANK_BRANCH. Partial key Branch_no. Identifying relationship BRANCHES; owner BANK.</p>
+      <p><b>(c)</b> Branch numbers are unique only <i>within one bank</i>: two banks can both have branch 7, but one bank can't have two branch 7s. A branch is identified by (bank Code, Branch_no). Every branch belongs to exactly one bank and can't exist without it (existence dependency).</p>` },
+    { h: '(d) (min, max) on the diagram', diagram: 'bank', html: mmTable([
+      ['BRANCHES', 'BANK', '(1,N)', 'Double line: every bank has at least one branch.'],
+      ['BRANCHES', 'BANK_BRANCH', '(1,1)', 'Weak entity: exactly one owning bank.'],
+      ['ACCTS', 'BANK_BRANCH', '(0,N)', 'Single line: a branch may have no accounts.'],
+      ['ACCTS', 'ACCOUNT', '(1,1)', 'Double line, N side: each account is at exactly one branch.'],
+      ['LOANS', 'BANK_BRANCH', '(0,N)', 'A branch may have no loans.'],
+      ['LOANS', 'LOAN', '(1,1)', 'Each loan is made at exactly one branch.'],
+      ['A_C', 'ACCOUNT', '(1,N)', 'Double line, M:N: an account has one or more owners (joint accounts).'],
+      ['A_C', 'CUSTOMER', '(0,N)', 'A customer may have no accounts.'],
+      ['L_C', 'LOAN', '(1,N)', 'A loan has one or more borrowers.'],
+      ['L_C', 'CUSTOMER', '(0,N)', 'A customer may have no loans.'],
+    ]) },
+    { h: '(e) User requirements', html: ul([
+      'A bank has a unique code, a name and an address, and has one or more branches.',
+      'A branch has a number, unique within its bank, and an address.',
+      'An account has a unique number, a balance and a type, and is held at one branch.',
+      'A loan has a unique number, an amount and a type, and is made at one branch.',
+      'A customer has a unique SSN, a name, a phone and an address.',
+      'An account is owned by one or more customers; a customer can own any number of accounts.',
+      'A loan is taken by one or more customers; a customer can have any number of loans.',
+    ]) },
+    { h: '(f) New constraints', html: mmTable([
+      ['A_C', 'CUSTOMER', '(1,N)', 'was (0,N): at least one account.'],
+      ['L_C', 'CUSTOMER', '(0,2)', 'was (0,N): at most two loans.'],
+      ['LOANS', 'BANK_BRANCH', '(0,1000)', 'was (0,N): at most 1,000 loans per branch.'],
+    ]) + '<p>Everything else stays the same. Note where each number goes: the limit is about the customer or branch, so it is written next to CUSTOMER or BANK_BRANCH.</p>' },
+    { h: 'Bonus (9.5): relational mapping', rels: [
+      { n: 'BANK', step: 'Step 1', a: '*Code Name Addr' },
+      { n: 'BANK_BRANCH', step: 'Step 2 (weak)', a: '*Bank_code *Branch_no Addr', fk: ['Bank_code → BANK(Code)'] },
+      { n: 'ACCOUNT', step: 'Steps 1 + 4', a: '*Acct_no Balance Type Bank_code Branch_no', fk: ['Bank_code, Branch_no → BANK_BRANCH'] },
+      { n: 'LOAN', step: 'Steps 1 + 4', a: '*Loan_no Amount Type Bank_code Branch_no', fk: ['Bank_code, Branch_no → BANK_BRANCH'] },
+      { n: 'CUSTOMER', step: 'Step 1', a: '*Ssn Name Phone Addr' },
+      { n: 'A_C', step: 'Step 5 (M:N)', a: '*Ssn *Acct_no', fk: ['Ssn → CUSTOMER', 'Acct_no → ACCOUNT'] },
+      { n: 'L_C', step: 'Step 5 (M:N)', a: '*Ssn *Loan_no', fk: ['Ssn → CUSTOMER', 'Loan_no → LOAN'] },
+    ], html: '<p>The FK from ACCOUNT and LOAN to a branch has to be the <b>whole</b> composite key (Bank_code, Branch_no); Branch_no alone is not unique.</p>' },
+  ],
+  check: [
+    'Four strong entities; BANK_BRANCH is the only weak one.',
+    'You explained what "partial key" means for Branch_no.',
+    '10 participations with (min, max), each justified.',
+    'For (f): CUSTOMER (1,N) in A_C, CUSTOMER (0,2) in L_C, BANK_BRANCH (0,1000) in LOANS.',
+  ],
+},
+{
+  id: '8.17', ch: 8, kind: 'EER + mapping', title: 'Bank with account and loan types',
+  prompt: `<p>Start from the BANK schema of Figure 7.21 (exercise 7.23). Now the bank must track <b>types of accounts</b> (savings, checking, …) and <b>types of loans</b> (car, home, …), plus each account's <b>transactions</b> (deposits, withdrawals, checks, …) and each loan's <b>payments</b>, both with amount, date and time. Modify the schema using specialization/generalization and state your assumptions.</p>`,
+  hints: [
+    'Account types become subclasses of ACCOUNT. Decide: disjoint or overlapping? total or partial?',
+    'Give each subclass at least one attribute of its own (otherwise why specialize?).',
+    'A transaction only makes sense for one account. Which kind of entity type depends on another for its identity?',
+    'Transactions and payments share amount, date and time, but that alone isn\'t a reason to generalize them.',
+  ],
+  sections: [
+    { h: 'Assumptions', html: ul([
+      'An account is exactly one kind (savings or checking): <b>disjoint, total</b>, defined by the attribute Acct_type. Same for loans (car or home), defined by Loan_type. If other account kinds exist that need no extra attributes, make the specialization partial.',
+      'Subclass-specific attributes (invented, since the book gives none): savings Interest_rate, checking Overdraft_limit, car loan Vehicle_vin, home loan Property_addr.',
+      'TRANSACTION is a weak entity of ACCOUNT, numbered 1, 2, 3, … per account (partial key Trans_no). Trans_type is deposit / withdrawal / check.',
+      'PAYMENT is a weak entity of LOAN with partial key Payment_no.',
+      'TRANSACTION and PAYMENT are not generalized: they belong to different owners and are used differently.',
+    ]) },
+    { h: 'EER diagram with (min, max)', diagram: 'bankEER', html: `<p>The circle with <b>d</b> means disjoint; the double line from the superclass means total. The ∪ mark on each subclass line is the subset symbol. The defining attribute is written next to the line (predicate-defined subclasses).</p>` + mmTable([
+      ['HAS_TRANS', 'TRANSACTION / ACCOUNT', '(1,1) / (0,N)', 'Identifying; a new account has no transactions yet.'],
+      ['MAKES', 'PAYMENT / LOAN', '(1,1) / (0,N)', 'Identifying.'],
+      ['others', '', 'as in 7.23', 'BRANCHES, ACCTS, LOANS, A_C, L_C are unchanged.'],
+    ]) },
+    { h: 'Relational mapping (option 8A)', rels: [
+      { n: 'BANK', a: '*Code Name Addr' },
+      { n: 'BANK_BRANCH', a: '*Bank_code *Branch_no Addr', fk: ['Bank_code → BANK(Code)'] },
+      { n: 'CUSTOMER', a: '*Ssn Name Phone Addr' },
+      { n: 'ACCOUNT', step: 'superclass', a: '*Acct_no Balance Acct_type Bank_code Branch_no', fk: ['Bank_code, Branch_no → BANK_BRANCH'] },
+      { n: 'SAVINGS_ACCT', step: 'Option 8A', a: '*Acct_no Interest_rate', fk: ['Acct_no → ACCOUNT'] },
+      { n: 'CHECKING_ACCT', step: 'Option 8A', a: '*Acct_no Overdraft_limit', fk: ['Acct_no → ACCOUNT'] },
+      { n: 'LOAN', step: 'superclass', a: '*Loan_no Amount Loan_type Bank_code Branch_no', fk: ['Bank_code, Branch_no → BANK_BRANCH'] },
+      { n: 'CAR_LOAN', step: 'Option 8A', a: '*Loan_no Vehicle_vin', fk: ['Loan_no → LOAN'] },
+      { n: 'HOME_LOAN', step: 'Option 8A', a: '*Loan_no Property_addr', fk: ['Loan_no → LOAN'] },
+      { n: 'TRANSACTION', step: 'Step 2 (weak)', a: '*Acct_no *Trans_no Amount Date Time Trans_type', fk: ['Acct_no → ACCOUNT'] },
+      { n: 'PAYMENT', step: 'Step 2 (weak)', a: '*Loan_no *Payment_no Amount Date Time', fk: ['Loan_no → LOAN'] },
+      { n: 'A_C', a: '*Ssn *Acct_no', fk: ['Ssn → CUSTOMER', 'Acct_no → ACCOUNT'] },
+      { n: 'L_C', a: '*Ssn *Loan_no', fk: ['Ssn → CUSTOMER', 'Loan_no → LOAN'] },
+    ], html: `<p><b>Other valid choices for the specializations</b> (know when each works):</p>${ul([
+      '<b>8A</b> (used above): superclass relation + one relation per subclass with the superclass key. Works for any specialization.',
+      '<b>8B</b>: subclass relations only, each with all inherited attributes. Only for <i>total</i> specializations (preferably disjoint). Here ACCOUNT would disappear, but A_C and ACCTS need something to reference, so 8B is a poor fit.',
+      '<b>8C</b>: one ACCOUNT relation with Acct_type, Interest_rate and Overdraft_limit (NULL when not applicable). For disjoint subclasses.',
+      '<b>8D</b>: one relation with a Boolean flag per subclass. For overlapping subclasses.',
+    ])}` },
+  ],
+  check: [
+    'ACCOUNT and LOAN each have a specialization circle with d/o and total/partial stated.',
+    'Each subclass has at least one specific attribute (or you explained why not).',
+    'TRANSACTION and PAYMENT are weak with identifying relationships and partial keys.',
+    'You named the mapping option (8A–8D) and can say when the others apply.',
+    'The subclass relations\' primary keys are also foreign keys to the superclass relation.',
+  ],
+},
+{
+  id: '8.18', ch: 8, kind: 'EER + mapping', title: 'Olympic facilities',
+  prompt: `<p>Draw an EER diagram for the planned <b>summer Olympics facilities</b> and state assumptions:</p>${ul([
+    'Facilities are divided into sports <b>complexes</b>, which are either <b>one-sport</b> or <b>multisport</b>.',
+    'Multisport complexes have areas designated for each sport, with a location indicator (center, NE corner, …).',
+    'A complex has a location, a chief organizing individual, total occupied area, and so on.',
+    'Each complex holds a series of <b>events</b>. An event has a planned date, duration, number of participants, number of officials, and so on.',
+    'A roster of all <b>officials</b> is kept, with the events each official is involved in.',
+    '<b>Equipment</b> is needed for events and for maintenance.',
+    'The two facility types keep different information. For each type, the number of facilities needed and an approximate budget are kept.',
+  ])}`,
+  hints: [
+    'One-sport vs multisport: a disjoint, total specialization of COMPLEX.',
+    '"Areas designated for each sport with a location indicator" can be several per complex. Multivalued composite attribute, or a weak entity.',
+    '"For each type, the number needed and a budget" is one value per <i>type</i>, not per complex. Where can that live?',
+    'Official ↔ event is M:N. Equipment relates to events and to complexes (maintenance).',
+  ],
+  sections: [
+    { h: 'Assumptions', html: ul([
+      'Every complex is exactly one of ONE_SPORT or MULTISPORT: <b>disjoint, total</b>.',
+      'A one-sport complex records its Sport. A multisport complex records a multivalued composite {Sport_area(Sport, Location_indicator)}.',
+      'The per-type numbers (facilities needed, approximate budget) describe the type, not one complex, so they live in a separate FACILITY_TYPE entity with one row per type. Each complex is OF_TYPE exactly one facility type. The specialization is user-defined (no defining attribute drawn); the FK from OF_TYPE identifies the type.',
+      'Each event is held at exactly one complex, and each complex holds at least one event.',
+      'An official is on the roster even before being assigned to an event, so officials are (0,N). Every event has at least one official.',
+      'Num_officials is the planned count, not derived from OFFICIATES (the roster may be incomplete during planning).',
+      'Equipment is a catalog of items; NEEDS (events) and MAINTAINS (complexes) record the quantity required.',
+    ]) },
+    { h: 'EER diagram with (min, max)', diagram: 'olympics', html: mmTable([
+      ['OF_TYPE', 'COMPLEX', '(1,1)', 'Every complex has one facility type.'],
+      ['OF_TYPE', 'FACILITY_TYPE', '(0,N)', 'Two rows (one-sport, multisport), each with many complexes.'],
+      ['HOLDS', 'COMPLEX', '(1,N)', '"Each complex holds a series of events."'],
+      ['HOLDS', 'EVENT', '(1,1)', 'An event is held at one complex.'],
+      ['OFFICIATES', 'EVENT', '(1,N)', 'Every event needs officials.'],
+      ['OFFICIATES', 'OFFICIAL', '(0,N)', 'Roster members may not be assigned yet.'],
+      ['NEEDS', 'EVENT / EQUIPMENT', '(0,N) / (0,N)', 'M:N with attribute Quantity.'],
+      ['MAINTAINS', 'COMPLEX / EQUIPMENT', '(0,N) / (0,N)', 'Maintenance equipment per complex, with Quantity.'],
+    ]) + '<p>Alternatives a grader should accept: AREA as a weak entity of MULTISPORT; EQUIPMENT specialized (overlapping) into EVENT_EQUIPMENT and MAINTENANCE_EQUIPMENT; Location as a composite attribute.</p>' },
+    { h: 'Relational mapping', rels: [
+      { n: 'FACILITY_TYPE', step: 'Step 1', a: '*Type_name Num_needed Approx_budget' },
+      { n: 'COMPLEX', step: 'Steps 1 + 4', a: '*Complex_id Location Chief_organizer Total_area Type_name', fk: ['Type_name → FACILITY_TYPE'], u: 'Type_name NOT NULL' },
+      { n: 'ONE_SPORT', step: 'Option 8A', a: '*Complex_id Sport', fk: ['Complex_id → COMPLEX'] },
+      { n: 'MULTISPORT', step: 'Option 8A', a: '*Complex_id', fk: ['Complex_id → COMPLEX'] },
+      { n: 'SPORT_AREA', step: 'Step 6 (multivalued)', a: '*Complex_id *Sport Location_indicator', fk: ['Complex_id → MULTISPORT'] },
+      { n: 'EVENT', step: 'Steps 1 + 4', a: '*Event_id Name Planned_date Duration Num_participants Num_officials Complex_id', fk: ['Complex_id → COMPLEX'], u: 'Complex_id NOT NULL' },
+      { n: 'OFFICIAL', step: 'Step 1', a: '*Official_id Name Phone' },
+      { n: 'OFFICIATES', step: 'Step 5 (M:N)', a: '*Official_id *Event_id', fk: ['Official_id → OFFICIAL', 'Event_id → EVENT'] },
+      { n: 'EQUIPMENT', step: 'Step 1', a: '*Equip_id Description' },
+      { n: 'NEEDS', step: 'Step 5 (M:N)', a: '*Event_id *Equip_id Quantity', fk: ['Event_id → EVENT', 'Equip_id → EQUIPMENT'] },
+      { n: 'MAINTAINS', step: 'Step 5 (M:N)', a: '*Complex_id *Equip_id Quantity', fk: ['Complex_id → COMPLEX', 'Equip_id → EQUIPMENT'] },
+    ], html: '<p>With option 8C instead, COMPLEX would get a type attribute and a nullable Sport, and ONE_SPORT/MULTISPORT would disappear (SPORT_AREA would then reference COMPLEX). MULTISPORT keeps a relation in 8A even with no own attributes, because SPORT_AREA must reference only multisport complexes.</p>' },
+  ],
+  check: [
+    'COMPLEX has a disjoint, total specialization into ONE_SPORT and MULTISPORT.',
+    'Sport areas are multivalued composite (or a weak entity) on MULTISPORT, not on COMPLEX.',
+    'The per-type "number needed / budget" is not stored on each complex.',
+    'EVENT–COMPLEX is 1:N; OFFICIAL–EVENT is M:N; equipment relates to both events and complexes.',
+    'Mapping: you named the specialization option and SPORT_AREA has PK (Complex_id, Sport).',
+  ],
+},
+{
+  id: '3.13', ch: 3, kind: 'Relational', title: 'Candidate keys of CLASS',
+  prompt: `<p>The relation <code>CLASS(Course#, Univ_Section#, Instructor_name, Semester, Building_code, Room#, Time_period, Weekdays, Credit_hours)</code> stores classes taught at a university; Univ_Section# values are unique. List the candidate keys you think hold, and for each one state the conditions under which it is valid.</p>`,
+  hints: ['A candidate key must be unique <b>and minimal</b>.', 'Think about what can\'t happen twice at the same time: one instructor in two rooms, two classes in one room.'],
+  sections: [
+    { h: 'Answer', html: `<table class="tbl"><tr><th>Candidate key</th><th>Valid when</th></tr>
+      <tr><td><code>{Univ_Section#}</code></td><td>Always: given as unique across the university.</td></tr>
+      <tr><td><code>{Instructor_name, Semester, Weekdays, Time_period}</code></td><td>An instructor teaches at most one class in a given time slot, and instructor names are unique (otherwise use an instructor id). Breaks if cross-listed sections are taught together in one meeting.</td></tr>
+      <tr><td><code>{Building_code, Room#, Semester, Weekdays, Time_period}</code></td><td>A room holds at most one class at a time, and time slots are standard (Weekdays + Time_period values don't partially overlap). Same cross-listing caveat.</td></tr>
+      </table>
+      <p>All three assume Semester includes the year (e.g. "Fall 2026"); otherwise add a Year attribute to the second and third keys.</p>
+      <h4>Not candidate keys</h4>${ul([
+        '<code>{Course#, Semester}</code>: a course can have several sections in one semester.',
+        '<code>{Course#, Semester, Instructor_name}</code>: one instructor can teach two sections of the same course.',
+        '<code>{Univ_Section#, Course#}</code>: unique, but not minimal. It is a superkey, not a key.',
+      ])}` },
+  ],
+  check: ['At least two candidate keys besides Univ_Section#, each with a stated assumption.', 'You checked minimality.', 'You mentioned the time-overlap or cross-listing caveat.'],
+},
+{
+  id: '3.14', ch: 3, kind: 'Relational', title: 'Order processing: foreign keys',
+  prompt: `<p>An order-processing database: <code>CUSTOMER(Cust#, Cname, City)</code>, <code>ORDER(Order#, Odate, Cust#, Ord_amt)</code>, <code>ORDER_ITEM(Order#, Item#, Qty)</code>, <code>ITEM(Item#, Unit_price)</code>, <code>SHIPMENT(Order#, Warehouse#, Ship_date)</code>, <code>WAREHOUSE(Warehouse#, City)</code>. Ord_amt is the order's total in dollars; Ship_date is when an order (or part of it) ships from a warehouse; an order can ship from several warehouses. Specify the foreign keys and your assumptions. What other constraints can you think of?</p>`,
+  hints: ['First decide every primary key. Then each attribute that refers to another relation\'s primary key is a foreign key.', 'Two City attributes are not a foreign key: they don\'t reference a key.'],
+  sections: [
+    { h: 'Primary keys (assumed)', html: ul([
+      'CUSTOMER(<u>Cust#</u>), ORDER(<u>Order#</u>), ITEM(<u>Item#</u>), WAREHOUSE(<u>Warehouse#</u>).',
+      'ORDER_ITEM(<u>Order#, Item#</u>): an item appears once per order (with a quantity).',
+      'SHIPMENT(<u>Order#, Warehouse#</u>): an order ships at most once from each warehouse. If it can ship several times from the same warehouse, Ship_date must join the key.',
+    ]) },
+    { h: 'Foreign keys', html: `<table class="tbl"><tr><th>Foreign key</th><th>References</th></tr>
+      <tr><td><code>ORDER.Cust#</code></td><td>CUSTOMER.Cust# (NOT NULL: every order has a customer)</td></tr>
+      <tr><td><code>ORDER_ITEM.Order#</code></td><td>ORDER.Order#</td></tr>
+      <tr><td><code>ORDER_ITEM.Item#</code></td><td>ITEM.Item#</td></tr>
+      <tr><td><code>SHIPMENT.Order#</code></td><td>ORDER.Order#</td></tr>
+      <tr><td><code>SHIPMENT.Warehouse#</code></td><td>WAREHOUSE.Warehouse#</td></tr></table>
+      <p>CUSTOMER.City and WAREHOUSE.City are <b>not</b> foreign keys (neither references a key).</p>` },
+    { h: 'Other constraints', html: ul([
+      '<code>Ord_amt = Σ (Qty × Unit_price)</code> over the order\'s items: a semantic constraint (needs an assertion or trigger). Since prices change, the price at order time would really need storing in ORDER_ITEM.',
+      '<code>Qty &gt; 0</code>, <code>Unit_price &gt; 0</code>, <code>Ord_amt ≥ 0</code> (domain constraints).',
+      '<code>Ship_date ≥ Odate</code> for the order.',
+      'Every order has at least one ORDER_ITEM (not expressible with keys or FKs).',
+      'Shipped quantities can\'t exceed ordered quantities (the schema doesn\'t record which items are in each shipment, a weakness worth noting).',
+      'ORDER is a reserved word in SQL; the table would need renaming or quoting.',
+    ]) },
+  ],
+  check: ['Five foreign keys, no City "FK".', 'Composite PKs for ORDER_ITEM and SHIPMENT, with the assumption stated.', 'At least three other constraints, including the Ord_amt rule.'],
+},
+{
+  id: '3.15', ch: 3, kind: 'Relational', title: 'Sales trips: foreign keys',
+  prompt: `<p>A sales office tracks business trips: <code>SALESPERSON(Ssn, Name, Start_year, Dept_no)</code>, <code>TRIP(Ssn, From_city, To_city, Departure_date, Return_date, Trip_id)</code>, <code>EXPENSE(Trip_id, Account#, Amount)</code>. A trip can be charged to one or more accounts. Specify the foreign keys and your assumptions.</p>`,
+  hints: ['"Charged to one or more accounts" tells you EXPENSE\'s primary key.'],
+  sections: [
+    { h: 'Answer', html: `<p><b>Primary keys:</b> SALESPERSON(<u>Ssn</u>), TRIP(<u>Trip_id</u>), EXPENSE(<u>Trip_id, Account#</u>).</p>
+      <table class="tbl"><tr><th>Foreign key</th><th>References</th></tr>
+      <tr><td><code>TRIP.Ssn</code></td><td>SALESPERSON.Ssn (NOT NULL: each trip is made by one salesperson)</td></tr>
+      <tr><td><code>EXPENSE.Trip_id</code></td><td>TRIP.Trip_id (part of EXPENSE's key, so never NULL)</td></tr></table>
+      <h4>Assumptions</h4>${ul([
+        'One EXPENSE row per (trip, account) with the total charged to that account. If a trip can have several charges to one account, add an Expense# to the key.',
+        'Dept_no and Account# would be foreign keys to DEPARTMENT and ACCOUNT relations, but those are not in this schema, so no FK can be declared.',
+        'Return_date ≥ Departure_date; Amount &gt; 0 (semantic/domain constraints).',
+        '(Ssn, Departure_date) could be another candidate key of TRIP if a salesperson never starts two trips on one day.',
+      ])}` },
+  ],
+  check: ['Two foreign keys.', 'EXPENSE has a composite PK (Trip_id, Account#), justified by "one or more accounts".', 'You noted Dept_no and Account# can\'t be FKs here.'],
+},
+];
+const EX = Object.fromEntries(EXERCISES.map(e => [e.id, e]));
+const CHAPTERS = [
+  { ch: 7, t: 'Ch 7 · ER model', ids: ['7.16', '7.19', '7.22', '7.17', '7.23'] },
+  { ch: 8, t: 'Ch 8 · EER model', ids: ['8.17', '8.18'] },
+  { ch: 3, t: 'Ch 3 · Relational model', ids: ['3.13', '3.14', '3.15'] },
+];
+
+// ---------- quiz bank ----------
+// tag: ER | EER | MAP | REL. ex: the exercise the question drills (or null). answer: bool (tf), index (mc), sorted indexes (ms).
+const BANK = [
+{ id: 'er01', tag: 'ER', ex: null, type: 'tf', q: 'In the book\'s (min, max) notation, the pair written on the line between EMPLOYEE and WORKS_FOR says how many WORKS_FOR instances each employee takes part in.', answer: true, explain: 'Yes. (min, max) is attached to the participating entity: each EMPLOYEE takes part in at least min and at most max WORKS_FOR instances. That is why EMPLOYEE gets (1,1) and DEPARTMENT gets (4,N) in Figure 7.15.' },
+{ id: 'er02', tag: 'ER', ex: null, type: 'mc', q: 'DEPARTMENT 1 : N EMPLOYEE through WORKS_FOR, and every employee must work for a department. What (min, max) goes next to EMPLOYEE?', options: ['(1,1)', '(1,N)', '(0,1)', '(0,N)'], answer: 0, explain: 'Each employee works for exactly one department: at least 1 (total participation), at most 1 (the N side of 1:N). The "N" of the ratio ends up as the max next to DEPARTMENT.' },
+{ id: 'er03', tag: 'ER', ex: null, type: 'tf', q: 'When converting a 1:N cardinality ratio to (min, max), the "N" written next to the N-side entity becomes that entity\'s max.', answer: false, explain: 'It flips. In the ratio notation the N is next to EMPLOYEE (many employees per department), but in (min, max) EMPLOYEE gets max 1 (one department per employee) and DEPARTMENT gets max N.' },
+{ id: 'er04', tag: 'ER', ex: null, type: 'mc', q: 'A min of 0 in (min, max) means…', options: ['partial participation', 'total participation', 'the entity is weak', 'the relationship is optional for the other entity'], answer: 0, explain: 'min = 0: an entity may take no part in the relationship (partial). min ≥ 1 means total participation (a double line in the other notation).' },
+{ id: 'er05', tag: 'ER', ex: null, type: 'mc', q: 'Every department has exactly one manager, and an employee manages at most one department. What (min, max) does EMPLOYEE get in MANAGES?', options: ['(0,1)', '(1,1)', '(0,N)', '(1,N)'], answer: 0, explain: 'Most employees manage nothing (min 0) and none manages more than one department (max 1). DEPARTMENT gets (1,1).' },
+{ id: 'er06', tag: 'ER', ex: null, type: 'tf', q: 'A weak entity type always has total participation in its identifying relationship.', answer: true, explain: 'A weak entity can\'t be identified without its owner, so every weak entity is related to an owner: (1,1) on the weak side.' },
+{ id: 'er07', tag: 'ER', ex: null, type: 'tf', q: 'An identifying relationship can be M:N.', answer: false, explain: 'Each weak entity must be identified by exactly one owner, so the owner side has max 1. Identifying relationships are 1:N (or 1:1).' },
+{ id: 'er08', tag: 'ER', ex: null, type: 'mc', q: 'What is a partial key?', options: ['An attribute that identifies a weak entity only among the entities with the same owner', 'A key with some NULL components', 'Any proper subset of a composite key', 'A key that identifies an entity in only some relationships'], answer: 0, explain: 'The partial key (dashed underline) is unique only within one owner. The full identifier is owner key + partial key.' },
+{ id: 'er09', tag: 'ER', ex: null, type: 'mc', q: 'An attribute in a 1:N relationship (e.g. Start_date on WORKS_FOR) can be moved to…', options: ['the entity on the N side', 'the entity on the 1 side', 'either entity', 'neither; it must stay on the relationship'], answer: 0, explain: 'Each N-side entity is in at most one relationship instance, so the value is single-valued for it. On the 1 side it would be multivalued.' },
+{ id: 'er10', tag: 'ER', ex: '7.17', type: 'mc', q: 'In the book\'s attribute notation, `{A(B, C)}` means…', options: ['A is multivalued and composite (each value has parts B and C)', 'A is composite with multivalued parts B and C', 'A is a key made of B and C', 'A is derived from B and C'], answer: 0, explain: 'Braces mark multivalued, parentheses mark composite. {Phone(Area_code, Number)} is a set of phone numbers, each with two parts.' },
+{ id: 'er11', tag: 'ER', ex: '7.17', type: 'mc', q: 'Which attribute design fits 7.17 (previous colleges, each with degrees and transcript entries)?', options: [
+  '{Previous_college(College_name, Start_date, End_date, {Degree(Degree_name, Month, Year)}, {Transcript(Course_name, Semester, Year, Grade)})}',
+  'Previous_college(College_name, Start_date, End_date, Degree(Degree_name, Month, Year), Transcript(Course_name, Semester, Year, Grade))',
+  '{Previous_college}, {Degree}, {Transcript} as three separate multivalued attributes of STUDENT',
+  '{Previous_college(College_name, Start_date, End_date)}, Degree(Degree_name, Month, Year)'],
+  answer: 0, explain: 'One entry per college (outer braces), each entry composite (parentheses), and inside each entry a set of degrees and a set of transcript entries (inner braces). Separate attributes would lose which college a degree came from.' },
+{ id: 'er12', tag: 'ER', ex: '7.23', type: 'ms', q: 'Which entity types in the BANK diagram (Figure 7.21) are strong (not weak)? Select all that apply.', options: ['BANK', 'BANK_BRANCH', 'ACCOUNT', 'LOAN', 'CUSTOMER'], answer: [0, 2, 3, 4], explain: 'Only BANK_BRANCH is weak (double rectangle), identified by BANK through BRANCHES.' },
+{ id: 'er13', tag: 'ER', ex: '7.23', type: 'mc', q: 'BANK_BRANCH\'s partial key and identifying relationship are…', options: ['Branch_no, BRANCHES', 'Addr, BRANCHES', 'Branch_no, ACCTS', 'Code, BRANCHES'], answer: 0, explain: 'Branch_no has the dashed underline; BRANCHES is the double diamond connecting it to its owner BANK.' },
+{ id: 'er14', tag: 'ER', ex: '7.23', type: 'tf', q: 'In the BANK schema, two branches of different banks may have the same Branch_no.', answer: true, explain: 'That\'s what a partial key means: Branch_no is unique only within one bank. A branch is identified by (bank Code, Branch_no).' },
+{ id: 'er15', tag: 'ER', ex: '7.23', type: 'mc', q: 'What (min, max) does ACCOUNT get in A_C (the M:N with CUSTOMER, double line on ACCOUNT\'s side)?', options: ['(1,N)', '(1,1)', '(0,N)', '(0,1)'], answer: 0, explain: 'Double line: every account has at least one customer. M:N: it can have many (joint accounts).' },
+{ id: 'er16', tag: 'ER', ex: '7.23', type: 'mc', q: '7.23(f): a customer may have at most two loans at a time. Which constraint changes, and to what?', options: ['CUSTOMER in L_C becomes (0,2)', 'LOAN in L_C becomes (1,2)', 'LOAN in L_C becomes (0,2)', 'CUSTOMER in A_C becomes (1,2)'], answer: 0, explain: 'The limit is on the customer, so the max next to CUSTOMER changes. Customers can still have no loans, so min stays 0.' },
+{ id: 'er17', tag: 'ER', ex: '7.23', type: 'mc', q: '7.23(f): a bank branch can\'t have more than 1,000 loans. Which constraint changes?', options: ['BANK_BRANCH in LOANS becomes (0,1000)', 'LOAN in LOANS becomes (1,1000)', 'BANK_BRANCH in LOANS becomes (1,1000)', 'BANK in BRANCHES becomes (1,1000)'], answer: 0, explain: 'The limit is on the branch, so it goes next to BANK_BRANCH. A branch may still have no loans, so min stays 0.' },
+{ id: 'er18', tag: 'ER', ex: '7.23', type: 'mc', q: 'What (min, max) does BANK get in BRANCHES (drawn with a double line)?', options: ['(1,N)', '(0,N)', '(1,1)', '(0,1)'], answer: 0, explain: 'Double line: every bank has at least one branch. 1:N: a bank can have many.' },
+{ id: 'er19', tag: 'ER', ex: '7.19', type: 'mc', q: 'In the AIRLINE diagram, which attribute set fully identifies a LEG_INSTANCE?', options: ['(Flight number, Leg_no, Date)', '(Leg_no, Date)', '(Date)', '(Flight number, Date)'], answer: 0, explain: 'LEG_INSTANCE is weak with partial key Date, owned by FLIGHT_LEG, which is weak with partial key Leg_no, owned by FLIGHT. The keys chain.' },
+{ id: 'er20', tag: 'ER', ex: '7.19', type: 'mc', q: 'Which relationship in the AIRLINE diagram is M:N?', options: ['CAN_LAND', 'ASSIGNED', 'DEPARTURE_AIRPORT', 'TYPE'], answer: 0, explain: 'An airplane type can land at many airports and an airport accepts many types. All the others are 1:N.' },
+{ id: 'er21', tag: 'ER', ex: '7.19', type: 'tf', q: 'In the AIRLINE diagram, a SEAT is identified by its Seat_no together with the leg instance it is reserved on.', answer: true, explain: 'SEAT is weak (partial key Seat_no) with identifying relationship RESERVATION to LEG_INSTANCE. Seat 12A on Monday\'s leg and on Tuesday\'s leg are different SEAT entities.' },
+{ id: 'er22', tag: 'ER', ex: '7.19', type: 'mc', q: 'What (min, max) does FLIGHT_LEG get in DEPARTURE_AIRPORT?', options: ['(1,1)', '(0,1)', '(1,N)', '(0,N)'], answer: 0, explain: 'Each leg departs from exactly one airport (N side of 1:N, double line).' },
+{ id: 'er23', tag: 'ER', ex: '7.19', type: 'tf', q: 'LEG_INSTANCE has both DEPARTS/ARRIVES and its FLIGHT_LEG has DEPARTURE_AIRPORT/ARRIVAL_AIRPORT, so one pair is redundant and should be removed.', answer: false, explain: 'They record different facts: the scheduled airports of the leg versus the actual airports of one flight on one date (e.g. after a diversion).' },
+{ id: 'er24', tag: 'ER', ex: '7.16', type: 'mc', q: 'In 7.16, how is SECTION best modeled?', options: ['Weak entity owned by COURSE, partial key (Sec_no, Semester, Year)', 'Strong entity with key Sec_no', 'Multivalued attribute of COURSE', 'M:N relationship between COURSE and INSTRUCTOR'], answer: 0, explain: 'The section number only distinguishes sections of the same course in the same semester and year, so it is a partial key relative to COURSE.' },
+{ id: 'er25', tag: 'ER', ex: '7.16', type: 'tf', q: 'In 7.16, Letter_grade and Numeric_grade should be attributes of the M:N relationship between STUDENT and SECTION.', answer: true, explain: 'A grade belongs to a (student, section) pair. As a STUDENT attribute it would be multivalued and lose the section; as a SECTION attribute it would lose the student.' },
+{ id: 'er26', tag: 'ER', ex: '7.16', type: 'mc', q: 'In 7.16, the minor department is optional. What (min, max) does STUDENT get in MINOR?', options: ['(0,1)', '(1,1)', '(0,N)', '(1,N)'], answer: 0, explain: '"Minor department (if any)": at most one, possibly none.' },
+{ id: 'er27', tag: 'ER', ex: '7.16', type: 'tf', q: 'In 7.16, Name should be a composite attribute because some applications refer to the student\'s last name.', answer: true, explain: 'Make an attribute composite when applications need its parts. The same goes for the permanent address (city, state, ZIP).' },
+{ id: 'er28', tag: 'ER', ex: '7.16', type: 'tf', q: 'An entity type may have more than one key attribute, like STUDENT with both Ssn and Student_no.', answer: true, explain: 'Both are underlined in the ER diagram. In the relational mapping one becomes the primary key and the other is declared UNIQUE.' },
+{ id: 'er29', tag: 'ER', ex: '7.22', type: 'mc', q: 'In 7.22, where should "position played in that game" go?', options: ['An attribute of the PLAYER–GAME relationship', 'An attribute of PLAYER', 'An attribute of GAME', 'An attribute of TEAM'], answer: 0, explain: 'The position depends on both the player and the game, so it belongs on the relationship between them.' },
+{ id: 'er30', tag: 'ER', ex: '7.22', type: 'tf', q: '"A player listed for a game must belong to one of the two teams in that game" can be expressed with (min, max) constraints.', answer: false, explain: '(min, max) only counts participations. This rule compares values across relationships and has to be stated as an extra constraint (an assertion or application check).' },
+{ id: 'er31', tag: 'ER', ex: '7.22', type: 'mc', q: 'Soccer: each side fields 11 starters and up to 5 substitutes. What (min, max) does GAME get in PLAYED_IN?', options: ['(22,32)', '(11,16)', '(2,2)', '(0,N)'], answer: 0, explain: 'Count the players per game: 2 × 11 = 22 at least, 2 × 16 = 32 at most.' },
+{ id: 'er32', tag: 'ER', ex: null, type: 'tf', q: 'A derived attribute (e.g. Age from Bdate) is drawn as a dashed oval.', answer: true, explain: 'Dashed oval = derived, double oval = multivalued, underlined = key, dashed underline = partial key.' },
+
+{ id: 'map01', tag: 'MAP', ex: null, type: 'mc', q: 'Mapping a weak entity type: its relation\'s primary key is…', options: ['the owner\'s primary key plus the partial key', 'the partial key alone', 'a new surrogate id', 'the owner\'s primary key alone'], answer: 0, explain: 'Step 2: include the owner\'s primary key as a foreign key; the PK is that FK combined with the partial key.' },
+{ id: 'map02', tag: 'MAP', ex: null, type: 'mc', q: 'A binary 1:N relationship is usually mapped by…', options: ['adding the 1-side\'s primary key as a foreign key in the N-side relation', 'adding the N-side\'s primary key as a foreign key in the 1-side relation', 'always creating a separate relation', 'merging the two relations'], answer: 0, explain: 'Step 4: each N-side tuple refers to at most one 1-side tuple, so a single FK column on the N side works. Relationship attributes go there too.' },
+{ id: 'map03', tag: 'MAP', ex: null, type: 'mc', q: 'A binary M:N relationship is mapped by…', options: ['a new relation whose PK is both participants\' primary keys combined', 'a foreign key on either side', 'a multivalued attribute', 'a foreign key on both sides'], answer: 0, explain: 'Step 5: an FK column can hold only one value, so M:N needs its own relation, keyed by both FKs, holding the relationship\'s attributes.' },
+{ id: 'map04', tag: 'MAP', ex: null, type: 'mc', q: 'A multivalued attribute A of entity E is mapped to…', options: ['a new relation with E\'s key and A, both forming the PK', 'several columns A1, A2, A3 in E', 'a comma-separated string in E', 'a foreign key in E'], answer: 0, explain: 'Step 6: one row per value, so the PK is (E\'s key, A). If A is composite, include its components.' },
+{ id: 'map05', tag: 'MAP', ex: null, type: 'mc', q: 'A composite attribute Name(Fname, Minit, Lname) maps to…', options: ['the columns Fname, Minit, Lname', 'one column Name', 'a separate relation', 'Name plus the three parts'], answer: 0, explain: 'Only the simple (leaf) components become columns.' },
+{ id: 'map06', tag: 'MAP', ex: null, type: 'mc', q: 'For a 1:1 relationship where one side participates totally (every department has a manager), the preferred mapping is…', options: ['put the FK in the total side\'s relation (DEPARTMENT gets Mgr_ssn)', 'put the FK in the partial side\'s relation', 'always merge the two relations', 'always create a separate relation'], answer: 0, explain: 'Foreign-key approach: the total side\'s FK is never NULL. On EMPLOYEE it would be NULL for almost everyone.' },
+{ id: 'map07', tag: 'MAP', ex: '7.23', type: 'mc', q: 'How many relations does the basic mapping of the BANK diagram (Figure 7.21) produce?', options: ['7', '5', '6', '9'], answer: 0, explain: 'BANK, BANK_BRANCH, ACCOUNT, LOAN, CUSTOMER (entities) + A_C and L_C (M:N). BRANCHES, ACCTS and LOANS become foreign keys.' },
+{ id: 'map08', tag: 'MAP', ex: '7.23', type: 'tf', q: 'In the mapped BANK schema, ACCOUNT\'s foreign key to its branch must be the pair (Bank_code, Branch_no).', answer: true, explain: 'BANK_BRANCH\'s primary key is composite; Branch_no alone is not unique across banks, so it can\'t be referenced by itself.' },
+{ id: 'map09', tag: 'MAP', ex: '7.19', type: 'mc', q: 'In the mapped AIRLINE schema, what is the primary key of SEAT_RESERVATION?', options: ['(Flight_number, Leg_number, Date, Seat_number)', '(Seat_number)', '(Date, Seat_number)', '(Flight_number, Seat_number)'], answer: 0, explain: 'SEAT is weak under LEG_INSTANCE, whose key is (Flight_number, Leg_number, Date); add the partial key Seat_number.' },
+{ id: 'map10', tag: 'MAP', ex: '7.19', type: 'mc', q: 'In the mapped AIRLINE schema, where does Scheduled_departure_time go?', options: ['FLIGHT_LEG, next to Departure_airport_code', 'AIRPORT', 'A separate DEPARTURE_AIRPORT relation', 'LEG_INSTANCE'], answer: 0, explain: 'DEPARTURE_AIRPORT is 1:N, so it becomes an FK in FLIGHT_LEG and its attribute moves with it.' },
+{ id: 'map11', tag: 'MAP', ex: '7.19', type: 'tf', q: 'CAN_LAND needs its own relation in the mapped AIRLINE schema.', answer: true, explain: 'It is the only M:N relationship: CAN_LAND(Airplane_type_name, Airport_code).' },
+{ id: 'map12', tag: 'MAP', ex: '7.16', type: 'mc', q: 'In 7.16, GRADE_REPORT references SECTION. What must its foreign key to SECTION be?', options: ['(Course_no, Semester, Year, Sec_no)', '(Sec_no)', '(Course_no, Sec_no)', '(Semester, Year, Sec_no)'], answer: 0, explain: 'An FK must reference the whole primary key, and SECTION\'s PK is the owner key Course_no plus the partial key (Sec_no, Semester, Year).' },
+{ id: 'map13', tag: 'MAP', ex: '7.17', type: 'mc', q: 'Mapping 7.17\'s nested attribute, what is the PK of the relation holding previous degrees?', options: ['(Ssn, College_name, Start_date, Degree_name)', '(Degree_name)', '(Ssn, Degree_name)', '(College_name, Degree_name)'], answer: 0, explain: 'Each nested level carries the full key of the level above: student → previous college (Ssn, College_name, Start_date) → degree.' },
+{ id: 'map14', tag: 'MAP', ex: '7.22', type: 'tf', q: 'In 7.22\'s mapping, the minimum of 22 players per game is enforced by the primary key of PLAYED_IN.', answer: false, explain: 'Keys and FKs enforce uniqueness and existence, not minimum counts. A min > 1 needs an assertion, trigger or application check.' },
+{ id: 'map15', tag: 'MAP', ex: null, type: 'tf', q: 'Attributes of an M:N relationship become columns of the relation created for that relationship.', answer: true, explain: 'E.g. Hours of WORKS_ON goes into WORKS_ON(Essn, Pno, Hours).' },
+
+{ id: 'eer01', tag: 'EER', ex: null, type: 'mc', q: 'A "d" in the specialization circle means…', options: ['disjoint: an entity is in at most one subclass', 'derived subclass', 'total specialization', 'defining attribute present'], answer: 0, explain: '"d" = disjoint, "o" = overlapping. Total vs partial is shown by the double vs single line from the superclass.' },
+{ id: 'eer02', tag: 'EER', ex: null, type: 'tf', q: 'A double line from the superclass to the specialization circle means every superclass entity must belong to some subclass.', answer: true, explain: 'That is total specialization. A single line is partial.' },
+{ id: 'eer03', tag: 'EER', ex: '8.17', type: 'mc', q: 'If every account is exactly one of savings or checking, the specialization is…', options: ['disjoint and total', 'disjoint and partial', 'overlapping and total', 'overlapping and partial'], answer: 0, explain: 'Exactly one: no account in both (disjoint) and none in neither (total).' },
+{ id: 'eer04', tag: 'EER', ex: '8.17', type: 'mc', q: 'In 8.17, why model TRANSACTION as a weak entity of ACCOUNT?', options: ['A transaction is numbered within its account and can\'t exist without it', 'Because it has no attributes', 'Because transactions are subclasses of accounts', 'Because it is M:N with ACCOUNT'], answer: 0, explain: 'Transaction numbers like 1, 2, 3 restart per account (partial key) and each transaction belongs to exactly one account. A global Trans_id with a 1:N relationship is also acceptable if stated.' },
+{ id: 'eer05', tag: 'EER', ex: '8.17', type: 'tf', q: 'Because TRANSACTION and PAYMENT both have Amount, Date and Time, they must be generalized into one superclass.', answer: false, explain: 'Generalization is a design choice, not a rule. They have different owners (ACCOUNT vs LOAN) and uses, so keeping them separate is reasonable.' },
+{ id: 'eer06', tag: 'EER', ex: null, type: 'mc', q: 'Which mapping option creates one relation with a Boolean flag per subclass, suitable for overlapping subclasses?', options: ['8D', '8A', '8B', '8C'], answer: 0, explain: '8C uses one type attribute (disjoint only); 8D uses one flag per subclass (overlapping allowed).' },
+{ id: 'eer07', tag: 'EER', ex: null, type: 'mc', q: 'Option 8B (subclass relations only) should only be used when the specialization is…', options: ['total (and preferably disjoint)', 'partial', 'overlapping and partial', 'a category'], answer: 0, explain: 'With a partial specialization, entities in no subclass would have nowhere to go. With overlap, an entity\'s inherited attributes would be stored twice.' },
+{ id: 'eer08', tag: 'EER', ex: null, type: 'mc', q: 'Option 8A maps a specialization to…', options: ['a superclass relation plus one relation per subclass holding its own attributes and the superclass key', 'only subclass relations', 'one relation with a type attribute', 'one relation with Boolean flags'], answer: 0, explain: '8A works for any specialization. Each subclass\'s PK is also an FK to the superclass relation.' },
+{ id: 'eer09', tag: 'EER', ex: null, type: 'tf', q: 'A subclass entity inherits all attributes and relationships of its superclass.', answer: true, explain: 'That is type inheritance. A SAVINGS_ACCT has Acct_no and Balance and takes part in A_C.' },
+{ id: 'eer10', tag: 'EER', ex: null, type: 'mc', q: 'A predicate-defined (condition-defined) subclass is one whose membership…', options: ['is determined by a condition on a superclass attribute (e.g. Acct_type = \'Savings\')', 'is chosen by the user for each entity', 'comes from a union of several superclasses', 'is derived from a relationship'], answer: 0, explain: 'When all subclasses use the same attribute, it\'s an attribute-defined specialization and the attribute is written next to the line.' },
+{ id: 'eer11', tag: 'EER', ex: '8.18', type: 'mc', q: 'In 8.18, how should "multisport complexes have areas designated for each sport with a location indicator" be modeled?', options: ['A multivalued composite attribute {Sport_area(Sport, Location_indicator)} of MULTISPORT (or a weak entity)', 'A single attribute Location of COMPLEX', 'A subclass of EVENT', 'An attribute of ONE_SPORT'], answer: 0, explain: 'Each multisport complex has several sport areas, each with two parts. It belongs to MULTISPORT only, which is exactly why the subclass exists.' },
+{ id: 'eer12', tag: 'EER', ex: '8.18', type: 'tf', q: 'In 8.18, the split of complexes into one-sport and multisport is naturally disjoint and total.', answer: true, explain: 'A complex hosts either one sport or several; it can\'t be both and must be one of them.' },
+{ id: 'eer13', tag: 'EER', ex: '8.18', type: 'mc', q: 'In 8.18, "for each type, the number of facilities needed and an approximate budget" is best stored…', options: ['once per type, e.g. in a FACILITY_TYPE entity', 'as attributes of every COMPLEX', 'as attributes of EVENT', 'as a derived attribute of OFFICIAL'], answer: 0, explain: 'These values describe the type as a whole. Repeating them on every complex would be redundant and could disagree.' },
+{ id: 'eer14', tag: 'EER', ex: '8.18', type: 'mc', q: 'In 8.18, the OFFICIAL–EVENT relationship is…', options: ['M:N', '1:N from OFFICIAL to EVENT', '1:N from EVENT to OFFICIAL', '1:1'], answer: 0, explain: 'An official works many events and an event has several officials.' },
+{ id: 'eer15', tag: 'EER', ex: null, type: 'tf', q: 'In option 8C, subclass-specific attributes are NULL for entities that are not in that subclass.', answer: true, explain: 'That is the cost of the single-relation options: many NULLs if subclasses have many specific attributes.' },
+
+{ id: 'rel01', tag: 'REL', ex: '3.13', type: 'ms', q: 'For CLASS(Course#, Univ_Section#, Instructor_name, Semester, Building_code, Room#, Time_period, Weekdays, Credit_hours), which can be candidate keys under reasonable assumptions? Select all that apply.', options: ['{Univ_Section#}', '{Instructor_name, Semester, Weekdays, Time_period}', '{Building_code, Room#, Semester, Weekdays, Time_period}', '{Course#, Semester}', '{Univ_Section#, Course#}'], answer: [0, 1, 2], explain: 'An instructor can\'t teach two classes at once; a room can\'t hold two classes at once. {Course#, Semester} fails with multiple sections, and {Univ_Section#, Course#} is a superkey but not minimal.' },
+{ id: 'rel02', tag: 'REL', ex: '3.13', type: 'tf', q: '{Univ_Section#, Course#} is a candidate key of CLASS.', answer: false, explain: 'It is unique, but removing Course# still leaves a unique set. A candidate key must be minimal; this is only a superkey.' },
+{ id: 'rel03', tag: 'REL', ex: '3.14', type: 'ms', q: 'In the order-processing schema (3.14), which are foreign keys? Select all that apply.', options: ['ORDER.Cust# → CUSTOMER', 'ORDER_ITEM.Item# → ITEM', 'SHIPMENT.Warehouse# → WAREHOUSE', 'WAREHOUSE.City → CUSTOMER.City', 'SHIPMENT.Order# → ORDER'], answer: [0, 1, 2, 4], explain: 'City is not a key of CUSTOMER, so it can\'t be referenced. The full list also has ORDER_ITEM.Order# → ORDER.' },
+{ id: 'rel04', tag: 'REL', ex: '3.14', type: 'mc', q: 'An order can ship from several warehouses. Assuming it ships at most once from each, what is SHIPMENT\'s primary key?', options: ['(Order#, Warehouse#)', '(Order#)', '(Warehouse#)', '(Order#, Warehouse#, Ship_date) is required in every case'], answer: 0, explain: 'Order# alone repeats for multi-warehouse orders. Add Ship_date only if one order can ship several times from the same warehouse.' },
+{ id: 'rel05', tag: 'REL', ex: '3.14', type: 'tf', q: '"Ord_amt equals the sum of Qty × Unit_price for the order\'s items" can be enforced by a foreign key.', answer: false, explain: 'Foreign keys only check that referenced values exist. This is a semantic constraint (assertion or trigger).' },
+{ id: 'rel06', tag: 'REL', ex: '3.14', type: 'mc', q: 'Which of these is a semantic constraint for the order schema, not a key or referential one?', options: ['Ship_date ≥ Odate', 'Order# is unique', 'ORDER_ITEM.Item# must exist in ITEM', 'Cust# is not NULL in CUSTOMER'], answer: 0, explain: 'The others are key, referential and entity-integrity constraints.' },
+{ id: 'rel07', tag: 'REL', ex: '3.15', type: 'ms', q: 'In the trip schema (3.15), which foreign keys can be declared? Select all that apply.', options: ['TRIP.Ssn → SALESPERSON.Ssn', 'EXPENSE.Trip_id → TRIP.Trip_id', 'SALESPERSON.Dept_no → DEPARTMENT', 'EXPENSE.Account# → ACCOUNT'], answer: [0, 1], explain: 'There is no DEPARTMENT or ACCOUNT relation in this schema, so those can\'t be declared (mention them as assumptions).' },
+{ id: 'rel08', tag: 'REL', ex: '3.15', type: 'mc', q: '"A trip can be charged to one or more accounts." What is EXPENSE\'s primary key?', options: ['(Trip_id, Account#)', '(Trip_id)', '(Account#)', '(Trip_id, Amount)'], answer: 0, explain: 'Trip_id repeats for multi-account trips, and one account is charged by many trips. The pair is unique (assuming one row per trip per account).' },
+{ id: 'rel09', tag: 'REL', ex: null, type: 'tf', q: 'Entity integrity: no primary-key attribute may be NULL.', answer: true, explain: 'Otherwise some tuples couldn\'t be identified.' },
+{ id: 'rel10', tag: 'REL', ex: null, type: 'tf', q: 'A foreign key value may be NULL (unless the FK is part of the primary key or declared NOT NULL).', answer: true, explain: 'Referential integrity requires an FK value to match an existing PK value or be entirely NULL.' },
+{ id: 'rel11', tag: 'REL', ex: null, type: 'mc', q: 'What is the difference between a superkey and a candidate key?', options: ['A candidate key is a minimal superkey', 'A superkey is a minimal candidate key', 'A superkey must be a single attribute', 'There is no difference'], answer: 0, explain: 'Every candidate key is a superkey; a superkey may contain extra attributes. One candidate key is chosen as the primary key.' },
+{ id: 'rel12', tag: 'REL', ex: '3.15', type: 'tf', q: 'TRIP.Ssn should allow NULL.', answer: false, explain: 'Every trip is made by some salesperson. The FK should be NOT NULL.' },
+];
+const QBY = new Map(BANK.map(q => [q.id, q]));
+const TAGS = { ER: 'ER model (Ch 7)', EER: 'EER model (Ch 8)', MAP: 'ER → relational mapping', REL: 'Relational model (Ch 3)' };
+const KIND = { tf: 'True or false', mc: 'Choose one', ms: 'Select all that apply' };
+const LETTERS = 'ABCDE';
+
+// ---------- state ----------
+const KEY = 'dbpractice:v1';
+const store = load(KEY, {});
+const state = { ex: store.ex || {}, q: store.q || {}, theme: ['auto', 'light', 'dark'].includes(store.theme) ? store.theme : 'auto' };
+const persist = () => save(KEY, state);
+const exState = id => state.ex[id] || (state.ex[id] = { checks: [], notes: '', open: [] });
+let quiz = null; // { title, ids, i, ans: {id: value}, sel: {id: [..]}, perm: {id: [..]}, done: {id: bool}, finished }
+
+function isRight(q, a) {
+  if (q.type === 'ms') return Array.isArray(a) && a.length === q.answer.length && [...a].sort((x, y) => x - y).every((v, i) => v === q.answer[i]);
+  return a === q.answer;
+}
+function record(id, ok) {
+  const s = state.q[id] || (state.q[id] = { seen: 0, right: 0, last: null });
+  s.seen++; if (ok) s.right++; s.last = ok; persist();
+}
+function startQuiz(title, ids) {
+  ids = shuffle([...ids]);
+  if (!ids.length) return;
+  const perm = {};
+  for (const id of ids) { const q = QBY.get(id); if (q.type !== 'tf') perm[id] = shuffle(q.options.map((_, i) => i)); }
+  quiz = { title, ids, i: 0, ans: {}, sel: {}, perm, done: {}, finished: false };
+  location.hash = '#quiz';
+}
+
+// ---------- views ----------
+const app = document.getElementById('app');
+const THEME_ICON = {
+  auto: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>',
+  light: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+  dark: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>',
+};
+const themeBtn = () => `<button class="icon" data-act="theme" title="Theme: ${state.theme}" aria-label="Theme: ${state.theme}. Click to change.">${THEME_ICON[state.theme]}</button>`;
+function exProgress(e) { const s = state.ex[e.id]; return s ? s.checks.filter(Boolean).length : 0; }
+const qFor = pred => BANK.filter(pred).map(q => q.id);
+const missed = () => BANK.filter(q => state.q[q.id]?.last === false).map(q => q.id);
+
+function homeView() {
+  const seen = BANK.filter(q => state.q[q.id]?.seen).length, rightNow = BANK.filter(q => state.q[q.id]?.last === true).length;
+  let h = `<div class="top"><a class="back" href="../../">← aiapps</a><div class="grow"></div>${themeBtn()}</div>
+  <h1>Database design practice</h1>
+  <p class="sub">The assigned book exercises from <i>Fundamentals of Database Systems</i> (Elmasri &amp; Navathe, 6th ed.), with worked answers you open one step at a time, plus a ${BANK.length}-question drill on the same ideas.</p>
+  <div class="howto">How to use it: open an exercise, draw your own ER/EER diagram on paper with (min, max) on every line, map it to relations, then open the answer sections one at a time and tick the self-check list.</div>`;
+  for (const c of CHAPTERS) {
+    h += `<h2>${esc(c.t)}</h2><div class="grid">`;
+    for (const id of c.ids) {
+      const e = EX[id], n = exProgress(e), tot = e.check.length;
+      h += `<button class="ex${n === tot ? ' done' : ''}" data-act="open" data-id="${id}"><span class="n">${id} <span class="chip">${esc(e.kind)}</span></span><span class="t">${esc(e.title)}</span>
+        <div class="bar" aria-hidden="true"><i style="width:${pct(n, tot)}%"></i></div><span class="m">${n ? `${n} / ${tot} self-checks ticked` : 'not started'}</span></button>`;
+    }
+    h += '</div>';
+  }
+  const nm = missed().length;
+  h += `<h2>Drill</h2><div class="small" style="margin-bottom:10px">${seen} of ${BANK.length} questions tried · ${rightNow} right on the last try</div><div class="modes">
+    <button class="mode primary" data-act="quiz" data-tag="all"><b>All topics</b><span>${BANK.length} questions, shuffled</span></button>
+    ${Object.entries(TAGS).map(([t, name]) => `<button class="mode" data-act="quiz" data-tag="${t}"><b>${esc(name)}</b><span>${qFor(q => q.tag === t).length} questions</span></button>`).join('')}
+    <button class="mode" data-act="quiz" data-tag="missed" ${nm ? '' : 'disabled'}><b>Missed · ${nm}</b><span>Wrong on your last try</span></button>
+  </div>
+  <h2>Cheat sheet</h2>
+  <div class="card ans" style="padding:14px 16px">
+    <h4 style="margin-top:0">(min, max)</h4>${ul([
+      'Written next to entity E on its line to R: each E takes part in at least min and at most max R instances.',
+      'min = 0 → partial; min ≥ 1 → total (double line). 1:N converts to (?,N) on the 1 side and (?,1) on the N side.',
+      'Weak entity in its identifying relationship: always (1,1).',
+    ])}
+    <h4>ER → relations (Chapter 9 algorithm)</h4><ol>
+      <li>Strong entity → relation with simple attributes; pick a primary key.</li>
+      <li>Weak entity → relation with owner PK as FK; PK = owner PK + partial key.</li>
+      <li>1:1 → FK in one side (prefer the total side), or merge, or a cross-reference relation.</li>
+      <li>1:N → FK on the N side, with the relationship's attributes.</li>
+      <li>M:N → new relation; PK = both FKs; relationship attributes go here.</li>
+      <li>Multivalued attribute → new relation; PK = owner key + the attribute.</li>
+      <li>n-ary relationship → new relation with all participants' keys.</li>
+      <li>Specialization: 8A superclass + subclass relations (always works) · 8B subclass relations only (total) · 8C one relation + type attribute (disjoint) · 8D one relation + Boolean flags (overlapping).</li>
+      <li>Category (union type) → surrogate key in the category relation.</li></ol>
+  </div>
+  <footer><p>Exercise prompts are paraphrased; the answers are original and are one reasonable design each. Design questions have many right answers, so what matters is that your assumptions are stated and your constraints match them.</p>
+  <p>Progress (ticked checks, your notes, quiz results) is saved in this browser. <button class="btn ghost sm" data-act="reset">Reset progress</button></p></footer>`;
+  return h;
+}
+
+function exView(id) {
+  const e = EX[id], s = exState(id), order = CHAPTERS.flatMap(c => c.ids), i = order.indexOf(id);
+  const prev = order[i - 1], next = order[i + 1], nq = qFor(q => q.ex === id).length;
+  let h = `<div class="top"><a class="back" href="#">← All exercises</a><div class="grow"></div>${themeBtn()}</div>
+  <div class="row" style="margin-bottom:4px"><span class="chip kind">Exercise ${id}</span><span class="chip">${esc(e.kind)}</span></div>
+  <h1>${esc(e.title)}</h1>
+  <div class="card prompt" style="margin-top:12px">${e.prompt}</div>
+  <h2>Your attempt</h2>
+  <textarea data-act="notes" placeholder="Jot your entities, relationships, (min, max) and relations here before opening the answers. Saved in this browser.">${esc(s.notes)}</textarea>
+  <details class="sec"${s.open.includes('hints') ? ' open' : ''} data-sec="hints"><summary><span class="grow">Hints</span><span class="small">${e.hints.length}</span></summary><div class="ans">${ul(e.hints)}</div></details>
+  <h2>Worked answer <button class="btn ghost sm" data-act="openall">open all</button></h2>`;
+  e.sections.forEach((sec, k) => {
+    let body = '';
+    if (sec.diagram) {
+      const d = DIAGRAMS[sec.diagram]();
+      body += `<div class="dia-bar"><span class="small">Wide diagram: zoom in to read it on a phone.</span><button class="btn sm" data-act="zoom">Zoom</button></div>
+        <div class="dia">${erSVG(d, `${e.title}: ${sec.h}`)}</div><p class="legend">${LEGEND}</p>`;
+    }
+    if (sec.rels) body += relHTML(sec.rels);
+    if (sec.html) body += sec.html;
+    h += `<details class="sec"${s.open.includes(k) ? ' open' : ''} data-sec="${k}"><summary><span class="grow">${esc(sec.h)}</span></summary><div class="ans">${body}</div></details>`;
+  });
+  h += `<h2>Self-check</h2><div class="card">${e.check.map((c, k) => `<label class="check"><input type="checkbox" data-act="check" data-k="${k}" ${s.checks[k] ? 'checked' : ''}><span>${c}</span></label>`).join('')}
+    ${exProgress(e) === e.check.length ? '<p class="pill-good" style="margin:8px 0 0">All checks ticked. Nice.</p>' : ''}</div>
+  <div class="actions">${nq ? `<button class="btn primary" data-act="quiz" data-tag="ex:${id}">Drill ${id} · ${nq} questions</button>` : ''}<span class="grow"></span>
+    ${prev ? `<a class="btn" href="#ex/${prev}">← ${prev}</a>` : ''}${next ? `<a class="btn" href="#ex/${next}">${next} →</a>` : ''}</div>`;
+  return h;
+}
+
+function quizView() {
+  if (quiz.finished) return resultsView();
+  const id = quiz.ids[quiz.i], q = QBY.get(id), n = quiz.ids.length, done = !!quiz.done[id];
+  const sel = quiz.sel[id] || [], a = quiz.ans[id], nRight = quiz.ids.filter(x => quiz.done[x] && isRight(QBY.get(x), quiz.ans[x])).length;
+  let h = `<div class="top"><a class="back" href="#">← Home</a><div class="grow"></div><span class="small">${nRight} right</span>${themeBtn()}</div>
+  <div class="row"><span class="chip">${esc(TAGS[q.tag])}</span>${q.ex ? `<span class="chip">Ex ${q.ex}</span>` : ''}<span class="chip kind">${KIND[q.type]}</span><span class="grow" style="flex:1"></span><span class="small">${esc(quiz.title)} · ${quiz.i + 1} / ${n}</span></div>
+  <div class="progress"><i style="width:${pct(quiz.i + (done ? 1 : 0), n)}%"></i></div>
+  <div class="q" id="qtext" tabindex="-1">${fmt(q.q)}</div>`;
+  if (q.type === 'tf') {
+    h += `<div class="opts tf">${[true, false].map((v, k) => {
+      let cls = '';
+      if (done) cls = v === q.answer ? 'right' : (a === v ? 'wrong' : '');
+      return `<button class="opt ${cls}" data-act="pick" data-v="${v}" ${done ? 'disabled' : ''}><span class="tx">${v ? 'True' : 'False'}</span></button>`;
+    }).join('')}</div>`;
+  } else {
+    if (q.type === 'ms') h += '<div class="hint">Select every correct option, then press Check.</div>';
+    h += '<div class="opts">' + quiz.perm[id].map((oi, k) => {
+      const chosen = q.type === 'ms' ? sel.includes(oi) : a === oi, correct = q.type === 'ms' ? q.answer.includes(oi) : q.answer === oi;
+      let cls = '', mark = '';
+      if (done) { if (correct && chosen) { cls = 'right'; mark = '✓'; } else if (chosen) { cls = 'wrong'; mark = '✗'; } else if (correct) { cls = q.type === 'ms' ? 'missed' : 'right'; mark = q.type === 'ms' ? 'missed' : '✓'; } }
+      else if (chosen) cls = 'sel';
+      return `<button class="opt ${cls}" data-act="pick" data-v="${oi}" ${done ? 'disabled' : ''}><span class="k">${LETTERS[k]}</span><span class="tx">${fmt(q.options[oi])}</span><span class="mark">${mark}</span></button>`;
+    }).join('') + '</div>';
+  }
+  if (done) {
+    const ok = isRight(q, a);
+    h += `<div class="feedback ${ok ? 'ok' : 'no'}"><div class="verdict">${ok ? 'Correct' : 'Not quite'}</div><div>${fmt(q.explain)}</div>
+      ${q.ex ? `<div class="small" style="margin-top:8px"><a href="#ex/${q.ex}">Open exercise ${q.ex}</a></div>` : ''}</div>`;
+  }
+  h += `<div class="actions"><span class="grow"></span>${!done && q.type === 'ms' ? `<button class="btn primary" data-act="check-ms" ${sel.length ? '' : 'disabled'}>Check</button>` : ''}
+    ${done ? `<button class="btn primary" data-act="next">${quiz.i + 1 < n ? 'Next →' : 'See results'}</button>` : ''}</div>
+  <p class="small" style="margin-top:22px">Keys: <kbd>A</kbd>–<kbd>E</kbd> or <kbd>1</kbd>–<kbd>5</kbd> pick, <kbd>T</kbd>/<kbd>F</kbd>, <kbd>Enter</kbd> check / next.</p>`;
+  return h;
+}
+function resultsView() {
+  const ids = quiz.ids, right = ids.filter(id => isRight(QBY.get(id), quiz.ans[id]));
+  const wrong = ids.filter(id => !right.includes(id));
+  let h = `<div class="top"><a class="back" href="#">← Home</a><div class="grow"></div>${themeBtn()}</div>
+  <h1>${esc(quiz.title)}: results</h1>
+  <div class="card score" style="margin-top:14px"><b>${pct(right.length, ids.length)}%</b><span>${right.length} of ${ids.length} right</span></div>
+  <div class="actions">${wrong.length ? `<button class="btn primary" data-act="retry">Retry the ${wrong.length} missed</button>` : ''}<a class="btn" href="#">Home</a></div>
+  <h2>Review</h2>`;
+  for (const id of ids) {
+    const q = QBY.get(id), ok = right.includes(id);
+    const ans = q.type === 'tf' ? (q.answer ? 'True' : 'False') : q.type === 'mc' ? q.options[q.answer] : q.answer.map(i => q.options[i]).join('; ');
+    h += `<details class="rev"><summary><span class="m ${ok ? 'ok' : 'no'}">${ok ? '✓' : '✗'}</span><span class="s">${fmt(q.q)}</span></summary>
+      <div class="body"><p><b>Answer:</b> ${fmt(ans)}</p><p>${fmt(q.explain)}</p></div></details>`;
+  }
+  return h;
+}
+
+// ---------- routing & events ----------
+function route() {
+  const m = location.hash.match(/^#ex\/([\d.]+)$/);
+  if (m && EX[m[1]]) { view = 'ex'; exId = m[1]; }
+  else if (location.hash === '#quiz' && quiz) view = 'quiz';
+  else view = 'home';
+  render(); window.scrollTo(0, 0);
+}
+let view = 'home', exId = null;
+function render() {
+  app.innerHTML = view === 'ex' ? exView(exId) : view === 'quiz' ? quizView() : homeView();
+  if (view === 'quiz') document.getElementById('qtext')?.focus({ preventScroll: true });
+}
+function applyTheme() { if (state.theme === 'auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.dataset.theme = state.theme; }
+function pick(v) {
+  const id = quiz.ids[quiz.i], q = QBY.get(id);
+  if (quiz.done[id]) return;
+  if (q.type === 'ms') { const s = quiz.sel[id] || (quiz.sel[id] = []); const k = s.indexOf(v); k < 0 ? s.push(v) : s.splice(k, 1); render(); return; }
+  quiz.ans[id] = v; quiz.done[id] = true; record(id, isRight(q, v)); render();
+}
+function checkMs() {
+  const id = quiz.ids[quiz.i], q = QBY.get(id);
+  if (q.type !== 'ms' || quiz.done[id] || !(quiz.sel[id] || []).length) return;
+  quiz.ans[id] = [...quiz.sel[id]].sort((x, y) => x - y); quiz.done[id] = true; record(id, isRight(q, quiz.ans[id])); render();
+}
+function next() { if (quiz.i + 1 < quiz.ids.length) quiz.i++; else quiz.finished = true; render(); window.scrollTo(0, 0); }
+
+app.addEventListener('click', ev => {
+  const t = ev.target.closest('[data-act]');
+  if (!t) return;
+  const act = t.dataset.act;
+  if (act === 'theme') { state.theme = { auto: 'light', light: 'dark', dark: 'auto' }[state.theme]; persist(); applyTheme(); render(); }
+  else if (act === 'open') location.hash = '#ex/' + t.dataset.id;
+  else if (act === 'quiz') {
+    const tag = t.dataset.tag;
+    if (tag === 'all') startQuiz('All topics', BANK.map(q => q.id));
+    else if (tag === 'missed') startQuiz('Missed questions', missed());
+    else if (tag.startsWith('ex:')) startQuiz('Exercise ' + tag.slice(3), qFor(q => q.ex === tag.slice(3)));
+    else startQuiz(TAGS[tag], qFor(q => q.tag === tag));
+    if (location.hash === '#quiz') route();
+  }
+  else if (act === 'pick') { const q = QBY.get(quiz.ids[quiz.i]); pick(q.type === 'tf' ? t.dataset.v === 'true' : +t.dataset.v); }
+  else if (act === 'check-ms') checkMs();
+  else if (act === 'next') next();
+  else if (act === 'retry') { const w = quiz.ids.filter(id => !isRight(QBY.get(id), quiz.ans[id])); startQuiz(quiz.title + ' (retry)', w); route(); }
+  else if (act === 'zoom') { const d = t.closest('.ans').querySelector('.dia'); d.classList.toggle('zoom'); t.textContent = d.classList.contains('zoom') ? 'Fit' : 'Zoom'; }
+  else if (act === 'openall') { document.querySelectorAll('details.sec').forEach(d => d.open = true); }
+  else if (act === 'reset') { if (confirm('Clear all ticked checks, notes and quiz results?')) { state.ex = {}; state.q = {}; persist(); render(); } }
+});
+app.addEventListener('change', ev => {
+  const t = ev.target;
+  if (t.dataset.act === 'check') { const s = exState(exId); s.checks[+t.dataset.k] = t.checked; persist(); const sc = window.scrollY; render(); window.scrollTo(0, sc); }
+});
+app.addEventListener('input', ev => { if (ev.target.dataset.act === 'notes') { exState(exId).notes = ev.target.value; persist(); } });
+app.addEventListener('toggle', ev => {
+  const d = ev.target;
+  if (!(d instanceof HTMLDetailsElement) || !d.dataset.sec || view !== 'ex') return;
+  const s = exState(exId), k = d.dataset.sec === 'hints' ? 'hints' : +d.dataset.sec, i = s.open.indexOf(k);
+  if (d.open && i < 0) s.open.push(k); else if (!d.open && i >= 0) s.open.splice(i, 1);
+  persist();
+}, true);
+document.addEventListener('keydown', ev => {
+  if (view !== 'quiz' || !quiz || quiz.finished || ev.metaKey || ev.ctrlKey || ev.altKey) return;
+  if (ev.target.closest('textarea, input')) return;
+  const id = quiz.ids[quiz.i], q = QBY.get(id), k = ev.key.toLowerCase();
+  if (k === 'enter') { ev.preventDefault(); if (quiz.done[id]) next(); else checkMs(); return; }
+  if (quiz.done[id]) return;
+  if (q.type === 'tf') { if (k === 't') pick(true); else if (k === 'f') pick(false); return; }
+  const idx = '12345'.indexOf(k) >= 0 ? '12345'.indexOf(k) : 'abcde'.indexOf(k);
+  if (idx >= 0 && idx < quiz.perm[id].length) pick(quiz.perm[id][idx]);
+});
+window.addEventListener('hashchange', route);
+
+// test hook
+window.dbp = {
+  get view() { return view; }, get quiz() { return quiz; }, state, EXERCISES, BANK, DIAGRAMS,
+  open(id) { location.hash = '#ex/' + id; route(); },
+  startQuiz(tag) { const b = document.createElement('button'); b.dataset.act = 'quiz'; b.dataset.tag = tag; app.appendChild(b); b.click(); b.remove(); },
+  pick, checkMs, next, home() { location.hash = ''; route(); },
+};
+applyTheme();
+route();
+</script>
+</body>
+</html>
