@@ -290,5 +290,19 @@
       "Contour Airlines"
     ],
     "outbound_stops": 1
+  },
+  {
+    "checked_at": "2026-10-07T19:08:59Z",
+    "weekend_start": "2026-10-09",
+    "weekend_end": "2026-10-11",
+    "from_airport": "DFW",
+    "to_airport": "ORD",
+    "currency": "USD",
+    "status": "ok",
+    "price": 541,
+    "airlines": [
+      "Contour Airlines"
+    ],
+    "outbound_stops": 1
   }
 ]
