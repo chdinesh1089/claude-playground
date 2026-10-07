@@ -1,0 +1,494 @@
+{
+  "date": "2026-10-07",
+  "generated_at": "2026-10-07T17:49:36+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Paramount merges with Warner Bros. Discovery to form Skydance",
+        "summary": "Hollywood giants Paramount and Warner Bros. Discovery have completed their merger to form Skydance, saddled with debt and facing potential cost cuts.",
+        "outlets": 3,
+        "published": "2026-10-07T00:45:57+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/06/business/media/paramount-warner-bros-discovery-skydance.html"
+          },
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/7/why-paramount-warner-merger-has-sparked-fears-about-press-freedom?traffic_source=rss"
+          }
+        ],
+        "why": "Major consolidation in the media industry impacting global news networks and entertainment."
+      },
+      {
+        "headline": "RBI raises repo rate by 25 basis points",
+        "summary": "The Reserve Bank of India raised the repo rate by 25 points in its first hike in four years, raising concerns over higher loan EMIs.",
+        "outlets": 4,
+        "published": "2026-10-07T10:57:22+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/wealth/borrow/lowest-home-loan-interest-rates-after-rbi-repo-rate-hike-check-emi-on-above-rs-30-lakh-to-75-lakh-loans-at-public-private-banks-hfcs/articleshow/134763682.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/rbi-raises-repo-rate-by-25-points-first-hike-in-nearly-four-years-101791344103352.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india-today-insight/story/goldilocks-period-over-how-hormuz-forced-rbi-rate-hike-3011852-2026-10-07?utm_source=rss"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQYlh6RlRwOTRRQVZNZjhRMlV1TUFLNUplOTZ5T3czb2NiRHZubzlKQlFjeldwSldjTFpBVlA1QnhRWXktNDNTczdFeXh3blk0VThQLTFoNjhuWVBYYkc1bWE4T25UN3BEeG9uemZ1Ti1HYkdsSC1ScU8xRUlVR2FIQ0pNa01CLS1Sb1RWYzlBSnVJc0gzUzJmQmxnV2ltNWw0VWlnWWdiN055a3JDclVza1hOWk1iMEVWLXdvRlRkRDFYTWxNODdSUVRmRdIB0gFBVV95cUxOaDBKM28zdG55b0ZBZ09HSUFsWlFRR0FscURWeUNzSHFZRVlGdjdXaEZ4b01pZXh0R3VydG0tZTdCS3diOERZQjYtbE11OEZkWUNDQ3E4b1czcDNvZW1ON2R1cExLT0NrdHJibDFSLTJhYlVvR2Q2UV81YnZmdGltcThIc2tROFk5b254aXkyMXlkOXpNNlhmNWhyNVlOSnl4V2h2ZWhYajhFcmJsOGt2Zkxqc1ByM19DdXFXOU1nYkZxOGJ4QTRBdU5OY210U1NHcmc?oc=5"
+          }
+        ],
+        "why": "Directly impacts the Indian economy, borrowing costs, and remittances or investments for the diaspora."
+      },
+      {
+        "headline": "Russian missile strike destroys Ukrainian apartment block",
+        "summary": "A large-scale Russian bombing destroyed an apartment building in Pryluky, killing nine people including three children.",
+        "outlets": 2,
+        "published": "2026-10-07T16:22:44+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/07/ukraine-accuses-russia-of-bombing-apartment-block-as-birthday-gift-for-putin"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckr5ym098vdeo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "India cuts 130 million from voter roll, fueling protests",
+        "summary": "Public anger is growing over a massive voter roll reduction in India that critics argue disenfranchises minority voters.",
+        "outlets": 2,
+        "published": "2026-10-07T10:01:06+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/06/world/asia/india-protests-voter-list-changes.html"
+          },
+          {
+            "source": "DW.com",
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOWloMDdEN29uUFc3QkVkd1p5QkRyRWZRM1JiOTAzM1g2dGRfazQyYWw3aXFtSjJWWFZKc3FkTzU0SWpmdjRuOW5LRWtqYlozSGhIcldKQndNdGVlWUNkUFFQZjZucEZwdG83NXROeE1XTG5oeXJhQURWNHZBSGdhWG5DMTFZNTQ4anEwNkNLUnVaZDRLdnhzYXRXaDc?oc=5"
+          }
+        ],
+        "why": "Significant democratic and governance concern affecting the political landscape in India."
+      },
+      {
+        "headline": "Okinawa governor urges action after US Marine arrested",
+        "summary": "A US Marine was arrested in Japan on suspicion of strangling a local woman, sparking strong public outrage and calls for stronger military oversight.",
+        "outlets": 2,
+        "published": "2026-10-07T13:31:18+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/7/okinawa-governor-urges-japan-action-after-us-marine-arrested-over-killing?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/07/world/asia/us-marine-murder-okinawa-japan-takaichi.html"
+          }
+        ],
+        "why": "Highlights ongoing tensions regarding US military presence overseas."
+      }
+    ],
+    "us": [
+      {
+        "headline": "US stock market retreats as Treasury yields hit high",
+        "summary": "The Dow fell 500 points while the S&P 500 and Nasdaq retreated from record highs as Treasury yields reached a 24-year peak.",
+        "outlets": 3,
+        "published": "2026-10-07T17:40:28+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/washington-and-wall-street-chose-to-delay-paying-their-bills-and-to-put-them-on-your-tab-2eba83aa?mod=mw_rss_topstories"
+          },
+          {
+            "source": "Yahoo Finance",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNzdzeXVFbkMwaXViZjI2SHhUTnR6V2lmRkxTcEh2ZVd2cFJNR0tvOWpfajVRWDlHSXVqeVd6ZWdUTTBOUXpiSDQxQUdPLUtaa3oySVRaazVVd25TN1ZBNEtrT3pfaXI1UUNjaGQ4OW1VVC1XTXh3OENieG42UUxmWDR5ZGZROGFEdDVab015WTBPUmpFYnhOSEdINHhZbWZtUnFtTHByNXZhTWRLWXM0?oc=5"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQN0RvVl9ubDN1ZkRqRFJ1Z21yUUdrSHFGUG5jRmU5N2FUU0dPeHlGcjlBY0hQZjltWjFVc3hJNEtSVEtKNUF1T0RZV3dnWFEzbWJ6Yi1jbk1QajNDMzFMTzlTUUtkNExTdWJIYXZHZ3FMTXgycVJVd056RFhwYkRYM0tYa3I3eElsVGdnMHUxQWh6blZK?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "US mortgage rates hit highest level in three years",
+        "summary": "Rising borrowing costs have pushed US mortgage applications down to their lowest level since February 2025.",
+        "outlets": 2,
+        "published": "2026-10-07T17:05:10+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/economy/2026/10/7/us-mortgage-rates-hit-their-highest-level-in-three-years?traffic_source=rss"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUnVmaExpRHBpalp3V3YtaklzbzVnV2lCaDNmMmhKZzc2NlloWVc4LUVaUnZoeTd1QmwxZ3k2TFpoUzlra0FjcnVtMTNvZm00bEFoLW96c25HSkMyaVpVUlpvZ281dVNrXy03SUpndE4tc3ltX0preTBsbGdmaDgzaXQ0cnc1TnZBNTB3bVpvVlFrbHRUZGs2UlNPbzZPWUdoS1I4?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Trump suggests Iran could target California cities",
+        "summary": "President Trump stated at a political rally that an Iran war was necessary, drawing sharp rebukes from California leaders.",
+        "outlets": 2,
+        "published": "2026-10-06T14:03:23+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/06/world/asia/trump-los-angeles-san-diego-iran.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/trump-suggests-iran-los-angeles-san-diego/story?id=137024894"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court considers military bomb testing in Guam",
+        "summary": "The US Supreme Court heard arguments over whether the Air Force can continue destroying munitions on a Guam beach habitat.",
+        "outlets": 1,
+        "published": "2026-10-07T17:27:58+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/07/us/politics/supreme-court-air-force-guam.html"
+          }
+        ]
+      },
+      {
+        "headline": "SpaceX Crew-12 returns to Earth from space station",
+        "summary": "NASA's SpaceX Crew-12 is returning to Earth from the International Space Station after swapping places with Crew-13.",
+        "outlets": 3,
+        "published": "2026-10-07T15:44:45+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/nasas-spacex-crew-12-heads-back-to-earth/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/uss-lincoln-aircraft-carrier-returns-home-after-record-deployment-supporting-iran-war"
+          },
+          {
+            "source": "Space",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNck44bkQ0c3B3Z2VTLTgzU01XeVRibHgzRUFtbENGaXJkemNjbzBpQmZtNTlBUDBpZW5DajEtdG5EWmt4OGZ1bnc0a29xT3llUk5BSjZ3WVB0a0x2ODBNRzRjRG4zODJOcjZ6c2VpWEt3N2tjSjdQOXJpRzdILTZSNDdjUDJpUTRfUk81Mm11cG1HWnJfa01tMERpYzZ4ZlFNSW5GTzk2YlhNMF9nWE1URzFvdVlYQmtCS05lUg?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "US seizes over 600000 gallons of fuel bound for Cuba",
+        "summary": "Federal officials intercepted multiple fuel shipments destined for Cuba as part of a tightening oil blockade.",
+        "outlets": 2,
+        "published": "2026-10-07T17:25:19+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/07/us/cuba-fuel-shipment-seized-sanctions.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/cuba-intercepted-fuel-shipments-energy-blockade/"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Building collapse in Delhi kills three, injures several",
+        "summary": "A four-storey residential building collapsed in Delhi's Seemapuri area, leaving three dead and rescue operations underway.",
+        "outlets": 7,
+        "published": "2026-10-07T17:38:39+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/many-feared-trapped-as-building-collapses-in-delhis-seemapuri-a-month-after-satya-niketan-tragedy-12150995#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/cities/delhi/story/delhi-seemapuri-building-collapse-quake-cracks-suspected-3-killed-ptag-3011981-2026-10-07?utm_source=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/seemapuri-building-collapse-three-dead-including-pregnant-woman-and-child-eight-injured-in-delhi-11791392072837.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/Delhi/delhi-seemapuri-building-collapse-people-trapped-rescue-october-7-2026/article71555449.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Rahul and Priyanka Gandhi detained during Delhi protest",
+        "summary": "Top Congress leaders were briefly detained by Delhi Police during an INDIA bloc protest march towards Jantar Mantar.",
+        "outlets": 4,
+        "published": "2026-10-07T17:32:28+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/cec-row-gyanesh-kumar-india-bloc-march-election-commission-sir-delhi-police-cjp-jantar-mantar-protest-live-updates-october-7-2026/article71554188.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/every-fir-a-medal-my-target-is-100-rahul-gandhi-eci-cec-gyanesh-kumar-resignation-demand-cjp-kharge-modi-amit-shah-dipke-saurav-das-jantar-mantar-101791368815819.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/opposition-vs-gyanesh-kumar-rahul-priyanka-gandhi-forcibly-removed-detained-during-india-bloc-protest-in-delhi-11791379000026.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/newsmo/short-videos/delhi-police-detain-priyanka-rahul-during-protest-3011839-2026-10-07?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Jharkhand CM Hemant Soren's mother passes away at 80",
+        "summary": "Rupi Soren, the wife of Jharkhand Mukti Morcha founder Shibu Soren, passed away in the hospital after receiving treatment for breathing difficulties.",
+        "outlets": 4,
+        "published": "2026-10-07T17:44:31+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/hemant-soren-s-mother-passes-away-at-80-jharkhand-cm-says-maa-was-my-greatest-shelter-all-about-rupi-soren-11791393920884.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-cm-hemant-sorens-mother-roopi-soren-dies/article71557123.ece"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/jharkhand-chief-minister-hemant-sorens-mother-rupi-soren-dies-at-80-12153120#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.aajtak.in/india/jharkhand/story/cm-hemant-soren-mother-passes-away-ranchi-ntc-drmt-rpti-2664186-2026-10-07?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Two cheetahs released into new Madhya Pradesh tiger reserve",
+        "summary": "Two cheetahs were released into a tiger reserve in Bundelkhand, marking their third designated habitat in Madhya Pradesh.",
+        "outlets": 2,
+        "published": "2026-10-07T17:17:37+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/madhya-pradesh/two-cheetahs-released-into-tiger-reserve-their-third-habitat-in-madhya-pradesh/article71556825.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/two-cheetahs-from-kuno-released-in-mp-s-veerangana-durgavati-tiger-reserve-101791380984756.html"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi Customs destroys 165 kg of seized drugs",
+        "summary": "Delhi Customs incinerated 165 kilograms of seized drugs worth over 500 crores following numerous airport seizures.",
+        "outlets": 1,
+        "published": "2026-10-07T16:57:31+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/delhi-customs-destroys-165-kg-of-seized-drugs-worth-515-crore-at-incineration-facility-101791388394064.html"
+          }
+        ]
+      },
+      {
+        "headline": "Lightning damages nose of IndiGo flight landing in Lucknow",
+        "summary": "An IndiGo flight suffered damage to its nose radome after being struck by lightning while approaching Lucknow safely.",
+        "outlets": 2,
+        "published": "2026-10-07T17:28:04+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/indigo-patna-lucknow-flight-hit-by-lightning-at-17000-feet-damages-planes-nose-lands-safely-in-lucknow-3012010-2026-10-07?utm_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/lucknow/lightning-strike-damages-patna-lucknow-indigo-flights-nose-mid-air-104-passengers-6-crew-escape-unhurt/articleshow/134771006.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "France halts use of stun grenades after student injury",
+        "summary": "French authorities suspended the use of police stun grenades after a teenager's hand was blown off during student protests.",
+        "outlets": 5,
+        "published": "2026-10-07T17:47:31+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cqzjx7z2r4gko?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/french-boys-hand-blown-off-by-police-stun-grenade-during-student-protests/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/07/french-police-suspend-use-stun-grenades-high-school-protester-loses-hand"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92aWVwcFl2RWFudm5mdFR5TTJObXI0a014eDl6TkYxZTNyTjQ2MkpjeXlzWUgyQV81UE85cEQ3RDByWGRIb2NrOXYzRDdXZ0NzUENNbTBQQXZ1SGM?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "German court orders detention of former intelligence chief",
+        "summary": "Former German spy chief August Hanning appeared before a judge after being arrested for alleged treason and espionage.",
+        "outlets": 3,
+        "published": "2026-10-07T17:03:53+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/07/germany-court-august-hanning-spying-arrest-detention-bnd"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/06/world/europe/germany-spy-chief-hanning-arrested-espionage.html"
+          },
+          {
+            "source": "Euronews.com",
+            "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNV2R2Q0ZnclZmZkUyVWxJcmZvSlkzcm05OERTckxROFMyYlVpaW9hTVVWX0tyUHBiNG1CbERzVkx2eVBoSzBkejFKbFJDNjVsWi1RLWl4ZEZxSDVCeU15aXZ1My1ZaVFLNHdXN1V0UEdDaUJTZlVVclN1VXlGNXQ0Q1lyUGQwVVN2aWVVV245RnJsejhTUEV4enFGcV9rVU1pYnRxZkI1a2lMUGdJQ0R6VHdJd0lMQUlZLXhjdjlTYlVFcVhC?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Far-right party claims first German statehouse speaker",
+        "summary": "The Alternative for Germany party secured a state legislature oversight role for the first time since the Nazi era.",
+        "outlets": 3,
+        "published": "2026-10-06T23:18:41+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/06/world/europe/germany-afd-saxony-anhalt.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/7/germanys-merz-vows-to-fight-extremism-after-afd-far-left-election-gains?traffic_source=rss"
+          },
+          {
+            "source": "DW.com",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUmlkSUJ6QVZ1WkpOQnZKNmZIbkVMQnFmOWtBSkhoLXAxS19KWXM5RFYyS3M2ei14ZkhDbGlzM3FuXzVCZ0VOZW4xNWFwZXhmZkhkS0FZRWNwbW45TlFja0hjR3lqSDFKLWhWbmVLamlaT3JoMTFXQ3ZXSENmUXktM0xDNm9KYmRvbzhyblpCdHZQNzQ4RkpSWmZEX2hnOUk4OExrTDh3WUpCM2dRZDN5UmhRX0VzbUU?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Over 200000 displaced as fighting escalates in Yemen",
+        "summary": "The United Nations reported massive displacement amid escalating Houthi clashes, warning of widespread hunger.",
+        "outlets": 1,
+        "published": "2026-10-07T16:02:17+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/gallery/2026/10/7/more-than-200000-displaced-as-fighting-escalates-in-yemen-un-says-2?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Scientists win Nobel Prize in Chemistry for mirror mystery",
+        "summary": "Henri B Kagan and Kenso Soai won the 2026 Nobel Prize in Chemistry for explaining why organisms favor left-handed amino acids.",
+        "outlets": 5,
+        "published": "2026-10-07T15:22:13+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/science/nobel-chemistry-2026-how-kagan-soai-solved-century-old-mirror-image-mystery/articleshow/134767719.cms"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/7/henri-kagan-kenso-soai-win-chemistry-nobel-for-mirror-image-breakthrough?traffic_source=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/science/watch-live-winner-of-the-2026-nobel-prize-in-chemistry-is"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6ly038jg0d4o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Elon Musk blames Starlink hurdles on Indian monopolies",
+        "summary": "Elon Musk stated that Starlink's entry into India is being blocked by certain local oligarchs maintaining monopolistic control.",
+        "outlets": 2,
+        "published": "2026-10-07T17:16:28+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/elon-musk-blames-starlink-roadblocks-in-india-on-monopolistic-chokeholds-101791392998055.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/elon-musk-cryptic-attack-on-oligarchs-blocking-starlink-launch-in-india-3011941-2026-10-07?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Adani Enterprises receives credit rating upgrade from CARE",
+        "summary": "CARE Ratings upgraded Adani Enterprises' long-term rating to CARE AA with a stable outlook.",
+        "outlets": 1,
+        "published": "2026-10-07T14:04:27+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/adani-enterprises-gets-rating-upgrade-from-care-ratings-to-aa-stable-shares-up-21-in-2026/articleshow/134768104.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Iraq devalues its currency amid regional oil shipping disruptions",
+        "summary": "Iraq's central bank lowered its official exchange rate to 1,500 dinars per dollar following disruptions caused by regional conflicts.",
+        "outlets": 1,
+        "published": "2026-10-07T14:31:19+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/forex/iraq-devalues-its-currency-as-iran-us-war-disrupts-oil-shipping-routes/articleshow/134768571.cms"
+          }
+        ]
+      }
+    ]
+  }
+}
