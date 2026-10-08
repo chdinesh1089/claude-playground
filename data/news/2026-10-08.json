@@ -1,0 +1,539 @@
+{
+  "date": "2026-10-08",
+  "generated_at": "2026-10-08T17:53:07+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "US suspends Indian IT firms and Microsoft from green card program",
+        "summary": "The US administration suspended major Indian IT firms and Microsoft from the Permanent Labor Certification Program amid claims of visa program abuse.",
+        "outlets": 9,
+        "published": "2026-10-08T17:02:48+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/indian-it-firms-suspended-from-us-programme-sponsoring-workers-for-green-card-12158246#publisher=newsstand"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/technology/2026/oct/08/jd-vance-microsoft-visa-workers-green-card-suspension"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/watch-vance-says-microsoft-is-being-suspended-from-green-card-program-for-h-1b-visa-workers"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/economy/2026/10/8/us-suspends-microsoft-and-adobe-from-visa-programme-amid-fraud-claims?traffic_source=rss"
+          }
+        ],
+        "why": "Directly impacts H-1B workers, green card processing times, and Indian tech professionals in the US."
+      },
+      {
+        "headline": "Russian strike on passenger buses in Ukraine kills at least 30",
+        "summary": "A Russian missile strike targeting civilian buses in the eastern Ukrainian city of Kramatorsk killed at least 30 people.",
+        "outlets": 6,
+        "published": "2026-10-08T17:13:36+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c875pwq134l3o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/08/russian-attack-buses-ukraine-frontline-kramatorsk"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/russia-ukraine-kramatorsk-missile-strike-buses/"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/30-killed-after-russian-strike-hits-two-buses-in-ukrainian-frontline-city-12157656#publisher=newsstand"
+          }
+        ],
+        "why": "Major escalation in civilian casualties and attacks on Ukraine's transport network."
+      },
+      {
+        "headline": "Hurricane Isaias threatens Gulf Coast with severe flooding",
+        "summary": "Hurricane Isaias targeted the Gulf Coast from Mississippi to the Florida Panhandle, prompting widespread hurricane warnings.",
+        "outlets": 5,
+        "published": "2026-10-08T17:27:48+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/hurricane-isaias-first-storm-2026-atlantic-season-record/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/tropical-storm-isaias-forecast-make-landfall-hurricane-friday/story?id=137059483"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/08/hurricane-isaias-gulf-coast"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/science/how-el-nino-is-playing-a-role-in-hurricane-isaias"
+          }
+        ],
+        "why": "Severe weather threatening lives and property across multiple southern US states."
+      },
+      {
+        "headline": "Saudi Arabia vows retaliation after Houthi airport attacks",
+        "summary": "Houthi missile attacks on Saudi airports killed three people, prompting Saudi Arabia to vow that the strikes will not go unpunished.",
+        "outlets": 7,
+        "published": "2026-10-08T17:13:51+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/08/world/middleeast/saudi-yemen-houthis-attack.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwn8d5rx22rdo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/oct/08/oil-prices-rise-middle-east-tensions-us-hurricane-threat"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/indigo-air-india-express-cancel-riyadh-flights-after-houthi-airport-attacks-12157264#publisher=newsstand"
+          }
+        ],
+        "why": "Escalating conflict in the Middle East causing regional instability and rising oil prices."
+      },
+      {
+        "headline": "GST Council reforms scrap tax officers' arrest powers",
+        "summary": "The GST Council removed arrest powers for tax officers in procedural changes aimed at making compliance faster and reducing litigation.",
+        "outlets": 4,
+        "published": "2026-10-08T13:54:17+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/in-major-reform-gst-council-scraps-tax-officers-arrest-powers-12156724#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/gst-officers-lose-arrest-powers-council-hikes-prosecution-threshold-to-rs-5-crore-101791462485978.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/business/Economy/gst-council-scraps-arrest-powers-of-gst-officers-ups-prosecution-threshold-to-5-crore/article71559868.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/gst-council-meeting-key-highlights-11791461351561.html"
+          }
+        ],
+        "why": "Major tax and business reform affecting compliance for companies operating in India."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Highest mortgage rates in three years chill housing market",
+        "summary": "The average 30-year fixed-rate mortgage rose to 7.4 percent, putting increased pressure on prospective home buyers.",
+        "outlets": 1,
+        "published": "2026-10-08T16:20:27+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/08/business/mortgage-rates-housing-prices.html"
+          }
+        ]
+      },
+      {
+        "headline": "Space station crew returns to Earth with perfect splashdown",
+        "summary": "The Crew 13 fliers completed a mission spanning more than 100 million miles with a splashdown off Southern California.",
+        "outlets": 3,
+        "published": "2026-10-08T16:16:38+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/space-station-crew-end-mission-pacific-ocean-splashdown/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/video/137098353/"
+          },
+          {
+            "source": "Space",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNck44bkQ0c3B3Z2VTLTgzU01XeVRibHgzRUFtbENGaXJkemNjbzBpQmZtNTlBUDBpZW5DajEtdG5EWmt4OGZ1bnc0a29xT3llUk5BSjZ3WVB0a0x2ODBNRzRjRG4zODJOcjZ6c2VpWEt3N2tjSjdQOXJpRzdILTZSNDdjUDJpUTRfUk81Mm11cG1HWnJfa01tMERpYzZ4ZlFNSW5GTzk2YlhNMF9nWE1URzFvdVlYQmtCS05lUg?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Texas man executed following recent developments",
+        "summary": "Jamaal Howard was put to death in Texas, marking the first execution since a recent botched lethal injection in Tennessee.",
+        "outlets": 2,
+        "published": "2026-10-08T05:51:01+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/who-was-jamaal-howard-texas-man-killed-in-first-us-execution-after-christa-pike-botch-his-last-words-enjoy-life-11791437632648.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cw4g1j2z5zvzo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Marco Rubio brushes off questions about donor credit card bill",
+        "summary": "Secretary of State Marco Rubio dismissed questions regarding reports that a US ambassador pressured a donor to pay a bill.",
+        "outlets": 2,
+        "published": "2026-10-08T16:43:34+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/08/kimberly-guilfoyle-donor-wire-marco-rubio"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/report-alleges-ambassador-guilfoyle-improperly-asked-a-donor-to-pay-her-credit-card-bill-rubio-refuses-to-comment"
+          }
+        ]
+      },
+      {
+        "headline": "Security guard fatally shoots armed man at federal courthouse",
+        "summary": "A security guard shot and killed a man who tried to fire a gun and wielded a knife inside a Nashville courthouse.",
+        "outlets": 1,
+        "published": "2026-10-08T17:41:36+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/08/us/nashville-courthouse-shooting.html"
+          }
+        ]
+      },
+      {
+        "headline": "Apple announces surprise New York launch event for October",
+        "summary": "Apple scheduled an event in New York where it is rumored to be launching new smart home-focused products.",
+        "outlets": 2,
+        "published": "2026-10-08T16:08:40+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/news/1008039/apple-smart-home-event-october-13th"
+          },
+          {
+            "source": "MacRumors",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4ybjJ3VC01ZXljQ0htQUdGcFdmWUJiSG5EMVNvT3lwbXlpcmNHcW1id0cxdlhwbk90d2NpZTFQTHo4eTRGUjEtamJiVlJtZ3pkU3QyeGVoUWZPV25hcjNraWxrX2xxMHRvMkRQZ0FsR3RrZm43SUoxVQ?oc=5"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Veteran Indian actor Nana Patekar passes away at 75",
+        "summary": "Acclaimed Indian actor Nana Patekar died suddenly from a cardiac arrest at his Goa residence, drawing widespread mourning.",
+        "outlets": 8,
+        "published": "2026-10-08T16:54:37+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cj3vqr5rknpeo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/veteran-actor-nana-patekar-dies-of-cardiac-arrest-why-every-minute-counts/articleshow/134795360.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/08/world/asia/nana-patekar-dead.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/newsmo/short-videos/nana-patekar-the-natsamrat-who-ruled-the-screen-dies-at-75-3012636-2026-10-08?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Government to release AI consultation paper within a month",
+        "summary": "Union Minister Ashwini Vaishnaw announced that an upcoming AI consultation paper will focus on safety, skilling, and human-first approaches.",
+        "outlets": 4,
+        "published": "2026-10-08T16:41:39+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/government-to-release-ai-consultation-paper-within-a-month-ashwini-vaishnaw-12158391#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-to-release-ai-regulation-consultation-paper-within-a-month-says-ashwini-vaishnaw-101791464351881.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/technology/news/story/india-to-bring-ai-regulation-consultation-paper-within-a-month-ashwini-vaishnaw-3012600-2026-10-08?utm_source=rss"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/andhra-pradesh/students-must-focus-on-technological-advancements-says-ambedkar-university-dean/article71559231.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Centre to cap trade margins on non-scheduled cancer drugs",
+        "summary": "The government moved to cap trade mark-ups on non-scheduled cancer drugs to 30% of MRP to lower patient treatment costs.",
+        "outlets": 2,
+        "published": "2026-10-08T16:39:39+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/centre-to-cap-trade-margins-on-non-scheduled-cancer-drugs-to-30-of-mrp/article71560801.ece"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/health/story/cancer-drugs-price-cap-centre-30-percent-trade-margin-mrp-cut-3012530-2026-10-08?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Opposition leaders protest in Delhi over electoral rolls",
+        "summary": "Indian opposition lawmakers protested in Delhi against alleged vote deletion and the Special Intensive Revision process.",
+        "outlets": 4,
+        "published": "2026-10-08T17:36:54+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/kolkata/mamata-banerjee-likely-to-join-cjp-protests-on-october-10/article71560762.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/mamata-banerjee-may-join-cjp-protest-against-cec-gyanesh-kumar-at-jantar-mantar-on-oct-10-101791474076190.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/may-join-cjps-jantar-mantar-protest-on-oct-10-will-decide-later-mamata-banerjee/articleshow/134788979.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/08/world/asia/india-voter-protests-opposition-gandhi.html"
+          }
+        ]
+      },
+      {
+        "headline": "Air Chief Marshal Singh highlights IAF power during event",
+        "summary": "Air Chief Marshal Amar Preet Singh stated that the world witnessed the destructive power of the IAF during conflict.",
+        "outlets": 2,
+        "published": "2026-10-08T15:53:03+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/air-force-day-air-chief-marshal-amar-preet-singh/article71558533.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/op-sindoor-showed-how-fast-iaf-can-move-into-combat-air-chief-101791437219105.html"
+          }
+        ]
+      },
+      {
+        "headline": "Union health minister launches JOSH teams for TB elimination",
+        "summary": "The health minister launched JOSH teams to accelerate the national tuberculosis elimination drive across districts.",
+        "outlets": 2,
+        "published": "2026-10-08T15:46:04+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/union-health-minister-launches-josh-teams-to-accelerate-tb-elimination-drive/article71560177.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/nadda-launches-josh-teams-with-ncc-cadets-my-bharat-volunteers-for-tuberculosis-elimination-drive-101791455168602.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Canadian poet Anne Carson is awarded Nobel Prize in literature",
+        "summary": "Canadian writer Anne Carson won the Nobel Prize in Literature, joining a distinguished list of global laureates.",
+        "outlets": 10,
+        "published": "2026-10-08T16:16:47+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/08/books/nobel-prize-literature.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/literature-nobel-2026-winner-anne-carsons-india-link-a-lost-brother-stationery-from-kashmir-and-a-memoir-called-nox-12157833#publisher=newsstand"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/books/2026/oct/08/wins-the-nobel-prize-in-literature-2026"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/8/canadian-anne-carson-wins-2026-nobel-prize-in-literature?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "South Korea recalls Ukraine envoy over prisoner-of-war row",
+        "summary": "South Korea recalled its envoy to Ukraine following a diplomatic spat regarding the transfer of North Korean prisoners.",
+        "outlets": 5,
+        "published": "2026-10-08T16:23:09+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckwy48rrz95vo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/08/world/asia/ukraine-south-korea-ambassador.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/8/south-korea-recalls-envoy-to-kyiv-over-diplomatic-row-with-ukraine?traffic_source=rss"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/08/g-s1-147113/south-korea-test-flies-its-first-domestically-developed-hypersonic-weapon"
+          }
+        ]
+      },
+      {
+        "headline": "Former Venezuelan leader Nicolas Maduro faces new torture charges",
+        "summary": "Federal prosecutors charged former Venezuelan leader Nicolas Maduro and his wife over an alleged system of repression and torture.",
+        "outlets": 6,
+        "published": "2026-10-08T17:26:38+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/former-venezuelan-president-nicolas-maduro-wife-face-new/story?id=137097107"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/nicolas-maduro-cilia-flores-new-torture-charge/"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/08/nx-s1-5995360/venezuela-nicolas-maduro-torture-charges"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/08/cilia-flores-nicolas-maduro-new-york-court"
+          }
+        ]
+      },
+      {
+        "headline": "Student protests over school conditions sweep across France",
+        "summary": "Anger over classroom overcrowding and teacher shortages led to widespread school blockades and marches across France.",
+        "outlets": 6,
+        "published": "2026-10-08T16:04:42+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/08/world/europe/france-student-protests.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/europe/from-france-to-italy-belgium-to-greece-student-protests-spread-across-europe/articleshow/134785388.cms"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6n9rgg80z94o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/08/france-student-protests-schools-vow-to-continue"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Google unveils Gemini AI agent to handle workplace tasks",
+        "summary": "Google introduced a new AI agent capable of writing code and integrating into applications like Gmail to assist workers.",
+        "outlets": 2,
+        "published": "2026-10-08T16:21:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/google-gemini-ai-workplace-agent/"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE12UTlXY3U3c0V2R3V6VzlxUnBIaC0xQmota1VQVUctOGJPclhmMnZpYW1aSTVQOVJsRTdxdWdPTjhqM2lBVnUwV3JUa091YV9vS3MyUWhHRVJoY2lBYjUxZ2NxcXUyNGw3UnVCckxxWER1N0RXZm8wLWtMQQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Airlines raise fuel costs further amid rising ATF prices",
+        "summary": "Air India, IndiGo, and Akasa raised ticket prices and fuel costs as operating expenses climbed due to ATF spikes.",
+        "outlets": 3,
+        "published": "2026-10-08T16:12:41+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/after-indigo-air-india-and-akasa-raise-fuel-costs-amid-atf-spike-101791475369132.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/flying-gets-costlier-from-october-9-air-india-air-india-express-join-akasa-air-in-fuel-surcharge-hike-heres-what-youll-pay/articleshow/134792365.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/business/india-business/air-india-air-india-express-hike-fuel-surcharge-amid-rising-costs-akasa-air-reinstates-levy/articleshow/134792213.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Japan beer giants raided over suspected price collusion",
+        "summary": "Japanese authorities raided the country's four biggest breweries over suspicions of colluding to set beverage prices.",
+        "outlets": 2,
+        "published": "2026-10-08T03:54:38+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/08/japan-beer-giants-raided-over-suspicions-they-colluded-to-set-the-price-of-beverages"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm5yn3592xk9o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "PepsiCo weighs structural options including potential split",
+        "summary": "PepsiCo faced growing pressure to grow its North American business as consumers cut costs and change eating habits.",
+        "outlets": 1,
+        "published": "2026-10-08T17:13:33+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/08/business/pepsico-earnings-splitting.html"
+          }
+        ]
+      }
+    ]
+  }
+}
