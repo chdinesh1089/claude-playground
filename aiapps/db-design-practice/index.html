@@ -492,23 +492,27 @@ const DIAGRAMS = {
     return d;
   },
   bankEER() {
-    const d = ER(1290, 740)
+    const d = ER(1290, 850)
       .E('BANK', 130, 110).R('BRANCHES', 390, 110, { ident: true }).E('BANK_BRANCH', 640, 110, { weak: true })
       .R('ACCTS', 380, 245).R('LOANS', 900, 245)
       .E('ACCOUNT', 380, 375).R('A_C', 520, 375).E('CUSTOMER', 640, 375).R('L_C', 760, 375).E('LOAN', 900, 375)
-      .R('HAS_TRANS', 205, 375, { ident: true }).E('TRANSACTION', 150, 530, { weak: true })
+      .R('HAS_TRANS', 205, 375, { ident: true }).E('TRANSACTION', 175, 530, { weak: true })
+      .E('DEPOSIT', 65, 750).E('WITHDRAWAL', 185, 750).E('CHECK', 305, 750)
       .R('MAKES', 1075, 375, { ident: true }).E('PAYMENT', 1150, 530, { weak: true })
       .E('SAVINGS_ACCT', 330, 625).E('CHECKING_ACCT', 490, 625)
       .E('CAR_LOAN', 810, 625).E('HOME_LOAN', 970, 625);
     d.S('accS', 380, 480, 'd', 'ACCOUNT', ['SAVINGS_ACCT', 'CHECKING_ACCT'], { total: true, attr: 'Acct_type' });
     d.S('loanS', 900, 480, 'd', 'LOAN', ['CAR_LOAN', 'HOME_LOAN'], { total: true, attr: 'Loan_type' });
+    d.S('trS', 175, 645, 'd', 'TRANSACTION', ['DEPOSIT', 'WITHDRAWAL', 'CHECK'], { total: true, attr: 'Trans_type' });
     d.attrs('BANK', 's', ['_Code', 'Name', 'Addr'], { d: 22 });
     d.attrs('BANK_BRANCH', 'n', ['Addr', '~Branch_no'], { d: 18 });
     d.A('ACCOUNT', '_Acct_no', 270, 300); d.A('ACCOUNT', 'Balance', 470, 305); d.A('ACCOUNT', 'Acct_type', 300, 445);
     d.A('LOAN', '_Loan_no', 1000, 300); d.A('LOAN', 'Amount', 800, 305); d.A('LOAN', 'Loan_type', 990, 445);
     d.attrs('CUSTOMER', 's', ['_Ssn', 'Name', 'Phone', 'Addr'], { d: 22 });
-    d.attrs('TRANSACTION', 's', ['~Trans_no', 'Amount', 'Date'], { d: 20 });
-    d.attrs('TRANSACTION', 's', ['Time', 'Trans_type'], { d: 54 });
+    d.attrs('TRANSACTION', 'w', ['~Trans_no', 'Amount', 'Date', 'Time', 'Trans_type'], { d: 20, step: 28 });
+    d.attrs('DEPOSIT', 's', ['Source'], { d: 18 });
+    d.attrs('WITHDRAWAL', 's', ['Channel'], { d: 18 });
+    d.attrs('CHECK', 's', ['Check_no', 'Payee'], { d: 18 });
     d.attrs('PAYMENT', 's', ['~Payment_no', 'Amount'], { d: 20 });
     d.attrs('PAYMENT', 's', ['Date', 'Time'], { d: 54 });
     d.attrs('SAVINGS_ACCT', 's', ['Interest_rate'], { d: 20 });
@@ -525,28 +529,30 @@ const DIAGRAMS = {
     return d;
   },
   olympics() {
-    const d = ER(1290, 860)
+    const d = ER(1290, 980)
       .E('FACILITY_TYPE', 160, 160).R('OF_TYPE', 160, 330).E('COMPLEX', 470, 330)
       .R('HOLDS', 760, 330).E('EVENT', 1010, 330)
-      .E('ONE_SPORT', 350, 560).E('MULTISPORT', 560, 560)
-      .R('OFFICIATES', 1010, 500).E('OFFICIAL', 1010, 660)
-      .R('NEEDS', 880, 560).E('EQUIPMENT', 860, 760).R('MAINTAINS', 730, 600);
+      .E('ONE_SPORT', 340, 560).E('MULTISPORT', 540, 560)
+      .R('OFFICIATES', 1010, 200).E('OFFICIAL', 1010, 80)
+      .R('NEEDS', 1000, 510).E('EVENT_EQUIPMENT', 1000, 670)
+      .R('MAINTAINS', 680, 510).E('MAINTENANCE_EQUIPMENT', 760, 670)
+      .E('EQUIPMENT', 880, 880);
     d.S('cS', 470, 450, 'd', 'COMPLEX', ['ONE_SPORT', 'MULTISPORT'], { total: true });
+    d.S('eqS', 880, 780, 'o', 'EQUIPMENT', ['EVENT_EQUIPMENT', 'MAINTENANCE_EQUIPMENT'], { total: true });
     d.attrs('FACILITY_TYPE', 'n', ['_Type_name', 'Num_needed', 'Approx_budget'], { d: 22, dx: 40 });
     d.attrs('COMPLEX', 'n', ['_Complex_id', 'Location', 'Chief_organizer', 'Total_area'], { d: 30 });
     d.attrs('ONE_SPORT', 's', ['Sport'], { d: 20 });
     d.attrs('MULTISPORT', 's', [['{Sport_area}', ['Sport', 'Location_indicator']]], { d: 20, kd: 16 });
-    d.attrs('EVENT', 'n', ['_Event_id', 'Name', 'Planned_date', 'Duration'], { d: 30, dx: 20 });
-    d.attrs('EVENT', 'e', ['Num_participants', 'Num_officials'], { d: 22 });
-    d.attrs('OFFICIAL', 'e', ['_Official_id', 'Name', 'Phone'], { d: 22 });
+    d.attrs('EVENT', 'e', ['_Event_id', 'Name', 'Planned_date', 'Duration', 'Num_participants', 'Num_officials'], { d: 22, step: 28 });
+    d.attrs('OFFICIAL', 'e', ['_Official_id', 'Name', 'Phone'], { d: 22, step: 28 });
     d.attrs('EQUIPMENT', 's', ['_Equip_id', 'Description'], { d: 20 });
     d.attrs('NEEDS', 'e', ['Quantity'], { d: 12 });
-    d.attrs('MAINTAINS', 's', ['Quantity'], { d: 12 });
+    d.attrs('MAINTAINS', 'e', ['Quantity'], { d: 12 });
     d.L('OF_TYPE', 'FACILITY_TYPE', '(0,N)').L('OF_TYPE', 'COMPLEX', '(1,1)')
       .L('HOLDS', 'COMPLEX', '(1,N)').L('HOLDS', 'EVENT', '(1,1)')
       .L('OFFICIATES', 'EVENT', '(1,N)', { side: -1 }).L('OFFICIATES', 'OFFICIAL', '(0,N)', { side: -1 })
-      .L('NEEDS', 'EVENT', '(0,N)', { off: 50 }).L('NEEDS', 'EQUIPMENT', '(0,N)', { lx: 894, ly: 722 })
-      .L('MAINTAINS', 'COMPLEX', '(0,N)', { side: -1, off: 90 }).L('MAINTAINS', 'EQUIPMENT', '(0,N)', { lx: 790, ly: 742 });
+      .L('NEEDS', 'EVENT', '(0,N)', { side: -1 }).L('NEEDS', 'EVENT_EQUIPMENT', '(1,N)', { side: -1 })
+      .L('MAINTAINS', 'COMPLEX', '(0,N)', { side: -1, off: 60 }).L('MAINTAINS', 'MAINTENANCE_EQUIPMENT', '(1,N)', { side: -1 });
     return d;
   },
   hospital() {
@@ -977,7 +983,7 @@ const EXERCISES = [
     { h: 'Assumptions', html: ul([
       'An account is exactly one kind (savings or checking): <b>disjoint, total</b>, defined by the attribute Acct_type. Same for loans (car or home), defined by Loan_type. If other account kinds exist that need no extra attributes, make the specialization partial.',
       'Subclass-specific attributes (invented, since the book gives none): savings Interest_rate, checking Overdraft_limit, car loan Vehicle_vin, home loan Property_addr.',
-      'TRANSACTION is a weak entity of ACCOUNT, numbered 1, 2, 3, … per account (partial key Trans_no). Trans_type is deposit / withdrawal / check.',
+      'TRANSACTION is a weak entity of ACCOUNT, numbered 1, 2, 3, … per account (partial key Trans_no). It is specialized by Trans_type into DEPOSIT, WITHDRAWAL and CHECK (disjoint, total), the kinds the question lists. Each subclass gets its own attribute: deposit Source (cash/transfer), withdrawal Channel (ATM/teller), check Check_no and Payee.',
       'PAYMENT is a weak entity of LOAN with partial key Payment_no.',
       'TRANSACTION and PAYMENT are not generalized: they belong to different owners and are used differently.',
     ]) },
@@ -997,6 +1003,9 @@ const EXERCISES = [
       { n: 'CAR_LOAN', step: 'Option 8A', a: '*Loan_no Vehicle_vin', fk: ['Loan_no → LOAN'] },
       { n: 'HOME_LOAN', step: 'Option 8A', a: '*Loan_no Property_addr', fk: ['Loan_no → LOAN'] },
       { n: 'TRANSACTION', step: 'Step 2 (weak)', a: '*Acct_no *Trans_no Amount Date Time Trans_type', fk: ['Acct_no → ACCOUNT'] },
+      { n: 'DEPOSIT', step: '8A', a: '*Acct_no *Trans_no Source', fk: ['Acct_no, Trans_no → TRANSACTION'] },
+      { n: 'WITHDRAWAL', step: '8A', a: '*Acct_no *Trans_no Channel', fk: ['Acct_no, Trans_no → TRANSACTION'] },
+      { n: 'CHECK_TXN', step: '8A', a: '*Acct_no *Trans_no Check_no Payee', fk: ['Acct_no, Trans_no → TRANSACTION'], note: 'CHECK is a reserved word in SQL' },
       { n: 'PAYMENT', step: 'Step 2 (weak)', a: '*Loan_no *Payment_no Amount Date Time', fk: ['Loan_no → LOAN'] },
       { n: 'A_C', a: '*Ssn *Acct_no', fk: ['Ssn → CUSTOMER', 'Acct_no → ACCOUNT'] },
       { n: 'L_C', a: '*Ssn *Loan_no', fk: ['Ssn → CUSTOMER', 'Loan_no → LOAN'] },
@@ -1011,6 +1020,7 @@ const EXERCISES = [
     'ACCOUNT and LOAN each have a specialization circle with d/o and total/partial stated.',
     'Each subclass has at least one specific attribute (or you explained why not).',
     'TRANSACTION and PAYMENT are weak with identifying relationships and partial keys.',
+    'TRANSACTION is specialized into DEPOSIT, WITHDRAWAL, CHECK; their relations inherit the weak entity\'s two-part key.',
     'You named the mapping option (8A–8D) and can say when the others apply.',
     'The subclass relations\' primary keys are also foreign keys to the superclass relation.',
   ],
@@ -1040,7 +1050,7 @@ const EXERCISES = [
       'Each event is held at exactly one complex, and each complex holds at least one event.',
       'An official is on the roster even before being assigned to an event, so officials are (0,N). Every event has at least one official.',
       'Num_officials is the planned count, not derived from OFFICIATES (the roster may be incomplete during planning).',
-      'Equipment is a catalog of items; NEEDS (events) and MAINTAINS (complexes) record the quantity required.',
+      'EQUIPMENT is specialized into EVENT_EQUIPMENT and MAINTENANCE_EQUIPMENT: <b>overlapping</b> (an item such as a ladder can be both) and <b>total</b> (every item is needed for one or the other). The subclasses exist because each takes part in its own relationship: NEEDS (events) or MAINTAINS (complexes), each with a Quantity.',
     ]) },
     { h: 'EER diagram with (min, max)', diagram: 'olympics', html: mmTable([
       ['OF_TYPE', 'COMPLEX', '(1,1)', 'Every complex has one facility type.'],
@@ -1049,9 +1059,9 @@ const EXERCISES = [
       ['HOLDS', 'EVENT', '(1,1)', 'An event is held at one complex.'],
       ['OFFICIATES', 'EVENT', '(1,N)', 'Every event needs officials.'],
       ['OFFICIATES', 'OFFICIAL', '(0,N)', 'Roster members may not be assigned yet.'],
-      ['NEEDS', 'EVENT / EQUIPMENT', '(0,N) / (0,N)', 'M:N with attribute Quantity.'],
-      ['MAINTAINS', 'COMPLEX / EQUIPMENT', '(0,N) / (0,N)', 'Maintenance equipment per complex, with Quantity.'],
-    ]) + '<p>Alternatives a grader should accept: AREA as a weak entity of MULTISPORT; EQUIPMENT specialized (overlapping) into EVENT_EQUIPMENT and MAINTENANCE_EQUIPMENT; Location as a composite attribute.</p>' },
+      ['NEEDS', 'EVENT / EVENT_EQUIPMENT', '(0,N) / (1,N)', 'M:N with Quantity; event equipment is by definition needed by some event.'],
+      ['MAINTAINS', 'COMPLEX / MAINTENANCE_EQUIPMENT', '(0,N) / (1,N)', 'M:N with Quantity.'],
+    ]) + '<p>Two specializations: COMPLEX (circle d, double line: disjoint, total) and EQUIPMENT (circle o, double line: overlapping, total). Alternatives a grader should accept: AREA as a weak entity of MULTISPORT; Location as a composite attribute; an unspecialized EQUIPMENT related directly to EVENT and COMPLEX.</p>' },
     { h: 'Relational mapping', rels: [
       { n: 'FACILITY_TYPE', step: 'Step 1', a: '*Type_name Num_needed Approx_budget' },
       { n: 'COMPLEX', step: 'Steps 1 + 4', a: '*Complex_id Location Chief_organizer Total_area Type_name', fk: ['Type_name → FACILITY_TYPE'], u: 'Type_name NOT NULL' },
@@ -1062,15 +1072,18 @@ const EXERCISES = [
       { n: 'OFFICIAL', step: 'Step 1', a: '*Official_id Name Phone' },
       { n: 'OFFICIATES', step: 'Step 5 (M:N)', a: '*Official_id *Event_id', fk: ['Official_id → OFFICIAL', 'Event_id → EVENT'] },
       { n: 'EQUIPMENT', step: 'Step 1', a: '*Equip_id Description' },
-      { n: 'NEEDS', step: 'Step 5 (M:N)', a: '*Event_id *Equip_id Quantity', fk: ['Event_id → EVENT', 'Equip_id → EQUIPMENT'] },
-      { n: 'MAINTAINS', step: 'Step 5 (M:N)', a: '*Complex_id *Equip_id Quantity', fk: ['Complex_id → COMPLEX', 'Equip_id → EQUIPMENT'] },
-    ], html: '<p>With option 8C instead, COMPLEX would get a type attribute and a nullable Sport, and ONE_SPORT/MULTISPORT would disappear (SPORT_AREA would then reference COMPLEX). MULTISPORT keeps a relation in 8A even with no own attributes, because SPORT_AREA must reference only multisport complexes.</p>' },
+      { n: 'EVENT_EQUIPMENT', step: '8A (overlapping)', a: '*Equip_id', fk: ['Equip_id → EQUIPMENT'] },
+      { n: 'MAINT_EQUIPMENT', step: '8A (overlapping)', a: '*Equip_id', fk: ['Equip_id → EQUIPMENT'] },
+      { n: 'NEEDS', step: 'Step 5 (M:N)', a: '*Event_id *Equip_id Quantity', fk: ['Event_id → EVENT', 'Equip_id → EVENT_EQUIPMENT'] },
+      { n: 'MAINTAINS', step: 'Step 5 (M:N)', a: '*Complex_id *Equip_id Quantity', fk: ['Complex_id → COMPLEX', 'Equip_id → MAINT_EQUIPMENT'] },
+    ], html: '<p>With option 8C instead, COMPLEX would get a type attribute and a nullable Sport, and ONE_SPORT/MULTISPORT would disappear (SPORT_AREA would then reference COMPLEX). MULTISPORT keeps a relation in 8A even with no own attributes, because SPORT_AREA must reference only multisport complexes. The same reasoning keeps EVENT_EQUIPMENT and MAINT_EQUIPMENT: NEEDS and MAINTAINS reference them, so only the right kind of equipment can be used. For the overlapping EQUIPMENT specialization, 8D (one EQUIPMENT relation with Boolean flags Is_event_equip, Is_maint_equip) also works, but then those FKs could only point at EQUIPMENT.</p>' },
   ],
   check: [
     'COMPLEX has a disjoint, total specialization into ONE_SPORT and MULTISPORT.',
     'Sport areas are multivalued composite (or a weak entity) on MULTISPORT, not on COMPLEX.',
     'The per-type "number needed / budget" is not stored on each complex.',
-    'EVENT–COMPLEX is 1:N; OFFICIAL–EVENT is M:N; equipment relates to both events and complexes.',
+    'EVENT–COMPLEX is 1:N; OFFICIAL–EVENT is M:N.',
+    'EQUIPMENT has an overlapping specialization (o) into event and maintenance equipment, each with its own relationship.',
     'Mapping: you named the specialization option and SPORT_AREA has PK (Complex_id, Sport).',
   ],
 },

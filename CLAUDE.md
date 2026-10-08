@@ -429,6 +429,10 @@ Keys: Space, ←/→, R.
 
 Newest first. Add one line per change.
 
+- 2026-10-08: DB Design Practice: 8.17 now specializes TRANSACTION into
+  DEPOSIT/WITHDRAWAL/CHECK and 8.18 specializes EQUIPMENT (overlapping) into
+  event and maintenance equipment, with matching mappings, so both answers use
+  full EER notation.
 - 2026-10-08: DB Design Practice: 8 new draw-it-yourself problems (D1–D8)
   with worked diagrams and mappings, category and shared-subclass drawing, and
   a sketch pad on every exercise page.
