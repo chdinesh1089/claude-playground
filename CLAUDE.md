@@ -429,6 +429,8 @@ Keys: Space, ←/→, R.
 
 Newest first. Add one line per change.
 
+- 2026-10-08: DB Design Practice: 7.16 adds an alternative answer with
+  GRADE_REPORT as a weak entity owned by STUDENT and SECTION (`universityAlt`).
 - 2026-10-08: DB Design Practice: 8.17 now specializes TRANSACTION into
   DEPOSIT/WITHDRAWAL/CHECK and 8.18 specializes EQUIPMENT (overlapping) into
   event and maintenance equipment, with matching mappings, so both answers use

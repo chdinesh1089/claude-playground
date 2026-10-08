@@ -399,6 +399,29 @@ const DIAGRAMS = {
       .L('GRADE_REPORT', 'STUDENT', '(0,N)', { side: -1 }).L('GRADE_REPORT', 'SECTION', '(0,N)', { side: -1 });
     return d;
   },
+  universityAlt() {
+    const d = ER(1080, 840)
+      .E('STUDENT', 250, 400).E('DEPARTMENT', 830, 170)
+      .R('MAJOR', 540, 170).R('MINOR', 540, 300)
+      .R('OFFERS', 830, 335).E('COURSE', 830, 480)
+      .R('SECTION_OF', 830, 720, { ident: true }).E('SECTION', 600, 720, { weak: true })
+      .R('RECEIVES', 250, 590, { ident: true }).E('GRADE_REPORT', 250, 720, { weak: true }).R('FOR_SECTION', 430, 720, { ident: true });
+    d.attrs('DEPARTMENT', 'n', ['_Dname', '_Dcode', 'Office_no', 'Office_phone', 'College']);
+    d.attrs('COURSE', 'e', ['_Course_no', 'Cname', 'Description', 'Credit_hours', 'Level'], { step: 30 });
+    d.attrs('SECTION', 's', ['~Sec_no', '~Semester', '~Year', 'Instructor'], { d: 22, dx: 40 });
+    d.attrs('GRADE_REPORT', 's', ['Letter_grade', 'Numeric_grade'], { d: 22 });
+    d.attrs('STUDENT', 'w', ['Bdate', 'Sex', 'Class', 'Degree_program', 'Current_address', 'Current_phone', 'Permanent_phone'], { step: 30, d: 30, dy: 50 });
+    d.attrs('STUDENT', 'n', ['_Student_no', '_Ssn', ['Name', ['Fname', 'Minit', 'Lname']]], { dx: -50, d: 50 });
+    const pa = d.A('STUDENT', 'Permanent_address', 420, 470);
+    d.attrs(pa, 'e', ['Street', 'City', 'State', 'Zip'], { d: 18, step: 27, dy: 10 });
+    d.L('MAJOR', 'STUDENT', '(1,1)', { side: -1 }).L('MAJOR', 'DEPARTMENT', '(0,N)')
+      .L('MINOR', 'STUDENT', '(0,1)').L('MINOR', 'DEPARTMENT', '(0,N)', { side: -1 })
+      .L('OFFERS', 'DEPARTMENT', '(0,N)', { side: -1 }).L('OFFERS', 'COURSE', '(1,1)', { side: -1 })
+      .L('SECTION_OF', 'COURSE', '(0,N)', { side: -1 }).L('SECTION_OF', 'SECTION', '(1,1)')
+      .L('RECEIVES', 'STUDENT', '(0,N)', { side: -1 }).L('RECEIVES', 'GRADE_REPORT', '(1,1)', { side: -1 })
+      .L('FOR_SECTION', 'GRADE_REPORT', '(1,1)', { side: -1 }).L('FOR_SECTION', 'SECTION', '(0,N)', { side: -1 });
+    return d;
+  },
   airline() {
     const d = ER(1270, 1110)
       .E('AIRPORT', 190, 250).R('DEPARTURE_AIRPORT', 520, 150).R('ARRIVAL_AIRPORT', 520, 345)
@@ -763,6 +786,10 @@ const EXERCISES = [
       'SECTION is weak: its primary key is the owner\'s key plus the partial key.',
       'GRADE_REPORT is M:N: a new relation whose key combines both sides\' keys, with the relationship attributes. The FK to SECTION is the whole 4-attribute key.',
     ])}` },
+    { h: 'Alternative: GRADE_REPORT as an entity', diagram: 'universityAlt', html: `<p>GRADE_REPORT becomes a <b>weak entity with two owners</b>, STUDENT and SECTION, through the identifying relationships RECEIVES and FOR_SECTION. It has no partial key: one student has at most one grade report per section, so the two owners' keys identify it.</p>` + mmTable([
+      ['RECEIVES', 'GRADE_REPORT / STUDENT', '(1,1) / (0,N)', 'Identifying; each report is for exactly one student.'],
+      ['FOR_SECTION', 'GRADE_REPORT / SECTION', '(1,1) / (0,N)', 'Identifying; each report is for exactly one section.'],
+    ]) + `<p>Mapping (Step 2, weak entity): GRADE_REPORT(<u>Student_no, Course_no, Semester, Year, Sec_no</u>, Letter_grade, Numeric_grade), the same relation the M:N version produces. Prefer the entity version only if a grade report needs its own relationships or history (grade changes, appeals, who posted it). A strong-entity variant with its own Report_id and two 1:N relationships is also acceptable, but then add UNIQUE(Student_no, Course_no, Semester, Year, Sec_no).</p>` },
   ],
   check: [
     'STUDENT has both Student_no and Ssn marked as keys.',
