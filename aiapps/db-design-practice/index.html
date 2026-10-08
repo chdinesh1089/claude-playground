@@ -136,6 +136,16 @@ details.sec, .card { min-width: 0; max-width: 100%; }
 .check input { width: 18px; height: 18px; margin: 3px 0 0; accent-color: var(--good); flex: none; }
 .check:has(input:checked) span { color: var(--ink-2); text-decoration: line-through; text-decoration-color: var(--muted); }
 .pill-good { color: var(--good); font-weight: 700; }
+/* sketch pad */
+.pad { margin: 8px 0 12px; }
+.padbar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 6px; }
+.padbar button { border: 1px solid var(--border); background: var(--surface); border-radius: 8px; padding: 5px 10px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.padbar button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.padbar .sep { width: 1px; height: 22px; background: var(--border); margin: 0 2px; }
+.pad canvas { display: block; width: 100%; height: auto; background: var(--raised); border: 1px solid var(--border); border-radius: 12px; touch-action: none; cursor: crosshair; }
+.pad.full { position: fixed; inset: 0; z-index: 50; margin: 0; padding: 10px; background: var(--page); overflow: auto; }
+.pad.full canvas { max-height: calc(100vh - 110px); width: auto; max-width: 100%; margin: 0 auto; }
+.padhelp { font-size: 12.5px; color: var(--muted); margin-top: 4px; }
 /* quiz */
 .progress { height: 4px; background: var(--track); border-radius: 2px; margin: 10px 0 16px; overflow: hidden; }
 .progress i { display: block; height: 100%; background: var(--accent); transition: width .25s; }
@@ -265,6 +275,15 @@ function ER(w, h) {
     for (const s of subs) d.links.push({ sub: true, c: id, e: s });
     return d;
   };
+  // category (union type): circle with U, plain lines to each superclass, subset line to the category
+  d.U = (id, x, y, sups, cat, o = {}) => {
+    add({ t: 'S', id, x, y, label: 'U' });
+    for (const s of sups) d.links.push({ spec: true, sup: s, c: id });
+    d.links.push({ sub: true, c: id, e: cat, total: !!o.total });
+    return d;
+  };
+  // a subclass drawn straight from one superclass (no circle), e.g. the second parent of a shared subclass
+  d.sub = (sup, sub) => (d.links.push({ sub: true, c: sup, e: sub }), d);
   d.note = (x, y, text) => (d.notes.push({ x, y, text }), d);
   return d;
 }
@@ -290,7 +309,7 @@ function erSVG(d, label) {
       if (L.attr) texts += `<text class="defattr" x="${f((s.x + c.x) / 2 + 10)}" y="${f((s.y + c.y) / 2)}" style="text-anchor:start">${esc(L.attr)}</text>`;
     } else if (L.sub) {
       const c = d.by[L.c], e = d.by[L.e];
-      lines += seg(c, e);
+      lines += seg(c, e, L.total);
       const len = Math.hypot(e.x - c.x, e.y - c.y), ux = (e.x - c.x) / len, uy = (e.y - c.y) / len, px = -uy, py = ux;
       const mx = c.x + ux * len * 0.45, my = c.y + uy * len * 0.45;
       // subset symbol: a cup opening toward the superclass
@@ -528,6 +547,155 @@ const DIAGRAMS = {
       .L('OFFICIATES', 'EVENT', '(1,N)', { side: -1 }).L('OFFICIATES', 'OFFICIAL', '(0,N)', { side: -1 })
       .L('NEEDS', 'EVENT', '(0,N)', { off: 50 }).L('NEEDS', 'EQUIPMENT', '(0,N)', { lx: 894, ly: 722 })
       .L('MAINTAINS', 'COMPLEX', '(0,N)', { side: -1, off: 90 }).L('MAINTAINS', 'EQUIPMENT', '(0,N)', { lx: 790, ly: 742 });
+    return d;
+  },
+  hospital() {
+    const d = ER(1200, 840)
+      .E('DEPARTMENT', 170, 210).R('WORKS_IN', 370, 140).R('HEADS', 370, 280).E('DOCTOR', 590, 210)
+      .R('PRIMARY_DOCTOR', 820, 400).E('PATIENT', 980, 580).R('HAS_APPT', 800, 580, { ident: true })
+      .R('WITH', 590, 400).E('APPOINTMENT', 590, 580, { weak: true })
+      .R('PRESCRIBES', 590, 740).E('MEDICATION', 300, 740);
+    d.attrs('DEPARTMENT', 's', ['_Dname', 'Floor'], { d: 22 });
+    d.attrs('DOCTOR', 'n', ['_License_no', ['Name', ['Fname', 'Lname']], 'Specialty', '{Phone}'], { dx: 150, d: 34 });
+    d.attrs('PATIENT', 's', ['_Patient_id', 'Name', 'Bdate', '/Age', 'Address'], { d: 22, dx: 40 });
+    d.attrs('APPOINTMENT', 'w', ['~Date', '~Time', 'Reason'], { d: 24 });
+    d.attrs('PRESCRIBES', 'e', ['Dosage'], { d: 14 });
+    d.attrs('MEDICATION', 's', ['_Med_code', 'Med_name'], { d: 22 });
+    d.L('WORKS_IN', 'DEPARTMENT', '(1,N)', { side: -1 }).L('WORKS_IN', 'DOCTOR', '(1,1)')
+      .L('HEADS', 'DEPARTMENT', '(1,1)', { lx: 262, ly: 236 }).L('HEADS', 'DOCTOR', '(0,1)', { side: -1 })
+      .L('PRIMARY_DOCTOR', 'DOCTOR', '(0,N)', { lx: 676, ly: 238 }).L('PRIMARY_DOCTOR', 'PATIENT', '(0,1)', { side: -1 })
+      .L('HAS_APPT', 'PATIENT', '(0,N)', { side: -1 }).L('HAS_APPT', 'APPOINTMENT', '(1,1)')
+      .L('WITH', 'DOCTOR', '(0,N)', { lx: 614, ly: 262 }).L('WITH', 'APPOINTMENT', '(1,1)', { side: -1 })
+      .L('PRESCRIBES', 'APPOINTMENT', '(0,N)', { side: -1 }).L('PRESCRIBES', 'MEDICATION', '(0,N)', { side: -1 });
+    return d;
+  },
+  library() {
+    const d = ER(1180, 800)
+      .E('PUBLISHER', 140, 170).R('PUBLISHES', 340, 170).E('BOOK', 560, 170).R('WROTE', 790, 170).E('AUTHOR', 1010, 170)
+      .R('HAS_COPY', 560, 330, { ident: true }).E('COPY', 560, 480, { weak: true })
+      .R('LOAN_OF', 560, 620).E('LOAN', 560, 740)
+      .R('BORROWED_BY', 790, 740).E('MEMBER', 1010, 740).R('RESERVES', 900, 440);
+    d.attrs('PUBLISHER', 'n', ['_Pub_name', 'City']);
+    d.attrs('BOOK', 'n', ['_Isbn', 'Title', 'Year']);
+    d.attrs('WROTE', 's', ['Author_order'], { d: 14 });
+    d.attrs('AUTHOR', 'n', ['_Author_id', 'Name']);
+    d.attrs('COPY', 'w', ['~Copy_no', 'Condition', 'Shelf'], { d: 24 });
+    d.attrs('LOAN', 'w', ['_Loan_id', 'Date_out', 'Due_date', 'Date_returned'], { d: 24 });
+    d.attrs('MEMBER', 'n', ['_Card_no', 'Name', 'Email', 'Join_date'], { d: 26, dx: 20 });
+    d.attrs('RESERVES', 'e', ['Request_date'], { d: 12 });
+    d.L('PUBLISHES', 'PUBLISHER', '(0,N)', { side: -1 }).L('PUBLISHES', 'BOOK', '(1,1)', { side: -1 })
+      .L('WROTE', 'BOOK', '(1,N)', { side: -1 }).L('WROTE', 'AUTHOR', '(1,N)', { side: -1 })
+      .L('HAS_COPY', 'BOOK', '(1,N)', { lx: 535, ly: 204 }).L('HAS_COPY', 'COPY', '(1,1)', { side: -1 })
+      .L('LOAN_OF', 'COPY', '(0,N)', { side: -1 }).L('LOAN_OF', 'LOAN', '(1,1)', { side: -1 })
+      .L('BORROWED_BY', 'LOAN', '(1,1)', { side: -1 }).L('BORROWED_BY', 'MEMBER', '(0,N)', { side: -1 })
+      .L('RESERVES', 'BOOK', '(0,N)', { lx: 622, ly: 210 }).L('RESERVES', 'MEMBER', '(0,N)', { lx: 946, ly: 712 });
+    return d;
+  },
+  supply() {
+    const d = ER(960, 560)
+      .E('SUPPLIER', 150, 300).R('SUPPLY', 460, 300).E('PART', 780, 150).E('PROJECT', 780, 440).R('CAN_SUPPLY', 460, 120);
+    d.attrs('SUPPLIER', 's', ['_Sname', 'City'], { d: 22 });
+    d.attrs('SUPPLY', 's', ['Quantity'], { d: 14 });
+    d.attrs('PART', 'e', ['_Part_no', 'Pname', '{Color}'], { d: 22 });
+    d.attrs('PROJECT', 'e', ['_Proj_no', 'Jname', 'Budget'], { d: 22 });
+    d.L('SUPPLY', 'SUPPLIER', '(0,N)', { lx: 225, ly: 318 }).L('SUPPLY', 'PART', '(0,N)', { lx: 716, ly: 188 }).L('SUPPLY', 'PROJECT', '(1,N)', { side: -1 })
+      .L('CAN_SUPPLY', 'SUPPLIER', '(0,N)', { lx: 158, ly: 262 }).L('CAN_SUPPLY', 'PART', '(1,N)', { lx: 712, ly: 118 });
+    return d;
+  },
+  theater() {
+    const d = ER(1260, 800)
+      .E('THEATER', 150, 210).R('HAS_SCREEN', 380, 210, { ident: true }).E('SCREEN', 610, 210, { weak: true })
+      .R('SCHEDULED', 610, 370, { ident: true }).E('SHOWING', 610, 530, { weak: true })
+      .R('SHOWS', 850, 530).E('MOVIE', 1060, 530)
+      .R('SEAT_FOR', 380, 530, { ident: true }).E('TICKET', 160, 530, { weak: true })
+      .R('BUYS', 160, 700).E('CUSTOMER', 450, 700);
+    d.attrs('THEATER', 'n', ['_Theater_id', 'Name', ['Address', ['Street', 'City', 'Zip']]], { d: 34, dx: 30 });
+    d.attrs('SCREEN', 'n', ['~Screen_no', 'Capacity'], { d: 24 });
+    d.attrs('SHOWING', 's', ['~Start_time', 'Price'], { d: 22 });
+    d.attrs('MOVIE', 'e', ['_Movie_id', 'Title', 'Rating', 'Runtime', '{Genre}'], { d: 22 });
+    d.attrs('TICKET', 'n', ['~Seat_no'], { d: 22 });
+    d.attrs('CUSTOMER', 'e', ['_Cust_id', 'Name', 'Email'], { d: 22 });
+    d.L('HAS_SCREEN', 'THEATER', '(1,N)', { side: -1 }).L('HAS_SCREEN', 'SCREEN', '(1,1)', { side: -1 })
+      .L('SCHEDULED', 'SCREEN', '(0,N)', { side: -1 }).L('SCHEDULED', 'SHOWING', '(1,1)', { side: -1 })
+      .L('SHOWS', 'SHOWING', '(1,1)', { side: -1 }).L('SHOWS', 'MOVIE', '(0,N)', { side: -1 })
+      .L('SEAT_FOR', 'SHOWING', '(0,N)').L('SEAT_FOR', 'TICKET', '(1,1)')
+      .L('BUYS', 'TICKET', '(1,1)', { side: -1 }).L('BUYS', 'CUSTOMER', '(0,N)', { side: -1 });
+    return d;
+  },
+  people() {
+    const d = ER(1180, 780)
+      .E('PERSON', 590, 90).E('EMPLOYEE', 330, 290).E('STUDENT', 850, 290)
+      .E('FACULTY', 150, 520).E('STAFF', 330, 520).E('STUDENT_ASSISTANT', 560, 520)
+      .E('GRAD', 790, 520).E('UNDERGRAD', 990, 520).R('ADVISES', 470, 700);
+    d.S('pS', 590, 190, 'o', 'PERSON', ['EMPLOYEE', 'STUDENT']);
+    d.S('eS', 330, 410, 'd', 'EMPLOYEE', ['FACULTY', 'STAFF', 'STUDENT_ASSISTANT'], { total: true });
+    d.S('sS', 850, 410, 'd', 'STUDENT', ['GRAD', 'UNDERGRAD'], { total: true, attr: 'Level' });
+    d.sub('STUDENT', 'STUDENT_ASSISTANT');
+    d.attrs('PERSON', 'w', ['_Ssn', ['Name', ['Fname', 'Lname'], 'w']], { d: 24 });
+    d.attrs('PERSON', 'e', ['Bdate', 'Address'], { d: 24 });
+    d.attrs('EMPLOYEE', 'w', ['Salary', 'Hire_date'], { d: 22 });
+    d.attrs('STUDENT', 'e', ['GPA', 'Level'], { d: 22 });
+    d.attrs('FACULTY', 's', ['Rank', 'Office'], { d: 22 });
+    d.attrs('STAFF', 's', ['Job_title'], { d: 22 });
+    d.attrs('STUDENT_ASSISTANT', 's', ['Percent_time'], { d: 22 });
+    d.attrs('UNDERGRAD', 's', ['Class_year'], { d: 22 });
+    d.L('ADVISES', 'FACULTY', '(0,N)', { side: -1 }).L('ADVISES', 'GRAD', '(1,1)');
+    return d;
+  },
+  vehicles() {
+    const d = ER(1140, 720)
+      .E('PERSON', 150, 140).E('COMPANY', 450, 140).E('BANK', 750, 140)
+      .E('OWNER', 450, 380).R('OWNS', 670, 380).E('VEHICLE', 900, 380)
+      .E('CAR', 730, 610).E('TRUCK', 900, 610).E('MOTORCYCLE', 1060, 610);
+    d.U('oU', 450, 270, ['PERSON', 'COMPANY', 'BANK'], 'OWNER');
+    d.S('vS', 900, 490, 'd', 'VEHICLE', ['CAR', 'TRUCK', 'MOTORCYCLE'], { total: true, attr: 'Vtype' });
+    d.attrs('PERSON', 'n', ['_Ssn', 'Name', 'Address']);
+    d.attrs('COMPANY', 'n', ['_Company_id', 'Cname', 'Caddress']);
+    d.attrs('BANK', 'n', ['_Bname', 'Baddress']);
+    d.attrs('OWNS', 's', ['Purchase_date'], { d: 14 });
+    d.attrs('VEHICLE', 'n', ['_Vin', 'Make', 'Model', 'Year'], { d: 26, dx: 20 });
+    d.attrs('CAR', 's', ['No_seats'], { d: 22 });
+    d.attrs('TRUCK', 's', ['Tonnage'], { d: 22 });
+    d.attrs('MOTORCYCLE', 's', ['Engine_cc'], { d: 22 });
+    d.L('OWNS', 'OWNER', '(1,N)', { side: -1 }).L('OWNS', 'VEHICLE', '(1,N)', { side: -1 });
+    return d;
+  },
+  store() {
+    const d = ER(1020, 900)
+      .E('CUSTOMER', 280, 190).R('PLACES', 520, 190).E('ORDER', 760, 190)
+      .R('HAS_LINE', 760, 385, { ident: true }).E('ORDER_LINE', 760, 580, { weak: true })
+      .R('FOR', 520, 580).E('PRODUCT', 280, 580).R('REVIEWS', 280, 385)
+      .E('BOOK', 120, 800).E('ELECTRONICS', 300, 800).E('CLOTHING', 480, 800);
+    d.S('prS', 280, 690, 'd', 'PRODUCT', ['BOOK', 'ELECTRONICS', 'CLOTHING']);
+    d.attrs('CUSTOMER', 'n', ['_Cust_id', 'Name', 'Email'], { d: 26 });
+    const sa = d.A('CUSTOMER', '{Ship_address}', 110, 290);
+    d.attrs(sa, 's', ['Street', 'City', 'Zip'], { d: 16 });
+    d.attrs('ORDER', 'n', ['_Order_no', 'Order_date', '/Total'], { d: 26 });
+    d.attrs('ORDER_LINE', 'e', ['~Line_no', 'Qty', 'Unit_price'], { d: 22 });
+    d.attrs('PRODUCT', 'w', ['_Sku', 'Name', 'Price'], { d: 22 });
+    d.attrs('REVIEWS', 'e', ['Stars', 'Comment'], { d: 12 });
+    d.attrs('BOOK', 's', ['Author', 'Isbn'], { d: 20 });
+    d.attrs('ELECTRONICS', 's', ['Warranty_months'], { d: 20 });
+    d.attrs('CLOTHING', 's', ['Size', 'Color'], { d: 20 });
+    d.L('PLACES', 'CUSTOMER', '(0,N)', { side: -1 }).L('PLACES', 'ORDER', '(1,1)', { side: -1 })
+      .L('HAS_LINE', 'ORDER', '(1,N)', { side: -1 }).L('HAS_LINE', 'ORDER_LINE', '(1,1)', { side: -1 })
+      .L('FOR', 'ORDER_LINE', '(1,1)', { side: -1 }).L('FOR', 'PRODUCT', '(0,N)', { side: -1 })
+      .L('REVIEWS', 'CUSTOMER', '(0,N)', { side: -1 }).L('REVIEWS', 'PRODUCT', '(0,N)', { side: -1 });
+    return d;
+  },
+  club() {
+    const d = ER(1060, 640)
+      .E('COACH', 110, 200).R('COACHES', 300, 200).E('CLUB', 510, 200).R('HOLDS', 720, 200, { ident: true }).E('EVENT', 920, 200, { weak: true })
+      .R('BELONGS_TO', 510, 370).E('MEMBER', 510, 530).R('ATTENDS', 920, 530);
+    d.attrs('COACH', 's', ['_Coach_id', 'Name'], { d: 22 });
+    d.attrs('CLUB', 'n', ['_Club_id', 'Name', 'Founded']);
+    d.attrs('EVENT', 'n', ['~Event_no', 'Date', 'Venue']);
+    d.attrs('MEMBER', 'w', ['_Member_id', 'Name', '{Skill}'], { d: 24 });
+    d.attrs('ATTENDS', 's', ['Rating'], { d: 14 });
+    d.L('COACHES', 'COACH', '(1,1)', { side: -1 }).L('COACHES', 'CLUB', '(0,1)', { side: -1 })
+      .L('HOLDS', 'CLUB', '(0,N)', { side: -1 }).L('HOLDS', 'EVENT', '(1,1)', { side: -1 })
+      .L('BELONGS_TO', 'CLUB', '(0,N)', { side: -1 }).L('BELONGS_TO', 'MEMBER', '(1,1)', { side: -1 })
+      .L('ATTENDS', 'MEMBER', '(0,N)', { side: -1 }).L('ATTENDS', 'EVENT', '(0,N)', { side: -1 });
     return d;
   },
 };
@@ -971,12 +1139,272 @@ const EXERCISES = [
   ],
   check: ['Two foreign keys.', 'EXPENSE has a composite PK (Trip_id, Account#), justified by "one or more accounts".', 'You noted Dept_no and Account# can\'t be FKs here.'],
 },
+// ---- new drawing problems (original scenarios, same style as the assigned ones) ----
+{
+  id: 'D1', ch: 'D', kind: 'Draw ER + map', title: 'Hospital clinic', draw: true,
+  prompt: `<p>Draw the ER diagram with (min, max) on every line, then map it to relations.</p>${ul([
+    'Each <b>doctor</b> has a unique license number, a name (first and last are used separately), a specialty and one or more phone numbers.',
+    'Each <b>department</b> has a unique name and a floor. Every doctor works in exactly one department, and every department has at least one doctor.',
+    'Every department is headed by exactly one doctor. A doctor heads at most one department.',
+    'Each <b>patient</b> has a unique patient id, name, birth date and address. The system shows the patient\'s age. A patient may have one primary doctor (new patients may not have one yet).',
+    'A patient\'s <b>appointments</b> are identified by date and time for that patient. Each appointment is with exactly one doctor and records a reason.',
+    'At an appointment, the doctor can prescribe any number of <b>medications</b> (unique code, name), each with a dosage.',
+  ])}`,
+  hints: [
+    'Two relationships connect DOCTOR and DEPARTMENT: works-in (1:N) and heads (1:1). Draw both.',
+    'Age is shown but can be computed: what kind of attribute is that?',
+    'Appointments are identified "for that patient": weak entity, partial key (Date, Time).',
+    'Dosage belongs to an (appointment, medication) pair.',
+  ],
+  sections: [
+    { h: 'ER diagram with (min, max)', diagram: 'hospital', html: mmTable([
+      ['WORKS_IN', 'DOCTOR / DEPARTMENT', '(1,1) / (1,N)', 'Exactly one department per doctor; at least one doctor per department.'],
+      ['HEADS', 'DEPARTMENT / DOCTOR', '(1,1) / (0,1)', '1:1. Every department has a head; most doctors head nothing.'],
+      ['PRIMARY_DOCTOR', 'PATIENT / DOCTOR', '(0,1) / (0,N)', '"May have one".'],
+      ['HAS_APPT', 'APPOINTMENT / PATIENT', '(1,1) / (0,N)', 'Identifying.'],
+      ['WITH', 'APPOINTMENT / DOCTOR', '(1,1) / (0,N)', ''],
+      ['PRESCRIBES', 'APPOINTMENT / MEDICATION', '(0,N) / (0,N)', 'M:N with Dosage.'],
+    ]) + '<p>Phone is multivalued (double oval), Name is composite, Age is derived (dashed oval).</p>' },
+    { h: 'Relational mapping', rels: [
+      { n: 'DEPARTMENT', step: 'Steps 1 + 3', a: '*Dname Floor Head_license', fk: ['Head_license → DOCTOR'], u: 'Head_license NOT NULL UNIQUE' },
+      { n: 'DOCTOR', step: 'Steps 1 + 4', a: '*License_no Fname Lname Specialty Dname', fk: ['Dname → DEPARTMENT'], u: 'Dname NOT NULL' },
+      { n: 'DOCTOR_PHONE', step: 'Step 6', a: '*License_no *Phone', fk: ['License_no → DOCTOR'] },
+      { n: 'PATIENT', step: 'Steps 1 + 4', a: '*Patient_id Name Bdate Address Primary_license', fk: ['Primary_license → DOCTOR'], u: 'Age is derived, not stored' },
+      { n: 'APPOINTMENT', step: 'Steps 2 + 4', a: '*Patient_id *Date *Time Reason License_no', fk: ['Patient_id → PATIENT', 'License_no → DOCTOR'] },
+      { n: 'MEDICATION', step: 'Step 1', a: '*Med_code Med_name' },
+      { n: 'PRESCRIPTION', step: 'Step 5 (M:N)', a: '*Patient_id *Date *Time *Med_code Dosage', fk: ['Patient_id, Date, Time → APPOINTMENT', 'Med_code → MEDICATION'] },
+    ], html: `${ul([
+      '<b>HEADS (1:1):</b> the FK goes on the total side, DEPARTMENT. Putting it in DOCTOR would be NULL for almost every doctor. UNIQUE keeps it 1:1.',
+      '<b>Circular FKs:</b> DEPARTMENT → DOCTOR and DOCTOR → DEPARTMENT are both NOT NULL, so neither row can be inserted first. Fix: defer one constraint, or allow NULL briefly.',
+      'The FK from PRESCRIPTION to APPOINTMENT is the whole 3-attribute key.',
+    ])}` },
+  ],
+  check: [
+    'Two separate relationships between DOCTOR and DEPARTMENT, one 1:N and one 1:1.',
+    'Phone double oval, Name composite, Age dashed.',
+    'APPOINTMENT is weak, partial key (Date, Time), owner PATIENT.',
+    'Dosage is on PRESCRIBES, not on MEDICATION.',
+    'Mapping: HEADS became a FK in DEPARTMENT; DOCTOR_PHONE exists; PRESCRIPTION has a 4-attribute PK.',
+  ],
+},
+{
+  id: 'D2', ch: 'D', kind: 'Draw ER + map', title: 'Public library loans', draw: true,
+  prompt: `<p>Draw the ER diagram with (min, max), then map it.</p>${ul([
+    'A <b>book</b> (title) has a unique ISBN, a title and a year, and exactly one <b>publisher</b> (unique name, city).',
+    'A book has one or more <b>authors</b> (author id, name); the order of authors on the cover matters. Every author in the database wrote at least one book.',
+    'The library owns physical <b>copies</b>, numbered 1, 2, 3… per book, each with a condition and shelf. Every book in the catalog has at least one copy.',
+    '<b>Members</b> have a unique card number, name, email and join date.',
+    'Every time a member borrows a copy, record the date out, due date and return date. The same member can borrow the same copy many times over the years.',
+    'Members can reserve a book (not a specific copy), recording the request date.',
+  ])}`,
+  hints: [
+    'Author order is a property of a (book, author) pair.',
+    'Copies are numbered per book → weak entity.',
+    'If borrowing were an M:N relationship between MEMBER and COPY, one member could borrow one copy only once (the pair would be the key). What do you need instead?',
+  ],
+  sections: [
+    { h: 'ER diagram with (min, max)', diagram: 'library', html: mmTable([
+      ['PUBLISHES', 'BOOK / PUBLISHER', '(1,1) / (0,N)', ''],
+      ['WROTE', 'BOOK / AUTHOR', '(1,N) / (1,N)', 'M:N with Author_order; both total as stated.'],
+      ['HAS_COPY', 'COPY / BOOK', '(1,1) / (1,N)', 'Identifying; every book has a copy.'],
+      ['LOAN_OF', 'LOAN / COPY', '(1,1) / (0,N)', ''],
+      ['BORROWED_BY', 'LOAN / MEMBER', '(1,1) / (0,N)', ''],
+      ['RESERVES', 'MEMBER / BOOK', '(0,N) / (0,N)', 'M:N with Request_date.'],
+    ]) + '<p><b>Why LOAN is an entity:</b> repeated borrowing of the same copy by the same member needs one row per loan. As an M:N relationship the (member, copy) pair would be the key and allow only one loan ever.</p>' },
+    { h: 'Relational mapping', rels: [
+      { n: 'PUBLISHER', a: '*Pub_name City' },
+      { n: 'BOOK', a: '*Isbn Title Year Pub_name', fk: ['Pub_name → PUBLISHER'], u: 'Pub_name NOT NULL' },
+      { n: 'AUTHOR', a: '*Author_id Name' },
+      { n: 'WROTE', step: 'Step 5', a: '*Isbn *Author_id Author_order', fk: ['Isbn → BOOK', 'Author_id → AUTHOR'] },
+      { n: 'COPY', step: 'Step 2', a: '*Isbn *Copy_no Condition Shelf', fk: ['Isbn → BOOK'] },
+      { n: 'MEMBER', a: '*Card_no Name Email Join_date' },
+      { n: 'LOAN', step: 'Steps 1 + 4', a: '*Loan_id Date_out Due_date Date_returned Card_no Isbn Copy_no', fk: ['Card_no → MEMBER', 'Isbn, Copy_no → COPY'] },
+      { n: 'RESERVES', step: 'Step 5', a: '*Card_no *Isbn Request_date', fk: ['Card_no → MEMBER', 'Isbn → BOOK'] },
+    ], html: '<p>The (1,N) minimums (every book has an author and a copy) are not enforced by keys; they need application checks.</p>' },
+  ],
+  check: [
+    'Author_order on the WROTE relationship.',
+    'COPY weak with partial key Copy_no.',
+    'Loans modeled so a member can borrow the same copy more than once.',
+    'Reservation links MEMBER to BOOK, not to COPY.',
+    'LOAN has a 2-attribute FK to COPY.',
+  ],
+},
+{
+  id: 'D3', ch: 'D', kind: 'Draw ER + map', title: 'Suppliers, parts, projects (ternary)', draw: true,
+  prompt: `<p>Draw the ER diagram with (min, max) and map it. This one practices a <b>ternary</b> relationship (mapping step 7).</p>${ul([
+    '<b>Suppliers</b> have a unique name and a city. <b>Parts</b> have a unique number, a name and one or more colors. <b>Projects</b> have a unique number, a name and a budget.',
+    'Record which supplier supplied which part to which project, and the quantity. Every project receives at least one supply.',
+    'Separately, keep a catalog of which parts each supplier <i>can</i> supply. Every part can be supplied by at least one supplier.',
+  ])}`,
+  hints: ['"Which supplier supplied which part to which project" is one fact about three entities at once.', 'The catalog is a different fact with only two entities.'],
+  sections: [
+    { h: 'ER diagram with (min, max)', diagram: 'supply', html: mmTable([
+      ['SUPPLY', 'SUPPLIER / PART / PROJECT', '(0,N) / (0,N) / (1,N)', 'Ternary with Quantity.'],
+      ['CAN_SUPPLY', 'SUPPLIER / PART', '(0,N) / (1,N)', 'Binary M:N catalog.'],
+    ]) + `<p><b>Why not three binaries?</b> SUPPLIER–PART, PART–PROJECT and SUPPLIER–PROJECT pairs can't tell you who supplied <i>which</i> part to <i>which</i> project: "S1 supplies P1", "P1 goes to J1" and "S1 supplies J1" can all be true while S1 never sent P1 to J1.</p>
+      <p><b>(min, max) on ternaries</b> counts how many SUPPLY triples each entity is in. It can't say "each (part, project) pair has one supplier"; that kind of key constraint needs a note.</p>` },
+    { h: 'Relational mapping', rels: [
+      { n: 'SUPPLIER', a: '*Sname City' },
+      { n: 'PART', a: '*Part_no Pname' },
+      { n: 'PART_COLOR', step: 'Step 6', a: '*Part_no *Color', fk: ['Part_no → PART'] },
+      { n: 'PROJECT', a: '*Proj_no Jname Budget' },
+      { n: 'SUPPLY', step: 'Step 7 (n-ary)', a: '*Sname *Part_no *Proj_no Quantity', fk: ['Sname → SUPPLIER', 'Part_no → PART', 'Proj_no → PROJECT'] },
+      { n: 'CAN_SUPPLY', step: 'Step 5', a: '*Sname *Part_no', fk: ['Sname → SUPPLIER', 'Part_no → PART'] },
+    ], html: '<p>Follow-up: if each (part, project) pair is always supplied by exactly one supplier, the key of SUPPLY shrinks to (Part_no, Proj_no) and Sname becomes a plain FK.</p>' },
+  ],
+  check: ['One diamond with three lines for SUPPLY, Quantity on it.', 'A separate binary for the catalog.', 'Color is multivalued → PART_COLOR.', 'SUPPLY has a 3-attribute PK.'],
+},
+{
+  id: 'D4', ch: 'D', kind: 'Draw ER + map', title: 'Movie theater chain', draw: true,
+  prompt: `<p>Draw the ER diagram with (min, max), then map it. Like the airline, this has a <b>chain of weak entities</b>.</p>${ul([
+    'Each <b>theater</b> has a unique id, a name and an address (street, city, ZIP used separately). It has one or more <b>screens</b>, numbered 1, 2, 3… within the theater, each with a capacity.',
+    'A <b>showing</b> is a screen at a start date-time (unique for that screen), with a ticket price. Each showing shows exactly one <b>movie</b> (unique id, title, rating, runtime, one or more genres).',
+    'A <b>ticket</b> is for one seat number in one showing (seat numbers repeat across showings). Each ticket is bought by exactly one <b>customer</b> (unique id, name, email).',
+  ])}`,
+  hints: ['SCREEN is weak under THEATER, SHOWING weak under SCREEN, TICKET weak under SHOWING.', 'Write out TICKET\'s full key before you map: it has four parts.'],
+  sections: [
+    { h: 'ER diagram with (min, max)', diagram: 'theater', html: mmTable([
+      ['HAS_SCREEN', 'SCREEN / THEATER', '(1,1) / (1,N)', 'Identifying; "one or more screens".'],
+      ['SCHEDULED', 'SHOWING / SCREEN', '(1,1) / (0,N)', 'Identifying.'],
+      ['SEAT_FOR', 'TICKET / SHOWING', '(1,1) / (0,N)', 'Identifying; a showing may sell nothing.'],
+      ['SHOWS', 'SHOWING / MOVIE', '(1,1) / (0,N)', ''],
+      ['BUYS', 'TICKET / CUSTOMER', '(1,1) / (0,N)', ''],
+    ]) },
+    { h: 'Relational mapping', rels: [
+      { n: 'THEATER', a: '*Theater_id Name Street City Zip' },
+      { n: 'SCREEN', step: 'Step 2', a: '*Theater_id *Screen_no Capacity', fk: ['Theater_id → THEATER'] },
+      { n: 'MOVIE', a: '*Movie_id Title Rating Runtime' },
+      { n: 'MOVIE_GENRE', step: 'Step 6', a: '*Movie_id *Genre', fk: ['Movie_id → MOVIE'] },
+      { n: 'SHOWING', step: 'Steps 2 + 4', a: '*Theater_id *Screen_no *Start_time Price Movie_id', fk: ['Theater_id, Screen_no → SCREEN', 'Movie_id → MOVIE'] },
+      { n: 'CUSTOMER', a: '*Cust_id Name Email' },
+      { n: 'TICKET', step: 'Steps 2 + 4', a: '*Theater_id *Screen_no *Start_time *Seat_no Cust_id', fk: ['Theater_id, Screen_no, Start_time → SHOWING', 'Cust_id → CUSTOMER'], u: 'Cust_id NOT NULL' },
+    ], html: '<p>Not expressible here: tickets sold for a showing ≤ that screen\'s capacity.</p>' },
+  ],
+  check: ['Three weak entities in a chain, each with a double diamond.', 'Address composite, Genre multivalued.', 'TICKET PK has 4 attributes; its FK to SHOWING has 3.'],
+},
+{
+  id: 'D5', ch: 'D', kind: 'Draw EER + map', title: 'University people (overlap + shared subclass)', draw: true,
+  prompt: `<p>Draw the EER diagram, then map it naming the option (8A–8D) you use for each specialization.</p>${ul([
+    'Every <b>person</b> has a unique SSN, a name (first, last), birth date and address. Some persons are neither employees nor students (alumni, visitors).',
+    'A person can be an <b>employee</b> (salary, hire date), a <b>student</b> (GPA), or both.',
+    'Every employee is exactly one of: <b>faculty</b> (rank, office), <b>staff</b> (job title) or <b>student assistant</b> (percent time). A student assistant is also a student.',
+    'Every student is exactly one of <b>grad</b> or <b>undergrad</b> (class year), decided by the Level attribute.',
+    'Every grad student has exactly one faculty advisor; a faculty member advises any number.',
+  ])}`,
+  hints: [
+    '"Employee, student, or both, or neither": which letter in the circle, and single or double line?',
+    'STUDENT_ASSISTANT has two superclasses: that\'s a shared subclass (multiple inheritance).',
+    'Level decides grad vs undergrad: write it next to the line (attribute-defined).',
+  ],
+  sections: [
+    { h: 'EER diagram', diagram: 'people', html: ul([
+      'PERSON → {EMPLOYEE, STUDENT}: <b>o</b>verlapping, <b>partial</b> (single line).',
+      'EMPLOYEE → {FACULTY, STAFF, STUDENT_ASSISTANT}: disjoint, total (double line).',
+      'STUDENT → {GRAD, UNDERGRAD}: disjoint, total, defined by Level.',
+      'STUDENT_ASSISTANT also has a subset line from STUDENT: a shared subclass inherits from both.',
+      'ADVISES: GRAD (1,1), FACULTY (0,N). Relationships can attach to subclasses; that\'s one reason to specialize.',
+    ]) },
+    { h: 'Relational mapping', rels: [
+      { n: 'PERSON', a: '*Ssn Fname Lname Bdate Address' },
+      { n: 'EMPLOYEE', step: '8A', a: '*Ssn Salary Hire_date', fk: ['Ssn → PERSON'] },
+      { n: 'STUDENT', step: '8A', a: '*Ssn Gpa Level', fk: ['Ssn → PERSON'] },
+      { n: 'FACULTY', step: '8A', a: '*Ssn Rank Office', fk: ['Ssn → EMPLOYEE'] },
+      { n: 'STAFF', step: '8A', a: '*Ssn Job_title', fk: ['Ssn → EMPLOYEE'] },
+      { n: 'STUDENT_ASSISTANT', step: '8A, shared', a: '*Ssn Percent_time', fk: ['Ssn → EMPLOYEE', 'Ssn → STUDENT'] },
+      { n: 'GRAD', step: '8A + Step 4', a: '*Ssn Advisor_ssn', fk: ['Ssn → STUDENT', 'Advisor_ssn → FACULTY'], u: 'Advisor_ssn NOT NULL' },
+      { n: 'UNDERGRAD', step: '8A', a: '*Ssn Class_year', fk: ['Ssn → STUDENT'] },
+    ], html: ul([
+      'PERSON is overlapping and partial, so 8B is out (persons in no subclass would vanish). 8D would also work: one PERSON relation with Is_employee and Is_student flags.',
+      'STUDENT → GRAD/UNDERGRAD could use 8C instead: STUDENT(Ssn, Gpa, Level, Class_year, Advisor_ssn) with NULLs.',
+      'A shared subclass gets one relation whose key is an FK to <i>both</i> parents.',
+    ]) },
+  ],
+  check: ['o + single line under PERSON; d + double lines under EMPLOYEE and STUDENT.', 'STUDENT_ASSISTANT connected to both EMPLOYEE and STUDENT.', 'Level written next to the STUDENT specialization.', 'ADVISES attached to FACULTY and GRAD (subclasses), not EMPLOYEE/STUDENT.', 'You can say why 8B fails for PERSON.'],
+},
+{
+  id: 'D6', ch: 'D', kind: 'Draw EER + map', title: 'Vehicle owners (category)', draw: true,
+  prompt: `<p>Draw the EER diagram and map it. This practices a <b>category (union type)</b>, mapping step 9.</p>${ul([
+    'A <b>vehicle</b> has a unique VIN, make, model and year. Every vehicle is exactly one of car (number of seats), truck (tonnage) or motorcycle (engine cc), by its Vtype.',
+    'A vehicle is owned by one or more <b>owners</b>; an owner owns at least one vehicle. Record the purchase date of each ownership.',
+    'An owner can be a <b>person</b> (SSN, name, address), a <b>company</b> (company id, name, address) or a <b>bank</b> (name, address). These three have different keys. Not every person, company or bank is an owner.',
+  ])}`,
+  hints: ['OWNER is a subset of the <i>union</i> of three different entity types with different keys → category, circle with U.', 'Partial category: single line from the circle to OWNER.'],
+  sections: [
+    { h: 'EER diagram', diagram: 'vehicles', html: ul([
+      'OWNER is a category of PERSON ∪ COMPANY ∪ BANK. An owner entity is a member of exactly one of them.',
+      'Partial: some persons/companies/banks own nothing (single line).',
+      'VEHICLE: disjoint, total, attribute-defined by Vtype.',
+      'OWNS: OWNER (1,N), VEHICLE (1,N), attribute Purchase_date.',
+    ]) },
+    { h: 'Relational mapping', rels: [
+      { n: 'OWNER', step: 'Step 9', a: '*Owner_id', note: 'surrogate key, since the superclasses have different keys' },
+      { n: 'PERSON', a: '*Ssn Name Address Owner_id', fk: ['Owner_id → OWNER'], u: 'Owner_id UNIQUE, NULL if not an owner' },
+      { n: 'COMPANY', a: '*Company_id Cname Caddress Owner_id', fk: ['Owner_id → OWNER'] },
+      { n: 'BANK', a: '*Bname Baddress Owner_id', fk: ['Owner_id → OWNER'] },
+      { n: 'VEHICLE', step: '8A', a: '*Vin Make Model Year Vtype' },
+      { n: 'CAR', step: '8A', a: '*Vin No_seats', fk: ['Vin → VEHICLE'] },
+      { n: 'TRUCK', step: '8A', a: '*Vin Tonnage', fk: ['Vin → VEHICLE'] },
+      { n: 'MOTORCYCLE', step: '8A', a: '*Vin Engine_cc', fk: ['Vin → VEHICLE'] },
+      { n: 'OWNS', step: 'Step 5', a: '*Owner_id *Vin Purchase_date', fk: ['Owner_id → OWNER', 'Vin → VEHICLE'] },
+    ], html: '<p>VEHICLE is disjoint and total, so 8B (only CAR, TRUCK, MOTORCYCLE relations) is allowed in principle. But OWNS must reference any vehicle through one key, which 8B can\'t give it, so 8A (above) or 8C (one VEHICLE relation with Vtype and nullable No_seats, Tonnage, Engine_cc) is the better choice.</p>' },
+  ],
+  check: ['Circle with U, three superclass lines, subset mark on the OWNER line.', 'Category vs specialization: you can explain the difference.', 'OWNER got a surrogate key and each superclass relation an Owner_id FK.', 'VEHICLE specialization: d, double line, Vtype.'],
+},
+{
+  id: 'D7', ch: 'D', kind: 'Draw EER + map', title: 'Online store', draw: true,
+  prompt: `<p>Draw the EER diagram with (min, max) and map it.</p>${ul([
+    '<b>Customers</b> have a unique id, name, email and any number of shipping addresses (street, city, ZIP).',
+    'A customer places any number of <b>orders</b> (unique order number, date). The order total is computed from its lines.',
+    'An order has one or more <b>lines</b>, numbered within the order, each for exactly one product with a quantity and the unit price charged.',
+    '<b>Products</b> have a unique SKU, name and current price. Some products are books (author, ISBN), electronics (warranty months) or clothing (size, color); other products are none of these. No product is in two categories.',
+    'Customers can review products: star rating and comment.',
+  ])}`,
+  hints: ['Why store Unit_price on the line when PRODUCT already has a price?', '"Other products are none of these": partial. "No product in two": disjoint.'],
+  sections: [
+    { h: 'EER diagram with (min, max)', diagram: 'store', html: mmTable([
+      ['PLACES', 'ORDER / CUSTOMER', '(1,1) / (0,N)', ''],
+      ['HAS_LINE', 'ORDER_LINE / ORDER', '(1,1) / (1,N)', 'Identifying; an order has at least one line.'],
+      ['FOR', 'ORDER_LINE / PRODUCT', '(1,1) / (0,N)', ''],
+      ['REVIEWS', 'CUSTOMER / PRODUCT', '(0,N) / (0,N)', 'M:N with Stars, Comment.'],
+    ]) + '<p>PRODUCT → {BOOK, ELECTRONICS, CLOTHING}: disjoint, <b>partial</b> (single line). Unit_price is stored on the line because the product\'s price changes later; Total is derived.</p>' },
+    { h: 'Relational mapping', rels: [
+      { n: 'CUSTOMER', a: '*Cust_id Name Email' },
+      { n: 'SHIP_ADDRESS', step: 'Step 6', a: '*Cust_id *Street *City *Zip', fk: ['Cust_id → CUSTOMER'] },
+      { n: 'ORDER', step: 'Steps 1 + 4', a: '*Order_no Order_date Cust_id', fk: ['Cust_id → CUSTOMER'] },
+      { n: 'PRODUCT', step: '8A', a: '*Sku Name Price' },
+      { n: 'BOOK', step: '8A', a: '*Sku Author Isbn', fk: ['Sku → PRODUCT'] },
+      { n: 'ELECTRONICS', step: '8A', a: '*Sku Warranty_months', fk: ['Sku → PRODUCT'] },
+      { n: 'CLOTHING', step: '8A', a: '*Sku Size Color', fk: ['Sku → PRODUCT'] },
+      { n: 'ORDER_LINE', step: 'Steps 2 + 4', a: '*Order_no *Line_no Qty Unit_price Sku', fk: ['Order_no → ORDER', 'Sku → PRODUCT'] },
+      { n: 'REVIEW', step: 'Step 5', a: '*Cust_id *Sku Stars Comment', fk: ['Cust_id → CUSTOMER', 'Sku → PRODUCT'] },
+    ], html: '<p>A multivalued <i>composite</i> attribute maps to a relation whose key is the owner key plus all the components. 8B is not allowed for PRODUCT because the specialization is partial.</p>' },
+  ],
+  check: ['Ship_address is double oval with composite parts.', 'ORDER_LINE weak with Line_no; Total dashed.', 'd with a single line under PRODUCT.', 'REVIEWS M:N with attributes.', 'SHIP_ADDRESS key includes all address parts.'],
+},
+{
+  id: 'D8', ch: 'D', kind: 'Reverse: relations → ER', title: 'Club schema to ER', draw: true,
+  prompt: `<p>Here is a relational schema (primary keys marked with *). <b>Draw the ER diagram that would map to it</b>, with (min, max) as far as the schema tells you, and say which numbers the schema can't tell you.</p>
+  <p><code>CLUB(*Club_id, Name, Founded)</code><br><code>COACH(*Coach_id, Name, Club_id)</code> Club_id → CLUB, NOT NULL, UNIQUE<br><code>MEMBER(*Member_id, Name, Club_id)</code> Club_id → CLUB, NOT NULL<br><code>MEMBER_SKILL(*Member_id, *Skill)</code> Member_id → MEMBER<br><code>EVENT(*Club_id, *Event_no, Date, Venue)</code> Club_id → CLUB<br><code>ATTENDS(*Member_id, *Club_id, *Event_no, Rating)</code> → MEMBER, → EVENT</p>`,
+  hints: ['A UNIQUE foreign key means each target row is referenced at most once: 1:1.', 'A relation whose PK contains another relation\'s PK plus a little extra is usually a weak entity.', 'A relation with only (owner key, value) is usually a multivalued attribute.', 'A relation whose PK is two FKs, plus attributes, is an M:N relationship.'],
+  sections: [
+    { h: 'ER diagram', diagram: 'club', html: mmTable([
+      ['COACHES', 'COACH / CLUB', '(1,1) / (0,1)', 'NOT NULL gives COACH min 1; UNIQUE gives CLUB max 1. Whether a club must have a coach can\'t be seen (0 assumed).'],
+      ['BELONGS_TO', 'MEMBER / CLUB', '(1,1) / (0,N)', 'NOT NULL FK; the club\'s min is unknown.'],
+      ['HOLDS', 'EVENT / CLUB', '(1,1) / (0,N)', 'EVENT\'s PK contains Club_id → weak, partial key Event_no.'],
+      ['ATTENDS', 'MEMBER / EVENT', '(0,N) / (0,N)', 'M:N with Rating. Minimums are unknown.'],
+    ]) + '<p>MEMBER_SKILL becomes the multivalued attribute {Skill}. <b>Rule of thumb:</b> relational schemas show max values (via keys/UNIQUE) and min ≥ 1 only through NOT NULL FKs; any other minimum is lost in mapping.</p>' },
+  ],
+  check: ['COACHES drawn as 1:1, not 1:N.', 'EVENT is weak with partial key Event_no.', 'Skill is a multivalued attribute, not an entity.', 'ATTENDS is M:N with Rating.', 'You listed which minimums can\'t be determined.'],
+},
 ];
 const EX = Object.fromEntries(EXERCISES.map(e => [e.id, e]));
 const CHAPTERS = [
   { ch: 7, t: 'Ch 7 · ER model', ids: ['7.16', '7.19', '7.22', '7.17', '7.23'] },
   { ch: 8, t: 'Ch 8 · EER model', ids: ['8.17', '8.18'] },
   { ch: 3, t: 'Ch 3 · Relational model', ids: ['3.13', '3.14', '3.15'] },
+
+  { ch: 'D', t: 'Draw it yourself · new problems', ids: ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8'] },
 ];
 
 // ---------- quiz bank ----------
@@ -1112,7 +1540,7 @@ function homeView() {
   let h = `<div class="top"><a class="back" href="../../">← aiapps</a><div class="grow"></div>${themeBtn()}</div>
   <h1>Database design practice</h1>
   <p class="sub">The assigned book exercises from <i>Fundamentals of Database Systems</i> (Elmasri &amp; Navathe, 6th ed.), with worked answers you open one step at a time, plus a ${BANK.length}-question drill on the same ideas.</p>
-  <div class="howto">How to use it: open an exercise, draw your own ER/EER diagram on paper with (min, max) on every line, map it to relations, then open the answer sections one at a time and tick the self-check list.</div>`;
+  <div class="howto">How to use it: open an exercise and draw your own ER/EER diagram, with (min, max) on every line, on paper or on the sketch pad on each page. Map it to relations, then open the answer sections one at a time and tick the self-check list. The <b>Draw it yourself</b> set has 8 new problems in the same style for extra practice.</div>`;
   for (const c of CHAPTERS) {
     h += `<h2>${esc(c.t)}</h2><div class="grid">`;
     for (const id of c.ids) {
@@ -1159,6 +1587,7 @@ function exView(id) {
   <h1>${esc(e.title)}</h1>
   <div class="card prompt" style="margin-top:12px">${e.prompt}</div>
   <h2>Your attempt</h2>
+  ${padHTML()}
   <textarea data-act="notes" placeholder="Jot your entities, relationships, (min, max) and relations here before opening the answers. Saved in this browser.">${esc(s.notes)}</textarea>
   <details class="sec"${s.open.includes('hints') ? ' open' : ''} data-sec="hints"><summary><span class="grow">Hints</span><span class="small">${e.hints.length}</span></summary><div class="ans">${ul(e.hints)}</div></details>
   <h2>Worked answer <button class="btn ghost sm" data-act="openall">open all</button></h2>`;
@@ -1231,9 +1660,143 @@ function resultsView() {
   return h;
 }
 
+// ---------- sketch pad ----------
+// Draw ER/EER diagrams by hand or with shape stamps. Saved per exercise as a list of items, not pixels.
+const PAD_W = 1000, PAD_H = 750;
+const PAD_TOOLS = [['pen', 'Pen'], ['rect', 'Entity ▭'], ['dia', 'Relation ◇'], ['oval', 'Attribute ◯'], ['circle', 'd/o/U ○'], ['line', 'Line'], ['text', 'Text'], ['erase', 'Eraser']];
+let pad = null;
+function padHTML() {
+  return `<div class="pad" id="pad"><div class="padbar">${PAD_TOOLS.map(([t, l]) => `<button data-tool="${t}">${l}</button>`).join('')}
+    <span class="sep"></span><button data-pad="dbl">Double</button><button data-pad="undo">Undo</button><button data-pad="clear">Clear</button><button data-pad="full">Expand</button></div>
+    <canvas width="${PAD_W}" height="${PAD_H}" aria-label="Sketch pad"></canvas>
+    <div class="padhelp">Drag to place a shape, then type its label. <b>Double</b> draws weak entities, identifying relationships, multivalued attributes and total-participation lines. Start a label with <code>_</code> for a key or <code>~</code> for a partial key. Saved in this browser.</div></div>`;
+}
+function padKey(id) { return 'dbpractice:sketch:' + id; }
+function initPad(id) {
+  const root = document.getElementById('pad');
+  if (!root) return;
+  const cv = root.querySelector('canvas'), ctx = cv.getContext('2d');
+  let items = [];
+  try { items = JSON.parse(localStorage.getItem(padKey(id))) || []; } catch {}
+  pad = { id, root, cv, ctx, items, tool: pad?.tool || 'pen', dbl: pad?.dbl || false, cur: null };
+  const saveItems = () => { try { localStorage.setItem(padKey(id), JSON.stringify(pad.items)); } catch {} };
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const syncBar = () => {
+    root.querySelectorAll('[data-tool]').forEach(b => b.setAttribute('aria-pressed', b.dataset.tool === pad.tool));
+    root.querySelector('[data-pad="dbl"]').setAttribute('aria-pressed', pad.dbl);
+  };
+  function shapePath(it, inset) {
+    const x1 = Math.min(it.x1, it.x2) + inset, x2 = Math.max(it.x1, it.x2) - inset, y1 = Math.min(it.y1, it.y2) + inset, y2 = Math.max(it.y1, it.y2) - inset;
+    const cx = (x1 + x2) / 2, cy = (y1 + y2) / 2;
+    ctx.beginPath();
+    if (it.t === 'rect') ctx.rect(x1, y1, x2 - x1, y2 - y1);
+    else if (it.t === 'dia') { ctx.moveTo(cx, y1); ctx.lineTo(x2, cy); ctx.lineTo(cx, y2); ctx.lineTo(x1, cy); ctx.closePath(); }
+    else if (it.t === 'oval') ctx.ellipse(cx, cy, Math.max(1, (x2 - x1) / 2), Math.max(1, (y2 - y1) / 2), 0, 0, Math.PI * 2);
+    else if (it.t === 'circle') ctx.arc(cx, cy, Math.max(4, Math.min(x2 - x1, y2 - y1) / 2), 0, Math.PI * 2);
+    ctx.stroke();
+    return [cx, cy];
+  }
+  function label(it, cx, cy) {
+    if (!it.s) return;
+    let s = it.s, key = 0;
+    if (s[0] === '_') { key = 1; s = s.slice(1); } else if (s[0] === '~') { key = 2; s = s.slice(1); }
+    ctx.font = `${it.t === 'oval' || it.t === 'text' ? 400 : 600} 28px system-ui, sans-serif`;
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(s, cx, cy);
+    if (key) {
+      const w = ctx.measureText(s).width / 2;
+      ctx.setLineDash(key === 2 ? [7, 5] : []); ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.moveTo(cx - w, cy + 16); ctx.lineTo(cx + w, cy + 16); ctx.stroke(); ctx.setLineDash([]);
+    }
+  }
+  function draw() {
+    const ink = css('--ink') || '#000';
+    ctx.clearRect(0, 0, PAD_W, PAD_H);
+    ctx.strokeStyle = ink; ctx.fillStyle = ink; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    for (const it of [...pad.items, ...(pad.cur ? [pad.cur] : [])]) {
+      ctx.lineWidth = 3.5;
+      if (it.t === 'pen') {
+        ctx.beginPath(); it.p.forEach(([x, y], i) => i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)); if (it.p.length === 1) ctx.lineTo(it.p[0][0] + .1, it.p[0][1]); ctx.stroke();
+      } else if (it.t === 'line') {
+        const L = Math.hypot(it.x2 - it.x1, it.y2 - it.y1) || 1, nx = -(it.y2 - it.y1) / L * 4, ny = (it.x2 - it.x1) / L * 4;
+        for (const k of it.dbl ? [1, -1] : [0]) { ctx.beginPath(); ctx.moveTo(it.x1 + nx * k, it.y1 + ny * k); ctx.lineTo(it.x2 + nx * k, it.y2 + ny * k); ctx.stroke(); }
+      } else if (it.t === 'text') {
+        label(it, it.x1, it.y1);
+      } else {
+        const [cx, cy] = shapePath(it, 0);
+        if (it.dbl) { ctx.lineWidth = 2; shapePath(it, it.t === 'dia' ? 12 : 7); }
+        label(it, cx, cy);
+      }
+    }
+  }
+  const pos = e => { const r = cv.getBoundingClientRect(); return [Math.round((e.clientX - r.left) * PAD_W / r.width), Math.round((e.clientY - r.top) * PAD_H / r.height)]; };
+  function hit(x, y) {
+    for (let i = pad.items.length - 1; i >= 0; i--) {
+      const it = pad.items[i];
+      if (it.t === 'pen' ? it.p.some(([a, b], k) => (k ? segDist(x, y, { x1: it.p[k - 1][0], y1: it.p[k - 1][1], x2: a, y2: b }) : Math.hypot(a - x, b - y)) < 16) :
+          it.t === 'text' ? Math.abs(it.x1 - x) < 80 && Math.abs(it.y1 - y) < 20 :
+          it.t === 'line' ? segDist(x, y, it) < 14 :
+          x > Math.min(it.x1, it.x2) - 10 && x < Math.max(it.x1, it.x2) + 10 && y > Math.min(it.y1, it.y2) - 10 && y < Math.max(it.y1, it.y2) + 10) return i;
+    }
+    return -1;
+  }
+  function segDist(x, y, it) {
+    const dx = it.x2 - it.x1, dy = it.y2 - it.y1, L = dx * dx + dy * dy || 1, t = Math.max(0, Math.min(1, ((x - it.x1) * dx + (y - it.y1) * dy) / L));
+    return Math.hypot(x - it.x1 - t * dx, y - it.y1 - t * dy);
+  }
+  cv.addEventListener('pointerdown', e => {
+    e.preventDefault(); cv.setPointerCapture(e.pointerId);
+    const [x, y] = pos(e);
+    if (pad.tool === 'erase') { const i = hit(x, y); if (i >= 0) { pad.items.splice(i, 1); saveItems(); draw(); } pad.cur = { t: 'erase' }; return; }
+    pad.cur = pad.tool === 'pen' ? { t: 'pen', p: [[x, y]] } : { t: pad.tool, x1: x, y1: y, x2: x, y2: y, dbl: pad.dbl };
+    draw();
+  });
+  cv.addEventListener('pointermove', e => {
+    if (!pad.cur) return;
+    const [x, y] = pos(e);
+    if (pad.cur.t === 'erase') { const i = hit(x, y); if (i >= 0) { pad.items.splice(i, 1); saveItems(); draw(); } return; }
+    if (pad.cur.t === 'pen') pad.cur.p.push([x, y]); else { pad.cur.x2 = x; pad.cur.y2 = y; }
+    draw();
+  });
+  const finish = () => {
+    const it = pad.cur; pad.cur = null;
+    if (!it || it.t === 'erase') return;
+    if (['rect', 'dia', 'oval', 'circle'].includes(it.t)) {
+      // a tap (no drag) places a default-size shape
+      if (Math.abs(it.x2 - it.x1) < 12 && Math.abs(it.y2 - it.y1) < 12) {
+        const [w, h] = { rect: [170, 56], dia: [200, 86], oval: [150, 48], circle: [44, 44] }[it.t];
+        it.x1 -= w / 2; it.y1 -= h / 2; it.x2 = it.x1 + w; it.y2 = it.y1 + h;
+      }
+      const s = prompt(it.t === 'circle' ? 'Letter (d, o or U)' : 'Label (start with _ for a key, ~ for a partial key)', it.t === 'circle' ? 'd' : '');
+      if (s === null) { draw(); return; }
+      it.s = s.trim();
+    } else if (it.t === 'text') {
+      const s = prompt('Text, e.g. (1,N)', '(1,N)');
+      if (!s) { draw(); return; }
+      it.s = s.trim();
+    } else if (it.t === 'line' && Math.hypot(it.x2 - it.x1, it.y2 - it.y1) < 6) { draw(); return; }
+    else if (it.t === 'pen') it.p = it.p.filter((q, i) => i === 0 || Math.hypot(q[0] - it.p[i - 1][0], q[1] - it.p[i - 1][1]) >= 2);
+    pad.items.push(it); saveItems(); draw();
+  };
+  cv.addEventListener('pointerup', finish);
+  cv.addEventListener('pointercancel', () => { pad.cur = null; draw(); });
+  root.querySelector('.padbar').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    b.blur();
+    if (b.dataset.tool) pad.tool = b.dataset.tool;
+    else if (b.dataset.pad === 'dbl') pad.dbl = !pad.dbl;
+    else if (b.dataset.pad === 'undo') { pad.items.pop(); saveItems(); }
+    else if (b.dataset.pad === 'clear') { if (pad.items.length && confirm('Clear your drawing?')) { pad.items = []; saveItems(); } }
+    else if (b.dataset.pad === 'full') { root.classList.toggle('full'); b.textContent = root.classList.contains('full') ? 'Close' : 'Expand'; }
+    syncBar(); draw();
+  });
+  pad.redraw = draw;
+  syncBar(); draw();
+}
+
 // ---------- routing & events ----------
 function route() {
-  const m = location.hash.match(/^#ex\/([\d.]+)$/);
+  const m = location.hash.match(/^#ex\/([\w.]+)$/);
   if (m && EX[m[1]]) { view = 'ex'; exId = m[1]; }
   else if (location.hash === '#quiz' && quiz) view = 'quiz';
   else view = 'home';
@@ -1242,6 +1805,7 @@ function route() {
 let view = 'home', exId = null;
 function render() {
   app.innerHTML = view === 'ex' ? exView(exId) : view === 'quiz' ? quizView() : homeView();
+  if (view === 'ex') initPad(exId);
   if (view === 'quiz') document.getElementById('qtext')?.focus({ preventScroll: true });
 }
 function applyTheme() { if (state.theme === 'auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.dataset.theme = state.theme; }
@@ -1303,6 +1867,7 @@ document.addEventListener('keydown', ev => {
   if (idx >= 0 && idx < quiz.perm[id].length) pick(quiz.perm[id][idx]);
 });
 window.addEventListener('hashchange', route);
+try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => pad?.redraw?.()); } catch {}
 
 // test hook
 window.dbp = {

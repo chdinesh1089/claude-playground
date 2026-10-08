@@ -347,6 +347,11 @@ and keep the license comment at the top.
   + relational mapping), 7.17, 7.23 (general), 8.17, 8.18 (EER + mapping),
   3.13–3.15 (keys and foreign keys). Prompts are **paraphrased**, answers are
   original; never paste book text or figures. The book PDF is not committed.
+- "Draw it yourself" (`D1`–`D8`, `ch: 'D'`) are original design problems in
+  the same style: hospital (1:1 + circular FKs), library (loan as an entity),
+  ternary supply (step 7), theater (weak chain), university people (overlap +
+  shared subclass), vehicle owners (category, step 9), online store, and a
+  reverse problem (relations → ER).
 - `EXERCISES` holds each exercise: `prompt`, `hints`, `sections` (each
   `{h, html?, diagram?, rels?}`, collapsed until opened) and `check` (the
   self-check list). `BANK` is the quiz (`tag` ER|EER|MAP|REL, `ex` links a
@@ -354,10 +359,17 @@ and keep the license comment at the top.
 - Diagrams use the book's Chen notation and are built in `DIAGRAMS` with the
   `ER(w, h)` builder: `E`, `R`, `A`, `attrs(of, dir, specs)` (`_key`,
   `~partial`, `{multi}`, `/derived`, `[name, [children]]`), `L(rel, ent,
-  '(min,max)', {side, off, ax, lx, ly})` and `S` (specialization circle).
+  '(min,max)', {side, off, ax, lx, ly})`, `S` (specialization circle), `U`
+  (category circle) and `sub(sup, sub)` (a direct subclass line, used for a
+  shared subclass's second parent).
   (min, max) labels sit next to the entity they describe. Check a layout by
   screenshotting `erSVG(dbp.DIAGRAMS[name]())`.
 - Relations: `{n, a: '*Pk Attr …', fk: ['A, B → REL'], u, step, note}`.
+- Every exercise page has a sketch pad (`initPad`, a 1000×750 logical canvas):
+  pen, entity/relationship/attribute/circle stamps with prompted labels (`_`
+  key, `~` partial key), lines, text, eraser, a Double toggle, undo and an
+  Expand (fullscreen) mode. Drawings are stored as item lists under
+  `dbpractice:sketch:<id>`.
 - `localStorage` key `dbpractice:v1` (`ex` checks/notes/open sections, `q`
   quiz results, `theme`). Test hook: `window.dbp` (`open(id)`,
   `startQuiz(tag)`, `pick`, `checkMs`, `next`, `quiz`, `state`, `BANK`,
@@ -417,6 +429,9 @@ Keys: Space, ←/→, R.
 
 Newest first. Add one line per change.
 
+- 2026-10-08: DB Design Practice: 8 new draw-it-yourself problems (D1–D8)
+  with worked diagrams and mappings, category and shared-subclass drawing, and
+  a sketch pad on every exercise page.
 - 2026-10-07: Added DB Design Practice (`aiapps/db-design-practice/`): the
   assigned Elmasri & Navathe exercises with worked (min, max) ER/EER diagrams,
   relational mappings, self-checks and a 74-question drill.
