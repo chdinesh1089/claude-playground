@@ -1,0 +1,542 @@
+{
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T17:26:59+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Human rights lawyer Navi Pillay is awarded Nobel Peace Prize",
+        "summary": "Former international judge Navi Pillay has won the Nobel Peace Prize, serving as an implicit rebuke of the Trump administration's attacks on the international legal order.",
+        "outlets": 10,
+        "published": "2026-10-09T17:00:19+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/live/2026/10/09/world/nobel-peace-prize-winner-2026"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/never-done-a-thing-to-foster-peace-trump-reposts-david-schoen-s-attack-on-navi-pillays-nobel-prize-win-11791560606377.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/09/navanethem-navi-pillay-wins-nobel-peace-prize"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm9wz5kng0x1o?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "Pillay's grandparents were indentured Indian laborers in South Africa, linking her heritage directly to the diaspora."
+      },
+      {
+        "headline": "US hits International Criminal Court with severe sanctions",
+        "summary": "The US administration announced sweeping sanctions against the International Criminal Court just hours after a former judge won the Nobel Peace Prize.",
+        "outlets": 8,
+        "published": "2026-10-09T16:22:54+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/9/rogue-court-us-sanctions-icc-hours-after-ex-judge-wins-nobel-prize?traffic_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/us-icc-sanctions-rogue-us-sanctions-world-court-hours-after-ex-judge-navi-pillay-wins-peace-nobel-12163072#publisher=newsstand"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/live/2026/oct/09/2026-nobel-peace-prize-winner-russia-ukraine-sudan-war-france-protests-poland-latest-news-updates"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/hours-after-navi-pillay-wins-nobel-peace-prize-trump-hits-icc-with-sweeping-sanctions/articleshow/134836916.cms"
+          }
+        ],
+        "why": "Direct escalation in US foreign policy impacting international legal institutions."
+      },
+      {
+        "headline": "Delhi locks down ahead of planned political protests",
+        "summary": "Authorities deployed heavy security, shut metro stations, and restricted internet access in New Delhi ahead of demonstrations against electoral roll revisions.",
+        "outlets": 6,
+        "published": "2026-10-09T13:46:12+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/09/world/asia/india-cockroach-protests-delhi.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/Delhi/delhi-cjp-protest-october-10-2026-jantar-mantar-traffic-restrictions-police-deployed-everything-you-need-to-know/article71563807.ece"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/western-central-railways-cancel-and-reschedule-mumbai-delhi-trains-ahead-of-cjp-protest-at-jantar-mantar/articleshow/134836400.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/cjp-protest-live-updates-delhi-police-tightens-security-metro-stations-shut-trains-cancelled-ahead-of-oct-10-protest-11791542254236.html"
+          }
+        ],
+        "why": "Massive disruptions directly affect families and travel links for relatives visiting from the US."
+      },
+      {
+        "headline": "Trump administration freezes PERM applications for major IT firms",
+        "summary": "The US government suspended PERM green-card processing and banned new applications from tech companies including Microsoft and TCS.",
+        "outlets": 4,
+        "published": "2026-10-09T13:29:15+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/perm-vs-h-1b-visa-what-trump-admins-suspension-of-microsoft-tcs-and-other-it-firms-means-for-green-card-seekers-11791550961841.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/nri/latest-updates/india-reacts-to-us-perm-move-against-it-cos-infosys-to-wipro-says-vances-indentured-servants-comments-unwarranted/articleshow/134819394.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/jobs/story/dharmendra-pradhan-backs-sridhar-vembu-call-indian-tech-talent-return-from-us-educ-3013289-2026-10-09?utm_source=rss"
+          },
+          {
+            "source": "The Seattle Times",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVTNnTnh0a1NhVGNZZXJRYWpGWGE0OGNBRUlacnNYbVhvQ210dUZyN0s0bVFmUmx0cjU3cVE0cjh1aXVPTnZxZWxjanNiU1hZTDNBTjdncHBKUFFINGNhV3RaRklTZTdmdmZETXV6dHhWdmdpRFN3OFBYWmZ3TWZnWkxTcWVXWGJrVFU2NnRuaFA0ZFhhRE5QTFZzOGktaDJJN3haZQ?oc=5"
+          }
+        ],
+        "why": "Directly impacts H-1B visa holders and Indian professionals navigating US green card backlogs."
+      },
+      {
+        "headline": "Iran's Houthi allies step up deadly attacks on Saudi Arabia",
+        "summary": "Saudi Arabia says missile strikes by Iran's Houthi allies killed three people at Riyadh's airport as fighting escalates in the Middle East conflict's new epicenter.",
+        "outlets": 6,
+        "published": "2026-10-09T17:22:07+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/09/world/middleeast/yemen-houthi-attack-saudi-arabia-airport-riyadh.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/saudi-arabia-houthi-conflict-escalates-airlines-suspend-riyadh-flights-after-attacks-watch-11791523084516.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmz7xe37g5wro?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      }
+    ],
+    "us": [
+      {
+        "headline": "ICE officer shoots man during vehicle stop in New York",
+        "summary": "A federal immigration officer shot a Dominican man in the neck during an arrest in the Bronx while a young child was in the car.",
+        "outlets": 6,
+        "published": "2026-10-09T14:52:56+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/ice-new-york-shooting-dominican-man-shot-during-arrest-bodycam-demanded-ptag-3013582-2026-10-09?utm_source=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/ice-officer-shoots-a-man-while-making-an-arrest-in-new-york-officials-say"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c59vzk9yypn3o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/9/dhs-defends-ice-shooting-in-nyc-says-officers-believed-they-were-in-danger?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Hurricane Isaias strengthens into major storm threatening Gulf Coast",
+        "summary": "Millions along the Gulf Coast are under evacuation orders as Hurricane Isaias intensifies into a powerful hurricane.",
+        "outlets": 5,
+        "published": "2026-10-09T17:18:45+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/live-updates/hurricane-isaias-updates-isaias-strengthens-category-3/?id=137128637"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/9/hurricane-isaias-strengthens-into-category-3-storm-with-us-in-its-sights?traffic_source=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/mobile-mayor-on-hurricane-isaias-threatening-alabama/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/gulf-coast-prepares-for-landfall-as-hurricane-isaias-gains-power"
+          }
+        ]
+      },
+      {
+        "headline": "Arlington County files lawsuit against Trump memorial arch",
+        "summary": "The Arlington County Board in Virginia filed a lawsuit opposing the construction of a proposed triumphal arch backed by President Donald Trump.",
+        "outlets": 3,
+        "published": "2026-10-09T16:12:34+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/trumps-memorial-arch-faces-a-new-lawsuit-from-arlington-county-virginia"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/9/trumps-planned-dc-arch-faces-new-lawsuit?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/08/us/politics/arlington-county-lawsuit-trump-arch.html"
+          }
+        ]
+      },
+      {
+        "headline": "US faces international condemnation over planned execution livestream",
+        "summary": "The Pentagon's plan to broadcast the execution of the Fort Hood shooter has drawn widespread global criticism and legal concerns.",
+        "outlets": 5,
+        "published": "2026-10-09T14:44:00+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/9/us-to-livestream-fort-hood-shooters-execution-is-that?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/08/us/politics/fort-hood-execution-streamed-public.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/09/live-stream-execution-fort-hood-shooter"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/fort-hood-shooter-execution-livestream-reaction-pentagon/"
+          }
+        ]
+      },
+      {
+        "headline": "James Talarico's campaign pause rattles Texas Senate race",
+        "summary": "Texas Democratic Senate nominee James Talarico has paused campaign events for over a week while recovering from the flu.",
+        "outlets": 2,
+        "published": "2026-10-09T17:18:36+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/09/us/james-talarico-absence-texas-senate.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/trump-paxton-attack-texas-senate-candidate-talarico-absence/story?id=137098784"
+          }
+        ]
+      },
+      {
+        "headline": "Legendary NFL coach Mike Ditka dies at 86",
+        "summary": "Mike Ditka, the Hall of Fame coach who led the Chicago Bears to a Super Bowl victory, has passed away at age 86.",
+        "outlets": 5,
+        "published": "2026-10-09T17:17:15+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/GMA/Culture/mike-ditka-legendary-nfl-player-coach-dies-86/story?id=116247659"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/09/sports/mike-ditka-dead.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/mike-ditka-former-head-coach-chicago-bears-obit/"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/mike-ditka-cause-of-death-hall-of-fame-bears-legend-was-days-away-from-87th-birthday-as-health-struggles-resurface-full-statement-of-family-revealed/articleshow/134838358.cms"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Gauhati High Court grants bail to singer Amritprava Mahanta",
+        "summary": "The Gauhati High Court granted bail set at Rs 50,000 to singer Amritprava Mahanta in the Zubeen Garg death case.",
+        "outlets": 3,
+        "published": "2026-10-09T15:49:01+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/entertainment/hindi/music/news/zubeen-garg-death-case-gauhati-high-court-gives-relief-to-co-singer-amritprava-mahanta-who-was-arrested-by-assam-sit-in-2025/articleshow/134837633.cms"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/zubeen-gargs-co-singer-accused-of-his-murder-granted-bail-after-a-year-12162793#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/gauhati-hc-grants-bail-to-zubeen-garg-s-bandmate-amritprava-mahanta-in-murder-trial-101791553649315.html"
+          }
+        ]
+      },
+      {
+        "headline": "Ruling parties sweep bypolls as BJP wins Bengal seats",
+        "summary": "The BJP secured major victories in West Bengal bypolls, including winning Nandigram and Rejinagar by large margins.",
+        "outlets": 4,
+        "published": "2026-10-09T17:14:56+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/ruling-parties-sweep-bypolls-as-bjp-bags-bengal-seats-tvk-wins-in-tamil-nadu/article71565346.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/bypoll-results-2026-ruling-parties-hold-sway-in-bengal-tamil-nadu-assam-and-puducherry/articleshow/134826011.cms"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/nandigram-rejinagar-bypolls-bjp-wins-nandigram-bypoll-by-over-1-2-lakh-votes-leads-in-rejinagar-12161722#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/bjp-wins-nandigram-bypoll-as-hasirani-rath-secures-landslide-victory-101791544967398.html"
+          }
+        ]
+      },
+      {
+        "headline": "Prajwal Revanna to be transferred to Hindalga Jail",
+        "summary": "Prajwal Revanna is scheduled to be moved from a Bengaluru prison to Hindalga Jail in Belagavi.",
+        "outlets": 2,
+        "published": "2026-10-09T17:11:28+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/prajwal-revanna-hindalga-jail-transfer-prison-phone-case-3013703-2026-10-09?utm_source=rss"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/bangalore/proposed-shift-of-prajwal-revanna-to-hindalga-prison-temporarily-put-on-hold/article71565262.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Rahul Gandhi meets President over electoral roll irregularities",
+        "summary": "Opposition leaders met with President Murmu to submit a memorandum regarding alleged irregularities in voter lists.",
+        "outlets": 3,
+        "published": "2026-10-09T17:09:51+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/opposition-mps-leave-parliament-to-meet-president-over-gyanesh-kumar-row-12162739#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/india-bloc-leaders-march-from-parliament-house-to-vijay-chowk-where-police-stop-them-3013556-2026-10-09?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/rahul-gandhi-protest-today-rashtrapati-bhavan-modi-shah-cec-conspired-to-destroy-indian-democracy-101791560814011.html"
+          }
+        ]
+      },
+      {
+        "headline": "NEET UG paper leak: Parliamentary panel recommends switching NTA-run exams to CBT mode",
+        "summary": "Committee calls for central registry to bar blacklisted exam vendors; says long-term defence against recurring leaks is investing in large, diverse, and continuously updated question banks; advises against invasive student frisking at examination centres.",
+        "outlets": 2,
+        "published": "2026-10-09T16:27:11+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/neet-ug-paper-leak-parliamentary-panel-calls-for-mechanism-to-ensure-ntas-accountability-to-both-houses/article71564395.ece"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/neet-ug-should-be-computer-based-nta-must-vet-paper-setters-and-be-made-accountable-to-parliament-says-parliamentary-panel/articleshow/134834584.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Ex-police chief seeks visa verification for YouTuber Dhruv Rathee",
+        "summary": "A former Bengaluru police commissioner asked the Home Ministry to investigate YouTuber Dhruv Rathee's citizenship and visa compliance.",
+        "outlets": 2,
+        "published": "2026-10-09T16:23:27+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/bangalore/sir-protest-former-bengaluru-top-cop-and-bjp-leader-bhaskar-rao-seeks-verification-of-dhruv-rathees-citizenship-visa-conditions/article71564316.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/dhruv-rathees-visa-status-citizenship-to-be-scrutinised-why-ex-bengaluru-police-chief-bhaskar-rao-seeks-verification-11791549353302.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Iran claims control of Strait of Hormuz after tanker strike",
+        "summary": "Iran's Revolutionary Guards stated they took control of shipping administration in the Strait of Hormuz following a strike on an LPG tanker.",
+        "outlets": 2,
+        "published": "2026-10-09T16:46:52+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/iran-says-it-hit-lpg-tanker-taking-illegal-route-through-hormuz-what-we-know-about-nv-sunshine-and-ship-fire-off-uae-11791561482963.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/us-iran-war-lpg-tanker-struck-in-strait-of-hormuz-iran-guards-say-was-taking-illegal-route-12163086#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Stolen Renoir paintings recovered on the French Riviera",
+        "summary": "Two Renoir paintings stolen from a museum after thieves cut through a fence were successfully recovered by authorities.",
+        "outlets": 2,
+        "published": "2026-10-09T14:25:18+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwkg50v1vn07o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/09/world/europe/renoir-museum-artworks-theft-france-arrests.html"
+          }
+        ]
+      },
+      {
+        "headline": "France promises extra teachers to calm student protests",
+        "summary": "The French education minister offered 3,000 additional teachers following days of demonstrations and protests by high-school students.",
+        "outlets": 2,
+        "published": "2026-10-09T11:35:00+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6vg98lw017po?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/08/world/europe/france-student-protests.html"
+          }
+        ]
+      },
+      {
+        "headline": "Candidate named Hitler Mussolini elected mayor in Peru",
+        "summary": "A left-wing candidate named Hitler Mussolini secured a narrow mayoral victory in a remote district of the Peruvian Andes.",
+        "outlets": 1,
+        "published": "2026-10-09T16:32:22+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmdxwn9dr42yo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "OpenAI defends firing AI safety researchers over trust breach",
+        "summary": "OpenAI responded to criticism regarding the dismissal of safety workers, stating the action was taken due to a breach of trust.",
+        "outlets": 2,
+        "published": "2026-10-09T16:47:54+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/openai-defends-firing-safety-researchers/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cvlydn8d3lkjo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Scindia states India will prevent monopolies in telecom sector",
+        "summary": "Minister Scindia responded to Elon Musk's comments on market bottlenecks regarding Starlink's proposed satellite internet service in India.",
+        "outlets": 4,
+        "published": "2026-10-09T16:17:08+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/government-wont-allow-monopoly-in-any-sector-in-india-scindia/article71564710.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-doesnt-allow-monopoly-satcom-licencees-can-start-only-after-security-norms-met-scindia-101791530676591.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cvglw9ryjrylo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5yeXN6YkROVGN4ZEpISXlicm9HUjZUZGZoYW1ZYjFlR2NDNVZtTjBBLXhHWGxwNlhvQ05YTHl6NG9YVFpSU3F5Qml2MHVscnZtUlhCeGxkb3J6RTQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Apple stock falls on reports of iPhone component cuts",
+        "summary": "Apple shares dropped following reports that the company is reducing component orders due to soft demand for the iPhone 18 Pro.",
+        "outlets": 2,
+        "published": "2026-10-09T13:26:55+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/world/business/too-pricey-to-sell-apple-cuts-iphone-18-pro-orders-by-20-duo-faces-similar-risk/articleshow/134814169.cms"
+          },
+          {
+            "source": "Yahoo Finance",
+            "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNdXRZODhUOUdIaGhYOXRmVnZLWGJCWlgtX0NacXhXYWxkalFkYXZPbEtjOEo3S3FhT0VMd3B2NktuOENFaThPOXAzUDBEOXpzSEdtcnJQNmpkZmh3RGtsdEVoRzEwSUY1ZnR3dThmcXh1cjBWTUhUTHBHRWtJOXRPSTVkanhWbVdCcVJTVUdyejZwSUlhQjBjS1ZvbXZwOVlSRWRMWk9vSzZ4bU0yQzExcGxOQjREdV96WURCbHBHWEt5QmxNeUFSYTRpVFpsbHY1LUN1OEpfcmlQRm9FODZFM0FfTjhNVG5WUVhSbUNB?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Amazon launches new Alexa Tablets with Android integration",
+        "summary": "Amazon released new Alexa tablets dropping the Fire branding while deepening integration with the Google Play ecosystem.",
+        "outlets": 2,
+        "published": "2026-10-09T11:10:00+00:00",
+        "links": [
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/gadgets/2026/10/amazons-new-alexa-tablets-drop-the-fire-branding-but-are-more-android-than-ever/"
+          },
+          {
+            "source": "Mezha",
+            "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9qejMzbWpNUjFsMVJ5WU5qM3c0MDRmRXo5TlBoMXBMUWJYQ0pFYi11NmhHeXlpNHdlWWZNLXA2NlRiaGVLWG1NNy10T0ZTcWVTOXE5T0xZQWw1ZUxDZHR1QndJRdIBaEFVX3lxTE9Qa3NkZ21CZ2hJOTJmbGRpQl96R0VfM3RZT1UwQTVYVUdneGR1Z29rcG1JOXNNci00WWlUeEllVm51WlE4VE81dWVUZnllUFJuNEZnYmJmSnJuVWsxUFg0YWlfSXpVOXV0?oc=5"
+          }
+        ]
+      }
+    ]
+  }
+}
