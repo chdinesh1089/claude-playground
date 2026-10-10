@@ -332,5 +332,19 @@
       "American"
     ],
     "outbound_stops": 1
+  },
+  {
+    "checked_at": "2026-10-10T17:33:18Z",
+    "weekend_start": "2026-10-16",
+    "weekend_end": "2026-10-18",
+    "from_airport": "DFW",
+    "to_airport": "ORD",
+    "currency": "USD",
+    "status": "ok",
+    "price": 496,
+    "airlines": [
+      "American"
+    ],
+    "outbound_stops": 0
   }
 ]
