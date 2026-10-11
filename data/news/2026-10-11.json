@@ -1,0 +1,492 @@
+{
+  "date": "2026-10-11",
+  "generated_at": "2026-10-11T16:39:15+00:00",
+  "status": "ok",
+  "model": "gemini-flash-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "‘Completely unacceptable’: India condemns attack on Saudi's Riyadh airport that killed 12",
+        "summary": "At least 12 people were killed and more than 300 injured in the missile attack, which was the deadliest attack in Saudi Arabia in more than a decade.",
+        "outlets": 12,
+        "published": "2026-10-11T04:05:48+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/completely-unacceptable-india-condemns-attacks-on-saudis-riyadh-airport-that-killed-12-101791691316059.html"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/10/g-s1-147682/attack-on-riyadh-airport-killed-12-people-and-wounded-over-300-more-saudi-authorities-say"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/nri/latest-updates/11-indians-among-300-injured-in-riyadh-airport-attack/articleshow/134872926.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/riyadh-airport-attack-11-indians-injured-india-condemns-strikes-ptag-3015070-2026-10-11?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Zelenskyy signals openness to energy ceasefire following Trump announcement",
+        "summary": "Ukrainian President Volodymyr Zelenskyy said Kyiv would halt strikes on Russian refineries if Moscow pauses attacks, following Donald Trump's announcement of a partial energy ceasefire.",
+        "outlets": 12,
+        "published": "2026-10-11T16:22:50+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/live/2026/oct/11/donald-trump-ukraine-russia-energy-ceasefire-diesel-latest-updates"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/trump-announces-russia-ukraine-energy-ceasefire-effective-immediately-12170439#publisher=newsstand"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/zelenskyy-trump-new-ukrainian-president/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/11/trump-says-ukraine-russia-agree-to-energy-ceasefire-2?traffic_source=rss"
+          }
+        ],
+        "why": "Major shift in the Ukraine war and US foreign policy impacting global energy markets."
+      },
+      {
+        "headline": "Supreme Court issues contempt notice over detentions during Delhi voting rights protests",
+        "summary": "The Supreme Court issued contempt notices over alleged violations of its order regarding the detention of Cockroach Janta Party protesters demonstrating against Chief Election Commissioner Gyanesh Kumar.",
+        "outlets": 9,
+        "published": "2026-10-11T13:33:33+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/delhi-protests-supreme-court-issues-contempt-notice-over-alleged-illegal-detention-october-9-order-breach-11791724570074.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/sc-mandates-free-movement-no-illegal-detentions-subject-to-public-order/article71571202.ece"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-seeks-govt-response-illegal-detentions-delhi-protest-crackdown-special-hearing-cjp-stir-cec-gyanesh-kumar-3014674-2026-10-11?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/delhi-curbs-supreme-court-hearing-today-security-internet-suspension-jantar-mantar-protests-detentions-police-gyanesh-kumar-101791701880876.html"
+          }
+        ],
+        "why": "High-stakes confrontation over electoral rights, police powers, and judicial oversight in India's capital."
+      },
+      {
+        "headline": "Pakistan Seizes Control of an Opposition-Led Province",
+        "summary": "The federal government, speaking of “a severe breakdown in law and order” in Khyber Pakhtunkhwa amid militant violence, named a politically allied official as in charge.",
+        "outlets": 3,
+        "published": "2026-10-11T16:25:43+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/11/world/middleeast/pakistan-federal-control-khyber-pakhtunkhwa.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/pakistan-news-pakistan-news-khyber-pakhtunkhwa-cm-sohail-afridi-pti-long-march-2026-itspc-3014726-2026-10-11?utm_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/pakistan/pak-crisis-shehbaz-govt-declares-emergency-ends-imran-khans-partys-rule-in-kpk/articleshow/134868055.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Boat capsizes off Djibouti leaving 139 dead, UN says",
+        "summary": "A boat carrying 305 people from Djibouti to Yemen capsized near the port town of Obock, leaving at least 139 people, including children, dead.",
+        "outlets": 6,
+        "published": "2026-10-11T15:32:23+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwy7lxx60dg5o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/djibouti-boat-capsizes-with-305-migrants-on-board-at-least-139-dead-and-84-missing-in-deadly-shipwreck-11791727909172.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/11/world/africa/migrant-boat-capsize-djibouti-dead-yemen.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/109-migrants-including-15-children-dead-after-boat-overturns-off-djibouti-12170218#publisher=newsstand"
+          }
+        ]
+      }
+    ],
+    "us": [
+      {
+        "headline": "Justice Department investigates TV networks over White House pool coverage",
+        "summary": "The US Justice Department is investigating television networks over alleged antitrust violations after the White House blocked CNN, MS Now, and Politico from pool coverage.",
+        "outlets": 4,
+        "published": "2026-10-11T14:37:00+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c9vgregzk6gro?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/10/business/media/trump-justice-department-tv-networks.html"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/11/nx-s1-5997574/the-doj-is-investigating-5-tv-networks-for-suspending-pool-coverage-of-trump"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSldFaXdvR2VuRkFmaWxnOThjM29peU5pcXZOV0ZRS2h0Z2lhT1FrMGNYYmM1bmV0aXRpLTYyczIxLTdpN05iNWx4TU5JdEI0SGRRZmk0YllhUkFQbXBubWtMbFpvRnZPdklMeTZpQjdLYk1wV0I1RWhtbWhjXzZsTzVKSmZZc2N4MDZfSDR0c1pFcTctbFBiZG1MNVRQQ3BXaVpnaWpaYlRqa3J1T2U2TVZoMzlmWUljWTdNNGdaU3JHN1kwQzAw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Hurricane Isaias leaves thousands without power across Florida and Alabama",
+        "summary": "Category 2 Hurricane Isaias has been linked to at least four deaths and left thousands without electricity as it moved north.",
+        "outlets": 4,
+        "published": "2026-10-11T14:56:53+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/isaias-southeastern-u-s-gulf-coast/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/11/isaias-florida-alabama-power-outages"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/isaias-leaves-thousands-without-power-kills-at-least-4-people-11791696424920.html"
+          },
+          {
+            "source": "DW.com",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOU0k4WkhIZm9xRWt5bDJvbnBUVTJtLWY1cmxGYXFKb0dUM21zc2VyQmFjMEdWUDhWYXViZ1JjdmV0RFVIblNRZGlMX0FacnFkZEh6ZUk0d2wySjhNbVBYdVRKcXVYM1dVV1lpdzZaVG1UWndaQS1XaHVIcUc2Tlk5ejZPbkJDcGVrdi0xWldLZVA3dHJx0gGUAUFVX3lxTE9tRkQxMVRKeGZnMWlrN2k1dUd3OTdvNmFnbkhYMHdQOVdVNlVsc0V4Y2VLMXY0Q1hJaW4yRXpvTHJ3WlByc0VnUGFpWmVZbEpXcU9rbklmTkdpYjdreHRTY0tLQ05qWXktNlkwTnhBRGVoMHFsUnpEejBPb0VERmxUcU9PYVNSbHA4YXpPQzBDM2xrVlQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Surge in violent threats reshapes lives of American elected officials",
+        "summary": "A New York Times investigation found violent threats against US public officials have escalated security costs and driven politicians out of office.",
+        "outlets": 1,
+        "published": "2026-10-11T16:28:58+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/11/us/politics/elections-political-violence-harassment.html"
+          }
+        ]
+      },
+      {
+        "headline": "US maternity wards face closure wave following Medicaid funding cuts",
+        "summary": "Hospitals across the United States are shuttering maternity wards as federal spending cuts begin to squeeze healthcare facilities.",
+        "outlets": 1,
+        "published": "2026-10-11T12:00:26+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/11/medicaid-cuts-maternity-wards"
+          }
+        ]
+      },
+      {
+        "headline": "Millions of Americans face fewer Medicare Advantage plan choices this year",
+        "summary": "Open enrollment will offer zero Medicare Advantage plans across 181 counties in 2027, up from 67 counties in 2026.",
+        "outlets": 1,
+        "published": "2026-10-11T16:35:00+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/millions-of-americans-will-have-fewer-options-during-medicare-open-enrollment-this-year-6b56698b?mod=mw_rss_topstories"
+          }
+        ]
+      },
+      {
+        "headline": "ICE agent strikes man with vehicle during pursuit in Texas",
+        "summary": "An Immigration and Customs Enforcement agent struck a man with a vehicle during an operation in Texas, leaving him hospitalized with a broken leg.",
+        "outlets": 1,
+        "published": "2026-10-11T14:54:52+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/11/ice-agent-strikes-man-with-car-texas"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "PM Modi, CM Vijay unveil ₹13,000-crore projects, flag off Chennai Metro stretch",
+        "summary": "Modi said that before assuming office as the CM of Gujarat, he had the opportunity to interact with leaders such as the late DMK patriarch M Karunanidhi",
+        "outlets": 5,
+        "published": "2026-10-11T13:28:12+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/pm-modi-cm-vijay-unveil-13-000-crore-projects-flag-off-chennai-metro-stretch-101791725293207.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/pm-modi-inaugurates-rs-4900-crore-15-km-chennai-metro-phase-ii-stretch-rides-along-with-cm-vijay/articleshow/134866589.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/tamil-nadu-development-modi-vijay-rs-13000-crore-projects-chennai-metro-ptag-3015092-2026-10-11?utm_source=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/pm-modi-inaugurates-chennai-metro-phase-2-know-yellow-line-stations-timings-and-other-key-details-11791718911875.html"
+          }
+        ]
+      },
+      {
+        "headline": "Death toll in Manipur ethnic clashes rises to nine",
+        "summary": "Violence spread from Kamjong near the Myanmar border to Kangpokpi, bringing the official death toll to nine in renewed clashes.",
+        "outlets": 1,
+        "published": "2026-10-11T15:49:49+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/manipur/situation-remains-tense-in-violence-hit-manipur-as-toll-rises-to-nine-cm-calls-for-peace/article71570700.ece"
+          }
+        ]
+      },
+      {
+        "headline": "India alerts national laboratory network following Russian laboratory worker death",
+        "summary": "India put diagnostic laboratories on alert and stocked antibiotics after a laboratory worker in Russia died from suspected pathogen exposure.",
+        "outlets": 1,
+        "published": "2026-10-11T10:47:55+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india-puts-lab-network-on-alert-after-russia-plague-scare-11791698998489.html"
+          }
+        ]
+      },
+      {
+        "headline": "Flight from Delhi to Chennai makes emergency landing after battery fire",
+        "summary": "A passenger plane flying from Delhi to Chennai made an emergency landing in India after an onboard power bank caught fire.",
+        "outlets": 8,
+        "published": "2026-10-11T15:40:55+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/power-bank-fire-forces-plane-to-emergency-land-in-india?traffic_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/power-bank-fire-aboard-indigo-delhi-chennai-flight-what-rules-say-on-carrying-such-gadgets-12169934#publisher=newsstand"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/watch-chennai-bound-indigo-flight-diverted-to-hyderabad-after-fire-breaks-out-due-to-malfunctioning-power-bank-11791720289203.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/delhi-chennai-flight-diverted-to-hyderabad-after-smoke-detected-on-board-report/articleshow/134870210.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Sri Lankan President cites Katchatheevu stance in affirming ties with India",
+        "summary": "Sri Lankan President Dissanayake highlighted good bilateral relations after India's Attorney General acknowledged before the Supreme Court that Katchatheevu belongs to Sri Lanka.",
+        "outlets": 1,
+        "published": "2026-10-11T15:50:45+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/international/dissanayake-highlights-good-relations-with-india-points-to-new-delhis-katchatheevu-stance/article71572026.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Two dead following gas exposure at ESL Steel plant in Jharkhand",
+        "summary": "A company executive and an engineer died following an accidental gas exposure incident at the ESL Steel plant in Jharkhand.",
+        "outlets": 2,
+        "published": "2026-10-11T16:21:07+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/jharkhand/jharkhand-bokaro-gas-exposure-accident-death-updates/article71571034.ece"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/two-killed-after-gas-exposure-at-esl-steel-plant-in-jharkhands-bokaro/articleshow/134867608.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Polish authorities detain man accused of plotting to kill Prime Minister Tusk",
+        "summary": "Polish Prime Minister Donald Tusk said a man was detained after authorities uncovered a plot to assassinate him and the country's defence minister.",
+        "outlets": 2,
+        "published": "2026-10-11T16:01:25+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/11/poland-possible-plot-attack-prime-minister-donald-tusk"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/11/poland-police-probe-alleged-plot-to-assassinate-pm-tusk-defence-minister?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Pope Leo XIV to undergo surgery to remove lung nodule",
+        "summary": "Pope Leo XIV announced he will undergo surgery this week to remove a nodule discovered in his lung.",
+        "outlets": 7,
+        "published": "2026-10-11T15:24:50+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/11/pope-leo-xiv-to-undergo-surgery-after-lump-found-in-lung?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6m2dnngvw8xo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/11/world/europe/pope-leo-lung-surgery.html"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/11/nx-s1-5998027/pope-leo-xiv-to-undergo-lung-surgery-this-week"
+          }
+        ]
+      },
+      {
+        "headline": "Hurricane Simon nears Mexico Pacific coast as Category 4 storm",
+        "summary": "Hurricane Simon strengthened into a Category 4 storm packing 155 mph winds as it barreled toward Mexico's Pacific coast.",
+        "outlets": 2,
+        "published": "2026-10-11T15:59:10+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/hurricane-simon-takes-aim-mexico-pacific-coast/"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/11/nx-s1-5998022/hurricane-simon-nears-mexico-155-mph-winds-flooding-fears"
+          }
+        ]
+      },
+      {
+        "headline": "Flash floods sweep away homes and bridges across central Nepal",
+        "summary": "Fresh flash floods swept away houses and bridges in Nepal, prompting authorities to evacuate villagers after a central river burst its banks.",
+        "outlets": 4,
+        "published": "2026-10-11T12:03:52+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ck86zppejjw3o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/south-asia/nepal-floods-chilling-videos-show-bridges-swept-away-homes-destroyed/articleshow/134868117.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/nepal-floods-10-missing-6-bridges-washed-away-as-budhi-gandaki-river-overflows-what-we-know-11791708055376.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/11/at-least-five-people-missing-as-flash-floods-in-nepal-sweep-away-houses?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Indian parliamentary panel chair counters Elon Musk over Starlink security concerns",
+        "summary": "IT standing committee chair Nishikant Dubey said India's security policy will not yield to social media pressure regarding Starlink's satellite internet service.",
+        "outlets": 3,
+        "published": "2026-10-11T15:49:06+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/indias-security-policy-not-shaped-by-social-media-pressure-says-nishikant-dubey-amid-starlink-row/article71571814.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/first-provide-connections-to-poor-in-america-nishikant-dubey-slams-elon-musk-says-starlink-poses-security-threats-11791716913875.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/bjp-mp-nishikant-dubey-hits-back-at-musk-over-starlink-security-concerns-101791707949586.html"
+          }
+        ]
+      },
+      {
+        "headline": "Foreign investors pour 1 billion dollars into Indian IPOs amid market selloff",
+        "summary": "Foreign portfolio investors put 1 billion dollars into initial public offerings in September even while pulling a record 4.8 billion dollars from listed equities.",
+        "outlets": 1,
+        "published": "2026-10-11T13:25:53+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/business/india-business/stock-market-is-crashing-but-ipos-are-seeing-billions-of-dollars-of-investment-whats-happening/articleshow/134871182.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Ukraine targets Russian tech firm Yandex data centre in drone attack",
+        "summary": "A third Ukrainian strike this week on a data centre belonging to Russian tech giant Yandex forced the company to suspend operations.",
+        "outlets": 1,
+        "published": "2026-10-11T14:38:10+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cw0k0g57mk3zo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "ED files complaint in 2,459-crore rupee Ponzi scam defrauding 35,000 investors",
+        "summary": "India's Enforcement Directorate filed a prosecution complaint against five individuals and entities for allegedly duping over 35,000 investors in a 2,459 crore rupee fraud.",
+        "outlets": 1,
+        "published": "2026-10-11T14:19:59+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/2459-crore-ponzi-case-ed-alleges-investor-funds-routed-through-family-accounts-and-firms-35k-duped-details-11791722683155.html"
+          }
+        ]
+      }
+    ]
+  }
+}
