@@ -1,0 +1,551 @@
+{
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T20:18:10+00:00",
+  "status": "ok",
+  "model": "gemini-flash-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Trump defends Russian diesel deal amid backlash and ongoing Ukraine strikes",
+        "summary": "President Donald Trump stood by a plan to buy Russian diesel despite pushback from senators and warnings from Volodymyr Zelenskyy over ongoing strikes on Ukrainian energy facilities.",
+        "outlets": 9,
+        "published": "2026-10-12T18:15:11+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/12/world/europe/russia-ukraine-war-us-diesel-deal-negotiations.html"
+          },
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/trumps-energy-ceasefire-collides-with-real-world-problems-of-dwindling-fuel-supplies-8ba3993b?mod=mw_rss_topstories"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/kremlin-relishes-in-u-s-russia-diesel-deal-and-trumps-criticism-of-zelenskyy"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/made-right-choice-america-first-trump-defends-russia-diesel-deal-amid-bipartisan-backlash/articleshow/134899954.cms"
+          }
+        ],
+        "why": "Signals a controversial shift in US energy policy and tensions over Ukraine sanctions."
+      },
+      {
+        "headline": "Federal agents search home of Minnesota Representative Ilhan Omar",
+        "summary": "Federal immigration agents searched the home of Minnesota Representative Ilhan Omar as part of a criminal investigation, drawing sharp condemnation from House Democratic leaders.",
+        "outlets": 9,
+        "published": "2026-10-12T16:56:33+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/house-democratic-leaders-condemn-the-search-of-congresswomans-home-as-an-abuse-of-power"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/12/us/politics/ilhan-omar-home-searched.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/12/democrats-reaction-ilhan-omar-federal-raid-home-trump"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/12/nx-s1-5998856/federal-agents-search-congressperson-home-dc-doj"
+          }
+        ],
+        "why": "Represents an unusual federal investigation into a sitting lawmaker weeks before midterm elections."
+      },
+      {
+        "headline": "Opposition INDIA bloc marches through Delhi protesting electoral roll revision",
+        "summary": "Opposition parties organized a massive march through Delhi to the Supreme Court protesting alleged electoral irregularities and the Special Intensive Revision of voter rolls.",
+        "outlets": 12,
+        "published": "2026-10-12T17:56:47+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/india-bloc-marches-through-delhi-takes-sir-protest-to-sc/article71576536.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/pause-sir-independent-audit-of-voter-deletion-india-bloc-petition-to-supreme-court-lists-10-requests-101791819697721.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/newsmo/short-videos/whats-happening-near-the-supreme-court-of-india-3015770-2026-10-12?utm_source=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/rahul-gandhi-vs-gyanesh-kumar-pil-challenges-sir-in-supreme-court-as-thousands-join-india-blocs-protest-11791809717316.html"
+          }
+        ],
+        "why": "Marks a major united opposition challenge over alleged voter fraud ahead of elections."
+      },
+      {
+        "headline": "Saudi Arabia extends Riyadh airport closure following deadly Houthi strikes",
+        "summary": "Saudi Arabia extended the closure of Riyadh's King Khalid International Airport after repeated Houthi missile and drone attacks killed 20 people over a week.",
+        "outlets": 6,
+        "published": "2026-10-12T20:07:33+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-saudi-arabia-houthi/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/11/saudi-coalition-retaliation-houthi-attack-riyadh-airport"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/saudi-arabia-shuts-riyadh-airport-until-october-17-after-attacks-why-houthi-missiles-are-getting-through-11791827569411.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/12/world/middleeast/iran-houthis-saudi-arabia.html"
+          }
+        ],
+        "why": "Threatens Gulf aviation safety and energy security as the US considers strikes."
+      },
+      {
+        "headline": "Robert E. Hall and Michael Woodford win Nobel Prize in economics",
+        "summary": "American economists Robert E. Hall and Michael Woodford won the Nobel Prize in economics for research helping policymakers and central banks manage economic shocks.",
+        "outlets": 6,
+        "published": "2026-10-12T16:45:06+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/nobel-prize-economics-2-americans/"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/09/nx-s1-5996634/nobel-prize-in-economics"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/12/business/nobel-prize-economics.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/who-are-robert-e-hall-and-michael-woodford-nobel-economics-winners-2026-3015540-2026-10-12?utm_source=rss"
+          }
+        ],
+        "why": "Honors foundational research used by governments and central banks to stabilize economies."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Elon Musk spends hundreds of millions bolstering Republicans in midterm elections",
+        "summary": "Elon Musk has donated hundreds of millions of dollars to support Republican candidates as the party seeks to defend its Senate majority in the midterm elections.",
+        "outlets": 3,
+        "published": "2026-10-12T17:24:24+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/12/us/politics/elon-musk-midterms.html"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/tech/1009604/elon-musk-2026-midterm-republican-donations"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/12/elon-musk-spends-366m-to-bolster-republican-party-in-us-midterm-elections?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Court orders Trump administration to cancel taxpayer-funded TV ads",
+        "summary": "The Trump administration was ordered to cancel television advertisements after the Department of Homeland Security used $20 million in taxpayer money for the campaign.",
+        "outlets": 4,
+        "published": "2026-10-12T16:08:47+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-taxpayer-funded-ads-judge-cancels/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/wireStory/judge-orders-trump-administration-cancel-taxpayer-funded-promotional-137183951"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/11/us/politics/judge-bars-trump-taxpayer-ads.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYlpMQS1vRzQ3dll0YUNaTjN2Vk5FUGlxdmp0blU5eHI0SWVuUWxnVk9GRmtXZ3JvenJqWmtxR2dKRnFGOVBPdld1bUE0Tm9WSWZlN0pvMGlwc3JqSnhUV3AyUWIwcjlhc2htZ0RramhOZWRlS0sweEFxQlA5aXpiWDhoZ2ZVVUdlUnV1M0NFc1QxNjJtN2xhRzJNUQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Federal judge questions Trump administration over tree cutting at D.C. course",
+        "summary": "A federal judge demanded answers and chastised government lawyers after 430 trees were cut down at East Potomac Golf Links on Saturday.",
+        "outlets": 4,
+        "published": "2026-10-12T19:44:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/judge-ana-reyes-justice-department-trees-east-potomac-golf-course/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/12/us/politics/judge-trees-golf-trump.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/federal-judge-orders-trump-administration-to-halt-work-for-a-day-on-historic-d-c-golf-course"
+          },
+          {
+            "source": "Politico",
+            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRHFkTjRmbjRJWmRrNVk4LWdOc25LQ3lEdjJVbVdjM0ZVSUFXTUI1Z245WHBORU8xeEtIY3BQNGM4UjhEMnV2SVo3bG1FZGZMdEh4MzZhdEd0d0tOUUl1QnJuc0oyc1lPX2VNRGJyX1E0XzA1YlNOeFZMU2NLWXcyLS14VF9vdw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "New York Mayor Zohran Mamdani orders police review following ICE shooting",
+        "summary": "New York City Mayor Zohran Mamdani called for an end to ICE operations in the city and ordered a police use-of-force review after agents shot a man.",
+        "outlets": 4,
+        "published": "2026-10-12T15:03:07+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/12/mamdani-ice-new-york-shooting"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/nypd-use-of-force-review-zohran-mamdani-police-accountability-ptag-3015983-2026-10-12?utm_source=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/12/zohran-mamdani-orders-use-of-force-review-for-new-york-city-police?traffic_source=rss"
+          },
+          {
+            "source": "AP News",
+            "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMUoteW9IZzVmNHV3MF9YTG1mUUp6ak5zNTNjRzdjN1RNb1NxeVZZZ0UwN0VGNlgyOGxqM2FieWtpNHBGSnFydlRrSXk0X3V3Q1ZEM1QtWVJjUHAwQ05Uck9DdWJQMVFXUXJPbE1Eb3ZfNVJxeXNOYU9kZ2lFZzNoeVVXMzRFTUJmUVpB?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Plans to livestream Fort Hood shooter execution draw scrutiny and concerns",
+        "summary": "Republican concerns mounted over the Pentagon's plan to livestream the execution of Fort Hood gunman Nidal Hasan by firing squad, though President Donald Trump suggested the decision may change.",
+        "outlets": 3,
+        "published": "2026-10-12T17:36:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/republican-opposition-livestream-fort-hood-shooter-execution/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmpwg28vrexzo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Politico",
+            "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWnZFS3BiRS13d1oyaUd0QW13SW8wcjJQWGlMYi1hcVdMQUY4NnJmVG9XS3hWQXZiU2hjaHJvTGJHQlFqc24tbGpSYTFRSExJTFR6OTktX25UeEk4bVJXNEp5TVBoemQyNVZ5Z2h1bF9JSHhVeHM4YTA2cU9EZGhLM2RmMUxZTFFNejFHd01TX2RPbnJxdHVEWmo0dHJNY2lGZEVzR3dwNElmLU54aTFTb1NicDhiTHFReUxNbEk2ejI3NDNQNHlQYUNPbm1KQ2Za?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Republican-controlled states implement nearly forty new voting laws ahead of midterms",
+        "summary": "Nearly 40 voting laws taking effect for the first time in upcoming midterm elections mirror proposals that President Donald Trump previously tried to implement nationally.",
+        "outlets": 1,
+        "published": "2026-10-12T17:27:25+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/many-gop-states-have-imposed-voting-rules-mirroring-trumps-midterm-proposals"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Doval speaks to Iran NSA, discusses ‘latest developments’ after ships attacked in Hormuz",
+        "summary": "Two Indians are still missing following the attack on two ships on Sunday; the IRGC Navy has issued warnings against merchant vessels switching off the automatic identification system to evade detection",
+        "outlets": 3,
+        "published": "2026-10-12T19:02:11+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/doval-speaks-to-iran-nsa-discusses-latest-developments-after-ships-attacked-in-hormuz/article71576822.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/irans-mohsen-rezaei-speaks-to-ajit-doval-amid-gulf-shipping-attacks-strait-of-hormuz-tensions-11791828604249.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/oil-tanker-reportedly-attacked-in-strait-of-hormuz-region?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi Police de-notifies Jantar Mantar as designated protest site",
+        "summary": "Delhi Police de-notified Jantar Mantar as a protest venue, naming Ramlila Ground, Burari Ground, and CBD Ground as alternative sites despite criticism from activists and opposition leaders.",
+        "outlets": 5,
+        "published": "2026-10-12T17:12:19+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/Delhi/jantar-mantar-no-longer-legal-protest-site-three-alternative-sites-designated-by-delhi-police/article71574232.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/poora-desh-jantar-mantar-banega-abhijeet-dipke-slams-delhi-police-move-to-de-notify-protest-site-11791798175428.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/jantar-mantar-de-notified-as-designated-protest-site-new-sites-allocate-101791791442669.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/opinion/story/jantar-mantar-protest-today-new-delhi-news-burari-ground-cbd-ground-ramlila-maidan-itspc-3015633-2026-10-12?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Violates equality: Karnataka HC strikes down SC-ST quota breaching 50% limit",
+        "summary": "Violates equality Karnataka HC strikes down SCST quota breaching limit",
+        "outlets": 1,
+        "published": "2026-10-12T18:22:46+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/law-news/story/karnataka-high-court-strikes-down-sc-st-reservation-hike-over-50-percent-quota-ceiling-3015979-2026-10-12?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "President appoints new governors across six states",
+        "summary": "President appointed new governors for six states, naming Rajendra Arlekar to Tamil Nadu, Om Prakash Mathur to Kerala, and Sudha Yadav to Karnataka.",
+        "outlets": 6,
+        "published": "2026-10-12T19:05:31+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/karnataka/karnataka-gets-its-second-woman-governor-with-appointment-of-sudha-yadav/article71576551.ece"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/kerala-tamil-nadu-karnataka-3-other-states-get-new-governors-12175784#publisher=newsstand"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/r-v-arlekar-moves-to-tamil-nadu-as-centre-appoints-new-governors-for-6-states-11791823368714.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/president-murmu-appoints-new-governors-for-6-states-4-new-2-moved/articleshow/134897545.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Centre tells Supreme Court trade margins of anti-cancer drugs will be regulated",
+        "summary": "The Centre informed the Supreme Court that trade margins on all anti-cancer drugs will be regulated.",
+        "outlets": 2,
+        "published": "2026-10-12T13:12:30+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/health/story/cancer-drug-prices-centre-caps-trade-margins-at-30-percent-matter-in-supreme-court-3015657-2026-10-12?utm_source=rss"
+          },
+          {
+            "source": "Live Law",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdDNUb3Z1b1d5QzZKTXNxWDdhS1JHUDluOFU5MUtKanFnR1BkQVdTUUI3ak9fOWVEdnVwVng4aHlhM09pMTNJWkxvbndzZ0NkS3pIcS03aEZJT01EYjlUT0paR1BuaEdCT2hESVd3Rko0aERabkVwdVB6WnlPd2hHSWxvV2Y4aGhjMlYzYmFGMU10UjRubjhkc0Y5UkUyMFhiZmhNQmN4V0c3QdIBrwFBVV95cUxOWjR2TzV3YWZZWFRYMlN5aWNlel84aG8wRmFFTk50eUlGRzI5VVloM3Q4UzRSd3ptRDJMSUEwcGZ5WC1xc0lGWVZvdm4yT2l0T19iNng0VklPb3JNVWNYUTZxZ0RsN0ZpdnB4ZXFmcmxNdGlEVmdBTHNWVGc4ODNJZEp4NVU4ampCZ05qWW9YV1RFVmtwYk1PWGtMZ3pLM2FzMXEyRWJFTGlKeXlFeUhN?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Poonch LoC: Four killed in IED blast on Pakistan-occupied Jammu and Kashmir side, vigilance heightened",
+        "summary": "At least four people from Pakistan-occupied Jammu and Kashmir were killed in an IED blast near the Line of Control in Poonch on Monday. The incident prompted heightened security, while Indian Army troops separately found and defused two landmines in Mendhar.",
+        "outlets": 3,
+        "published": "2026-10-12T18:39:12+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/poonch-loc-four-killed-in-ied-blast-on-pakistan-occupied-jammu-and-kashmir-side-vigilance-heightened-11791829222800.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/jammu-and-kashmir-suspected-ied-blast-in-village-along-loc-in-poonch-terrorists-deaths-101791817661337.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/suspected-ied-explodes-in-j-ks-poonch-several-feared-dead-security-heightened/articleshow/134895103.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Pope Leo to undergo lung nodule surgery in Rome",
+        "summary": "Pope Leo will undergo surgery in Rome to remove a lung nodule, with the Vatican anticipating a one-week hospital recovery ahead of his Latin America tour.",
+        "outlets": 7,
+        "published": "2026-10-12T19:06:44+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/12/pope-leo-to-undergo-surgery-to-remove-lung-nodule-in-rome?traffic_source=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/pope-leo-xiv-s-planned-lung-surgery-what-a-lung-nodule-means-why-it-needs-removal-and-what-comes-next-11791829422807.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/pope-leo-hospital-lung-nodule-surgery/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/what-to-know-about-pope-leos-planned-lung-nodule-surgery"
+          }
+        ]
+      },
+      {
+        "headline": "Over one hundred migrants die in shipwreck off Djibouti coast",
+        "summary": "More than 100 migrants died and dozens remain missing after a boat bound for Yemen capsized near Djibouti, according to the International Organization for Migration.",
+        "outlets": 2,
+        "published": "2026-10-11T18:58:00+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/11/world/africa/migrant-boat-capsize-djibouti-dead-yemen.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwy7lxx60dg5o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "UK blames Iran for airbase plot, sanctions two Iranian nationals",
+        "summary": "Iran’s ambassador tells UK officials Tehran willing to assist in investigation, reiterates denial of involvement.",
+        "outlets": 4,
+        "published": "2026-10-12T18:51:18+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/12/uk-blames-iran-for-airbase-plot-sanctions-two-iranian-nationals?traffic_source=rss"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/uk-news/story/raf-fairford-incident-uk-pm-andy-burnham-says-iran-irgc-almost-certainly-directed-operation-3015986-2026-10-12?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/almost-certainly-uk-pm-andy-burnham-says-iran-guards-behind-airbase-scare-12175833#publisher=newsstand"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/uk-news/2026/oct/12/iran-revolutionary-guards-irgc-raf-fairford-threats"
+          }
+        ]
+      },
+      {
+        "headline": "Dozens Killed in Airstrikes Near Sudan-Egypt Border",
+        "summary": "The attacks occurred at a remote gold mine hundreds of miles from the front lines of Sudan’s devastating civil war. Videos showed what appeared to be Egyptian munitions.",
+        "outlets": 2,
+        "published": "2026-10-12T19:17:48+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/12/world/africa/egypt-sudan-goldmine-strike.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/12/deadly-gold-mine-air-strikes-highlight-egypt-sudan-border-insecurity?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "India retail inflation climbs to nine-month high of 5.5 percent",
+        "summary": "India's retail inflation reached a nine-month high of 5.5 percent, driven by rising food prices.",
+        "outlets": 2,
+        "published": "2026-10-12T19:53:05+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/business/india-business/at-5-5-retail-inflation-hits-9-month-high-on-food-prices/articleshow/134901984.cms"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNOV9EZDUyRE8zSmVwSmdBcGowRjdPSEJiSzFkc3dXaDN4TExOaTNRZncwRHlkbUNSbE9kT0xIZUpHM1E0d2tuTHhQbm1Pb3I5VUF6MjBxM1J5ZjlSc295bWxNV2RZSlRKbE1aZ0x5NjdXanRMNEZ3aVd4WFZROEYyRWFDc0c5d1NjVVNxRmV3RnV4QUxsX2xyWEFmUnJCUno1WHB3cjVObV9vNTkwdU5mNTBCT0JGOVNOSVFMdtIBwwFBVV95cUxOWUZhdHdrakpDVU0zclJFOFU1WGt0N0RLQzFzNWNmMm1KZU02SF9IVjdRUkpuVEFXYU9ILU1EYnMxOWYzR1o1N1FIb3R1NWRqc3VxZUxDNl9JTjgxay1vU2dxUUtnanVHUUhCMUs5UlcwT3dkSUh2ZTg0T0Q5MHpab2tFelFHMXEwWVB0VzRtU09vTFJNR0k3X1k5N2ZoejN5NGI2bkFXLW10N3hCdXc2NFdSeG9kdjVYU0pFTVZWeFdsZzQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Meta launches Muse Wonder artificial intelligence models",
+        "summary": "Meta released its new Muse Wonder and Muse Wonder Full artificial intelligence models to compete with rivals, sending its shares up more than 3 percent.",
+        "outlets": 4,
+        "published": "2026-10-12T19:43:00+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/meta-is-back-on-the-ai-leaderboard-with-its-new-family-of-wonder-models-a704b6cc?mod=mw_rss_topstories"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/12/technology/meta-muse-wonder-full-models.html"
+          },
+          {
+            "source": "TechCrunch",
+            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRkdnR0wyZkdNUGRYU2hGTDdfWTRncjBxeThHRUVhWXRndW5OYU1Ya3FJWEtCdWwwY2d0c1FEd29KWExNN2N1VkRCU01hVW9NYjE5UWFFV3MzNDRpREQ3ZWJVaEhZbXJkN2JEdlV0QXpYcWtETVNXYXFfU1NrWXN6RzI2VjhpcjNtdmhpdnBB?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Bumble shares surge on reports of one billion dollar buyout talks",
+        "summary": "Shares of Bumble jumped 52 percent following reports that the dating app operator is in advanced talks to be acquired by Ithaca Holdings for roughly $1 billion.",
+        "outlets": 1,
+        "published": "2026-10-12T18:41:25+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/news/us-stocks-dating-app-bumble-shares-surge-52-on-talks-to-go-private-at-1-billion-valuation-report/articleshow/134901295.cms"
+          }
+        ]
+      },
+      {
+        "headline": "GST Council proposes e-invoicing for imported software and cloud services",
+        "summary": "The GST Council proposed expanding mandatory e-invoicing to imported services, including overseas software, cloud, and consulting services, for businesses with annual turnover of 5 crore rupees.",
+        "outlets": 1,
+        "published": "2026-10-12T15:43:07+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/gst-compliance-may-tighten-for-businesses-paying-for-overseas-software-cloud-and-consulting-services-11791815291382.html"
+          }
+        ]
+      }
+    ]
+  }
+}
