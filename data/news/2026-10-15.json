@@ -1,0 +1,495 @@
+{
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T15:35:58+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Ukraine resumes attacks on Russian oil refineries as relations with Trump sour",
+        "summary": "Ukrainian drones attacked a refinery in Russia's Ryazan region after President Volodymyr Zelenskyy declared that a brief truce was over amid deepening tensions.",
+        "outlets": 7,
+        "published": "2026-10-15T14:16:00+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/ukraine-resumes-attacks-on-russian-oil-refineries-as-relations-with-trump-sour"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/15/g-s1-148194/russia-ukraine-war"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/15/russia-says-ukraine-resumes-attacks-on-oil-refineries?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/15/world/europe/ukraine-russia-oil-strikes-zelensky-us-intelligence.html"
+          }
+        ]
+      },
+      {
+        "headline": "Roof collapse at Pakistan school kills 31",
+        "summary": "The roof of a school in northwestern Pakistan collapsed, killing at least 31 people including dozens of students and a teacher, and injuring many more.",
+        "outlets": 8,
+        "published": "2026-10-15T15:33:40+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/International/33-killed-dozens-injured-roof-collapse-pakistan-school/story?id=137283984"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cked326llddgo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/peshawar-school-roof-collapse-kills-35-global-security-developments-ptag-3018298-2026-10-15?utm_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/15/world/asia/pakistan-school-collapse.html"
+          }
+        ],
+        "why": "Major regional disaster with heavy casualties."
+      },
+      {
+        "headline": "Trump may decide on 100% tariffs on India over Russian oil soon: Sergio Gor",
+        "summary": "Sergio Gor stated that Trump may soon decide on imposing 100 percent tariffs on India over its purchase of Russian oil.",
+        "outlets": 3,
+        "published": "2026-10-15T13:07:42+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/trump-may-decide-on-100-tariffs-on-india-over-russian-oil-in-about-10-days-sergio-gor-3018120-2026-10-15?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/trump-to-decide-in-10-days-us-envoy-on-bill-threatening-100-tariffs-on-india-china-others-101792054417614.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/russia-sanctions-bill-oil-crude-trump-may-decide-indias-fate-over-100-tariff-risk-within-the-next-10-days/articleshow/134958457.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Trump weighs ‘mother of all bombs’ strike on Iran’s nuclear and energy sites: What is it?",
+        "summary": "The proposed targets include energy infrastructure and nuclear sites such as Pickaxe Mountain, where the US and Israel believe Iran has stored components of its nuclear programme.",
+        "outlets": 4,
+        "published": "2026-10-15T14:43:55+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/trump-weighs-mother-of-all-bombs-strike-on-iran-s-nuclear-and-energy-sites-what-is-it-11792072512785.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/us-military-weighs-use-of-mother-of-all-bombs-in-potential-future-strikes-on-iran-cnn-says/articleshow/134957262.cms"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/15/us-iran-stalemate-what-are-trumps-next-military-options?traffic_source=rss"
+          },
+          {
+            "source": "Deccan Herald",
+            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQkFjQVY5YmYxY3hHSUNiQWM2WGJBZFE1b1BoSGx2LU9GeWFBc2pKZDJDVEhQZkZHV2VKemhIYzczUjBEZjgzVEVnSENoVkNXYjdWcGFoNXBubU4wcE8xOGg4R0pQYzM1amFOb1B3X1owc2ZNM2JGV29aSFh2TXdqdEFDU3BBV3lrSXpxaklqbmVNLURsS096bldoWHY1MTJ4eGtPNmktUGFxTElX?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Man charged in alleged plot targeting Hindu place of worship in Illinois",
+        "summary": "A 19-year-old man in Illinois has been charged following an investigation into an alleged mass shooting plot targeting a Hindu place of worship.",
+        "outlets": 2,
+        "published": "2026-10-15T14:56:22+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/man-charged-alleged-plot-potentially-targeting-hindu-place/story?id=137281385"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/15/us-teen-held-over-hindu-temple-attack-plot-is-anti-indian-racism-rising?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "us": [
+      {
+        "headline": "Appeals court questions Trump's National Guard deployment in D.C.",
+        "summary": "A three-judge appeals court panel interrogated whether thousands of National Guard troops deployed by the president could continue patrolling Washington indefinitely.",
+        "outlets": 2,
+        "published": "2026-10-14T19:27:15+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/14/us/politics/appeals-court-national-guard-washington.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/wireStory/appeals-court-hear-arguments-trumps-national-guard-deployment-137252013"
+          }
+        ]
+      },
+      {
+        "headline": "Migrant children without lawyers face fast-tracked deportations alone",
+        "summary": "A contract dispute has forced many unaccompanied minor migrants arriving at the southern border to face immigration judges without legal representation.",
+        "outlets": 1,
+        "published": "2026-10-15T14:54:16+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/15/us/lawyers-unaccompanied-migrant-children-deportations.html"
+          }
+        ]
+      },
+      {
+        "headline": "AP report: Rep. Ilhan Omar's phone seized and relatives subpoenaed in criminal probe",
+        "summary": "Federal authorities seized Representative Ilhan Omar's phone and subpoenaed relatives as part of an ongoing criminal investigation.",
+        "outlets": 1,
+        "published": "2026-10-15T14:52:17+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/ap-report-rep-ilhan-omars-phone-seized-and-relatives-subpoenaed-in-criminal-probe"
+          }
+        ]
+      },
+      {
+        "headline": "Three men accused by Nancy Mace in House speech are charged with sex crimes",
+        "summary": "The former fiancé of Representative Nancy Mace and two business associates were charged with sex crimes and voyeurism related to a 2018 incident.",
+        "outlets": 1,
+        "published": "2026-10-15T14:59:17+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/14/us/politics/nancy-mace-fiance-sexual-assault-arrest.html"
+          }
+        ]
+      },
+      {
+        "headline": "Democratic Senators Move to Block U.S.-Saudi Nuclear Deal",
+        "summary": "The move will force a vote on the agreement after the midterm elections, though it faces steep odds in the Republican-controlled Congress even amid bipartisan concern about the deal.",
+        "outlets": 1,
+        "published": "2026-10-15T14:29:31+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/15/us/politics/senators-saudi-nuclear-deal.html"
+          }
+        ]
+      },
+      {
+        "headline": "US lawmakers unveil bill to hold Wall Street’s ‘Epstein-connected’ bosses to account",
+        "summary": "Move comes as Senator Elizabeth Warren condemns Barclays response to questions over ex-boss’s ties to sex offender US lawmakers have unveiled a new bill to hold Wall Street’s “Epstein-connected” bosses to account for helping finance the late sex offender’s crimes. It came as…",
+        "outlets": 1,
+        "published": "2026-10-15T13:30:11+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/oct/15/new-bill-wall-street-bosses-epstein-connections"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Supreme Court raps Rahul Gandhi over protest march against CEC Gyanesh Kumar",
+        "summary": "The Supreme Court criticized Congress leader Rahul Gandhi during a hearing regarding protests and alleged irregularities in voter rolls.",
+        "outlets": 5,
+        "published": "2026-10-15T08:29:05+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/nobody-can-browbeat-judiciary-supreme-court-raps-rahul-gandhi-over-protest-march-against-cec-gyanesh-kumar-11792051464801.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/not-sitting-in-ivory-tower-cant-browbeat-judiciary-sc-raps-rahul-gandhis-conduct-in-delhi-protest-march-101792049686054.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/law-news/story/must-give-an-explanation-sc-pulls-up-rahul-gandhi-for-his-conduct-during-october-12-anti-cec-protest-3017790-2026-10-15?utm_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/why-is-gyanesh-kumar-so-important-to-modi-asks-cjps-abhijeet-dipke-neha-bora-kapil-sibal-prakash-raj-question-cecs-protection/articleshow/134967412.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Actor Imran Khan to challenge 'Leave India' order in Bombay High Court",
+        "summary": "Actor and OCI cardholder Imran Khan is challenging a Mumbai Police directive ordering him to leave India following protests.",
+        "outlets": 7,
+        "published": "2026-10-15T14:55:35+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/actor-imran-khan-to-challenge-leave-india-order-in-bombay-high-court-12191175#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/ht-evening-brief-oct-15-abhijeet-dipke-gets-go-ahead-for-cp-protest-imran-khan-to-challenge-leave-india-notice-101792064863194.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ck3r5pv5j1g1o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/why-has-imran-khan-been-asked-to-leave-india-by-october-28-legal-provisions-invoked-against-oci-cardholder-explained-11792044505481.html"
+          }
+        ]
+      },
+      {
+        "headline": "Hindu converts to Islam can't claim Muslim backward quota, rules Supreme Court",
+        "summary": "The Supreme Court ruled that a person's pre-conversion social status does not automatically entitle them to affirmative action quotas after converting.",
+        "outlets": 3,
+        "published": "2026-10-15T06:47:11+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/hindu-converts-to-islam-can-t-claim-muslim-backward-quota-rules-supreme-court-101792046832187.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/supreme-court-says-person-converting-from-hinduism-to-islam-can-t-claim-backward-quota-11792044362591.html"
+          },
+          {
+            "source": "Bar and Bench",
+            "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMGF2REp0NVhsWEp1am9BV19ValNnSlBjTGRpOWhYbWdRRWpKcExUdkJVUnhlcGRsLWVRWk11aVJBN2dENU1QNXJDS2JCNUdkRFY5UDBqU3VyVzktWHNNcjNIQklpUkJIby1lVzdPYl91YUJobHp2YnZkT05lQ1N3Z29MMHAzRVJBb1lMX2NvRWRzdkdBNGdmVU5Rc0h0anBXempzRkliVHFCN055emhxY2NDbmxkQUlBVl9tREFneXIyWnJPYWdyedIB1gFBVV95cUxORXo4czhtRm1iWmV6UzVCMFEtUWxxbEp6VXJtVnVyMUJfeERFNy1seFpZRDF5RVZjSHg0am9QWURQa1FkazNRU1o2UFN6Vlo1QlV5QTB2Yll0Z01LazdxM2FUelNqWWVjWXVvSnhoZkc2VmJVLUNsUkNqcjBtZWZLcGQ0WmkxWFZ5a2J4YUxBTUV3Q1BJRkpHWmg4S0JlYzJlTmNtMmVYckpxazFteHVNTGotcHBtVnFqcDdEMFBNS1FNa0MzaW5paTBMX1ppa1BJQ21HZTV3?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "US secretary of state Marco Rubio to visit India next week",
+        "summary": "US Secretary of State Marco Rubio is expected in Mumbai for discussions covering energy cooperation, regional issues, and commercial investment.",
+        "outlets": 2,
+        "published": "2026-10-15T11:43:10+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/marco-rubios-india-visit-focusing-on-business-and-meeting-with-reliances-mukesh-ambani/articleshow/134966698.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/rubios-visit-next-week-to-focus-on-business-energy-ties-101792005489600.html"
+          }
+        ]
+      },
+      {
+        "headline": "First tranche of India-US trade deal finalised, legal drafting under process, says Piyush Goyal",
+        "summary": "Piyush Goyal also said FTA between India and the European Union will be inked in December and would come into force from February or March next year.",
+        "outlets": 2,
+        "published": "2026-10-15T11:26:18+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/first-tranche-of-india-us-trade-deal-finalised-legal-drafting-under-process-says-piyush-goyal-101792062522573.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/first-tranche-of-us-india-deal-finalised-draft-to-be-out-soon-12189595#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Amit Shah vows to clear every trace of Naxalism after decades of tribal suffering",
+        "summary": "Union Home Minister Amit Shah highlighted the ongoing efforts and importance of eradicating Naxalism to restore growth in Chhattisgarh's Bastar region.",
+        "outlets": 2,
+        "published": "2026-10-15T14:40:38+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/amit-shah-vows-to-eliminate-every-trace-of-naxalism-after-five-decades-of-tribal-suffering/articleshow/134970426.cms"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/end-of-naxalism-doesnt-erase-five-decades-of-suffering-it-caused-amit-shah/articleshow/134962213.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "China and North Korea open new border bridge amid deepening ties",
+        "summary": "The New Yalu River Bridge connecting Dandong and Sinuiju was opened to enhance regional trade and collaboration.",
+        "outlets": 3,
+        "published": "2026-10-15T12:54:00+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/gallery/2026/10/15/photos-china-and-north-korea-open-new-border-bridge-amid-deepening-ties?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/15/world/asia/north-korea-china-bridge-yalu.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ck1exgw3j115o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Strait of Hormuz unsafe for ships as Iranian attacks surge",
+        "summary": "Maritime risk firms and reports warn that commercial vessels in the Strait of Hormuz face indiscriminate attacks and missile strikes.",
+        "outlets": 4,
+        "published": "2026-10-15T14:40:58+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-us-houthi-saudi-arabia-trump/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/14/business/saudi-houthi-hormuz-oil.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/14/container-ship-sinks-strait-of-hormuz-surge-iranian-attacks-iran-us-midterm-elections"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVlQtcHJibXBpYWEwWTQ4dFdfWUFJbTVteGY0WThGcTFybEdUTERvVG9DcGdoY09vUjh0TG1QeG5zMWx0LTFvV09teVNXY1NLdXZVNlpuMVBIV3pndWJKWVBRdENjLVd0dnVwdUxPTHFPU002S0ZqR0lkcjgyNVl2ZFFXc05MdTJHenM3LVNUSlBUb1RyeDVxY3VTdUxEamxrbS1OXzJJR3o3SlltandncHAwVXFNSTFYcmJXblh2U25vN2xMMW1ibQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Houthi strikes on Saudi capital intensify after airport attack",
+        "summary": "Houthi rebels launched new attacks on Riyadh and targeted a palace in Yemen as fighting and missile exchanges escalated.",
+        "outlets": 4,
+        "published": "2026-10-15T14:06:47+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/houthi-strikes-on-saudi-capital-intensify-after-airport-attack/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/14/world/middleeast/houthi-airport-attack-victims-saudi-arabia.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/sports/2026/10/15/asian-cup-in-saudi-arabia-could-be-postponed-by-a-year-amid-houthi-attacks?traffic_source=rss"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/houthi-missile-attack-yemen-presidential-complex-in-aden-pm-and-ministers-safe-3018304-2026-10-15?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Brazil's Congress approves shorter working week in win for Lula",
+        "summary": "Lula's supporters hope the measure will boost his popularity ahead of a presidential run-off in 10 days.",
+        "outlets": 2,
+        "published": "2026-10-15T10:05:17+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmwy43pp08elo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/15/brazil-cuts-work-week-to-40-hours-lula-bolsonaro-election-runoff"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Tech stocks plunge as doubts over A.I. spending and inflation intensify",
+        "summary": "Global stock markets and chip makers experienced a sharp sell-off as investors rotated into defensive assets amid rising inflation and tech sector concerns.",
+        "outlets": 3,
+        "published": "2026-10-15T15:21:00+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/traders-pile-into-bonds-and-defensive-stocks-as-the-tech-wreck-picks-up-steam-48c04374?mod=mw_rss_topstories"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/oct/15/tech-market-sell-off-deepens-amid-fears-over-us-inflation-and-ai-debt"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/15/business/chip-stocks-technology.html"
+          }
+        ]
+      },
+      {
+        "headline": "Government approves Fairfax subsidiary as strategic buyer for IDBI Bank stake",
+        "summary": "The government approved a Fairfax subsidiary as the strategic buyer for the proposed sale of a 60.72 percent stake in IDBI Bank.",
+        "outlets": 2,
+        "published": "2026-10-15T11:09:57+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/why-patient-capital-still-sees-opportunity-in-india-11792060073546.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/banking/finance/fairfax-plans-to-fold-iifl-capital-digit-into-idbi-bank-after-rs-52878-crore-india-deal/articleshow/134962635.cms"
+          }
+        ]
+      },
+      {
+        "headline": "IIT Kanpur launches $1-billion fundraising campaign with ₹4,155 crore secured",
+        "summary": "IIT Kanpur launched its Greater Than Us campaign seeking $1 billion by March 2029 to fund research facilities and student support.",
+        "outlets": 2,
+        "published": "2026-10-15T09:02:06+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/iit-kanpur-launches-1-billion-fundraising-campaign-4-155-crore-already-secured-check-what-the-money-will-be-spend-on-11792054661046.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/iit-kanpur-receives-commitments-of-4-155-cr-in-fundraiser-101792005364126.html"
+          }
+        ]
+      },
+      {
+        "headline": "Stellantis to invest ₹4,000 cr, plan 12 India launches, triple market share by 2030",
+        "summary": "Automaker Stellantis announced a major investment plan for India alongside multiple new vehicle launches and export targets.",
+        "outlets": 2,
+        "published": "2026-10-15T15:30:16+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/business/Industry/stellantis-to-invest-4000-cr-plan-12-india-launches-triple-market-share-by-2030/article71589051.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/auto/cars/jeep-citroen-to-launch-12-new-cars-stellantis-to-invest-rs-4000-cr-in-india/articleshow/134966967.cms"
+          }
+        ]
+      }
+    ]
+  }
+}
