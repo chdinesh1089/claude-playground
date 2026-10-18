@@ -1,0 +1,521 @@
+{
+  "date": "2026-10-18",
+  "generated_at": "2026-10-18T14:35:32+00:00",
+  "status": "ok",
+  "model": "gemini-flash-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Marco Rubio calls India important ally following Trump waiver of Russia sanctions",
+        "summary": "Marco Rubio explained that the United States waived energy sanctions on Russia because India cannot immediately pivot its energy portfolio, calling India an important ally.",
+        "outlets": 8,
+        "published": "2026-10-18T03:15:15+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/russia-sanctions-waiver-rubio-calls-india-important-ally-says-it-is-hard-to-pivot-energy-portfolio-in-one-day-11792292816506.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-an-important-ally-marco-rubio-says-us-president-studying-impact-of-possible-tariffs-on-countries-like-india/articleshow/135022835.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-diversified-imports-but-hard-to-pivot-in-one-day-marco-rubio-explains-why-us-waived-some-russia-energy-tariffs-trump-russian-oil-buyer-delhi-101792287930939.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Stampede at Kolkata Durga Puja pandal leaves nineteen dead and several injured",
+        "summary": "At least 19 people died and 25 were injured after a stampede broke out following rain and a collapse warning at Kolkata’s Chorbagan Durga Puja pandal.",
+        "outlets": 9,
+        "published": "2026-10-18T11:13:11+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/sudden-rain-poor-crowd-management-likely-led-to-kolkata-durga-puja-stampede-what-we-know-so-far/articleshow/135027781.cms"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/new-updates/kolkata-pandal-stampede-reason-how-did-heavy-rain-crowd-surge-and-exit-route-confusion-lead-to-deadly-chaos/articleshow/135022797.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/19-dead-in-kolkata-durga-puja-stampede-several-injured-rain-mismanagement-bhaipo-and-more-what-we-know-so-far-11792286964957.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/kolkata-pandal-stampede-swelling-crowd-rain-chorbagan-sarbojanin-durgotsab-samity-puja-pandal-deaths-101792256978388.html"
+          }
+        ],
+        "why": "Major domestic disaster in India with significant loss of life during Durga Puja."
+      },
+      {
+        "headline": "Ukraine Fires 1,000 Drones At Russia, St Petersburg Oil Sites Ablaze",
+        "summary": "The attack comes amid deepening tensions between Ukraine and Washington, with U.S. President Donald Trump criticizing Kyiv for its strikes on Russian oil infrastructure.",
+        "outlets": 7,
+        "published": "2026-10-18T13:51:43+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/rest-of-world/fires-erupt-at-oil-sites-in-st-petersburg-as-ukraine-unleashes-1000-drones-on-russia/articleshow/135029833.cms"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/ukraine-fires-1-000-drones-at-russia-st-petersburg-oil-sites-ablaze-12202700#publisher=newsstand"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/International/ukraine-targets-russia-1000-drones-striking-oil-terminal/story?id=137358203"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/18/ukrainian-drone-attack-on-russias-st-petersburg-kills-1-hits-energy-sites?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "France faces nationwide unrest and eighteen hundred arrests over soaring living costs",
+        "summary": "Demonstrations against high living expenses and school conditions devolved into rioting across France, leading to roughly 1,800 arrests and protests spilling into neighboring countries.",
+        "outlets": 8,
+        "published": "2026-10-18T14:30:22+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/france-protests-trump-blames-immigration-for-unrest-1-800-arrested-damage-estimated-at-hundreds-of-millions-of-euros-11792330440584.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/protests-france-rising-living-costs-students/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/live/2026/oct/18/paris-protests-france-demonstrations-europe-live-latest-news"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/europe/frances-unrest-spills-across-borders-as-protests-turn-violent-in-belgium-italy/articleshow/135027820.cms"
+          }
+        ],
+        "why": "Triggers cross-border unrest across Europe over worsening cost-of-living conditions."
+      },
+      {
+        "headline": "Egypt offers military support to Saudi Arabia as Houthi conflict escalates",
+        "summary": "Egypt announced its willingness to provide military assistance to Saudi Arabia to protect its security and stability following escalating Houthi attacks.",
+        "outlets": 4,
+        "published": "2026-10-18T12:43:52+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/middle-east/egypt-pledges-support-for-saudi-arabia-as-houthi-attacks-escalate/articleshow/135028891.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/18/world/middleeast/egypt-saudi-defense-houthis.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/18/egypt-to-provide-all-necessary-and-possible-support-to-saudi?traffic_source=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/saudi-helicopter-crashes-near-yemeni-border-as-houthi-war-rages-11792310904739.html"
+          }
+        ],
+        "why": "Deepens Middle East military alignments as regional conflicts expand."
+      }
+    ],
+    "us": [
+      {
+        "headline": "JD Vance concedes his indentured servants remark was imperfect",
+        "summary": "JD Vance admitted that his rhetoric describing his in-laws as indentured servants was imperfect, emphasizing his love for them.",
+        "outlets": 3,
+        "published": "2026-10-18T09:28:44+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/us-news/story/jd-vance-h1b-visa-row-indentured-servants-remark-indian-workers-indian-in-laws-usha-vance-3020103-2026-10-18?utm_source=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/jd-vance-invokes-i-love-my-indian-in-laws-after-facing-backlash-for-foreign-indentured-servants-remark-what-he-said-11792308273164.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/love-my-indian-in-laws-jd-vance-clarifies-indentured-servants-remark-h-1b-row-says-his-rhetoric-may-have-been-imperfect-101792299623591.html"
+          }
+        ]
+      },
+      {
+        "headline": "Pickup truck drives through Wichita soccer field killing two people",
+        "summary": "A pickup truck drove through a soccer game in Wichita, Kansas, killing two people including a child, injuring 10 others, and leaving the driver in custody.",
+        "outlets": 2,
+        "published": "2026-10-18T02:19:00+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/17/us/wichita-truck-soccer-deaths.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/kansas-soccer-game-turns-deadly-at-least-two-including-a-child-killed-several-injured-after-vehicle-rams-through-11792285478057.html"
+          }
+        ]
+      },
+      {
+        "headline": "Arizona joins Nevada in lawsuit against proposed Colorado River water cuts",
+        "summary": "Arizona joined Nevada in a legal challenge against the Trump administration's proposed restrictions that could slash their water supplies from the Colorado River.",
+        "outlets": 1,
+        "published": "2026-10-17T23:40:11+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/17/arizona-nevada-water-rights-colorado-river"
+          }
+        ]
+      },
+      {
+        "headline": "EPA quietly backtracks on claim that United States phased out PFAS",
+        "summary": "The Environmental Protection Agency modified website wording as a Texas chemical firm continues manufacturing plastic containers, backtracking on claims that the United States phased out toxic PFAS compounds.",
+        "outlets": 1,
+        "published": "2026-10-18T12:00:03+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/environment/2026/oct/18/epa-pfas-compounds-toxins"
+          }
+        ]
+      },
+      {
+        "headline": "Conservative states reject Medicaid hardship exemptions for low-income residents",
+        "summary": "States including Missouri and Iowa are choosing not to use a Medicaid hardship exemption designed to help low-income people maintain healthcare coverage during hardship.",
+        "outlets": 1,
+        "published": "2026-10-18T12:00:02+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/18/medicaid-hardship-exemptions-conservative-states"
+          }
+        ]
+      },
+      {
+        "headline": "Air Force officer dies in rappelling accident at Alamodome",
+        "summary": "An Air Force officer died after falling from the rafters of the Alamodome during a pregame display before a football game in San Antonio.",
+        "outlets": 2,
+        "published": "2026-10-18T14:03:54+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/sport/2026/oct/18/air-force-officer-killed-in-rappelling-accident-before-utsas-game-against-navy"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/us-air-force-member-dies-injury-ut-san-antonio-football-stadium/"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Truck crashes into Gwalior temple gate killing fifteen devotees",
+        "summary": "Fifteen people were killed and nearly 41 were hit after a truck suffered suspected mechanical failure and crashed into a temple gate in Gwalior.",
+        "outlets": 4,
+        "published": "2026-10-18T07:35:00+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/madhya-pradesh-gwalior-shitala-mata-temple-truck-accident-deaths-devotees-saptami-101792287277629.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/12-dead-several-injured-as-truck-runs-over-devotees-near-gwaliors-sheetla-mata-temple-in-madhya-pradesh/articleshow/135022640.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.aajtak.in/madhya-pradesh/story/gwalior-sheetla-mata-mandir-truck-accident-mbbs-student-ramnaresh-kushwah-helps-victims-lcln-dskc-2674179-2026-10-18?utm_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNc3c1RlZiWXk0WmZDdVZZTGp2a0FSZm9URG5pcGw4d0duNzNHbGROY2RtQ1E4a21zRFVKaWg3bVpPOUVDUS1UMk9uQlBSNDVxNXRHSC0tdXRFelk1cnJIa3VMZ0NmSGFlMW9XQVJSMHY4V1ljVm54bkpTMVJXM0U3Y1E3OTRaa245VG51Y084bEdtdVViVmpvV01Td3FfLXJlaTI2NHRqUzFRclh5elVpaGkyZ0xLZDdQckhINlMtUnZKcVBvcE53N3dnV0o4dWNZejdGNi1jcmNKVVZhOFM5cllNaFhmS1kxSEZ6UEViYmdxdw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Speeding car kills eight MGNREGA labourers in Punjab's Sangrur",
+        "summary": "Eight MGNREGA labourers died and 12 were injured after being struck by a speeding car near Chotian village in Punjab's Sangrur district.",
+        "outlets": 4,
+        "published": "2026-10-18T14:06:34+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/speeding-car-kills-8-mgnrega-workers-labourers-injures-12-others-in-punjab-sangrur-cm-bhagwant-mann-warring-bjp-aap-congress-toll-101792331914655.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/chandigarh/5-workers-killed-several-injured-as-speeding-car-runs-them-over-in-punjabs-sangrur/articleshow/135029407.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/cities/other-cities/story/punjab-road-accident-speeding-car-hits-mnrega-workers-lehragaga-jakhal-road-3020252-2026-10-18?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/8-labourers-mowed-down-by-car-in-punjabs-sangrur-witnesses-say-many-died-waiting-for-ambulance-12203175#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "India caps trade margins at thirty percent for 137 cancer drugs",
+        "summary": "India's NPPA approved capping trade margins for 137 cancer drugs at 30%, which is expected to lower drug prices by up to 70%.",
+        "outlets": 2,
+        "published": "2026-10-18T02:17:30+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/government-caps-trade-margin-for-137-cancer-drugs-at-30-prices-likely-to-fall-by-up-to-70-101792263713460.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/cancer-drug-prices-may-fall-up-to-70-from-november-9-what-to-know-11792271202157.html"
+          }
+        ]
+      },
+      {
+        "headline": "Red alert issued for Chennai as heavy monsoon rains cause flooding",
+        "summary": "Authorities issued a red alert for Chennai as a vigorous northeast monsoon brought heavy rainfall, flooded roads, and severe traffic snarls across Tamil Nadu.",
+        "outlets": 3,
+        "published": "2026-10-18T08:47:34+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/rain-lashes-chennai-as-northeast-monsoon-gets-active-in-tamil-nadu-roads-flooded-traffic-snarls-watch-videos-101792307263092.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/science/story/chennai-rain-cause-northeast-monsoon-upper-air-cyclonic-circulation-imd-forecast-3020015-2026-10-18?utm_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/chennai-on-red-alert-as-northeast-monsoon-brings-heavy-rain-rescue-teams-deployed/articleshow/135028543.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Indian troops engage terrorists in encounter along Line of Control in Kupwara",
+        "summary": "Alert Indian troops challenged and intercepted terrorists in an encounter along the Line of Control in the Keran sector of Kupwara district.",
+        "outlets": 1,
+        "published": "2026-10-18T14:25:44+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/jammu-and-kashmir/encounter-breaks-out-between-forces-and-terrorists-in-jks-kupwara/article71595796.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Actor Imran Khan challenges leave India notice issued by Mumbai authorities",
+        "summary": "Actor Imran Khan challenged a notice from Mumbai's Foreigners Regional Registration Office ordering him to leave India, citing undisclosed reasons and no opportunity to respond.",
+        "outlets": 3,
+        "published": "2026-10-18T13:36:50+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/movies/celebrities/story/imran-khan-issued-second-frro-notice-as-he-challenges-leave-india-order-in-court-3020250-2026-10-18?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/imran-khan-moves-bombay-hc-against-leave-india-notice-calls-it-illegal-perverse-drastic-cec-oci-cardholders-immigration-101792245572698.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/unacceptable-chirag-paswan-slams-imran-khans-role-in-mumbai-protests-backs-leave-india-notice/articleshow/135026799.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Deadly incident at Canadian military base in Alberta sparks fire",
+        "summary": "People were killed and injured following an incident and fire at Canadian Forces Base Wainwright in Alberta, leaving local facilities overwhelmed and patients sent to Edmonton.",
+        "outlets": 6,
+        "published": "2026-10-18T14:05:04+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/17/world/canada/fire-canadian-army-base-wainwright.html"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/18/nx-s1-6007276/fire-alberta-deadly-canada-military-base"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/International/wireStory/major-fire-breaks-alberta-after-deadly-incident-military-137354452"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/18/serious-incident-alberta-military-base-deaths-injuries-canada-carney-cfb-wainwright"
+          }
+        ]
+      },
+      {
+        "headline": "Israeli settlers attack European diplomats visiting the West Bank",
+        "summary": "European diplomats were attacked by Israeli settlers in the West Bank, drawing condemnation from France and Belgium while the Israeli military condemned the violence.",
+        "outlets": 7,
+        "published": "2026-10-18T12:16:14+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/17/world/middleeast/israeli-settlers-attack-palestinians-diplomats-west-bank.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/masked-settlers-attack-european-diplomats-in-the-occupied-west-bank"
+          }
+        ]
+      },
+      {
+        "headline": "Pope Leo says he will gradually resume duties after cancer surgery",
+        "summary": "Pope Leo XIV thanked thousands of faithful in St. Peter's Square on Sunday for their prayers while he was hospitalized, and said he plans to gradually return to his usual duties.",
+        "outlets": 4,
+        "published": "2026-10-18T12:55:01+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/18/g-s1-148654/pope-leo-says-he-will-gradually-resume-duties-after-cancer-surgery"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/videos/cq70px6pjkg5o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/17/world/europe/pope-leo-discharged-hospital.html"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQajlwczZReXZXSkQ1X1JuZWNGWlNjX2VXcW9hNVdlNXYybU00b3NkSFdpdXo4ZXFLZ184OENSdTZRbE9DdDF2ejZIRVpXUWk2MjdJbWM2Y0JMNzVfcGFvYzRxUU5LYUhpTTB6QWpQWHgwR0tEUXZkNnhBMkxJYkd4dTBydU1OWFpVd3lSNjRSSmF3QW9TUmFocVJVa1QyVUtJcFFHeUwwTGg?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Iran urges United States to accept proposal to reopen Strait of Hormuz",
+        "summary": "Tehran urged Washington to accept an Iranian proposal to reopen the Strait of Hormuz after interim ceasefire negotiations stalled.",
+        "outlets": 2,
+        "published": "2026-10-18T11:52:29+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/iran-urges-us-to-accept-proposal-to-reopen-strait-of-hormuz-12202784#publisher=newsstand"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/middle-east/our-proposal-is-still-on-table-iran-offers-to-reopen-strait-of-hormuz-in-seven-days-if-us-accepts-conditions/articleshow/135027768.cms"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Russian oil finding its way to the West? Indian refiners’ fuel exports to nations sanctioning Moscow jump 43%",
+        "summary": "Indian refineries in India shipped oil products to Russia-sanctioning nations in September, up 43% from August. Reliance Industries’ Jamnagar refinery accounted for six of seven cargoes unloaded at EU ports, despite the bloc’s ban on Russian crude-derived fuel imports.",
+        "outlets": 3,
+        "published": "2026-10-18T11:03:05+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/russian-oil-finding-its-way-to-the-west-indian-refiners-fuel-exports-to-nations-sanctioning-moscow-jump-43-11792318976858.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/indian-refiners-fuel-exports-to-the-west-jump-43-as-they-keep-processing-russian-crude/articleshow/135024275.cms"
+          },
+          {
+            "source": "Moneycontrol.com",
+            "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOYTlwd2xHNzRCeVotV1ViWnA3S1JGcFNwb2pwUzNDTlpCRGJ2N250VVBxaS1sMXJxakhHT003WnI2OXZXbEt4cjFnMjZJWFE0b2FPZnhvWTJzMnRTOWFkeUMzN0lWTkJzb2FERUdzcG1wcTlrSFZLZTNmNVNDZnFmem5ObFE5Vk5uVzRTd3czellxSnN1LVN4c3RUWFpKdXFnTHFIb3l2dXpOX3QtRHd1S0dRRFU2V3ZnZGl1aWViT0drT1JDb1lMZDdBSlVDNjY5MDZod3FwdTAxeTDSAeABQVVfeXFMT2E3VjF0QlRSazNhZS1YRExWM2twaGhqYjNkUXBUdDl0TG5iSmxZdlNZdXFidDBSNnpac09qbXJlTms3S0lKRjBqSlV3dkhoZzJyaFFDV0RBSXJKekl0cnQ5LUg2cmhfejlldERYazRwVDZUdlM1NHktT1NzTWhUMlZPbzFjaXZ1R0tydHhSbDljRDRmbVRVMWs3TE5qNVBhOHNRVU5lRngwZ2t6bFYtM2JkblkyXzlQZ3VRSnNKZldvMjFYX0kwNnpTR1djOFJpZF90TGF2WURtX3dxaWk5QXA?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "India Bars Sugar-Based Ethanol From 2026-27 Tender For Petrol Blend",
+        "summary": "The tender, issued on October 16 by Bharat Petroleum Corporation Ltd (BPCL) on behalf of oil marketing companies (OMCs), seeks bids for around 11 billion litres of ethanol for the supply year beginning November to meet the requirement of doping 20 per cent ethanol in petrol.",
+        "outlets": 2,
+        "published": "2026-10-18T11:07:42+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/india-bars-sugar-based-ethanol-from-2026-27-tender-for-petrol-blend-12202614#publisher=newsstand"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSi1CMzRBcGFlWHF2Y05CQ3h5REw3RDZqQXhiTlo3dnRRd2Ztak4zWVJKR28wOFk4RE1OOTBmcnlSS3k3UEhCUElHNE5La2VKb2c3aEd0NlVoRW1UMDhKZGg4emlhVnpoRkwxTzFrWEt1RlVra0dsSE85bFBnMzJPMFhUNE9VRUpGeEFDRVpCRHQ2bUhEVDdONnJ1Y1lqSFdyYWsxTy1zNzlQbU5tZVlxY2dnWi15eDNQa0NZeENIQW5RNUhFTldB0gHOAUFVX3lxTE1HaDdvd3MyNEItUDFDU2pzNlJUUEhHUC1tY05YaEkwc3BsSDF0T3BZeEhzZm1TN25ZR3ZRTVVYZXpGcTg5dEp5cndZZU9mSHMwYU02cXowMFBQS0N4eTFXTjJKOGhUQmhvQk50U2tzTUJfd0p5MlVZTUlONXZNcEtUMXNqOXVZdU50WDd0Nk9YVFpVMW5ldnRiQjZ5aGhkREgyUGp6WU9JRHFpUEk0NUdNQmZmQi0xeG5tZGk3eGYtcnZOa0ZnUkk3VFNVNkRR?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Accenture seeks to sell its China operations with JPMorgan assistance",
+        "summary": "Accenture is looking to sell its business in China and has turned to JPMorgan for assistance with the transaction.",
+        "outlets": 2,
+        "published": "2026-10-18T13:34:02+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/technology/news/story/accenture-looks-to-sell-its-china-business-turns-to-jpmorgan-for-help-3020274-2026-10-18?utm_source=rss"
+          },
+          {
+            "source": "Financial Times",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUXQ2WWNXcnlFYXJ0S1I1SHBXYkU2NG10emhydEt3UFZET1hnUWd6M2xRU29uQlZfWDhGQUloMG83eWh1RWNEY2JfTDNVMVhyNk1naHhKbVdrZjNERC1nUTFhLVcyOVdxVjNwdjFKcGVPa2doRVhGdUpzV0lQaGRKZC1QcU0?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Microsoft pulls out of British artificial intelligence datacentre project",
+        "summary": "Microsoft pulled out as the anchor tenant of a major artificial intelligence datacentre project in Essex due to concerns over power supply.",
+        "outlets": 1,
+        "published": "2026-10-18T13:05:14+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/uk-news/2026/oct/18/microsoft-drops-huge-ai-datacentre-project-in-essex-over-power-supply-concerns"
+          }
+        ]
+      }
+    ]
+  }
+}
