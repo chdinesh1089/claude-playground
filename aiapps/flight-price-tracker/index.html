@@ -109,8 +109,8 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <div class="tile">
   <div class="tile-label">Cheapest round trip &middot; Fri Oct 23 → Sun Oct 25</div>
   <div class="tile-value">$468</div>
-  <span class="delta delta-down">&#9660; $125 since previous check</span>
-  <div class="tile-meta">Contour Airlines &middot; 1 stop outbound &middot; checked Oct 17, 11:02 AM CT</div>
+  <span class="delta">No change since previous check</span>
+  <div class="tile-meta">Contour Airlines &middot; 1 stop outbound &middot; checked Oct 18, 11:15 AM CT</div>
 </div>
 </section>
 
@@ -129,6 +129,7 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <table>
 <thead><tr><th>Checked</th><th class="num">Price</th><th>Weekend</th><th>Airline</th><th>Outbound</th></tr></thead>
 <tbody>
+<tr><td>Oct 18, 11:15 AM CT</td><td class="num">$468</td><td>Fri Oct 23 → Sun Oct 25</td><td>Contour Airlines</td><td>1 stop</td></tr>
 <tr><td>Oct 17, 11:02 AM CT</td><td class="num">$468</td><td>Fri Oct 23 → Sun Oct 25</td><td>Contour Airlines</td><td>1 stop</td></tr>
 <tr><td>Oct 16, 12:06 PM CT</td><td class="num">$593</td><td>Fri Oct 16 → Sun Oct 18</td><td>American</td><td>Nonstop</td></tr>
 <tr><td>Oct 15, 12:31 PM CT</td><td class="num">$551</td><td>Fri Oct 16 → Sun Oct 18</td><td>American</td><td>Nonstop</td></tr>
@@ -166,10 +167,10 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 </div>
 </section>
 
-<footer>Last check Oct 17, 11:02 AM CT. Prices are spot checks, not guaranteed fares.</footer>
+<footer>Last check Oct 18, 11:15 AM CT. Prices are spot checks, not guaranteed fares.</footer>
 </main>
 
-<script type="application/json" id="points">[{"t": "2026-10-17T16:02:56Z", "label": "Oct 17, 11:02 AM CT", "price": 468, "airline": "Contour Airlines", "stops": "1 stop"}]</script>
+<script type="application/json" id="points">[{"t": "2026-10-17T16:02:56Z", "label": "Oct 17, 11:02 AM CT", "price": 468, "airline": "Contour Airlines", "stops": "1 stop"}, {"t": "2026-10-18T16:15:33Z", "label": "Oct 18, 11:15 AM CT", "price": 468, "airline": "Contour Airlines", "stops": "1 stop"}]</script>
 <script>
 (function () {
   const points = JSON.parse(document.getElementById("points").textContent);

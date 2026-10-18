@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-17T16:02:56Z",
+  "checked_at": "2026-10-18T16:15:33Z",
   "weekend_start": "2026-10-23",
   "weekend_end": "2026-10-25",
   "from_airport": "DFW",
@@ -11,5 +11,5 @@
     "Contour Airlines"
   ],
   "outbound_stops": 1,
-  "trend": "down $125 from $593"
+  "trend": "unchanged"
 }
