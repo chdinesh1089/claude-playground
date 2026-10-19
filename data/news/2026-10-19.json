@@ -1,0 +1,478 @@
+{
+  "date": "2026-10-19",
+  "generated_at": "2026-10-19T17:29:10+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "US very close to India trade deal, Marco Rubio says",
+        "summary": "U.S. Secretary of State Marco Rubio stated that a trade deal with India is very close to completion ahead of his visit to Mumbai and Jamnagar.",
+        "outlets": 4,
+        "published": "2026-10-19T09:19:21+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/usindia-trade-deal-very-close-to-completion-marco-rubio-says-ahead-of-mumbai-jamnagar-visit-trump-russia-sanction-11792399364792.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/us-india-trade-deal-very-close-global-energy-needs-prices-considered-russia-sanctions-waiver-marco-rubio-101792392225735.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQa0ZvS0ctbC1wRF9MWC1ibzBaVW1XOUJBcXBrRXlWTGVreW9SUm53UDkzangzaUV0OW9CUzhIOFl2VUlWNkpJU1FqLTJFZ0VrVml2UTFEaTVFQmF6eDFZcDlzRGI0dkhqMFNLT1cxbmtLa0xIRmhVOFhIaEpEeDZiZEY3RTV1ZGZ3czlHaWphUXRTaXd1WFZISzFwMDJSbUp6QjBrMHZRazBZQVpvell4MWpzMlBmRXZEc0x5aFg3SXlqOTUt?oc=5"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPX1JDdGd6aEZHMGQ5OXppVnA5d3FlSzNmbDdjOURNajl2Sjg3T0VrRzRLSC1DdVpLekQ5ZHBVdjQ1eV9UcF81anZNVklVYjZnQlNfQUlWRVMtNzEwVVVDQWlYTmQtU29FOU5xTFlGYTFUVV90bXI3dXU5UU5IUG9ZNjNYVHNUdzNjT3JXb244bm84d240TG56ZDVLbXNhMWpucjVTZXdtaTZQYjViOFU3bDZnZlFEQjduUDBfMWdwMVBXUFl3VFRJ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "French Prime Minister calls for localized curfews amid violent protests",
+        "summary": "French Prime Minister Sébastien Lecornu requested partial curfews as riots, looting, and violent clashes led to over 2,400 arrests across France.",
+        "outlets": 4,
+        "published": "2026-10-19T16:05:31+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/news/audio/2026/oct/19/france-protests-escalate-riots-looting-arrests-the-latest"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/newsmo/short-videos/from-school-protests-to-looting-whats-happening-in-france-3020938-2026-10-19?utm_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/french-prime-minister-calls-for-limited-curfews-to-curb-rioting-and-looting/articleshow/135051270.cms"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/french-prime-minister-lecornu-calls-for-localized-curfews-in-cities-to-curb-rioting-and-looting"
+          }
+        ],
+        "why": "Major European civil unrest impacting global financial markets and security."
+      },
+      {
+        "headline": "Houthi missile strike on Yemen camp kills dozens",
+        "summary": "Ballistic missile strikes by Houthi rebels on a government training camp in Yemen killed at least 50 security recruits.",
+        "outlets": 5,
+        "published": "2026-10-19T17:03:13+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/19/world/middleeast/houthis-strike-yemen-military-camp.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/dozens-killed-after-houthi-strike-on-military-camp-in-shabwa?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cv0ld6lrr2zeo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/yemen-houthi-attack-kills-53-injures-200-shabwa-security-camp-3020990-2026-10-19?utm_source=rss"
+          }
+        ],
+        "why": "Major escalation in the Middle East conflict impacting regional stability."
+      },
+      {
+        "headline": "Kenya cult leader guilty of 191 murders",
+        "summary": "Self-proclaimed doomsday pastor Paul Mackenzie was found guilty of 191 murder charges after followers were told to starve themselves.",
+        "outlets": 4,
+        "published": "2026-10-19T17:18:04+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckd6d2l3dz4xo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/kenya-starvation-cult-leader-paul-mackenzie-guilty/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/19/kenya-starvation-cult-leader-guilty-murder-190-children"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/19/kenyan-court-convicts-starvation-cult-leader-for-murder-of-191-people?traffic_source=rss"
+          }
+        ],
+        "why": "Mass casualty criminal verdict drawing international attention."
+      },
+      {
+        "headline": "Supreme Court rejects plea deal for Khalid Sheikh Mohammed",
+        "summary": "The U.S. Supreme Court rejected an effort to revive a plea deal that would have spared Khalid Sheikh Mohammed the risk of execution.",
+        "outlets": 2,
+        "published": "2026-10-19T15:50:08+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/19/khalid-sheikh-mohammed-september-11-plea-deal"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTkszT0JFbGR1dDhmNmJ4Umt4VXVVTVc5ckdOelMyX1kydURwNURBYy13UE9PMTBMamNxMU5aREw2VVFSZkJicFZQWTVfT0RyQkxQSXJsSnB2T005cFEzS3JXLVFxT2dhRU4zTVhmVm1CTWE2MGNyZGtINnBLaE56dWIzUGM1Q2hXSTRJd08tOTVnSnN5WGZMYzlQZ3hkUzlNeHNuYVNQZnpfcE9RQkJaUmxBUHNWWTRCX0JibjBIdjYwZ1I2U0FN?oc=5"
+          }
+        ],
+        "why": "Major legal development in high-profile 9/11 terrorism prosecutions."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Justice Department charges noncitizen voters in California",
+        "summary": "The Justice Department announced the arrests of more than two dozen green card holders in California on noncitizen voting-related charges.",
+        "outlets": 2,
+        "published": "2026-10-19T17:11:16+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/live/2026/oct/19/donald-trump-kansas-roger-marshall-golf-ukraine-midterms-latest-news-updates"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/justice-department-charges-more-than-2-dozen-foreign-nationals-in-california-sweep-targeting-noncitizen-voters"
+          }
+        ]
+      },
+      {
+        "headline": "Trump outlines rapid plan to overhaul D.C. golf course",
+        "summary": "President Trump announced a rapid plan to begin transforming the East Potomac Golf Links within four weeks amid ongoing legal opposition.",
+        "outlets": 3,
+        "published": "2026-10-19T02:55:13+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/18/us/politics/trump-golf-course-east-potomac-washington.html"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/18/nx-s1-6007384/trump-to-close-and-renovate-d-c-golf-course-despite-legal-battle"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-says-he-will-close-historic-d-c-golf-course-for-15-months-of-renovations"
+          }
+        ]
+      },
+      {
+        "headline": "Trump launches women's health division within NIH",
+        "summary": "President Trump launched a new initiative alongside first lady Melania Trump to create a women's health division within the National Institutes of Health.",
+        "outlets": 1,
+        "published": "2026-10-19T16:58:44+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/trump-launches-womens-health-division-within-nih/"
+          }
+        ]
+      },
+      {
+        "headline": "Eagles’ Jalen Hurts now has blood clots in his lungs, team says",
+        "summary": "The Eagles said they expect Hurts to make a \"full recovery.\"",
+        "outlets": 2,
+        "published": "2026-10-19T17:19:51+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/GMA/Culture/jalen-hurts-miss-eagles-sunday-matchup-panthers-due/story?id=137300122"
+          },
+          {
+            "source": "ESPN",
+            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMjRnQkRUT2dmTXlQLWFvaEhuY3VwenNWYlVaMHN6ZWNqcXYzTmxNU3RqT3RJQm9Jc0MwX2tkMk0wbVpxclAtV2xVdk9XT3NTb2dLWnlfOEdWbWxVT0M1eE4wcnEybXk5SFFxOVo0b3d3TF8xV0lqN1A1RnRfUUpXWnZBc3I4SVFoLXlpSFBYTE42aWU1REtZ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "GOP candidate suspends campaign after DUI arrest",
+        "summary": "A Massachusetts GOP lieutenant governor candidate suspended their campaign following an arrest after a car crash on suspicion of operating under the influence.",
+        "outlets": 2,
+        "published": "2026-10-19T17:08:45+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/massachusetts-gop-lieutenant-governor-candidate-suspends-campaign-after-arrest-in-suspected-drunk-driving-crash"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/massachusetts-republican-shawn-oliver-suspends-campaign-after-arrest/story?id=137364299"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court to hear new case on school admissions",
+        "summary": "The Supreme Court agreed to review an admissions policy for selective middle school programs in Maryland following its earlier affirmative action rulings.",
+        "outlets": 1,
+        "published": "2026-10-19T16:48:23+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/19/us/politics/supreme-court-race-school-admissions.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "MEA rejects OIC anti-India references and criticizes Pakistan",
+        "summary": "The MEA stated that Jammu and Kashmir and Ladakh are integral parts of India and dismissed politically motivated propaganda orchestrated by Pakistan.",
+        "outlets": 3,
+        "published": "2026-10-19T11:08:16+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/mea-rejects-oics-anti-india-references-accuses-pakistan-of-orchestrating-them/article71602533.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/malicious-false-orchestrated-by-pakistan-mea-rejects-oics-anti-india-references-during-baghdad-meet-101792405543121.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/mea-rejects-malicious-anti-india-references-in-oic-meeting-resolutions-slams-pakistan-for-bigoted-agenda/articleshow/135045261.cms"
+          }
+        ]
+      },
+      {
+        "headline": "One killed and several injured in Manipur clashes",
+        "summary": "At least one person was killed and several houses and vehicles were torched during clashes between two communities in Manipur’s Thoubal district.",
+        "outlets": 2,
+        "published": "2026-10-19T17:10:04+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/videos/watch-one-killed-several-injured-in-clashes-in-manipurs-thoubal/article71603043.ece"
+          },
+          {
+            "source": "The New Indian Express",
+            "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxON2FFbHJ0TFVmYXpaRW5XMENpTXc3c285eWVGaXNxTXpSYmtVeU1Gd2IwY1RkN0VsR1N3aGhNVEx3RTBYSHl1ZzNMbkNvcVN6aWFvLUhVcmVzRFItcmtBbFZhcGVGVVFSVWUxakRtVlEzWmZfUGhUSzBsNlhzejZINVc0d09xVHNfbjg0cWl0YUp4WGVCREpCdl9OSDY2X3h5X3lXYjY4Q2hIRktpd1ZvTTAxbzNUVEgyQzhaTXo3SGVERnptR3Fsa1RnMTF5cnk2c0JoNEdpblo3dDBJ0gHqAUFVX3lxTE1SYVQyeV9Bb3R0eU1HR29Iem55UmlTS2drcTFRcEZvcjRraVpNc1R3SXBuVm5fQWJZWWhONEhINzBOVlVQY1VWWG5uMUNMcUQ2RE5WTjR1Sm4zdkRpTVdHS3BVWUtocDdpWFpHMFVPWlZWaVFNTDBYN2NHbkZwbEFnU3pYLVRKZ1d6ODAxWVIyT005YmhPekFaTXhPZ0R2VVpTZW83OXMxaTRwT2VuVnZyRC1QNzdfVEZlcl82UXRiT0hULVQ2UTUtN1Zfakc3R3J6NHgyNW03b3lMVmdUZDM3SUdOc193V01lUQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Uttarakhand minister confronts Daler Mehndi on stage",
+        "summary": "A Uttarakhand minister publicly confronted singer Daler Mehndi on stage, alleging that the artist had been drinking alcohol and could not speak properly.",
+        "outlets": 2,
+        "published": "2026-10-19T15:59:34+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/uttarakhand-minister-confronts-daler-mehndi-on-stage-alleges-singer-was-drinking-alcohol-you-cannot-even-speak-101792414187761.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/movies/celebrities/story/daler-mehndi-subodh-uniyal-intoxication-viral-video-kunjapuri-mela-controversy-3020817-2026-10-19?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Terror hideout busted in J&K's Rajouri with grenades",
+        "summary": "Security forces recovered nine under-barrel grenade launcher grenades, an AK-47 magazine, and ammunition from a forest cave in Rajouri.",
+        "outlets": 1,
+        "published": "2026-10-19T17:12:22+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/terror-hideout-busted-in-rajouri-jammu-and-kashmir-9-grenades-recovered-from-forest-cave-12208081#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court stays execution in Ahmedabad serial blasts case",
+        "summary": "The Supreme Court stayed the execution of the death sentence of a convict in the 2008 Ahmedabad serial bomb blasts case.",
+        "outlets": 2,
+        "published": "2026-10-19T12:54:02+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/supreme-court-stays-execution-of-death-sentence-of-convict-in-2008-ahmedabad-serial-blasts-case/article71602719.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/sc-stays-execution-of-death-sentence-of-convict-in-2008-ahmedabad-serial-blasts-case-101792407545424.html"
+          }
+        ]
+      },
+      {
+        "headline": "CISF jawan nabs suspicious man with gold in Delhi Metro",
+        "summary": "A CISF jawan apprehended a suspicious man after an escalator chase at a Delhi Metro station and recovered suspected gold powder hidden in his undergarments.",
+        "outlets": 4,
+        "published": "2026-10-19T17:12:57+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/Delhi/cisf-jawan-nabs-suspicious-man-in-escalator-stairs-chase-at-delhi-metro-station/article71603033.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/cisf-personnel-nabs-man-attempting-to-flee-delhis-jama-masjid-metro-station-after-suspicious-object-spotted-during-checking-101792410700995.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/video-suspicious-man-runs-out-of-delhi-metro-station-chased-down-by-security-12207138#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/cities/delhi/story/delhi-jama-masjid-metro-cisf-catches-passenger-suspicious-object-3020838-2026-10-19?utm_source=rss"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Australian lawmaker Helen Haines injured in car attack",
+        "summary": "Australian lawmaker Helen Haines was injured after being struck by a car outside her office, prompting a counterterrorism response.",
+        "outlets": 6,
+        "published": "2026-10-19T12:03:24+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/19/world/australia/helen-haines-mp-attacked-wangaratta-australia.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/australian-lawmaker-critically-injured-by-car-is-no-accident-prime-minister-says"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/19/g-s1-148737/australia-lawmaker-critically-injured"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/australia-news/2026/oct/19/mp-helen-haines-injured-incident-wangaratta-ntwnfb"
+          }
+        ]
+      },
+      {
+        "headline": "India issues advisory for citizens in Italy amid protests",
+        "summary": "Indian authorities issued an advisory for citizens in Italy to avoid crowded areas as law enforcement faces violence during demonstrations.",
+        "outlets": 3,
+        "published": "2026-10-19T16:31:41+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/avoid-crowded-areas-advisory-for-indians-in-italy-amid-protests-12207936#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/indian-embassy-in-italy-issues-advisory-urges-citizens-to-avoid-protest-sites-crowded-areas-101792418867048.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/avoid-crowded-areas-india-issues-advisory-for-citizens-amid-violent-protests-in-italy/articleshow/135050684.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Ebola cases rise in Kenya amid US aid cuts",
+        "summary": "An eighth person tested positive for Ebola in Kenya as the country faces health challenges following US funding cuts and withdrawal from the WHO.",
+        "outlets": 2,
+        "published": "2026-10-19T14:11:08+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/19/ebola-cases-kenya-us-quarantine"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/17/world/africa/kenya-ebola.html"
+          }
+        ]
+      },
+      {
+        "headline": "Fire at Canadian military base kills four",
+        "summary": "A fast-moving fire at Canadian Forces Base Wainwright in Alberta killed four people and injured dozens in a major peacetime tragedy.",
+        "outlets": 1,
+        "published": "2026-10-19T13:48:17+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/18/world/canada/canadian-army-base-fire-kills-4.html"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "China’s economy grows faster than forecast after AI boom boosts exports",
+        "summary": "Third-quarter GDP up by 4.5% compared with last year as industrial output is buoyed by electronics demand Business live – latest updates Roaring exports lifted China’s economic growth in the third quarter of this year, with factory output growing much faster than consumer…",
+        "outlets": 2,
+        "published": "2026-10-19T15:08:00+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/19/china-economy-grows-faster-than-forecast-after-ai-boom-boosted-exports"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/18/business/china-economy-gdp.html"
+          }
+        ]
+      },
+      {
+        "headline": "Amazon is funding a new nuclear plant in Indiana",
+        "summary": "Amazon has signed an agreement with X-energy and American Electric Power (AEP) to fund the building of a new nuclear energy facility in Indiana. The proposed plant, which would replace the now defunct coal-fueled Breed Generating Station in Fairbanks, Sullivan County, aims to…",
+        "outlets": 1,
+        "published": "2026-10-19T15:44:20+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/tech/1013735/amazon-x-energy-aep-nuclear-indiana"
+          }
+        ]
+      },
+      {
+        "headline": "ED freezes Rs 200 crore in pump-and-dump raids",
+        "summary": "The Enforcement Directorate froze Rs 200 crore in trading accounts and seized assets during nationwide raids in an alleged share manipulation scheme.",
+        "outlets": 1,
+        "published": "2026-10-19T13:38:57+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/ed-raids-mumbai-ahmedabad-and-other-cities-in-alleged-rs-200-crore-pump-and-dump-share-manipulation-case-11792416897363.html"
+          }
+        ]
+      },
+      {
+        "headline": "India-New Zealand FTA to come into force",
+        "summary": "India's free trade agreement with New Zealand is set to take effect to boost bilateral exports amid shifting global supply chains.",
+        "outlets": 1,
+        "published": "2026-10-19T15:34:56+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/indianew-zealand-fta-to-enter-into-force-on-oct-20-labour-intensive-sectors-to-be-key-beneficiaries-goyal-11792419126336.html"
+          }
+        ]
+      }
+    ]
+  }
+}
