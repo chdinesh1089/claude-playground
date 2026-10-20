@@ -1,0 +1,482 @@
+{
+  "date": "2026-10-20",
+  "generated_at": "2026-10-20T15:39:33+00:00",
+  "status": "ok",
+  "model": "gemini-3.8-flash",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "United States and India near trade deal during Rubio visit to Mumbai",
+        "summary": "U.S. Secretary of State Marco Rubio met with S Jaishankar in Mumbai to discuss energy security, defence cooperation, and finalising a bilateral trade deal.",
+        "outlets": 7,
+        "published": "2026-10-20T13:20:17+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/marco-rubio-mumbai-visit-october-20-2026/article71603994.ece"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/marco-rubio-in-mumbai-for-3-day-india-visit-trade-deal-talks-on-agenda-12210435#publisher=newsstand"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/marco-rubio-lands-in-mumbai-as-new-delhi-washington-push-to-close-trade-deal/articleshow/135066599.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/marco-rubio-india-visit-america-freedom-250-calls-india-powerful-influential-says-india-us-ties-will-define-21st-century-101792507163660.html"
+          }
+        ],
+        "why": "Expands critical bilateral economic, defense, and energy cooperation between the U.S. and India."
+      },
+      {
+        "headline": "India-New Zealand free trade agreement officially takes effect",
+        "summary": "The free trade agreement between India and New Zealand took effect, eliminating tariffs on Indian exports and securing a $20 billion investment pledge from New Zealand.",
+        "outlets": 2,
+        "published": "2026-10-20T06:35:39+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-new-zealand-free-trade-agreement-takes-effect-eliminating-tariffs-on-indian-exports-101792436494413.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQWRqb0ZYZEpoNkdValNndkZHWHZFLW9tRXV5YmtuRzhwaUljVW1Ka0dfQ2lqZ3hlY2ZJaTBQeWhFOXA3blNEWHFFOTFCZ3BiUFFoOXVzeDA0T2RMY0RJSktvNF9WeEtSSjAxQmFDTEtTb05iemtRMjJJX1NKdVgteGlyQ2NLcWxWQ3hYdDIyZ0F2a3YwVkdsRGhJZF9HTHE4TVI5bUY2OW5hYm9jTVZfSkl5MEpoVXN4alNkNmlR?oc=5"
+          }
+        ],
+        "why": "Opens key export markets for Indian goods and secures long-term foreign investment for India."
+      },
+      {
+        "headline": "United States grants deportation reprieve to Ukrainian and Sudanese migrants",
+        "summary": "The Department of Homeland Security granted a deportation reprieve to more than 100,000 migrants from Ukraine and Sudan after their temporary protected status was set to expire.",
+        "outlets": 2,
+        "published": "2026-10-19T22:34:43+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/19/us-migrants-deportation-ukraine-sudan"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/homeland-security-grants-temporary-deportation-reprieve-for-more-than-100000-ukrainians-and-sudanese"
+          }
+        ],
+        "why": "Demonstrates major temporary relief policies within the U.S. immigration and humanitarian protection system."
+      },
+      {
+        "headline": "Sudan military drone strikes kill over 200 people",
+        "summary": "Sudan army drone strikes hit a market and a truck carrying people to a funeral, killing more than 200 people.",
+        "outlets": 1,
+        "published": "2026-10-20T14:24:19+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cr3el70jz1nqo?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "Marks a devastating civilian escalation in the ongoing civil conflict in Sudan."
+      },
+      {
+        "headline": "UK to Send Fighter Jets to Help Defend Saudi Arabia From Houthi Attacks",
+        "summary": "R.A.F. Typhoon fighter jets will be deployed to protect infrastructure in Saudi Arabia, Britain said, after a spike in attacks by the Iran-backed Houthi militia.",
+        "outlets": 6,
+        "published": "2026-10-20T12:34:57+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/20/world/europe/uk-saudi-arabia-houthis-raf-typhoon-fighter-jets.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/uk-to-deploy-fighter-jets-to-support-saudi-arabia-against-houthi-attacks-12211076#publisher=newsstand"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/middle-east/britain-sends-typhoon-fighter-jets-to-defend-saudi-arabia-against-houthis-rules-out-offensive-strikes/articleshow/135070008.cms"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/uk-news/2026/oct/20/uk-raf-typhoon-fighters-saudi-arabia-houthi-attacks"
+          }
+        ]
+      }
+    ],
+    "us": [
+      {
+        "headline": "DOJ charges 28 people in California with election-related offenses",
+        "summary": "The DOJ charged 28 individuals in California with election-related offenses and did not rule out prosecuting election workers who process ballots.",
+        "outlets": 4,
+        "published": "2026-10-19T23:23:20+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/doj-charges-28-unlawful-voting-election-related-offenses/story?id=137384589"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/19/nx-s1-6007908/election-tensions-escalate-in-california-as-doj-charges-28-people-with-voting-crimes"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/19/us/politics/doj-california-voting-crimes-trump-midterms.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/ht-morning-brief-october-20-marco-rubio-india-visit-cjp-leaders-custody-extended-tiger-shroff-shooting-probe-manipur-violence-deepthi-jeevanji-101792468469060.html"
+          }
+        ]
+      },
+      {
+        "headline": "Trump announces $8 billion relief program for American farmers",
+        "summary": "President Trump announced an $8 billion relief program through the Agriculture Department to assist farmers affected by high diesel prices and inflation.",
+        "outlets": 3,
+        "published": "2026-10-20T12:55:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/trump-announces-8b-relief-program-for-farmers-stumps-for-marshall-at-kansas-rally/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/video/137404366/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/20/business/trump-farmer-bailout.html"
+          }
+        ]
+      },
+      {
+        "headline": "Lawsuit challenges presidential trade powers over Trump tariffs on Canada",
+        "summary": "A new lawsuit challenges President Trump's tariffs on Canada, testing the scope of presidential trade authority without congressional approval.",
+        "outlets": 1,
+        "published": "2026-10-20T15:18:04+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/20/business/trump-tariffs-canada-lawsuit.html"
+          }
+        ]
+      },
+      {
+        "headline": "JD Vance declines to endorse Benjamin Netanyahu for reelection",
+        "summary": "Vice President JD Vance declined to endorse Israeli Prime Minister Benjamin Netanyahu for reelection, stating he is focused on endorsing American candidates in the midterms.",
+        "outlets": 3,
+        "published": "2026-10-20T13:29:16+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/not-getting-involved-jd-vance-refuses-to-back-benjamin-netanyahu-for-re-election-12211316#publisher=newsstand"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/not-getting-involved-jd-vance-opts-out-of-endorsing-netanyahu-as-israel-pm-warns-of-future-hostile-us-president-11792469729349.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/jd-vance-declines-to-endorse-netanyahu-for-reelection-says-hes-focusing-on-midterms"
+          }
+        ]
+      },
+      {
+        "headline": "Trump signs executive order creating women's health division",
+        "summary": "President Trump signed an executive order establishing a women's health division.",
+        "outlets": 2,
+        "published": "2026-10-20T14:27:21+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-executive-order-on-womens-health/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/19/us/politics/melania-trump-women-health.html"
+          }
+        ]
+      },
+      {
+        "headline": "Permanent resident Mahmoud Khalil asks Supreme Court to review detention rules",
+        "summary": "Lawful permanent U.S. resident Mahmoud Khalil asked the Supreme Court to allow judges to quickly reverse immigration detentions following his arrest over university protests.",
+        "outlets": 2,
+        "published": "2026-10-19T21:42:41+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/activist-mahmoud-khalil-asks-supreme-court-to-let-judges-quickly-reverse-immigration-detentions"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/19/us/politics/supreme-court-mahmoud-khalil-deportation.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "President promulgates regulation enabling hill council elections across Ladakh",
+        "summary": "The President promulgated the LAHDC Regulation, clearing the way for hill council elections across all eight districts of Ladakh.",
+        "outlets": 1,
+        "published": "2026-10-20T14:24:00+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/ladakh/president-promulgates-lahdc-regulation-paves-the-way-for-hill-council-polls-in-all-eight-districts-of-ladakh/article71604027.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Manipur valley shut down after killing of Kuki man",
+        "summary": "The killing of a Kuki man in Manipur prompted a 24-hour shutdown that paralysed the Imphal Valley as community organizations demanded justice.",
+        "outlets": 2,
+        "published": "2026-10-20T14:59:22+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/manipur/kuki-man-killed-in-manipur-shutdown-paralyses-imphal-valley/article71604827.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/manipur-kuki-man-killed-6-houses-torched-amid-shutdown-over-meitei-killings-101792483056355.html"
+          }
+        ]
+      },
+      {
+        "headline": "Amit Shah vows action on killings of Punjab anti-drug activists",
+        "summary": "Amit Shah pledged to track down those responsible for killing anti-drug activists in Punjab and urged citizens to report illicit trafficking directly to central authorities.",
+        "outlets": 4,
+        "published": "2026-10-20T14:03:17+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/will-hunt-down-those-behind-killings-of-punjab-anti-drug-activists-amit-shah-12211312#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/elections/assembly/story/amit-shah-meets-bikramjit-singh-family-punjab-anti-drug-violence-3021254-2026-10-20?utm_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/amit-shah-reveals-alarming-drug-crisis-in-punjab-exceeds-official-reports/articleshow/135069441.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQNW9vRWRhZGVTdGNfYl9aZ19xT2ZQSHVubDhCOHcwQjVvS0M2bWlCMHBUMi1CZWc2d2t6S2lIR2ZQdDZhaklTaW12TTI3dzN1SHVocTUtZFZUbGJmWGlyVVB2cGZBZHdzSFpiN3JZM0EtNlJUYXhrbUwtSmtMTDNxai0tN3A3OExQU29VcTNZU3N0ZmUxQjJCTW5LdmpoWUdnTFpiUmc1OEk3QnpUc1NHRWZCNTE5QnVpZExEdkVRTUlxRzNEY0ZpSjhqV1VBVGJNa3NOUUhCMjUwTGV1Z0ZpaTFKTTRXODZKU0ZXQWdjWmdLYWxrX3dSeQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Rajnath Singh rejects double standards on terrorism at SCO meeting",
+        "summary": "Speaking in the presence of Pakistan's deputy prime minister Ishaq Dar at an SCO meeting, Rajnath Singh insisted there must be no double standards on terrorism.",
+        "outlets": 2,
+        "published": "2026-10-20T10:13:29+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/no-double-standards-on-terrorism-rajnath-singh-at-sco-in-pak-deputy-pm-ishaq-dar-presence-101792478873447.html"
+          },
+          {
+            "source": "ABP Live English",
+            "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZFdZQXVhRjZPMVVrYVlBcWdZTVF2VmNzVFZUQy1SSnRwdFBmRVU4ek9Id2NuYTdqVm9ZOFNWOVZ6TU5wV0RTUWxEMVZINjVKQ012NTl5VzZMb1Z4aUpFSFEtUmlVdHF4cVg5VGdxTXdocExhZUFCZ29reEFMTE95V1F3dnJaZ09iMzZibWtrWTJpSHAwUjZoUEt2eDdkZzFsTXlhMWh1Y1RTeW1YTWVhWG8tSjZVWnF2b3V4VlJGNFF5RmRJNm4zdmloMHNFaTFCZmJ0OFlnR1FKVFA1LUHSAeMBQVVfeXFMTnd1TS12a2otQzkxdE12bHJMRTJEVGRjRzBZMGtpc19XS2xVV2pWWm1QSHkzOE1UeDdsYmJqbndFalV1X3Axel9HZHhlT0hlSy1TZkk5LW5KVThqaHJBZzdxdXMzOFAzWmFnaVdmVGJQZVpxMFY5eUxNLWlzZF9YRGR2VFNwOUJUeXE5bmlwclphXzN5RDBFOUdSMjZINTk5OElpMHBrTjJGdzhFbXlONUVaY0dDWWpfUU1sNGh5VDhqaWtLZWVIM0JoRXJ3ZlpEeE5JZW92NFlPWnVHSkZTazBBUWM?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "NCSK reports more than 30 sewer deaths in 2026",
+        "summary": "NCSK data revealed that more than 30 sewer and septic tank deaths occurred in 2026, with compensation paid in only nine cases.",
+        "outlets": 2,
+        "published": "2026-10-20T13:04:10+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/more-than-30-sewer-septic-tank-deaths-reported-so-far-in-2026-compensation-paid-in-nine-cases-ncsk/article71604553.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/31-sewer-septic-tank-deaths-reported-so-far-in-2026-compensation-paid-in-9-cases-ncsk-101792496299054.html"
+          }
+        ]
+      },
+      {
+        "headline": "John Brittas seeks presidential intervention in JNU hunger strike",
+        "summary": "John Brittas sought the President’s intervention as a student hunger strike at JNU entered its 17th day following the university administration's failure to address student concerns.",
+        "outlets": 3,
+        "published": "2026-10-20T12:09:28+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/john-brittas-seeks-presidents-intervention-as-jnu-students-hunger-strike-enters-17th-day/article71602734.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/jnu-students-end-17-day-hunger-strike-as-demands-met-rustication-jnusu-president-101792482485020.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/jnu-protest-who-is-john-brittas-why-are-university-students-on-hunger-strike-for-17-days-what-are-their-demands-11792481853583.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Alberta voters reject separation from Canada in provincial referendum",
+        "summary": "Voters in the Canadian province of Alberta rejected separating from Canada in a referendum that asked residents whether to remain or hold another secession vote.",
+        "outlets": 6,
+        "published": "2026-10-20T14:27:01+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/19/world/canada/alberta-secession-canada-referendum.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/20/canada-alberta-rejects-independence-succession-referendum"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/oilrich-alberta-reject-leaving-canada-why-the-referendum-matters-what-it-mean-for-carney-amid-trumps-trade-war-11792475659919.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/canada-alberta-referendum-vote-separation-independence/"
+          }
+        ]
+      },
+      {
+        "headline": "France extends curfews following widespread riots across major cities",
+        "summary": "French authorities moved to extend curfews across the country as the government seeks to restore order after days of severe rioting.",
+        "outlets": 5,
+        "published": "2026-10-20T14:24:18+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/20/world/europe/france-curfews-riots-protests-extended.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/paris-sees-calm-after-curfews-as-france-cracks-down-on-weekend-rioters-amid-violence-over-living-costs/articleshow/135071808.cms"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/20/france-to-impose-new-curfews-where-required-after-calm-night?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm5ynkk570pno?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Houthi forces besiege Yemeni city of Taiz, cutting supplies",
+        "summary": "Iranian-backed Houthi forces cut road access to Taiz, besieging one of Yemen’s largest cities and sparking warnings of an impending humanitarian disaster.",
+        "outlets": 2,
+        "published": "2026-10-20T14:28:28+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/20/world/middleeast/yemen-taiz-houthi-siege.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cv0ld6lrr2zeo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Israeli police detain 10 people in rare West Bank settler raid",
+        "summary": "Israeli police detained 10 people during a rare raid against West Bank settlers following assaults on a U.S. photojournalist, European diplomats, and Palestinians.",
+        "outlets": 2,
+        "published": "2026-10-19T18:05:14+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/19/israeli-police-detain-10-people-in-rare-raid-against-west-bank-settlers"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/19/world/middleeast/israel-west-bank-settlers-palestinians.html"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Mukesh Ambani launches Jio Platforms in record-setting Indian IPO",
+        "summary": "Mukesh Ambani launched India's biggest-ever initial public offering as broadband provider Jio Platforms targets an £81 billion valuation on the stock market.",
+        "outlets": 1,
+        "published": "2026-10-20T13:18:00+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/oct/20/mukesh-ambani-jio-platforms-ipo-india-stock-market"
+          }
+        ]
+      },
+      {
+        "headline": "Apple India revenue crosses one lakh crore rupees in FY26",
+        "summary": "Apple India crossed Rs 1 lakh crore in revenue during FY26 as sales growth accelerated 31% and profit surged by 66%.",
+        "outlets": 2,
+        "published": "2026-10-20T07:42:00+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/apple-india-in-sweet-spot-as-fy26-revenue-crosses-rs-1-lakh-crore-profit-soars/articleshow/135055778.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPR3NoRDh2OGtRbVZ0S2xHRzRkNi1wZVRucktVTWJsQkpvakxCUnhKNDZ4V1RRMmhzdTMwdzBmMUFNX3pFNjJ3ak1VVUVMV29pWkZYeUJfSE05aXRTX1hxMV9NRmNlaDZZaEVMUW00TGtmUFU5YjhsTko1Tk1zQ0hLeVl2a1h1azZjT0NwUHd5cktodGVPQUJ4TW5CcE1zOE9pRFFDOW1QSVlBSTd5YW5EX01OdHRrX05hOTZjbjdRdkR3T0RyVFlqYXZZc0lnaklmZTlGLXVjRDJBSXIzVlNYTklnbG45MmQyOHhlQ19seGs2Vms4NXc1dlAza1BzVlB2bVhfVm4tTy1ZZW9OQTl4VmtXY3BFT0dWMlEwNUVOOEpHRmhXTUdPbnVlakJRN3REbWp4VVItVzkxVzJKa3FXRmhFb1M?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "United States bans federal agency use of China's DeepSeek AI tools",
+        "summary": "The U.S. government ordered federal agencies to stop using artificial intelligence tools from China's DeepSeek over concerns regarding the potential transfer of sensitive data.",
+        "outlets": 1,
+        "published": "2026-10-20T12:33:27+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/20/us-bans-china-deepseek-ai-tools-government-agencies"
+          }
+        ]
+      },
+      {
+        "headline": "US pending home sales fall to 25-year record low",
+        "summary": "U.S. pending home sales dropped to a 25-year record low in September as home buyers retreated after average 30-year mortgage rates climbed above 7%.",
+        "outlets": 1,
+        "published": "2026-10-20T15:01:00+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/pending-home-sales-sink-to-25-year-low-as-buyers-flee-high-mortgage-rates-d02c6b30?mod=mw_rss_topstories"
+          }
+        ]
+      }
+    ]
+  }
+}
