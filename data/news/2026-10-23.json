@@ -1,0 +1,509 @@
+{
+  "date": "2026-10-23",
+  "generated_at": "2026-10-23T15:45:04+00:00",
+  "status": "ok",
+  "model": "gemini-flash-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
+        "summary": "People in Russian-occupied city facing severe shortages of food, water and electricity, with some reportedly surviving on weeds The White House said on Friday that Russia and Ukraine had agreed to a ceasefire in the Russian-occupied city of Oleshky, where a deepening…",
+        "outlets": 10,
+        "published": "2026-10-23T14:57:50+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/first-lady-melania-trump-temporary-ceasefire-russia-ukraine-oleshky/"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/situation-dire-melania-trump-says-she-secured-ceasefire-in-ukrainian-city-12226918#publisher=newsstand"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/melania-trump-helps-secure-a-ceasefire-deal-in-russian-occupied-oleshky-the-white-house-says"
+          }
+        ]
+      },
+      {
+        "headline": "US Supreme Court allows New Hampshire to reject student voter IDs",
+        "summary": "The US Supreme Court sided with Republicans to uphold a New Hampshire directive rejecting student IDs for voting in the midterm elections.",
+        "outlets": 5,
+        "published": "2026-10-23T14:51:46+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/23/supreme-court-student-ids-new-hampshire-midterms"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/us-midterm-elections-new-hampshire-voters-face-last-minute-shake-up-as-supreme-court-blocks-student-ids-weeks-before-voters-head-to-polls/articleshow/135144728.cms"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/wireStory/supreme-court-allows-new-hampshire-fully-ban-student-137494305"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/22/us/politics/supreme-court-new-hampshire-election-student-id.html"
+          }
+        ],
+        "why": "Shapes voter turnout rules and ballot access for young voters in upcoming elections."
+      },
+      {
+        "headline": "Oil prices surpass $115 per barrel amid Middle East conflict fears",
+        "summary": "Brent crude surged to its highest level in over five months as fears of renewed US strikes on Iran pushed nationwide US gas prices to $4.29.",
+        "outlets": 3,
+        "published": "2026-10-23T13:27:04+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/oct/23/oil-five-month-high-fears-us-renews-strikes-iran"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/gas-prices-in-us-hit-4-29-nationwide-as-california-hawaii-pay-over-5-october-on-track-for-record/articleshow/135146961.cms"
+          },
+          {
+            "source": "CNBC",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBNc0s0YTFvMUVGOTZsQTBGQ2xGQkNJNmZrZVlXOXpMTTV4VDFZQnF5LTBOVHpXMVI1cmI4QmhFNTVudnpRVDVUbldkZEZmeXl3MHI4aU1UaXVvbHNEdHhvbmNweVQ5TWdjaWRPQWpZLXJIYk5RTlHSAXtBVV95cUxPN0Q0eEc2UXVTTmwxcTZsY05HeEdKN0U1dDc1S1YxWmxZOXJlSm1NVVZDU3MxcXFKNlduX3NxckhxZ1puVlE1d09SZk4zSGhVcG9xNFhBb1d6Skd4NlZSdDZ5Y1I2NkxEXzJuUmxUMThNX3haWnlIeUZQQ0k?oc=5"
+          }
+        ],
+        "why": "Directly impacts inflation, travel expenses, and living costs for consumers worldwide and in America."
+      },
+      {
+        "headline": "Magnitude-7 earthquake in Tibet kills at least 16 people",
+        "summary": "A magnitude-7 earthquake struck northern Tibet, killing at least 16 people, injuring 54, and collapsing hundreds of homes as rescue operations got under way.",
+        "outlets": 5,
+        "published": "2026-10-23T07:53:58+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/22/world/asia/earthquake-tibet-china.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ck5ynd1z6e83o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/rescuers-search-for-survivors-after-deadly-earthquake-in-chinas-tibet-region"
+          }
+        ],
+        "why": "A major natural disaster causing substantial loss of life and devastation near India's border."
+      },
+      {
+        "headline": "Weather system over Bay of Bengal may intensify into cyclone, cross Odisha-Andhra coasts by October 28",
+        "summary": "Red alert for heavy rain issued for Puri, Ganjam, and Gajapati districts on October 27; several districts likely to witness very heavy rainfall from October 26, says Minister; State government cancels leaves of government employees",
+        "outlets": 2,
+        "published": "2026-10-23T15:11:38+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/odisha/low-pressure-near-bay-of-bengal-expected-to-become-a-cyclonic-storm/article71615056.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/andhra-low-pressure-over-bay-of-bengal-likely-to-intensify-into-cyclone-by-oct-26-101792737543516.html"
+          }
+        ]
+      }
+    ],
+    "us": [
+      {
+        "headline": "New York City Council passes Romanch's Law banning horse carriages",
+        "summary": "The New York City Council voted 40 to 7 to ban horse carriages from Central Park starting in 2028, following the death of an Indian tourist.",
+        "outlets": 2,
+        "published": "2026-10-23T15:42:38+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/central-park-horse-carriage-ban-romanch-law-indian-tourist-death-ptag-3023845-2026-10-23?utm_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/23/nyregion/horse-carriage-vote-drivers-city-council.html"
+          }
+        ]
+      },
+      {
+        "headline": "Justice Department sues to block Alaska Senate certification if Sullivan loses",
+        "summary": "The Justice Department filed a federal lawsuit seeking to block certification of the Alaska Senate election if Senator Sullivan loses due to misallocated votes.",
+        "outlets": 3,
+        "published": "2026-10-23T15:44:32+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-admin-sues-to-block-alaska-senate-certification-if-sen-dan-sullivan-loses/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/live/2026/oct/23/trump-florida-midterms-ramaswamy-latest-updates"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-administration-files-lawsuit-to-block-possible-democratic-win-in-alaska-senate-race"
+          }
+        ]
+      },
+      {
+        "headline": "Two former FBI officials charged with lying about Hunter Biden probe",
+        "summary": "Two former FBI agents were each charged with one count of lying to Congress regarding the Hunter Biden laptop investigation.",
+        "outlets": 2,
+        "published": "2026-10-23T15:25:47+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/fbi-officials-charged-lying-to-congress-hunter-biden-laptop/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/2-ex-fbi-officials-charged-with-making-false-statements-about-hunter-bidens-laptop"
+          }
+        ]
+      },
+      {
+        "headline": "Justice Department investigates Corey Lewandowski over Homeland Security role",
+        "summary": "Trump's former campaign manager Corey Lewandowski is facing a Justice Department investigation over allegations that he used his Department of Homeland Security role for financial gain.",
+        "outlets": 2,
+        "published": "2026-10-23T14:58:19+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6ly0dg453v8o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/22/us/politics/corey-lewandowski-justice-dept-inquiry.html"
+          }
+        ]
+      },
+      {
+        "headline": "Court orders Trump to testify in $10 billion BBC lawsuit discovery",
+        "summary": "Donald Trump has been ordered to testify during discovery in his $10 billion lawsuit against the BBC, facing potential sanctions if he fails to cooperate.",
+        "outlets": 2,
+        "published": "2026-10-23T13:17:46+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/23/trump-ordered-to-testify-in-10bn-bbc-lawsuit-discovery-what-happens-now?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmy0ryjx7741o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Border official Rodney Scott defends $46 billion Texas border wall",
+        "summary": "CBP commissioner Rodney Scott defended the planned $46 billion border wall project in Texas despite a court-ordered construction pause and mounting opposition.",
+        "outlets": 1,
+        "published": "2026-10-23T12:18:25+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/23/trump-border-official-big-bend-border-wall"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Haryana power employees call off strike after Chief Minister Saini's assurance",
+        "summary": "Haryana Chief Minister Nayab Singh Saini announced that electricity employees called off their three-day strike after the state invoked Section 108 of the Electricity Act and ruled out privatisation.",
+        "outlets": 2,
+        "published": "2026-10-23T14:03:20+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/cm-nayab-saini-says-haryana-power-employees-strike-being-called-off-there-will-be-no-privatisation-of-any-kind-11792763456803.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/wealth/save/as-idbi-bank-employees-call-for-november-2-and-3-all-india-strike-united-forum-of-bank-unions-extends-support/articleshow/135140255.cms"
+          }
+        ]
+      },
+      {
+        "headline": "External Affairs Ministry blames China for recurring border disturbances",
+        "summary": "The Ministry of External Affairs attributed periodic border disturbances to China following public remarks by the ITBP chief.",
+        "outlets": 2,
+        "published": "2026-10-23T13:03:53+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/border-gets-disturbed-from-time-to-time-mea-on-itbp-chiefs-remark-blames-china/articleshow/135146689.cms"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/defence/china-face-offs-ongoing-along-arunachal-pradesh-border-says-itbp-chief-shatrujeet-singh-kapoor/articleshow/135138047.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Firecracker blast in Bihar's Siwan district leaves four dead",
+        "summary": "Four people were killed and several injured after an explosion ripped through a house storing firecrackers in Almapur village in Bihar's Siwan district.",
+        "outlets": 4,
+        "published": "2026-10-23T15:25:46+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/bihar/several-feared-dead-in-a-firecracker-factory-blast-in-bihars-siwan-district/article71616766.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/blast-siwan-bihar-firecracker-factory-dead-injured-rescue-fire-101792765297355.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/patna/4-dead-as-blast-rips-through-house-storing-firecrackers-in-bihar-village/articleshow/135149442.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.aajtak.in/bihar/story/siwan-alampur-firecracker-house-blast-deaths-bihar-lclcn-strc-2678477-2026-10-23?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "‘Ram ne Yadav ko maara, B.Com’: Bizarre entries in voter list for UP MLC polls",
+        "summary": "Uttar Pradesh MLC polls saw bizarre voter list entries such as ‘Ram ne Yadav ko maara’ and ‘B.Com’ in the father’s name column, prompting a probe.",
+        "outlets": 3,
+        "published": "2026-10-23T13:07:04+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/ram-ne-yadav-ko-maara-b-com-bizarre-entries-in-voter-list-for-up-mlc-polls-101792760824532.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/lucknow/on-up-voter-list-ram-ne-yadav-ko-mara-s/o-murkh-chandra-yadav/articleshow/135131742.cms"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/uttar-pradesh/unusual-names-details-crop-up-in-electoral-roll-for-mlc-polls-in-up-eci-cites-software-error/article71614964.ece"
+          }
+        ]
+      },
+      {
+        "headline": "TVK-led bloc, DMK walk out of ECI meeting in Tamil Nadu, seek CEC’s resignation",
+        "summary": "Minister CTR Nirmal Kumar said ruling Tamilaga Vettri Kazhagam has opposed the SIR from the beginning",
+        "outlets": 4,
+        "published": "2026-10-23T10:00:17+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/tamil-nadu-ruling-bloc-dmk-reps-walk-out-of-eci-meeting-seek-cec-s-resignation-101792748274873.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/several-protesters-detained-as-anti-sir-march-heads-to-eci-headquarters/articleshow/135143443.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/wont-let-go-of-our-right-to-vote-anti-sir-protesters-march-to-ec-headquarters/articleshow/135142693.cms"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNLVgxN0hMNVdtcnc3Ni1vQnVFTWstdDdUOHd2N0hXUjUyTURPcDhMRzMwSEd0REhDUUdrX0FNc1RMZUZ6OVYyZ2dicm1DRHVCUEFhMlc2RkNKa3RVcDlCWC1OLXJzV2ZGSXl2enp2ZDdVMG1sVjcwUEhUV2J6cXNwemNmeVM1N2RTa1FwMnZPMG9QMm5MbU9JZnYwamdEd1NQUDZ2LU1VQXp1aldnQ0gtV0pLNXRSMTNVSXZWVnhGTVVDRDM2NDdUTG5DckJaZE1ZdXI2TmJoMkEyQTJDekRHcnEwOGRJaTMyOFM4VzIwV1ptUXljai130gH-AUFVX3lxTE9keEozTjJmQnZBaU04Y1FSTU9yZ0ZiZ2ZFMkFqbmZ0WXVSS0VhVHFISmdRT29HLThCZHBvY1hVN241aFNDNmVWV2ZnVVR1QkhzUVpFdC1aYW5lZXdSWm54WUtOZXJnMG1HZWdoZkFQbFRsOW1HRW9UYW9leHhvdVZHRC1ZVGpwWnludWY1OWF2QTVaNzZUd0ZCaWtDN0xoVFdScVc1VWRfbGRVUVppYVlwN3FfY3pMbnBrWjBuRXJUSjl2bXlpR1RCd0U1Zkt1dVRjcWZNN3F3RzZXMjFkSkV2V3BPUFRJZWw3SzZxVkRVZnZWVWtoeHVJZ1pKd01B?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi court permits US national Matthew VanDyke extended stay outside India",
+        "summary": "A Delhi court allowed US national Matthew VanDyke, held in a Myanmar arms training case, to remain outside India longer as the NIA requested additional investigation time.",
+        "outlets": 2,
+        "published": "2026-10-23T09:45:23+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/delhi-court-extends-permission-for-us-national-matthew-vandyke-6-ukrainians-to-stay-outside-india-101792742306976.html"
+          },
+          {
+            "source": "The New Indian Express",
+            "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOdXU5MGNVVVdpelIxMVd6Q2ZwbDhoWmRGTXhSTUJLUG05WndJTENSaXR3VzdIbkNaV2ppam1YbjVHWW9zVDJLeHlDLUo3bG80dW5qaUNPMTJuaWFkcnVnY1kzSHh5d04tdXFESjRpMlA0UklOMzJvSjR6Ym5KSHdvY2xGWnpWcHF6OF84MzdyWEVrVll2YVg2MVg0X3FTc0d2WEdyeDBpSlk2NF9LYkx3X1BlMHhxSUNnd1l0b0tOR1I5VF8yaE8zQkV0dHcxNjVqQ3lz0gHgAUFVX3lxTE9DREVaT3k2am1xRXNSbU12Q0wwN1ZhRENfOWRxUHNkV2FRNU1oeGdPd01WZWY0TDhqOVhjZnpqd0N3TTFKVWZwTTJ3dHJJLVVhOXRXT0VkMmtSVVRMVUdYdkhueDZSaUhBUEwwWDlWNG0yU09XZU9Za081WUR2eWh1dS04MTU3Y3FhanFqQ05uVmFpWVA5R3dNZnJDYXI3U0p3X0FwLUhZQ1VKakJIMHJtaDRveHMxd3B4VmtkQWdubEJNeW9TTlFuTmVoTEVxUG9pUjQteEx1clU4eVUtZzBm?oc=5"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Gunmen kill at least seven at church funeral in Jordan",
+        "summary": "Gunmen opened fire during a church funeral in Jordan's Karak governorate, killing at least seven people and injuring 28, prompting a nationwide manhunt.",
+        "outlets": 7,
+        "published": "2026-10-23T15:36:20+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/jordan-shooting-greek-orthodox-church-karak/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/23/world/middleeast/jordan-church-shooting.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/killed-injured-gunmen-open-fire-during-funeral-at-church-in-jordan-king-abdullah-reacts-3023807-2026-10-23?utm_source=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/23/at-least-seven-killed-after-gunmen-open-fire-at-church-in-jordan?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Israel orders extensive West Bank operation after two soldiers killed",
+        "summary": "Prime Minister Benjamin Netanyahu ordered an extensive military operation in the West Bank after two Israeli soldiers and two Palestinian gunmen were killed in an exchange of fire near Hebron.",
+        "outlets": 6,
+        "published": "2026-10-23T14:19:30+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/23/netanyahu-orders-very-extensive-operation-west-bank-two-israeli-soldiers-killed"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/23/nx-s1-6013333/netanyahu-closure-west-bank"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/israeli-military-says-2-soldiers-were-killed-in-the-west-bank-attack-that-also-left-2-gunmen-dead"
+          }
+        ]
+      },
+      {
+        "headline": "French prosecutors investigate deadly shooting near Paris as terrorism",
+        "summary": "Antiterrorism prosecutors opened an investigation after a gunman fired from a car in several locations southwest of Paris, killing one person and wounding five others before being arrested.",
+        "outlets": 4,
+        "published": "2026-10-23T14:48:02+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/23/world/europe/france-shooting.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/gunman-terrorist-attack-paris-suburb/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd25rYjlETk9idVdWUllhYUVidkpWMzVodndmZXlWanp4VFEzeDU4T1JfOFpnZ2xNaXV1TWctcTB3VFlQOWFJWTFEWW1jbl9WLUt4c1AtZmRoZkRtcWZtbjFYbEpiMG4wNG1YZzd4VGFIRkNRcHNKbVhVY3FLT0ZwVVQ1RFRrOE5FZFNhUk0xVDlxemJRSlJMNzVoWkxuN1lsc3hXaXhDXzdqZlU?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Brazil prepares for tense presidential election runoff",
+        "summary": "Brazil is heading into a tense presidential runoff as polls show incumbent Lula closing the gap against conservative challenger Flavio Bolsonaro amid surging evangelical and rural support.",
+        "outlets": 3,
+        "published": "2026-10-23T11:38:12+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/23/world/americas/brazil-election-voters-lula-bolsonaro-minas-gerais.html"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/23/nx-s1-6004277/brazil-vote-runoff-lula-bolsonaro"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/23/what-to-know-as-brazil-prepares-for-tense-presidential-run-off?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Adani Power second-quarter profit surges 134 percent to Rs 6,919 crore",
+        "summary": "Adani Power reported a 134% year-on-year surge in second-quarter net profit to Rs 6,919 crore, alongside a 45% increase in revenue.",
+        "outlets": 2,
+        "published": "2026-10-23T09:15:36+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/adani-power-q2-results-cons-profit-zooms-134-yoy-to-rs-6919-crore-revenue-jumps-45/articleshow/135141294.cms"
+          },
+          {
+            "source": "The Economic Times",
+            "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOck5rMkNWcVFBTmVyQnE1dzRZQVRNNkJlbnRyZlVjRzZuTmNQa1ExazVJZ0FRMS1ieVhGX2dXejBrR0RPa2xUYWlyVlEyTEJ5UHN2NkFnaWlTS0stWW9ENjB3b09ScnFjZ3FSRGxmaFlPWnVlUjc3VTFHSktHM1AydXRsYUExVnRXZXZGZXZ4Ni0wOFVXak1kUFMzN0J0clBja3dsXy1mV1ZxOVBlOTJrMkVEdExqczA1TWVCV0VrSi1OLWZHNzV3aWVub2hOV0hvUi04b29fdFRRY3J1czhMc0xzck4yYlV1TzNDZ3Mzc0ZwUdIB9wFBVV95cUxQcFBxNjFjU3FZbGkyM1VmemR0Z0RVYXNoQmFDNTU1X3N6Qk1EeDBaWkk0bXpTcmgtcTBxSTFzQmtSTnotTjdGODZxS09vMUZ0Rk1Cd09hb1hZUGtzWWM5QzdEb3BkT1BQcjllUnZ3aU8xaUgzOXRFUWZmNFJyV3YxUkwwWXZkRThRZ3h1MHhMZUtmZ1NNTDFFYWNWeGt5OExYRXJOeldSNEhDQmRVT0hSaDI4aXZBbU9PLXVLb01pU1Jmdk5oRUJyeDc2SzNuZTg5NzdFTS1UWkJ4cFYtWHZjU0I0eE85Sl93c2FzOHJBR0EwQlkzMVU0?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Tata Motors reports Rs 1,254 crore profit in second quarter",
+        "summary": "Tata Motors returned to profitability with Rs 1,254 crore in second-quarter earnings, supported by a 42% rise in domestic commercial vehicle sales.",
+        "outlets": 1,
+        "published": "2026-10-23T14:16:51+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/tata-motors-returns-to-profit-with-1-254-crore-in-q2-earnings-as-cv-sales-rise-42-11792761340678.html"
+          }
+        ]
+      },
+      {
+        "headline": "SpaceX’s mobile carrier push reportedly involves tapping into 80,000 cell sites",
+        "summary": "SpaceX is planning to access at least 80,000 cell sites as part of efforts to compete directly with Verizon, T-Mobile, and AT&T, according to a report from Bloomberg. Sources tell the publication that SpaceX is in talks with Crown Castle Inc., one of the nation's largest cell…",
+        "outlets": 1,
+        "published": "2026-10-23T15:16:24+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/science/1017477/spacex-cell-sites-major-us-carrier"
+          }
+        ]
+      },
+      {
+        "headline": "Meta delays new business terms following publisher pushback on AI scraping",
+        "summary": "Meta postponed enforcing its updated business terms after news publishers expressed concern that the rules would permit the company to scrape their websites for AI model training.",
+        "outlets": 1,
+        "published": "2026-10-23T14:47:41+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping"
+          }
+        ]
+      }
+    ]
+  }
+}
