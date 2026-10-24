@@ -1,0 +1,538 @@
+{
+  "date": "2026-10-24",
+  "generated_at": "2026-10-24T14:34:12+00:00",
+  "status": "ok",
+  "model": "gemini-flash-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "US warns of advanced Iranian attack plots and orders Saudi drawdown",
+        "summary": "The United States ordered diplomats to leave Saudi Arabia and reduced staff at regional missions after intelligence indicated Iranian plots against American personnel reached advanced stages.",
+        "outlets": 8,
+        "published": "2026-10-24T14:11:59+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/23/us/politics/security-warnings-iran-threats.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/International/live-updates/iran-live-updates/?id=137370653"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/24/is-iran-planning-attacks-on-americans-why-is-the-us-on-alert?traffic_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/us-on-alert-iran-plots-to-target-american-personnel-abroad-reach-advanced-stages-report/articleshow/135167534.cms"
+          }
+        ],
+        "why": "Escalates Middle East conflict risks and directly threatens American personnel and regional security."
+      },
+      {
+        "headline": "Wanted Indian gangster Himanshu Bhau arrested in US immigration custody",
+        "summary": "Gangster Himanshu Bhau, wanted in multiple murder cases in India, was detained in Las Vegas alongside Neeraj during a joint operation by ICE and the FBI.",
+        "outlets": 3,
+        "published": "2026-10-24T05:16:19+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/gangster-himanshu-bhau-wanted-in-india-for-murder-extortion-in-ice-custody-in-us-101792807317492.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/who-is-himanshu-bhau-one-of-indias-most-wanted-gangsters-and-lawrence-bishnoi-rival-arrested-by-fbi-in-the-us-11792805108262.html"
+          },
+          {
+            "source": "The New Indian Express",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPOWRwZFBwSmIyV2NKbEVXMHpmWjN5M0czU29WY0ZLWnVEamVqTUpPaVprT2pjLUhtUWpGNS1JemtiQWdvVkFSMXlxX081OXc4c202a2Nmem5QeTZOOUZ3eERTckJsNk11cXBYeWk5b0R1YUh6SFJWaVIyZGhseFJOM0J2NXBUbGJnUktiN0ZRNTROd19KRlNiaEczazN2dEZ6VVI5MzFR0gGzAUFVX3lxTE9LLXgxWUM1ZEVnSFBhNjJSa2paSjNTc2hnb2J1TXdsUzRieW13RWxVemJkejhuZlNuVHMtaFBjOFhSVW43X3ZEaTNtcG1FZzJrdmVnaXV5cEllQTlXTjRKX2UxZTBwQ2dRcm4yQjFZNXdZNFlyZ2dERW1RSXl3M1Z5X1pNcHlOYjgyaXF6N183dFVpRTJLMnM2RWJmU0sxc2M0MmdfTDZVT2xDVnNKbjdRaWtR?oc=5"
+          }
+        ],
+        "why": "A significant cross-border capture of a major fugitive sought by Indian law enforcement."
+      },
+      {
+        "headline": "White House says Melania Trump brokered truce for Ukraine city 'on brink of disaster'",
+        "summary": "Ukraine and Russia confirm the truce in Russian-occupied Oleshky, where residents have had to eat garden weeds to survive.",
+        "outlets": 5,
+        "published": "2026-10-24T07:17:44+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/news-wrap-white-house-says-melania-trump-brokered-localized-ceasefire-deal-in-oleshky"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/23/us/politics/ceasefire-ukraine-melania-trump.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/russiaukraine-war-melania-trump-brokers-localised-ceasefire-in-oleshky-all-you-need-to-know-about-the-starving-city-11792813675780.html"
+          }
+        ]
+      },
+      {
+        "headline": "Gunmen kill nine at Greek Orthodox church funeral in Jordan",
+        "summary": "Three attackers opened fire at a funeral at a Greek Orthodox church in Jordan, killing nine people and injuring 40 others before fleeing.",
+        "outlets": 8,
+        "published": "2026-10-24T14:24:15+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/24/seven-killed-and-40-injured-after-gunmen-open-fire-at-church-funeral-in-jordan"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/24/nx-s1-6015414/shooting-church-jordan"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/23/world/middleeast/jordan-church-shooting.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "A rare, lethal assault on a Christian site sparking heightened security in Jordan."
+      },
+      {
+        "headline": "Magnitude-7 earthquake strikes Tibet, killing at least 16 people",
+        "summary": "A magnitude-7 earthquake hit northern Tibet, killing at least 16 people, injuring 54, and destroying hundreds of homes before aftershocks were recorded.",
+        "outlets": 5,
+        "published": "2026-10-23T07:53:58+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/22/world/asia/earthquake-tibet-china.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/qinghai-earthquake-5-3-magnitude-tremor-tibet-quake-relief-ptag-3024295-2026-10-24?utm_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/rest-of-world/days-after-deadly-quake-fresh-5-4-tremor-jolts-tibet/articleshow/135168197.cms"
+          }
+        ],
+        "why": "A deadly natural disaster causing significant casualties and structural damage across the region."
+      }
+    ],
+    "us": [
+      {
+        "headline": "DOJ sues to halt Alaska Senate certification if Dan Sullivan loses",
+        "summary": "The Trump administration filed a lawsuit seeking to block certification of the Alaska Senate election if Republican Dan Sullivan loses to Mary Peltola, alleging voter confusion over candidate names.",
+        "outlets": 4,
+        "published": "2026-10-24T11:29:34+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-admin-sues-to-block-alaska-senate-certification-if-sen-dan-sullivan-loses/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/capehart-and-ponnuru-on-trumps-threat-to-block-alaska-election-results"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/23/us/politics/justice-dept-alaska-senate-race-sullivan.html"
+          },
+          {
+            "source": "Anchorage Daily News",
+            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQVpTOGxnNWZyWU01Rm1iRUhIV1BCWWZUcEUyVy1ZbW11cXhoZTEwb2NpRWxtR1pXZFhYNDJHc014cHAwOFc2czBpaWcyR1RQUE4xeXF2bVdfdEtaVnBWZnQwb2MwQ1AwTjRUVkpuZTJFTGUwNmFPYXNxUjhiMGFUdjl0bjFaY3cwS3Z5ak43MFhZU2NIT0Nzelg0NWhTNFNqOHY4dG0yQXNLUkdldUhtbDdFT0hFNjdHTUVqZ1RubmNQM2d0ZFZDLVFrWUI1bUVManc?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Two former FBI agents charged with lying about Hunter Biden probe",
+        "summary": "Federal prosecutors charged two former FBI agents with one count each of lying to Congress regarding the investigation into Hunter Biden's laptop.",
+        "outlets": 4,
+        "published": "2026-10-24T02:52:21+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/fbi-officials-charged-lying-to-congress-hunter-biden-laptop/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/23/us/politics/hunter-biden-ex-fbi-officials-charged.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/wireStory/2-fbi-officials-charged-making-false-statements-hunter-137510537"
+          },
+          {
+            "source": "The Washington Post",
+            "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOc0pJTXdtekptdERlb0dybl9DMGZDa1doWllUS0Rsa0VXeVQ5S2JmRVhiNWNnTElhR3FsbHFRUFQ0c0hjcmUzNXM5aEZmQnd5RXJYSzI5bndraW1LV0RfUFBmU0NXeGx4cUZJb3hGZzRVY0w5anh2U2c3ZWxfRmVqTE1pcUNHZS1KMG1WbWFYRjQ0X3RacFBqUHFjQXJ5YUh0MGpSZmJrWE4zZnZzZnhrLWozTGpRUnZ6WklVbzdqNUx4SlhMbkpDX3dJZThhcXg3V2xjQVBJdHBrU2s?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "DOJ directs California counties to set aside alleged noncitizen ballots",
+        "summary": "Federal prosecutors sent letters demanding that registrars across California set aside and verify ballots that the Justice Department suspects may belong to noncitizens.",
+        "outlets": 2,
+        "published": "2026-10-24T03:48:46+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/doj-california-counties-set-aside-verify-certain-ballots-noncitizens/"
+          },
+          {
+            "source": "Los Angeles Times",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaFBSdEwxdndVSWV2c0Q2dFk0Y2ZVcHpzZmFCbVoxQmdNNGpoZU9xcWhMelR1SncxWUJ3ZC1xWnFzZjVWZ3BMRmZHbmhxTjdzbHpEc1FTdlhIclZ2Q0JVU2Y5bmtfU0hPYWhtS1dkWEcwODkyZ3BlWExpT05jaVNwVGZESzlpdzg5cllKdUd4VVhQX19PRzVrV05fZVBuNm05MXJiX3ktMFhXU05jSnc?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "US eases certain tariffs on Canadian agricultural and forestry imports",
+        "summary": "President Donald Trump announced the easing of 50 percent tariffs on select Canadian agricultural and forestry products starting October 30 while adding other goods to the list.",
+        "outlets": 2,
+        "published": "2026-10-24T02:27:01+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/us-ends-tariffs-on-some-canadian-products-amid-tight-mid-term-race-for-republican-susan-collin-11792807945270.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/23/business/trump-susan-collins-canada-tariffs.html"
+          }
+        ]
+      },
+      {
+        "headline": "CDC reports 178 new measles cases amid nationwide outbreak",
+        "summary": "Federal health authorities reported 178 additional measles cases in the United States, bringing the national tally to 4,588.",
+        "outlets": 1,
+        "published": "2026-10-24T12:02:00+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/24/measles-outbreak-reporting"
+          }
+        ]
+      },
+      {
+        "headline": "Trump and Vance defend controversial Vivek Ramaswamy campaign advertisement",
+        "summary": "Donald Trump and JD Vance defended a contentious campaign ad released by Ohio Republican gubernatorial candidate Vivek Ramaswamy that triggered bipartisan backlash.",
+        "outlets": 3,
+        "published": "2026-10-24T14:13:25+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/trump-vance-defend-controversial-ramaswamy-attack-ad-obama-campaigns-with-amy-acton/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/24/us/politics/vivek-ramaswamy-ad-ohio-amy-acton.html"
+          },
+          {
+            "source": "CNN",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE11cGp0dXpmLS1xdDBpSk4xY1FuT3o5RUdhQ3ZXZ3FDRUNCb0VKMkhoVE5NUjRmdVRpbVVNQjZkZGEyNS1md1RXME5OZHFjdXp3Uy1DSDN2YlI0Z2V3TmVrV2ljR0N3S200TEpQd3VLczFjTzFqV2xDWlRQS0o?oc=5"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Defence Secretary Rajesh Kumar Singh receives tenure extension until 2027",
+        "summary": "The government granted Defence Secretary Rajesh Kumar Singh a one-year extension, lengthening his tenure to October 2027 instead of October 31, 2026.",
+        "outlets": 4,
+        "published": "2026-10-24T14:26:08+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/defence-secretary-rajesh-kumar-singh-gets-one-year-extension-till-october-2027/article71620562.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/defence/news/defence-secretary-rajesh-kumar-singh-who-holds-additional-charge-as-drdo-chairman-gets-one-year-extension/articleshow/135172071.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/defence-secretary-rajesh-kumar-singh-gets-one-year-extension-till-october-2027-3024356-2026-10-24?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/centre-extends-defence-secretary-rajesh-kumar-singhs-tenure-by-two-years-101792831308390.html"
+          }
+        ]
+      },
+      {
+        "headline": "Andhra Pradesh, Odisha on alert as IMD warns of possible cyclone over Bay of Bengal by October 26",
+        "summary": "The IMD has issued a pre-cyclone watch for Andhra Pradesh and adjoining South Odisha coasts amid the impending cyclone.",
+        "outlets": 2,
+        "published": "2026-10-24T09:53:54+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/andhra-pradesh-odisha-on-alert-as-imd-warns-of-possible-cyclone-over-bay-of-bengal-by-october-26-sunday-101792830961854.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/science/story/south-india-weather-forecast-heavy-rain-october-imd-cyclone-3024156-2026-10-24?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Seventeen Kuki militants under SoO agreement arrested in Manipur",
+        "summary": "Authorities arrested 17 Kuki militants under the Suspension of Operations pact at Mt Sinai Camp in Saimol village after detecting mismatches in their identities.",
+        "outlets": 1,
+        "published": "2026-10-24T13:56:57+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/17-kuki-militants-under-soo-deal-arrested-in-manipur-mismatch-found-in-identities-101792848936744.html"
+          }
+        ]
+      },
+      {
+        "headline": "Karnataka CM clears prosecution of IAS officer in exam leak",
+        "summary": "Karnataka's chief minister approved the prosecution of an IAS officer linked to the KPSC recruitment question paper leak, in which candidates allegedly paid up to ₹40 lakh.",
+        "outlets": 2,
+        "published": "2026-10-24T12:26:26+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/karnataka-cm-d-k-shivakumar-clears-prosecution-of-ias-officer-gyanendra-kumar-gangwar-over-alleged-kpsc-exam-paper-leak-no-room-for-corruption-101792843021123.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/karnataka-cm-allows-prosecution-sanction-against-ias-officer-gyanendra-kumar-gangwar-in-exam-scam-12229536#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "CBI nabs fodder scam accused Satyendra Kumar after 25 years",
+        "summary": "The CBI arrested fodder scam accused Satyendra Kumar at Lucknow railway station following 25 years on the run, returning him on transit remand to Ranchi.",
+        "outlets": 2,
+        "published": "2026-10-24T09:25:06+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/fodder-scam-case-cbi-nabs-satyendra-kumar-accused-on-the-run-for-25-years-from-lucknow-station-all-you-need-to-know-11792833040950.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/man-on-run-for-25-years-held-in-bihar-fodder-case-101792781098855.html"
+          }
+        ]
+      },
+      {
+        "headline": "Ashoke Sen becomes first Indian physicist awarded Oskar Klein Medal",
+        "summary": "Physicist Ashoke Sen has become the first Indian scientist to be awarded the prestigious Oskar Klein Medal.",
+        "outlets": 2,
+        "published": "2026-10-24T12:19:29+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/science/story/ashoke-sen-2026-oskar-klein-medal-first-indian-physicist-3024131-2026-10-24?utm_source=rss"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNU19BTHJMTG85MFJkUzBDRDJxOC15NzV6clhBQ3NaSG5oUFdpX2pPSjQ5d2lFcXRySXZ6YnVIeFVqdzYwWkRIU0U3eHZmYU0xYlNRRGtpd21FVDEzOVNZcEszanl3MHd5UXNjOGpJSlU1OEJZRVNhYVVoUklZTTN3SW4zOE1NT2ltaDdRSUN3SlhsUUlKYTNleWZoSlMzZnVLMkt5aE8wTHZjd28tZTJoaUpzaF9rUHJTTFlEZjBpeVZ4MWQ1d2xEZNIBzwFBVV95cUxNSmdrVnBMUV80Y0ZpVkJNQ0lMT3VMMEtfWDFHZEJVS1QwSGpqc3VxWnM1dzVFeXJRVGUxNUQzU1pPSEdLaW9xbFdqcXBEUlJaVFpnbHlIcmlZSzM3SkVsTWlmQlFEcmFwVjRTcms1NEc2bHMweVN5RFctaVgyRjEwaVBPazZQeWpVTWxWWXUtWE5LRm9zT2xTamg1SjFtMEt6dFpNSXozSS1OZk1YRmdaVFdYN0hHdmhjdEo3cmJxdy1MZGV0a0NMOTBXUl83Vnc?oc=5"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Kim Jong-un crosses newly opened bridge into China",
+        "summary": "North Korean leader travels over New Yalu River Bridge to meet senior Communist party member Kim Jong-un has visited China, inaugurating a bridge that connects the two countries and saying he hopes to expand cooperation with his neighbour. The North Korean leader arrived in the…",
+        "outlets": 3,
+        "published": "2026-10-24T13:34:56+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/24/kim-jong-un-crosses-newly-opened-bridge-into-china"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/24/world/asia/north-korea-kim-jong-un-china.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaVJ0Wk1NQ1B3YVBqY3BqdmVRemViZTZqd3QtcE11alNiM25HV2ZYVVZWcUJtdGw4U1o5cXlleFRNTTZVdG9TakRpTDFucGV6a1hXWjZ4OTNVd0tUdjJfdkhJRFpuQ1gycldFMkFVVVh2SldLQ1FXb0pyX1F0alhQOHBRZDlidmhNb3VyaEFCZUxzQmRwTkt5Ui01cEk3NzUwUi1tRFFaX1FTLXfSAbABQVVfeXFMTkVhU09XckZfdmNVRDNubFdzQzNPUC1Wd2I4QUFPRlZtRVVyTjVYX1NnWEtRRnRDWjFhTUZVUWljMjktRmlYek1yYk91ek91QmdNZXNDSkxLYm83Nk4zNjVVdVdpYm4wMmZMSk1POXIyUnNpZ1NpaUZvNlZCNldaVXh3Rzhwb1JmaHV3dGljbktiajNmclRXS2d6ZWU3ek96T1pvN0FNVE9uM1QteDlBSm0?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Suspect arrested after fire guts Eagle's Nest guesthouse in Germany",
+        "summary": "German police arrested a 33-year-old citizen after a fire gutted the historic former Nazi mountain retreat at the Eagle's Nest in southern Bavaria.",
+        "outlets": 6,
+        "published": "2026-10-24T14:28:15+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/24/blaze-engulfs-hitlers-eagles-nest-mountain-retreat-in-bavaria"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cr93zwjw1k4qo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/hitler-eagles-nest-mountain-retreat-fire-nazi/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/24/german-police-detain-suspect-after-fire-engulfs-hitlers-eagles-nest?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Paris shooting: 1 killed, 5 injured in Trappes, ahead of planned protests; Macron condemns ‘racist terrorist attack’",
+        "summary": "One person was killed and five others, including a 12-year-old girl, were injured in shootings in the Paris suburbs. Macron condemned the incident as a racist terrorist attack. Authorities arrested a 39-year-old suspect and launched an anti-terror investigation.",
+        "outlets": 4,
+        "published": "2026-10-24T02:12:14+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/paris-shooting-1-killed-5-injured-in-trappes-ahead-of-planned-protests-macron-condemns-racist-terrorist-attack-11792806507418.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6ev38dj1g8zo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/gunman-terrorist-attack-paris-suburb/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/24/deadly-racist-attack-in-france-are-hate-crimes-rising-in-europe?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Israeli military razes Hebron neighborhood following deadly checkpoint ambush",
+        "summary": "Israeli troops demolished buildings and displaced hundreds of families in Hebron after Prime Minister Benjamin Netanyahu vowed retaliation for an attack that killed two soldiers.",
+        "outlets": 2,
+        "published": "2026-10-24T13:17:13+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/24/israel-soldiers-raze-west-bank-neighbourhood-hebron-families-from-homes"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/24/world/middleeast/israel-military-hebron-west-bank.html"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Iran claims control of Strait of Hormuz after tanker blasts",
+        "summary": "Tehran claimed two supertankers struck naval mines in the Strait of Hormuz, asserting control over the waterway and warning American warships against entering the Persian Gulf.",
+        "outlets": 4,
+        "published": "2026-10-24T10:33:07+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/iran-claims-control-of-strait-of-hormuz-says-2-oil-tankers-hit-mines-warns-us-warships-against-persian-gulf-entry-11792836294358.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/iran-claims-strait-of-hormuz-control-warns-us-warships-against-entering-persian-gulf-amid-fresh-strike-threat/articleshow/135166686.cms"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-oil-gas-prices-strait-of-hormuz-midterms/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/24/iran-says-wont-allow-us-warships-to-get-close-as-trump-ponders-new-attacks?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Ukraine reports Starshield and Starlink satellite connections fully restored",
+        "summary": "Ukrainian officials announced that connections to the Starshield and Starlink satellite networks have stabilized after a week of service disruptions affecting military and drone operations.",
+        "outlets": 5,
+        "published": "2026-10-24T13:12:35+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/24/world/europe/ukraine-starshield-drone-speed.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/europe/beyond-starlink-how-ukraine-plans-to-cut-its-reliance-on-musks-satellite-network/articleshow/135168443.cms"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwkg5md14j8go?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/ukraine-starlink-drone-spacex-musk-speed-restriction/"
+          }
+        ]
+      },
+      {
+        "headline": "AU Small Finance Bank Q2 profit rises 53 percent",
+        "summary": "AU Small Finance Bank reported a 53 percent increase in its second-quarter net profit to Rs 858 crore, driven by business growth and improved asset quality.",
+        "outlets": 1,
+        "published": "2026-10-24T11:51:56+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/au-small-finance-bank-q2-profit-jumps-53-to-rs-858-crore/articleshow/135169847.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Moderna melanoma vaccine data fuels optimism for custom cancer treatments",
+        "summary": "Phase 3 clinical trial results for a personalized melanoma vaccine demonstrated promise, encouraging researchers pursuing mRNA vaccines for other cancers including glioblastoma and pancreatic cancer.",
+        "outlets": 3,
+        "published": "2026-10-23T18:42:32+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/23/well/cancer-vaccine-melanoma-study.html"
+          },
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/the-real-test-for-modernas-cancer-vaccine-isnt-about-beating-keytruda-its-keeping-cancer-from-coming-back-in-the-long-term-da9af99f?mod=mw_rss_topstories"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZGd4TmxtWGtzQTdiUlllRjVaWUFlNmpESnN4bW80RXJudFhlb1dMbFlmTTNSVVBXWlcwS0xqaDlIcGtwYThmOGx0azItWlRIQ3gzU2ZtOE02eUNKQTJKR25YUTVMUE94NW14RFI5WGQtbEpOaU5BYzl4ZENFRzZrX0JrTGZQQUpacl9XelFUWDIxNU9GbmFGWnhhRkRjTHZSNUFON3lEY2U3YXhoXzlQRExfdl9jYk81bWc?oc=5"
+          }
+        ]
+      }
+    ]
+  }
+}
