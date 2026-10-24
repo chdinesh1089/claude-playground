@@ -528,5 +528,19 @@
       "United"
     ],
     "outbound_stops": 0
+  },
+  {
+    "checked_at": "2026-10-24T16:23:03Z",
+    "weekend_start": "2026-10-30",
+    "weekend_end": "2026-11-01",
+    "from_airport": "DFW",
+    "to_airport": "ORD",
+    "currency": "USD",
+    "status": "ok",
+    "price": 296,
+    "airlines": [
+      "Frontier"
+    ],
+    "outbound_stops": 1
   }
 ]

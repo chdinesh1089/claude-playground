@@ -107,16 +107,16 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 
 <section class="card">
 <div class="tile">
-  <div class="tile-label">Cheapest round trip &middot; Fri Oct 23 → Sun Oct 25</div>
-  <div class="tile-value">$613</div>
-  <span class="delta">No change since previous check</span>
-  <div class="tile-meta">United &middot; Nonstop outbound &middot; checked Oct 23, 12:37 PM CT</div>
+  <div class="tile-label">Cheapest round trip &middot; Fri Oct 30 → Sun Nov 1</div>
+  <div class="tile-value">$296</div>
+  <span class="delta delta-down">&#9660; $317 since previous check</span>
+  <div class="tile-meta">Frontier &middot; 1 stop outbound &middot; checked Oct 24, 11:23 AM CT</div>
 </div>
 </section>
 
 <section class="card">
 <h2>Price trend for the upcoming weekend</h2>
-<p class="chart-sub">Fri Oct 23 → Sun Oct 25 · each dot is one daily check</p>
+<p class="chart-sub">Fri Oct 30 → Sun Nov 1 · each dot is one daily check</p>
 <div class="chart" id="chart">
   <svg id="chart-svg" role="img" aria-label="Round-trip price by check date"></svg>
   <div class="tooltip" id="tooltip"></div>
@@ -129,6 +129,7 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <table>
 <thead><tr><th>Checked</th><th class="num">Price</th><th>Weekend</th><th>Airline</th><th>Outbound</th></tr></thead>
 <tbody>
+<tr><td>Oct 24, 11:23 AM CT</td><td class="num">$296</td><td>Fri Oct 30 → Sun Nov 1</td><td>Frontier</td><td>1 stop</td></tr>
 <tr><td>Oct 23, 12:37 PM CT</td><td class="num">$613</td><td>Fri Oct 23 → Sun Oct 25</td><td>United</td><td>Nonstop</td></tr>
 <tr><td>Oct 22, 12:45 PM CT</td><td class="num">$613</td><td>Fri Oct 23 → Sun Oct 25</td><td>American</td><td>Nonstop</td></tr>
 <tr><td>Oct 21, 12:47 PM CT</td><td class="num">$550</td><td>Fri Oct 23 → Sun Oct 25</td><td>Contour Airlines</td><td>1 stop</td></tr>
@@ -172,10 +173,10 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 </div>
 </section>
 
-<footer>Last check Oct 23, 12:37 PM CT. Prices are spot checks, not guaranteed fares.</footer>
+<footer>Last check Oct 24, 11:23 AM CT. Prices are spot checks, not guaranteed fares.</footer>
 </main>
 
-<script type="application/json" id="points">[{"t": "2026-10-17T16:02:56Z", "label": "Oct 17, 11:02 AM CT", "price": 468, "airline": "Contour Airlines", "stops": "1 stop"}, {"t": "2026-10-18T16:15:33Z", "label": "Oct 18, 11:15 AM CT", "price": 468, "airline": "Contour Airlines", "stops": "1 stop"}, {"t": "2026-10-19T18:54:57Z", "label": "Oct 19, 1:54 PM CT", "price": 592, "airline": "American", "stops": "Nonstop"}, {"t": "2026-10-20T17:39:27Z", "label": "Oct 20, 12:39 PM CT", "price": 491, "airline": "Contour Airlines", "stops": "1 stop"}, {"t": "2026-10-21T17:47:44Z", "label": "Oct 21, 12:47 PM CT", "price": 550, "airline": "Contour Airlines", "stops": "1 stop"}, {"t": "2026-10-22T17:45:53Z", "label": "Oct 22, 12:45 PM CT", "price": 613, "airline": "American", "stops": "Nonstop"}, {"t": "2026-10-23T17:37:29Z", "label": "Oct 23, 12:37 PM CT", "price": 613, "airline": "United", "stops": "Nonstop"}]</script>
+<script type="application/json" id="points">[{"t": "2026-10-24T16:23:03Z", "label": "Oct 24, 11:23 AM CT", "price": 296, "airline": "Frontier", "stops": "1 stop"}]</script>
 <script>
 (function () {
   const points = JSON.parse(document.getElementById("points").textContent);
