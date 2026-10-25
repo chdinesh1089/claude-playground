@@ -1,0 +1,499 @@
+{
+  "date": "2026-10-25",
+  "generated_at": "2026-10-25T14:57:16+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Cyclone Arnab threatens Andhra Pradesh and Odisha coasts",
+        "summary": "A depression over the Bay of Bengal is intensifying into a very severe cyclonic storm, bringing heavy rainfall and strong winds to Coastal Andhra Pradesh and Odisha.",
+        "outlets": 4,
+        "published": "2026-10-25T14:42:47+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/cyclone-andhra-pradesh-odisha-live-updates-october-25-2026/article71622459.ece"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/andhra-on-alert-as-depression-over-bay-of-bengal-likely-to-intensify-into-severe-cyclonic-storm/articleshow/135188851.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/andhra-pradesh-odisha-on-alert-as-imd-warns-of-possible-cyclone-over-bay-of-bengal-by-october-26-sunday-101792830961854.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/cyclone-arnab-depression-over-bay-of-bengal-to-intensify-when-and-where-will-landfall-occur-imds-latest-updates-11792917730320.html"
+          }
+        ],
+        "why": "Major weather emergency affecting millions in eastern India."
+      },
+      {
+        "headline": "Brazilians vote in high-stakes presidential runoff",
+        "summary": "Incumbent leftist president Luiz Inácio Lula da Silva faces a runoff election against far-right challenger Flávio Bolsonaro in a contest set to reshape Latin American politics.",
+        "outlets": 3,
+        "published": "2026-10-25T14:41:17+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/25/lula-da-silva-flavio-bolsonaro-brazil-presidential-election"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/25/world/americas/brazil-election-lula-bolsonaro-what-to-know.html"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdkpfT3YtQXVCRlQ2RkU5d1JxQ1dSYUY5WXYydnVvN0lGWHB1NkR2MjIyb3BoZ250UVJfSEpTb05SRUx0VmFxS1pzWWNyVFhuZVRPVDRSVmVoTW9WSWFXWjQ2TlVoYTlNWTViSFRiZkMweWxnN2NzRWRUbjVHbFg2T3o4UDNzTmhlaEhTb3JSTDFVNTF4U2hJOE5ZVDFGV0VzR2U4UG1iN1c0cXhGYUsw?oc=5"
+          }
+        ],
+        "why": "Major global democratic election with geopolitical consequences."
+      },
+      {
+        "headline": "Serbians vote in parliamentary election challenging Vucic",
+        "summary": "Serbians are turning out in large numbers for a parliamentary election as a student-led movement challenges longtime leader Aleksandar Vucic.",
+        "outlets": 2,
+        "published": "2026-10-25T13:40:10+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/25/serbia-votes-as-student-led-bloc-challenges-longtime-leader-vucic?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/25/world/europe/serbia-election.html"
+          }
+        ],
+        "why": "Crucial European political showdown over long-standing leadership."
+      },
+      {
+        "headline": "Israel holds parliamentary elections amid ongoing regional conflict",
+        "summary": "Israel is holding its first parliamentary elections since the October 7, 2023, terror attacks, with Prime Minister Benjamin Netanyahu's political future on the ballot.",
+        "outlets": 1,
+        "published": "2026-10-25T13:27:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/israeli-election-to-test-benjamin-netanyahus-ability-to-hold-power/"
+          }
+        ],
+        "why": "Critical Middle East election with global security implications."
+      },
+      {
+        "headline": "Audi to build first US factory in Georgia with $4 billion investment",
+        "summary": "Volkswagen and Audi plan to invest billions in a new US facility in Georgia to produce SUVs, creating 4,500 jobs despite domestic cuts and trade tensions.",
+        "outlets": 4,
+        "published": "2026-10-25T13:43:19+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/oct/25/volkswagen-to-build-4bn-audi-suv-factory-in-us-despite-job-cuts-at-home"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/24/business/audi-factory-georgia-trump.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/audi-to-invest-4-2-billion-in-first-us-factory-plans-to-build-2-lakh-suvs-annually-11792917236098.html"
+          },
+          {
+            "source": "DW.com",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPQTdMRzY4a3hyZDN5MUdQQUxjTVhieVNVVVU3ZElhWVVyTjI5MW9STEZnMTg2cGFkYzg0eWFKZVdxd0NtcElXcENzdUJncS0taTRQNkNwVGsta3RkNjFMX3N3S1BaYzVCZTJld0FuWmptNGpHaDUydDVLaTZyX0U0ZkNTY3NHOHZQT1RMNXllQkg1d9IBkgFBVV95cUxNZTgza0s2eWVFUDNJdUxER3A5QXVNcmIxN3BzMTR1YWFsLXlRdHYtTnFTM2ZCZDU0RXRXdVRvQ1VBZVNubjdIa0xIaU05Q1NBNzl0b2M3REJMN0U3UHY2d2NTXzI1akd0a1M1VUtaTlVoMjJHQU1PV29HTklVSi1EcmhBWG93LVFMdW5nX1BoSjkxQQ?oc=5"
+          }
+        ],
+        "why": "Major manufacturing investment creating thousands of US jobs."
+      }
+    ],
+    "us": [
+      {
+        "headline": "At least 11 injured in shooting near Florida university campus",
+        "summary": "A fight at a homecoming party near Florida A&M escalated into gunfire, injuring six adults and six juveniles.",
+        "outlets": 6,
+        "published": "2026-10-25T06:07:47+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/25/eleven-sustain-gunshot-wounds-in-shooting-near-florida-university"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/tallahassee-florida-shooting-a-m-university/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/12-injured-including-6-children-shooting-florida-university/story?id=137549623"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/25/us/tallahassee-shooting-florida-am-homecoming.html"
+          }
+        ]
+      },
+      {
+        "headline": "Obama campaigns for Democrats ahead of US midterm elections",
+        "summary": "Barack Obama hit the campaign trail in the Midwest to rally voters for Democrats in the final days before the midterm elections.",
+        "outlets": 4,
+        "published": "2026-10-25T02:27:15+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmj6jwe1j1gjo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/us-midterm-elections-obama-slams-trump-over-iran-war-white-house-renovation-saddam-opened-a-cheesecake-factory-11792892327106.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/video/137540917/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/obama-in-midwest-assails-cruelty-and-indecency-from-trump-and-his-allies-in-the-midterm-campaign"
+          }
+        ]
+      },
+      {
+        "headline": "Donald Trump casts early midterm ballot in Florida",
+        "summary": "Former president Donald Trump cast his early ballot in Florida ahead of the upcoming midterm elections.",
+        "outlets": 2,
+        "published": "2026-10-24T21:29:15+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-casts-his-midterm-ballot-early-in-florida"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-melania-vote-early-in-person-florida-saturday/"
+          }
+        ]
+      },
+      {
+        "headline": "SNAP enrollment drops after new federal legislation takes effect",
+        "summary": "Millions of Americans have been pushed off food stamps following the implementation of the One Big Beautiful Act.",
+        "outlets": 1,
+        "published": "2026-10-25T11:01:00+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/25/trump-food-stamp-cuts"
+          }
+        ]
+      },
+      {
+        "headline": "Trump administration moves to treat veterans with psychedelics",
+        "summary": "The administration has taken steps to treat millions of mentally ill veterans using psychedelic therapies.",
+        "outlets": 1,
+        "published": "2026-10-25T14:00:00+00:00",
+        "links": [
+          {
+            "source": "Politico",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNeU95T2R0elNycDN2LU9MbnRVaGxTNjltZy1CRjBwaTlzbmx1MFprNHNmMW1fQjU1SHRrVWlmaWVqRzVrYktKWU55cktSTlEtUUxDY1VseldVckVuajZMLXdjT3l4c1RSc0laUVZKbWs0VXBrZkR5WGZIcmgtU1VDbktqSE9SOGk0WEE?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Six Flags to add seatbelts on roller coasters after fatal incident",
+        "summary": "The amusement park operator announced comprehensive safety reviews and new seatbelt installations across all rides following a rider's death.",
+        "outlets": 2,
+        "published": "2026-10-24T21:45:35+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/24/business/six-flags-death-roller-coaster-seat-belt.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/six-flags-says-it-will-install-seat-belts-on-georgia-roller-coaster-after-riders-death"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "IndiGo and Air India prepare for Navi Mumbai airport transition",
+        "summary": "India's two largest airlines are set to handle nearly 3 million passengers from the upcoming Navi Mumbai airport.",
+        "outlets": 5,
+        "published": "2026-10-25T14:42:50+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/indigo-air-india-to-shift-to-navi-mumbai-airport-from-t2-adani-civil-aviation-11792933081157.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/flight-ops-to-shift-from-mumbai-to-navi-mumbai-airport-adani-airports-air-india-group-announce-plan-indigo-101792929144268.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/indigo-navi-mumbai-12-daily-international-flights-csmia-february-2027-3024730-2026-10-25?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/indigo-air-india-group-to-shift-flights-to-navi-mumbai-airport-12233359#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "PM Modi inaugurates RBI data centre and cybersecurity institute in Odisha",
+        "summary": "Prime Minister Narendra Modi inaugurated the Reserve Bank of India's new data centre and Cybersecurity Training Institute in Bhubaneswar.",
+        "outlets": 5,
+        "published": "2026-10-25T12:16:10+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/pm-modi-inaugurates-rbis-rs-169-crore-data-centre-cybersecurity-institute-in-odisha/articleshow/135190459.cms"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/pm-modi-inaugurates-rbis-rs-169-crore-data-centre-in-odisha-12233587#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/pm-modi-inaugurates-rs-169-crore-rbi-data-centre-cybersecurity-training-institute-in-odisha-101792929176646.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/odisha/safeguard-financial-institutions-against-cyber-terrorists-pm-modi/article71623483.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Political row erupts over Kharge's remark in Bihar",
+        "summary": "Congress chief Mallikarjun Kharge's comments at a rally sparked strong condemnation from BJP leaders, including Amit Shah.",
+        "outlets": 4,
+        "published": "2026-10-25T14:40:19+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/bihar/kharges-remark-in-bihar-pm-modi-father-sparks-row-bjp-congress/article71623852.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/mallikarjun-kharges-baap-remark-on-pm-modi-sparks-row-bjp-hits-back/articleshow/135191593.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/kharge-modi-ka-baap-remark-row-bjp-amit-shah-slam-congress-chief-bihar-patna-mallikarjun-congress-party-pm-101792934629969.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/mallikarjun-kharge-targets-pm-modi-black-money-patna-event-3024761-2026-10-25?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Kochi man killed after luxury car driven by judge's son crashes",
+        "summary": "A 55-year-old man died in Kochi after a luxury car driven by a 17-year-old minor collided with his scooter.",
+        "outlets": 2,
+        "published": "2026-10-25T11:58:25+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/kochi/55-year-old-man-killed-as-judges-minor-son-rams-luxury-car-into-scooter-in-kochi/articleshow/135189956.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/cities/kochi/story/kochi-mercedes-driven-by-judge-minor-son-crashes-into-scooter-man-dead-keralam-car-crash-3024598-2026-10-25?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "ISRO plans four functional launch pads by 2029",
+        "summary": "ISRO chief V Narayanan announced expansion plans for India's space infrastructure, including four launch pads by 2029 through private partnerships.",
+        "outlets": 2,
+        "published": "2026-10-25T07:15:28+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/isro-to-expand-space-ops-plans-4-launch-pads-by-2029-says-narayanan-as-he-clarifies-the-agency-will-not-be-privatised-11792912056131.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/isro-plans-four-functional-launch-pads-by-2029-outlines-gaganyaan-mission-roadmap-sslv-complex-kulasekarapattinam-tamil-nadu-101792908657184.html"
+          }
+        ]
+      },
+      {
+        "headline": "Ashoke Sen becomes first Indian to win Oskar Klein Medal",
+        "summary": "Theoretical physicist Ashoke Sen has been awarded the 2026 Oskar Klein Medal by Stockholm University and the Nobel Committee.",
+        "outlets": 2,
+        "published": "2026-10-25T14:15:58+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/sci-tech/science/award-winning-theoretical-physicist-ashoke-sen-has-focused-on-string-theory/article71623560.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/who-is-ashoke-sen-indian-physicist-honoured-with-2026-oskar-klein-medal-for-pioneering-work-on-string-theory-11792837880651.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Mass protests and clashes erupt across France over living costs",
+        "summary": "Hundreds of thousands demonstrated across France, leading to over a thousand arrests as protesters clashed with police over school funding and inflation.",
+        "outlets": 5,
+        "published": "2026-10-24T16:51:55+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/more-than-400000-protest-across-france-challenging-macron-as-paris-clashes-erupt"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/24/world/europe/france-protests-timeline.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c95ynd587ynzo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/24/hundreds-of-thousands-march-across-france-in-protests-over-schools-and-policing"
+          }
+        ]
+      },
+      {
+        "headline": "Elon Musk says Ukraine violated Starlink rules",
+        "summary": "Elon Musk confirmed that Starlink services were restricted in Ukraine, stating the satellite network cannot be used for offensive military operations.",
+        "outlets": 5,
+        "published": "2026-10-25T13:32:53+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/24/world/europe/ukraine-starshield-drone-speed.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/ukraine-says-starshield-back-to-normal-after-week-long-disruption-elon-musk-accuses-kyiv-of-violating-starlink-s-terms-11792890450707.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/europe/cant-use-it-to-kill-people-musk-admits-restricting-starlink-in-ukraine/articleshow/135188553.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Saudi Arabia reopens Riyadh airport after Houthi attacks",
+        "summary": "Saudi authorities reopened Riyadh's airport following a series of missile and drone attacks launched by Yemen's Houthi militia.",
+        "outlets": 3,
+        "published": "2026-10-25T14:05:17+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/25/world/middleeast/saudi-arabia-riyadh-airport-reopens.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/25/saudi-air-defences-intercept-houthi-barrage-near-mecca?traffic_source=rss"
+          },
+          {
+            "source": "The New Indian Express",
+            "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNaVRIRElTT0NaQXFmMFBrbGtyclFDdXlyUGpVbWg4RU9ObDRMOC1IdllqN2xTZUc0eVRtWGwyTHZXOUZ2QWVkWGRmOUFMa0JlelJXRFZvS3ExZktUcWV6ckoxVTJxRXhxb1BqaXZPSFRiWmdwcFNMR0NFei02RzJzenBtcWk2Z3MyQ3hBT2s3R09ncGJEdlVFVVBhSFM5MDFaSmdjV0pLVm1tX2s1YUk4VWFxWFdoZ3NUSnVGeXVHUVBvOWJOaHE2ZNIB1gFBVV95cUxPVmptcGUwbVN3ckdDRFE4RloyY1ZvN3ZrZ004U2pHcWNzVnZ2WTR1aHFXb1p0dlJLeGo5N1pHZHE1MXVrREY3Rm1wdGlSaVZrMWpuN3AyVUMxbTlIVDJKcU5obkdvcWtTblpSUGNpQVJCZU1zcTY4dkNlbmNqUndJM1hoTjBhZUNTbmtyTkpVT19BdHpLc04wNXRucTk0S0YyUlpET1B3NS16T3pjX1NhNV8yYktmdW9kcGlObUk3V28ycWxDbHRVS0RPVW44VjNiTmthbWJn?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Ambush of Salvadoran soldiers escalates Haiti security mission",
+        "summary": "Haiti's new Gang Suppression Force faces its first major crisis after several soldiers went missing following an ambush.",
+        "outlets": 1,
+        "published": "2026-10-25T14:37:53+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/23/world/americas/el-salvador-military-haiti-gangs.html"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "US military grants SpaceX access to sensitive space tracking data",
+        "summary": "The US military has provided SpaceX with access to sensitive tracking data, giving the company a major advantage in orbit monitoring.",
+        "outlets": 1,
+        "published": "2026-10-25T12:00:05+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/science/2026/oct/25/spacex-access-sensitive-tracking-data"
+          }
+        ]
+      },
+      {
+        "headline": "Airlines eligible for GST refunds on cancelled ticket fares",
+        "summary": "The GST Appellate Tribunal ruled that airlines can claim tax refunds on cancelled flight tickets if the fare and tax are returned.",
+        "outlets": 2,
+        "published": "2026-10-25T10:12:14+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/business/india-business/cancelled-flight-tickets-airlines-can-claim-gst-refunds-if-fare-and-tax-are-returned/articleshow/135187326.cms"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/gst-tribunal-says-airlines-can-claim-tax-refund-if-fare-gst-returned-to-passengers/articleshow/135186560.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Elon Musk announces one-dollar tipping feature on X",
+        "summary": "X is rolling out a new payment option allowing users to send one-dollar tips by long-pressing the Like button.",
+        "outlets": 1,
+        "published": "2026-10-25T10:52:43+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/trends/elon-musk-announces-1-tipping-on-x-in-us-how-the-new-x-money-payment-option-will-work-11792924543116.html"
+          }
+        ]
+      },
+      {
+        "headline": "Corporate affairs ministry extends annual financial filing deadline",
+        "summary": "The MCA extended the deadline for companies to file their annual financial statements for the fiscal year until December 31.",
+        "outlets": 1,
+        "published": "2026-10-25T10:55:42+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/companies-get-more-time-to-file-fy26-financial-statements-annual-returns/articleshow/135189099.cms"
+          }
+        ]
+      }
+    ]
+  }
+}
