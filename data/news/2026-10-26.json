@@ -1,0 +1,507 @@
+{
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26T17:23:42+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Lula wins fourth term in dramatic Brazil election comeback",
+        "summary": "Leftist president Luiz Inácio Lula da Silva defeated his far-right challenger to win a fourth non-consecutive term as president of Brazil.",
+        "outlets": 8,
+        "published": "2026-10-26T16:49:14+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckm23y3mg1yyo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/lula-da-silva-wins-4th-term-brazil-president-bolsonaro-rejects-results/"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/brazil-election-2026-results-what-s-the-net-worth-of-lula-da-silva-as-he-gets-re-elected-as-president-for-fourth-term-11793019604350.html"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/26/g-s1-149917/up-first-newsletter-republican-redistricting-france-serbia-protests-brazil-luiz-inacio-lula-da-silva"
+          }
+        ],
+        "why": "Major geopolitical shift in Latin America as markets convulse following the election results."
+      },
+      {
+        "headline": "Anthropic files for IPO as it competes for AI dominance",
+        "summary": "Anthropic has filed its S-1 prospectus with the SEC to move forward with a public offering amid surging demand for its Claude models.",
+        "outlets": 10,
+        "published": "2026-10-26T16:43:05+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/anthropic-ipo-plans-ai-safety/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/anthropic-files-for-potentially-the-biggest-ipo-ever-as-ceo-warns-of-ais-existential-risk-to-humanity"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/26/nx-s1-6014772/anthropic-ai-ipo-could-break-records"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/ai-giant-anthropic-files-for-ipo-to-list-its-stock-on-nasdaq-under-ant-symbol-3025483-2026-10-26?utm_source=rss"
+          }
+        ],
+        "why": "A milestone public listing for a major pure-play generative AI company with huge market impact."
+      },
+      {
+        "headline": "Andhra Pradesh and Odisha on alert as cyclone Arnab nears land",
+        "summary": "The IMD has issued red alerts for Andhra Pradesh as cyclone Arnab approaches, prompting preparations to evacuate over five lakh people.",
+        "outlets": 5,
+        "published": "2026-10-26T17:12:20+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/cyclone-arnab-andhra-pradesh-odisha-live-updates-imd-weather-forecast-rain-warnings-bay-of-bengal-october-26-2026/article71625447.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/cyclone-arnab-latest-updates-andhra-pradesh-landfall-likely-on-october-28-odisha-shuts-schools-in-6-districts-11793010922226.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/cyclone-arnab-andhra-coast-landfall-odisha-telangana-chhattisgarh-puducherry-centre-alert-3025259-2026-10-26?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-live-updates-imd-alert-andhra-pradesh-odisha-rains-cyclone-tracker-landfall-date-time-weather-today-101792986502571.html"
+          }
+        ],
+        "why": "A major natural disaster threatening lives and infrastructure along India's eastern coastline."
+      },
+      {
+        "headline": "Students topple Vucic’s government in Serbia in seismic election",
+        "summary": "A student-led list won Serbia's elections by a convincing majority, ousting the country's most powerful authoritarian politician.",
+        "outlets": 4,
+        "published": "2026-10-26T16:39:07+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/live/2026/oct/26/serbia-vucic-elections-students-bulgaria-france-urkaine-russia-latest-news-updates"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/serbias-strongman-leader-vucic-concedes-defeat-to-student-led-movement-in-seismic-political-shift"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/aje-onl-nf_music-dnrexp-261026-kopcicn-serbian_elections-261026?traffic_source=rss"
+          }
+        ],
+        "why": "A dramatic democratic upset in Europe that could reset regional relations with the EU."
+      },
+      {
+        "headline": "Microsoft extends buyouts to 60,000 staff in India, US, UK and Canada",
+        "summary": "Microsoft is offering voluntary buyouts to around 60,000 employees across India, the US, the UK and Canada under a new exit offer.",
+        "outlets": 3,
+        "published": "2026-10-26T16:44:38+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-offers-buyouts-to-60000-employees-in-india-us-uk-and-canada-hr-head-amy-coleman-tells-staff-eligible-employees-will-receive-an-email-with-/articleshow/135215843.cms"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible"
+          },
+          {
+            "source": "CNBC",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9nNklNQlZSV0JkMk95ODdwQ3Fac1ZNbHJWMUFsMjIwbFB1UndnS29RNFNNcXN6X3FGVEx4dEFYWWtnQkhwMU5SQ1NHa2ZmVDZlMmZfT0F4VHRfelNCOWFvYnBwMV9SWkVMZ1pRTTNwNTh2NzNTWXlwVQ?oc=5"
+          }
+        ],
+        "why": "Directly impacts thousands of tech professionals of Indian origin working in the US and India."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Judge rules Trump DOJ illegally fired ex-FBI director's daughter",
+        "summary": "A federal judge ruled that the Trump administration unlawfully fired Maurene Comey from the U.S. Attorney's Office for the Southern District of New York.",
+        "outlets": 6,
+        "published": "2026-10-26T17:11:17+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-doj-illegally-fired-ex-fbi-directors-daughter-maurene-comey-as-a-federal-prosecutor-judge-rules"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/maurene-comey-lawsuit-firing-justice-department-ruling/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/26/nyregion/maurene-comey-firing-doj-trump-epstein.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/26/maureen-comey-firing-judge-ruling"
+          }
+        ]
+      },
+      {
+        "headline": "Trump calls Bill Maher a 'total loser' in social media rant",
+        "summary": "Donald Trump launched a 1,300-word rant on social media against late-night TV host Bill Maher following an interview with Karoline Leavitt.",
+        "outlets": 2,
+        "published": "2026-10-26T16:11:30+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-bill-maher-truth-social-rant"
+          },
+          {
+            "source": "Forbes",
+            "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNX1F2TTgtUzV3V2hXYjVkQWx3RGdwT3g3MXZpVXdreW9WQk9jSEdKZkxfdTFEYzNoaXRZYkVxQ1FxUjQtOGw0LUhZNjYtbnhUOWJJOEhhejBZMXNXU1FPQ0xEYnYzdVdGSnlDWWNSUVFuS29nbGltREUxaEV3WXJxMXVzUG1hcnVDQ1N4NHkxckxxNmptV25TMGZvdGt1UUFvbGt5NEpMQW1nTEF1N29NYTM4c1RZb2NsdWV3cGhRaElSODhPOVdBUC1zM05oOHpaUjZBa1hKLUs0WDgwZE1iS0U2aWRhMk84NXRR?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "James Talarico leans into growing rivalry with Elon Musk in Texas",
+        "summary": "Democratic Senate nominee James Talarico has increasingly attacked Elon Musk on the campaign trail over Musk's backing of his Republican rival.",
+        "outlets": 2,
+        "published": "2026-10-26T16:00:00+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/25/us/politics/talarico-musk-texas-senate-paxton-midterms.html"
+          },
+          {
+            "source": "The Washington Post",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZG9EQ2V6S3BRLVJXRk9sNTI1QktMTGxQY2plQ212cTBDeDVKcTJST2ZQNjhaM3dOcWJJVXJUWEk4M081aWMyV2xqV2s5T2p1Y3htZGZNUExIUE5lRzE4U3RDWjVucGpNMDhldWdpV0d6SE9YS2theHUzN2k5OGlZcU9VNUF3NFBJUi0tR1UzalRpejNwNHJxRWU2cTZ3S3lubENrTnRWLTdlUzRCR2ZGc20tbFltbjJJ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Fifteen-year-old arrested in shooting near Florida university that injured 12",
+        "summary": "Authorities charged a 15-year-old boy with multiple counts of attempted murder after a shooting near an American football stadium injured 12 people.",
+        "outlets": 3,
+        "published": "2026-10-26T15:37:51+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/26/florida-famu-shooting-arrest"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckpdg8vnv171o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8tdjJhVVZXc0dDbFgyVEc5NEpKTjlnLVNFVVBaT3JrbmpDV3FrU3o1QnV0V3lSbjdFYVpmQ3U4cjJORUlmZHM4c25SZ0hoRXJGOXoxODAxNVhGcXFzakFtcjFQSVBJWUZneDF4anRaUk4xRjlsTlhEUjhkZ1lTZw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "House Democrats call for special counsel to scrutinize Trump's ties to Epstein",
+        "summary": "House Democrats have requested a special counsel to investigate Donald Trump's ties to Jeffrey Epstein ahead of the midterm elections.",
+        "outlets": 1,
+        "published": "2026-10-26T16:29:04+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/26/us/democrats-special-counsel-trump-epstein.html"
+          }
+        ]
+      },
+      {
+        "headline": "DOJ and California square off over noncitizens on voter rolls",
+        "summary": "The Justice Department sued California over thousands of suspected noncitizens on voter rolls, seeking verification before ballots are counted.",
+        "outlets": 1,
+        "published": "2026-10-26T14:59:12+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/california-election-controversy-explained-why-the-department-of-justice-and-state-are-squaring-off-over-voter-rolls-11793023454426.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Former DMK Minister Anbil Mahesh Poyyamozhi arrested in private schools fraud",
+        "summary": "Chennai police arrested Tamil Nadu's former School Education Minister after his anticipatory bail plea was rejected in a multi-crore scam case.",
+        "outlets": 4,
+        "published": "2026-10-26T15:46:50+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/tamil-nadu/former-dmk-minister-anbil-mahesh-poyyamozhi-arrested/article71626605.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/who-is-anbil-mahesh-poyyamozhi-meet-the-former-tamil-nadu-minister-arrested-in-100-crore-school-scam-case-11793024161364.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/dmk-ex-minister-anbil-mahesh-poyyamozhi-arrested-he-allegedly-took-rs-100-crore-bribe-from-schools-12237486#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/vijay-govt-tamil-nadu-former-dmk-minister-anbil-mahesh-poyyamozhi-arrested-in-rs-100-crore-scam-101793013415454.html"
+          }
+        ]
+      },
+      {
+        "headline": "Poll body defends unanimous decisions in Supreme Court over SIR row",
+        "summary": "The Election Commission told the Supreme Court that petitions regarding its SIR orders are based on newspaper reports and should be dismissed.",
+        "outlets": 5,
+        "published": "2026-10-26T16:24:28+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/law-news/story/election-commission-sir-orders-unanimous-form-6-unchanged-supreme-court-ptag-3025610-2026-10-26?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/poll-bodys-unanimous-defence-in-supreme-court-over-sir-row-12239120#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/all-3-sir-orders-unanimous-plea-against-cec-gyanesh-kumar-based-on-single-news-report-ec-tells-sc-101793027114031.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/sir-controversy-election-commission-says-all-three-members-approved-orders-denies-amending-form-6-11793031937198.html"
+          }
+        ]
+      },
+      {
+        "headline": "Govt clears ₹2.12 lakh crore defence procurements, including kamikaze drones",
+        "summary": "The Defence Acquisition Council approved major military procurement proposals, including kamikaze drones and helicopters, chaired by Rajnath Singh.",
+        "outlets": 3,
+        "published": "2026-10-26T15:01:21+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/govt-clears-rs-2-12-lakh-crore-defence-procurements-including-kamikaze-drones-and-helicopters-11793025542358.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/drones-artillery-guns-and-helicopters-dac-clears-2-12-lakh-crore-defence-buys-101793017758895.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/defence/news/drones-guns-and-missile-shields-dac-clears-rs-2-12-lakh-crore-defence-proposals-for-armed-forces/articleshow/135210101.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Rahul acquitted in 2018 defamation case over remarks on Amit Shah",
+        "summary": "Congress leader Rahul Gandhi was acquitted in a defamation case alleging he called Amit Shah a murder accused during a hearing.",
+        "outlets": 2,
+        "published": "2026-10-26T16:21:01+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/rahul-gandhi-amit-shah-defamation-case-sultanpur-accident-up-verdict-october-26-2026/article71625707.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/rahul-gandhi-acquitted-in-2018-defamation-case-over-remarks-against-amit-shah-says-congress-101792995192769.html"
+          }
+        ]
+      },
+      {
+        "headline": "Why Siang project matters for India as China builds mega dam",
+        "summary": "India's proposed Siang dam in Arunachal Pradesh aims to manage flood risks and water storage amidst China's upstream mega-dam construction.",
+        "outlets": 2,
+        "published": "2026-10-26T15:56:11+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/why-siang-project-matters-for-india-as-china-builds-mega-brahmaputra-dam-and-why-arunachal-locals-are-up-in-arms-11793024704737.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/siang-dam-protests-gen-z-arunachal-pradesh-india-china-medog-tibet-brahmaputra-tsangpo-itspc-3025099-2026-10-26?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Indian publishers contest Modi government’s privacy law in court",
+        "summary": "Indian publishers have filed a high-profile lawsuit challenging the Modi government's privacy law, with hearings underway.",
+        "outlets": 1,
+        "published": "2026-10-26T16:55:55+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/indian-publishers-contest-modi-governments-privacy-law/article71627054.ece"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "María Corina Machado returns to Venezuela after exile",
+        "summary": "Nobel laureate María Corina Machado returned to Venezuela after nearly 10 months in exile to press for new elections and challenge leadership.",
+        "outlets": 4,
+        "published": "2026-10-26T16:40:42+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/25/world/americas/machado-venezuela-return.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/videos/cwgkv8kmly4zo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/25/exiled-venezuelan-opposition-leader-maria-corina-machado-announces-her-return"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/venezuelas-opposition-leader-machado-returns-after-months-in-exile"
+          }
+        ]
+      },
+      {
+        "headline": "Iran says US talks meaningless until seven conditions are met",
+        "summary": "Iran stated that negotiations with Washington cannot move forward unless its previously stated conditions are accepted by the US.",
+        "outlets": 2,
+        "published": "2026-10-26T16:55:19+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/delegations-arrive-in-tehran-for-security-talks?traffic_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/iran-says-us-talks-meaningless-until-7-conditions-met-as-qatari-mediators-arrive-in-tehran-101792945652451.html"
+          }
+        ]
+      },
+      {
+        "headline": "Egypt approves military support for Saudi Arabia after Houthi attacks",
+        "summary": "The Egyptian parliament authorized military support for Saudi Arabia following an escalation of Houthi missile and drone attacks.",
+        "outlets": 3,
+        "published": "2026-10-26T15:52:06+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/egypt-approves-military-support-for-saudi-arabia-after-houthi-attacks-escalate/articleshow/135213170.cms"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/26/egyptian-parliament-authorises-military-aid-for-saudi-arabia?traffic_source=rss"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOaFIxVXVVYl90WFZodTB6bHpqOWN3aktZSHNDYTlaM3I5S1FoeU14U1NRVE1mVTJtSDV3ZHk1cHRiWDh6elBNamVIeE5tN2VvRDEyWXBPT1dyNW5KSXFyaE5PVEFOS1NyQW1CNkVVblN6SW1PeVg3aHQxY3B6WmhHU3cxM0gtdTNRLTY1NWo0R284RzQtSmVtTnRxVnR6MTVkNWVsU3djY1d2SURPNmo0N05CUFJZekpIUklNTmRxazZHVTNrbEFN?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "US marine indicted for murder and robbery of woman in Japan",
+        "summary": "Japanese prosecutors formally indicted US Marine Devin Jacob Ballard for the fatal strangulation of a 39-year-old woman in Okinawa.",
+        "outlets": 3,
+        "published": "2026-10-26T14:13:18+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c3vgxjex1z9wo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/26/japanese-prosecuters-charge-marine-killing"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1GMXVSc0JLenIyZVFHZmhWWERuVkZ4a1pzUE9yUWZ1UE5pYXhIUlVvZGRpejNxQmVQTXRqVm01emgxNGo0SldxZEFjelhvU3JGd29qbERrZWVGSGc?oc=5"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "India and US fine-tuning trade deal after concluding most discussions",
+        "summary": "Minister Piyush Goyal announced that India and the US are fine-tuning a proposed trade agreement following the conclusion of most discussions.",
+        "outlets": 2,
+        "published": "2026-10-26T16:15:18+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/india-us-fine-tuning-trade-deal-after-concluding-most-discussions-says-minister-piyush-goyal-11793025706251.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-us-trade-deal-enters-fine-tuning-stage-as-most-talks-conclude-says-piyush-goyal/articleshow/135211604.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Paytm Q2 profit rockets 976% year-on-year to Rs 226 crore",
+        "summary": "Fintech major Paytm reported a massive surge in its consolidated net profit to Rs 226 crore for the second quarter alongside rising revenue.",
+        "outlets": 1,
+        "published": "2026-10-26T15:45:42+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/paytm-q2-results-profit-rockets-976-yoy-to-rs-226-crore-revenue-jumps-28/articleshow/135214973.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Brazilian markets convulse after unexpected election result",
+        "summary": "President Luiz Inácio Lula da Silva’s re-election victory prompted a sharp reversal in financial markets that had expected his opponent to win.",
+        "outlets": 1,
+        "published": "2026-10-26T14:42:40+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/26/business/brazil-stock-markets-election-lula.html"
+          }
+        ]
+      },
+      {
+        "headline": "Elon Musk predicts guppy-level death for scores of AI companies",
+        "summary": "Elon Musk warned that numerous artificial intelligence infrastructure companies will face shutdowns as they are shut out of debt markets.",
+        "outlets": 1,
+        "published": "2026-10-26T13:36:27+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/26/business/dealbook/musk-ai-credit-shakeout.html"
+          }
+        ]
+      }
+    ]
+  }
+}
