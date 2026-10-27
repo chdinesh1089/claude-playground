@@ -1,0 +1,478 @@
+{
+  "date": "2026-10-27",
+  "generated_at": "2026-10-27T16:40:46+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "India evacuates tens of thousands as Cyclone Arnab approaches",
+        "summary": "The India Meteorological Department issued a red alert as Cyclone Arnab is forecast to make landfall on the eastern coast between Bapatla and Visakhapatnam.",
+        "outlets": 7,
+        "published": "2026-10-27T14:42:04+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/cyclone-arnab-nears-andhra-pradesh-coast-red-alert-issued-ahead-of-landfall-12244242#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/cyclone-arnab-andhra-pradesh-odisha-heavy-rain-landfall-alerts-imd-tamil-nadu-bengal-chhattisgarh-telangana-evacuations-3026214-2026-10-27?utm_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/27/world/asia/india-cyclone-arnab-evacuations-nepal.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/27/cyclone-arnab-batters-indias-east-coast?traffic_source=rss"
+          }
+        ],
+        "why": "A major natural disaster threatening India's eastern coastline, with extensive evacuations already underway."
+      },
+      {
+        "headline": "Israelis vote in crucial parliamentary election amid ongoing conflicts",
+        "summary": "Voters cast ballots in Israel's pivotal election, testing Prime Minister Benjamin Netanyahu's administration as high turnout is recorded across the country.",
+        "outlets": 6,
+        "published": "2026-10-27T14:00:31+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/key-things-to-know-about-israels-election"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/27/world/middleeast/israel-election-campaign-highlights.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/israelis-abroad-fly-home-vote-election/"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/middle-east/israel-elections-netanyahu-faces-crucial-test-reports-of-fraud-attempts-missing-ballots-top-developments/articleshow/135230505.cms"
+          }
+        ],
+        "why": "A critical geopolitical election shaping Middle Eastern stability and conflicts."
+      },
+      {
+        "headline": "Lula secures fourth term in Brazil presidential election",
+        "summary": "Luiz Inácio Lula da Silva secured a fourth presidential term after a runoff victory, while his opponent's party accepted the defeat.",
+        "outlets": 6,
+        "published": "2026-10-27T14:41:17+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/27/nx-s1-6019217/bolsonaro-flavio-lula-brazil-election-trump"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/lula-prevails-in-brazil-but-flavio-bolsonaro-refuses-to-concede"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/lula-defeats-flavio-bolsonaro-4-factors-behind-brazil-president-s-election-victory-11793102283742.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/26/world/americas/brazil-election-lula-social-media.html"
+          }
+        ],
+        "why": "A major leadership change in Latin America's largest economy with global implications."
+      },
+      {
+        "headline": "Localised ceasefire begins in Ukrainian town of Oleshky",
+        "summary": "A rare local ceasefire brokered with US involvement took effect in the southern Ukrainian town of Oleshky to allow aid access.",
+        "outlets": 5,
+        "published": "2026-10-27T16:03:09+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/27/oleshky-truce-ukraine-russia-putin"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6vgj813mlelo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/finland-norway-leaders-hold-frank-call-with-putin-on-ukraine-war-12244115#publisher=newsstand"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/melania-trump-backed-local-truce-begins-in-ukrainian-town-11793092579321.html"
+          }
+        ]
+      },
+      {
+        "headline": "Hotmail co-founder faces Adani defamation suit over Modi documentary",
+        "summary": "The Calcutta High Court ordered platforms to remove a documentary by Sabeer Bhatia concerning Prime Minister Narendra Modi and Gautam Adani.",
+        "outlets": 2,
+        "published": "2026-10-27T14:59:24+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/untitled-hotmail-co-founder-sabeer-bhatia-faces-50-crore-adani-defamation-suit-over-modi-documentary-what-is-the-case-11793112456119.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/indian-court-orders-takedown-of-controversial-documentary-accusing-modi-and-adani-of-cronyism/articleshow/135230600.cms"
+          }
+        ],
+        "why": "Involves high-profile Indian figures and legal scrutiny over a controversial documentary."
+      }
+    ],
+    "us": [
+      {
+        "headline": "DOJ asks Washington to set aside ballots from alleged noncitizens",
+        "summary": "Federal prosecutors sent a letter to the Washington secretary of state with a list of 400 people claimed not to be U.S. citizens.",
+        "outlets": 3,
+        "published": "2026-10-27T16:14:39+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/justice-department-washington-ballots-400-alleged-noncitizens/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-administration-asks-washington-state-to-set-aside-ballots-from-400-voters-it-says-may-be-noncitizens"
+          },
+          {
+            "source": "The Washington Post",
+            "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZ1NsRVp3dTdoc0J2ckFYVWlOb1duSUNtLWh5NXJnRmo3QmYxSnlpTzctVDkxSHlPZTZqNlBKUUItT2tTSzI3TzlUWm13RVNSUzRvYWVCTUt4YkVsWmRqUjNLVnZCVlppMDRzVEJZb3MyZDhRYk85SjJLbDF1TmxBVlpBR1ZuUl9nd2NFUWZyNmpYWkRjTWVLOTQzcWpLQmdtVmxDSGF0ZlpJM2JyV1I4YVZvZVM0X3p1VTF3LURpMnhGd1Vx?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Machado returns from exile to Venezuela amid shifting US policy",
+        "summary": "María Corina Machado returned to Venezuela seeking new elections while attempting to navigate her standing with the Trump administration.",
+        "outlets": 2,
+        "published": "2026-10-27T16:02:58+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/26/world/americas/venezuela-machado-rodriguez-trump.html"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcTMyYXlJenZKcnk1anpyM2JMdEpmcmZaRWhFcUdrWFBDYllHWXNQV0xRY3BBdnBDUVlqdkZ2LVE2ZjJOMjZ3alJwUFJyTGpOQmpUS2V1QzZwWUMzOE9iNXk0QlIydjU3RXBQQUQtQjhGdjgtMlJvVUFVMjFnYTc4SXJSREp0czVPZ3RxZXkyazlQc0k4bl82WFB1alZOTHNVMzhLWHdEQVVHYmJuWDAxaHQ2dw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Trump-appointed CDC deputy director to resign after six months",
+        "summary": "Jennifer Shuford is expected to leave her post as CDC deputy director and chief medical officer following midterm elections.",
+        "outlets": 2,
+        "published": "2026-10-27T15:39:32+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/27/cdc-deputy-director-resigns-jennifer-shuford"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/27/health/shuford-cdc-resign.html"
+          }
+        ]
+      },
+      {
+        "headline": "Election officials fear interference in midterms voting",
+        "summary": "State and local election plans include preparing for potential ICE raids and federal election monitor behavior on Election Day.",
+        "outlets": 2,
+        "published": "2026-10-27T14:38:02+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/27/us/election-interference-trump-midterms.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/poll-likely-voters-favor-democrats-as-trump-disapproval-drives-early-turnout"
+          }
+        ]
+      },
+      {
+        "headline": "Ex-FBI chief James Comey faces federal charges for third time",
+        "summary": "Lawyers for James Comey say his latest federal case stems from the alleged disclosure of classified information in 2016.",
+        "outlets": 2,
+        "published": "2026-10-27T11:44:54+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckly0xqjnlwvo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-administration-charges-former-fbi-director-james-comey-for-the-third-time"
+          }
+        ]
+      },
+      {
+        "headline": "FBI raids California home tied to former Representative Eric Swalwell",
+        "summary": "The California Democrat has faced multiple sexual misconduct allegations which he has denied as federal agents raided a property.",
+        "outlets": 2,
+        "published": "2026-10-27T16:20:22+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwvgrk0zx641o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Post",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObHBaRW5FMkRPYXFnOWFKYWtnRkw4clE2ak1Nc3VqQlNBcnE0aVNvRkoxVU9JSHB3RnZrakZidy1HRDBIeWkwb3p0NkhtanVnQ3p2dDRISi1oZ1hrOWdURy1Walc0b2dsWXljaVFJbjFFWnoxTTBWSFRmenB4NWlzV3p0N3FKUHhoa1FGV0tyMEMxYS1VX1pDYXlxMUk3ZmlEZk9NaDkwU0xKZw?oc=5"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Centre tells Supreme Court it is contemplating child pornography law",
+        "summary": "An NGO apprised the apex court of the absence of adequate safeguards for adults and the circulation of sexual assault videos.",
+        "outlets": 2,
+        "published": "2026-10-27T16:01:29+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/contemplating-law-against-child-pornography-centre-tells-supreme-court/article71632394.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/supreme-court-seeks-centre-s-response-to-publishers-plea-against-data-law-11793087116493.html"
+          }
+        ]
+      },
+      {
+        "headline": "Congress calls ECI affidavit on electoral rolls deceitful",
+        "summary": "The Congress party listed alleged irregularities across 12 States and a Union Territory, questioning statements on Form 6 additions.",
+        "outlets": 2,
+        "published": "2026-10-27T15:17:22+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/eci-affidavit-on-sir-is-deceitful-and-duplicitous-congress/article71631896.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/unanimity-doesnt-mean-rules-were-followed-congress-leader-rejects-eci-affidavit-amid-cec-row-101793066956964.html"
+          }
+        ]
+      },
+      {
+        "headline": "Diljit Dosanjh visits Taj Mahal ahead of Delhi concert",
+        "summary": "Diljit Dosanjh made a stop at the Taj Mahal during his Agra visit under heightened security ahead of his concert.",
+        "outlets": 2,
+        "published": "2026-10-27T13:52:47+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/agra/diljit-dosanjh-moves-from-delhi-concert-row-to-taj-mahal-visit-in-agra-admires-iconic-monument-amid-tight-security/articleshow/135236507.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/newsmo/short-videos/diljit-dosanjhs-40-minute-date-with-the-taj-mahal-3026038-2026-10-27?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Congress gets permission with conditions for Delhi protest rally",
+        "summary": "The opposition alliance planned a protest rally against alleged vote theft and accountability issues concerning electoral rolls.",
+        "outlets": 3,
+        "published": "2026-10-27T12:38:05+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/rahul-gandhi-mallikarjun-kharge-congress-gets-permission-for-ramlila-protest-rally-but-there-are-conditions-12243528#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/permission-stands-even-now-with-conditions-delhi-police-on-congress-claim-over-nov-1-ramlila-maidan-protest-101793098555198.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/congress-alleges-hurdles-to-india-blocs-proposed-public-impeachment-of-cec-gyanesh-kumar-on-october-30/article71632378.ece"
+          }
+        ]
+      },
+      {
+        "headline": "BJP wins council seats in Uttar Pradesh and Karnataka",
+        "summary": "Counting continued across multiple states for legislative council elections, with the BJP securing key victories.",
+        "outlets": 2,
+        "published": "2026-10-27T14:59:03+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/mlc-election-results-2026-live-updates-counting-votes-up-bihar-maharashtra-karnataka-bjp-congress-sp-eci-101793063321273.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/karnataka/story/karnataka-legislative-council-polls-jds-ap-ranganath-wins-bengaluru-teachers-seat-bjp-nda-congress-ptag-3026405-2026-10-27?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Jaishankar to travel to U.S. for G20 Foreign Ministers’ meet, Quad this week",
+        "summary": "Meetings to prepare for Quad leaders’ summit in November, G20 Summit in December; South Africa’s exclusion by U.S. could be raised;",
+        "outlets": 1,
+        "published": "2026-10-27T16:12:51+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/jaishankar-to-travel-to-us-for-g20-foreign-ministers-meet-quad-this-week/article71632365.ece"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Jordan carries out deadly strikes in Syria in retaliation",
+        "summary": "Airstrikes in a Syrian village killed several people following an attack on a Jordanian church, according to officials.",
+        "outlets": 4,
+        "published": "2026-10-27T02:40:17+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cq8ezg6dy6xlo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/26/jordan-attacks-militants-syria-retaliation-for-last-week-church-attack"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/27/world/middleeast/jordan-syria-strikes-attack.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOdFpiMExoV3hPX0lnV0FodmRVMS1LZHRfS2ZwZzgtZXpfQkppbElZdTJHTXliMF81NGc3NzIyaUJBbnhib0tVY2EzdFQ4cDRMQmxRQnIydUtrZEE5RGV1eV9BcFdjdG53Yjh1WW5ocG5PLTRwWGhRUG9sXzBkdmIyRkxXMVYyNG9aUWpLSFljdnZuM2tYSjJlNnpKQ1JOYm1kS2Y0STU4amUzbGZDQzM0NGZnWUZjbnlhVFJWV2ZlSWc1S3FoNlVObVVQenZvWklUVE5vVGJ4OTNsNnU4eFRHbUlhdlEySUcwTDhrYXdhNFo4SzdNUDgtd3ptRQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "King Charles launches Caribbean tour amid slavery reparations debate",
+        "summary": "The UK monarch began a nine-day Caribbean tour amidst growing public demands and questions regarding slavery reparations.",
+        "outlets": 2,
+        "published": "2026-10-27T14:05:03+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/27/king-charless-caribbean-tour-will-he-discuss-slavery-reparations?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/27/world/europe/king-charles-caribbean-tour-uk-commonwealth.html"
+          }
+        ]
+      },
+      {
+        "headline": "Netherlands pulls out of Eurovision 2027 over Israel sensitivities",
+        "summary": "The Netherlands withdrew from the upcoming Eurovision competition following boycotts by countries unhappy about Israel's inclusion.",
+        "outlets": 2,
+        "published": "2026-10-27T13:29:47+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/27/the-netherlands-pulls-out-of-eurovision-2027-due-to-israel-sensitivities?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmr4y5dvlzneo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Ebola cases in DR Congo surpass 10,000 in outbreak",
+        "summary": "Nearly half of the confirmed virus cases have resulted in fatalities in the Democratic Republic of the Congo's fastest-growing outbreak.",
+        "outlets": 1,
+        "published": "2026-10-27T12:43:55+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/27/ebola-cases-in-dr-congo-surpass-10000-in-fastest-growing-outbreak?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Apple launches new iMac and MacBook Pro models",
+        "summary": "Apple expanded its hardware lineup by releasing new iMac and MacBook Pro computers featuring updated processor chips.",
+        "outlets": 3,
+        "published": "2026-10-27T14:25:11+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/technology/news/story/apple-launches-imac-and-macbook-pro-with-m6-chip-price-in-india-starts-at-rs-174900-3026266-2026-10-27?utm_source=rss"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/tech/1017664/apple-macbook-pro-m6-processor-upgrade"
+          },
+          {
+            "source": "TechCrunch",
+            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNV3NvSWI3cjhYTVBaZndZUnBOc1oyYUxfZXFNS1NOMV9BQS1CTE5yaWVtWGljeWRIRmtRWXBFYnM4QlhIMkRaUEQzZG05b19fX3JzRmxjUmQ0NDQxakREZDNCSDBqTmI2VXFkQjBGSGxXbkRfN3pCeFVkOHhlZnMxdUU1eF9Tb0NmYVdVTlZ3?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Anthropic files paperwork to begin initial public offering timeline",
+        "summary": "By filing IPO paperwork, Anthropic positioned itself to conduct an investor roadshow and potentially go public soon.",
+        "outlets": 1,
+        "published": "2026-10-27T16:38:00+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/when-will-anthropic-go-public-heres-what-to-know-about-the-ipo-timeline-431eca78?mod=mw_rss_topstories"
+          }
+        ]
+      },
+      {
+        "headline": "GM is leaving NYSE for Nasdaq after more than 100 years",
+        "summary": "The major automaker announced it is shifting its stock market listing from the New York Stock Exchange to the Nasdaq.",
+        "outlets": 1,
+        "published": "2026-10-27T16:25:41+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/27/business/general-motors-nasdaq-nyse.html"
+          }
+        ]
+      },
+      {
+        "headline": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
+        "summary": "Mozilla is updating Smart Window - Firefox's AI-powered browsing experience - with a new feature that can help you fill out online forms based on your open tabs. As an example, Mozilla says Smart Window can pull information from your online portfolio or LinkedIn page to paste…",
+        "outlets": 1,
+        "published": "2026-10-27T16:14:18+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms"
+          }
+        ]
+      }
+    ]
+  }
+}
