@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27T18:29:04Z",
+  "checked_at": "2026-10-28T18:35:31Z",
   "weekend_start": "2026-10-30",
   "weekend_end": "2026-11-01",
   "from_airport": "DFW",
@@ -8,8 +8,8 @@
   "status": "ok",
   "price": 449,
   "airlines": [
-    "United"
+    "American"
   ],
   "outbound_stops": 0,
-  "trend": "down $20 from $469"
+  "trend": "unchanged"
 }

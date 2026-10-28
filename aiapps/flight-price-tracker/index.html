@@ -109,8 +109,8 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <div class="tile">
   <div class="tile-label">Cheapest round trip &middot; Fri Oct 30 → Sun Nov 1</div>
   <div class="tile-value">$449</div>
-  <span class="delta delta-down">&#9660; $20 since previous check</span>
-  <div class="tile-meta">United &middot; Nonstop outbound &middot; checked Oct 27, 1:29 PM CT</div>
+  <span class="delta">No change since previous check</span>
+  <div class="tile-meta">American &middot; Nonstop outbound &middot; checked Oct 28, 1:35 PM CT</div>
 </div>
 </section>
 
@@ -129,6 +129,7 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <table>
 <thead><tr><th>Checked</th><th class="num">Price</th><th>Weekend</th><th>Airline</th><th>Outbound</th></tr></thead>
 <tbody>
+<tr><td>Oct 28, 1:35 PM CT</td><td class="num">$449</td><td>Fri Oct 30 → Sun Nov 1</td><td>American</td><td>Nonstop</td></tr>
 <tr><td>Oct 27, 1:29 PM CT</td><td class="num">$449</td><td>Fri Oct 30 → Sun Nov 1</td><td>United</td><td>Nonstop</td></tr>
 <tr><td>Oct 26, 1:57 PM CT</td><td class="num">$469</td><td>Fri Oct 30 → Sun Nov 1</td><td>United</td><td>1 stop</td></tr>
 <tr><td>Oct 25, 11:55 AM CT</td><td class="num">$281</td><td>Fri Oct 30 → Sun Nov 1</td><td>Frontier</td><td>1 stop</td></tr>
@@ -176,10 +177,10 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 </div>
 </section>
 
-<footer>Last check Oct 27, 1:29 PM CT. Prices are spot checks, not guaranteed fares.</footer>
+<footer>Last check Oct 28, 1:35 PM CT. Prices are spot checks, not guaranteed fares.</footer>
 </main>
 
-<script type="application/json" id="points">[{"t": "2026-10-24T16:23:03Z", "label": "Oct 24, 11:23 AM CT", "price": 296, "airline": "Frontier", "stops": "1 stop"}, {"t": "2026-10-25T16:55:24Z", "label": "Oct 25, 11:55 AM CT", "price": 281, "airline": "Frontier", "stops": "1 stop"}, {"t": "2026-10-26T18:57:21Z", "label": "Oct 26, 1:57 PM CT", "price": 469, "airline": "United", "stops": "1 stop"}, {"t": "2026-10-27T18:29:04Z", "label": "Oct 27, 1:29 PM CT", "price": 449, "airline": "United", "stops": "Nonstop"}]</script>
+<script type="application/json" id="points">[{"t": "2026-10-24T16:23:03Z", "label": "Oct 24, 11:23 AM CT", "price": 296, "airline": "Frontier", "stops": "1 stop"}, {"t": "2026-10-25T16:55:24Z", "label": "Oct 25, 11:55 AM CT", "price": 281, "airline": "Frontier", "stops": "1 stop"}, {"t": "2026-10-26T18:57:21Z", "label": "Oct 26, 1:57 PM CT", "price": 469, "airline": "United", "stops": "1 stop"}, {"t": "2026-10-27T18:29:04Z", "label": "Oct 27, 1:29 PM CT", "price": 449, "airline": "United", "stops": "Nonstop"}, {"t": "2026-10-28T18:35:31Z", "label": "Oct 28, 1:35 PM CT", "price": 449, "airline": "American", "stops": "Nonstop"}]</script>
 <script>
 (function () {
   const points = JSON.parse(document.getElementById("points").textContent);
