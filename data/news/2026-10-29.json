@@ -1,0 +1,471 @@
+{
+  "date": "2026-10-29",
+  "generated_at": "2026-10-29T17:26:33+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "DoorDash to acquire Instacart in $17 billion deal",
+        "summary": "DoorDash announced it will buy Instacart in an all-stock and cash deal valued at approximately $17 billion.",
+        "outlets": 5,
+        "published": "2026-10-29T15:38:15+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/doordash-buys-instacart-in-17-billion-deal/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/29/technology/doordash-instacart-acquisition-delivery.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/oct/29/doordash-buys-instacart-grocery-delivery"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/doordash-acquire-instacart-deal-valued-17b-companies-announce/story?id=137672192"
+          }
+        ],
+        "why": "Major consolidation in food and grocery delivery affecting millions of US consumers."
+      },
+      {
+        "headline": "Fed holds interest rates steady amid stubborn inflation",
+        "summary": "The U.S. central bank left borrowing costs unchanged this month after leaving rates high as inflation persists.",
+        "outlets": 4,
+        "published": "2026-10-29T13:17:34+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/federal-reserve-holds-interest-rates-steady-inflation/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/news-wrap-fed-holds-interest-rates-unchanged-as-inflation-remains-elevated"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/28/business/economy/warsh-interest-rates-fed.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMmxZQl96MEY2LWpuWUZ4QTFzUDBOYWY3RGxOcnNlaVBhakVuUjNGVzU0MTZ4MmxVa3pMemNlSlg2VWpSOXhlWG5ycnNwbm1kS1dzeW9FQ2tvWndOaWY2MmxILWt1QU1nYXpfMDlMa0cwTjhOX18xMVZOUTFkam1PMThKZjFBSzR0RUhGOTlfRFdScHY2LV9BdFJaWmZfN05OUDc2VXZPZjBMVHJ5ZEdLcFZUdjQ4S3dILXU5SDNBekpIc2NjMFAwcQ?oc=5"
+          }
+        ],
+        "why": "Directly impacts borrowing costs, mortgages, and economic sentiment for all residents."
+      },
+      {
+        "headline": "U.S. economy grows at brisk 3.4% pace in third quarter",
+        "summary": "The U.S. economy grew 3.4 percent in the third quarter, driven by strong consumer spending and business investment.",
+        "outlets": 2,
+        "published": "2026-10-29T15:58:35+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/29/business/economy/us-economy-gdp.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/economy/u-s-economy-grows-at-brisk-3-4-pace-in-third-quarter-on-strong-consumer-spending-and-ai-investment"
+          }
+        ],
+        "why": "Strong economic indicators influence Federal Reserve policy and overall financial markets."
+      },
+      {
+        "headline": "Train collision in Spain kills at least 68 people",
+        "summary": "A high-speed train collision near Toledo, Spain, killed at least 68 people and injured dozens more.",
+        "outlets": 6,
+        "published": "2026-10-29T13:52:09+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/spain-train-collision-sparks-protest/"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/spain-train-crash-what-caused-the-collision-which-safety-systems-failed-heres-what-drone-footage-reveals-11793245574723.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/europe/spain-train-tragedy-glitch-3-operator-errors-behind-crash-that-killed-68/articleshow/135323370.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/28/world/europe/train-crash-spain.html"
+          }
+        ],
+        "why": "One of the deadliest rail disasters in the country's history."
+      },
+      {
+        "headline": "Netanyahu's bloc leads Israel election but falls short",
+        "summary": "With 99 percent of ballots counted, Prime Minister Benjamin Netanyahu's Likud party and allies won 53 seats, leaving the Knesset deadlocked.",
+        "outlets": 6,
+        "published": "2026-10-29T15:47:20+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/28/world/middleeast/netanyahu-israel-election.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/israel-election-deadlock-what-are-the-4-possible-scenarios-for-forming-a-government/articleshow/135304837.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/israeli-elections-votes-nearly-counted-neither-netanyahu-nor-eisenkot-are-likely-to-get-majority-latest-update-11793235026445.html"
+          }
+        ],
+        "why": "Geopolitical instability in the Middle East impacts global markets and oil prices."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Data centers could send US climate pollution skyrocketing",
+        "summary": "The US power sector could release significantly more carbon pollution by 2030 to meet rising data center energy demands.",
+        "outlets": 1,
+        "published": "2026-10-29T17:10:46+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/science/1022258/data-centers-climate-change-carbon-dioxide-pollution-gas"
+          }
+        ]
+      },
+      {
+        "headline": "Medicare tests AI pre-approvals, leading to drop in care",
+        "summary": "Medicare's pilot use of AI for prior authorizations resulted in an immediate decrease in provided medical services.",
+        "outlets": 1,
+        "published": "2026-10-29T17:10:00+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/medicare-used-ai-to-pre-approve-patient-care-and-it-immediately-led-to-a-large-drop-in-medical-services-dc38a210?mod=mw_rss_topstories"
+          }
+        ]
+      },
+      {
+        "headline": "Trial date set for man accused of attacking dinner event",
+        "summary": "A federal judge scheduled a September 2027 trial for a man accused of attempting to kill President Donald Trump.",
+        "outlets": 1,
+        "published": "2026-10-29T16:40:16+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/wireStory/september-2027-trial-date-set-man-charged-attacking-137678749"
+          }
+        ]
+      },
+      {
+        "headline": "Cabinet officials face criticism over Hatch Act violations",
+        "summary": "Ethics experts state that Trump officials campaigning for Republican candidates are lax about complying with federal anti-corruption laws.",
+        "outlets": 1,
+        "published": "2026-10-29T15:29:35+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/28/us/politics/trump-hatch-act.html"
+          }
+        ]
+      },
+      {
+        "headline": "Judge rejects request to segregate California ballots",
+        "summary": "A federal judge turned down the Justice Department's emergency order request to segregate 20,000 ballots in California.",
+        "outlets": 2,
+        "published": "2026-10-29T04:52:05+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/judge-rejects-trump-administration-request-order-segregate-20000/story?id=137660006"
+          },
+          {
+            "source": "ABC7 Los Angeles",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQblJwSlRTdnJ0TVBPY3NKNnY4RjVrR2o5SlZjWXRQQ2tpanJtekdrclhpZXZrZ3R1WnhQTVJBXzdqUlh6ZEtubGQyRjVLLW9zenoySVhKY3lGOENVbGQ3YlBlQkoyMnc5Yy1VRXh2X3NEaHRIWjhoeWhDWnBXRXhyMy1GRmRRenFnSTRhczFoNGNxa29ZVzhxcVZXbk41OFA4bVlyT3BPZGJlanJoZUtXQldkOEl5OWZrMUZn0gHAAUFVX3lxTE81OUtJSTJ2WHZXdnVBeThUb0hHaUhTcnRsM3I2V3A3WThZS193MG5WLXVaZ2E5VVNCVTNuLWt2SnRxbWdqbEoyMl9faC1yZ3BfTFdxNFBVTHpDcUwtQnRsa3hJTEwxeGtJdGZZYzNDeDZpZXBrX3RCbHFKY1JWVklBaUR5RGluSWlOb1ktUGNidjNzbnN2R2kyTTNLUlF4MmcydC1rQlNMSGpaZnhlVXNYN2ttUjhvdXFVQVhSY2JsQg?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "South Carolina US Senate race tied in final stretch",
+        "summary": "A final poll shows the Senate race in South Carolina is running neck-and-neck between the Democrat and Republican candidates.",
+        "outlets": 1,
+        "published": "2026-10-29T14:42:38+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/29/south-carolina-senate-tied-race"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Karnataka cabinet hikes milk prices by Rs 8 per litre",
+        "summary": "The Karnataka government increased milk prices by Rs 8 per litre, effective November 1, giving farmers an extra Rs 7.",
+        "outlets": 3,
+        "published": "2026-10-29T11:42:53+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/bengaluru/karnataka-hikes-milk-prices-by-rs-8-per-litre-from-nov-1-farmers-to-get-rs-7/articleshow/135305099.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/karnataka-cabinet-hikes-milk-prices-by-rs-8-state-minister-nandini-milk-price-101793273245820.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/karnataka/8-milk-price-hike-to-push-tea-coffee-prices-up-by-5/article71641183.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court rules banks must compensate digital fraud victims",
+        "summary": "The Supreme Court stated that financial institutions must compensate victims of cyberfrauds if due diligence fails.",
+        "outlets": 4,
+        "published": "2026-10-29T16:06:26+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/sc-calls-for-mandatory-compensation-to-digital-fraud-victims-in-case-of-banks-due-diligence/article71640230.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/banks-must-compensate-digital-arrest-victims-if-due-diligence-fails-supreme-court-101793272191660.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/sc-calls-for-compensation-to-digital-fraud-victims-if-banks-fail-due-diligence/articleshow/135306340.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/banks-must-compensate-digital-fraud-victims-for-losses-if-due-diligence-fails-supreme-court-3027675-2026-10-29?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Goyal says India-US trade deal will show farmers’ interests are protected",
+        "summary": "Goyal also defended the government's decision to withdraw from the China-backed Regional Comprehensive Economic Partnership (RCEP), saying that joining the free trade bloc would have sounded the death knell for India's manufacturing ambitions.",
+        "outlets": 3,
+        "published": "2026-10-29T13:41:50+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/goyal-says-india-us-trade-deal-will-show-farmers-interests-are-protected-11793274645689.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-us-trade-deal-piyush-goyal-no-farmers-interests-compromised-people-will-celebrate-comparative-advantage-fta-101793260893748.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/piyush-goyal-india-us-trade-deal-farmers-interests/articleshow/135296411.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Heavy rains batter Odisha districts following cyclone remnant",
+        "summary": "Remnants of a cyclone brought heavy rain to Odisha's Ganjam and Gajapati districts, affecting hundreds of villages.",
+        "outlets": 1,
+        "published": "2026-10-29T16:53:53+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/odisha/post-arnab-cyclone-heavy-rain-wreaks-havoc-in-odishas-ganjam-gajapati-districts/article71641226.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court strikes down Karnataka recruitment validation law",
+        "summary": "The top court struck down a state law attempting to validate a 2011 recruitment process previously ruled corrupt.",
+        "outlets": 1,
+        "published": "2026-10-29T16:37:34+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/supreme-court-strikes-down-karnataka-law-validating-corrupt-2011-recruitment/article71641638.ece"
+          }
+        ]
+      },
+      {
+        "headline": "ISRO to launch NVS-03 navigation satellite",
+        "summary": "ISRO scheduled the launch of the NVS-03 navigation satellite aboard a GSLV rocket from Sriharikota.",
+        "outlets": 2,
+        "published": "2026-10-29T11:51:39+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/what-is-nvs-03-isro-to-launch-satellite-on-october-30-why-nvs-02-was-not-successful-key-reasons-explained-11793270021063.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/isro-to-launch-nvs-03-satellite-on-october-30-to-boost-navigation-for-trains-vehicles-and-ships-101793257644350.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Flávio Bolsonaro lands in Miami after fleeing Brazil",
+        "summary": "Flávio Bolsonaro arrived in the United States via Argentina after Brazilian police canceled his passport amid investigations.",
+        "outlets": 4,
+        "published": "2026-10-29T15:06:48+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/28/world/americas/flavio-bolsonaro-us-miami-brazil-trump.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c3x2w4109pj8o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/brazils-flavio-bolsonaro-flees-to-u-s-after-election-loss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/28/flavio-bolsonaro-miami-us-fleeing-brazilian-election-defeat"
+          }
+        ]
+      },
+      {
+        "headline": "Russian drone attack on Ukrainian train station kills 14",
+        "summary": "A Russian drone strike hit a railway station in Dnipro, killing at least 14 people and wounding 14 others.",
+        "outlets": 4,
+        "published": "2026-10-29T14:45:34+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c9p8gdlz1p2ko?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/29/world/europe/ukraine-dnipro-train-russia.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxON0dvUmlSSHZXZjNsam5PN082YVZHUXF5ZHRhMkF6eHh2b0JlbzhhWFFJM0JzZGFiLU1TTkRDYk5IbE5RRE90NTlXMGx1bm9Pa0drTG02TF9Bd002Sm1IV2tXNk1aSzZPNmwxRmRyVnJBYUp2WEZtZDRCaVVWV2ptVm5zYXBDS3lsakZsdnpEZzNhRVFTWDFSUVdKUEd2dHJZMXlvdWFmYS1jZGRH0gGyAUFVX3lxTE9VQVVwWmZIZnRtQ1NDUGRjOEVzMVpfQXYtYkZvdThDbjB5T3RBa3hBUjgxUFMxNm9zNzFZZU5vd0VtN3dlbzlSeEU5UFp5WFRoQjd1ZzVGX0NjZ0pNSURsaktyYkxvRGc4eUdPRmhZWmdTdlZER1N4WGpua2FwdDQwNE5lNjlpelhXWjV4Z1R0R1FtNlc3Yk5YdDJMaGdfYWZXaElIMkpxZ3RRQTdJbUdINlE?oc=5"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAwNy1ZTkhRcTV2Y181WFVZblhrTDJGTnNQanRHNGJORUkwS09mSDNsOVV3d0NYUkw5TGdkYi1sRzhnalpDRWRNSldzNER5WUVFVVNVUDRwRFVHWE0?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "U.S. Hits Rwanda With New Sanctions Over a Conflict Trump Declared ‘Ended’",
+        "summary": "The Treasury Department accused Rwanda of undermining a U.S.-brokered peace agreement by supporting a rebel group in the eastern Democratic Republic of Congo.",
+        "outlets": 2,
+        "published": "2026-10-29T17:13:48+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/29/world/africa/rwanda-sanctions-m23-congo.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm87zw51qw0jo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "China elevates military general to Politburo ahead of congress",
+        "summary": "China promoted a military general to the Politburo as President Xi Jinping prepares for his fourth term.",
+        "outlets": 1,
+        "published": "2026-10-29T15:53:46+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/29/g-s1-150645/china-elevates-a-military-general-to-the-politburo-and-seeks-to-strengthen-party-discipline"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Christine Lagarde to step down as European Central Bank chief",
+        "summary": "ECB President Christine Lagarde announced plans to step down in February ahead of her term's end.",
+        "outlets": 3,
+        "published": "2026-10-29T17:19:01+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/29/business/christine-lagarde-resigns-ecb.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/29/european-central-bank-president-lagarde-to-step-down-early?traffic_source=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early"
+          }
+        ]
+      },
+      {
+        "headline": "Thrive Holdings to acquire ADT in $7.6 billion deal",
+        "summary": "Joshua Kushner's Thrive Holdings agreed to take ADT private in an all-cash transaction valued at $7.6 billion.",
+        "outlets": 1,
+        "published": "2026-10-29T16:03:28+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/tech/1022295/joshua-kushner-thrive-holdings-adt-acquisition"
+          }
+        ]
+      },
+      {
+        "headline": "Microsoft CEO signals AI shift will reduce job numbers",
+        "summary": "Microsoft CEO Satya Nadella indicated that artificial intelligence is set to fundamentally change company headcount.",
+        "outlets": 1,
+        "published": "2026-10-29T16:00:00+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad"
+          }
+        ]
+      },
+      {
+        "headline": "Indian stock markets rally sharply with Sensex gaining 900 points",
+        "summary": "Indian benchmark indices surged on Thursday, with the Sensex rising over 900 points backed by positive corporate earnings.",
+        "outlets": 1,
+        "published": "2026-10-29T13:03:52+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/business/india-business/why-markets-rallied-sensex-jumps-over-900-points-nifty-gains-1-5-key-reasons/articleshow/135315469.cms"
+          }
+        ]
+      }
+    ]
+  }
+}
