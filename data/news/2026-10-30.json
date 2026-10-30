@@ -1,0 +1,522 @@
+{
+  "date": "2026-10-30",
+  "generated_at": "2026-10-30T17:01:22+00:00",
+  "status": "ok",
+  "model": "gemini-3.8-flash",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Tanker with 27 Indians aboard struck by mines in Hormuz",
+        "summary": "A tanker carrying 27 Indians aboard was hit by limpet mines in the Strait of Hormuz, where multiple tankers have stopped after hitting mines.",
+        "outlets": 4,
+        "published": "2026-10-30T16:06:18+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/strait-of-hormuz-tanker-attacks-29-indian-seafarers-safe-3028916-2026-10-30?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/iran-guards-say-halted-3-tankers-after-incidents-in-strait-of-hormuz-12259486#publisher=newsstand"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUjdDdUxXVENSNGdpbWJZOEp2QXMtSy1WSUdCVFdHc21FVnMwTE9uMC1xMkFEaS1wTHRjd2JMQzFTZEtPX0drQ3hPMlZVeDlITnc2RndQRElNUy13Ny1UdXpROVVpejNQRHJ4a3l6Q0t3TTZwOUptZDNKdlRVQWJXLXBxTldad19oZUFGS3BKSUlLWlk3d055R290THF3ckRWb3hRYjlR?oc=5"
+          },
+          {
+            "source": "AP News",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOOEpYN1k4WGRzNW1fT2pyNHVESDhKWVJlTVNDbTZLVmdhY1lRUDRqT0p2WlpZSmNCUm9McUx2bXROS3E0YVRMbEp4U3V4cDcyNzFEbGZsRVM3a2V5NXRnblpucGtMTFZUMFZsYXZ0M1VxQkR6eTRackRZWmd4VE42RkcyZ043b3hXX0FhazZPdEJjQQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "North Korean hackers steal $6.3 billion from Binance in record heist",
+        "summary": "Hackers linked to North Korea stole $6.36 billion from Binance across 10 blockchains in the largest cryptocurrency heist in history, while Binance pledged to cover losses.",
+        "outlets": 12,
+        "published": "2026-10-30T11:08:41+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/cryptos-biggest-ever-heist-how-hackers-stole-6-3-billion-in-just-20-minutes/articleshow/135357593.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/business/international-business/6-3-billion-gone-north-korea-link-inside-the-crypto-heist-at-worlds-largest-exchange-binance/articleshow/135351366.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/29/technology/binance-hack-crypto.html"
+          },
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist/"
+          }
+        ],
+        "why": "Marks history's largest crypto theft, raising major security concerns for global digital asset holders."
+      },
+      {
+        "headline": "Netanyahu bloc loses majority as Israeli election sparks dispute",
+        "summary": "Final election results in Israel confirmed Prime Minister Benjamin Netanyahu's bloc lost its parliamentary majority, while his party claimed foreign interference stole the election.",
+        "outlets": 7,
+        "published": "2026-10-30T15:23:07+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/difficult-negotiations-lie-ahead-in-israel-after-netanyahus-bloc-lost-its-parliamentary-majority"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/israel-election-results-netanyahu-likud-claim-stolen-arab-parties/"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/israel-election-netanyahu-cries-foul-likud-falls-short-of-majority-authorities-reject-voter-fraud-claims-shin-bet-11793329555305.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/29/world/middleeast/israel-election-results-netanyahu-eisenkot.html"
+          }
+        ],
+        "why": "Reshapes Israeli politics and complicates Middle Eastern relations as Netanyahu faces potential ouster."
+      },
+      {
+        "headline": "Spain train collision kills 69 people as officials probe signal errors",
+        "summary": "At least 69 people died after two high-speed trains collided in Spain, where officials are investigating traffic control errors that allowed a train to proceed at high speed.",
+        "outlets": 5,
+        "published": "2026-10-30T15:03:39+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6zxj2e5qlxxo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/30/spain-trust-high-speed-rail-broken-after-second-deadly-crash-this-year-says-pedro-sanchez"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/30/world/europe/spain-crash-contoller-errors.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/30/spains-train-crash-redraws-the-electoral-battle-ahead-of-the-elections?traffic_source=rss"
+          }
+        ],
+        "why": "Stands as one of Europe's deadliest recent rail disasters, triggering sweeping transit safety investigations."
+      },
+      {
+        "headline": "Early voting surges across Senate battlegrounds ahead of US midterms",
+        "summary": "Millions of Americans are casting advance ballots as early voting significantly outpaces previous midterms, with sharp increases in competitive Senate battleground states four days before Election Day.",
+        "outlets": 6,
+        "published": "2026-10-30T14:44:02+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/millions-more-americans-vote-ahead-of-election-day-as-early-voting-jumps-across-senate-battlegrounds"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/30/g-s1-149975/2026-midterms-senate-map"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/2026-midterm-elections-campaigns-weekend-before/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/live-updates/midterm-elections-2026-1-week-high-stakes-elections/?id=137578278"
+          }
+        ],
+        "why": "Determines the balance of power in the U.S. Congress, directly shaping national policy."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Pope Leo XIV casts mail-in ballot in US midterm election",
+        "summary": "Pope Leo XIV became the first sitting pontiff to vote in a U.S. general election, submitting a mail-in ballot from the Vatican for Illinois.",
+        "outlets": 6,
+        "published": "2026-10-30T16:53:35+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/leo-xiv-has-become-the-first-pope-in-history-to-vote-in-a-u-s-general-election"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckwyq2509p7xo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/pope-leo-xiv-votes-us-election/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/30/us/elections/pope-leo-votes-mail-midterm.html"
+          }
+        ]
+      },
+      {
+        "headline": "Trump administration plans to deport dozens of Afghan immigrants via Pakistan",
+        "summary": "The Trump administration plans to fly dozens of Afghan immigrants from Louisiana to Pakistan, where they are expected to be expelled into Afghanistan.",
+        "outlets": 1,
+        "published": "2026-10-30T16:43:19+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/30/world/asia/afghan-refugees-deported-flight-pakistan.html"
+          }
+        ]
+      },
+      {
+        "headline": "Homeland Security leak exposes records of more than 41,000 employees",
+        "summary": "A nonprofit leaked information exposing more than 41,000 Homeland Security employees in an effort to promote transparency regarding the administration’s deportation campaign.",
+        "outlets": 2,
+        "published": "2026-10-30T00:23:59+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/29/us/politics/homeland-security-hack.html"
+          },
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/security/2026/10/massive-leak-exposes-41000-dhs-workers-and-undercover-ice-agents/"
+          }
+        ]
+      },
+      {
+        "headline": "Houston grand jury indicts ICE agent for hitting man with vehicle",
+        "summary": "A grand jury in Houston indicted a U.S. Immigration and Customs Enforcement officer on felony aggravated assault charges for allegedly hitting a man with a vehicle.",
+        "outlets": 4,
+        "published": "2026-10-30T16:31:34+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/30/us/houston-ice-agent-charged-ramming.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/ice-officer-indicted-felony-texas-hit-man-vehicle/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/ice-officer-struck-man-vehicle-pursuit-texas-indicted/story?id=137711751"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOYU9nYXdZWDdrd0xVMC1QQ2YwclV5TXJKWG4tQm1FZHlpTkVyZnZOWUxxZHI3UkQ5X3phQ2Z5UFY4RHRqZWhhaGpWbVB4WWtSbnl5QnNmbW9fVko2cXFGdWVUaE9uRXg2Z18tbEhIM01EbzQ3SUREY2ZVanpfSVNueFAtU0x0SDFLLWlwNGJSX0R0T0lCRlFzcFpkVlliRTF0LVlCcU8wZzBXV012LVZF?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Indian national sentenced to eight years in US for money laundering",
+        "summary": "An Indian national has been sentenced to eight years in prison in the United States over a money laundering case that targeted elderly victims.",
+        "outlets": 1,
+        "published": "2026-10-30T16:00:01+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/indian-national-jailed-for-8-years-in-us-over-laundering-case-targeting-elderly-people-ordered-to-pay-2-4m-to-victims/articleshow/135368796.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Unions sue Justice Department over California voting threats and subpoenas",
+        "summary": "Labor unions sued the Justice Department after the Trump administration issued threats and subpoenas to California officials over allegations of voting by undocumented immigrants.",
+        "outlets": 1,
+        "published": "2026-10-30T15:11:26+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/30/us/elections/california-unions-lawsuit-justice-department-election-immigrants.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "India to conduct national population census starting January 25",
+        "summary": "India will conduct its national population census from January 25 to February 28, 2027, with snow-bound regions excluded from the initial phase.",
+        "outlets": 3,
+        "published": "2026-10-30T16:28:38+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/population-census-begins-jan-25-barring-snow-bound-regions-101793377480906.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/census-2027-population-enumeration-from-jan-25-feb-28-2027-poll-bound-snow-bound-areas-excluded/articleshow/135368183.cms"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/india-to-conduct-population-census-from-january-25-to-february-28-2027-march-1-set-as-reference-date/articleshow/135366914.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Rafale Marine jet completes maiden landing on INS Vikrant",
+        "summary": "A Rafale Marine fighter jet completed its maiden landing and take-off on aircraft carrier INS Vikrant as India awaits delivery of 26 ordered jets.",
+        "outlets": 5,
+        "published": "2026-10-30T13:45:00+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/video-rafale-marine-jet-touches-down-on-ins-vikrant-for-first-time-12259518#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/newsmo/short-videos/why-is-ins-vikrants-first-rafale-landing-a-big-deal-3028688-2026-10-30?utm_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/defence/news/watch-rafale-marine-lands-on-ins-vikrant-navy-tests-french-jet-in-major-milestone/articleshow/135357716.cms"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/defence/rafale-makes-first-landing-on-ins-vikrant-aircraft-carrier-watch-video/articleshow/135358720.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Helicopter crash in Uttarakhand kills six pilgrims and pilot",
+        "summary": "A helicopter carrying five pilgrims from Karnataka and a Delhi pilot crashed near Badrinath amid adverse weather, killing all six people on board.",
+        "outlets": 6,
+        "published": "2026-10-30T16:06:07+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/uttarakhand/uttarakhand-chopper-crash-casualties-badrinath-to-dehradun-updates-october-30-2026/article71644516.ece"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/chopper-returning-from-badrinath-goes-missing-while-flying-over-uttarakhands-joshimath-12258231#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/cities/other-cities/story/helicopter-goes-missing-in-uttarakhands-chamoli-district-two-others-deployed-for-search-mission-3028447-2026-10-30?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/bengaluru-crime-branch-official-lawyers-delhi-pilot-among-6-killed-in-uttarakhand-helicopter-crash-101793369443071.html"
+          }
+        ]
+      },
+      {
+        "headline": "India slashed U.S. and Russian oil in September, coinciding with ‘Russia Sanctions Act’; import from UAE increases",
+        "summary": "Government data shows that India’s oil sourcing remains highly concentrated, with just Russia and the UAE accounting for 60% of oil imports",
+        "outlets": 1,
+        "published": "2026-10-30T16:00:20+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/india-cut-us-and-russian-oil-imports-in-september-2026-pivoting-to-the-uae-as-tariffs-and-sanctions-reshaped-the-market/article71644597.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court rules soured consensual relationships cannot be treated as rape",
+        "summary": "The Supreme Court ruled that physical intimacy in a consensual relationship cannot be branded as rape after the relationship sours.",
+        "outlets": 1,
+        "published": "2026-10-30T10:19:46+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/physical-intimacy-cannot-be-branded-as-rape-after-consensual-relationship-sours-sc-101793355232469.html"
+          }
+        ]
+      },
+      {
+        "headline": "Amit Shah promises Uniform Civil Code in Uttar Pradesh if re-elected",
+        "summary": "Home Minister Amit Shah announced that a Uniform Civil Code will be implemented in Uttar Pradesh if the BJP is voted back into power.",
+        "outlets": 5,
+        "published": "2026-10-30T16:51:16+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/uttar-pradesh/bjp-will-bring-ucc-in-uttar-pradesh-if-voted-to-power-again-says-amit-shah/article71644484.ece"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/ucc-will-be-implemented-in-uttar-pradesh-if-bjp-returns-to-power-amit-shah-12258210#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/bjp-will-bring-ucc-in-uttar-pradesh-if-voted-to-power-again-amit-shah-101793354405799.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/amit-shah-invokes-ram-temple-promises-ucc-in-up-if-bjp-returns-to-power/articleshow/135352528.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Russian independent newspaper Novaya Gazeta forced to shut down",
+        "summary": "Novaya Gazeta, Russia’s last independent newspaper whose co-founder won the Nobel Peace Prize, announced it was forced by authorities to shut down.",
+        "outlets": 4,
+        "published": "2026-10-30T15:52:51+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/30/novaya-gazeta-russia-independent-newspaper-to-close"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/novaya-gazeta-russia-newspaper-closes-putin-free-press-crackdown/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/30/world/europe/russia-novaya-gazeta-newspaper.html"
+          },
+          {
+            "source": "Financial Times",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSFZ1eWtyMjEzU0JEaEhmY2k4ZmZLUmZmYmVOcnZNYVlyR2lhMHp4TEJiU3o5T0xtUE9fdzN0aWdJYk9PNDhLVDhNYWVnd2VuSkJ1a3BnMWFlOGZjYVRiaW1TZ0d2cDlRXzJyVXIyUk5EMm93a0ZrZy04VFNOSDNrNTBDQ2s?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Truce allows humanitarian convoy to evacuate civilians from Oleshky, Ukraine",
+        "summary": "A humanitarian convoy carrying Russian and Ukrainian officials entered the besieged Ukrainian town of Oleshky after a ceasefire enabled rare civilian evacuations and aid delivery.",
+        "outlets": 3,
+        "published": "2026-10-30T16:26:11+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c60me298k1yeo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/26/world/europe/ukraine-oleshky-ceasefire-russia-war.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/russian-ukrainian-humanitarian-officials-enter-oleshky?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Hong Kong leader apologizes for residential fire that killed 168 people",
+        "summary": "Hong Kong's leader apologized for government shortcomings following a residential building fire that killed 168 people, the deadliest residential blaze globally since 1980.",
+        "outlets": 2,
+        "published": "2026-10-29T18:14:21+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/29/hong-kong-john-lee-apologises-wang-fuk-court-fire-killed-168-people"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/29/world/asia/hong-kong-fire-john-lee-apology.html"
+          }
+        ]
+      },
+      {
+        "headline": "Ireland to set up government body examining potential united Ireland",
+        "summary": "The Irish government announced it will establish an official body to explore the possibility of a united Ireland.",
+        "outlets": 2,
+        "published": "2026-10-30T16:12:44+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/irish-unity-ireland-government-body-northern-ireland-constitutional-future-3028918-2026-10-30?utm_source=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/30/irish-government-to-assess-potential-for-united-ireland?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Intel shares plunge 29% in steepest single-day drop since 1974",
+        "summary": "Intel shares plummeted 29 percent on Friday in one of the steepest single-day drops in the company's history, wiping out roughly $140 billion in value.",
+        "outlets": 5,
+        "published": "2026-10-30T16:04:34+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/world/us/intel-stock-price-crash-why-intc-shares-plunged-29-today-despite-strong-earnings-how-the-ai-memory-crunch-and-weak-pc-demand-hit-its-forecast-and-could-the-selloff-deepen/articleshow/135368038.cms"
+          },
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/after-intels-historic-stock-drop-analysts-say-theres-no-reason-to-buy-the-dip-068446af?mod=mw_rss_topstories"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/nasdaq-futures-tumble-tech-earnings-ai/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "DoorDash offers $17 billion to acquire grocery delivery rival Instacart",
+        "summary": "DoorDash offered $17 billion to acquire Instacart in a proposed merger that would combine DoorDash's logistics reach with Instacart's grocery technology.",
+        "outlets": 2,
+        "published": "2026-10-29T22:41:40+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/economy/doordash-offers-17-billion-for-instacart-in-what-would-be-big-grocery-delivery-consolidation"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/29/technology/doordash-instacart-acquisition-delivery.html"
+          }
+        ]
+      },
+      {
+        "headline": "GM to pay $220 million after selling customer Smart Driver data",
+        "summary": "Owners of GM cars found their driving data had been sold to insurance companies.",
+        "outlets": 1,
+        "published": "2026-10-30T13:53:20+00:00",
+        "links": [
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/cars/2026/10/gm-to-pay-220-million-after-selling-customer-smart-driver-data/"
+          }
+        ]
+      },
+      {
+        "headline": "Meta settles youth social media addiction lawsuit, avoiding trial",
+        "summary": "Meta settled a lawsuit brought by an 18-year-old Mississippi woman over social media addiction, avoiding trial in one of several bellwether personal injury cases.",
+        "outlets": 1,
+        "published": "2026-10-30T16:11:21+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/30/business/meta-settlement-child-addiction-suit.html"
+          }
+        ]
+      }
+    ]
+  }
+}
