@@ -1,0 +1,482 @@
+{
+  "date": "2026-10-31",
+  "generated_at": "2026-10-31T16:06:32+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Binance hit by record $6.3 billion crypto theft",
+        "summary": "The world's biggest crypto exchange suspended withdrawals after suffering a massive hack, with researchers attributing the theft to North Korea's elite hacking unit.",
+        "outlets": 4,
+        "published": "2026-10-31T15:14:44+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/what-to-know-about-the-6-3b-hack-on-binance-likely-the-biggest-ever-crypto-theft"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/30/business/binance-hack-crypto-stocks-bitcoin.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/videos/cv2d62e34rw5o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CNBC",
+            "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE92Z21qd19KRzhCMzVTUjhFRE11LVg0bFM1UVBrWndlREE1VWtpYzVFdG9aRko3eWxiaXZyNERvWXNsdDkzSzFES1pob19ZZlhLRFl3WWU4Q2ZCczVHcnhjNzQtLXVxYllLclpuTEFicDU5N29QMDRGM2JB0gF_QVVfeXFMT0FOSnpHaXhQSEJUekRROEF2Rk9ROGpkaVBUaGk5bVpsOFFFRFcxVHhSbERReVZ6ZVNtNVF3QTkxWG9rSkdnLXJpdTVkbkF2d2tuQVdRUG1sbERaYTdVeFZPR2VveExpUDI5d0ZfeTlnNVZHRmtBakx3bmdvNW1GRQ?oc=5"
+          }
+        ],
+        "why": "Massive global crypto security breach with potential links to state-sponsored hackers."
+      },
+      {
+        "headline": "US scraps traditional G20 photo as Europeans object to posing with Russia",
+        "summary": "Secretary of State Marco Rubio cancelled the traditional group photo after European officials threatened to boycott over the presence of Russia's Lavrov.",
+        "outlets": 2,
+        "published": "2026-10-31T10:34:58+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/us-bins-g20-photo-as-europeans-object-to-posing-with-russias-lavrov-12262024#publisher=newsstand"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNeVlNbE5qNklYRHRWYUREQ3lkdVllZExDcGVJR0trZ0ZQRHFlblc4b1RUWmtfWWV6UHFmTVFJZ3UtQ2txLU9tZW1PVlZmbzU4OVY2T2M1eEhVaUpYVXNWdjVremt0VWd4M2hGUVIzMEFXNEVKNXJUZm9KejBWcUVaYU9zdXhqVGNWN2Vhb3pUeGVVd2h6TVB6ZHVYdFFxYjIwSnlNTW02WUNidWhwTVYzTGxjdWFuNjZicjZXaU9adkg2S0FHUlFEcllmSUdGdENLYWRyVzNwaW5pUUlF?oc=5"
+          }
+        ],
+        "why": "Major diplomatic fallout at international summits involving the US and Russia."
+      },
+      {
+        "headline": "Rahul Gandhi hints at big reveal on CEC as INDIA bloc stages protest",
+        "summary": "Rahul Gandhi alleged democratic institutions are shut to the Opposition, prompting INDIA bloc leaders to organize a mega rally and demand the Chief Election Commissioner's impeachment.",
+        "outlets": 4,
+        "published": "2026-10-31T15:44:30+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/rahul-gandhi-hints-at-big-reveal-on-cec-bjp-slams-india-bloc-for-mockery-of-parliament-101793454896691.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/make-him-a-mock-pm-bjps-jibe-at-rahul-gandhi-over-impeachment-show-12264243#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/rahul-gandhi-cec-gyanesh-kumar-impeachment-election-rigging-mock-parliament-3029477-2026-10-31?utm_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/keep-rahul-gandhi-as-your-mock-prime-minister-for-life-bjps-swipe-at-opposition/articleshow/135402636.cms"
+          }
+        ],
+        "why": "High-stakes political confrontation over India's electoral oversight bodies."
+      },
+      {
+        "headline": "US midterms could shape immigration agenda and H-1B visas",
+        "summary": "The upcoming US midterm elections could shape Donald Trump's immigration agenda, with potential implications for Indian professionals seeking H-1B visas and green cards.",
+        "outlets": 1,
+        "published": "2026-10-31T14:49:16+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/us-midterms-2026-will-trumps-immigration-policies-face-a-check-what-it-means-for-h-1b-visas-green-cards-for-indians-11793452534271.html"
+          }
+        ]
+      },
+      {
+        "headline": "Train disaster puts pressure on Spain's Prime Minister Pedro Sánchez",
+        "summary": "Prime Minister Pedro Sánchez faces intense scrutiny after the second major rail accident this year put his government's competence on trial.",
+        "outlets": 2,
+        "published": "2026-10-31T14:14:18+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/31/world/europe/spain-train-crash-politics.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmeweppr990qo?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "Severe political crisis for a European leader ahead of elections."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Justice Department seeks to isolate Alaska ballots amid criminal probe",
+        "summary": "The DOJ intervened in a Senate race dispute amid criminal allegations that Democrats recruited a spoiler candidate.",
+        "outlets": 2,
+        "published": "2026-10-31T13:50:58+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/10/31/nx-s1-6024423/criminal-probe-alaska-senate-candidate"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/top-federal-prosecutor-in-alaska-says-criminal-probe-underway-over-would-be-spoiler-senate-candidate"
+          }
+        ]
+      },
+      {
+        "headline": "Appeals court rejects DOJ request over disputed California ballots",
+        "summary": "An appeals court rejected a Justice Department request to set aside roughly 20,000 disputed ballots in California amid citizenship verification concerns.",
+        "outlets": 2,
+        "published": "2026-10-30T20:56:32+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/appeals-court-rejects-justice-department-request-for-california-to-set-aside-disputed-ballots"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/30/us/politics/appeals-trump-california-ballots.html"
+          }
+        ]
+      },
+      {
+        "headline": "Judge investigates if Trump officials misled court over D.C. golf course plan",
+        "summary": "A federal judge opened an investigation into whether Justice Department lawyers misled the court regarding plans to renovate a D.C. golf course.",
+        "outlets": 2,
+        "published": "2026-10-30T22:45:35+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/news-wrap-judge-investigating-if-trump-officials-misled-court-about-d-c-golf-course-plan"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/30/us/politics/special-master-reyes-trump-golf.html"
+          }
+        ]
+      },
+      {
+        "headline": "US inmate Christa Pike speaks out after failed execution attempt",
+        "summary": "Inmate Christa Pike made her first public statement since surviving a lethal injection execution attempt in September.",
+        "outlets": 2,
+        "published": "2026-10-31T03:44:49+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ck62ydn7dj9eo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQlRxTDViY09kV0dWZ0VOd3c4ZE1YcjFybmhCUEJtUHo0UEV6dHFIejBXbGZHTmoyMjBaYndjc05wekFyZXBocm9KRGs5QXVEM0wxa09ERkJsMkVyMkNwQnJEZnJ0U2hkVExuTFFVM3Z0YV9UZnZFLVBmWFdxTjhIZ09pNC1jREpEUTNWYmxZMUhsMHFTN043RkdJZ0g2bEZ4ajJ4SGRWSdIBrAFBVV95cUxPMlVaTlZacTVTR0VIM1JMUnMwOUVBNWVnZ2dxanBkZlNWZ0s4cFRWSF9jbHZtTUctNUkweUZMYkJ3aFNqRG9VLTFKZks3QWxqQkFYSHFNYXlrcjJvRV9UVWIxN29GeWUzMm5tQlNUXzlHeGNuMG1ucktzNHNDRm1DUV9xNzlhMDBhcGkwWmJaUU44ZmxrYXNKSUVKeGV2TGZEeFVpMXowV2Q3WVB2?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Theme park employees among hundreds arrested in Florida law enforcement sting",
+        "summary": "Seventeen theme park employees were among 281 people arrested during a Polk County law enforcement sting operation.",
+        "outlets": 1,
+        "published": "2026-10-31T15:45:02+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/disney-universal-employees-sex-trafficking-sting/"
+          }
+        ]
+      },
+      {
+        "headline": "Ads accusing candidates of protecting Epstein fill airwaves in final midterm push",
+        "summary": "Political campaigns utilized controversial ads linking candidates to the late sex offender as the country prepares to vote.",
+        "outlets": 1,
+        "published": "2026-10-31T15:02:00+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/oct/31/political-ads-midterms-epstein-republican-candidate"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "J&K Chief Minister Omar Abdullah marries journalist Nidhi Razdan",
+        "summary": "Posting the wedding pictures on X, Omar Abdullah said, ‘A new journey began yesterday’; Nidhi Razdan also posted pictures with a joyful message, “It’s done bro”",
+        "outlets": 5,
+        "published": "2026-10-31T15:11:28+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/jampk-cm-omar-abdullah-gets-married-to-journalist-nidhi-razdan/article71649156.ece"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/kangana-ranaut-congratulates-couple-omar-abdullah-nidhi-razdan-marriage-3029469-2026-10-31?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/j-k-chief-minister-omar-abdullah-marries-journalist-nidhi-razdan-in-srinagar-12263625#publisher=newsstand"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/omar-abdullah-nidhi-razdan-get-married-jk-cm-shares-new-journey-post/articleshow/135398512.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief",
+        "summary": "Air Chief Marshal Ashutosh Dixit took over leadership of the Indian Air Force following a career spanning four decades across diverse operational domains.",
+        "outlets": 3,
+        "published": "2026-10-31T12:55:21+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/who-is-ashutosh-dixit-air-chief-marshal-takes-charge-as-new-iaf-chief-he-was-part-of-operation-sindoor-op-rakshak-11793446061067.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/defence/air-marshal-ashutosh-dixit-takes-over-as-chief-of-air-staff-after-a-p-singh-retires/articleshow/135396986.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/air-chief-marshal-ashutosh-dixit-takes-charge-as-new-chief-of-air-staff-101793438820531.html"
+          }
+        ]
+      },
+      {
+        "headline": "Azam Khan arrested by ED minutes after release from Rampur jail",
+        "summary": "Azam Khan was arrested by the Enforcement Directorate right after being released from Rampur jail following nearly 11 months in custody.",
+        "outlets": 3,
+        "published": "2026-10-31T14:26:51+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/lucknow/musalmaan-hone-ki-saza-hai-azam-khan-arrested-minutes-after-release-from-rampur-jail/articleshow/135403296.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/samajwadi-party-leader-azam-khan-detained-by-ed-minutes-after-release-from-rampur-jail-pmla-case-101793455592816.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.aajtak.in/uttar-pradesh/story/azam-khan-abdullah-azam-high-court-bail-ed-rampur-jail-ntc-apdy-rptc-2685197-2026-10-31?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Construction, demolition activities halted in Delhi-NCR from Nov 5 to 20 to curb air pollution",
+        "summary": "Delhi is bracing for worsening air pollution in the coming days as the city's air quality is expected to drop into ‘poor’ category from November 1.",
+        "outlets": 2,
+        "published": "2026-10-31T15:14:23+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/new-updates/delhi-pollution-restrictions-from-november-1-50-wfh-parking-charges-to-double-vehicle-curbs-and-more-check-full-list-under-winter-action-plan/articleshow/135404298.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/construction-demolition-activities-halted-in-delhi-ncr-from-nov-5-to-20-to-curb-air-pollution-101793357925638.html"
+          }
+        ]
+      },
+      {
+        "headline": "Two die in suspected electrocution at Bengaluru hotel swimming pool",
+        "summary": "A Lufthansa crew member and an IBM manager died in a suspected electrocution at Bengaluru's Conrad Hotel swimming pool.",
+        "outlets": 3,
+        "published": "2026-10-31T11:04:08+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/bengaluru-hotel-pool-tragedy-lufthansa-crew-member-and-ibm-manager-die-in-suspected-electrocution-11793442201967.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/2-foreign-nationals-die-in-suspected-electrocution-at-bengaluru-hotel-pool-german-airline-crew-slovak-ibm-project-manager-101793429552962.html"
+          },
+          {
+            "source": "Telegraph India",
+            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNekhETDNxaV94VEZDTkowVXZpQlFxbnNsS2RnMHdXZ2ZOYVlRN1RUNlZPVnhoQy1PRnJUZi1BTXp6T2I4Wm0xUkxNVmxTMXd3OGpGODJoXzNuRm5nN01MM0ZXUkFEUUgtZzNGdklITTZnZnBNUnBORTduaVM2SV9rX2FrYXhLcHBkNU1IUm96MUlBSi1ZZ1U5eXFiN1o0UnJvWTY3TmNQYnY2Wlk5X2NVNGhOcDVrRUdMN3BsTnQxaXlyU2RNTnl3STI5dUxGd2hLb1g2NEpB0gHbAUFVX3lxTFBmbm1VOEVnSzU3STBzSVVlMllQYVVxT2FsbEtsb0xiZnpSRWdUd1ByRUNld0ppNzBUemp4X3VPSTh6WjNBcmJCY1hLbDItYUZTQ1VTalZoUVhxcWFXRDRmd2ozTDV3WjVoUjA2RUF4TExPTE80dEhaYWE0R3NTUW9fWFM1d21QZXNsT3NYaUljbEJjWGxiWHg0U3NkNk15VGoyZUloeTQzbUlEQ3BGWFpnU0ZsOUE2eUtCMW1GTW1aSnd3VUpUR1RiQVBkOXZQYVZ1bUJEVjlmcWNYYw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Centre scraps petrol export duty and hikes diesel levy",
+        "summary": "The central government removed the Rs 2.5 per litre petrol export duty while raising the diesel levy to Rs 11.5.",
+        "outlets": 2,
+        "published": "2026-10-31T10:09:00+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/government-scraps-export-duty-on-petrol-raises-levies-on-diesel-and-atf/articleshow/135395520.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPRno3UnEyOG85UXAwYi04bTZNb2pPUHZqMm93YThsWG9vMS13Znh4NmtxU3BOdE9kSUhfT0F1aGY4Z3hLeU02bjVpMEpWRWIyay15aTl6MVl0Rkx4eWpvYjNyNjZVZC1ZbFExVHBYdjlmWlVVQm00YWRqM2lrbFdmemtTbHNrNnlZcmF2SjZGZ09CTG9KUUlpblhEczlxRzVoNktndEtVWmlvMWxyWjRUcnhqcl82SjUzb0pYVHNRTGFZV0FuTlc2UUFVTUt1c01Rd0dTal9oejZyZmVvX0dtQVBhek1CYklPc2t1X3d6WC1qZw?oc=5"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Congo Ebola deaths top 5,000 amid fears of wider spread",
+        "summary": "Data from the Congolese Ministry of Health revealed that Ebola has killed 5,026 people out of 10,351 infected.",
+        "outlets": 4,
+        "published": "2026-10-31T15:25:17+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/congos-ebola-deaths-top-5000-as-fear-of-continent-wide-spread-mounts"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cj5ynryyep2yo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5jNU5SVHJ6R1hPT1VhOS02QU9URWQwR0htNnBXeEg1UXNWOGV3T25BbTVhZXJXVDdhV3hRVy01RWItVTR4eWRSWGdWWlNTdjd5QnB4MlA5Wmw1M28?oc=5"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNaWlyam1sUmtaTno0Rk1sTmsycG5wNXh1UkFpRzBzZFduTkFpdHVpNGtYQlExbW5VTHh2bk9RbkxtVUEybkc4ZThKYTBieVRaTm5aQXhtSW9pUWdhZlRiR3c1ckQyZ0FoUXFpM0pNbEl1bDdyRHJUNWFDWW9PYTFVTVFHSVNtNkRUQ3NuZzl1V0xkRkNDU25JR3A0bDIzS0hNa3ZpX3JGLVZSdmVDRFlnSFM0T3FRb2lKVGc?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Poland deploys riot police in standoff over country's top court",
+        "summary": "Polish riot police deployed as judges backed by the current government suspended the chief justice amid an escalating political feud.",
+        "outlets": 3,
+        "published": "2026-10-31T15:36:52+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/31/world/europe/poland-court-police-president.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/oct/31/riot-police-deployed-to-polands-constitutional-court-after-judge-suspended"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/crz9824d5e88o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Residents evacuated from Russia-occupied city back in Ukraine",
+        "summary": "The civilians traveled by bus and plane through Russia and Belarus before returning to Ukraine, following a deal brokered by U.S. first lady Melania Trump.",
+        "outlets": 4,
+        "published": "2026-10-31T14:47:44+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/residents-evacuated-oleshky-arrive-ukraine-temporary-us-brokered-ceasefire/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/residents-evacuated-from-russian-occupied-oleshky-reach-ukraine-after-localized-ceasefire"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAxZU9vVXZSbnhhckxtakdBUm90QXBOVWFQYnp1dnhGMzl1WjkxTkNyMWF0MXZhaGRRRmNPZzA4Z29UTDFpMlZzS3pRXzZUdkdyeEdNamEwR0RZeUE?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "UK Prime Minister open to formal apology for historical slavery",
+        "summary": "The British premier stated openness to a formal apology for slavery while ruling out financial reparations.",
+        "outlets": 2,
+        "published": "2026-10-31T12:30:10+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/30/world/europe/britain-burnham-charles-apology-slavery.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbGJIZ1JMeHVVVGlha1QzOVB3UGVHX1BIVHBWbEJ4VnJ5SmVnUk52TWpGZnd1M19NRTFOSWV4SjNFRnpEc3B4SlFocDh4Y1RRTWFia0xXWFlzcmFiMFJZNFZrN2xkRkdpd05icEZGQURHNnBLQ1NoUUMzYUgwSWNvVE9XM2ZuNVNDYWIzRzJYZ3EwT3JGYmhETG9jcjRTWUFtX0N2dmljSkhTbGhWZVdGaEllcG1uVktEZVRUZ3Z30gHEAUFVX3lxTFB1cVFzalRCVFlpN2JVVE90RGU4YXk3bTl0RmtiSmVoTVFlc2NBTWw2RGZrbTZManFlcnlnX2tWVzlWZzI4TVZKOThHUHRsZEZVaFhyX1NTRUpDZjhCU3Bwa1dEazlHdGg0WUwzb2xQd2lJMWFvUGRlQzRVdWtlU18wTEQ4RnJaaG9fR204Z09iajk4MmVWZWFmQVlfZzlvSUI2LTFYcWJ0QXMwbmxnN3lEWnMzLUpCMGNndTBWYzZ2RXFCODU?oc=5"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "CDSL reports 24% jump in Q2 net profit to Rs 173 crore",
+        "summary": "Central Depository Services reported a 24 percent year-on-year increase in net profit alongside a 24 percent revenue rise for the second quarter.",
+        "outlets": 2,
+        "published": "2026-10-31T10:20:46+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/cdsl-q2-results-net-profit-jumps-24-yoy-to-rs-173-crore-revenue-up-24/articleshow/135397659.cms"
+          },
+          {
+            "source": "NDTV Profit",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORlZHWThtZ2pWR0tEbWNXNDhSYWlVMnJXMmhsN0dhZjEwcUExeHBjTGIyaFZCOWRndmdjRVRveEZaN29MUzViMkFoQmNnNy1LVlliX2pzMjlVNlZYMDE2N0lVYVc4WjZHRF9vaFpoUVhpTGVOYVVTRG9PYWZxLTRNSEFuRy02dnE4dnZ4bHV3R1N6M3kzX2V2cW9Hc0pyXzlMbWdQN1ZQWE9SQzTSAbMBQVVfeXFMT19Nb3doVVNreTFOZFFuMnZocUpmZ3ppd0NBQzA4ZTZOUzA1cjlUMTFiS0pCblhnRmctNW5aU2lYdzF5Mk1rdmM1TzJvNnJMNjNyaGM5cEV3MU1CVlBxMkxhUTRIY1FhZEpmamY3X1FSNVlpMzhETEFvdU8xZURKOTR4dFpVUkZpT3ZXZ21LWDRIbzIybWczOEpHNGZRZng0YTV1b1BDRGhwY0lRVjduMlJ6bVk?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Noel Tata seeks board scrutiny of SP Group exit plan",
+        "summary": "Noel Tata requested board scrutiny regarding the SP Group's Rs 25,000 crore exit plan and overall Tata Sons restructuring.",
+        "outlets": 2,
+        "published": "2026-10-31T00:00:00+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/noel-tata-seeks-board-scrutiny-of-sp-groups-rs-25000-crore-exit-plan-tata-sons-restructuring/articleshow/135376707.cms"
+          },
+          {
+            "source": "The Economic Times",
+            "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPM0tJUWw3Z1E2OV9BTEt0cUIwOEF1NFFfS2RDeUdHSUFmakRSdnRTWjI5Nkxxc1pYejA5Ti1vUHRIUWpITUxXRnp6ekkzdkdXQkxZdmIxVFlhb0FYTG5ZT0xnX01JRklDVHpCY0dZZUNkQ09KbzF6VTl2a1Vaa0pHREFGMXlpdmI5U0FTNS1qekFDUUkyMnJFODFsWWJtUUhZM2MybENiYmtxN0llRE82SWRuTkx0aUZ0a3owbnF2S0lyTm91TXBfNVpSZ216UExKczFqbF9JeV9KUG1MLWg3MHFiQXpuWHlrR2xQWkx1NUlKZ2ZfVFRCUWhfR0xIdV9aMmtVTEFLONIBjAJBVV95cUxQcldrUm96QTVLN0diUXdnaXdjSHF3LV96ZU03WHhnT3JSSFc0TVh1M21XWjZUdDNjUE5yWUpyU1kzZndLOVdkM0xqZ1VnRXNteVE4Y0c4V1JpZHkzTHVIZU5oOXFLR3FxTUJFNkc2a2JrcWIwckFGazNRQjYtMXJWanZJYmYxVFBWNDR0NEZEZ01Mc1ZybjVhQS1FYXlIcWlZak5ac3hEVkRrLTlmOWFKXzBuYVlfcjdMaXVITFFmTnVyVmcyVHNLZTNSNWlhQVdzMS02VW9fOFVucUtQUG00eElHT2FGd2l4R0NZbk8tX0Ezbl85S1RFckdjRUlwOGNxQVcyOGYyZHg0RzdR?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Ambani's Jio becomes India's second-largest company after stock debut",
+        "summary": "Reliance Jio completed India's largest-ever stock market debut, raising $3.2 billion in its initial public offering.",
+        "outlets": 1,
+        "published": "2026-10-31T10:39:15+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/10/31/how-ambanis-jio-became-indias-second-largest-company?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "UK charity shop profits plummet amid shift in secondhand clothes market",
+        "summary": "The British Heart Foundation reported exceptionally challenging trading conditions as retail profits fell amid the rise of online resale platforms.",
+        "outlets": 1,
+        "published": "2026-10-31T15:10:52+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/society/2026/oct/31/profits-uk-charity-shops-oxfam-shift-secondhand-clothes-market"
+          }
+        ]
+      }
+    ]
+  }
+}
