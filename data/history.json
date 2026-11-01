@@ -640,5 +640,19 @@
       "United"
     ],
     "outbound_stops": 0
+  },
+  {
+    "checked_at": "2026-11-01T18:12:25Z",
+    "weekend_start": "2026-11-06",
+    "weekend_end": "2026-11-08",
+    "from_airport": "DFW",
+    "to_airport": "ORD",
+    "currency": "USD",
+    "status": "ok",
+    "price": 408,
+    "airlines": [
+      "United"
+    ],
+    "outbound_stops": 0
   }
 ]

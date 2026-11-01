@@ -109,8 +109,8 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <div class="tile">
   <div class="tile-label">Cheapest round trip &middot; Fri Nov 6 → Sun Nov 8</div>
   <div class="tile-value">$408</div>
-  <span class="delta delta-up">&#9650; $68 since previous check</span>
-  <div class="tile-meta">United &middot; Nonstop outbound &middot; checked Oct 31, 12:27 PM CT</div>
+  <span class="delta">No change since previous check</span>
+  <div class="tile-meta">United &middot; Nonstop outbound &middot; checked Nov 1, 12:12 PM CT</div>
 </div>
 </section>
 
@@ -129,6 +129,7 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <table>
 <thead><tr><th>Checked</th><th class="num">Price</th><th>Weekend</th><th>Airline</th><th>Outbound</th></tr></thead>
 <tbody>
+<tr><td>Nov 1, 12:12 PM CT</td><td class="num">$408</td><td>Fri Nov 6 → Sun Nov 8</td><td>United</td><td>Nonstop</td></tr>
 <tr><td>Oct 31, 12:27 PM CT</td><td class="num">$408</td><td>Fri Nov 6 → Sun Nov 8</td><td>United</td><td>Nonstop</td></tr>
 <tr><td>Oct 30, 1:20 PM CT</td><td class="num">$340</td><td>Fri Oct 30 → Sun Nov 1</td><td>Frontier</td><td>1 stop</td></tr>
 <tr><td>Oct 29, 1:44 PM CT</td><td class="num">$449</td><td>Fri Oct 30 → Sun Nov 1</td><td>American</td><td>Nonstop</td></tr>
@@ -180,10 +181,10 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 </div>
 </section>
 
-<footer>Last check Oct 31, 12:27 PM CT. Prices are spot checks, not guaranteed fares.</footer>
+<footer>Last check Nov 1, 12:12 PM CT. Prices are spot checks, not guaranteed fares.</footer>
 </main>
 
-<script type="application/json" id="points">[{"t": "2026-10-31T17:27:12Z", "label": "Oct 31, 12:27 PM CT", "price": 408, "airline": "United", "stops": "Nonstop"}]</script>
+<script type="application/json" id="points">[{"t": "2026-10-31T17:27:12Z", "label": "Oct 31, 12:27 PM CT", "price": 408, "airline": "United", "stops": "Nonstop"}, {"t": "2026-11-01T18:12:25Z", "label": "Nov 1, 12:12 PM CT", "price": 408, "airline": "United", "stops": "Nonstop"}]</script>
 <script>
 (function () {
   const points = JSON.parse(document.getElementById("points").textContent);
