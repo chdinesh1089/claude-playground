@@ -1,0 +1,483 @@
+{
+  "date": "2026-11-02",
+  "generated_at": "2026-11-02T20:47:14+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Trump administration asks Supreme Court to sideline 20,000 California mail ballots",
+        "summary": "President Donald Trump's administration appealed to the Supreme Court in its push to sideline thousands of disputed California mail ballots the day before the midterms.",
+        "outlets": 9,
+        "published": "2026-11-02T18:22:00+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-administration-asks-supreme-court-to-sideline-20000-disputed-california-mail-ballots"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/trump-administration-asks-the-supreme-court-to-set-aside-ballots-from-20000-alleged-noncitizens/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/2/trump-asks-supreme-court-to-block-20000-california-ballots-before-midterms?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/02/us/politics/trump-supreme-court-california-ballots.html"
+          }
+        ],
+        "why": "Major legal battle at the Supreme Court directly impacting the high-stakes US midterm elections."
+      },
+      {
+        "headline": "Ukraine says Russian strike on humanitarian aid center kills 24",
+        "summary": "A Russian air strike on a humanitarian aid center in southern Ukraine killed at least 24 people, authorities said.",
+        "outlets": 4,
+        "published": "2026-11-02T20:32:52+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/ukraine-says-russian-strike-on-humanitarian-aid-center-kills-24-11793651572830.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/02/world/europe/russian-strike-zaporizhzhia-ukraine.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/2/russian-bombing-of-ukrainian-aid-centre-kills-24-people-zelenskyy?traffic_source=rss"
+          }
+        ],
+        "why": "Major escalation in civilian casualties amid the ongoing conflict in Ukraine."
+      },
+      {
+        "headline": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+        "summary": "The Indian Navy rescued 20 crew members from a hijacked Iranian vessel in a 48-hour operation carried out 3,000 km from Mumbai in the Arabian Sea.",
+        "outlets": 3,
+        "published": "2026-11-02T18:25:08+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/why-india-inked-53-866-crore-deal-for-8-new-warships-how-next-generation-corvettes-will-boost-navys-capabilities-11793642579701.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/defence-ministry-signs-rs-53-867-crore-deals-for-8-next-generation-navy-corvettes-101793604236503.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/navy-rescues-20-crew-members-of-fishing-vessel-from-armed-pirates-over-3000km-from-mumbai-rajnath-praises-48-hr-op/articleshow/135473804.cms"
+          }
+        ],
+        "why": "Demonstrates the Indian Navy's strategic reach and capability in maritime security and rescue operations."
+      },
+      {
+        "headline": "Iran says it would reopen Strait of Hormuz in 2 days as part of U.S. deal",
+        "summary": "Iranian officials spoke of progress in negotiating to reopen the strait as a Qatari delegation arrived in Tehran to meet with the foreign minister.",
+        "outlets": 4,
+        "published": "2026-11-02T20:25:33+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/02/world/middleeast/iran-deal-strait-of-hormuz.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/01/negotiators-braced-for-worst-over-us-iran-talks-to-reopen-strait-of-hormuz"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-pressing-trump-to-attack-iran-after-midterms-report-12273520#publisher=newsstand"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-negotiations-midterms/"
+          }
+        ],
+        "why": "Crucial global geopolitical development affecting oil prices and Middle East stability."
+      },
+      {
+        "headline": "Learjet may have been breaking up before it crashed in Florida, NTSB says",
+        "summary": "A Learjet that crashed into a Florida roadway, killing all nine people aboard, may have been breaking up before impact, according to the NTSB.",
+        "outlets": 6,
+        "published": "2026-11-02T20:00:43+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/learjet-breaking-crashed-florida-ntsb/story?id=137781527"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/02/us/nathalia-filgueiras-florida-plane-crash-pilot.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/ntsb-takes-questions-on-deadly-palm-beach-florida-plane-crash/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/all-9-people-aboard-a-jet-that-crashed-in-florida-have-died-transportation-secretary-says"
+          }
+        ],
+        "why": "Tragic aviation disaster with ongoing investigations into the cause of the crash."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Judge throws out charges against former F.B.I. officials",
+        "summary": "A magistrate judge dismissed the case against two former FBI officials accused of falsely suggesting they were unaware of investigations surrounding Hunter Biden.",
+        "outlets": 6,
+        "published": "2026-11-02T19:34:11+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/02/us/politics/judge-fbi-agents-charges-midterms.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/judge-dismisses-ex-fbi-officials-hunter-biden-case/"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/02/g-s1-151242/judge-tosses-case-fbi-officials-hunter-biden"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/2/judge-dismisses-charges-against-fbi-agents-involved-in-hunter-biden-case?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Sen. Chris Murphy hospitalized after suffering a stroke, chief of staff says",
+        "summary": "U.S. Sen. Chris Murphy has been hospitalized after suffering a stroke, his chief of staff said in a statement.",
+        "outlets": 2,
+        "published": "2026-11-02T18:31:54+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/sen-chris-murphy-hospitalized-after-suffering-stroke-chief/story?id=137751743"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/connecticut-sen-chris-murphy-is-in-the-hospital-after-having-a-stroke-his-office-says"
+          }
+        ]
+      },
+      {
+        "headline": "Trump floats pre-emptive pardons for allies if Democrats take Congress in midterms",
+        "summary": "President Trump said in an interview that he wants to protect allies and administration officials if Democrats win control of Congress.",
+        "outlets": 1,
+        "published": "2026-11-02T18:35:07+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/02/us/politics/trump-pardons-democrats-congress-control.html"
+          }
+        ]
+      },
+      {
+        "headline": "Trump, Vance and candidates campaign on last day before US midterms",
+        "summary": "Republicans and Democrats held last rallies around the United States as polls pointed to a tight congressional race.",
+        "outlets": 1,
+        "published": "2026-11-02T17:07:14+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/2/trump-vance-and-candidates-make-final-push-before-us-midterms?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "ICE officer charged with ramming man with SUV in Houston turns himself in",
+        "summary": "Mario Alberto Morales made his first court appearance on a felony charge of aggravated assault with a deadly weapon.",
+        "outlets": 1,
+        "published": "2026-11-02T19:44:40+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/ice-officer-charged-with-ramming-man-with-suv-in-houston-turns-himself-in"
+          }
+        ]
+      },
+      {
+        "headline": "Former head of Chicago F.B.I. sues Justice Department over resignation",
+        "summary": "Douglas DePodesta says he was forced out of his job after prosecutions of protesters known as the Broadview Six fell apart.",
+        "outlets": 1,
+        "published": "2026-11-02T20:27:41+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/02/us/chicago-fbi-broadview-six-lawsuit.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Odisha braces for severe cyclonic storm Murasu, evacuates 1.6 lakh people",
+        "summary": "The State government focused preparedness efforts on five districts as Cyclone Murasu brought heavy rain and warnings of 120 kmph winds.",
+        "outlets": 4,
+        "published": "2026-11-02T19:55:50+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/murasu-cyclone-live-updates-on-november-2-2026-tamil-nadu-telangana-andhra-pradesh-odisha/article71654226.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/cyclone-murasu-to-make-landfall-near-at-andhra-coast-tonight-120-kmph-winds-expected/articleshow/135464816.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/ht-evening-news-brief-november-2-grap-ii-curbs-imposed-in-delhi-ncr-cyclone-murasu-landfall-and-us-midterm-elections-top-news-101793625097663.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/cyclone-murasu-live-updates-bay-of-bengal-imd-alert-andhra-pradesh-tamil-nadu-odisha-tracker-rainfall-storm-landfall-weather-forecast-3030543-2026-11-02?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Air quality of Delhi slips to ‘very poor’ for first time this winter",
+        "summary": "The AQI of Delhi stood at 324 as Stage 2 of GRAP anti-pollution curbs was invoked in the Delhi-NCR region ahead of Diwali.",
+        "outlets": 5,
+        "published": "2026-11-02T17:47:57+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/Delhi/delhi-chokes-aqi-324-plunges-to-very-poor-stage-ii-grap-invoked/article71657232.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/delhi-air-quality-turns-very-poor-caqm-invokes-stage-ii-grap-across-ncr-11793626404908.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/grap-ii-imposed-in-delhi-with-immediate-effect-amid-very-poor-air-quality-in-national-capital-check-key-restrictions-what-is-closed-aqi-pollution/articleshow/135461891.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/cities/delhi/story/anti-pollution-curbs-under-grap-2-imposed-in-delhi-ncr-as-air-quality-index-crosses-300-3030739-2026-11-02?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Three AAP leaders join BJP ahead of Punjab Assembly election",
+        "summary": "Three Punjab MLAs joined the BJP in Delhi in a move state party president Kewal Singh Dhillon said indicates shifting political dynamics.",
+        "outlets": 2,
+        "published": "2026-11-02T17:31:06+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/punjab/three-aap-mlas-join-bjp-in-punjab/article71655539.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/big-blow-to-aap-as-three-mlas-resign-join-bjp-ahead-of-2027-assembly-polls-harmeet-singh-pathanmajra-chetan-singh-jouramajra-kunwar-vijay-prata-101793599396364.html"
+          }
+        ]
+      },
+      {
+        "headline": "SC rejects Centre’s plea against Vedanta arbitration awards",
+        "summary": "The Supreme Court questioned the government's approach to arbitration, asking why it was frustrating enforcement of an arbitral award adjudicated by foreign courts.",
+        "outlets": 2,
+        "published": "2026-11-02T19:19:27+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/nobody-will-trust-you-sc-junks-centres-plea-against-vedanta-arbitration-awards-ravva-oil-to-claim-us-dollar-99-million-over-oilfield-dispute-from-1994/articleshow/135472554.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/nobody-will-trust-you-sc-rejects-centre-s-plea-against-vedanta-arbitration-awards-101793613072223.html"
+          }
+        ]
+      },
+      {
+        "headline": "Saurabh Chandrakar taken into custody by Royal Oman Police after Interpol Red Notice",
+        "summary": "Chandrakar was taken into custody in connection with the Mahadev betting empire investigation following an Interpol Red Corner Notice.",
+        "outlets": 2,
+        "published": "2026-11-02T17:56:51+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/mahadev-online-book-saurabh-chandrakar-rs-200-crore-wedding-that-unravelled-rs-90-000-crore-mahadev-betting-empire-12273098#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/mahadev-betting-app-sourabh-chandrakar-ravi-uppal-chhattisgarh-cbi-ed-probe-news-101793594205252.html"
+          }
+        ]
+      },
+      {
+        "headline": "TRAI mandates AI-led complaint centres, 16-hour human support",
+        "summary": "TRAI mandates 24/7 AI-enabled complaint centres, human support for 16 hours daily, faster appeals and penalties up to ₹20 lakh for mishandled cases.",
+        "outlets": 1,
+        "published": "2026-11-02T19:42:20+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/untitled-story-991793648506852.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Ukraine, Russia emergency alert apps hit by cyberattacks amid ongoing conflict",
+        "summary": "Unauthorized parties interfered with app operations and sent fake nuclear radiation warnings to users in Ukraine and Russia.",
+        "outlets": 4,
+        "published": "2026-11-02T17:59:01+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/europe/oreshnik-is-incoming-hackers-send-fake-nuclear-warning-through-ukraine-alert-app/articleshow/135470423.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/ukraine-russia-emergency-alert-apps-hit-by-cyberattacks-fake-nuclear-radiation-alerts-sent-to-users-what-we-know-11793616267791.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/watch-zelenskyy-confirms-ukraine-hacked-back-after-russias-cyberattack-of-its-emergency-alert-system"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/videos/crq5n6204g20o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Binance users withdraw $3.6bn after largest-ever crypto hack",
+        "summary": "The exchange froze transactions following a security incident that has been linked to a North Korean group.",
+        "outlets": 2,
+        "published": "2026-11-02T16:01:00+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwj34gdmnly4o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNUVuZU1Ea0ZDdlp4bjVCbVV6MGRxcEo1TU5XR0gyRTg0VVVkaWU0WVdUVkpyWHlQcWQtcUJWTm5LVjZRNENGaXZ0eHVaN2tNdTJxbnZtSEdWWUlra0Q3U25yYXNGanM3VDFoWmU2S1dVUjB2QUJTelE0ZllZWUI0YlNHNA?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Netanyahu calls for ‘broad national government’ under his leadership",
+        "summary": "Israeli Prime Minister Benjamin Netanyahu called for a broad coalition government without Arab lists after his Likud party won the most seats.",
+        "outlets": 2,
+        "published": "2026-11-02T19:14:08+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/benjamin-netanyahu-calls-for-broad-national-government-under-his-leadership-12273545#publisher=newsstand"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/02/world/middleeast/israel-election-prime-minister.html"
+          }
+        ]
+      },
+      {
+        "headline": "British adventurer Karl Bushby returns home after 28-year walk around world",
+        "summary": "The 57-year-old crossed jungles and frozen seas before an emotional homecoming in Hull, northern England.",
+        "outlets": 2,
+        "published": "2026-11-02T20:00:28+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/02/world/europe/karl-bushby-world-walk-hull-england.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/2/british-adventurer-karl-bushby-returns-home-after-28-year-walk-around-world?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Oil price falls amid hope of a breakthrough to end Iran war",
+        "summary": "Brent crude dropped by more than 6% to $105.55 a barrel, reaching its lowest level in more than two weeks.",
+        "outlets": 1,
+        "published": "2026-11-02T17:14:23+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/nov/02/oil-price-falls-amid-hope-of-a-breakthrough-to-end-iran-war"
+          }
+        ]
+      },
+      {
+        "headline": "Anthropic reveals $17 billion in revenue as I.P.O. approaches",
+        "summary": "The A.I. company's quarterly revenue totaled $17 billion while its net loss totaled $23 billion.",
+        "outlets": 2,
+        "published": "2026-11-02T18:55:09+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/02/business/anthropic-earnings-ai.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/anthropic-revenue-jumps-1100-ahead-of-ipo-as-ai-spending-commitments-near-900-billion/articleshow/135472235.cms"
+          }
+        ]
+      },
+      {
+        "headline": "One of Google’s Android partners turned 1.3 million set-top boxes into a botnet",
+        "summary": "Google says an Android manufacturing partner secretly built a backdoor into 1.3 million devices before ties were cut.",
+        "outlets": 1,
+        "published": "2026-11-02T20:37:49+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/tech/1024807/google-botnet-android-tv-shut-down"
+          }
+        ]
+      },
+      {
+        "headline": "Snap settles social media addiction lawsuit, averting trial",
+        "summary": "Snap joined Alphabet, Meta and TikTok in resolving allegations that its social media platform was designed to encourage addictive behavior.",
+        "outlets": 1,
+        "published": "2026-11-02T20:22:18+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/slug-snap-settles-social-media-addiction-lawsuit/"
+          }
+        ]
+      }
+    ]
+  }
+}
