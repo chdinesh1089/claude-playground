@@ -1,0 +1,475 @@
+{
+  "date": "2026-11-03",
+  "generated_at": "2026-11-03T18:27:30+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Americans vote in 2026 midterm elections to decide control of Congress",
+        "summary": "Voters across the United States are casting ballots in midterm elections that will determine control of the House and Senate and serve as a referendum on President Donald Trump's agenda.",
+        "outlets": 6,
+        "published": "2026-11-03T18:21:50+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/live/2026/nov/03/midterm-elections-live-updates-voting"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/programme/newstrack/video/us-midterm-elections-can-democrats-wrest-control-of-congress-from-trump-3031784-2026-11-03?utm_source=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/when-polls-open-close-2026-midterm-elections/"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/policy/1020640/midterm-elections-2026-all-the-news"
+          }
+        ],
+        "why": "Crucial test of political power in Washington affecting federal policy and immigration debates."
+      },
+      {
+        "headline": "Trump says U.S. will stop military assistance to Israel by end of year",
+        "summary": "President Trump suggested in a recent interview that the U.S. will bring its funding for Israel to a close by the end of the year.",
+        "outlets": 10,
+        "published": "2026-11-03T17:52:58+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/trump-says-us-will-stop-sending-4b-annually-to-israel-by-the-end-of-the-year/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/03/us/politics/trump-israel-aid-netanyahu.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/03/donald-trump-usa-end-military-aid-to-israel-end-year-midterms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/we-wont-be-paying-israel-trump-says-4-billion-funding-to-stop-end-of-the-year/articleshow/135507321.cms"
+          }
+        ],
+        "why": "A major shift in U.S. foreign policy and Middle East alliances with global economic and strategic repercussions."
+      },
+      {
+        "headline": "Russian strikes on Ukrainian aid site kill at least 31 people",
+        "summary": "Russian bombing of a humanitarian hub in the southern Zaporizhzhia region killed at least 31 people, leaving dozens missing and sparking widespread condemnation.",
+        "outlets": 4,
+        "published": "2026-11-03T15:24:22+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/russian-strikes-on-ukrainian-aid-site-kill-at-least-31-people-with-dozens-still-missing"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/03/g-s1-151439/russia-ukraine-war"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cjy56dndlyz0o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/03/russia-bombs-ukrainian-aid-centre-komyshuvakha"
+          }
+        ],
+        "why": "Intensifying conflict in Ukraine affects global geopolitical stability and international security."
+      },
+      {
+        "headline": "U.S. strikes Iran's Qeshm Island as tensions rise near Strait of Hormuz",
+        "summary": "The U.S. carried out strikes on Iran's Qeshm Island near the Strait of Hormuz, prompting Tehran to warn of stronger retaliation and regional security concerns.",
+        "outlets": 3,
+        "published": "2026-11-03T18:12:58+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/video/us-strikes-irans-qeshm-island-hormuz-shipping-hit-amid-rising-tensions-ytvd-3031790-2026-11-03?utm_source=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/03/us-strikes-irans-qeshm-island"
+          },
+          {
+            "source": "Euronews.com",
+            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcGxFMTVjWmlNdGxSTzdhRjJMZFhWcUtleXVtXy00LUFFNDdtQWF6ZHU4NUhvMG9mUTRHY3N5U19WN3c2X2dENVVKVlg0LWFCSkJfd2VOZVlPb0NGQmRZNENnN2hMU00xSTZiWHNfLXZRQ2tIWGVQanhFUUYteXl0THlWU1dFWFg5NEZzYW4xUVZRb1B6aE4yWmtmS0FZYno5?oc=5"
+          }
+        ],
+        "why": "Direct military escalation in the Middle East impacts global energy markets and maritime security."
+      },
+      {
+        "headline": "Indian sailor killed in drone attack off coast of Oman",
+        "summary": "An Indian cargo ship came under drone attack off the coast of Oman, killing sailor Gandhar Nahim Ajij while 13 other crew members were rescued.",
+        "outlets": 4,
+        "published": "2026-11-03T14:01:00+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/indian-sailor-killed-in-drone-attack-off-coast-of-oman-13-rescued-12277396#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/one-seafarer-dead-in-attack-on-indian-flagged-cargo-vessel-al-jusufi-off-oman-coast-govt-us-iran-war-strait-of-hormuz-news-101793680530699.html"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/03/g-s1-151468/indian-navy-rescues-20-crew-from-iranian-fishing-boat-hijacked-off-somalia"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/indian-navy-rescues-20-iranian-crew-members-of-fishing-vessel-azini-hijacked-by-somali-pirates-after-48-hour-operation-11793690593458.html"
+          }
+        ],
+        "why": "Directly impacts the safety of Indian maritime professionals working on international shipping routes."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Bodycam video shows moments after National Guard fatally shot man",
+        "summary": "Tennessee prosecutors released video footage of National Guard troops pointing handguns at a man lying dying on a Memphis sidewalk after a guard member shot him in the back.",
+        "outlets": 3,
+        "published": "2026-11-03T16:32:38+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/bodycam-video-moments-after-man-fatally-shot-national-guard-memphis/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/3/new-bodycam-video-shows-aftermath-of-fatal-national-guard-shooting?traffic_source=rss"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNODYwMm9sWm44UUl3d2JGWEhnRzFBLWk5cThGM3U4SkN1ellZYlZtNTk2bnRuVjlUZlVyYW1oOVhDVWx5UkdPWUxuQkdWWWNrNVVzZFl5UmxkejRLNWxsa0R2akl0SUdfNmVTZDBTeDF4QnBvQ09ZcnZ4TmoyWm9hVUZVcVg3c241UnMyVzJXTnYyUzJUckRFeGNKOU1pemI1SVJhb3hwcnNKa3d6NUEzbWlfc3dZZw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Child dies of measles in New York for first time in 30 years",
+        "summary": "A child in New York died of measles for the first time in three years amid ongoing outbreaks reported across 45 states and Washington, D.C.",
+        "outlets": 2,
+        "published": "2026-11-03T16:26:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/child-dies-of-measles-in-new-york-for-first-time-in-30-years/"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPNkZBTG12OHh5aTBCa0FKTTYxREhxZjlnSWxCRjBjcF9BYWk3OXJ6bFV4eFl4eE1jSGhOb2pHVlc0MGJTWTlnZUp3YVFFUHBrMEtPZnJ4Q0I1MFRyNC12dFc2MTdQMDBTTjdxTVRMQ1VGVEZINkxnQ2lWdVBPdy13VkhR?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Florida Learjet crash victims identified, including tech entrepreneur and family",
+        "summary": "Tech entrepreneur Adam Robinson, his wife Helen Sharp, their two young children, and four others were killed after their Learjet crashed in Florida.",
+        "outlets": 2,
+        "published": "2026-11-03T06:48:22+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/florida-learjet-crash-victims-identified-20-year-old-copilot-tech-entrepreneur-and-his-family-among-those-killed-11793670787353.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPa0htVUh0VHpfLWRoYVhLT254YnFYUjQ4VWh0dmFUUVJJRW9iSXdOSTJzUUlmdEFsUWJvOFFVTVdMTHZGa0NCOUVKeW9ncE5JenZWSy1rQjh6dWpRcTFqcVctSXREa1FJS21rSnYwb3g5ZjdtMlUwNUxna2tNMEVUTUFGWnVmVHQ4dGZrYWpWek8wYkxWazdQbGVoZTVmVk9YWnRlN3NPZ2gxQ0pybGFkcmZVS0tiUdIBvgFBVV95cUxQS3BWVWIxM2hqVG50djlRWmVxRzdtUlRVWG1haVVFVEtpNDh2UnJCeHNNYjhEMFNSbVFwcTZZZWpoWlE1MzdwYXB1ejFfMXR4RjI3Wk5sMDREb1JENFlRNjk2bXZ4X1pKT0dkMzh4TU1Yd0NzLW4tUjljdjJxU0pUSGpTQV9PY25ZQ0NyclRkQ0xxSnVvTk9iS2UwXzVGV0ZjM1AtOHBCZXppWUU1Z2dJaGFJUzYxVTFXUXRhaU13?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Pardoned January 6 participant charged over alleged threats to kill federal judges",
+        "summary": "Cleveland Meredith, a man previously pardoned by Donald Trump for participating in the January 6 attack, was arrested after allegedly posting calls to execute federal judges.",
+        "outlets": 1,
+        "published": "2026-11-03T17:45:40+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/03/jan-6-rioter-judges-murder-threat"
+          }
+        ]
+      },
+      {
+        "headline": "Oklahoma man charged with mailing hundreds of white-powder letters",
+        "summary": "An Oklahoma man faces federal charges after allegedly sending hundreds of letters containing white powder to public officials and media outlets ahead of elections.",
+        "outlets": 2,
+        "published": "2026-11-03T18:15:53+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/white-powder-letters-oklahoma-man-charged-robin-martin/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/03/charges-powder-letters-midterms"
+          }
+        ]
+      },
+      {
+        "headline": "Washington state resident dies of bird flu",
+        "summary": "A resident in Washington state has died following an infection of bird flu, according to public health reports.",
+        "outlets": 1,
+        "published": "2026-11-03T16:40:02+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcTdLMlBMdE9xTkUtNEpJd2ZiOFlhaGZ1NWUxZmhoRGsteV8tSnU3NW5ZYlpEaTFUbzE3ZWwtS2kteUJLRFo5ekd2d2dia01zN3d5ZnNOYXRWQ2l2UGtBd3lmSHFHQm5JaHdmY2N5Z0NXVnh5YWJfbHExRUpIdzlNOXhabE5xNF9kWGk0NjRHMzQzeDcxNUHSAZsBQVVfeXFMTW52UVVTeS1hMmp1dXBWSmxSUTlubUs0eGdnaGEzVHRlLVRVR0NfUm8wODF5TG5HRU5CU1JCQmhWQk5YaFF1dzJLbFBTUjJxVWtGSzdJektzcGI4dGs1bnBheXY0MXlOUlA0ZDFuNzFNMDFrQkVMM21SVW1tNnRPRFUwb19qcTVUOUN2bzZEamxodDZCMEZscGxXbDQ?oc=5"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Rain alert in Nilgiris as Cyclone Murasu crosses coast",
+        "summary": "Severe cyclonic storm Murasu is expected to move northwestward, bringing heavy rain alerts to the Nilgiris and prompting the cancellation of 11 Chennai flights.",
+        "outlets": 3,
+        "published": "2026-11-03T15:47:51+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/rain-alert-in-nilgiris-as-cyclone-murasu-crosses-coast-11-chennai-flights-cancelled-101793679275269.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/cyclone-murasus-eye-touches-andhras-coast-as-landfall-continues-heavy-rain-120-kmph-winds-batter-shore-11793668983271.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNWlIzX1Y3dlRpNzdNNHJQU1Zkek41aDFyOVFBem1ScFhGQWx1ZEFreGJNLU1rSmJmcWVaLUtPY0dqWFI3QVc0MEx5Q0RGd2U2bGhjMjhCMUFYNVYwdlQxVmdrSnd4V2RYRlFUSkhhUGJxOWxORlFhVEtFQWtmSV94YTZoYllJOV9oSVM1TkdYYWpITWUwS2QwQlBRTldKSzFoWXpYN29CLWhieGsza3kyamJoSDNLRzFnYUF1UmtERXhFamYyTzRZRXk5WHVmNUFOd1V6UFZZTnNpZVFBNEtkQXBKUEtwYjNUemw4SQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi AQI reaches 331 as pollution levels cross 400 in several areas",
+        "summary": "Delhi's air quality index hit 331 with specific monitoring stations like Jahangirpuri recording severe pollution levels above 400.",
+        "outlets": 2,
+        "published": "2026-11-03T16:57:52+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/kerala/hartal-in-esa-affected-areas-of-palakkad-on-nov-6/article71661922.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/delhi-aqi-reaches-331-on-nov-3-while-some-stations-cross-400-which-areas-are-worst-affected-today-11793704865014.html"
+          }
+        ]
+      },
+      {
+        "headline": "Former IAF chief writes to Rajnath Singh over sports complex sealing",
+        "summary": "Days before his retirement, former Air Chief Marshal AP Singh wrote to Defence Minister Rajnath Singh to protect IAF control over a sports complex at Race Course Air Force Station.",
+        "outlets": 2,
+        "published": "2026-11-03T16:48:03+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/why-ex-iaf-chief-ap-singh-wrote-to-rajnath-singh-over-sealing-of-air-force-sports-complex-near-pms-residence-explained-11793716848038.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/congress-criticises-reclamation-of-iaf-sports-complex-101793699501995.html"
+          }
+        ]
+      },
+      {
+        "headline": "Arunachal Pradesh gets new DGP days after violent protest",
+        "summary": "1995-batch IPS officer Rajesh Kumar has been appointed as the new Director General of Police of Arunachal Pradesh, replacing SDS Jamwal.",
+        "outlets": 2,
+        "published": "2026-11-03T17:21:17+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/arunachal-pradesh/arunachal-pradesh-gets-new-dgp-days-after-violent-protest-against-siang-dam/article71662469.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/arunachal-gets-new-dgp-as-ips-officer-rajesh-kumar-takes-charge-amid-siang-dam-protests-101793723508953.html"
+          }
+        ]
+      },
+      {
+        "headline": "Judicial commission finds 7,000 kg of explosives stored in Kerala tragedy",
+        "summary": "A judicial commission report on the Mundathikode fireworks tragedy revealed that 7,000 kg of explosives were stored against a permitted 15 kg.",
+        "outlets": 1,
+        "published": "2026-11-03T17:52:58+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/kerala/mundathikode-fireworks-tragedy-judicial-commission-finds-7000-kg-of-explosives-stored-against-permitted-15-kg/article71661684.ece"
+          }
+        ]
+      },
+      {
+        "headline": "PM Modi to inaugurate Bengaluru Metro Pink Line stretch on November 13",
+        "summary": "Prime Minister Narendra Modi will inaugurate the 7.5-km elevated section of Bengaluru Metro's Pink Line, taking the operational network beyond 100 km.",
+        "outlets": 1,
+        "published": "2026-11-03T17:08:25+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/bengaluru-metro-pink-line-pm-modi-to-inaugurate-new-stretch-on-november-13-check-route-stations-and-key-details-11793721860197.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "King Charles tells Commonwealth leaders Britain's slave trade role was 'shameful'",
+        "summary": "King Charles addressed Commonwealth leaders at the CHOGM summit in Antigua, calling Britain's historical role in the slave trade shameful while stopping short of a formal apology.",
+        "outlets": 3,
+        "published": "2026-11-03T17:30:19+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/politics/live/2026/nov/03/shabana-mahmood-migration-brexit-eu-labour-andy-burnham-kemi-badenoch-king-charles-commonwealth-uk-politics-latest-news"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/03/world/europe/king-charles-speech-uk-slave-trade-antigua.html"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5sdm9ZMG1ZRHZaLWNaUWpBRERPdWlfZVNsb0xsUDNpYjl6SE9yZVZuU0hqWHBxQ25ZMVF4RFQ3TE9TbjBrOFFfc3dicnRaMTRLeDRmcmJYUDlTOVE?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Poland beefs up security at border with Russia following movements",
+        "summary": "Prime Minister Donald Tusk announced that Poland is reinforcing security at its border with Russia due to disturbing troop movements in Kaliningrad.",
+        "outlets": 2,
+        "published": "2026-11-03T18:18:07+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/03/world/europe/poland-russia-kaliningrad.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/poland-russia-border-operation-kaliningrad-sabotage-provocation-nato/"
+          }
+        ]
+      },
+      {
+        "headline": "Short ceasefire brings momentary return to normal life in Kherson",
+        "summary": "A brief ceasefire in Ukraine's Kherson region allowed residents to temporarily return to cafes, shopping, and everyday activities amid ongoing conflict.",
+        "outlets": 2,
+        "published": "2026-11-03T15:54:39+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/03/g-s1-151238/ukraine-russia-ceasefire-oleshky-kherson"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckg5jlyp66jzo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Darfur survivors vow to tell story of those killed after camp attacks",
+        "summary": "Survivors of violent displacement camp attacks in Darfur are sharing their accounts of the community life they built and the subsequent violence that forced them to flee.",
+        "outlets": 1,
+        "published": "2026-11-03T17:03:24+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/features/2026/11/3/darfur-survivors-vow-to-tell-story-of-those-killed-after-sudan-camp-attacks?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Probe agency attaches Rs 510-crore assets in Anil Ambani Group case",
+        "summary": "Enforcement agencies attached two chartered aircraft, six land parcels, and an office premises belonging to the Anil Ambani Group in Maharashtra.",
+        "outlets": 2,
+        "published": "2026-11-03T15:18:47+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/business/india-business/ed-action-on-anil-ambani-group-2-aircraft-other-assets-worth-rs-510-crore-seized/articleshow/135503985.cms"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/probe-agencys-rs-510-crore-action-on-anil-ambani-group-2-planes-6-plots-12277788#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Binance says fake job interviews used in $6.3 billion crypto hack",
+        "summary": "Cryptocurrency exchange Binance revealed that hackers used fake job interviews on professional platforms to orchestrate a massive $6.3 billion security breach.",
+        "outlets": 4,
+        "published": "2026-11-03T17:20:38+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/10/30/business/binances-hack-customer-protections.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/binance-customers-withdraw-billions-crypto-hack/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ck5ynwz9gy67o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Fortune",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5MVDdJbWk1SDUxMmZNcXFtUXRKTHA2X0N6RGpILWQ0ZVVJZ0hPM1FRU2g1SGtmakxWX0ktSUxlbjBFbTVWMmNHdUpsNWttSmlmQklMb19JTXM4MHo1WHB0WTJtODI3UkE0TUdUR2dR?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "MCX reports 130% surge in Q2 net profit to Rs 455 crore",
+        "summary": "Multi Commodity Exchange of India posted a 130% year-on-year increase in consolidated net profit to Rs 454.57 crore for the second quarter of FY27.",
+        "outlets": 1,
+        "published": "2026-11-03T15:14:21+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/mcx-q2-results-profit-rockets-130-yoy-to-rs-455-crore-revenue-jumps-114/articleshow/135504568.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Apple reports strong financial results while advancing AI strategy",
+        "summary": "Apple posted its best-ever financial results, leveraging its artificial intelligence ecosystem without matching the massive infrastructure spending of its tech competitors.",
+        "outlets": 1,
+        "published": "2026-11-03T15:24:51+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai"
+          }
+        ]
+      }
+    ]
+  }
+}
