@@ -1,0 +1,486 @@
+{
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T18:39:09+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Democrats win House majority with Trump approval at historic low",
+        "summary": "Democrats won control of the House in the 2026 midterm elections as President Trump acknowledged the Iran war's unpopularity.",
+        "outlets": 7,
+        "published": "2026-11-04T18:37:04+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/house-election-results-2026/"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/us/democrats-took-capitol-hill-trump-still-has-a-veto-what-happens-next-and-who-can-make-their-case-for-2028/articleshow/135539794.cms"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/democrats-win-control-of-the-u-s-house"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/live/2026/nov/04/midterm-elections-results-senate-house-michigan-maine-mississippi-latest-updates"
+          }
+        ],
+        "why": "Massive shift in US political power that will directly constrain presidential policy and foreign relations."
+      },
+      {
+        "headline": "Democrat Abdul El-Sayed wins election to U.S. Senate from Michigan",
+        "summary": "Progressive Democrat Abdul El-Sayed will become first Muslim U.S. senator.",
+        "outlets": 4,
+        "published": "2026-11-04T14:48:08+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/us/grandson-of-a-vegetable-seller-in-egypt-raised-by-an-imam-father-and-a-michigan-born-stepmother-the-multi-faith-family-behind-americas-first-muslim-senator-elect-abdul-el-sayed/articleshow/135542396.cms"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/democrat-abdul-el-sayed-wins-election-to-u-s-senate-from-michigan"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/us-mid-term-elections/news/habibi-call-me-senator-first-muslim-us-senator-abdul-el-sayed-mocks-donald-trump-jd-vance-in-victory-speech/articleshow/135533707.cms"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQlF6NkdldkxEMjY5TFU0U1hCSWJraVlvbUdWcDlleFY4MEJlUGZrQmUxQjB4ekcxVTNMMTg2MWxCUzBybURhSlR2eWRaUzExbjE2M05QbTR2dGRPM3ZDRnB2TnhMUmJQel82LWJEaThmcm9ZREhwRUNwdmpmX0hfa29Hb1BnOUtweWx0Vmotc1BRMTAtTjZqS2h0Yy1uczZFMVJTTV9sc2VCMXdmcG8w0gG0AUFVX3lxTE9XU0kwWXhweldPSmlUa1kzQ0hyUVQ3RGdvNFVNTXgybk9EQWNVVWdWQ3lUZkxUTDkyRUdNazBFaWh2eDM5d3Q4NTNYY3dLTzZtb2NPdExVVjQ5Wk9tVVBBRE15dHJ1ZVI0cXpodGVqelpPS0s2NjBocDlITldkbHRMc1E0eFV5d0ZrR2s3cWtldEhHVU1JX21XdzFjaW9sbWxtZVpZWXhDSV82amVFTG1nOFVkMw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Democrats win Senate control, Schumer vows 'legislative razor wire' against Trump",
+        "summary": "Democrats were able to pick up the seats needed to gain control of the Senate, and the party scored several upset victories in red states.",
+        "outlets": 1,
+        "published": "2026-11-04T18:36:41+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/senate-election-results-2026/"
+          }
+        ],
+        "why": "Complete Democratic control of Congress alters the legislative landscape and oversight of visas and immigration."
+      },
+      {
+        "headline": "Election 2026 live results: Vance says 'obvious' reason GOP lost is Iran war",
+        "summary": "US Vice President JD Vance blamed the Iran war for the Republican Party's losses in the midterm elections in a social media post.",
+        "outlets": 7,
+        "published": "2026-11-04T18:37:10+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/live-updates/midterm-elections-live-updates/?id=137782085"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/04/jd-vance-iran-war-midterms-election"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/vance-blames-iran-war-for-gop-midterm-losses"
+          }
+        ],
+        "why": "Top administration officials openly linking foreign wars to domestic voter backlash."
+      },
+      {
+        "headline": "Dow surges 1,500 points as Democrats take control of Congress",
+        "summary": "Stocks soared on Wednesday just hours after results showed a blue wave and Democrats swept both chambers of Congress.",
+        "outlets": 4,
+        "published": "2026-11-04T18:04:03+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Business/dow-surges-1000-points-democrats-control-congress/story?id=137842989"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/stock-market-soar-democrats-take-control-of-congress/"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/us-midterm-elections-2026-live-updates-donald-trump-jd-vance-democrats-republicans-senate-house-12276905#publisher=newsstand"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/economy/2026/11/4/us-markets-rise-as-democrats-sweep-midterm-elections?traffic_source=rss"
+          }
+        ],
+        "why": "Major market movements directly impact the US economy, currency stability, and investor sentiment."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Mike Johnson won't seek new term as House GOP leader after losses",
+        "summary": "House Speaker Mike Johnson told staffers that he will not run for minority leader in the new Congress.",
+        "outlets": 4,
+        "published": "2026-11-04T18:32:27+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/house-speaker-mike-johnson-minority-leader-gop-loses/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/04/mike-johnson-house-leadership"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/johnson-wont-seek-reelection-as-house-speaker-after-republican-wipeout"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/04/us/mike-johnson-reelection-house-leader.html"
+          }
+        ]
+      },
+      {
+        "headline": "How Troy Jackson Defeated Susan Collins in Maine",
+        "summary": "Troy Jackson, a former Democratic state lawmaker, upset Senator Susan Collins, ending her 30 year Senate career.",
+        "outlets": 5,
+        "published": "2026-11-04T16:58:26+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/04/us/politics/how-troy-jackson-beat-susan-collins.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/us/troy-jackson-the-logger-from-allagash-heads-to-us-senate-his-familys-property-includes-a-15000-plot-of-land-and-a-small-commercial-building-heres-what-we-know/articleshow/135544818.cms"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/watch-democrat-troy-jackson-speaks-after-maine-sen-susan-collins-concedes"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/video/137836878/"
+          }
+        ]
+      },
+      {
+        "headline": "Vivek Ramaswamy addresses supporters after projected defeat in Ohio governor's race",
+        "summary": "Republican Vivek Ramaswamy addressed supporters after ABC News projected Democrat Amy Acton will win the race.",
+        "outlets": 2,
+        "published": "2026-11-04T10:37:16+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/video/137834723/"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/us-midterms-vivek-ramaswamy-loses-ohio-governor-s-race-how-ro-khanna-pia-dandiya-and-others-fared-11793780896050.html"
+          }
+        ]
+      },
+      {
+        "headline": "Attorney General Appoints Outside Counsel to Lead Cornell Rape Case",
+        "summary": "The New York attorney general has tapped a former prosecutor to lead the criminal inquiry into a 2024 incident at the university.",
+        "outlets": 3,
+        "published": "2026-11-04T17:42:06+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/04/cornell-sexual-assault-prosecutor-jacqueline-kelly"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaWctamdjOVhaQnE3Z3FGWThhVmxiTnh2VDI0Q2FVcllvY2RvcUtQMGZaU3o2UmQwV0Vab2VGelE1RUY5QWVDcncxdEFtcWZ6b1ZCLVBoc0VSbUZlVDZEZHlDZkJPZlE1dklVLTAyRzdLUXNWV01lS0FKNER4N2NZc3ZMMG9Xb21MdGZwajBaU3JfcjA3dTU4MDZ3?oc=5"
+          },
+          {
+            "source": "The Washington Post",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMUJTR0MwYzNVbGZxNGprbHhNYlJiQWtMRDlMZVJ0bDNsUVBPTjFoVHFkekF2VTVTV3QyVThPMzNTa180QlJVekZaZV91OWpwbmNUU2lYVEJMVXJIUENXSUJJTTA5eGJ6RHJkeDNJUFVlcEoxZ3RYOWtWejd1R1lVRmFpWWxEdWN1bzE2V2ZPLUJEUTE4NWh1NzhsMkVtekhIVlQ4dGFqVWtkRV9rR1pNVnBaRHZXcURDNmFUZ2t3?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Plane parts found miles from Florida crash site",
+        "summary": "Parts of the plane that crashed in Florida, killing nine people, were found miles from where it hit the ground.",
+        "outlets": 2,
+        "published": "2026-11-04T16:26:55+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/plane-parts-found-miles-from-florida-crash-site/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/03/us/florida-plane-crash-wreckage-recovered.html"
+          }
+        ]
+      },
+      {
+        "headline": "Democrat J.D. Ford wins election to U.S. House in Indiana's 5th District",
+        "summary": "Democratic nominee J.D. Ford defeated three-term Rep. Victoria Spartz in Indiana's 5th Congressional District.",
+        "outlets": 1,
+        "published": "2026-11-04T06:29:46+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/democrat-j-d-ford-wins-election-to-u-s-house-in-indianas-5th-congressional-district"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Rahul Gandhi recalls Sidhu Moosewala’s Congress entry, meets singer’s father",
+        "summary": "Rahul Gandhi recalled his meeting with Sidhu Moosewala at his office during a discussion with the late singer's father.",
+        "outlets": 3,
+        "published": "2026-11-04T16:05:06+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/newsmo/short-videos/rahul-gandhi-recalls-meeting-sidhu-moose-wala-before-his-murder-3032459-2026-11-04?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/dynamic-talented-young-man-rahul-gandhi-recalls-sidhu-moosewala-s-congress-entry-meets-singer-s-father-101793785850777.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/he-walked-into-room-with-tattoos-rahul-gandhi-remembers-sidhu-moosewala-at-insaaf-rally-in-punjab-recalls-their-first-meeting/articleshow/135534770.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Agniveers get 2-year service extension under revised Agnipath scheme",
+        "summary": "The Agnipath scheme's four-year tenure is being extended by two years for 75% of Agniveers, according to the CDS.",
+        "outlets": 5,
+        "published": "2026-11-04T12:58:04+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/agniveers-get-2-year-service-extension-what-changes-under-the-revised-agnipath-scheme-11793795338688.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/agnipath-rejig-decoding-the-new-rules-101793794567435.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/whats-changed-for-agniveers-the-new-6-year-rule-explained-12282850#publisher=newsstand"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/defence/news/agniveers-get-2-year-service-extension-higher-pay-key-changes-under-revised-agnipath-scheme-explained/articleshow/135542384.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Nine rescue personnel feared missing as boats capsize in Telangana",
+        "summary": "The incident occurred when SDRF and Fire Services personnel ventured into a swollen rivulet to rescue stranded fishermen.",
+        "outlets": 2,
+        "published": "2026-11-04T18:14:22+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/telangana/nine-rescue-personnel-feared-missing-as-boats-capsize-in-swollen-peddacheruvu-in-khammam-district/article71667132.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/11-sdrf-fire-services-personnel-missing-after-rescue-boats-capsize-in-telangana-floodwaters-101793813107239.html"
+          }
+        ]
+      },
+      {
+        "headline": "Bus travel gets costlier in Karnataka with fares hiked by up to 35%",
+        "summary": "BMTC, KSRTC, NWKRTC, and KKRTC services announced a revised fare structure increasing ticket prices depending on distance.",
+        "outlets": 2,
+        "published": "2026-11-04T17:13:13+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/karnataka/karnataka-hikes-bus-fares-in-bmtc-ksrtc-nwkrtc-and-kkrtc/article71664586.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/karnataka-bus-fares-hiked-by-up-to-9-bmtc-vayu-vajra-services-to-cost-more-101793776527501.html"
+          }
+        ]
+      },
+      {
+        "headline": "Sharad Pawar hospitalised in Mumbai hours after discharge in Pune",
+        "summary": "Sharad Pawar was admitted to the hospital following complaints of pleuritic pain after being discharged from Pune.",
+        "outlets": 2,
+        "published": "2026-11-04T15:27:03+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/sharad-pawar-hospitalised-again-hours-after-discharge/articleshow/135543958.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/sharad-pawar-hospitalised-in-mumbai-hours-after-discharge-in-pune-daughter-supriya-confirms-101793804301210.html"
+          }
+        ]
+      },
+      {
+        "headline": "Virat Kohli creates history during India's NZ chase, breaking Tendulkar's record",
+        "summary": "Virat Kohli overtook Sachin Tendulkar's long-standing record of 8,720 runs in chases during the first ODI against New Zealand.",
+        "outlets": 2,
+        "published": "2026-11-04T10:52:26+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/sports/cricket/virat-kohli-surpasses-sachin-tendulkar-for-most-runs-while-chasing-in-odi-history/articleshow/135536597.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/sachin-tendulkars-record-gone-virat-kohli-creates-history-during-indias-new-zealand-chase/articleshow/135535026.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Israel's president begins consultations with parties after election deadlock",
+        "summary": "Herzog warned politicians that not every commitment and promise can be fulfilled if they want to avoid another election.",
+        "outlets": 3,
+        "published": "2026-11-04T16:18:21+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6z98z5z91ppo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/04/world/middleeast/israel-president-herzog-election-government.html"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE16VlJEM1d3V3hZVURESU85dmlFTTlValUxVG8xLUlaNi1hVy1sYmlPMG4zdWg2cW5EMUdLWEZHczFMWG9Qcy1DcnlNNmd4SlVXUGhYS2NZX1FBcjQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Spain’s Transport Minister Resigns After Deadly High-Speed Rail Crash",
+        "summary": "Nearly 70 people died in the crash, the second high-speed rail accident in less than a year.",
+        "outlets": 2,
+        "published": "2026-11-04T13:52:11+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/spanish-transport-minister-resigns-over-train-crash-disasters?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/03/world/europe/spain-train-crash-transport-minister-resigns-oscar-puente.html"
+          }
+        ]
+      },
+      {
+        "headline": "Ukraine says bodycam video shows deadly Russian double-tap bombing",
+        "summary": "At least 40 people were killed and others remained under the rubble after an attack on a Ukrainian village.",
+        "outlets": 2,
+        "published": "2026-11-04T17:45:58+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c98rz6penv86o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/ukraine-russia-war-zelenskyy-aid-center-attack-death-toll/"
+          }
+        ]
+      },
+      {
+        "headline": "ANC faces anger over poor services as South Africans vote in local elections",
+        "summary": "The African National Congress is on course for a bruising result amid frustration over water outages and power cuts.",
+        "outlets": 1,
+        "published": "2026-11-04T14:50:47+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "CVS to Split Off Drugstore Business, Ending Its Bigger-Is-Better Era",
+        "summary": "In a breakup planned for 2028, CVS Health intends to keep together its insurance and pharmacy benefits divisions and create a separate company for its pharmacies.",
+        "outlets": 1,
+        "published": "2026-11-04T17:44:43+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/04/business/cvs-health-split.html"
+          }
+        ]
+      },
+      {
+        "headline": "Apple becomes most valuable company again after US market rally",
+        "summary": "Apple stock rose to a record high, pushing the iPhone maker's market capitalization above $5 trillion following market rallies.",
+        "outlets": 1,
+        "published": "2026-11-04T18:09:09+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/us/apple-becomes-worlds-most-valuable-company-with-5-1-trillion-market-cap-as-aapl-stock-today-hits-record-high-after-democrats-win-midterm-elections/articleshow/135547144.cms"
+          }
+        ]
+      },
+      {
+        "headline": "India draws $400 bn in preliminary renewable investment pledges",
+        "summary": "The government will review proposals while advancing grid-scale storage and targets for expanding non-fossil energy capacity.",
+        "outlets": 1,
+        "published": "2026-11-04T17:01:33+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india-receives-investment-commitment-worth-400-billion-at-bharat-renewable-energy-summit-pralhad-joshi-11793806667651.html"
+          }
+        ]
+      },
+      {
+        "headline": "Uber only fulfilled 4 rides from AI agents last quarter",
+        "summary": "Uber executives disclosed during an earnings call that only four rides were arranged by third-party AI agents last quarter.",
+        "outlets": 1,
+        "published": "2026-11-04T15:58:45+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation"
+          }
+        ]
+      }
+    ]
+  }
+}
