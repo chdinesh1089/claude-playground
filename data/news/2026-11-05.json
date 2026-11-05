@@ -1,0 +1,479 @@
+{
+  "date": "2026-11-05",
+  "generated_at": "2026-11-05T18:46:05+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Russell Brand is found guilty of rape and sexual assault",
+        "summary": "A judge in London found the YouTuber and former actor guilty and stated he would face significant custodial time.",
+        "outlets": 9,
+        "published": "2026-11-05T17:13:04+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/05/arts/russell-brand-rape-sexual-assault-trial-verdict.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/culture/2026/nov/05/russell-brand-found-guilty-rape-sexual-assault"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/russell-brand-found-guilty-rape-sexual-assault-verdict/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/russell-brand-convicted-of-rape-and-sexual-assault"
+          }
+        ],
+        "why": "Major high-profile legal verdict involving a global celebrity figure."
+      },
+      {
+        "headline": "Democrats win US House majority in midterm elections",
+        "summary": "Democrats won control of the House and Senate in the 2026 midterm elections following sweeping victories across the country.",
+        "outlets": 3,
+        "published": "2026-11-05T17:22:50+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/house-election-results-2026/"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/05/g-s1-152046/up-first-newsletter-democrats-congress-control-house-senate-trump-reaction"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/live/2026/nov/05/midterm-elections-live-latest-updates-mississippi-senate-race"
+          }
+        ],
+        "why": "Major shift in US political power that directly affects national policy and governance."
+      },
+      {
+        "headline": "Paraguay's president impeached minutes after resigning",
+        "summary": "Paraguayan lawmakers voted to impeach President Santiago Peña following the collapse of a digital bank tied to his government.",
+        "outlets": 9,
+        "published": "2026-11-05T18:30:16+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/05/nx-s1-6030842/paraguay-president-impeached-bank-collapse"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/paraguay-president-santiago-pe-a-impeached-after-ueno-bank-collapse-freezes-millions-in-savings-sparks-protests-11793901642551.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6p9g39vln3yo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/economy/2026/11/5/paraguay-president-pena-resigns-in-wake-of-bank-collapse?traffic_source=rss"
+          }
+        ],
+        "why": "A rapid presidential downfall caused by a major national financial crisis."
+      },
+      {
+        "headline": "Joshua Wong jailed for 10 years in Hong Kong",
+        "summary": "Pro-democracy activist Joshua Wong was sentenced to 10 years in prison under Hong Kong's national security law.",
+        "outlets": 5,
+        "published": "2026-11-05T13:51:03+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwp9g3rlp8jlo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/who-is-joshua-wong-why-hong-kong-activist-got-10-more-years-in-jail-and-what-is-the-case-against-him-11793865659344.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/05/hong-kong-joshua-wong-sentenced-national-security-case"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/04/world/asia/joshua-wong-hong-kong-sentenced.html"
+          }
+        ],
+        "why": "Severe sentence for a prominent pro-democracy figure amid ongoing political tensions."
+      },
+      {
+        "headline": "Bank of England raises interest rates to 4%",
+        "summary": "The base rate increased from 3.75% as the Bank of England signaled further action to combat rising inflation.",
+        "outlets": 2,
+        "published": "2026-11-05T18:00:28+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/nov/05/bank-of-england-raises-interest-rates-first-increase-for-more-than-three-years"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/05/business/bank-of-england-interest-rates-inflation.html"
+          }
+        ],
+        "why": "Important monetary policy shift impacting the broader economy and cost of living."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Harmeet Dhillon, DOJ's civil rights chief, resigns",
+        "summary": "Harmeet Dhillon, the assistant attorney general for the Civil Rights Division, resigned from the Justice Department on Thursday.",
+        "outlets": 3,
+        "published": "2026-11-05T17:59:21+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/harmeet-dhillon-resigns-doj-civil-rights-division/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/05/harmeet-dhillon-doj-resignation"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/05/g-s1-152080/head-of-justice-department-office-on-civil-rights-resigns"
+          }
+        ]
+      },
+      {
+        "headline": "Nithya Raman ousts incumbent Karen Bass in LA mayor's race",
+        "summary": "Nithya Raman defeated incumbent Karen Bass in the Los Angeles mayor's race, CBS News projects.",
+        "outlets": 2,
+        "published": "2026-11-05T18:42:25+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/los-angeles-mayor-election-2026-nithya-raman-karen-bass/"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOUNzeXA3RjZvNHE2OVQxZ19oUjEwdG4wbm40SVNLalFUVlY5amgyVHItTFdqT1IxaXFIUkM1cjZtTjVVdXpkbWg4RnZkTXJQcXpTZnF1ajE3WTZpVUtnam1iRlFMNXg0bmZmNGRfTzVUdDhfNWZpRENNaDJlVTZUaEJ5aDFMeUFuZ3Y4eGthbC1YbEZaV1NJMlhuVnBUdk5PZks0dVdqT29WbkpOOExJUVdGbTB2TkVxMW5FWWt1U2duUQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Six killed in Brooklyn residential fire",
+        "summary": "Six people were killed and nine injured in Sunset Park, marking New York City's deadliest fire of the year.",
+        "outlets": 1,
+        "published": "2026-11-05T18:22:37+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/05/nyregion/brooklyn-fire-sunset-park.html"
+          }
+        ]
+      },
+      {
+        "headline": "Tech stocks lead US market slide after midterm results",
+        "summary": "Wall Street suffered widespread losses as tech stocks plunged following the midterm election results.",
+        "outlets": 2,
+        "published": "2026-11-05T18:39:32+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/stocks-midterm-elections-tech-companies-ai-data-centers/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/economy/2026/11/5/ai-stocks-plunge-after-election-driving-down-us-markets?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "DOJ moves to dismiss Steve Bannon's contempt conviction",
+        "summary": "The Justice Department filed another push to have a judge dismiss Steve Bannon's conviction over a congressional subpoena.",
+        "outlets": 1,
+        "published": "2026-11-05T18:24:02+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/doj-moves-dismiss-steve-bannons-contempt-congress-conviction/story?id=137884012"
+          }
+        ]
+      },
+      {
+        "headline": "New Mexico's Deb Haaland makes history as governor",
+        "summary": "Deb Haaland won election as governor of New Mexico, contributing to several historic firsts in the election.",
+        "outlets": 2,
+        "published": "2026-11-05T08:23:00+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/deb-haaland-makes-history-as-first-native-american-woman-to-govern-a-us-state-breaks-barriers-as-a-single-mother-and-advocate-for-indigenous-rights/articleshow/135565166.cms"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/new-mexicos-deb-haaland-on-making-history-as-first-native-american-woman-elected-governor"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Umar and Sharjeel move Supreme Court seeking bail",
+        "summary": "The two petitioners contended that their continued incarceration for over six years violates personal liberty.",
+        "outlets": 4,
+        "published": "2026-11-05T18:32:18+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/Delhi/sharjeel-imam-moves-supreme-court-seeking-bail-in-uapa-case-over-2020-delhi-riots/article71669640.ece"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/law-news/story/umar-khalid-sharjeel-imam-supreme-court-bail-delhi-riots-uapa-case-ptag-3033065-2026-11-05?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/umar-khalid-sharjeel-imam-move-supreme-court-for-bail-in-2020-delhi-riots-case-101793889036866.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/delhi-riots-case-umar-khalid-and-sharjeel-imam-challenge-delhi-hcs-bail-refusal-in-supreme-court/articleshow/135573897.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Centre tells Supreme Court it may review UGC equity rules",
+        "summary": "The Centre said it was examining criticism about campus regulations that had sparked protests by upper-caste student groups.",
+        "outlets": 2,
+        "published": "2026-11-05T18:32:39+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/centre-tells-supreme-court-about-setting-up-of-special-committee-to-re-examine-ugcs-2026-equity-regulations/article71670397.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/centre-to-set-up-panel-to-revisit-ugc-equity-regulations-supreme-court-told-101793868439085.html"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court rules 24-hour arrest rule starts from detention",
+        "summary": "The top court stated that the time starts the moment a police officer touches the body to restrain liberty.",
+        "outlets": 2,
+        "published": "2026-11-05T17:39:22+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/24-hour-to-produce-before-magistrate-starts-from-detention-not-formal-arrest-supreme-court/article71668833.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/supreme-court-ends-distinction-between-detention-and-arrest-says-24-hour-clock-starts-when-liberty-is-curtailed-101793858166318.html"
+          }
+        ]
+      },
+      {
+        "headline": "Two MCD officials suspended after Delhi building collapse",
+        "summary": "An unauthorised building collapse in Chawri Bazaar led to the suspension of two municipal corporation officials.",
+        "outlets": 2,
+        "published": "2026-11-05T10:54:18+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/old-delhi-chawri-bazaar-building-collapse-unauthorised-construction-2-mcd-officials-suspended-top-updates-11793875130472.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/ht-exclusive-delhi-police-informed-mcd-of-unauthorised-construction-at-chawri-bazar-building-months-ago-101793869097561.html"
+          }
+        ]
+      },
+      {
+        "headline": "High Court cancels ex-cop Sachin Waze bail",
+        "summary": "A bench canceled Sachin Waze's bail after finding prima facie material against him in the 2021 bomb scare case.",
+        "outlets": 2,
+        "published": "2026-11-05T17:18:13+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/high-court-cancels-ex-cop-sachin-waze-bail-in-mumbai-bomb-scare-case-12289601#publisher=newsstand"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/mumbai/bombay-hc-cancels-bail-granted-to-sachin-waze-in-antilia-bomb-scare-and-mansukh-hiran-murder-case/articleshow/135572083.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Former Supreme Court Justice Rajesh Bindal appointed NCLAT chairperson",
+        "summary": "Rajesh Bindal, who retired from the Supreme Court in April, was appointed as the NCLAT chairperson.",
+        "outlets": 2,
+        "published": "2026-11-05T17:08:27+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/former-supreme-court-justice-rajesh-bindal-appointed-nclat-chairperson-101793897964121.html"
+          },
+          {
+            "source": "Bar and Bench",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPemVBN0NBN0htY0pEbWFvZWYtQ3dERnJZWjgwenFnM3E3Ri1hRXoxd01HaUI2a1c4U0V4T1RFTXdEc0x3ZlAyNEdVdTc2aGsxNDkwRm13ekVKVHhyUkJtbHhBNjdmSTBlZXJaM2FjelZJcmpydjRwSV8xTklSM0N2WGpDaEVWdEwwNlZUNnFJRS1MUXhUWmVHSVhvOXpuZXktWUVFZmdEU1o5SVVCSTM0SDcyOGxoS0dYSTctONIBygFBVV95cUxQZTlMa084YTNRb0Vka1NMa05mdWc1VXBoVHg1VHNtX0VKYi1EM2I0MXdVcXlzejZaRmFwSVJVZnNPVzZ0OFVnWWEzN2dkYVNnb3VMQ2NuMTNPeEVYcEJLY2JXWXV0QUZMYUlkU0UzOXFQNVd5U2xCR0sxWG91UnpZNHFyRDROYUoyLTN3X0E3Vm9PNEp6d2FCazFlejl5VmFRa1FKejBUN19PcVg4bnNXbk1ZSjgxWVJJdDllV0l6VDRFWW1fOGg4R1pB?oc=5"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Bomb threats disrupt flights across Europe",
+        "summary": "Hoax bomb threats forced emergency landings and diversions across at least 20 flights in Europe.",
+        "outlets": 5,
+        "published": "2026-11-05T18:17:36+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/05/bomb-threats-disrupt-flights-across-europe-and-renew-hybrid-warfare-fears"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/more-bomb-threats-divert-flights-cause-disruption-across-europe-11793871785809.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/europe-flights-airlines-hoax-bomb-threats/"
+          }
+        ]
+      },
+      {
+        "headline": "Cristiano Ronaldo announces international retirement",
+        "summary": "Cristiano Ronaldo ended an international career with Portugal that spanned six World Cups and multiple titles.",
+        "outlets": 5,
+        "published": "2026-11-05T18:03:15+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/cristiano-ronaldo-announces-his-international-retirement-from-portugal"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/sports/2026/11/5/why-has-cristiano-ronaldo-retired-from-international-football?traffic_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/sports/football/cristiano-ronaldos-portugal-walkout-what-happened-weeks-before-his-international-retirement/articleshow/135570744.cms"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/ronaldo-retires-portugal-legendary-career/"
+          }
+        ]
+      },
+      {
+        "headline": "British citizen infected with Ebola in Congo to be evacuated",
+        "summary": "A British citizen infected with Ebola in Congo is set to be evacuated to the UK, with officials stating risk is low.",
+        "outlets": 2,
+        "published": "2026-11-05T18:22:30+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/05/world/europe/british-ebola-case-congo-uk.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/04/british-healthcare-worker-ebola-evacuated-drc-to-uk-document-shows"
+          }
+        ]
+      },
+      {
+        "headline": "Mother and daughter killed in grizzly bear attack",
+        "summary": "Canadian authorities confirmed that a mother and daughter were killed in a grizzly bear attack near their home.",
+        "outlets": 2,
+        "published": "2026-11-05T15:38:00+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/04/canada-bear-attack-mother-daughter-killed"
+          },
+          {
+            "source": "USA Today",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNLVYwd2syWTdsNndCWDlPTjZKWkdhemVaZ0RNUWFkVjVRTnBjR1N5SWRsRVMwbV9GTlM0QnpwOUY3UkZySTJ2RHFIbGExajlyeHhyU2VqYlQ3OWZYWW9HRWN5NUZma1F1YXNvNTA5QTlPS2NXOTN3QkdyOFhhSGdmdElvaFJHTHhETE5QY05tUldwMWoweFhJZk5laGN5ODRTcW1j?oc=5"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "LIC reports 20% jump in Q2 net profit",
+        "summary": "Life Insurance Corporation of India reported a consolidated net profit of Rs 12,114.78 crore for the September quarter.",
+        "outlets": 1,
+        "published": "2026-11-05T12:21:24+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/stocks/earnings/lic-q2-results-profit-jumps-20-yoy-to-rs-12115-crore-npi-grows-16/articleshow/135572799.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Claude AI launches personal finance bank connection tool",
+        "summary": "Anthropic introduced a personal finance feature allowing its AI model to connect directly to bank and card accounts via Plaid.",
+        "outlets": 1,
+        "published": "2026-11-05T18:00:00+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance"
+          }
+        ]
+      },
+      {
+        "headline": "Microsoft overhauls Xbox PC and cloud gaming apps",
+        "summary": "Microsoft unveiled a faster design for its Xbox PC app and updated Xbox Cloud Gaming across web and smart TVs.",
+        "outlets": 1,
+        "published": "2026-11-05T17:00:00+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/news/1027353/microsoft-new-xbox-pc-app-redesign"
+          }
+        ]
+      },
+      {
+        "headline": "OpenAI launches new GPT-6 Cyber security model",
+        "summary": "OpenAI released a cybersecurity AI model designed to find vulnerabilities while remaining less likely to go rogue.",
+        "outlets": 1,
+        "published": "2026-11-05T17:00:00+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch"
+          }
+        ]
+      }
+    ]
+  }
+}
