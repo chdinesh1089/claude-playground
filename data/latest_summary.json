@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-11-04T20:10:59Z",
+  "checked_at": "2026-11-05T20:24:53Z",
   "weekend_start": "2026-11-06",
   "weekend_end": "2026-11-08",
   "from_airport": "DFW",
   "to_airport": "ORD",
   "currency": "USD",
   "status": "ok",
-  "price": 424,
+  "price": 448,
   "airlines": [
-    "Contour Airlines"
+    "United"
   ],
-  "outbound_stops": 1,
-  "trend": "down $19 from $443"
+  "outbound_stops": 0,
+  "trend": "up $24 from $424"
 }
