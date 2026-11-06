@@ -1,0 +1,550 @@
+{
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T17:58:25+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "U.S. added 165,000 jobs in October, exceeding expectations",
+        "summary": "The latest jobs report showed the U.S. added 165,000 jobs in October, exceeding expectations following a stock market sell-off.",
+        "outlets": 5,
+        "published": "2026-11-06T17:11:56+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/us-added-165000-jobs-in-october-a-positive-update-after-the-stock-market-purge/"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/us-employers-added-a-surprising-165000-jobs-in-october-unemployment-rate-dipped-to-4-1/articleshow/135611166.cms"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/nov/06/us-job-growth-october"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/06/business/economy/economy-jobs-unemployment.html"
+          }
+        ],
+        "why": "Demonstrates U.S. economic resilience, affecting global markets and monetary policy."
+      },
+      {
+        "headline": "Democrats have flipped over 40 House seats. Here's the breakdown.",
+        "summary": "Democrats won control of the House on Tuesday by flipping more than three dozen Republican-held seats, picking up perennial swing districts and seats that were once considered deep red.",
+        "outlets": 1,
+        "published": "2026-11-06T17:42:32+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/house-districts-flipped-2026-midterm-elections/"
+          }
+        ]
+      },
+      {
+        "headline": "Tesla ends production of Cybertruck to focus on Cybercab",
+        "summary": "Tesla will stop production of its electric trucks in mid-2027 to make room for increased manufacturing of its autonomous ride-share vehicle.",
+        "outlets": 6,
+        "published": "2026-11-06T17:38:29+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/06/business/tesla-cybertruck-production.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/tesla-ending-cybertruck-production-next-year/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/6/musk-says-tesla-to-wind-down-polarising-cybertruck-production-as-sales-lag?traffic_source=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/technology/2026/nov/06/tesla-to-wind-down-cybertruck-production-as-elon-musk-focuses-on-robotics-and-ai"
+          }
+        ],
+        "why": "A major strategic pivot by Elon Musk for a high-profile vehicle line."
+      },
+      {
+        "headline": "Kenyan doomsday sect leader jailed for 200 years for murder",
+        "summary": "Paul Mackenzie was convicted and sentenced over the deaths of 190 children and one adult after followers were ordered to starve themselves.",
+        "outlets": 7,
+        "published": "2026-11-06T16:33:55+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/06/kenyan-doomsday-sect-leader-jailed-murders-paul-mackenzie"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/06/nx-s1-6032593/kenya-cult-leader-paul-mackenzie-sentenced-murder"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/06/world/africa/kenya-cult-leader-prison-sentence-mass-murder-paul-mackenzie.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/who-is-kenyas-starvation-cult-leader?traffic_source=rss"
+          }
+        ],
+        "why": "Brings closure to one of the deadliest cult atrocities in recent history."
+      },
+      {
+        "headline": "Trump touts imminent decision on potential new attack on Iran",
+        "summary": "President Trump stated he will make a decision very soon on whether to launch a new attack on Iran amid ongoing diplomatic efforts.",
+        "outlets": 5,
+        "published": "2026-11-06T17:27:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/programme/news-today/video/trump-defeat-iran-war-fallout-global-oil-market-shifts-frvd-3034102-2026-11-06?utm_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/05/us/politics/trump-iran-war-midterm-elections.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/after-midterms-trump-is-left-to-weigh-his-next-move-in-iran-war-that-contributed-to-gop-loss"
+          }
+        ],
+        "why": "Escalating Middle East tensions threaten global stability and energy markets."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Harmeet Dhillon resigns from Justice Department",
+        "summary": "Harmeet Dhillon has resigned following a radical reshape of the Justice Department's Civil Rights Division.",
+        "outlets": 3,
+        "published": "2026-11-06T17:32:47+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/harmeet-dhillon-resigns-after-radical-reshape-of-justice-departments-civil-rights-division"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/05/us/politics/harmeet-dhillon-resigns-doj-civil-rights-unit.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/us-attorney-tasked-leading-grand-conspiracy-probe-trumps/story?id=137912307"
+          }
+        ]
+      },
+      {
+        "headline": "Newsom commutes sentences of California's 548 death row inmates",
+        "summary": "Governor Gavin Newsom commuted the sentences of California's death row inmates, calling capital punishment morally objectionable.",
+        "outlets": 3,
+        "published": "2026-11-06T00:44:35+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/05/us/california-death-row-newsom-commutation.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/newsom-plans-to-commute-all-of-californias-death-sentences"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cqrkyyd2j8mvo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Voters in four states limit trans athletes",
+        "summary": "Voters in Arizona, Colorado, Nebraska and Washington approved bans on transgender athletes competing on female sports teams.",
+        "outlets": 2,
+        "published": "2026-11-06T16:27:52+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/05/us/transgender-athlete-bans-referendums.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/wireStory/left-leaning-washington-colorado-join-conservative-states-banning-137898149"
+          }
+        ]
+      },
+      {
+        "headline": "Judge blocks construction of Trump's massive arch",
+        "summary": "A federal judge temporarily halted construction work on Trump's 250-foot triumphal arch after it received federal agency approval.",
+        "outlets": 4,
+        "published": "2026-11-06T16:14:00+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cq99zd93ryvko?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/06/g-s1-152213/up-first-newsletter-job-market-trump-arch-school-enrollment-harmeet-dhillon"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/06/judge-temporarily-halts-work-trump-triumphal-arch-washington"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTTluWF8wRU5Hb3d5U0hEc001RWhXMWQzVk1kQjFkZlg2VEttbFhNT3FwenZVbnJGVHJXZElZa3NWaGJCemV6cnlVVi16WTdQQjJ0NnBfNzY2TjhWYlNydXp5c1A1cmw0Ty1PaVltRzNxQWgyckN1TFlnUGNwQmwzOVI5X3o0dVVXT0hQR2VCOFpvMUtiTEw0Ujg5TnlhMXY4cktxZlBUclhsNlA4bm00Yy1FQ2tWR243LXJSaDJ4cjh6ODQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Wisconsin reports measles death of a baby",
+        "summary": "Wisconsin reported the measles death of a baby, marking the first death from the virus in over 35 years in the U.S.",
+        "outlets": 3,
+        "published": "2026-11-06T17:06:32+00:00",
+        "links": [
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/health/2026/11/wisconsin-reports-measles-death-of-a-baby-first-death-in-over-35-years/"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/measles-outbreak-us-map-2026/"
+          },
+          {
+            "source": "The Washington Post",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQXzNtZ2I5Mi1GS20yTVA1V1RTcDlIbXQ1LVFFTGxGczdqZkRyeUphakphR3RyTlRpX3dPMTQwSU5QNl85bFp0N3JvbFFVSHJWdW1neGRGMFFJMk80el93eXpmMV8wak5ocnpGSXFIWThQRUZQb2tyUDNLd1pEOUpFU2hxazZBbXhlNlBFcEZKZUFWQi1KR2VGbVZWQ3RtaWxHN1paaTNTRHpDNF81WlZDN0VqNDQxZ0o5Z0E?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Houston Police to stop alerting ICE during traffic stops",
+        "summary": "Mayor John Whitmire instructed Houston police to stop notifying immigration agents during routine street stops when encountering individuals without legal status.",
+        "outlets": 1,
+        "published": "2026-11-06T17:28:37+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/06/us/houston-mayor-john-whitmire-immigration-ice-cooperation.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "CBI books Future Retail and Kishore Biyani in bank fraud case",
+        "summary": "The CBI booked Future Retail, Kishore Biyani and others in a ₹904 crore bank fraud case, conducting searches in Mumbai.",
+        "outlets": 3,
+        "published": "2026-11-06T17:12:28+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/business/Industry/cbi-books-future-retail-kishore-biyani-others-in-904-crore-bank-fraud-case-searches-conducted-in-mumbai/article71675017.ece"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/future-retail-businessman-kishore-biyani-charged-in-rs-904-crore-sbi-fraud-case-12294140#publisher=newsstand"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/cbi-books-kishore-biyani-future-retail-in-rs-904-crore-bank-fraud-case/articleshow/135605209.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Karnataka minister claims E20 petrol exceeds 30 percent ethanol",
+        "summary": "A Karnataka minister alleged that petrol samples tested in the state contained over 30 percent ethanol, prompting rejections from oil companies.",
+        "outlets": 5,
+        "published": "2026-11-06T17:35:08+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/e20-actually-has-over-30-ethanol-karnataka-minister-cites-petrol-tests-demands-relief-fund-for-consumers-12292948#publisher=newsstand"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/karnataka/lab-tests-show-ethanol-blend-in-petrol-is-as-high-as-31-higher-than-20-e20-petrol-in-karnataka-government/article71673683.ece"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/karnataka/story/karnataka-petrol-ethanol-tests-31-percent-consumer-compensation-3033736-2026-11-06?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/karnataka-reports-ethanol-concentration-in-petrol-up-to-31-2-seeks-federal-intervention-101793961046378.html"
+          }
+        ]
+      },
+      {
+        "headline": "Rahul Gandhi tells Amit Shah to convince PM Modi for debate",
+        "summary": "Rahul Gandhi challenged Amit Shah to convince Prime Minister Narendra Modi for an open debate on the SIR exercise.",
+        "outlets": 3,
+        "published": "2026-11-06T15:54:19+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/dont-be-afraid-rahul-gandhi-re-issues-open-debate-call-says-amit-shah-should-not-confuse-pm-modi/articleshow/135613331.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/rahul-gandhi-tells-amit-shah-to-convince-pm-modi-for-open-debate-on-sir-dont-be-afraid-101793977857191.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/convince-modi-ji-for-sir-debate-rahul-gandhi-tells-amit-shah-to-stop-confusing-pm-shares-video-of-remarks/articleshow/135611697.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi air pollution worsens as AQI nears 400",
+        "summary": "Delhi's AQI reached 391 with severe readings across multiple stations, prompting the Supreme Court to flag vehicular emissions.",
+        "outlets": 2,
+        "published": "2026-11-06T11:10:03+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/delhi-air-pollution-rohini-punjabi-bagh-and-rk-puram-among-10-worst-hit-areas-as-aqi-nears-400-check-full-list-11793960016106.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/rohini-rk-puram-vivek-vihar-among-10-most-polluted-areas-in-delhi-101793951258666.html"
+          }
+        ]
+      },
+      {
+        "headline": "CBSE Class 10, 12 Exams To Begin On February 16, Date Sheets Out",
+        "summary": "CBSE has released the class 10th and 12th exam date sheet 2027 today, November 6, 2026. The exam will begin from February 16, 2027. Earlier the board has also announced the practical exam dates for class 10th and 12th students.",
+        "outlets": 4,
+        "published": "2026-11-06T14:57:29+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/education/cbse-class-10-12-exams-to-begin-on-february-16-date-sheets-out-12293618#publisher=newsstand"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/education/news/cbse-class-10-12-board-exams-2027-datesheet-released-over-45-lakh-students-to-appear-from-february-16/articleshow/135611445.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/education-today/story/cbse-releases-class-10-12-board-exam-date-sheet-for-2027-exams-to-begin-february-16-3033934-2026-11-06?utm_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/jobs/exams-results/cbse-announces-class-10-12-board-exam-dates-check-when-february-papers-begin-in-2027/articleshow/135611218.cms"
+          }
+        ]
+      },
+      {
+        "headline": "India set to join EU's Horizon Europe research program",
+        "summary": "India is set to join the European Union's 93.5 billion euro Horizon Europe research program starting in January 2027.",
+        "outlets": 2,
+        "published": "2026-11-06T17:29:30+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/india-set-to-join-eus-93-5-billion-euro-horizon-europe-research-program-12294575#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-eu-conclude-negotiations-for-association-with-horizon-europe-research-programme-101793973487913.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Bomb threats disrupt flights and newsrooms across Europe",
+        "summary": "A coordinated wave of hoax bomb threats disrupted air traffic and forced newsroom evacuations across Ireland, the UK and other European countries.",
+        "outlets": 9,
+        "published": "2026-11-06T17:14:31+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/06/further-bomb-threats-disrupt-flights-across-europe"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/05/world/europe/bomb-threats-europe-flights-airlines.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/International/bomb-threats-targeting-flights-media-outlets-continue-europe/story?id=137905668"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/europe/after-dozens-of-flights-broadcasters-across-europe-get-bomb-threats-whats-going-on/articleshow/135613829.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Paraguay's president resigns amid banking and financial crisis",
+        "summary": "Paraguay's rightwing President Santiago Peña resigned after a digital bank failure froze the savings of millions of people.",
+        "outlets": 4,
+        "published": "2026-11-06T06:16:22+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/05/paraguay-president-santiago-pena-resigns"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/05/world/americas/paraguay-santiago-pena-resigns.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6p9g39vln3yo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/6/paraguay-resumes-pena-impeachment-proceedings-as-financial-crisis-deepens?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Pope Leo XIV begins major Latin America tour",
+        "summary": "Pope Leo XIV landed in Uruguay to start a 12-day voyage across South America, marking his first major trip since lung surgery.",
+        "outlets": 4,
+        "published": "2026-11-06T17:32:27+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/06/world/americas/pope-leo-uruguay-argentina-peru.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cqn06j0y61k6o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/what-to-know-about-pope-leo-xivs-trip-to-uruguay-argentina-and-peru"
+          },
+          {
+            "source": "The Washington Post",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTjhTMEYwNXlmU0o2amJvbTJhZno3TF9Ua1k3bkNZc2duYXFhalc3b0tWY2dFeUJiTDU3d3VHanVaMFhTTTlRWE41M2J4aVFaY2tOdDd6azBwR1J2Xzc4UjRJY0hwLWh5Z0JMV1RORVBRbThUeTRlaGJhT04tY0JwSXk1X0pYZkRHblZmMmVOU3p4R1U1U0lybXBjTlZNc0E3SzBFaGpiRnZRYzFQUk9XLWdLNEpMZ2tq?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Gadi Eisenkot secures backing to form Israeli government",
+        "summary": "Israeli opposition figure Gadi Eisenkot secured backing from 67 lawmakers as President Isaac Herzog prepares to decide who forms the government.",
+        "outlets": 3,
+        "published": "2026-11-06T07:30:39+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/05/herzog-netanyahu-eisenkot-israel-election-decision"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/06/world/middleeast/israel-election-government-herzog.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/jerusalem-daily-arab-parties-back-eisenkot-against-netanyahu?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Startup founder Deepinder Goyal faces backlash over Temple device",
+        "summary": "Medical professionals and critics slammed Deepinder Goyal's experimental Temple wearable device, questioning its scientific claims and brain blood flow measurements.",
+        "outlets": 4,
+        "published": "2026-11-06T11:10:45+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/cons-products/electronics/deepinder-goyal-unveils-temple-calls-it-humanitys-last-personal-device-ai-wearable-to-ship-in-2027/articleshow/135605074.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/the-liver-doc-lambasts-deepinder-goyal-as-rage-mounts-over-rs-85-000-temple-device-bad-science-scam-11793946393314.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/deepinder-goyals-temple-opens-a-new-front-startup-founders-vs-doctors-3033745-2026-11-06?utm_source=rss"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPb2V2ZHh1RUVqekVrQy1kYm9JMEhQX1lqN0stUER5RzJNWVdac3B3Szg4a0xmcWI3cUFZUkc1emJjQXU1WHpQVlF4WkNBQjA0a3FNMjE2NVItLUNZb0NLZGVDejc0bEhuajFWTGJVQ2xreVBIenBQb2pDRjFLMmtFSW43dUNxWVVCSjVtbU5MSkJ5ZEY5bTRfQ1VZRUk1VGZWWTdmZnM4aU94b1Vpd1U1eTRyT29UWTY2QjUzdi02djMwZ3FGbmNWdlhpWDUzOC1rZEdTMzJWX3JkNjg?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Stocks rebound following major artificial intelligence market selloff",
+        "summary": "Global and U.S. stock markets edged upward following a sharp selloff driven by investor concerns over technology sector valuations and data center construction.",
+        "outlets": 4,
+        "published": "2026-11-06T17:03:02+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/stocks-tech-sell-off-nasdaq-correction-dow/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/nov/06/global-stocks-plunge-amid-ai-slowdown-fears-after-democrats-midterm-triumph"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5kNlQ2MXB3TldBa2dOdXBzUXpYUlNBenNaZTlFX3E1ZUE1V040UnpKQlVZSjNpWm1TVEx2NnRfWUowVmsydV85TEJHbjJKSVVUNTF1d1Y0YU5RYjQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "DraftKings stock slides following bet on prediction markets",
+        "summary": "Shares of online betting platform DraftKings dropped over 26 percent as analysts expressed worries regarding upcoming regulations and competition.",
+        "outlets": 1,
+        "published": "2026-11-06T17:51:00+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/draftkings-expensive-bet-on-prediction-markets-is-crushing-its-stock-277bee0d?mod=mw_rss_topstories"
+          }
+        ]
+      },
+      {
+        "headline": "European Union charges TikTok over mental health protections",
+        "summary": "The European Union charged TikTok in an initial ruling, stating that its algorithm can harm young users by leading them down unescapable rabbit holes.",
+        "outlets": 1,
+        "published": "2026-11-06T15:17:08+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/technology/2026/nov/06/eu-charges-tiktok-failure-to-protect-users-mental-health"
+          }
+        ]
+      }
+    ]
+  }
+}
