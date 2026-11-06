@@ -710,5 +710,15 @@
       "United"
     ],
     "outbound_stops": 0
+  },
+  {
+    "checked_at": "2026-11-06T19:46:02Z",
+    "weekend_start": "2026-11-06",
+    "weekend_end": "2026-11-08",
+    "from_airport": "DFW",
+    "to_airport": "ORD",
+    "currency": "USD",
+    "status": "error",
+    "error": "FlightsNotFound: no flights found; received error"
   }
 ]
