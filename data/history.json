@@ -720,5 +720,19 @@
     "currency": "USD",
     "status": "error",
     "error": "FlightsNotFound: no flights found; received error"
+  },
+  {
+    "checked_at": "2026-11-07T17:54:30Z",
+    "weekend_start": "2026-11-13",
+    "weekend_end": "2026-11-15",
+    "from_airport": "DFW",
+    "to_airport": "ORD",
+    "currency": "USD",
+    "status": "ok",
+    "price": 290,
+    "airlines": [
+      "Frontier"
+    ],
+    "outbound_stops": 0
   }
 ]
