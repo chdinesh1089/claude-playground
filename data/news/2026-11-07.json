@@ -1,0 +1,465 @@
+{
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07T16:50:29+00:00",
+  "status": "ok",
+  "model": "gemini-flash-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Trump names Stephen Miller as White House chief of staff",
+        "summary": "President Trump picked Stephen Miller to replace Susie Wiles as White House chief of staff following Republican midterm losses.",
+        "outlets": 9,
+        "published": "2026-11-07T16:15:33+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/trump-replaces-susie-wiles-with-stephen-miller/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/7-11-sv-trump-stephen-miller-loyalty-pledge?traffic_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/accused-of-leaks-blamed-for-defeat-how-susie-wiles-fell-from-donald-trumps-favour-12297806#publisher=newsstand"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/07/stephen-miller-trump-loyalty"
+          }
+        ],
+        "why": "Signals an aggressive hardline push on US immigration policy and federal governance."
+      },
+      {
+        "headline": "Democrats win House majority with Trump approval at historic low",
+        "summary": "Democrats won control of the House in the 2026 midterm elections, CBS News projects, with victories in battleground districts across the country.",
+        "outlets": 1,
+        "published": "2026-11-07T14:55:40+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/house-election-results-2026/"
+          }
+        ]
+      },
+      {
+        "headline": "From Chennai activist to LA mayor: Nithya Raman's journey to leading America's second-largest city",
+        "summary": "Nithya Raman, who worked on civic infrastructure and urban planning in Chennai before entering US politics, has won the Los Angeles mayoral race, marking a milestone for Indian-American representation.",
+        "outlets": 2,
+        "published": "2026-11-07T15:30:43+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/from-chennai-activist-to-la-mayor-nithya-ramans-journey-to-leading-americas-second-largest-city-11794064109066.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/07/los-angeles-mayor-nithya-raman-progressives-dsa"
+          }
+        ]
+      },
+      {
+        "headline": "Gunman kills five in shooting at Krakow market in Poland",
+        "summary": "A gunman fired from a car into a crowd in a Krakow market square, killing at least five people and injuring over a dozen.",
+        "outlets": 9,
+        "published": "2026-11-07T16:36:44+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/live/2026/nov/07/krakow-shooting-poland-latest-news-updates"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/7-11-clip-poland-krakow-shooting?traffic_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/2-killed-10-injured-in-shooting-near-main-market-square-in-polands-krakow-12297774#publisher=newsstand"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/shooting-main-market-square-krakow-poland/"
+          }
+        ],
+        "why": "Rare mass shooting in Poland triggers nationwide shock and high-level police investigations."
+      },
+      {
+        "headline": "Paraguay president impeached and detained following major banking collapse",
+        "summary": "Congress impeached and placed Santiago Peña under house arrest after the collapse of Ueno bank left millions unable to access savings.",
+        "outlets": 6,
+        "published": "2026-11-07T01:55:11+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/07/ousted-paraguay-president-under-house-arrest-after-banking-crisis-leaves-60-of-country-unable-to-access-accounts"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/06/world/americas/paraguay-president-removed-ueno.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/ueno-bank-collapse-paraguay-santiago-pena-resignation-impeachment-itspc-3033647-2026-11-07?utm_source=rss"
+          }
+        ],
+        "why": "Deep financial collapse sparks political upheaval and immediate removal of the nation's leader."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Priya Sundareshan elected president of Arizona Senate",
+        "summary": "Indian-American lawmaker Priya Sundareshan was elected president of the Arizona Senate.",
+        "outlets": 1,
+        "published": "2026-11-07T16:07:08+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/indian-american-priya-sundareshan-elected-arizona-senate-president-as-democrats-secure-historic-state-control/articleshow/135641045.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Armed man arrested near White House over alleged Trump assassination plot",
+        "summary": "Secret Service officers arrested an armed man near the White House who allegedly stated he intended to assassinate President Trump.",
+        "outlets": 2,
+        "published": "2026-11-07T10:16:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/armed-man-arrested-near-white-house-secret-service-trump/"
+          },
+          {
+            "source": "Politico",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSzlpQktFMm5RTm1fN2VaUTlLd29IY0NRcVRhWVhtdm1HbFU3aEJaaWdXcUFGRkNfdkV4RlhlY0d1dUhDZ2FNeUU3dEh0eEJyb3QwTVBHdnhHM3puOVZvRWZGTGhkODU1WlN1V0w0TV80MDBUS1UxMktFRW5RZ2EtWUd5SnNPeEJMTXlPQ1NwWG1kRUlIdjhqV0x0ZlBQUi1IOXVzY1AzaDNySkNyV0hvOFJXQVJCTjlPdl9BMHpCNHk?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Houston mayor limits police cooperation with ICE",
+        "summary": "The mayor of Houston instructed local police to limit cooperation with ICE after an officer fatally shot a man driving to work.",
+        "outlets": 1,
+        "published": "2026-11-07T08:15:55+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c8dx33d22zkro?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "US launches task force to disrupt Iranian ground weapons shipments",
+        "summary": "The United States launched the Iron Gate task force to choke Iranian overland routes used for transporting weapons and sanctioned items.",
+        "outlets": 3,
+        "published": "2026-11-07T16:16:13+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/us-military-launches-iron-gate-task-force-to-choke-irans-land-routes-to-ship-weapons-3034604-2026-11-07?utm_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/middle-east/iron-gate-us-forms-special-task-force-to-restrict-irans-land-exports/articleshow/135639553.cms"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-strait-hormuz-persian-gulf/"
+          }
+        ]
+      },
+      {
+        "headline": "US homeless population records historic drop in 2025",
+        "summary": "The Department of Housing and Urban Development reported that the homeless population in the United States reached a record drop in 2025.",
+        "outlets": 1,
+        "published": "2026-11-07T13:16:00+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/06/us/politics/homeless-population-drop.html"
+          }
+        ]
+      },
+      {
+        "headline": "Senator Chris Murphy discharged from hospital to begin stroke rehabilitation",
+        "summary": "Connecticut Senator Chris Murphy was discharged from the hospital following a stroke and will miss several weeks of Senate votes while recovering.",
+        "outlets": 2,
+        "published": "2026-11-06T20:16:18+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/wireStory/connecticut-sen-chris-murphy-discharged-hospital-after-stroke-137923241"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/connecticut-sen-chris-murphy-released-from-hospital-after-stroke"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Delhi-NCR invokes GRAP Stage III restrictions as air quality worsens",
+        "summary": "Authorities enforced GRAP Stage III curbs, including vehicle restrictions and hybrid classes up to Class 5, after Delhi's air quality index reached 382.",
+        "outlets": 1,
+        "published": "2026-11-07T03:51:27+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/caqm-imposes-grap-iii-in-delhi-ncr-ahead-of-diwali-as-aqi-soars-to-382-here-s-what-s-allowed-and-restricted-11794022821945.html"
+          }
+        ]
+      },
+      {
+        "headline": "Ayodhya illuminates 30 lakh diyas ahead of Diwali",
+        "summary": "Ayodhya celebrated its spiritual heritage by lighting more than 30 lakh diyas across city ghats ahead of Diwali.",
+        "outlets": 3,
+        "published": "2026-11-07T16:17:20+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/ayodhya-lights-up-with-over-30-lakh-diyas-ahead-of-diwali-12297604#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/ayodhya-lights-up-with-over-30-lakh-diyas-on-diwali-eve-cm-yogi-attends-10th-edition-of-deepotsav-101794064290342.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/ayodhya-glows-with-30-lakh-diyas-as-deepotsav-lights-up-saryu-ghats-on-diwali-eve/articleshow/135637323.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Sonia Gandhi calls 1975 Emergency a mistake",
+        "summary": "Congress leader Sonia Gandhi stated in her memoir that the decision by former prime minister Indira Gandhi to impose the Emergency was a mistake.",
+        "outlets": 3,
+        "published": "2026-11-07T13:54:00+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/emergency-a-mistake-indira-came-to-feel-the-same-sonia-gandhi/articleshow/135638765.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/sonia-gandhi-emergency-mistake-indira-gandhi-rajiv-sanjay-rift-memoir-3034481-2026-11-07?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/democratic-rights-curtailed-during-emergency-but-it-was-done-constitutionally-sonia-gandhi-101794043903049.html"
+          }
+        ]
+      },
+      {
+        "headline": "Rajnath Singh urges military preparedness against emerging warfare threats",
+        "summary": "Speaking at Bagdogra airfield, Defence Minister Rajnath Singh called on the military to focus on cyber resilience and domain awareness as warfare expands beyond cross-border firing.",
+        "outlets": 3,
+        "published": "2026-11-07T15:53:20+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/from-strategic-eastern-airbase-rajnath-calls-for-highest-military-preparedness/article71678566.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/from-strategic-eastern-airbase-rajnath-calls-for-highest-military-preparedness-101794045144650.html"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/warfare-no-longer-limited-to-cross-border-firing-rajnath-singh-12297476#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Bombay High Court rules sexual harassment law protects transgender women",
+        "summary": "The Bombay High Court ruled that legal protections under the sexual harassment law extend to transgender women.",
+        "outlets": 1,
+        "published": "2026-11-07T15:45:54+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/law-news/story/bombay-high-court-transgender-woman-sexual-harassment-law-protection-3034595-2026-11-07?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi building collapse death toll rises to six",
+        "summary": "Rescue workers identified six victims killed following a building collapse in Delhi.",
+        "outlets": 2,
+        "published": "2026-11-07T14:28:13+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/old-delhi-building-collapse-news-death-count-in-delhi-building-collapse-rises-to-6-all-victims-identified-12297612#publisher=newsstand"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/delhi-hauz-qazi-building-collapse-death-toll-rises-to-3-fir-filed-against-owners-contractor/articleshow/135626610.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Strikes kill over 50 in Yemen amid renewed fighting",
+        "summary": "Intense strikes killed more than 50 people in Yemen during one of the deadliest 24-hour periods since fighting reignited in August.",
+        "outlets": 2,
+        "published": "2026-11-07T16:39:31+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/07/world/middleeast/more-than-50-killed-in-yemen.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/7/dozens-killed-as-humanitarian-crisis-mounts-in-yemen-what-next-for-war?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Russian strikes hit Ukraine energy grid ahead of trilateral peace talks",
+        "summary": "President Volodymyr Zelenskyy reported intensified Russian attacks on Ukraine's energy network before scheduled negotiations involving Russia, Ukraine, and the US in Abu Dhabi.",
+        "outlets": 3,
+        "published": "2026-11-07T14:58:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/zelenskyy-russia-attacks-us-talks/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm4g1nq8158po?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "AP News",
+            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSEJTUU1HSllBRS1hYUxLTGNzSGpQdEwzQVgyUnBnRmdUN1dRdmtUaGxMb2lEVHh2MjBOaUVfQk5Ed0tnaUduaFFxcXhPdnhRa1lCTFNRQjRUWk5URDhJeFVENWNJUUVEUnd4V0J0bDFpY3Z5Y09jc3NpRS0zZk5RVHBHNVlxM0Q0RGFXSExYN1YyRm5CeHdEZ3ZCUFJVV1VT?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "New Zealand general election yields no clear winner",
+        "summary": "Preliminary election results produced a divided parliament in New Zealand, initiating weeks of coalition negotiations to form the next government.",
+        "outlets": 5,
+        "published": "2026-11-07T15:56:28+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c3ewev11g1e0o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/new-zealands-prime-minister-says-election-is-too-close-to?traffic_source=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/07/new-zealand-election-too-close-to-call-vote-count"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/06/world/asia/new-zealand-election-vote.html"
+          }
+        ]
+      },
+      {
+        "headline": "Islamist Militant Attack Forces Patients to Flee Ebola Clinic in Congo",
+        "summary": "At least 44 people were killed in a brutal assault by a group loyal to the Islamic State, officials said. The area is a hot spot of the growing Ebola outbreak.",
+        "outlets": 1,
+        "published": "2026-11-07T12:06:57+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/07/world/africa/congo-attack-ebola-isis-adf.html"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "US intelligence links Chinese spy to Nvidia executive",
+        "summary": "A government memo cited intelligence that a Chinese executive who established a relationship with Nvidia's chief executive was recruited by Beijing's Ministry of State Security.",
+        "outlets": 4,
+        "published": "2026-11-07T02:18:42+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/06/us/politics/chinese-spy-agency-nvidia-jensen-huang.html"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/technology/news/story/nvidia-ceo-jensen-had-romantic-relationship-with-chinese-spy-alice-report-says-us-has-intel-to-prove-it-3034359-2026-11-07?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPc1MwclBOSVRsUnZhbko5aVJCS3BOVTRFLXlkdnFBLTM5cENJTnc2bEFsQ09xSjZwc3lyYVdVLVVDOWtMUHpJN2tkWVRhQmd1NDdqWnlyS0RrWXM1ekdac0ctQ19GTVRmSmxMM0s0ZWpXV2FWbmFlQzYwVWtrOEluWVhvLTBndDJYa1ZpSjJvSFFlTkdFcVdWM1M1bFA1Mi0tLXpGODJGZHY4QTdoOUhoRGx4c1g1TE9tZFN5azczTnNRZ0w3ejVv0gHPAUFVX3lxTE5FYXRkQ2R1eXVsREg4dmVjdTV2b0VFei02SGF5Z2p6aEZaWlYxdEItbGZEM01pd2dYNFREc2pRV240M0FNT2swN2ZnM3FCZUdMTUh0TTcxVmZLU1U5UV9GZXNUQUlwOHlSZHF2MFNCQV80aVNQUGZubDRVSko3R2h4d1hBRGJ4cU1Md3d3WTdhQ05Kcm1DUDFkMHo5UGtiQ0Vlel9keVRMNDBBVUhSNEwySXBRV2t4czdkT3VzdEdVRFVwYlVmYlRscVRVXzZCbw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Tesla to wind down Cybertruck production in favor of Cybercab",
+        "summary": "Elon Musk announced that Tesla will wind down Cybertruck manufacturing next year to reallocate capacity toward the Cybercab.",
+        "outlets": 1,
+        "published": "2026-11-07T14:40:06+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/transportation/1029460/elon-musk-cybertruck-death-election-backlash"
+          }
+        ]
+      },
+      {
+        "headline": "Berkshire Hathaway steps up buybacks as operating profit declines",
+        "summary": "Berkshire Hathaway accelerated its stock buybacks while reporting a drop in operating profit.",
+        "outlets": 1,
+        "published": "2026-11-07T16:11:17+00:00",
+        "links": [
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPa29SbTRWcFpWdFpiekRVRjRvNmZjM1BnNzhOeVY3ajB5S25PaGgxVFAyTTItcjRDZkRmcHROSkJIZ3lNdXZkaGp0R2hOZE51eHBzR1U3MXlFRXhGOUhzV1pJR0I2RWtUZnRrQU1MVXZaSm1haDUtTHo3NEJvNGJhLU1rM2N4a240NWp2VFh5Vkd5LW1DOTd6emN0S1QyengzS1ZjdE04LVluRGppX19oSkxtVktEcDdoWXVIVk93?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Anthropic accelerates model progress by using AI to develop AI",
+        "summary": "A report revealed Anthropic is using artificial intelligence to automate AI development, doubling the speed of model improvements.",
+        "outlets": 1,
+        "published": "2026-11-07T12:30:00+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development"
+          }
+        ]
+      }
+    ]
+  }
+}
