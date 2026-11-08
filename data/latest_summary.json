@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-11-07T17:54:30Z",
+  "checked_at": "2026-11-08T18:09:54Z",
   "weekend_start": "2026-11-13",
   "weekend_end": "2026-11-15",
   "from_airport": "DFW",
   "to_airport": "ORD",
   "currency": "USD",
   "status": "ok",
-  "price": 290,
+  "price": 329,
   "airlines": [
-    "Frontier"
+    "Contour Airlines"
   ],
-  "outbound_stops": 0,
-  "trend": "down $158 from $448"
+  "outbound_stops": 1,
+  "trend": "up $39 from $290"
 }
