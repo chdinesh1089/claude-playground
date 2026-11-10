@@ -1,0 +1,509 @@
+{
+  "date": "2026-11-10",
+  "generated_at": "2026-11-10T18:41:12+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Russia and Ukraine hold nearly 4 hours of U.S.-mediated talks in Abu Dhabi",
+        "summary": "Russia and Ukraine on Tuesday held their first U.S.-mediated talks in nine months on ending their war, with U.S. Secretary of State Marco Rubio calling the meeting \"very productive\" and Ukrainian President Volodymyr Zelenskyy saying the session was \"constructive and quite…",
+        "outlets": 9,
+        "published": "2026-11-10T18:23:00+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/russia-and-ukraine-hold-nearly-4-hours-of-u-s-mediated-talks-in-abu-dhabi"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/10/us-officials-russia-ukraine-war-abu-dhabi-talks"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/defence/trilateral-talks-in-abu-dhabi-addressed-humanitarian-issues-zelenskiy-says/articleshow/135713462.cms"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks"
+          }
+        ]
+      },
+      {
+        "headline": "Pete Hegseth defiant as House prepares for impeachment vote",
+        "summary": "Defense Secretary Pete Hegseth faced an impeachment effort led by Republican lawmaker Thomas Massie, dismissing the charges as a political spectacle.",
+        "outlets": 11,
+        "published": "2026-11-10T18:18:32+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/live/2026/nov/10/donald-trump-pete-hegseth-thomas-massie-republicans-iran-war-impeachment-midterms-latest-news-updates"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/hegseth-dismisses-impeachment-effort-political-spectacle/story?id=138002466"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/10/us/politics/hegseth-news-conference-impeachment-vote.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/hegseth-pentagon-briefing-impeachment-iran-war/"
+          }
+        ],
+        "why": "High-stakes domestic political crisis involving a key US cabinet official overseeing ongoing military actions."
+      },
+      {
+        "headline": "Nvidia board investigates CEO Jensen Huang over spy scandal",
+        "summary": "Nvidia's board is investigating CEO Jensen Huang over his relationship with Alice Huang, a woman identified by U.S. intelligence as a Chinese asset.",
+        "outlets": 8,
+        "published": "2026-11-10T18:16:00+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/wall-streets-only-nvidia-bear-says-forcing-out-ceo-jensen-huang-would-be-a-mistake-for-everyone-78043738?mod=mw_rss_topstories"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-shareholder-lawsuit-affair-chinese-spy/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/09/business/nvidia-stock-price-jensen-huang-ceo.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/i-really-believe-him-trump-backs-nvidia-ceo-jensen-huang-amid-china-spy-scandal-7-5-billion-chip-shipment-claims-and-lawsuit/articleshow/135714693.cms"
+          }
+        ],
+        "why": "Major tech governance and leadership crisis involving a foundational AI chip maker central to global tech supply chains."
+      },
+      {
+        "headline": "Anthropic targets valuation up to $1.4 trillion in blockbuster IPO",
+        "summary": "AI company Anthropic set a price band of $70 to $78 per share, targeting a valuation north of $1 trillion in one of history's largest public offerings.",
+        "outlets": 6,
+        "published": "2026-11-10T17:37:55+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/10/technology/anthropic-ipo-valuation-share-price.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/economy/2026/11/10/anthropic-targets-1-4-trillion-valuation-in-massive-stock-market-debut?traffic_source=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/technology/2026/nov/10/anthropic-valuation-stock-market-flotation-ipo-wall-street-ai"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/anthropic-ipo-share-price-anthropic-sets-70-78-price-band-per-share-targets-trillion-dollar-listing-12309004#publisher=newsstand"
+          }
+        ],
+        "why": "Historic initial public offering that will heavily influence market sentiment and tech sector valuations."
+      },
+      {
+        "headline": "India rejects Khalistani terrorist Gurpatwant Singh Pannun's US lawsuit",
+        "summary": "External Affairs Ministry spokesperson Randhir Jaiswal stated that India strongly rejected the allegations directed at its senior officials as well as the US lawsuit.",
+        "outlets": 3,
+        "published": "2026-11-10T15:28:40+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/fabricated-malicious-india-rejects-khalistani-terrorist-gurpatwant-singh-pannuns-us-lawsuit-12309282#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-rejects-khalistani-separatist-gurpatwant-singh-pannun-us-lawsuit-against-nsa-ajit-doval-as-fabricated-malicious-attack-mea-101794319639097.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/malicious-india-flays-us-court-summons-to-nsa-doval-others-over-lawsuit-by-terrorist-pannun/articleshow/135710824.cms"
+          }
+        ]
+      }
+    ],
+    "us": [
+      {
+        "headline": "Inflation runs hotter than expected in latest CPI report",
+        "summary": "U.S. inflation came in higher than anticipated last month, fueling debates over potential Federal Reserve interest rate hikes in December.",
+        "outlets": 5,
+        "published": "2026-11-10T17:59:58+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/economy/inflation-runs-hotter-than-expected-as-higher-prices-extend-beyond-the-gas-station"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Business/inflation-report-provide-1st-snapshot-prices-midterm-elections/story?id=137970527"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/feds-christopher-waller-opens-door-to-50-basis-point-december-rate-hike-after-hot-cpi/articleshow/135718143.cms"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/october-cpi-report-elevated-inflation/"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court lifts pause on border construction in Texas",
+        "summary": "The Supreme Court lifted the pause on border construction in Big Bend, Texas, allowing plans for physical walls, access roads, and vehicle barriers to proceed.",
+        "outlets": 5,
+        "published": "2026-11-10T14:39:12+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/supreme-court-lifts-pause-border-construction-big-bend/story?id=137988610"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/09/us/politics/supreme-court-border-wall-trump.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/news-wrap-supreme-court-allows-border-wall-construction-in-big-bend"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/indias-unemployment-falls-to-5-1-in-q2-as-rural-participation-and-employment-rise-11794321073690.html"
+          }
+        ]
+      },
+      {
+        "headline": "Tyler Robinson to stand trial in 2028 for Charlie Kirk's killing",
+        "summary": "A Utah judge scheduled the trial for Tyler Robinson, accused of killing conservative activist Charlie Kirk, to begin on June 21, 2028.",
+        "outlets": 2,
+        "published": "2026-11-10T03:25:59+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/tyler-robinson-to-stand-trial-in-2028-for-charlie-kirks-killing-nearly-three-years-after-shooting-11794279963586.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/09/us/charlie-kirk-murder-trial-date.html"
+          }
+        ]
+      },
+      {
+        "headline": "Gas prices slip below $4 a gallon nationally",
+        "summary": "Petroleum experts predict that retail gas prices, which recently slipped below $4 a gallon for the first time since July, will continue to decline toward $3.75.",
+        "outlets": 4,
+        "published": "2026-11-10T16:46:39+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/gas-prices-below-4-gallon-november/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/10/us-petrol-prices-are-down-but-elevated-inflation-continues?traffic_source=rss"
+          },
+          {
+            "source": "CNBC",
+            "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5nWWNvUUFBX215UFl0dmNzNjNvLU0tMkh1TWFjZHhtNG1iRThKUXhkVmpYbkJZYm9xcmtWdldwV21HSTNoWEpQMmVNbFh4YTV4OGMwX2RnNUFlVTlVQjRRYUE2SHFfdk02Tzh5VGpsTVgzRFJ5V2xtRg?oc=5"
+          },
+          {
+            "source": "Crude Oil Prices Today | OilPrice.com",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVHpRVnZiMHNiRlNlaW1wWFJWOWN3elpyZXlVSjNtcHBnVmtjU3JqUGRsdEFGeVFqVkVKLWZhYXF6TDViZDEtcWhUZUkwWE1RME9BQ3RMd0xsRTlYaHRCS2V1cXpxcjRDbl85d3FiXzg5elFKRk5pdm5lRTdjd3lKNlZIcTdFRjdGUG9OcUdORkh5anBhSG9pQnB5clF1WjM3SXFwQVAza1M1ejJhZ2Nv0gG0AUFVX3lxTFB2dDJ2VHZ5LTVibDh6ZFFMQ0F0Y0RjM21TMzFsU0w5RDJJaGgxUmczeVR3RWFmZEZjaTdXbWNKb2pWM05uU2l2ektUeHo0VHBiOGllZ0ZfSlBSRGV2ZUNDNTdLVWhVUXlSWmxyT2J5UnU3T3l0elFkdHpuUWY4NnN1SnJWdE9Ta3NYYjZsR0RIMlItaWhWV3hmV2tkTXFBc0ZSeXhZYVluZ3VURFRXMzgzZHpCYw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "FDA warns Ozempic and Zepbound carry possible risk of vision loss",
+        "summary": "The FDA stated that popular GLP-1 medications like Ozempic and Zepbound carry a possible risk of nonarteritic anterior ischemic optic neuropathy.",
+        "outlets": 4,
+        "published": "2026-11-10T18:21:00+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/ozempic-zepbound-and-other-glp-1-drugs-have-a-possible-risk-of-vision-loss-b3738f36?mod=mw_rss_topstories"
+          },
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/health/2026/11/glp-1-drugs-may-increase-risk-of-vision-loss-from-rare-condition-fda-warns/"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/fda-flags-potential-vision-loss-risk-linked-to-glp-1-drugs-what-users-of-weight-loss-medications-should-know-11794304730495.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/glp-1-vision-loss-side-effect-warning-fda/"
+          }
+        ]
+      },
+      {
+        "headline": "House panel rebukes DOJ over decades-long failures in Epstein case",
+        "summary": "A 15-month congressional investigation by the House Oversight Committee criticized the Justice Department's handling of the Jeffrey Epstein case.",
+        "outlets": 3,
+        "published": "2026-11-10T17:59:02+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cq5ynyn8zyr8o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/house-oversight-panel-recommends-doj-renew-probe-jeffrey/story?id=138015976"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/jeffrey-epstein-house-oversight-committee-report/"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Supreme Court directs WhatsApp to submit anti-fraud action plan",
+        "summary": "Following reports of massive digital arrest scams costing Indians billions, the Supreme Court directed WhatsApp and intermediaries to propose prevention plans.",
+        "outlets": 2,
+        "published": "2026-11-10T14:27:21+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/digital-arrest-scam-indians-lose-rs-800-cr-in-2026-to-cybercrimes-sc-directs-whatsapp-to-submit-anti-fraud-action-plan-11794320052336.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-whatsapp-digital-arrest-scam-safeguards-bank-accountability-ptag-3036033-2026-11-10?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Yogi Adityanath claims 1.27 crore Hindu voters missing in UP",
+        "summary": "Uttar Pradesh Chief Minister Adityanath claimed that draft electoral rolls are missing millions of Hindu voters, drawing questions from opposition leaders.",
+        "outlets": 2,
+        "published": "2026-11-10T18:12:04+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/up-voter-list-yogi-adityanath-claims-1-27-crore-hindu-voters-missing-after-sir-exercise-as-muslim-voters-up-by-165-11794332440118.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/elections/assembly/story/up-voter-rolls-yogi-claims-1-27-crore-hindu-voters-missing-after-sir-3035274-2026-11-09?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "India says travel document needed for Hasina extradition process",
+        "summary": "MEA spokesperson Randhir Jaiswal described the passport requirement for Sheikh Hasina's extradition as a technical issue that requires a valid travel document.",
+        "outlets": 2,
+        "published": "2026-11-10T16:31:53+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/after-bangladesh-rules-out-passport-for-hasina-india-says-travel-document-needed/article71686655.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-declines-comment-on-sheikh-hasina-s-passport-request-says-travel-document-needed-101794318744281.html"
+          }
+        ]
+      },
+      {
+        "headline": "Telangana to host Bharat Summit on November 13 and 14",
+        "summary": "Global leaders and policymakers from 70 countries are expected to attend the upcoming Bharat Summit hosted in Telangana.",
+        "outlets": 2,
+        "published": "2026-11-10T17:02:34+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/telangana-to-host-bharat-summit-on-november-13-and-14/article71686906.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/congress-to-host-second-bharat-summit-in-hyderabad-from-nov-12-to-14-70-countries-to-attend-101794302181092.html"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi CM launches Namo Yamuna River Safari at Sonia Vihar",
+        "summary": "Delhi Chief Minister Rekha Gupta launched the Yamuna River Safari service on the northern stretch of the river between Sonia Vihar and Jagatpur.",
+        "outlets": 2,
+        "published": "2026-11-10T09:16:17+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/delhi-cm-rekha-gupta-launches-namo-yamuna-river-safari-at-sonia-vihar-101794302177853.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/yamuna-river-cruise-delhi-to-get-its-first-recreational-cruise-service-between-sonia-vihar-and-jagatpur-11794283564988.html"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi introduces its first electric cruise on Yamuna River",
+        "summary": "Delhi inaugurated its first electric cruise ride on the Yamuna River, featuring a 40-minute ride alongside new recreational visitor areas.",
+        "outlets": 2,
+        "published": "2026-11-10T14:21:29+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/delhi-news/delhi-yamuna-cruise-delhi-gets-its-first-electric-cruise-on-yamuna-rs-500-ticket-40-minute-ride-12308917#publisher=newsstand"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/new-updates/delhis-new-yamuna-cruise-can-accommodate-up-to-30-passengers-per-ride-and-features-bio-toilets-covering-a-4-5-km-stretch-between-sonia-vihar-and-jagatpur-in-40-minutes-check-ticket-prices-route-and-other-details/articleshow/135705732.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "At least 12 people killed in Bulgaria motorway pile-up",
+        "summary": "At least 12 people were killed and dozens injured after multiple crashes involving around 50 vehicles occurred on a Bulgarian motorway.",
+        "outlets": 3,
+        "published": "2026-11-10T16:20:12+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/10/at-least-12-people-killed-in-bulgaria-motorway-pile-up?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckx2q2velpjjo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/europe/watch-thick-fog-triggers-multiple-crashes-on-bulgaria-motorway-12-killed/articleshow/135710999.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Israel's new parliament sworn in amid political deadlock",
+        "summary": "Israel's new parliament was sworn in with opposition leaders gaining key posts and pushing for inquiries into the October 7 attacks.",
+        "outlets": 7,
+        "published": "2026-11-10T15:23:57+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/amid-israel-deadlock-benjamin-netanyahu-opponents-agree-on-key-parliament-posts-12308218#publisher=newsstand"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/middle-east/israel-govt-formation-netanyahu-in-panic-as-eisenkot-led-bloc-agree-on-key-knesset-positions/articleshow/135713023.cms"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/10/new-knesset-speaker-ousting-netanyahu-israel-pm"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/crd939lpzjp9o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Russia's top independent newspaper Novaya Gazeta closes office",
+        "summary": "Novaya Gazeta, the last major independent media outlet critical of the Kremlin, closed its office after three decades under government pressure.",
+        "outlets": 3,
+        "published": "2026-11-09T23:46:13+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/citing-government-pressure-russias-top-independent-newspaper-closes-its-office-after-three-decades"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/videos/cvrlylj9r11go?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/10/world/europe/russia-novaya-gazeta-closure.html"
+          }
+        ]
+      },
+      {
+        "headline": "Malaysia's disgraced former PM Najib Razak moved to house arrest",
+        "summary": "Najib Razak, convicted for his role in the 1MDB sovereign wealth fund scandal, was released from prison to serve the remainder of his sentence at home.",
+        "outlets": 2,
+        "published": "2026-11-10T18:33:51+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cxnv0v4yln7do?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/10/world/asia/malaysia-najib-razak-1mdb-house-arrest.html"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Microsoft overtakes Nvidia as second-most valuable firm",
+        "summary": "Microsoft surpassed Nvidia to become the world's second-most valuable firm as investigations into Nvidia's leadership weighed on sentiment.",
+        "outlets": 2,
+        "published": "2026-11-10T17:35:00+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/microsoft-overtakes-nvidia-as-worlds-2nd-most-valuable-company-amid-jensen-huang-controversy-3036406-2026-11-10?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/nvidia-slips-amid-ceo-probe-microsoft-overtakes-as-worlds-2nd-most-valuable-firm-12309706#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Google releases Gemini 4 Carbon with agent swarm feature",
+        "summary": "Google rolled out its latest artificial intelligence model, Gemini 4 Carbon, featuring a new agent swarm capability for the general public.",
+        "outlets": 1,
+        "published": "2026-11-10T16:00:00+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout"
+          }
+        ]
+      },
+      {
+        "headline": "ChatGPT introduces verified AI Business Agents for commerce",
+        "summary": "ChatGPT launched verified Business Agents representing brands to assist users with comparison shopping and e-commerce tasks.",
+        "outlets": 1,
+        "published": "2026-11-10T18:00:00+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub"
+          }
+        ]
+      }
+    ]
+  }
+}
