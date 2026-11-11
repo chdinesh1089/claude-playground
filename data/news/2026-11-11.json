@@ -1,0 +1,530 @@
+{
+  "date": "2026-11-11",
+  "generated_at": "2026-11-11T18:42:24+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Treasury secretary Scott Bessent relocates to military base after Iranian threats",
+        "summary": "Treasury Secretary Scott Bessent has been relocated to a military base following a series of threats against his life from Iran.",
+        "outlets": 4,
+        "published": "2026-11-11T18:31:54+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/early-details-after-bessent-moved-to-military-base-over-iranian-threats/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/treasury-secretary-scott-bessent-moved-military-base-sources/story?id=138044885"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/10/us/politics/bessent-moved-base-iran-threats.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cqr7gr0010r2o?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "High-level US security developments involving cabinet officials impact overall geopolitical stability."
+      },
+      {
+        "headline": "Russia-Ukraine talks in Abu Dhabi secure prisoner exchange without peace breakthrough",
+        "summary": "US-mediated talks in Abu Dhabi between Russia and Ukraine concluded with a major prisoner exchange agreement, though broader peace terms remained unreached.",
+        "outlets": 5,
+        "published": "2026-11-11T18:04:58+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ck792we7zrz4o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/11/g-s1-152954/russia-ukraine-war-talks"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/russia-ukraine-talks-in-uae-secure-major-prisoner-exchange-deal?traffic_source=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/11/ukraine-talks-in-abu-dhabi-bring-progress-on-prisoners-but-not-on-peace"
+          }
+        ],
+        "why": "Major international conflict diplomacy affecting global economic and security climate."
+      },
+      {
+        "headline": "‘Climate crisis is outrunning us,’ UN chief Guterres says at COP31",
+        "summary": "Guterres says the world must fight harder, accuses the fossil fuel lobby of delaying climate action at critical talks.",
+        "outlets": 3,
+        "published": "2026-11-11T12:48:21+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/11/climate-crisis-is-outrunning-us-un-chief-guterres-says-at-cop31?traffic_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/climate-crisis-is-outrunning-world-un-chief-antonio-guterres-warns-leaders-at-cop31/articleshow/135732962.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/11/climate/trump-cop31-climate-turkey.html"
+          }
+        ]
+      },
+      {
+        "headline": "India simplifies visa norms by cutting categories and forms by 70%",
+        "summary": "The Ministry of Home Affairs reduced visa categories from 13 to 9 and cut application form requirements by up to 70% to streamline processing.",
+        "outlets": 5,
+        "published": "2026-11-11T16:22:55+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/india-simplifies-visa-regime-tourist-visa-renamed-as-visitor-visa/article71690588.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/centre-simplifies-visa-regime-paperwork-cut-by-70-categories-reduced-from-13-to-9/articleshow/135741142.cms"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/services/travel/centre-cuts-visa-categories-from-13-to-9-reduces-application-form-fields-by-up-to-70/articleshow/135740791.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/india-reduces-visa-categories-from-13-to-9-cuts-application-form-columns-by-up-to-70-check-when-it-comes-into-effect-11794418675068.html"
+          }
+        ],
+        "why": "Directly impacts international travel and bureaucratic procedures for Indian citizens abroad and visitors."
+      },
+      {
+        "headline": "Former Indian vice-president Dhankhar collapses and is admitted to AIIMS",
+        "summary": "Former Rajya Sabha chairman and vice-president Dhankhar collapsed during a morning walk and was admitted to the cardio-neuro centre at AIIMS.",
+        "outlets": 3,
+        "published": "2026-11-11T16:25:09+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/former-vp-dhankhar-collapses-during-morning-walk-admitted-to-aiims/article71690696.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/ex-vp-jagdeep-dhankhar-collapses-during-morning-walk-admitted-to-aiims/articleshow/135736747.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/10/world/asia/sonia-gandhi-india.html"
+          }
+        ],
+        "why": "Major political health development in India concerning a high-ranking national figure."
+      }
+    ],
+    "us": [
+      {
+        "headline": "House tables Hegseth impeachment, effectively killing it in current Congress",
+        "summary": "A House impeachment effort against Defense Secretary Pete Hegseth was tabled and killed in the current Congress after a procedural vote.",
+        "outlets": 4,
+        "published": "2026-11-11T12:34:27+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/hegseth-dismisses-impeachment-effort-political-spectacle/story?id=138002466"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/11/g-s1-152949/up-first-newsletter-pete-hegseth-jim-jordan-iran-backed-trio-us-bases"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/live/2026/nov/11/donald-trump-pete-hegseth-impeachment-democrats-republicans-arlington-latest-news-updates"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/trumps-iran-war-pause-is-as-costly-as-new-strikes/articleshow/135728791.cms"
+          }
+        ]
+      },
+      {
+        "headline": "GOP chooses Jim Jordan and John Thune as congressional leaders",
+        "summary": "Congressional Republicans elected Jim Jordan as House minority leader and re-elected John Thune as Senate Republican leader following midterm elections.",
+        "outlets": 3,
+        "published": "2026-11-11T08:41:17+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/10/us/politics/republican-house-leader-scalise-jordan.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/house-rejects-hegseth-impeachment-as-gop-selects-jordan-and-thune-as-leaders"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/11/thune-re-elected-as-us-senate-republican-leader-after-midterm-losses?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Car crashes into crowd in Los Angeles, killing three pedestrians",
+        "summary": "An SUV jumped the curb near a Los Angeles metro station, killing three pedestrians and critically injuring three others, with the driver charged with murder.",
+        "outlets": 2,
+        "published": "2026-11-11T16:04:39+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/10/us/la-car-crash-north-hollywood.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWGdzVVl1N2hUWTJDNmxlakM3SEtvaTZjaUJiSzRSRzF5VWd2YnBTTWt3VDg4N1o4TGM1SUFqRTlCcllHV09CQS1iR3VoUUxuUDZZVWhIbDItVUFOWFJqQ21CQWxGSnpjQS1wRnE3TDc0UDY3Skk5YmdCVWs5NE1rY3RVQUk0T1hnc3lGVGFDV0M5TlBR0gGaAUFVX3lxTE95VVkxSDhSQmdPYl9UX2t3TFJiRExnY01ZUmNiS3RUSDUxbExVOXFoWk1HYjYtQmFNNDFfWTl6Xzk3RlZZemVvMVZzQXRxTXJESTg1TmI4N1JXMEJFTEZ6R014QjlTa25Qakw3VDRZWG9YOHowcGRCb0FVX3lvcUpXNGdUbk1ubkJWRGJjTGRXMDlYYVF5ZFBMV3c?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Average US heating bills projected to rise 7% this winter nationwide",
+        "summary": "A new report warns that US heating bills will rise an average of 7% this winter, with heavy heating oil users facing even steeper cost surges.",
+        "outlets": 2,
+        "published": "2026-11-11T18:00:11+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/11/heating-bill-winter-price-increases"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/11/business/energy-environment/winter-heating-oil-costs.html"
+          }
+        ]
+      },
+      {
+        "headline": "Release of Thomas Markle Sr. revoked after ankle monitor removal",
+        "summary": "A federal judge in Florida rescinded the house arrest of Thomas Markle Sr. after he removed his electronic monitoring device.",
+        "outlets": 2,
+        "published": "2026-11-10T23:19:20+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/10/us/thomas-markle-ankle-monitor-jail.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/thomas-markle-father-of-meghan-cut-off-his-ankle-monitor-while-awaiting-hearing-doj-says"
+          }
+        ]
+      },
+      {
+        "headline": "White House warns Congress that aggressive investigations could be criminal",
+        "summary": "The White House counsel warned congressional Democrats that upcoming oversight probes into the administration could lead to executive branch investigations.",
+        "outlets": 3,
+        "published": "2026-11-11T18:12:40+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/white-house-counsel-will-scharf-house-oversight-committee-robert-garcia-investigations/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/11/us/politics/trump-democrats-congress-oversight-committee.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/white-house-sends-warning-to-democrats-about-investigating-the-trump-administration"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Terrorists open fire on CRPF personnel in Jammu and Kashmir's Kulgam",
+        "summary": "Three CRPF personnel were injured after terrorists opened fire on a security checkpoint in the Kulgam district of south Kashmir.",
+        "outlets": 5,
+        "published": "2026-11-11T16:39:12+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/videos/shows/jk-terrorists-open-fire-on-crpf-personnel-in-kulgam-three-injured-above-the-fold-nov-11-2026/article71690517.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/kulgam-terror-attack-at-least-3-crpf-personnel-injured-after-terrorists-open-fire-in-kashmir-valley-11794388849478.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/defence/jammu-and-kashmir-terror-attack-three-crpf-personnel-injured-after-terrorists-open-fire-at-party/articleshow/135732058.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/kulgam-terror-attack-terrorists-were-on-motorcycle-search-operation-launched-what-we-know-so-far/articleshow/135732438.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Navi Mumbai recognized as India's cleanest city in Swachh Survekshan",
+        "summary": "Navi Mumbai was awarded the title of India's cleanest city in the latest Swachh Survekshan rankings, unseating previous multi-year winner Indore.",
+        "outlets": 2,
+        "published": "2026-11-11T18:24:47+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/sci-tech/energy-and-environment/navi-mumbai-emerges-as-cleanest-city-surat-vijayawada-runners-up-in-cleanliness-survey/article71689854.ece"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/navi-mumbai-bags-cleanest-city-tag-under-swachh-sahar-league-category/articleshow/135735913.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi-NCR pollution worsens as NCR orders hybrid classes for schools",
+        "summary": "Delhi-NCR pollution levels worsened compared to last year, prompting authorities in Noida and Ghaziabad to mandate hybrid classes up to Class 5 under GRAP-III curbs.",
+        "outlets": 3,
+        "published": "2026-11-11T16:03:07+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/even-before-diwali-delhi-ncr-had-worse-pollution-levels-than-last-year-study-12314010#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/firecrackers-were-responsible-for-71-of-air-pollution-on-diwali-night-in-delhi-study-101794369666825.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/education-today/story/schools-in-noida-greater-noida-must-offer-online-and-offline-classes-to-students-up-to-class-5-amid-grap3-3036832-2026-11-11?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Four coaches of Chauri Chaura Express derail at Kanpur Central",
+        "summary": "Four coaches of the Chauri Chaura Express derailed at Kanpur Central railway station shortly after departure, causing transport disruptions.",
+        "outlets": 2,
+        "published": "2026-11-11T12:19:58+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/kanpur/3-coaches-of-chauri-chaura-express-derail-at-kanpur-central-station/articleshow/135737153.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/passenger-train-coaches-derailed-at-digaru-railway-station-in-assams-kamrup-injured-death-toll-compensation-101794365637385.html"
+          }
+        ]
+      },
+      {
+        "headline": "Cabinet clears ₹2,390-crore Noida Metro extension and fertilizer subsidy hike",
+        "summary": "The Union Cabinet approved a ₹2,390-crore Noida Metro extension and raised the rabi fertilizer subsidy by 64% to ₹62,370 crore.",
+        "outlets": 5,
+        "published": "2026-11-11T17:15:00+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/from-noida-metro-to-national-museum-fertiliser-subsidy-4-key-decisions-cleared-by-cabinet-today-101794413322601.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/uttar-pradesh/cabinet-approves-2390-crore-metro-rail-link-from-noida-sector-51-to-greater-noida-sector-4/article71689686.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/business/india-business/noida-metro-extension-to-rs-3230-crore-national-museum-project-cabinet-approves-key-5-decisions/articleshow/135733423.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/union-cabinet-raises-rabi-fertilizer-subsidy-by-64-to-62-370-crore-11794397334259.html"
+          }
+        ]
+      },
+      {
+        "headline": "Amul and Mother Dairy raise milk prices across India by up to Rs 4",
+        "summary": "Major dairy brands Amul and Mother Dairy increased fresh milk prices across India by up to Rs 4 per litre due to rising operational costs.",
+        "outlets": 5,
+        "published": "2026-11-11T13:32:23+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/cons-products/food/amul-hikes-milk-prices-by-rs-2-4-per-litre-from-november-12/articleshow/135739242.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/amul-hikes-milk-prices-across-india-from-nov-12-with-gold-costing-rs-4-more-and-taaza-rs-2-more-per-litre-3036841-2026-11-11?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/mother-dairy-set-to-hike-prices-by-2-4-per-liter-from-november-12-milk-price-increase-101794379159051.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/amul-announces-price-hike-after-mother-dairy-milk-to-get-costlier-by-5-5-from-12-november-check-new-rates-11794407330282.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Bomb threats hit thousands of schools across Italy, Scotland and Northern Ireland",
+        "summary": "Over 6,000 Italian schools and institutions in Scotland and Northern Ireland received bomb threat emails, though authorities reported no public risk.",
+        "outlets": 6,
+        "published": "2026-11-11T18:38:45+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwz0k79pr8z2o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/education/2026/nov/11/bomb-threats-hoax-schools-scotland-northern-ireland"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/italy-evacuates-over-300-schools-due-to-bomb-alert-with-threats-in-scotland-and-ireland/article71690995.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/europe/genocide-against-italians-over-6000-italy-schools-get-bomb-threats-similar-warnings-in-uk-ireland/articleshow/135735451.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Spain faces widespread disruption during its first general strike in 14 years",
+        "summary": "Spain experienced mass walkouts and transit disruptions during its first general strike in 14 years, driven by soaring housing costs and economic pressures.",
+        "outlets": 4,
+        "published": "2026-11-11T17:44:32+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwvg25nypmrvo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/11/world/europe/spain-general-strike.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/11/spain-general-strike-housing-costs"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/11/spain-faces-nationwide-protests-over-soaring-housing-costs?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Indonesian vice president resigns amid ruling alliance friction",
+        "summary": "Indonesia's vice president resigned following growing signs of a rift within the ruling political coalition and former leadership.",
+        "outlets": 1,
+        "published": "2026-11-11T16:38:07+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmvgxgz87qqro?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Portugal cancels over 300 flights and shuts schools due to Storm Charles",
+        "summary": "Portugal closed schools and cancelled more than 300 flights as authorities prepared for the arrival of severe Atlantic Storm Charles.",
+        "outlets": 1,
+        "published": "2026-11-11T17:46:40+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/11/portugal-cancels-300-plus-flights-shuts-schools-ahead-of-storm-charles?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "CoreWeave shares surge over 26% and spark rally in AI cloud stocks",
+        "summary": "CoreWeave shares jumped over 26% following strong revenue growth from infrastructure spending, triggering a broader rally in battered AI cloud and chip stocks.",
+        "outlets": 2,
+        "published": "2026-11-11T17:17:53+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/coreweave-shares-surge-over-20-spark-rally-in-battered-ai-cloud-stocks/articleshow/135744808.cms"
+          },
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/micron-and-other-ai-stocks-surge-as-coreweave-calms-wall-streets-worst-fears-0a18152a?mod=mw_rss_topstories"
+          }
+        ]
+      },
+      {
+        "headline": "Moody's upgrades India's growth forecast to 7% on economic resilience",
+        "summary": "Moody's upgraded India's economic growth forecast to 7% for the fiscal year, citing strong national resilience to external global shocks.",
+        "outlets": 2,
+        "published": "2026-11-11T11:01:07+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/indias-economy-holds-firm-against-energy-shock-moodys-lifts-growth-forecast-to-7-3036774-2026-11-11?utm_source=rss"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPb1Bhc253SGlMZGdtdjFTWk9raTg0ckVuNEJuM0YycUtidDd4dll4Z2RIM0t3TXlxX1hvZnpxZG1FanQzOTFDeW9BalFwLTVrSnRGbDJVa0tzMHNQZUdkR3pwQUZMYTlDOFhCOGhuSzgyZW1aQkVCcE9rRkhUU3Jtd3dmbW1PMV9Gd0NCZHNRN2xfeUdmeFZxb2cxTEp0VjhNRFVnWWlmNW40WUFJQUlpNzNnS1g0QTA2Vi0tYkRIb09paUxB?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "India's net direct tax collections rise 11.8% led by corporate tax growth",
+        "summary": "India reported an 11.76% rise in net direct tax collections to ₹14.42 trillion, driven largely by a 17.8% increase in corporate tax receipts.",
+        "outlets": 1,
+        "published": "2026-11-11T16:56:44+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/net-direct-tax-collections-rise-11-8-to-rs-14-42-trillion-corporate-tax-leads-11794414077304.html"
+          }
+        ]
+      },
+      {
+        "headline": "Nvidia CEO Jensen Huang faces scrutiny amid reports of Chinese intelligence links",
+        "summary": "Nvidia and CEO Jensen Huang faced mounting scrutiny and investigations regarding advanced chip transfers and personal relationships alleged to involve foreign intelligence.",
+        "outlets": 3,
+        "published": "2026-11-11T18:24:53+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/nvidia-and-its-board-also-liable-over-jensen-huang-affair-with-spy-related-to-china-3037058-2026-11-11?utm_source=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/pillow-talk-espionage-how-alleged-chinese-spy-alice-huang-may-have-gained-access-to-jensen-huang-s-nvidia-insights-11794409341358.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/10/business/nvidia-wachtell-lipton-jensen-huang.html"
+          }
+        ]
+      }
+    ]
+  }
+}
