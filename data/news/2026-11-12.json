@@ -1,0 +1,503 @@
+{
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T18:56:50+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Jensen Huang resigns from Nvidia following revelations of a personal affair",
+        "summary": "Nvidia co-founder and CEO Jensen Huang resigned after news emerged of his relationship with a woman U.S. officials identified as a Chinese spy and an affair with a subordinate.",
+        "outlets": 17,
+        "published": "2026-11-12T16:30:00+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/podcast/1031260/nvidia-jensen-huang-resign-china-spy-scandal-ai-chips-trump"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/education-today/news/story/nvidia-ceo-jensen-huangs-wife-lori-was-earning-more-than-him-in-silicon-valley-3037398-2026-11-12?utm_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "As a dominant player in AI and technology, Nvidia's leadership shakeup directly impacts global tech markets and supply chains."
+      },
+      {
+        "headline": "US envoys meet Putin in Moscow to discuss peace talks and Ukraine war",
+        "summary": "U.S. envoys Steve Witkoff and Jared Kushner met with Russian President Vladimir Putin in Moscow, where Putin agreed to allow European negotiators to join the next round of Ukraine talks.",
+        "outlets": 7,
+        "published": "2026-11-12T18:28:59+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/u-s-envoys-meet-with-putin-in-moscow-on-ukraine-talks-then-head-for-dublin-to-see-zelenskyy"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/12/world/europe/russia-ukraine-witkoff-kushner.html"
+          }
+        ],
+        "why": "High-stakes diplomacy directly impacts ongoing geopolitical stability and international markets."
+      },
+      {
+        "headline": "Trump asserts 'we don't need a deal with Iran' after ongoing attacks",
+        "summary": "President Trump declared that the war with Iran has been won and that no deal is necessary as Tehran continues its attacks on shipping vessels.",
+        "outlets": 6,
+        "published": "2026-11-12T18:05:38+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/International/live-updates/iran-live-updates-americans-tired-forever-wars-araghchi/?id=137967256"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/12/us/politics/trump-vance-iran-fraud.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/12/no-war-no-peace-can-iran-break-the-deadlock-with-the-us?traffic_source=rss"
+          }
+        ],
+        "why": "Escalation in the Middle East heavily influences global crude oil prices and maritime security for energy shipments."
+      },
+      {
+        "headline": "Deadly three-story building collapse in Brooklyn leaves at least eight dead",
+        "summary": "At least eight people were killed and more than a dozen others injured following the collapse of a three-story building in the Flatbush neighborhood of Brooklyn.",
+        "outlets": 8,
+        "published": "2026-11-12T18:31:16+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/12/nyregion/building-collapse-brooklyn-deaths-flatbush-nyc.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/mamdani-gives-update-on-deadly-nyc-building-collapse-rescue-efforts/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/brooklyn-building-collapse-death-toll-rises-to-8-as-rescuers-search-for-survivors"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/sections/the-picture-show/2026/11/12/g-s1-153229/brooklyn-building-collapse-photos"
+          }
+        ],
+        "why": "A major domestic tragedy involving extensive rescue operations and structural safety concerns."
+      },
+      {
+        "headline": "One killed and four injured in Washington, D.C. shooting near White House",
+        "summary": "A gunman opened fire in and around a gym in Washington, D.C., killing one person and injuring four others before dying by suicide.",
+        "outlets": 5,
+        "published": "2026-11-12T15:21:31+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/washington-dc-shooting-five-people-shot-near-white-house-1-killed-police-hunt-suspect-11794496486832.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/12/police-say-at-least-five-people-shot-at-busy-thoroughfare-in-washington-dc?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/12/us/shooting-washington-dc.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/suspected-gunman-shoots-5-people-in-d-c-killing-1-before-dying-by-suicide"
+          }
+        ],
+        "why": "A violent public shooting near the nation's capital raises immediate security and law enforcement concerns."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Defense Secretary Hegseth awards medal to guard who reprimanded him",
+        "summary": "Defense Secretary Pete Hegseth issued a commendation and awarded a medal to the U.S. Army sentinel who previously told him and his aides to be quiet at the Tomb of the Unknown Soldier.",
+        "outlets": 5,
+        "published": "2026-11-12T18:35:44+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/hegseth-presents-award-to-soldier-who-scolded-him-and-his-aides-at-tomb-of-the-unknown-soldier"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/11/us/politics/hegseth-tomb-unknown-soldier-shout.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/videos/ck5y132yq1ymo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/live/2026/nov/12/mississippi-scott-colom-ukraine-donald-trump"
+          }
+        ]
+      },
+      {
+        "headline": "Democrat Scott Colom flips Mississippi Senate seat in historic win",
+        "summary": "Democrat Scott Colom won the election for U.S. Senate in Mississippi, marking the first time the southern state has seated a Black senator since 1874.",
+        "outlets": 6,
+        "published": "2026-11-12T14:36:06+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/democrat-colom-mississippis-black-senator-100-years-ap/story?id=137984057"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/12/us/elections/mississippi-colom-senate-race-black-voters.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cw7vppyr80eeo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/12/g-s1-153171/up-first-newsletter-scott-colom-trump-democrats-ukraine-russia"
+          }
+        ]
+      },
+      {
+        "headline": "Democrats face backlash after missing Hegseth impeachment vote",
+        "summary": "Eleven absent Democrats helped Republicans shelve impeachment charges against Defense Secretary Pete Hegseth, drawing sharp criticism from party members.",
+        "outlets": 2,
+        "published": "2026-11-12T00:21:38+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/11/us/politics/democrats-backlash-missing-hegseth-impeachment-vote.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/democrats-missed-crucial-hegseth-impeachment-vote-blamed-traffic/story?id=138053963"
+          }
+        ]
+      },
+      {
+        "headline": "Judge allows Trump defamation case against BBC to proceed",
+        "summary": "President Donald Trump's $10 billion defamation lawsuit against the BBC remains on track to proceed after a judge tossed only one claim.",
+        "outlets": 2,
+        "published": "2026-11-11T21:32:56+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/judge-allows-trump-defamation-case-against-bbc-to-proceed-but-tosses-1-claim"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/11/world/europe/trump-bbc-lawsuit.html"
+          }
+        ]
+      },
+      {
+        "headline": "Illinois ban on hemp-derived THC drinks takes effect",
+        "summary": "Hemp-derived THC drink companies rushed to ship remaining inventory out of Illinois as a strict state ban went into effect at midnight.",
+        "outlets": 1,
+        "published": "2026-11-12T18:21:46+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/12/thc-drinks-ban-illinois"
+          }
+        ]
+      },
+      {
+        "headline": "The SS United States takes final voyage to become artificial reef",
+        "summary": "The historic ocean liner SS United States was towed for its final voyage to be sunk off the coast of Florida to create an artificial reef.",
+        "outlets": 1,
+        "published": "2026-11-12T16:20:04+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/12/g-s1-153219/the-deliberate-sinking-of-the-ss-united-states"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "ReNew to invest ₹80,000 crore in green data centre and solar manufacturing",
+        "summary": "ReNew announced massive investments at the Vizag CII Summit, including a ₹67,000-crore green hyperscale data centre and solar manufacturing facilities in Andhra Pradesh.",
+        "outlets": 2,
+        "published": "2026-11-12T18:00:03+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/andhra-pradesh/vizag-cii-summit-renew-to-invest-80000-crore-in-green-data-centre-solar-manufacturing-in-andhra-pradesh/article71694053.ece"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/energy/power/cleanmax-plans-50000-crore-investment-in-andhra-pradesh-to-power-2-gw-green-compute-factory/articleshow/135768412.cms"
+          }
+        ]
+      },
+      {
+        "headline": "IIT Kharagpur becomes first IIT to offer postgraduate medical programmes",
+        "summary": "IIT Kharagpur will introduce six specialisations in its new postgraduate medical programmes, offering two seats in each discipline including general medicine and radiology.",
+        "outlets": 3,
+        "published": "2026-11-12T17:06:21+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/kharagpur-becomes-first-iit-to-offer-pg-medical-programmes/article71694454.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/iit-kharagpur-to-offer-nmc-recognised-postgraduate-medical-courses-with-12-md-seats-101794491835790.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/education-today/news/story/iit-kharagpur-becomes-first-iit-to-offer-pg-medical-degrees-launches-six-md-courses-3037462-2026-11-12?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "India records 38% drop in tuberculosis mortality since 2015",
+        "summary": "The World Health Organization's Global Tuberculosis Report 2026 showed that India recorded a 38% drop in TB mortality since 2015, with 1.13 million deaths reported last year.",
+        "outlets": 2,
+        "published": "2026-11-12T17:50:12+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/india-records-38-drop-in-tb-mortality-since-2015-who-report/article71695039.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/tb-deaths-fall-patients-treatment-drug-health-testing-vulnerable-populations-11794499787524.html"
+          }
+        ]
+      },
+      {
+        "headline": "Oil tanker with 19 Indians on board hit by projectile off UAE port",
+        "summary": "An oil tanker carrying 19 Indian crew members was hit by a projectile off the coast of a UAE port, though officials confirmed all crew members are safe.",
+        "outlets": 2,
+        "published": "2026-11-12T16:12:24+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/oil-tanker-with-19-indians-on-board-hit-by-projectile-off-uae-port-all-safe-12318035#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/crude-oil-tanker-carrying-19-indian-seafarers-hit-off-uae-coast-all-crew-evacuated-101794488072077.html"
+          }
+        ]
+      },
+      {
+        "headline": "Indians among 14 killed in massive traffic accident in UAE",
+        "summary": "Several Indian nationals were among the 14 people killed after a truck lost control and rammed into 23 vehicles in Fujairah, UAE, causing a major collision and fire.",
+        "outlets": 2,
+        "published": "2026-11-12T18:09:25+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/indians-abroad/story/many-people-including-indians-killed-after-truck-loses-control-hits-multiple-vehicles-in-uae-3037863-2026-11-12?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/indians-among-14-killed-as-truck-hits-vehicles-in-uaes-fujairah-12319090#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "RBI issues domestic transfer norms allowing walk-in transfers up to ₹50,000",
+        "summary": "The Reserve Bank of India introduced a new Domestic Money Transfer framework allowing walk-in customers to send up to ₹50,000 through formal banking channels.",
+        "outlets": 2,
+        "published": "2026-11-12T05:49:28+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/wealth/invest/rbi-issues-new-domestic-money-transfer-rules-sets-rs-10000-per-transaction-limit-for-cash-payout-who-can-benefit-from-these-directions/articleshow/135757129.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/rbi-issues-domestic-transfer-norms-walk-in-customers-can-send-up-to-rs-50k-101794412658123.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Indonesia's vice president resigns amid credential and alliance disputes",
+        "summary": "Indonesian Vice President Gibran Rakabuming Raka resigned following controversies over his academic credentials and a widening rift within the ruling political alliance.",
+        "outlets": 4,
+        "published": "2026-11-12T14:22:50+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/12/g-s1-153190/indonesias-vp-resigns-as-his-eligibility-and-academic-credentials-are-questioned"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmvgxgz87qqro?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/12/world/asia/indonesia-gibran-vice-president-resign.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVWFsc3dqbDNfbXJJUzI2NmlhYVdNZWFMOG5vVnprRXVrVmQ0ZmUtdEdQVEFoVVdMV0YxVng0MTc5TmwwRHJpMWtOTEstcUxoemlZNWFieXRlNjRVcXhPVm5hU0xVQkxOVUhyTy1TcFg5MjBoMjdXdF9WZjhzLWZ5MXJNNVRVeklMZE1LTkN4QVlDeDB5MVdJRUJtX21TWFdXTXg5NGdKMNIBrAFBVV95cUxOZVgxWXctTjdKZEVVOWMtMDNzaktXQU9SelBPTVRwTVJuaEpfdmdCSE5IVC1hWjVuZlRjTTdoZGY2a2JMOGV1eUhZNFpOUzF0Mi1Xanp3cDZDRjFaUUFmbnFsZGhYVFd4ZVZVd2dJTElzckdlUW1MSllsUF9pb3A2dG9pV1dubGkxVTJJdFEtODZEdnJQb3JyQ29QaEp6cUgwVGI0ak1pRlFGZGx2?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Gaza’s Nasser Hospital hit by Israeli air strike for seventh time",
+        "summary": "Israeli air strikes targeted Gaza's Nasser Hospital for the seventh time, drawing heavy international condemnation amid worsening conditions in the enclave.",
+        "outlets": 4,
+        "published": "2026-11-12T17:38:02+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/jerusalem-daily-gazas-nasser-hospital-hit-by-israeli-air-strike?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQUdEakxtMWZpbTJoLTBTOGRoNElEcDFodXFDNzcyUEtVS2dJMU92anJoQWFpdjEwT042d3lRVExOcHpFdDdrZ3lNTWZ2dlp1dzdoVjN3YU5TdUJkb1NWTWZBNHhqOTlBVWNYTkRoS2tpUWRrMTVMVFlLMDN1NHB6blRvV3dkbERhZWJHSFM1enVSaGlsaHUzRVk2cTBSREp3aENrYVBCbTlteEpMMzd2U05n?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "UK court finds two Iranian men guilty of spying for Iran",
+        "summary": "A United Kingdom court convicted two Iranian men who were promised financial rewards to gather intelligence and prepare a violent attack on behalf of Iran.",
+        "outlets": 2,
+        "published": "2026-11-12T15:15:48+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/12/uk-court-finds-two-iranian-men-guilty-of-spying-for-iran?traffic_source=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/uk-news/2026/nov/12/two-men-found-guilty-over-iranian-attempts-to-eliminate-uk-based-journalists"
+          }
+        ]
+      },
+      {
+        "headline": "Fourteen killed and 30 injured in massive traffic accident in UAE",
+        "summary": "Local officials reported that a truck driver lost control in Fujairah, triggering a multi-vehicle collision and fire involving 23 vehicles that left 14 dead.",
+        "outlets": 2,
+        "published": "2026-11-12T18:30:54+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/middle-east/indian-nationals-among-14-killed-in-deadly-multi-vehicle-crash-in-uaes-fujairah/articleshow/135780631.cms"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/12/uae-says-14-killed-30-injured-in-fujairah-traffic-accident?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Harvey Jones named Nvidia's first-ever board chair",
+        "summary": "Harvey Jones, who has served on Nvidia's board since 1993 before the company went public, was appointed as its first-ever board chair.",
+        "outlets": 2,
+        "published": "2026-11-12T15:54:56+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/who-is-harvey-jones-nvidias-first-ever-board-chair-12318985#publisher=newsstand"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/who-is-harvey-c-jones-nvidias-first-ever-board-chair-has-been-with-the-company-since-its-inception-in-1993/articleshow/135775275.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Google pushes privacy angle as Gemini-powered smartglasses debut starting at $395",
+        "summary": "The first Gemini smartglasses are a collab between Google, Samsung, Gentle Monster, and Warby Parker.",
+        "outlets": 1,
+        "published": "2026-11-12T14:50:17+00:00",
+        "links": [
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/"
+          }
+        ]
+      },
+      {
+        "headline": "Existing home sales fall to lowest level in 16 years",
+        "summary": "National Association of Realtors data showed that U.S. existing home sales in October declined 8.8% from a year earlier, hitting a 16-year low.",
+        "outlets": 1,
+        "published": "2026-11-12T18:44:00+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/12/nx-s1-6038940/punch-in-the-gut-homes-sales-fall-to-their-lowest-in-16-years"
+          }
+        ]
+      },
+      {
+        "headline": "Reliance and Waaree shortlisted for government battery storage tender",
+        "summary": "Reliance and Waaree were among 22 companies shortlisted for a ₹3,620 crore battery storage tender aimed at boosting domestic cell manufacturing.",
+        "outlets": 1,
+        "published": "2026-11-12T17:06:11+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/reliance-waaree-among-22-shortlisted-for-battery-storage-tender-pli-scheme-cell-making-incentives-technology-11794499983710.html"
+          }
+        ]
+      }
+    ]
+  }
+}
