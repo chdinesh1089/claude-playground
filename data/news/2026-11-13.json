@@ -1,0 +1,482 @@
+{
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13T18:31:15+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Nvidia CEO Jensen Huang resigns as global Microsoft outage hits services",
+        "summary": "Nvidia chief executive Jensen Huang resigned amid a scandal, while a major technical outage disrupted Microsoft services worldwide.",
+        "outlets": 4,
+        "published": "2026-11-13T18:03:02+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-steps-down-amid-national-security-concerns-ytvd-3038595-2026-11-13?utm_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/im-a-piece-of-sh-jensen-huangs-last-hours-as-nvidia-ceo/articleshow/135786445.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/12/business/nvidia-stock-price-jensen-huang-ceo-affair.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-sv-microsoft-global-outage?traffic_source=rss"
+          }
+        ],
+        "why": "The tech leadership crisis and software outage have massive implications for global markets and workers."
+      },
+      {
+        "headline": "Bessent blames Lutnick’s commerce department over delay blacklisting China-linked data firm – US politics live",
+        "summary": "Treasury secretary says he was in favor ‘for months’ of putting Megaspeed on blacklist to stop Nvidia exporting advanced chips to Beijing Howard Lutnick under pressure over alleged lack of Nvidia action Sign up for the Breaking News US email In other tech-related news, the…",
+        "outlets": 4,
+        "published": "2026-11-13T18:02:24+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/bessent-blames-lutnicks-commerce-department-for-not-restricting-nvidia-chips-to-china"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1BVk1tMWk0N1FhdDBYZEFVWlJOYzhoM0ppOVFaYjN1czdmdmNidVplRTYxVHdLNktGVmJ1VG9yYVA3N2dvSWFKVFlwT3l4RWtCWm5UQ2NmSUtFcFU?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "U.S. envoys hold talks with Putin and Zelenskyy as peace discussions stall",
+        "summary": "U.S. special envoys held separate talks with Vladimir Putin and Volodymyr Zelenskyy as negotiations faced mounting hurdles.",
+        "outlets": 3,
+        "published": "2026-11-13T16:43:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/key-points-stalling-progress-in-russia-ukraine-peace-talks/"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/russia-says-europeans-can-join-ukraine-peace-talks-if-they-show-readiness-to-contribute/articleshow/135804859.cms"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cq39glwprknjo?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "Directly impacts geopolitical stability and security arrangements across Europe."
+      },
+      {
+        "headline": "Truck and bus collision in Assam's Kaziranga kills at least 24",
+        "summary": "A high-speed truck rammed into a minibus in Assam's Kaziranga, resulting in 24 deaths and several injuries.",
+        "outlets": 7,
+        "published": "2026-11-13T17:40:13+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/16-feared-dead-several-injured-in-truck-bus-collision-in-assam-s-kaziranga-12322234#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/vehicle-overloaded-running-at-100-km-h-crossed-into-wrong-lane-survivors-of-deadly-bus-truck-collision-in-assam-101794587976981.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/23-killed-in-minibus-truck-collision-near-kaziranga-national-park-in-assam-several-college-students-among-dead-11794572817667.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/several-feared-dead-after-truck-hits-mini-bus-in-assams-kaziranga-rescue-ops-underway-3038208-2026-11-13?utm_source=rss"
+          }
+        ],
+        "why": "Major domestic tragedy resulting in significant loss of life in India."
+      },
+      {
+        "headline": "Van Hollen challenges Schumer for Senate majority leader",
+        "summary": "Senator Chris Van Hollen announced plans to challenge Senator Chuck Schumer for the position of Senate majority leader.",
+        "outlets": 7,
+        "published": "2026-11-13T17:47:41+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/van-hollen-challenges-schumer-for-senate/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/van-hollen-to-challenge-schumer-for-senate-democratic-leader"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/maryland-sen-chris-van-hollen-challenge-sen-chuck/story?id=138097994"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen"
+          }
+        ],
+        "why": "Signals a potential major shift in congressional leadership following recent political developments."
+      }
+    ],
+    "us": [
+      {
+        "headline": "One dead and five injured in Washington D.C. shooting",
+        "summary": "A shooting in Washington D.C. left one person dead and five injured, with the suspect found dead in his apartment.",
+        "outlets": 4,
+        "published": "2026-11-13T14:05:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/washington-dc-shooting-gym-vida/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/news-wrap-1-killed-and-4-injured-in-d-c-shooting"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/dc-shooting-leaves-two-dead-including-gunman-four-injured-11794512509022.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/13/sixth-victim-found-in-dc-condo-related-shooting-police-confirm?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Hegseth awards medal to soldier who chastised him at cemetery",
+        "summary": "Defense Secretary Pete Hegseth awarded a medal to a sentinel who previously chastised him for poor decorum at Arlington National Cemetery.",
+        "outlets": 3,
+        "published": "2026-11-13T10:27:08+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/13/nx-s1-6039845/hegseth-awards-medal-to-soldier-who-chastised-him"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmvg2r3dq7xno?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/soldier-admonished-hegseth-group-arlington-cemetery-awarded-medal/story?id=138084221"
+          }
+        ]
+      },
+      {
+        "headline": "American Cancer Society urges routine prostate cancer screening",
+        "summary": "The American Cancer Society updated its guidelines to recommend routine PSA screening every two years for men aged 50 to 69.",
+        "outlets": 3,
+        "published": "2026-11-12T22:59:51+00:00",
+        "links": [
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/health/2026/11/in-reversal-american-cancer-society-urges-prostate-cancer-tests-for-all-men/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/health/what-men-need-to-know-after-a-major-update-to-prostate-cancer-guidelines"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAyTHV5NldlVDg1OWp1aGhOSVQ1US1uejlzbnFKUlhCcnBoWjltZ1dQNEJnZTJoaTY2MHZ1Q1RhUG5rRWpaT1N5b0FUOEtScXB0Q1ZSb21fUWtJeXBFX3pVeDZxSVpUdDByUGVHbks3dmlrd0dO?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Washington Commanders quarterback named as the new Bachelor",
+        "summary": "ABC announced that Washington Commanders quarterback Sam Hartman will star in the upcoming season of The Bachelor.",
+        "outlets": 1,
+        "published": "2026-11-13T17:44:53+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/meet-the-new-bachelor-a-quarterback-for-the-washington-commanders"
+          }
+        ]
+      },
+      {
+        "headline": "Election officials prepare for continued voter roll pressure",
+        "summary": "State election officials are preparing for the Trump administration to continue its pressure tactics over potential noncitizens on voter rolls.",
+        "outlets": 1,
+        "published": "2026-11-13T17:00:00+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/13/nx-s1-6034016/voter-fraud-search-trump-california"
+          }
+        ]
+      },
+      {
+        "headline": "Navy quietly fires commanders, drawing congressional pushback",
+        "summary": "The Navy has broken from tradition by quietly firing several commanders and officials, drawing pushback from Congress.",
+        "outlets": 1,
+        "published": "2026-11-13T16:58:31+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/navy-has-quietly-fired-some-commanders-and-other-officials-drawing-congressional-pushback"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Trade deficit hits one-year high in October despite exports",
+        "summary": "India's trade deficit reached a one-year high in October even as strong exports were driven by petroleum and electronics.",
+        "outlets": 3,
+        "published": "2026-11-13T15:45:07+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/trade-deficit-hits-one-year-high-in-october-despite-record-exports-11794578747412.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/indias-exports-jump-29-9-to-89-99-billion-in-october-trade-deficit-narrows-101794562510983.html"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVC1qbUMzMG9XdFpsRGZQQzNVa3d1R2hfem5KQUplcU1DZWd4amxfa0Z0cTQ0QkU2SkkybmlacTlaNFlNSlB0UkJ6OWJZTUxzZ19lbDlZcmt2RHFMeUF3UjhvRHpFWnVwYzU0RkN1WF9MWFFuOThuMHJUaTdPdDh4VWtQMm9pVEZDZFdjcmVicDZzVDlhSzdHUTBsNWF4VkV2Y1FtRlAyT0tYZmhCdWFyUERaQy1JNDJuVU0tSw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Manipur probe panel gets sixth extension with no report",
+        "summary": "The Commission of Inquiry investigating Manipur violence received its sixth extension without releasing its findings.",
+        "outlets": 2,
+        "published": "2026-11-13T17:59:21+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/manipur/centre-gives-another-extension-to-panel-probing-2023-manipur-violence/article71697573.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/manipur-violence-probe-panel-gets-sixth-extension-deadline-pushed-to-may-20-2027-101794575813241.html"
+          }
+        ]
+      },
+      {
+        "headline": "Low-pressure area in Bay of Bengal likely to become cyclone",
+        "summary": "The IMD reported that a low-pressure area in the Bay of Bengal is expected to intensify into a cyclonic storm by November 16.",
+        "outlets": 2,
+        "published": "2026-11-13T18:20:57+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/andhra-pradesh/low-pressure-area-forms-over-bay-of-bengal-likely-to-intensify-into-cyclonic-storm-around-november-16/article71699272.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/low-pressure-area-in-bay-of-bengal-likely-to-intensify-into-cyclonic-storm-by-november-16-imd-101794564170138.html"
+          }
+        ]
+      },
+      {
+        "headline": "Eight Army personnel injured as military truck overturns",
+        "summary": "A military truck carrying fourteen jawans overturned after hitting a roadside tree in Rangareddy district, injuring eight.",
+        "outlets": 2,
+        "published": "2026-11-13T17:20:41+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/telangana/eight-army-personnel-injured-as-military-truck-overturns-near-chevella/article71699355.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/telangana-8-army-personnel-injured-as-military-truck-overturns-in-rangareddy-101794560441848.html"
+          }
+        ]
+      },
+      {
+        "headline": "Ola fined Rs 10 lakh over pre-ride tip feature",
+        "summary": "The CCPA fined Ola Rs 10 lakh after finding manipulative dark patterns regarding pre-ride tips in its app.",
+        "outlets": 2,
+        "published": "2026-11-13T17:14:45+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/dark-pattern-ola-filed-rs-10-lakh-over-pre-ride-tip-feature-12323893#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/ccpa-fines-ola-10-lakh-for-pre-ride-tips-calls-feature-an-unfair-trade-practice-101794577376485.html"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi overtakes Lahore as world's most polluted city",
+        "summary": "New Delhi surpassed Lahore to become the world's most polluted city amid worsening air quality.",
+        "outlets": 2,
+        "published": "2026-11-13T13:11:08+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/delhi-overtakes-lahore-as-worlds-most-polluted-city?traffic_source=rss"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSVBPMkdGdEVhVF9FeXN0TE8taGhVbElNdS1IWHJRcnBQbDg0S0dWVTJlQ0x3NDNTajlDTm1keDNJTFZKTEx5Y1Y4cDNya0MwUXRfcFRPaDFZT3lBSEJ2cWlnQkRDY1g4djAwR1VtZGRTNTNoTnVJdG9HX21KWXA0Q2FnS21zVlh3dWVueU8wX0ZfRFFIUVdibEtvRUt6RXRZQzVUeFZSUy1CWE1qcER2U21uSlVsYmo0ZHoxZlFFM0lJb2c1dzZUWWlsSQ?oc=5"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Turkey and Qatar sign defence agreement in Istanbul",
+        "summary": "Turkey and Qatar signed a new defence agreement to strengthen bilateral ties following a meeting in Istanbul.",
+        "outlets": 3,
+        "published": "2026-11-13T17:47:35+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/turkey-and-qatar-sign-defence-agreement-to-strengthen-ties-12324130#publisher=newsstand"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/defence/turkey-qatar-sign-mutual-defence-agreement-turkish-presidency-says/articleshow/135809416.cms"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/13/turkiye-and-qatar-sign-mutual-defence-agreement?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Ukraine fires nearly 1,200 drones at Russia in massive attack",
+        "summary": "Ukraine launched one of its biggest aerial assaults of the war, firing nearly 1,200 drones at Russian targets overnight.",
+        "outlets": 2,
+        "published": "2026-11-13T14:58:55+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/ukraine-fires-nearly-1200-drones-at-russia-as-u-s-led-talks-consider-wider-european-security"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/International/wireStory/ukraine-fires-1200-drones-russia-us-led-talks-138104516"
+          }
+        ]
+      },
+      {
+        "headline": "Kenyan building collapse near Nairobi kills six people",
+        "summary": "A building collapse near Nairobi left six people dead as emergency crews searched the rubble for survivors.",
+        "outlets": 2,
+        "published": "2026-11-13T13:11:24+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/13/kenyan-building-collapse-near-nairobi-kills-six-people?traffic_source=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/new-york-building-collapse-kills-8-including-2-children"
+          }
+        ]
+      },
+      {
+        "headline": "Brother of cartel leader El Mencho sentenced to prison",
+        "summary": "The brother of the late cartel leader known as El Mencho was sentenced to 22.5 years in prison.",
+        "outlets": 1,
+        "published": "2026-11-13T17:54:02+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/antonio-oseguera-cervantes-el-mencho-brother-22-5-years-sentenced/"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Nvidia start-up investments and Silicon Valley reel from exit",
+        "summary": "Jensen Huang's resignation sent shockwaves through Silicon Valley, raising concerns for Nvidia's vast portfolio of AI start-ups.",
+        "outlets": 3,
+        "published": "2026-11-13T16:36:28+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/13/technology/jensen-huang-silicon-valley-start-ups.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/republicans-renew-push-jensen-huangs-testimony-nvidia-ceos/story?id=138083749"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/humans-make-mistakes-podcaster-lex-fridman-slams-jensen-huangs-nvidia-exit-recalls-steve-jobs-apple-exit-11794568656135.html"
+          }
+        ]
+      },
+      {
+        "headline": "OpenAI Launches ChatGPT Wallet For Secure AI-Powered Payments",
+        "summary": "The wallet has been built in partnership with American Express, Mastercard and Visa, OpenAI said.",
+        "outlets": 1,
+        "published": "2026-11-13T17:47:45+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/openai-launches-chatgpt-wallet-for-secure-ai-powered-payments-12324131#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "US existing home sales hit 16-year low in October",
+        "summary": "Sales of existing homes fell to 3.75 million in October, reaching a 16-year low amid soaring mortgage rates.",
+        "outlets": 1,
+        "published": "2026-11-13T17:20:32+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/nov/12/home-sales-october-low"
+          }
+        ]
+      },
+      {
+        "headline": "Cerebras stock jumps 23% on surprise quarterly profit",
+        "summary": "Shares of AI chipmaker Cerebras Systems surged after reporting an unexpected profit and raising its annual revenue forecast.",
+        "outlets": 1,
+        "published": "2026-11-13T16:02:49+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/cerebras-stock-jumps-23-on-surprise-profit-forecast-hike-easing-ai-spending-worries/articleshow/135808868.cms"
+          }
+        ]
+      }
+    ]
+  }
+}
