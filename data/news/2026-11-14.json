@@ -1,0 +1,467 @@
+{
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T17:09:22+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Microsoft says services fully restored after global outage",
+        "summary": "The global IT outage affected governments, courts, healthcare services, businesses, airlines and banks in many places.",
+        "outlets": 7,
+        "published": "2026-11-14T16:23:56+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/microsoft-says-services-fully-restored-after-global-outage"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/13/technology/microsoft-outage-what-to-know.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/microsoft-battling-major-outage/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "Massive global tech disruptions directly impact international business and communications."
+      },
+      {
+        "headline": "FAA lifts nationwide ground stop that disrupted thousands of flights",
+        "summary": "A rare nationwide ground stop lasted about five hours after an update to the network connecting the air traffic control system caused a reboot, crash and outage.",
+        "outlets": 8,
+        "published": "2026-11-14T15:29:00+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/video/us-flights-nationwide-ground-stop-due-to-air-traffic-control-outage-ytvd-3039083-2026-11-14?utm_source=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/nri/latest-updates/thousands-of-flights-canceled-as-airlines-work-to-dig-out-from-nationwide-ground-stop/articleshow/135833642.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/13/us/markwayne-mullin-faa-ground-stop.html"
+          }
+        ],
+        "why": "Major travel chaos disrupts thousands of passengers across the United States."
+      },
+      {
+        "headline": "Trump, Putin and Xi plan historic joint meeting in China next white house says",
+        "summary": "Trump will discuss the reduction of nuclear weapons during unprecedented talks with Vladimir Putin and Xi Jinping.",
+        "outlets": 7,
+        "published": "2026-11-14T15:53:55+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/trump-meet-putin-xi-china-week-us-officials/story?id=138128914"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/video/trump-putin-and-xi-to-hold-first-trilateral-meeting-in-shenzhen-ytvd-3039113-2026-11-14?utm_source=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-putin-trilateral-meeting-at-apec-what-to-expect?traffic_source=rss"
+          }
+        ],
+        "why": "A high-stakes trilateral meeting between world superpowers shapes global geopolitics."
+      },
+      {
+        "headline": "'Introspect own prejudices, stop lecturing': India hits back at US panel over Sharjeel Imam post",
+        "summary": "India's ambassador to the US Vinay Mohan Kwatra criticized the USCIRF for its remarks about religious freedom.",
+        "outlets": 3,
+        "published": "2026-11-14T15:24:24+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/introspect-on-your-own-prejudices-india-hits-back-at-us-religious-freedom-panel-over-sharjeel-imam-post/articleshow/135836188.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/india-envoy-vinay-mohan-kwatra-sharjeel-imam-detention-rebukes-uscirf-3039019-2026-11-14?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/introspect-on-your-own-prejudices-indian-ambassador-on-us-religious-freedom-body-s-sharjeel-imam-post-101794625373565.html"
+          }
+        ],
+        "why": "Direct diplomatic friction between India and the US over sovereignty and human rights."
+      },
+      {
+        "headline": "U.S. loses measles elimination status as cases surge nationwide",
+        "summary": "The United States has lost its official measles elimination status for the first time in 26 years.",
+        "outlets": 2,
+        "published": "2026-11-14T16:42:15+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/us-loses-measles-elimination-status-as-cases-surge-wsj-says-11794621959946.html"
+          }
+        ],
+        "why": "A major public health milestone is lost as preventable disease cases surge nationwide."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Lauren Boebert loses re-election bid in Colorado House race to Eileen Laubacher",
+        "summary": "Ms. Boebert's loss to Eileen Laubacher in a conservative House district represents a significant victory for Democrats.",
+        "outlets": 2,
+        "published": "2026-11-13T22:32:23+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/09/us/lauren-boebert-colorado-house-election.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/gop-rep-lauren-boebert-of-colorado-loses-u-s-house-seat-to-democrat-eileen-laubacher"
+          }
+        ]
+      },
+      {
+        "headline": "How a US extradition bid over Hamas allegations put a wealthy activist before a Spanish court",
+        "summary": "James 'Fergie' Chambers faced a two-hour hearing in Spain's high court regarding a US extradition request over alleged support for Hamas.",
+        "outlets": 1,
+        "published": "2026-11-14T15:00:47+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/14/activist-extradition-gaza-hamas-spanish-court"
+          }
+        ]
+      },
+      {
+        "headline": "FAA blames Friday's ground stop on 'equipment issue' during telecoms network upgrade",
+        "summary": "Transportation Secretary Sean Duffy said initial investigations pointed to an issue with contractor L3Harris updating old tech at a remote location.",
+        "outlets": 2,
+        "published": "2026-11-14T16:53:04+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/14/nx-s1-6040952/faa-ground-stop-airplane-travel"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/13/us/faa-ground-stop-flights-what-to-know.html"
+          }
+        ]
+      },
+      {
+        "headline": "Trafficked at 15, Georgia woman wins $164m verdict against hotel operator",
+        "summary": "A Georgia woman who said she was trafficked at a Super 8 hotel as a teenager has won $164 million in a federal lawsuit.",
+        "outlets": 1,
+        "published": "2026-11-14T16:33:22+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/a-georgia-woman-who-was-trafficked-at-a-super-8-hotel-at-15-testified-that-staff-refused-to-help-her-escape-a-federal-jury-awarded-164-million-against-the-operator-including-120-million-in-punitive-damages/articleshow/135833787.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Migrant caravan heads to US from Mexico after Democrats' midterm win",
+        "summary": "A migrant caravan of more than a thousand people is heading towards the US border from southern Mexico.",
+        "outlets": 1,
+        "published": "2026-11-14T09:43:54+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/migrant-caravan-heads-to-us-from-mexico-after-democrats-midterm-win?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Democratic Senate leader Schumer set to face leadership challenge",
+        "summary": "Maryland Senator Van Hollen says new leadership is needed for Democrats following the party's recent midterm successes.",
+        "outlets": 2,
+        "published": "2026-11-13T19:03:10+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmy4930jq749o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/schumer-van-hollen-facing-off-senate-majority-leader/story?id=138111386"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Mahadev betting app case: CBI raids 33 locations across six States",
+        "summary": "The CBI conducted searches leading to the recovery of digital devices and incriminating documents showing hawala network involvement.",
+        "outlets": 3,
+        "published": "2026-11-14T16:02:51+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/mahadev-betting-app-case-cbi-searches-in-6-states-lead-to-recovery-of-digital-devices-key-documents/article71701007.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/mahadev-betting-app-case-cbi-searches-in-6-states-lead-to-recovery-of-digital-devices-key-docs-101794634230346.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/cbi-raids-33-locations-in-six-states-in-major-mahadev-betting-app-crackdown/articleshow/135823445.cms"
+          }
+        ]
+      },
+      {
+        "headline": "NCP merger talks ended with death of Ajit Pawar, says Supriya Sule",
+        "summary": "A date was set for a merger between the two NCP factions, but talks ended the day the former Maharashtra Deputy Chief Minister died.",
+        "outlets": 3,
+        "published": "2026-11-14T16:54:58+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/completely-false-ncp-sp-rejects-merger-buzz-after-supriya-sule-says-talks-ended-with-ajit-pawars-death/articleshow/135837856.cms"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/maharashtra/ncp-merger-talks-ended-with-death-of-ajit-pawar-says-supriya-sule/article71701834.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/supriya-sule-says-full-stop-on-merger-after-ajit-pawar-s-death-amid-ncp-reunion-buzz-101794649960304.html"
+          }
+        ]
+      },
+      {
+        "headline": "20-yr-old man held for conducting reconnaissance of 26/11 target Chabad House in Mumbai",
+        "summary": "Yash Singh, a 20-year-old resident of Airoli, was arrested for reconnaissance of sensitive locations in Mumbai. He was detained by the Maharashtra Anti-Terrorism Squad after evidence linked him to anti-national elements. Singh allegedly photographed and identified businesses…",
+        "outlets": 2,
+        "published": "2026-11-14T16:10:56+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/mumbai/20-year-old-man-held-for-conducting-reconnaissance-of-26/11-target-chabad-house-in-mumbai/articleshow/135837038.cms"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/mumbai-nariman-house-chabad-house-20-year-old-arrested-for-recce-of-26-11-target-nariman-house-in-mumbai-12327425#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "At least 24 killed after bus collides with truck in north-east India",
+        "summary": "Several of the deceased in the collision in north-east India are college students, according to local official Atul Bora.",
+        "outlets": 2,
+        "published": "2026-11-13T16:07:28+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6r7g5lp1zrxo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNekJEaW0wdWNOVVdyMVlHcmlSYXBMOTJtenpZVEtnLVlNMmZoRTZZcmFZTW42S3otTk51dENFc1ZWaERwNktzcnFrcVdLYWt6VkhtOUF2X0l2dXBIbktmcW1oSUozdmFhczZjY3V6elo1Sk5KZElER1pVQUdWdTBxeHNKbUFIY093TUFLdDBYNnppUVhJVGZ3dGJVV3NqbVV3c08xYVRRWU1UMHNZ0gGyAUFVX3lxTE9leTNBT21iUUZUQnNZZVBhT1lONFFFcGJIX3VIQ3JpLUhzVlpWNUJPVWNibkdZc2RQWWo5dUFyUGREQUF5RUVpMzNpbC1lcmhPcEliMC0yeWl1S2xGR0lGQ2ZZUUlKcGViT1dSZFlTNzRxRFZ0Vkw4TmpZWEdrOTZfUDByZGFPSzdJZ3ZmU3pOdUNGbXZ4MmMzaFlmaTVPNlk0S0lwU2Q1X2tKakw1WTlBdkE?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Fear Of 'Unknown Gunmen': Hafiz Saeed, Masood Azhar Moved To Pak Safe Houses",
+        "summary": "Saeed, the chief of Lashkar-e-Taiba, has been shifted from Johar Town in Lahore to the Garrison Ground area in Rawalpindi, close to the Pakistan Army headquarters. Azhar, the chief of Jaish-e-Mohammed, has been placed in a safe house in Nawabshah, in Sindh province.",
+        "outlets": 1,
+        "published": "2026-11-14T16:38:18+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/fear-of-unknown-gunmen-hafiz-saeed-masood-azhar-moved-to-pak-safe-houses-12327536#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Rahul Gandhi accuses EC of declaring 140 million voters illegal during summit",
+        "summary": "Congress leader Rahul Gandhi challenged the legitimacy of the 2024 Lok Sabha elections during the Bharat Summit in Hyderabad.",
+        "outlets": 1,
+        "published": "2026-11-14T12:18:19+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/how-were-2024-elections-legitimate-rahul-accuses-ec-of-declaring-140-million-who-voted-illegal/articleshow/135832504.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+        "summary": "The Ukrainian president says US envoys touted the exchange as part of efforts to end the war with Russia.",
+        "outlets": 4,
+        "published": "2026-11-14T15:15:57+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/14/three-killed-in-russia-as-ukraine-claims-us-floated-nato-membership-option?traffic_source=rss"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Sc2FZdms0a2VhSnZ3bHhCakcwcnl4SWhTWi1HaDJUdmZXdzVKTmtocFp0aFRYQk9VYllVZ1Uzdkp5OV9Ic2l5NmtUUXU4WVBaNFpMdDVselhoS2c?oc=5"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPX0xyS2dhSmRSaE5XQ21DZ2RIV2pFbUQ5YmFfdE52ZWg4UTlpMlRwLXJFR3gzSHg3OTlSV0lOaDNUcWVqUjhEcG5ucHE3cl9DTDZsSEdpbzhMMURWbGtVS2JsY0dFS3hXazVMWUMzSE41TWR2clJ2cEplMnVmVWxyNlgzMV90eUJnVWtoakZDRVdxbXFDdWhrQVAyNHdNM0xQb0laQzBMUTFtSnBYUi02MXEtcWZvMEVCb1F1RC00aFFsaFl4YlpFWldXdWZNSHlCVWpOaEV30gHeAUFVX3lxTE84ZUZFUzJURzRhRDR2TkxzVUdZc1J6T1pnNzlOa0IyOEJ6RXJnUGZxdjBXRkszMDNTTTljMFkwWWRETkdpRmVtT01weXNlWGFrZXRveElqNmRtR2M2R3FDN1RndG9xNUZxNVlEaFdNQUkyRE1Xc18xZk1ZUVRaZ0kzN3lpRTJYb0szdTNyYWJfLXVzZWFOWVFnNnozQXUyclR5cFRlN2ZQeHpGUmxVZEVRYUJ1MzNiZzYwd0pSVElheVdoSzhGUGJXbzlvWld5UmVqcmRxUWRHUHJUendiQQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "South Sudan's national election, its first, will be delayed",
+        "summary": "Analysts had warned that the vote, originally set for December, faced a legitimacy crisis since independence in 2011.",
+        "outlets": 2,
+        "published": "2026-11-14T16:51:55+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/14/world/africa/south-sudan-election.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/14/south-sudan-postpones-first-ever-national-elections-until-february?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Myanmar airstrike kills 12 at displacement camp in Rakhine state",
+        "summary": "A Myanmar military airstrike on a displacement camp in Rakhine state killed 12 people.",
+        "outlets": 1,
+        "published": "2026-11-14T16:13:43+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/myanmar-airstrike-displacement-camp-rakhine?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Fuel crisis and protests pressure Chile's far-right president",
+        "summary": "Chile's far-right President José Antonio Kast is facing mounting public anger as rising fuel prices trigger strikes and protests.",
+        "outlets": 1,
+        "published": "2026-11-14T16:05:12+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Elon Musk joins over 43,000 asking Nvidia's board to bring back Jensen Huang",
+        "summary": "Elon Musk signed an open letter urging Nvidia's board to reinstate Jensen Huang as CEO.",
+        "outlets": 3,
+        "published": "2026-11-14T15:08:32+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/technology/tech-news/elon-musk-and-over-40000-others-including-nvidias-current-and-former-employees-sign-open-letter-for-jensen-huangs-return-letter-says-thirty-three-years-of-leadership-do-not-place-anyone-above-/articleshow/135823053.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/video/business/100000011275611/why-jensen-huang-was-essential-to-nvidias-rise.html"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOGo3V2tuZ3lONm9hUHl3ZkE3RUF0NHAxSEFDZEt0MklYQm9zVWVVcHJtTEtiTm1VdTFFU1AzeUNXNHF1NWtNS1B5bWxLak80LUR6bWdJal9LOGExcjFPV0o5OTVLZXRzdDBMckJFdGt5eTlBQVBkb3Z5SU9fd1UwYjJvUnhkMEp1ejI1R0tzTkdveGwzQnNXMlZEdmk5eVFJN3ZaSjhBQ3FKTGc?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Italy fines Meta €805m over accessing users' photos",
+        "summary": "The social media giant is accused of not informing about 20 million users it had access to their photos.",
+        "outlets": 2,
+        "published": "2026-11-14T16:29:48+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/14/italy-fines-meta-880m-over-photo-privacy?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Noel Tata worries market listing will change the 'Tata way'",
+        "summary": "Tata Trusts chairman says the group's owner cannot be bought and the trusts will work with regulators to keep it that way.",
+        "outlets": 2,
+        "published": "2026-11-14T09:24:20+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/noel-tata-worries-market-listing-will-change-the-tata-way-hindustan-times-leadership-summit-101794645066605.html"
+          },
+          {
+            "source": "Business Standard",
+            "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRFE2SGZmX0ZYZ0lRQlhFTlUwbWo5Wl85MDJfQmxwajN0REc2VG56T3ZNMzIxU1l4dzg1TGVnWVhnTTBreXlJNzF0TmRqanZlOTU4bEFNSHhBUjQyUzhvcnNjRUpkVXJzWmJtLVJwWFZ6WWVaSXkxVWcyQTNZVUFhM1NkUE9WVkplbTV1SnJ4QWVQNml5Si02SGtyMUJCSUNYbGFDSXQyV1ZxeXNuS3BaUnJDVy15dEtpcTBkZzBrNi1Cc1lIQjlJV2dqbTkyc1dnS1ozMmRUa9IB3AFBVV95cUxPeWZycy1MamZ5a0R4a1V4d0p1UmEzOXNoVGFBamZwU3YwQXBya2JZWDNrdWJubjRJRUF5VDhMUkVXRDFXRkZBdkwyQjQ3S0pGSXlrNURWVElnT2NyWGFjRV9hSlRWenBETWduQnZGOVd0TG1KTnVfeHQtS2hrWngzb3dIU3hZbHVzS2RqRWtiUkdfeXNVT21hUVpHY0h6bV9QaE9sMkxFcm5BMHdWamdPQ2ZGbFBiWURHUmdWeElWRk5MSUFKQS02N0dhQU5IU1R3dGdYTTVaLVZIRVF6?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Tesla is inviting some people to buy a Cybercab 'for personal use'",
+        "summary": "Tesla is offering select customers the opportunity to purchase an autonomous Cybercab for personal use.",
+        "outlets": 2,
+        "published": "2026-11-14T14:18:36+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/transportation/1033844/tesla-personal-cybercab-orders-299-subscription-fine-print"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/business/tesla-invites-select-customers-to-buy-cybercab-for-personal-use-at-29990/articleshow/135827086.cms"
+          }
+        ]
+      }
+    ]
+  }
+}
