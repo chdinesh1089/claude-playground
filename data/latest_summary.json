@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-14T18:36:21Z",
+  "checked_at": "2026-11-15T19:12:04Z",
   "weekend_start": "2026-11-20",
   "weekend_end": "2026-11-22",
   "from_airport": "DFW",
@@ -10,6 +10,6 @@
   "airlines": [
     "Frontier"
   ],
-  "outbound_stops": 1,
-  "trend": "down $187 from $517"
+  "outbound_stops": 0,
+  "trend": "unchanged"
 }
