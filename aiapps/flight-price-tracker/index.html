@@ -108,9 +108,9 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <section class="card">
 <div class="tile">
   <div class="tile-label">Cheapest round trip &middot; Fri Nov 20 → Sun Nov 22</div>
-  <div class="tile-value">$330</div>
-  <span class="delta">No change since previous check</span>
-  <div class="tile-meta">Frontier &middot; Nonstop outbound &middot; checked Nov 15, 1:12 PM CT</div>
+  <div class="tile-value">$459</div>
+  <span class="delta delta-up">&#9650; $129 since previous check</span>
+  <div class="tile-meta">United &middot; 1 stop outbound &middot; checked Nov 16, 4:40 PM CT</div>
 </div>
 </section>
 
@@ -129,6 +129,7 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <table>
 <thead><tr><th>Checked</th><th class="num">Price</th><th>Weekend</th><th>Airline</th><th>Outbound</th></tr></thead>
 <tbody>
+<tr><td>Nov 16, 4:40 PM CT</td><td class="num">$459</td><td>Fri Nov 20 → Sun Nov 22</td><td>United</td><td>1 stop</td></tr>
 <tr><td>Nov 15, 1:12 PM CT</td><td class="num">$330</td><td>Fri Nov 20 → Sun Nov 22</td><td>Frontier</td><td>Nonstop</td></tr>
 <tr><td>Nov 14, 12:36 PM CT</td><td class="num">$330</td><td>Fri Nov 20 → Sun Nov 22</td><td>Frontier</td><td>1 stop</td></tr>
 <tr><td>Nov 13, 2:11 PM CT</td><td class="num">$517</td><td>Fri Nov 13 → Sun Nov 15</td><td>United</td><td>Nonstop</td></tr>
@@ -195,10 +196,10 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 </div>
 </section>
 
-<footer>Last check Nov 15, 1:12 PM CT. Prices are spot checks, not guaranteed fares.</footer>
+<footer>Last check Nov 16, 4:40 PM CT. Prices are spot checks, not guaranteed fares.</footer>
 </main>
 
-<script type="application/json" id="points">[{"t": "2026-11-14T18:36:21Z", "label": "Nov 14, 12:36 PM CT", "price": 330, "airline": "Frontier", "stops": "1 stop"}, {"t": "2026-11-15T19:12:04Z", "label": "Nov 15, 1:12 PM CT", "price": 330, "airline": "Frontier", "stops": "Nonstop"}]</script>
+<script type="application/json" id="points">[{"t": "2026-11-14T18:36:21Z", "label": "Nov 14, 12:36 PM CT", "price": 330, "airline": "Frontier", "stops": "1 stop"}, {"t": "2026-11-15T19:12:04Z", "label": "Nov 15, 1:12 PM CT", "price": 330, "airline": "Frontier", "stops": "Nonstop"}, {"t": "2026-11-16T22:40:46Z", "label": "Nov 16, 4:40 PM CT", "price": 459, "airline": "United", "stops": "1 stop"}]</script>
 <script>
 (function () {
   const points = JSON.parse(document.getElementById("points").textContent);
