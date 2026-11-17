@@ -1,0 +1,489 @@
+{
+  "date": "2026-11-17",
+  "generated_at": "2026-11-17T19:51:32+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Ukraine attacks Kerch bridge linking Russia to occupied Crimea",
+        "summary": "Ukraine carried out a missile and drone attack that partially destroyed the Kerch bridge connecting Russia to the occupied Crimean Peninsula.",
+        "outlets": 6,
+        "published": "2026-11-17T19:41:03+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/17/world/europe/ukraine-kyiv-russia-kerch-bridge-crimea.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/the-symbol-of-the-occupation-ukraine-destroys-span-of-kerch-bridge-linking-russia-with-crimea"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/russiaukraine-war-section-of-kerch-bridge-connecting-moscow-to-its-prized-territory-crimea-collapses-in-kyiv-strike-11794903231307.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "U.S. loses its measles elimination status, a historic setback for public health",
+        "summary": "International health experts decided that the U.S. has lost its status as a country that eliminated the continuous spread of measles.",
+        "outlets": 8,
+        "published": "2026-11-17T19:12:58+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/17/well/us-measles-elimination-status.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/us-loses-measles-elimination-status-amid-worst-outbreak-since-1991/articleshow/135935577.cms"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/health/u-s-and-mexico-officially-lose-measles-elimination-status"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/measles-elimination-status-united-states/"
+          }
+        ],
+        "why": "Marks a historic public health setback after years of being a global leader against the virus."
+      },
+      {
+        "headline": "Trump's whirlwind Asia trip begins in the Philippines for Quad summit",
+        "summary": "President Trump arrived in Manila to meet with Southeast Asian leaders and participate in the Quad summit before meetings with Xi Jinping and Vladimir Putin.",
+        "outlets": 6,
+        "published": "2026-11-17T18:01:43+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/live/2026/11/17/world/trump-asean-summit"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/17/nx-s1-6043702/trump-arrives-philippines"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/news-wrap-trump-departs-for-trip-to-asia-meetings-with-xi-and-putin"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/"
+          }
+        ]
+      },
+      {
+        "headline": "Trump reacts to Iran's 'dirty bomb' threat against Washington, D.C.",
+        "summary": "President Trump said the U.S. is taking a potential Iranian threat against Washington, D.C., very seriously, though officials debated the credibility.",
+        "outlets": 5,
+        "published": "2026-11-17T16:56:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/trump-says-us-taking-iranian-dirty-bomb-threat-very-seriously/"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/defence/us-iran-war-dirty-bomb-warning-the-long-arm-of-iran-looms-over-washington/articleshow/135928765.cms"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cq808vzd3nnpo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/17/trump-reported-iranian-plot-dirty-bomb-washington"
+          }
+        ],
+        "why": "Direct national security threat to the US capital amid rising tensions in the Middle East."
+      },
+      {
+        "headline": "India condemns Hormuz tanker attack after Indian goes missing",
+        "summary": "India's Ministry of External Affairs condemned an attack on an LPG tanker near the Strait of Hormuz where an Indian seafarer went missing.",
+        "outlets": 3,
+        "published": "2026-11-17T17:41:18+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/must-end-india-condemns-hormuz-tanker-attack-after-indian-goes-missing-12340896#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-condemns-attack-on-lpg-tanker-carrying-24-indians-in-strait-of-hormuz-1-seafarer-missing-mea-the-targeting-must-end-101794926651905.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/two-indian-seafarers-hurt-1-missing-after-tanker-targeted-in-hormuz-strait/articleshow/135929328.cms"
+          }
+        ],
+        "why": "Directly impacts the safety and security of Indian citizens working abroad in critical maritime trade lanes."
+      }
+    ],
+    "us": [
+      {
+        "headline": "US judge blocks Trump curbs on student work",
+        "summary": "A federal judge blocked the Trump administration from restricting internships and practical training opportunities for international students.",
+        "outlets": 2,
+        "published": "2026-11-17T17:51:41+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/nri/work/us-judge-blocks-trump-policy-restricting-foreign-student-work-options/articleshow/135935764.cms"
+          },
+          {
+            "source": "Moneycontrol.com",
+            "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQSHpXRG0zeEFMbXc2X3BLXzF5Y2hXejVBWDY4cmdwTUFEcGx6TWxXQzRhMWtTLTFOQVNkSFZIUF9PUHJEUGVIVE1Na2FzM0lZX2N0U3I4ZC1GOGVRT3BWWkNVenM4NUlKeU1nU3dJWGNSNjMwci04dUdCckFPQkNmcTB6aExXQThEOTNEM1h0ZXNEd0todm9VWGg1cG5wQmE2UDMwejZVQVp6NTRPRkYxX3o2bGhEei1WZ1ZUWUlqdDB0Q2pQRHRlU3BCdjlYS1NQZUsyTGQwaDI2Nm9UQmFZRXB3WDV4MGNyTU9LbHhhSXhaUHRIeEZHc1BMS2dyaEVTc0xkNTdNTmY2QmdJM2fSAZMCQVVfeXFMTWxwQU5wb0hnNTRYYzJLY2JPbHFhSUdiV2FQRU1TdGFzeWwzMG5nLUQxSnNFbGN0QWZ3RHMyNHZTeXUycU11QjV2bVZyRTh2VmRVYXFHdDBoc3d5TWlXNmRycW9EOGw2Nmc2QnVvTWFiZWxQTVpWXzZGLTQyU2JEaldpeEFwc0ZveDBtZFl4S1Q0TXotZ0hzZmlGUnF4bjQtSGdDZVg0U2tSZ051VFpjNExUbDdxekRYekpubjhVT1ZUVXJfMFU3bDV6TVhuQ1o1OExhdURvNzNpU2NxZ3dkVVF2SWNiLTVUeXFmZnpBeVRxdnFWZUlKYzJXc0NoelJjY29DZ01NNmcwazZIWEZTZVc2anM?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "NSA's classified internal network goes down, sources say",
+        "summary": "Two U.S. officials stated that the NSA experienced a classified internal network outage with no evidence of a cyberattack.",
+        "outlets": 3,
+        "published": "2026-11-17T19:40:25+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/nsa-network-down-classified-fort-meade/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/17/us/politics/nsa-down-network-outage-nsanet.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/17/nsa-national-security-classified-communications-network-down"
+          }
+        ]
+      },
+      {
+        "headline": "I.R.S. Opens Criminal Probes as Part of Trump’s Pursuit of Left-Wing Groups",
+        "summary": "An internal I.R.S. memo viewed by The New York Times reveals how the agency is carrying out President Trump’s orders to investigate “domestic terrorism.”",
+        "outlets": 1,
+        "published": "2026-11-17T18:38:33+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/17/us/politics/irs-criminal-investigations.html"
+          }
+        ]
+      },
+      {
+        "headline": "Trump nominates LaNeve as top Army officer",
+        "summary": "Defense Secretary Pete Hegseth and the White House sent Gen. Christopher LaNeve's nomination for Army chief of staff to the Senate.",
+        "outlets": 2,
+        "published": "2026-11-17T18:38:03+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/17/us/hegseth-christopher-laneve-army-chief-of-staff.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/trump-nominates-laneve-top-army-officer/story?id=138219615"
+          }
+        ]
+      },
+      {
+        "headline": "Mamdani disbands NYPD unit accused of excessive force",
+        "summary": "New York City Mayor Zohran Mamdani announced the disbandment of the NYPD's Strategic Response Unit following accusations of excessive force.",
+        "outlets": 1,
+        "published": "2026-11-17T19:03:28+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/mamdani-keeps-campaign-promise-disbands-nypd-unit-accused-of-excessive-force/"
+          }
+        ]
+      },
+      {
+        "headline": "Trump rejected by Supreme Court in bid to end DEI grants",
+        "summary": "The U.S. Supreme Court left intact a ruling that the administration was likely acting illegally in trying to cancel billions in federal grants.",
+        "outlets": 2,
+        "published": "2026-11-16T20:14:17+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/trump-rejected-by-supreme-court-in-bid-to-end-dei-grants-11794860057756.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/wireStory/supreme-court-rebuffs-trump-administration-appeal-dei-funding-138187547"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Nine killed, 26 injured as bus plunges into gorge in Uttarakhand",
+        "summary": "A bus traveling from Haridwar to Chamoli plunged into a 100-metre gorge in Uttarakhand's Tehri Garhwal, resulting in fatalities and injuries.",
+        "outlets": 2,
+        "published": "2026-11-17T17:21:23+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/uttarakhand/bus-plunges-into-100-metre-gorge-in-uttarakhand-tehri-garhwal-casualties/article71710325.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/death-toll-injured-as-bus-plunges-into-100m-gorge-in-uttarakhands-tehri-101794887812716.html"
+          }
+        ]
+      },
+      {
+        "headline": "'Terrified' Bilkis Bano and family leave Gujarat after SC grants bail",
+        "summary": "Bilkis Bano and her family left Gujarat out of fear after the Supreme Court granted bail to two convicts in her case.",
+        "outlets": 3,
+        "published": "2026-11-17T15:22:21+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/ahmedabad/she-is-terrified-bilkis-bano-family-leave-gujarat-after-sc-grants-bail-to-2-convicts/articleshow/135931096.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/scared-once-again-bilkis-bano-s-uncle-says-she-s-left-gujarat-after-bail-to-2-convicts-101794910710221.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/programme/news-today/video/sc-grants-bail-to-bilkis-bano-convicts-capt-amarinder-attends-sonias-book-launch-3040327-2026-11-16?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Police recover all jewellery stolen from Tanishq showroom in Madurai",
+        "summary": "Special police teams recovered all jewelry stolen from a Tanishq showroom after reviewing footage from over 100 CCTV cameras.",
+        "outlets": 2,
+        "published": "2026-11-17T17:19:43+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/Madurai/madurai-tanishq-showroom-gold-heist-police-recover-all-the-burgled-gold-diamond-jewellery/article71710771.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/tattoo-clue-led-police-to-youtuber-who-stole-11-3-kg-jewellery-in-madurai-showroom-heist-101794927998330.html"
+          }
+        ]
+      },
+      {
+        "headline": "Cyclone Akvan LIVE: 7 Andhra districts on red alert ahead of November 20 landfall; Odisha flags landslide-prone villages",
+        "summary": "Cyclone Akvan landfall news LIVE: According to IMD's latest update, Cylone Akvan's landfall will happen along the Andhra-Yanam coasts between Nellore-Visakhapatnam around November 20. A red alert has been issued in Andhra's Kakinada, Konaseema, East Godavari, West Godavari,…",
+        "outlets": 3,
+        "published": "2026-11-17T03:07:51+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/cyclone-akvan-landfall-live-updates-imd-rain-alert-odisha-andhra-pradesh-schools-closed-bay-of-bengal-cyclone-tracker-101794883521691.html"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/imd-weather-update-yellow-alert-issued-for-andhra-odisha-as-cyclone-akvan-turns-very-severe-ahead-of-landfall-11794878693669.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/cyclone-akvan-cyclonic-storm-forms-over-bay-of-bengal-andhra-pradesh-november-17-2026-live-updates/article71710277.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court pulls up MP Sanjay Raut over remarks on CJI",
+        "summary": "The Supreme Court criticized politician Sanjay Raut over objectionable social media posts regarding the Chief Justice of India and the judiciary.",
+        "outlets": 2,
+        "published": "2026-11-17T17:55:19+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/sc-pulls-up-mp-sanjay-raut-over-remarks-on-cji-says-seasoned-politician-should-know-restraint/article71713195.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/a-seasoned-politician-should-know-what-restraint-in-language-means-sc-to-sanjay-raut-101794909941159.html"
+          }
+        ]
+      },
+      {
+        "headline": "GRAP-III restrictions lifted in Delhi-NCR as air quality improves; Stage I and II curbs to remain in effect",
+        "summary": "GRAP-III restrictions lifted in and around Delhi-NCR as air quality improves; Stage I and II curbs to remain in effect.",
+        "outlets": 2,
+        "published": "2026-11-17T11:50:23+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/grapiii-restrictions-lifted-in-delhi-ncr-as-air-quality-improves-stage-i-and-ii-curbs-to-remain-in-effect-11794915907406.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/grap-stage-iii-restrictions-revoked-in-delhi-ncr-as-aqi-improves-to-204-101794914664244.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Russian military plane crashes killing all 19 on board",
+        "summary": "Russia's defence ministry reported that a technical malfunction caused a military aircraft to crash in the Kemerovo region.",
+        "outlets": 3,
+        "published": "2026-11-17T19:33:55+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cw8085rykkmgo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/13-killed-as-russian-military-transport-plane-crashes-in-siberia-report-12341047#publisher=newsstand"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/europe/russia-military-transport-plane-crashes-in-siberia-all-17-on-board-killed/articleshow/135931511.cms"
+          }
+        ]
+      },
+      {
+        "headline": "UK sanctions firms over Israeli West Bank settlements",
+        "summary": "The UK enacted its first sanctions targeting firms linked to Israeli West Bank settlements under a newly adopted tougher approach.",
+        "outlets": 2,
+        "published": "2026-11-17T18:27:27+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cvglr977x3z0o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/17/ed-miliband-israel-west-bank-settlements-sanctions"
+          }
+        ]
+      },
+      {
+        "headline": "China sacks scientist after six-year-old dies in gene-editing trial",
+        "summary": "China dismissed a scientist after an investigation found a young girl died following an undisclosed experimental gene therapy trial.",
+        "outlets": 2,
+        "published": "2026-11-17T18:49:50+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/china-sacks-scientist-after-6-year-old-dies-in-gene-editing-trial-12341077#publisher=newsstand"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/girl-dies-gene-editing-trial-scientist-fired-china-state-media/"
+          }
+        ]
+      },
+      {
+        "headline": "Mozambique opposition leader goes on trial on terrorism charges",
+        "summary": "Mozambique's opposition leader Venancio Mondlane appeared in court facing terrorism and civil disobedience charges.",
+        "outlets": 1,
+        "published": "2026-11-17T18:48:15+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/mozambique-opposition-leader-goes-on-trial-on-terrorism-charges?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Jensen Huang expresses willingness to return as Nvidia CEO",
+        "summary": "Jensen Huang stated he is willing to return as Nvidia CEO if asked by the board following his resignation over an affair.",
+        "outlets": 12,
+        "published": "2026-11-17T19:07:15+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/jensen-huang-says-hes-willing-to-return-as-nvidia-ceo/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/17/technology/jensen-huang-nvidia-statement.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/technology/video/jensen-huang-shows-readiness-to-return-to-nvidia-amid-board-decision-ytvd-3041155-2026-11-18?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/would-be-honoured-to-return-as-ceo-jensen-huangs-first-statement-since-resignation-12340480#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Apple services including iCloud and App Store down for thousands",
+        "summary": "Users experienced unexpected sign-outs and verification failures while attempting to access Apple services like iCloud and the App Store.",
+        "outlets": 3,
+        "published": "2026-11-17T18:45:37+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/apple-services-including-icloud-and-app-store-down-for-thousands-of-users-12340975#publisher=newsstand"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/technology/tech-news/apple-google-outage-app-store-gmail-search-and-other-services-down/articleshow/135937196.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/technology/story/users-report-problems-accessing-apple-pay-icloud-app-store-and-apple-support-3041144-2026-11-17?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Anthropic files for IPO as it competes for AI dominance",
+        "summary": "Anthropic, the developer of the Claude chatbot, filed for an initial public offering amid ongoing competition in the artificial intelligence sector.",
+        "outlets": 1,
+        "published": "2026-11-17T18:41:01+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/anthropic-ipo-plans-ai-safety/"
+          }
+        ]
+      },
+      {
+        "headline": "OpenAI sued by California after admitting to loss-of-control incidents",
+        "summary": "California sued OpenAI after the company admitted to numerous loss-of-control incidents during testing of its artificial intelligence models.",
+        "outlets": 1,
+        "published": "2026-11-17T18:13:34+00:00",
+        "links": [
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/tech-policy/2026/11/california-sues-openai-to-stop-public-nuisance-of-out-of-control-ai-agents/"
+          }
+        ]
+      }
+    ]
+  }
+}
