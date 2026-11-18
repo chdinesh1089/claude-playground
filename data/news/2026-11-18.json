@@ -1,0 +1,507 @@
+{
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T19:24:11+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "House Democrats nominate Hakeem Jeffries for speaker of the House",
+        "summary": "Democratic Leader Hakeem Jeffries easily won his party's nomination for the next speaker of the House on Wednesday.",
+        "outlets": 12,
+        "published": "2026-11-18T19:02:55+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/hakeem-jeffries-poised-become-black-speaker-house/story?id=138119938"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmy49873dn95o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/18/hakeem-jeffries-house-speaker-nomination"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/18/us/politics/hakeem-jeffries-speaker-of-the-house-democrats.html"
+          }
+        ],
+        "why": "Sets up a historic congressional leadership fight with potential national policy implications."
+      },
+      {
+        "headline": "Trump, Xi and Putin shake hands as leaders gather in China",
+        "summary": "China's leader, Xi Jinping, hugged President Trump on the tarmac as he arrived for a regional summit in Shenzhen.",
+        "outlets": 7,
+        "published": "2026-11-18T19:20:23+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/live/2026/11/18/world/trump-china-asia-apec"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/crowds-gather-as-trump-arrives-in-china-ahead-of-talks-with-xi-and-putin?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/live-updates/trump-asia-trip-2026/?id=138187702"
+          }
+        ],
+        "why": "Major geopolitical summit bringing together three of the world's most powerful leaders."
+      },
+      {
+        "headline": "Democrat Mary Peltola wins Alaska Senate seat",
+        "summary": "Former Democratic Rep. Mary Peltola has won one of the U.S.' most watched Senate races, giving Democrats a 56-44 majority.",
+        "outlets": 4,
+        "published": "2026-11-18T14:25:22+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/democrat-mary-peltola-wins-alaska-senate-seat-beating-republican-incumbent-dan-sullivan"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/18/us/politics/peltola-victory-alaska-senate.html"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/18/g-s1-154145/up-first-newsletter-mary-peltola-alaska-trump-asia-nvidia-tech-issues-ai"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm2kl50vkwkdo?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "Flips a key Senate seat and finalizes the balance of power in the upper chamber."
+      },
+      {
+        "headline": "Bombay HC sets aside ICICI Bank Board of Directors' sanction order on Chanda Kochhar",
+        "summary": "The court held that the Reserve Bank of India constitutes the authority with jurisdiction under Section 36-AA(1) of the Banking Regulation Act, 1949.",
+        "outlets": 2,
+        "published": "2026-11-18T17:01:36+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/business/Industry/bombay-high-court-quashes-icici-banks-nod-to-prosecute-ex-ceo-chanda-kochhar-in-loan-fraud-case/article71715652.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/bombay-high-court-sets-aside-icici-bank-s-sanction-to-prosecute-chanda-kochhar-101794991746638.html"
+          }
+        ],
+        "why": "Major banking jurisprudence ruling concerning regulatory jurisdiction in India."
+      },
+      {
+        "headline": "Trump proposes tougher green card rules",
+        "summary": "The Trump administration has proposed stricter regulations for obtaining green cards in the United States.",
+        "outlets": 2,
+        "published": "2026-11-18T12:28:37+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/your-american-dream-may-get-harder-trump-proposes-tougher-green-card-rules-3041620-2026-11-18?utm_source=rss"
+          },
+          {
+            "source": "Moneycontrol.com",
+            "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPV0JmNndxVTZtNjNXSHEwQ3hMcXVpcGZacmRUcVJxRGlUT0NuU0dVT1lwU2lCN2didGthUXMyakVpdTA4empRYmY5SmNka1NZTXFDS2hIWHRBNnBUTThQRmRoTl8zc0hzS2VEZUxSOFM2bVRjZ0JpV3hWTHl6NXBOdWVVQ0RIUkdCb0pma2NTVVlfUHVzdUpkNEhCdGFKcjdyTnU4Rl9Bd0RfLUZ2Z3pTSkd5NllzbGI3SFZTSHY4T3RhOVRQSWJRWDYybWhxV0liSnd1cWdYcGUtR3BSdENFZktvZWxTaG5YcXNjQ1Zwb3lUMTJCcGxraGRPeEFUS2V4S00taTFB0gGLAkFVX3lxTE40Z1JHSlNHTzBZUTdyWDc1T0xTTEM5QmxiTG95dEZIWTNFdERtTjhPNDFyV1Q0eTdKYVduUUZzMlVFUENkZkhKM3RLMWZSYU5WMnNlVjlRWXRJaTA1Z18zVjZvcGthN0Z2MDNMdTVEdkYwekFQUUdrUkxZV2RsTGJYQzRMNm5xT0VuM1JmQmt0SEpDUV83VFNYXzJDdFFsSHZkeDJrd0ZGVDh5VEZkS3NHQzQ5S2pWeXRGaTZ6b1NFdm83akJjSjBsY1ZWMldSdFl2N3lyUU4zWUhWUVBvWWpGMl82VUZBNWZlaXRIbWxXS0dzMUVDLXpGOXBGUjNWZm82SU55aHVvR3ZlYw?oc=5"
+          }
+        ],
+        "why": "Directly impacts Indian nationals pursuing permanent residency in the US."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Trump's pick Heidi Overton dropped as nominee for FDA commissioner",
+        "summary": "Dr. Heidi Overton's nomination to lead the Food and Drug Administration was dropped on Tuesday, a White House official confirmed.",
+        "outlets": 2,
+        "published": "2026-11-18T03:48:26+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/trumps-pick-heidi-overton-dropped-nominee-fda-commissioner/story?id=138232475"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/white-house-drops-heidi-overton-fda-commissioner/"
+          }
+        ]
+      },
+      {
+        "headline": "Senate committee rejects Trump nominee to lead National Science Foundation",
+        "summary": "Committee chair Bill Cassidy, a Republican, said Jim O’Neill ‘did not do enough to stand up for science’ in previous posts Jim O’Neill will not undergo a confirmation hearing on Wednesday to head he National Science Foundation (NSF) because he “did not do enough to stand up for…",
+        "outlets": 2,
+        "published": "2026-11-18T17:46:34+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/18/trump-national-science-foundation-nominee"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/18/us/politics/bill-cassidy-jim-oneill-science.html"
+          }
+        ]
+      },
+      {
+        "headline": "US intelligence chief rules out cyberattack as flight grounding fuels scrutiny",
+        "summary": "US Director of National Intelligence Jay Clayton said recent computer system disruptions are separate outages linked to maintenance and technical changes.",
+        "outlets": 5,
+        "published": "2026-11-18T18:08:34+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/us-intelligence-chief-rules-out-cyberattack-as-flight-grounding-tech-outages-fuel-scrutiny-of-trump-post-midterm-polls-11795024187675.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/17/world/asia/tech-outages-cyberattack-hack-rubio.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/crkgvxxwpwz2o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/network-outages-cyber-malicious-activity-homeland-security-hearing/"
+          }
+        ]
+      },
+      {
+        "headline": "Ecuadorean fishermen who survived U.S. boat strike sue Trump administration",
+        "summary": "The first lawsuit by strike survivors targets a secretive U.S. military campaign that has killed more than 240 people.",
+        "outlets": 1,
+        "published": "2026-11-18T17:21:50+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/17/world/americas/trump-us-boat-strikes-lawsuit-ecuador-fishermen.html"
+          }
+        ]
+      },
+      {
+        "headline": "NYC, LA and Chicago school districts weigh breaking up with Google Search",
+        "summary": "Google's refusal to unbundle A.I. features from search for students prompted a backlash among major school districts.",
+        "outlets": 1,
+        "published": "2026-11-18T18:11:27+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/18/technology/google-gemini-ai-search-schools-nyc-la-chicago.html"
+          }
+        ]
+      },
+      {
+        "headline": "Pakistani man sentenced to 27 years for Iran-backed plot to kill Trump",
+        "summary": "Asif Merchant was found guilty in March of trying to hire undercover FBI agents as hitmen to assassinate US officials, including the president.",
+        "outlets": 2,
+        "published": "2026-11-18T02:29:52+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm15ezz8n394o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/17/pakistani-man-jailed-trump-murder-plot"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Pak minister set for India visit had made 'cut hands' threat",
+        "summary": "Pakistan's Climate Minister Musadik Malik previously warned against water aggression and urged India to respect the Indus Waters Treaty.",
+        "outlets": 1,
+        "published": "2026-11-18T19:09:53+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/set-to-visit-india-for-sco-meet-pak-minister-malik-who-said-will-cut-off-their-hands-over-indus-waters-treaty-12346083#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "LeT's 'last local recruit' Lateef Bhat killed outside a Kulgam mosque",
+        "summary": "Bhat, who was behind an attack on a CRPF checkpost, was hiding in a mosque and turned down an offer to surrender.",
+        "outlets": 3,
+        "published": "2026-11-18T17:06:57+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/fresh-encounter-in-kulgam-lateef-bhat-november-18-2026/article71714380.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/some-dishes-are-best-served-cold-top-let-terrorist-lateef-bhat-killed-in-kulgam-encounter-days-after-crpf-attack-11794987721089.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/mosque-shelter-video-call-with-cops-inside-last-kulgam-terrorist-local-commander-lateef-bhat-final-moments-before-encounter-101794978859436.html"
+          }
+        ]
+      },
+      {
+        "headline": "PM Modi meets Prince and Princess of Wales, discusses boosting U.K.-India ties",
+        "summary": "PM commends the work of the 'Earthshot Prize' in encouraging innovative solutions to pressing environmental challenges",
+        "outlets": 7,
+        "published": "2026-11-18T19:21:31+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/pm-modi-meets-prince-and-princess-of-wales-discusses-boosting-uk-india-ties/article71717432.ece"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/pm-modi-meets-prince-william-and-princess-catherine-discusses-india-uk-ties-12346040#publisher=newsstand"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/prince-william-kate-middleton-meet-pm-modi-in-delhi-as-three-day-india-visit-concludes/articleshow/135966803.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/lifestyle/fashion/story/kate-middleton-prince-william-meet-pm-narendra-modi-keep-things-classic-for-meeting-delhi-3041756-2026-11-18?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "India imposes 162.5% duty and tax on bulk Scotch imports",
+        "summary": "More than 80 containers belonging to major liquor brands remain stuck at Indian ports amid a trade pact dispute.",
+        "outlets": 4,
+        "published": "2026-11-18T17:30:21+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/business/india-imposes-1625-duty-and-tax-on-bulk-scotch-imports-amid-uk-trade-pact-dispute/article71717239.ece"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/why-india-is-imposing-162-5-duty-on-bulk-scotch-imports-despite-india-uk-trade-pact-cutting-tariffs-to-75-11795010628919.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/cons-products/liquor/govt-to-charge-bulk-scotch-imports-162-5-duty-and-tax-amid-uk-pact-standoff-pernord-ricard/articleshow/135960324.cms"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbVo4R08zb1NLcnBSUHZjUEl2NV9jZGZ1SG1oTXZNakY3MXliTVZIcDIzUHo1U0pwdElJSGQ3aUR2MHc1cUdJUURGQ3RCSzVJM0owUWE3SmEwMHNERXhVMEt0VVFFQVlGMDA1VXBURl9jX1JRVGpKYTBJUTViRm1yenJEM2FyN01TZ2ZseVdsSEVrWVI5RGRUb3MzVEtQemN1MUdoa1B2VHdPRjNPMXhPbmZla2FkTFE?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "SP leader Azam Khan released from Ghaziabad prison",
+        "summary": "The SP leader's advocates moved an application before the PMLA court seeking his release in compliance with a High Court order.",
+        "outlets": 4,
+        "published": "2026-11-18T17:10:59+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/samajwadi-party-leader-azam-khan-released-from-dasna-jail-after-interim-bail-in-jauhar-university-money-laundering-case-ghaziabad-ptag-3041744-2026-11-18?utm_source=rss"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/sp-leader-azam-khan-released-from-ghaziabad-prison/article71717053.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/ghaziabad/azam-khan-walks-out-of-dasna-jail-on-interim-bail-in-money-laundering-case-heads-to-rampur/articleshow/135964807.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/heavens-are-not-going-to-fall-sc-after-ed-challenges-azam-khan-s-interim-bail-101794986686789.html"
+          }
+        ]
+      },
+      {
+        "headline": "Shiv Sena members tear pages of Sonia Gandhi's book over Savarkar references",
+        "summary": "The party demanded that publisher HarperCollins withdraw two pages from the memoir regarding Savarkar references.",
+        "outlets": 3,
+        "published": "2026-11-18T17:32:24+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/maharashtra/eknath-shinde-tears-sonia-gandhis-book-over-savarkar-references-seeks-ban-in-maharashtra/article71717132.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/they-tore-bal-thackeray-s-image-row-erupts-after-shiv-sena-members-rip-pages-of-sonia-gandhi-s-book-101795013047298.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/newsmo/short-videos/sonia-gandhi-humiliates-savarkar-shiv-sena-tears-pages-of-her-book-3041730-2026-11-18?utm_source=rss"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Iran fires missiles and drones at Gulf Arab states as peace talks falter",
+        "summary": "Kuwait and Bahrain said they were targeted on Wednesday, signaling escalation as the Middle East remains stuck between peace and war.",
+        "outlets": 3,
+        "published": "2026-11-18T15:37:11+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/18/world/middleeast/iran-attacks-bahrain-kuwait-ships-hormuz.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-us-gulf-retaliation-strikes-strait-of-hormuz/"
+          },
+          {
+            "source": "Crude Oil Prices Today | OilPrice.com",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPb25iMF9BUkNRRl9xNXRHOVVUdzJuckU2ckI2Y2pEcjIza0ttXzl2MTFEb3RiM1d5SGhyeDlNSVhNSXFIa0dWTUctVHpJRVZJTU41LVBQYm5pc0dwa05iNUJPS25HeHNMcjNBS25sMjBxZVJyaG1ILWxRd1hBSkNza1NuZGlkd1ZrcVE1T2YwZ2ltWnZlQUFvT1Z3T19keGk5aW8zVUlFVEQ4X3U0RHRuUE9ya9IBuAFBVV95cUxPRDRNTmR6cEIzeXN2TlQ3Mmh5bG1XYmh6MWRJakxXeDF6NnpJajZReUhvSE1EelR4SEFXaC15VHpsTmt1b1dzc1NGTXMwZUY2ZTBvUUtxbkhOYVR0aU94RFRxd25NSFBmTFhXMldNYl9ZdzdwMnBHbE1tdlhoeTZvaG9ZWXAzdGdXS0VBSUJud3BtdVN6OFlWakc0Uy1wWGFNMnhYOEt3RE1hRXhnM1F2MlJSMlpKSVJK?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "EU proposes 45-billion euro loan for Ukraine to be repaid by Russia",
+        "summary": "European Commission President Ursula von der Leyen said Ukraine would only need to repay the loan after Russia paid reparations.",
+        "outlets": 2,
+        "published": "2026-11-18T16:11:15+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/eu-proposes-45-billion-euro-loan-for-ukraine-to-be-repaid-by-russia-12345740#publisher=newsstand"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaFhjUFo4SHBqb20yY1dQWmZZNlZhV2VvZjRQLTFoQjlYeFItaHNXX0FZVmhuazRYODFqcEk5RThWZUNpX2lPOFJrZ0M5U0hEODBZZFNndnE3U18xNWRtVGhlYmRXU3V1My16RTUybkdaSXRvc3NIOWpNdllIWG1GMjE4Z2N1bm1naUZjNXF6bVBPSF9lalVpeHdNN1FQeWRtZDBfaTh3ZXBaQQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "5 EU nations make plans to deport asylum seekers to Rwanda",
+        "summary": "Five European nations reached an agreement with Rwanda to deport failed asylum seekers to the African nation.",
+        "outlets": 2,
+        "published": "2026-11-18T17:24:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/europe-migrants-eu-5-nations-plan-return-hub-asylum-seekers-rwanda/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/18/five-eu-nations-to-deport-migrants-to-rwanda?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "How Ukraine hit Putin's prized Crimea bridge",
+        "summary": "A weeks-long operation involving long-range missiles and drones developed in Ukraine targeted the strategic bridge.",
+        "outlets": 2,
+        "published": "2026-11-18T14:40:16+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/18/crimea-is-turning-into-an-island-how-ukraine-hit-putins-prized-bridge?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/18/world/europe/russia-kerch-strait-crimean-bridge.html"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Anthropic is set to finalize pricing for blockbuster IPO",
+        "summary": "The AI company is expected to officially price its shares ahead of its stock beginning to trade on Nasdaq.",
+        "outlets": 3,
+        "published": "2026-11-18T17:49:51+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/18/technology/anthropic-ipo-pricing.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/anthropic-ipo-ai-boom-nasdaq-debut/"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/world/business/anthropic-ipo-buying-anthropic-on-a-crypto-exchange-why-antx-isnt-the-same-as-owning-ant-stock-and-the-5-fee-youll-pay/articleshow/135967150.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Grand Theft Auto 6 arrives with enormous hype after 13-year wait",
+        "summary": "The latest version of Grand Theft Auto launches globally on PlayStation 5 and Xbox Series X'S following massive pre-orders.",
+        "outlets": 8,
+        "published": "2026-11-18T18:29:18+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/trends/grand-theft-auto-6-review-out-biggest-disappointment-in-gaming-history-netizens-says-gta-5-was-better-after-13-years-11795025488336.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cw8r75xm8v4po?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/gaming/2026/11/grand-theft-auto-vi-the-ars-technica-review/"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/gta-6-launch-live-updates-release-time-download-gameplay-price-latest-news-key-announcements-reviews-12346071#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Mahanadi Coalfields mops up Rs 2,295 crore from anchor investors",
+        "summary": "Coal India's wholly owned subsidiary raised funds from anchor investors ahead of its massive initial public offering.",
+        "outlets": 1,
+        "published": "2026-11-18T18:47:38+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/goldman-sachs-citigroup-morgan-stanley-help-mahanadi-coalfields-mop-up-rs-2295-crore-from-anchor-investors-ahead-of-ipo/articleshow/135969520.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Copper plunges over 5% as AI worries hit metals markets",
+        "summary": "The moves came after high-profile investor Stan Druckenmiller turned bearish on the metal amid broader tech concerns.",
+        "outlets": 1,
+        "published": "2026-11-18T18:25:55+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/copper-plunges-over-5-as-ai-worries-hit-metals-markets-12346195#publisher=newsstand"
+          }
+        ]
+      }
+    ]
+  }
+}
