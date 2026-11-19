@@ -1,0 +1,483 @@
+{
+  "date": "2026-11-19",
+  "generated_at": "2026-11-19T19:29:17+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "International Court of Justice finds Myanmar committed genocide against Rohingya",
+        "summary": "In a landmark decision, the International Court of Justice found Myanmar culpable of genocide for its 2017 military operations against the Rohingya, ordering reparations.",
+        "outlets": 8,
+        "published": "2026-11-19T18:27:57+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/19/world/europe/myanmar-genocide-icj-decision-.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/videos/c60qj10j0ld5o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/uns-highest-court-finds-myanmar-responsible-for-genocide-in-historic-ruling"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/19/genocide-rohingya-international-court-of-justice-ruling-myanmar"
+          }
+        ],
+        "why": "This is a historic first conviction of a state for genocide by the top global court."
+      },
+      {
+        "headline": "Anthropic starts trading in the US after blockbuster IPO",
+        "summary": "Anthropic's IPO surpassed SpaceX to mark the largest initial public offering in US history at $81 billion, sending co-founders' fortunes soaring.",
+        "outlets": 8,
+        "published": "2026-11-19T16:57:26+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/economy/2026/11/19/anthropic-starts-trading-in-the-us-after-blockbuster-ipo?traffic_source=rss"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/economy/anthropic-set-to-begin-trading-as-a-1-5-trillion-company-in-the-biggest-ipo-on-record"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/19/nx-s1-6042558/anthropic-ipo-breaks-records-100-billion"
+          }
+        ],
+        "why": "Marks a historic milestone in the AI boom and US public markets."
+      },
+      {
+        "headline": "Trump, Xi and Putin hold rare trilateral summit in China",
+        "summary": "Donald Trump, Xi Jinping and Vladimir Putin met in China for a trilateral summit, agreeing to boost oil production and issue a peace declaration.",
+        "outlets": 8,
+        "published": "2026-11-19T17:18:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-xi-putin-china-apec-summit/"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/trump-putin-and-xi-to-hold-historic-trilateral-meeting-in-china-whats-on-the-agenda-and-why-it-matters-11795065774997.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/18/us/politics/trump-xi-putin-summit-yalta.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/19/trump-and-putin-hijacked-china-summit?traffic_source=rss"
+          }
+        ],
+        "why": "A rare high-stakes meeting of three major world powers shaping international diplomacy."
+      },
+      {
+        "headline": "Odisha and Andhra Pradesh gear up as cyclone Akvan approaches",
+        "summary": "Odisha shifted 300,000 people to safety as severe cyclonic storm Akvan approaches the coast with sustained winds up to 100 kmph.",
+        "outlets": 5,
+        "published": "2026-11-19T17:28:14+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/odisha/odisha-gears-up-for-cyclone-akvan-shifts-3-lakh-people-to-safety/article71721296.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/odisha-evacuates-1-05-lakh-people-ahead-of-cyclone-akvan-deploys-295-rescue-teams-101795093029671.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/live/2026/11/19/technology/anthropic-ipo-ai/heres-the-latest"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/science/story/imd-delhi-fog-cyclone-akvan-heavy-rain-forecast-winter-odisha-andhra-3042244-2026-11-19?utm_source=rss"
+          }
+        ],
+        "why": "Major natural disaster threatening the eastern coast of India."
+      },
+      {
+        "headline": "PM Modi delivers blunt message to India Inc at FICCI AGM",
+        "summary": "Prime Minister Narendra Modi criticized industry leaders for static wages and failing to pass on tax benefits to citizens.",
+        "outlets": 4,
+        "published": "2026-11-19T11:11:59+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/do-not-take-140-crore-indians-for-granted-pm-modis-blunt-message-to-india-inc-at-ficci-agm-10-key-takeaways-11795084622262.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/pm-modis-message-to-india-inc-dont-get-comfortable-compete-with-the-world-and-ask-for-reforms/articleshow/135981332.cms"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/business/pm-modi-ficci-india-inc-ficci-annual-general-meeting-and-annual-convention-november-19-2026/article71719140.ece"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.aajtak.in/business/story/pm-narendra-modi-slams-corporates-at-ficci-event-over-profits-jobs-wages-ntc-dhrj-rpti-2700896-2026-11-19?utm_source=rss"
+          }
+        ],
+        "why": "Directly impacts India's economic policy and corporate wage growth."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Elon Musk says he feels foolish for spending on midterms",
+        "summary": "Elon Musk told the New York Times DealBook Summit that he is not MAGA and regrets his heavy spending on the midterms.",
+        "outlets": 5,
+        "published": "2026-11-19T17:09:25+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/im-not-maga-elon-musk-says-after-republicans-midterm-thrashing"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/18/business/dealbook/elon-musk-midterms.html"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/policy/1037804/elon-musk-maga-dealbook"
+          },
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/elon-musk-becomes-the-latest-tech-billionaire-to-make-a-peace-offering-to-democrats-after-the-midterms-05df0c0e?mod=mw_rss_topstories"
+          }
+        ]
+      },
+      {
+        "headline": "Susan Smith denied parole again after 32 years",
+        "summary": "Susan Smith was denied parole 32 years after drowning her two sons, stating at her hearing that she wished she could change the past.",
+        "outlets": 4,
+        "published": "2026-11-19T17:23:34+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckdd1y09eqjmo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/wireStory/susan-smith-parole-32-years-after-drowning-sons-138279413"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/19/us/lindsay-clancy-trial-juror-appeal.html"
+          },
+          {
+            "source": "Live 5 News",
+            "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTXpBT25ZdFB2MVhXYy1Ycy1Pb0VWcXFUYnhVVHJUNVQ5ODllNFBRUnd5eXFGcHM0dC1QWmtaYnVfQ1JYX2otOG0wUk1fR2U3YUl2TlBjZ2ptRktqSGhJRENTUmJTRUNKRG1iS01HWFNrVl9hbjBsbW1PY2dPUmVISlNldElTUUw2X0hj0gGfAUFVX3lxTE0xUFotRWM0MGREZUFQcFhRY0xmS280ZWJqVEtPZkJqVmQxemppcjZCYUdlWERPNXViOVJ4bVhVY0xpYU9HN3NlMFBMUHpwdjZSWEcybHVWeW14c0pXUnZ2TnBVakgzSlhHRVQ2MmpOM1FMV2hXSVJIQ2NNVVIwWFUyYVFpTW92WUMxMG5lYjNiejlMTHh2U0FaaVZtZkVwWQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "South Florida faces severe weather and flooding after heavy rain",
+        "summary": "Following over 15 inches of rain, schools remain closed and roads underwater in South Florida as another round of rain threatens conditions.",
+        "outlets": 3,
+        "published": "2026-11-19T19:23:29+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/rainfall-supercharged-by-el-nino-causes-road-flooding-synagogue-roof-collapse-in-south-florida"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/19/california-atmospheric-river-san-francisco-rain-record"
+          }
+        ]
+      },
+      {
+        "headline": "Judge extends temporary restraining order blocking Trump arch construction",
+        "summary": "A judge extended a temporary restraining order that blocks the construction of Trump's arch after the previous order was set to expire.",
+        "outlets": 2,
+        "published": "2026-11-19T10:59:12+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/judge-extends-temporary-restraining-order-blocks-construction-trumps/story?id=138262809"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/18/us/politics/judge-block-trump-arch.html"
+          }
+        ]
+      },
+      {
+        "headline": "Auditors raise concerns over billions spent on ICE immigration detention",
+        "summary": "Federal auditors warned that ICE is spending billions of dollars to expand immigration detention without assessing cost effectiveness.",
+        "outlets": 1,
+        "published": "2026-11-19T18:49:52+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/federal-auditors-raise-concerns-billions-ice-spending-expand/story?id=138293636"
+          }
+        ]
+      },
+      {
+        "headline": "Gold Star husband briefed on army attack that killed wife",
+        "summary": "Following a CBS News report, a Gold Star husband was briefed on the Port Shuaiba attack that killed six U.S. soldiers including his wife.",
+        "outlets": 1,
+        "published": "2026-11-19T19:07:54+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/following-up-on-the-cost-of-war-60-minutes/"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Removal proceedings against Justice Varma infructuous after resignation",
+        "summary": "Justice Varma stated in a letter circulated among MPs that removal proceedings against him did not survive his resignation.",
+        "outlets": 2,
+        "published": "2026-11-19T19:15:26+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/resignation-not-admission-of-wrongdoing-i-am-innocent-justice-varma-tells-lok-sabha-secretariat-101795115727274.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/removal-proceedings-against-me-infructuous-after-resignation-justice-varma-tells-lok-sabha-secretariat/article71721688.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Assam medical college withdraws PG trainee marriage order",
+        "summary": "An Assam medical college department withdrew an order concerning marriage for postgraduate trainees following backlash and National Medical Commission guidelines.",
+        "outlets": 2,
+        "published": "2026-11-19T19:15:02+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/assam/assam-medical-college-department-withdraws-defer-marriage-order-for-trainees-after-backlash/article71721405.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/assam-medical-college-dept-withdraws-order-on-marriage-for-pg-trainees-after-backlash-101795070752405.html"
+          }
+        ]
+      },
+      {
+        "headline": "Gangster Goldy Brar tops Canada most-wanted list with bounty",
+        "summary": "Goldy Brar is at the top of Canada's most-wanted list and faces a $250,000 bounty in connection with a 2023 murder in Winnipeg.",
+        "outlets": 2,
+        "published": "2026-11-19T18:37:25+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/gangster-goldy-brar-on-top-of-canada-most-wanted-list-faces-250-000-bounty-12351522#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/after-us-canada-announces-cad-25-lakh-bounty-on-goldy-brar-puts-him-at-no-1-on-most-wanted-list-3042736-2026-11-19?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Bombay High Court halts demolition of Bhendi Bazaar Musafir Khana",
+        "summary": "The Bombay High Court halted the demolition of the dilapidated Musafir Khana building in Bhendi Bazaar where Dawood Ibrahim once lived.",
+        "outlets": 2,
+        "published": "2026-11-19T11:28:48+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/bombay-high-court-stays-demolition-dawood-ibrahim-linked-building-south-mumbai/articleshow/135989135.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/bmc-begins-demolition-of-dilapidated-mumbai-building-where-dawood-ibrahim-once-lived-with-family-101795072357052.html"
+          }
+        ]
+      },
+      {
+        "headline": "EPFO board approves cut in minimum PF balance requirement",
+        "summary": "The EPFO board approved reducing the minimum PF balance retention requirement from 25 percent to 10 percent for members.",
+        "outlets": 2,
+        "published": "2026-11-19T09:25:28+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/epfo-board-approves-cut-in-minimum-pf-balance-requirement-to-10-per-cent-from-25-101795080134154.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNU3I4WWJ3eTVlYTUwS0pvaUlxTnVGUEZCNjFhM1B4bzgwMGFHVUdBR1lWWDhzUEN1c3RZUGtTMEp6N21BaHlTem9JRFVVclBzVmlIaGZ5RnRReTB6MnBwbEl0dW54YXB4emNmc1JOMlkxWTB0NzBWdUlhdGxaNnc4d2VPZGx2d2prck55alRPWkZzNEdiUmhaQjRvNm1ibEpTSkwyT054Y29MaXRSMnE5ZElEM1RJY3pseVFqMXdSSi03OFpPS3BuYmgwUmZhZXJxYW00dnpDcEZteXFRM1B2VXRrSl9vdlZXVzFEUVh0RUEyS1RMdFMwenVEY2FlX1AwVnpYRG4zZ3dCNzNRdUFqVS1DNlk?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Malaysia to end visa-free entry for Indians from January 2027",
+        "summary": "Malaysia announced plans to end visa-free entry for Indian nationals starting in January 2027.",
+        "outlets": 2,
+        "published": "2026-11-19T08:11:34+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/lifestyle/travel/story/malaysia-visa-for-indians-mandatory-from-january-1-2027-3042185-2026-11-19?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/malaysia-to-end-visa-free-entry-for-indians-from-january-1-2027-visa-applications-open-december-1-101795054503229.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Florida pastor found guilty in assassination of Haitian president",
+        "summary": "Christian Emmanuel Sanon was convicted for his role in the plot that resulted in the assassination of Haitian president Jovenel Moïse.",
+        "outlets": 3,
+        "published": "2026-11-19T11:44:57+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm702q0lg50po?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/18/world/americas/haiti-pastor-assassination-moise.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/18/florida-pastor-guilty-haiti-president-assassination"
+          }
+        ]
+      },
+      {
+        "headline": "European leaders say Europe is ready for talks with Russia on Ukraine",
+        "summary": "European allies of Ukraine stated at a summit in Berlin that they have a united negotiating position on ending the war.",
+        "outlets": 2,
+        "published": "2026-11-19T19:16:21+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckzd9nln5e6go?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/kushner-says-russia-is-comfortable-with-nato-like-security-guarantees-for-ukraine-to-end-war-after-trump-talks-with-putin"
+          }
+        ]
+      },
+      {
+        "headline": "Saudi Sovereign Wealth Fund Tower Damaged as Houthis Attack Riyadh",
+        "summary": "An aerial attack by the Yemeni militia affected several floors of a skyscraper that is home to the Public Investment Fund, without causing injuries, according to Saudi authorities.",
+        "outlets": 1,
+        "published": "2026-11-19T18:55:36+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/19/world/middleeast/saudi-pif-riyadh-tower-houthis-attack.html"
+          }
+        ]
+      },
+      {
+        "headline": "Dutch and Austrian embassies damaged as Russian drones swarm Kyiv",
+        "summary": "Foreign ministers reported that embassy compounds for Austria and the Netherlands were damaged during a drone swarm over Kyiv.",
+        "outlets": 1,
+        "published": "2026-11-19T18:47:57+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/19/world/europe/ukraine-dutch-embassy.html"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "India, US build a chain of trust as natural partners in a volatile world: Goyal",
+        "summary": "The US--the world’s largest economy--offers capital, technology and innovation. India has talent, manufacturing strength and competitiveness, Goyal said, adding that both the nations are a force of global good.",
+        "outlets": 2,
+        "published": "2026-11-19T16:23:40+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/india-us-build-a-chain-of-trust-as-natural-partners-in-a-volatile-world-goyal-11795094815436.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/piyush-goyal-calls-for-trusted-india-us-supply-chains-deeper-economic-cooperation/articleshow/135998771.cms"
+          }
+        ]
+      },
+      {
+        "headline": "India to drive global oil demand growth through 2035",
+        "summary": "The IEA projected that India will drive global oil demand growth, accounting for about half the increase across emerging economies.",
+        "outlets": 1,
+        "published": "2026-11-19T16:20:14+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/india-to-drive-global-oil-demand-growth-with-consumption-rising-3-annually-through-2035-iea-11795099404416.html"
+          }
+        ]
+      },
+      {
+        "headline": "India eyes Rs 7.5 lakh crore business from upcoming weddings",
+        "summary": "India's upcoming wedding season expects 52 lakh weddings over 25 days, targeting Rs 7.5 lakh crore in business activity.",
+        "outlets": 1,
+        "published": "2026-11-19T18:08:23+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/india-wedding-season-52-lakh-weddings-7-5-lakh-crore-business-3042759-2026-11-19?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "TSMC tightens China AI chip curbs under new US rules",
+        "summary": "TSMC tightened restrictions on China AI chips as new US rules closed manufacturing loopholes, according to sources.",
+        "outlets": 1,
+        "published": "2026-11-19T18:39:46+00:00",
+        "links": [
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNc1pDUGRULVJNeGdkT21ERVNzMEl6RHJKTEtLRWFFQjFpYjdxWU5NMmM3Zl8zUzlHQUd3UzJlNE1UV2tlZnZFTEZrNnRKSWU1Y1lkSU1ISmF6U1JGNWNEeUJETVpHNDI5QTEwMWJTTmRraUgyaDR2RUJ1UlRadVJZMW9MUTZCeXdpZHRZRWl1X1VIZ0xBbllSWEUxMGxmdmllVFgxbmxuTmljOFFBTUkyUGR2NDRfTmM0Rm5xcXFxaHk?oc=5"
+          }
+        ]
+      }
+    ]
+  }
+}
