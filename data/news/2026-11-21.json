@@ -1,0 +1,474 @@
+{
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21T17:57:57+00:00",
+  "status": "fallback",
+  "model": null,
+  "error": "gemini-flash-lite-latest: HTTP 503 [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "क्रिकेटर युजवेंद्र चहल की सियासत में एंट्री, BJP में शामिल होते ही OBC मोर्चा में मिली बड़ी जिम्मेदारी",
+        "summary": "BJP OBC",
+        "outlets": 5,
+        "published": "2026-11-21T17:57:02+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.aajtak.in/india/news/story/yuzvendra-chahal-joins-bjp-appointed-special-invitee-national-obc-morcha-executive-ntc-dhrj-rpti-2702507-2026-11-21?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/yuzvendra-chahal-joins-bjp-gets-role-in-partys-obc-morcha-committee-12359712#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/cricketer-yuzvendra-chahal-joins-bjp-appointed-as-special-invitee-to-obc-morcha-national-committee-101795279356508.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/cricketer-yuzvendra-chahal-joins-bjp-gets-role-in-obc-morcha-executive-committee/articleshow/136059077.cms"
+          }
+        ]
+      },
+      {
+        "headline": "MEA clears Taj Mahal visit for Pak delegation, no nod for Nizamuddin dargah",
+        "summary": "A Pakistani delegation, led by Musadik Masood Malik, is in India for the SCO Civilisational Dialogue Forum. They have been permitted to visit the Taj Mahal, Humayun's Tomb, and Dilli Haat. However, their visit to Nizamuddin dargah has not been security cleared. This visit marks…",
+        "outlets": 4,
+        "published": "2026-11-21T15:25:34+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/pakistani-delegation-cleared-to-visit-taj-mahal-denied-security-clearance-for-nizamuddin-dargah/articleshow/136056952.cms"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/mea-clears-taj-mahal-visit-for-pakistan-delegation-no-nod-for-nizamuddin-dargah/articleshow/136055919.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/pakistan-minister-musadik-malik-to-visit-taj-mahal-after-mea-approval-but-nizamuddin-dargah-request-denied-report-101795255241051.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/pakistan-minister-pakistan-minister-musadik-malik-india-visa-sco-forum-visit-clarification-3043187-2026-11-20?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "NEET paper leak case: Delhi court frames charges against 14 accused",
+        "summary": "Special Judge Ajay Gupta framed the charges after noting the accused pleaded ‘not guilty’, with the trial set to begin on a day-to-day basis from November 25",
+        "outlets": 3,
+        "published": "2026-11-21T16:27:02+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/neet-paper-leak-case-delhi-court-frames-charges-against-14-accused/article71728867.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/ht-evening-news-brief-nov-20-court-frames-charges-against-14-in-neet-ug-paper-leak-case-vhp-objects-to-ranbir-starrer-ramayana-101795268486187.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/neet-ug-2026-paper-leak-all-14-accused-plead-not-guilty-as-trial-begins-november-25/articleshow/136053432.cms"
+          }
+        ]
+      },
+      {
+        "headline": "‘China working to suppress India’s rise, backed Pakistan after Operation Sindoor’: US panel’s report",
+        "summary": "The report said that the episode showed how China could bolster Pakistan during a crisis without entering hostilities directly.",
+        "outlets": 3,
+        "published": "2026-11-21T15:55:09+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/china-working-to-suppress-india-s-rise-backed-pakistan-after-operation-sindoor-us-panel-s-report-101795272505336.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/working-to-suppress-indias-rise-us-panel-report-flags-chinas-support-to-pakistan-during-operation-sindoor/articleshow/136056716.cms"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/china-backed-pakistan-during-operation-sindoor-to-curb-indias-rise-us-panel-12359123#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
+        "summary": "Prosecutors argued the defendant, 30-year-old Jonathan Rinderknecht, had been \"mad at everything\" in the days leading up to the January 2025 fire, which killed 12 people.",
+        "outlets": 3,
+        "published": "2026-11-21T13:58:33+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/21/nx-s1-6049625/palisades-fire-conviction"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c64gn0gy8rj3o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/federal-jury-convicts-man-of-starting-deadly-2025-palisades-fire-in-los-angeles"
+          }
+        ]
+      }
+    ],
+    "us": [
+      {
+        "headline": "Jury in Palisades Fire Trial Finds Man Guilty of Arson in Devastating Blaze",
+        "summary": "The defendant, Jonathan Rinderknecht, was found guilty on two counts. The verdict provides a measure of accountability for a painful chapter in recent L.A. history.",
+        "outlets": 3,
+        "published": "2026-11-21T15:16:56+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/20/us/la-fire-trial-arson.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/eye-opener-man-found-guilty-of-starting-palisades-fire/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/man-accused-starting-blaze-palisades-fire-found-guilty/story?id=138333631"
+          }
+        ]
+      },
+      {
+        "headline": "Princess of Wales speaks about impact of cancer diagnosis in BBC film Heal",
+        "summary": "Documentary records Catherine taking on Three Peaks challenge and finding ‘sense of hope alongside uncertainty’ The Princess of Wales has spoken candidly about the impact of her cancer diagnosis in a BBC documentary to be aired later this month. “Cancer does change you,”…",
+        "outlets": 2,
+        "published": "2026-11-21T14:42:56+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/uk-news/2026/nov/21/princess-of-wales-impact-cancer-diagnosis-bbc-film-heal"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/21/world/europe/princess-kate-bbc-cancer-film.html"
+          }
+        ]
+      },
+      {
+        "headline": "FBI reportedly investigating apparent hack of its criminal database",
+        "summary": "The National Crime Information Center database is used by federal and local law enforcement to share information.",
+        "outlets": 2,
+        "published": "2026-11-21T16:35:15+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdy14X2NKM3JhWUlQazJaSFZDT3NlSFVYNExGNFA2Nk40VmkyTFNaUlJ5Mkk4LVdOU3BlcmxVNS1XaFBQbG1vNjl5WXpBMUhROXpmYnNMSU1CQ1RVYlljVVk3V2VOampEOWY5SnROLVEzdXFyTEl5Y0l0SXNDOGtiVlJoREdXMUVUcXdHNXNhcE5adTZSVTNENHJNUVNIMjB6aGpCWUdwci16Nm1ZSzlXS0Vn?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Bessent says no further restrictions are needed for Nvidia chip exports to China",
+        "summary": "\"The proper chip restrictions are in place,\" Bessent said in an interview with CNBC after returning from a trip to Asia with President Donald Trump. \"And the remote access has been curtailed.\"",
+        "outlets": 2,
+        "published": "2026-11-21T16:28:20+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/bessent-says-no-further-restrictions-are-needed-for-nvidia-chip-exports-to-china"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china"
+          }
+        ]
+      },
+      {
+        "headline": "Mamdani's plan to close Rikers Island, revamp NYC jails",
+        "summary": "New York City Mayor Zohran Mamdani is moving forward with his plan to close Rikers Island and replace it with four smaller jails. Anna Schecter reports.",
+        "outlets": 2,
+        "published": "2026-11-21T15:53:43+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/mamdanis-plan-to-close-rikers-island-revamp-nyc-jails/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmjeqv89egylo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Market tumbles after tech stock sell-off",
+        "summary": "The stock market plunged soon after Anthropic's record-setting IPO.",
+        "outlets": 2,
+        "published": "2026-11-21T15:15:10+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/market-tumbles-after-tech-stock-sell-off/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Delhi Police nabs 14-year-old Haryana boy trying to sell data of Agniveers on dark web for ₹47,000",
+        "summary": "The teen allegedly extracted information from the platform and posted an advertisement on the dark web, claiming to possess details of around 4,000 Agniveers.",
+        "outlets": 3,
+        "published": "2026-11-21T15:53:30+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/delhi-police-nabs-14-year-old-haryana-boy-trying-to-sell-data-of-agniveers-on-dark-web-for-rs-47000-101795272410862.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/14-year-old-hacker-held-for-trying-to-sell-private-data-of-4000-agniveers-on-dark-web-delhi-police/articleshow/136050908.cms"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNQkM0V2RISmJOQWV0eGE4NWh4Y0REb2QzZ09NYnRrWUQxaURJSFNVbUtPTDlTblBWS0VISXVvOWk0RmRUcDdxRkxfSF9TczdlcDdFV0FJMzlTc3hkQ2RzamRvYmUtaVI3dmNmSkR3THNLMkhSR250ZnN2SzNESGFiSy1UZFJvZkFCTmF0UzdNbHRuQXFNOTdkZEUxMkk0NnFoTk1rdzdxTWhNMXFqUVpKVnFxNWc4R2c3Y2xnX0ZQenZLUXdKemliSUlIUVVTS2k5SUIxNXpzc0czaWpJem14TFZFUjRDWjUxWmRxM0JkR3pEcmvSAfoBQVVfeXFMT3hrUmtDd2I0MVdOS0sxSTFmcEctSTFvRmVqLUJhSk1FUkY2azA1VEhOcDVKSU9xeGRhbExHMVZQLTE1Y2ZPX2VCWlNHblE5bmRYMDBURHJDdVFMV2JWTmdDVEs0U3pZTEFieG41NGFQQ1p6TlpQOFo3WWNIX0x0RkFLNzdzRWs1QTQzczlnbHZybHNjRXNHek9aMk56dDlCM3NVSi1oLTQ2dXA0UVBVWEF2bUF3M2RRXzJTOWNoQk03SDRyTksxV0hHT01tSE1oUm5QdXRvTVoyckpVdDVWWkM3X3RXQkEwSGVhNm1uc2J6VS1PZ3dBaHlEQQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Brooks and Capehart on Trump's summit with Putin and Xi",
+        "summary": "David Brooks of The Atlantic and Jonathan Capehart of MS NOW join Amna Nawaz to discuss the week in politics, including President Trump's trilateral summit with Xi and Putin, the ongoing debate surrounding data centers, and Elon Musk's attempt to distance himself from MAGA.",
+        "outlets": 3,
+        "published": "2026-11-20T23:35:27+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/brooks-and-capehart-on-trumps-summit-with-putin-and-xi"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/20/world/europe/putin-trump-xi-summit-apec.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTFFFNTFlQjBSUXFSX1p1TU5xTW42Ym94M2gtM2pUR3lvMkdpcjhRem1qbXRWMHB2TnFoYm01NDFCd3J3Uld2TTlJTlJQMnRCYlVpS1FpMUVzQVpjRkhST0ZsNk84ME9LM0lNbExBUXltbE9BU2Y0QzNiSU1jbDdfUnB2SjI4eTdsd2ptTjNFNU12bVFCZXd5cmthMjFEMHNFRWVXU2FROXptTWtnRVZGNDk4X2xDeEEtSDlvVg?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "‘One wall, two rivals’: Pakistan minister invokes Humayun, Sher Shah in his SCO event speech at Delhi's Purana Quila",
+        "summary": "Musadik Malik posted a video of his remarks on his X handle and also wrote in Urdu that this Quila is a \"story\".",
+        "outlets": 2,
+        "published": "2026-11-21T17:35:15+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/one-wall-two-rivals-pakistan-minister-invokes-humayun-sher-shah-in-his-sco-event-speech-at-delhis-purana-quila-101795279188486.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/humayun-sher-shah-and-one-fort-pakistan-minister-highlights-purana-quilas-layered-history-at-sco-forum/articleshow/136059561.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Siang mega dam issue will be addressed through dialogue: Amit Shah",
+        "summary": "Siang Valley communities oppose pre-feasibility report activities for the proposed dam project; Union Home Minister, who is on a three-day visit to Arunachal Pradesh, assures them that the region’s culture, traditions and religious beliefs would not be compromised",
+        "outlets": 2,
+        "published": "2026-11-21T15:39:08+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/arunachal-pradesh/concerns-of-people-of-siang-valley-over-dam-project-to-be-addressed-through-dialogue-shah/article71727685.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/amit-shah-reaches-out-to-sian-dam-protesters-says-concerns-will-be-resolved-through-dialogue-101795247160838.html"
+          }
+        ]
+      },
+      {
+        "headline": "2 Tankers Struck In Strait Of Hormuz, Iran Says Oil Vessel On Fire",
+        "summary": "In recent weeks, Tehran has made multiple announcements saying ships have caught fire in the strait, often claiming they struck mines.",
+        "outlets": 2,
+        "published": "2026-11-21T15:38:26+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/2-tankers-struck-in-strait-of-hormuz-iran-says-oil-vessel-on-fire-12359557#publisher=newsstand"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "PM Modi inaugurates six-lane Nitish Setu in Bihar: ‘Bridge name a tribute to ex-CM'",
+        "summary": "The 9.76-km-long structure has been built at a cost of around ₹4,280 crore and will connect Bidupur in Vaishali with Kachchi Dargah on the outskirts of Patna.",
+        "outlets": 2,
+        "published": "2026-11-21T08:35:07+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/pm-modi-inaugurates-six-lane-nitish-setu-bridge-in-bihar-s-vaishali-101795248070309.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/pm-modi-inaugurates-nitish-setu-in-bihars-vaishali-3043824-2026-11-21?utm_source=rss"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid",
+        "summary": "Fausto Isidro Meza Flores was one of FBI’s most wanted fugitives and evaded capture for more than a decade The Mexican military captured one of the FBI’s top 10 most wanted fugitives during a special forces raid in the Mexican state of Sinaloa on Friday night. Fausto Isidro…",
+        "outlets": 3,
+        "published": "2026-11-21T17:46:55+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/21/alleged-mexican-drug-cartel-boss-el-chapo-isidro-meza-flores-arrested"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/21/world/americas/mexico-el-chapo-isidro-drug-kingpin.html"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/21/who-is-el-chapo-isidro-the-alleged-cartel-boss-arrested-in-mexico?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Liverpool vs Manchester United: Premier League – teams, prediction, lineups",
+        "summary": "One of sport's biggest rivalries takes centre stage as Liverpool host a Man United side in the EPL relegation zone.",
+        "outlets": 1,
+        "published": "2026-11-21T17:28:51+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/sports/2026/11/21/liverpool-vs-manchester-united-premier-league-teams-prediction-lineups?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Vance stops short of endorsing Trump’s claim that Iran was close to nuclear weapon",
+        "summary": "US vice-president says it’s not his place to second-guess the president, but refrains from endorsing Trump’s claim At a White House news conference on Friday, JD Vance stopped short of endorsing Donald Trump’s claim that Iran was so close to obtaining a nuclear weapon in…",
+        "outlets": 1,
+        "published": "2026-11-21T17:24:51+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/21/vance-trump-iran-nuclear-weapon"
+          }
+        ]
+      },
+      {
+        "headline": "Chelsea beaten 4-1 by Leeds United in shock home Premier League defeat",
+        "summary": "Leeds come from a goal down at Stamford Bridge to shock Chelsea and climb above their hosts to sixth in Premier League.",
+        "outlets": 1,
+        "published": "2026-11-21T17:21:37+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/sports/2026/11/21/chelsea-beaten-4-1-by-leeds-united-at-home-in-the-premier-league?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Odisha government orders inquiry into foreign visits by former CM Naveen Patnaik, aide Pandian",
+        "summary": "Social activists allege that RTI replies concerning the visits to Japan and Italy were suspicious, unclear and incomplete",
+        "outlets": 2,
+        "published": "2026-11-21T17:35:50+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/odisha/odisha-government-orders-inquiry-into-foreign-visits-by-former-cm-naveen-patnaik-aide-pandian/article71729218.ece"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/odisha-govt-orders-probe-into-foreign-visits-of-patnaik-ex-ias-officer-pandian-during-2022-24/articleshow/136059911.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Break free of limiting beliefs to achieve new heights: PM Modi at IIT Kharagpur",
+        "summary": "Narendra Modi joins Platinum Jubilee celebrations of the first IIT of the country and says the institute has and will continue to play a major role in nation building",
+        "outlets": 2,
+        "published": "2026-11-21T17:18:43+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/pm-modi-iit-kharagpur-bengal-updates-november-21-2026/article71727603.ece"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/nation-recognises-true-potential-when-it-breaks-limits-of-thinking-pm-modis-message-to-iit-kharagpur-students/articleshow/136047006.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Can Anthropic afford to put safety first?",
+        "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but not really that…",
+        "outlets": 2,
+        "published": "2026-11-21T15:00:00+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/21/nx-s1-6048678/anthropic-ipo-mission-ai-safety"
+          }
+        ]
+      },
+      {
+        "headline": "Meta offices in Gurugram, Hyderabad, Mumbai see protests from Congress's youth wing: Here's why",
+        "summary": "The Indian Youth Congress protested outside Meta offices in Gurugram, Hyderabad and Mumbai after Instagram accounts belonging to members were removed. Two accounts were restored, while the party demanded explanations about content restrictions.",
+        "outlets": 2,
+        "published": "2026-11-21T14:14:39+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/when-you-promote-rakshasas-bjp-mp-nishikant-dubey-takes-swipe-at-meta-amid-youth-congress-protests/articleshow/136056344.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/meta-offices-in-gurugram-hyderabad-mumbai-see-protests-from-congresss-youth-wing-heres-why-11795254533372.html"
+          }
+        ]
+      }
+    ]
+  }
+}
