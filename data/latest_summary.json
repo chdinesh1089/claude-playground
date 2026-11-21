@@ -1,15 +1,15 @@
 {
-  "checked_at": "2026-11-20T20:52:03Z",
-  "weekend_start": "2026-11-20",
-  "weekend_end": "2026-11-22",
+  "checked_at": "2026-11-21T19:53:26Z",
+  "weekend_start": "2026-11-27",
+  "weekend_end": "2026-11-29",
   "from_airport": "DFW",
   "to_airport": "ORD",
   "currency": "USD",
   "status": "ok",
-  "price": 376,
+  "price": 449,
   "airlines": [
-    "Frontier"
+    "American"
   ],
-  "outbound_stops": 1,
-  "trend": "up $46 from $330"
+  "outbound_stops": 0,
+  "trend": "up $73 from $376"
 }

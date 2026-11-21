@@ -107,16 +107,16 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 
 <section class="card">
 <div class="tile">
-  <div class="tile-label">Cheapest round trip &middot; Fri Nov 20 → Sun Nov 22</div>
-  <div class="tile-value">$376</div>
-  <span class="delta delta-up">&#9650; $46 since previous check</span>
-  <div class="tile-meta">Frontier &middot; 1 stop outbound &middot; checked Nov 20, 2:52 PM CT</div>
+  <div class="tile-label">Cheapest round trip &middot; Fri Nov 27 → Sun Nov 29</div>
+  <div class="tile-value">$449</div>
+  <span class="delta delta-up">&#9650; $73 since previous check</span>
+  <div class="tile-meta">American &middot; Nonstop outbound &middot; checked Nov 21, 1:53 PM CT</div>
 </div>
 </section>
 
 <section class="card">
 <h2>Price trend for the upcoming weekend</h2>
-<p class="chart-sub">Fri Nov 20 → Sun Nov 22 · each dot is one daily check</p>
+<p class="chart-sub">Fri Nov 27 → Sun Nov 29 · each dot is one daily check</p>
 <div class="chart" id="chart">
   <svg id="chart-svg" role="img" aria-label="Round-trip price by check date"></svg>
   <div class="tooltip" id="tooltip"></div>
@@ -129,6 +129,7 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 <table>
 <thead><tr><th>Checked</th><th class="num">Price</th><th>Weekend</th><th>Airline</th><th>Outbound</th></tr></thead>
 <tbody>
+<tr><td>Nov 21, 1:53 PM CT</td><td class="num">$449</td><td>Fri Nov 27 → Sun Nov 29</td><td>American</td><td>Nonstop</td></tr>
 <tr><td>Nov 20, 2:52 PM CT</td><td class="num">$376</td><td>Fri Nov 20 → Sun Nov 22</td><td>Frontier</td><td>1 stop</td></tr>
 <tr><td>Nov 19, 3:05 PM CT</td><td class="num">—</td><td>Fri Nov 20 → Sun Nov 22</td><td colspan="2" class="wrap"><span class="status-critical"><span aria-hidden="true">&#9888;</span> Failed:</span> FlightsNotFound: no flights found; received error</td></tr>
 <tr><td>Nov 18, 3:01 PM CT</td><td class="num">$330</td><td>Fri Nov 20 → Sun Nov 22</td><td>Frontier</td><td>1 stop</td></tr>
@@ -200,10 +201,10 @@ footer { font-size: 12px; color: var(--muted); margin-top: 24px; }
 </div>
 </section>
 
-<footer>Last check Nov 20, 2:52 PM CT. Prices are spot checks, not guaranteed fares.</footer>
+<footer>Last check Nov 21, 1:53 PM CT. Prices are spot checks, not guaranteed fares.</footer>
 </main>
 
-<script type="application/json" id="points">[{"t": "2026-11-14T18:36:21Z", "label": "Nov 14, 12:36 PM CT", "price": 330, "airline": "Frontier", "stops": "1 stop"}, {"t": "2026-11-15T19:12:04Z", "label": "Nov 15, 1:12 PM CT", "price": 330, "airline": "Frontier", "stops": "Nonstop"}, {"t": "2026-11-16T22:40:46Z", "label": "Nov 16, 4:40 PM CT", "price": 459, "airline": "United", "stops": "1 stop"}, {"t": "2026-11-17T21:27:16Z", "label": "Nov 17, 3:27 PM CT", "price": 392, "airline": "Frontier", "stops": "Nonstop"}, {"t": "2026-11-18T21:01:19Z", "label": "Nov 18, 3:01 PM CT", "price": 330, "airline": "Frontier", "stops": "1 stop"}, {"t": "2026-11-20T20:52:03Z", "label": "Nov 20, 2:52 PM CT", "price": 376, "airline": "Frontier", "stops": "1 stop"}]</script>
+<script type="application/json" id="points">[{"t": "2026-11-21T19:53:26Z", "label": "Nov 21, 1:53 PM CT", "price": 449, "airline": "American", "stops": "Nonstop"}]</script>
 <script>
 (function () {
   const points = JSON.parse(document.getElementById("points").textContent);
