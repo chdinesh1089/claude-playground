@@ -1,0 +1,506 @@
+{
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T18:31:12+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [
+    {
+      "source": "Google News US",
+      "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
+      "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    },
+    {
+      "source": "Google News India",
+      "url": "https://news.google.com/rss?hl=en-IN&gl=IN&ceid=IN:en",
+      "error": "HTTPError: HTTP Error 503: Service Unavailable"
+    }
+  ],
+  "sections": {
+    "top": [
+      {
+        "headline": "COP31 climate talks collapse in Turkey without deal over fossil fuels",
+        "summary": "Participating nations in the U.N. COP31 climate conference failed to reach consensus on fossil fuels and finance after oil-producing countries blocked any mention of phasing out coal, oil and gas.",
+        "outlets": 10,
+        "published": "2026-11-22T16:47:30+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Technology/climate-conference-ends-signature-agreement-countries-clash-fossil/story?id=138359179"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/un-cop31-climate-conference-ends-no-agreement-fossil-fuel-debate-standstill/"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/climate-talks-push-for-pact-after-rifts-on-fossil-fuels-finance-11795332862463.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/22/climate/cop31-climate-summit-ends-climate.html"
+          }
+        ],
+        "why": "Global climate negotiations impact international environmental policies and long-term economic frameworks worldwide."
+      },
+      {
+        "headline": "Democrats clinch historic House majority of 258 seats",
+        "summary": "Democrat Chuck Hubbard defeated Republican Rep. Virginia Foxx in North Carolina, giving Democrats their largest House majority since 1992.",
+        "outlets": 2,
+        "published": "2026-11-22T18:24:22+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/democrats-clinch-a-historic-house-majority-of-at-least-258-seats-the-largest-since-1992"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/22/us/politics/democrats-midterm-house-majority-record.html"
+          }
+        ],
+        "why": "A major shift in congressional power alters the legislative landscape in Washington."
+      },
+      {
+        "headline": "Trump vows to work with Democrats to cap credit card interest rates at 10%",
+        "summary": "President Trump stated he wants to work with Democrats on a standard proposal to substantially reduce standard credit card interest rates from current median levels.",
+        "outlets": 2,
+        "published": "2026-11-21T21:20:34+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-vows-to-work-with-democrats-to-cap-credit-card-interest-rates-at-10"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-credit-card-rates-democrats-politics/"
+          }
+        ],
+        "why": "Directly impacts consumer borrowing costs and retail banking across the US economy."
+      },
+      {
+        "headline": "Nepal PM Balendra Shah arrives in Delhi for official visit to India",
+        "summary": "Nepal Prime Minister Balendra Shah arrived in India to meet with External Affairs Minister S Jaishankar and Prime Minister Modi to foster bilateral trade and connectivity relations.",
+        "outlets": 4,
+        "published": "2026-11-22T17:10:58+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/nepal-pm-balendra-shah-arrives-in-delhi-for-first-official-visit-to-india/article71731829.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/india-cherishes-special-friendship-with-nepal-jaishankar-meets-nepal-pm-balen-shah/articleshow/136076893.cms"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/india-cherishes-special-friendship-s-jaishankar-meets-nepal-pm-balen-shah-12362718#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/nepal-pm-balen-shah-india-visit-live-updates-pm-narendra-modi-meeting-new-delhi-bilateral-talks-agenda-101795338320016.html"
+          }
+        ]
+      },
+      {
+        "headline": "Who is Eva Yi Xie? Why was the 24-year-old Princeton PhD student detained by ICE in the US",
+        "summary": "Princeton University doctoral student Eva Yi Xie was detained by US Immigration and Customs Enforcement after attending an academic conference. While the DHS alleges she overstayed her visa, her lawyers argue that her pending asylum application allows her to remain in the US.",
+        "outlets": 1,
+        "published": "2026-11-22T13:06:31+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/who-is-eva-yi-xie-why-was-the-24-year-old-princeton-phd-student-detained-by-ice-in-the-us-11795351609686.html"
+          }
+        ]
+      }
+    ],
+    "us": [
+      {
+        "headline": "Trump orders federal contractors to consult White House on congressional inquiries",
+        "summary": "President Trump directed federal contractors to consult the White House regarding congressional inquiries and to withhold communications the administration considers privileged.",
+        "outlets": 3,
+        "published": "2026-11-21T22:40:36+00:00",
+        "links": [
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-orders-federal-contractors-to-check-with-white-house-before-responding-to-congress"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/21/us/politics/trump-congressional-oversight-contractors.html"
+          }
+        ]
+      },
+      {
+        "headline": "Judge blocks Trump administration’s effort to transform homelessness policy",
+        "summary": "A federal judge in Rhode Island blocked an administration effort to shift federal aid away from housing subsidies and toward treatment for mental illness and addiction.",
+        "outlets": 1,
+        "published": "2026-11-22T00:03:40+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/21/us/politics/judge-trump-homeless-aid-addiction-treatment.html"
+          }
+        ]
+      },
+      {
+        "headline": "Delta flights in and out of Atlanta delayed due to system outage",
+        "summary": "Delta flights in and out of Atlanta faced significant delays due to a problem with the system that calculates a plane's weight and balance and baggage network issues.",
+        "outlets": 4,
+        "published": "2026-11-22T17:46:44+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/transportation/1039779/delta-flights-delayed-system-outage"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/delta-flights-alert-after-microsoft-outage-and-faa-ground-stops-1000-flights-delayed-at-atlanta-newark-new-york-and-other-us-airports-as-new-automation-glitch-disrupts-thanksgiving-travel/articleshow/136080047.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/22/us/delta-flight-delays-system-outage.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/delta-air-lines-nationwide-delays-amid-baggage-network-system-issue/"
+          }
+        ]
+      },
+      {
+        "headline": "FBI investigating apparent hack of its criminal database",
+        "summary": "The FBI is reportedly investigating an apparent hack of the National Crime Information Center database used by federal and local law enforcement.",
+        "outlets": 2,
+        "published": "2026-11-22T00:10:44+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cvze7de86pk3o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/ap-source-fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database"
+          }
+        ]
+      },
+      {
+        "headline": "Immigration officers make arrests at Seattle airport in 'distressing' scene, delaying flight",
+        "summary": "Video of the incident showed officers dragging away at least one person at Seattle-Tacoma International Airport as a woman screams that her daughter is being taken and she has a work permit.",
+        "outlets": 2,
+        "published": "2026-11-22T16:18:21+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/immigration-officers-make-arrests-at-seattle-airport-in-distressing-scene-delaying-flight"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/22/us/ice-arrest-passengers-seattle-airport.html"
+          }
+        ]
+      },
+      {
+        "headline": "Hunger Games rebounds with $120 million opening at box office",
+        "summary": "The Hunger Games: Sunrise on the Reaping earned nearly three times the domestic opening box office total of its predecessor.",
+        "outlets": 1,
+        "published": "2026-11-22T17:53:44+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/22/business/media/hunger-games-box-office.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Amit Shah launches development initiatives in Arunachal Pradesh",
+        "summary": "Union Home Minister Amit Shah launched development initiatives, including 199 Vibrant Villages projects worth over ₹5,610 crore, during his visit to Arunachal Pradesh.",
+        "outlets": 2,
+        "published": "2026-11-22T17:10:22+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/arunachal-pradesh/amit-shah-says-congress-neglected-development-provided-inadequate-funds-during-its-rule-in-arunachal-pradesh/article71731087.ece"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/40-arunachal-border-villages-saw-reverse-migration-amit-shah-12362762#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Eight killed as speeding minivan rams into roadside tree in Tamil Nadu",
+        "summary": "Preliminary investigation revealed that the driver of the van lost control of the vehicle due to overspeeding in Tiruchirappalli.",
+        "outlets": 4,
+        "published": "2026-11-22T17:59:34+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/eight-killed-as-speeding-minivan-rams-into-roadside-tree-in-tamil-nadus-tiruchirappalli-101795369432656.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/tamil-nadu/story/tiruchirappalli-car-crash-eight-killed-two-seriously-injured-president-murmu-pm-modi-cm-vijay-express-grief-pmnrf-relief-3044644-2026-11-22?utm_source=rss"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/cities/Tiruchirapalli/eight-persons-killed-two-others-injured-as-van-rams-roadside-tree-on-state-highway-in-tiruchi/article71731469.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/madurai/8-killed-2-injured-as-car-rams-into-tree-in-tamil-nadus-tiruchirappalli/articleshow/136076818.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Three killed and 33 injured as tractor-trolley overturns in Madhya Pradesh",
+        "summary": "An overloaded tractor-trolley transporting villagers returning from a religious pilgrimage overturned in Sagar district.",
+        "outlets": 3,
+        "published": "2026-11-22T15:01:59+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/bhopal/3-killed-33-injured-as-tractor-trolley-carrying-pilgrims-overturns-on-nh-44-in-mps-sagar/articleshow/136077244.cms"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/3-killed-33-injured-after-tractor-trolley-overturns-in-madhya-pradesh-12362118#publisher=newsstand"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/mp-3-killed-33-injured-as-tractor-trolley-carrying-pilgrims-overturns-on-nh44-101795349043904.html"
+          }
+        ]
+      },
+      {
+        "headline": "₹1.86 crore in cash and gold seized from Panchkula CGST officer",
+        "summary": "The CBI recovered cash, gold and silver worth ₹1.86 crore from the residence of an arrested Haryana CGST officer caught accepting a bribe.",
+        "outlets": 2,
+        "published": "2026-11-22T06:55:26+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/new-updates/gst-officer-accepts-rs-10-lakh-bribe-cbi-raids-his-home-next-day-recovers-rs-1-86-crore-in-assets-including-rs-24-lakh-cash-rs-15-65-lakh-in-foreign-currency-gold-silver/articleshow/136069003.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/rs-1-86-crore-in-cash-gold-seized-from-panchkula-cgst-officer-arrested-by-cbi-for-rs-10-lakh-bribe-details-11795328250430.html"
+          }
+        ]
+      },
+      {
+        "headline": "Two Army soldiers killed after tank runs over them during training",
+        "summary": "Two Indian Army soldiers died after being accidentally run over by a tank during a military training exercise in Haryana's Hisar district.",
+        "outlets": 1,
+        "published": "2026-11-22T17:26:30+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/chandigarh/2-army-soldiers-killed-after-tank-runs-over-them-during-training-exercise-in-haryanas-hisar/articleshow/136080057.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Hyderabad on high alert after email warns of terror attacks",
+        "summary": "Hyderabad police stepped up security measures after receiving an email threatening bomb explosions at railway and tourist locations.",
+        "outlets": 3,
+        "published": "2026-11-22T15:25:06+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/hyderabad-gets-terror-threat-from-let-named-email-in-retaliation-for-lateef-bhat-s-killing-101795361107231.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/cities/hyderabad/story/hyderabad-terror-threat-let-email-kachiguda-hotel-railway-station-3044572-2026-11-22?utm_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/city/hyderabad/hyderabad-police-step-up-security-after-email-threatens-26/11-style-terror-attack-at-hotel-railway-station/articleshow/136080025.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Russian ship hit at Libyan naval base in suspected drone strike",
+        "summary": "A Russian ship docked at a Libyan naval base for fuel was struck in a suspected drone strike, leaving several injured.",
+        "outlets": 5,
+        "published": "2026-11-22T17:25:47+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/russian-vessel-suspected-sea-drone-strike-benghazi-naval-base-libya-3044631-2026-11-22?utm_source=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/22/suspected-drone-strike-hits-russian-vessel-in-libya?traffic_source=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/22/blast-russian-ship-suspected-drone-attack-benghazi-libya"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "South Korean education minister resigns over AI cheating scandal",
+        "summary": "South Korea's education minister resigned following public backlash over last-minute anti-cheating rules implemented for college entrance exams.",
+        "outlets": 3,
+        "published": "2026-11-22T12:12:07+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/22/world/asia/korea-csat-exam-ai-cheating.html"
+          }
+        ]
+      },
+      {
+        "headline": "Three killed and dozens missing after fire at Indonesian factory",
+        "summary": "At least three people were killed and many more feared dead following a major fire at a confectionary factory in Indonesia.",
+        "outlets": 2,
+        "published": "2026-11-22T14:05:20+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/22/fire-confectionary-factory-indonesia-jakarta"
+          }
+        ]
+      },
+      {
+        "headline": "Drone attacks kill four near Sudan’s capital and damage UN building",
+        "summary": "Drones reportedly targeted UN and government buildings as well as Khartoum's airport, with the Rapid Support Forces blamed for the attack.",
+        "outlets": 1,
+        "published": "2026-11-22T15:03:38+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/22/rsf-drones-kill-four-in-khartoum?traffic_source=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Treasury secretary calls on Nvidia to provide answers on chip sales to China",
+        "summary": "Treasury Secretary Scott Bessent stated that the Trump administration needs answers regarding Nvidia's semiconductor sales to China.",
+        "outlets": 4,
+        "published": "2026-11-22T17:55:31+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/22/business/scott-bessent-jensen-huang-nvidia.html"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/bessent-says-no-further-restrictions-are-needed-for-nvidia-chip-exports-to-china"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/we-do-need-answers-trump-aide-bessent-on-nvidias-sale-of-chips-to-china/articleshow/136080639.cms"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/bessent-says-trump-administration-has-been-in-touch-with-nvidia-leadership-but-still-needs-answers/"
+          }
+        ]
+      },
+      {
+        "headline": "China's spies set sights on AI chips years before Nvidia scandal",
+        "summary": "China's espionage agency has been running a secret campaign to help domestic companies acquire advanced AI chips and gather intelligence on the sector.",
+        "outlets": 2,
+        "published": "2026-11-22T11:03:04+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/21/world/asia/china-nvidia-spy-chips-state-security.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/chinas-spies-set-sights-on-ai-chips-years-before-nvidia-scandal-report/articleshow/136071430.cms"
+          }
+        ]
+      },
+      {
+        "headline": "FSSAI orders prosecution against Bisleri International for unsafe water",
+        "summary": "Food safety regulators ordered prosecution against Bisleri International after packaged drinking water samples failed safety tests and non-compliant bromate limits.",
+        "outlets": 5,
+        "published": "2026-11-22T16:35:52+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/fssai-orders-prosecution-against-bisleri-international-for-unsafe-packaged-drinking-water/article71732196.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/fssai-sanctions-prosecution-against-bisleri-international-flags-unsafe-packaged-drinking-water-101795360763420.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/fssai-sanctions-prosecution-against-bisleri-over-unsafe-packaged-drinking-water/articleshow/136077197.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/bisleri-packaged-drinking-water-declared-unsafe-fssai-prosecution-food-safety-violations-3044632-2026-11-22?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "As AI detects flaws, is it causing more tech outages?",
+        "summary": "Experts note that rapid AI identification of system vulnerabilities and pressure on companies to fix them can lead to unintended tech outages.",
+        "outlets": 2,
+        "published": "2026-11-22T17:13:38+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/as-ai-detects-flaws-in-computer-systems-is-it-causing-more-tech-outages-and-disruptions"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/21/us/politics/tech-outages-ai-disruptions.html"
+          }
+        ]
+      }
+    ]
+  }
+}
