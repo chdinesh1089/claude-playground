@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-21T19:53:26Z",
+  "checked_at": "2026-11-22T20:03:39Z",
   "weekend_start": "2026-11-27",
   "weekend_end": "2026-11-29",
   "from_airport": "DFW",
@@ -11,5 +11,5 @@
     "American"
   ],
   "outbound_stops": 0,
-  "trend": "up $73 from $376"
+  "trend": "unchanged"
 }
