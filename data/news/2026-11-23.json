@@ -1,0 +1,574 @@
+{
+  "date": "2026-11-23",
+  "generated_at": "2026-11-23T22:39:22+00:00",
+  "status": "fallback",
+  "model": null,
+  "error": "gemini-flash-lite-latest: HTTP 503 [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Stocks Surge After Jensen Huang Is Reinstated as Nvidia CEO",
+        "summary": "The market had already started to bounce back from a sell-off last week. Then, the news that Nvidia reinstated its former chief executive sent shares soaring.",
+        "outlets": 11,
+        "published": "2026-11-23T21:35:00+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/22/business/nvidia-stock-huang-ai-sp500-markets.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/nvidia-ceo-jensen-huang-resigns/"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/jensen-huang-gets-hugs-cheers-at-nvidia-hq-vows-to-be-a-better-ceo-3045528-2026-11-24?utm_source=rss"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/jensen-huang-reinstated-as-nvidia-chief-how-did-we-get-here?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Trump engineered a risky comeback for Jensen Huang",
+        "summary": "After Nvidia's board accepted Jensen Huang's resignation as CEO, following reports that Huang had an affair with an alleged Chinese spy, President Donald Trump, too, appeared to submit to the new reality. Appearing on Stephen A. Smith's radio show shortly after the news came…",
+        "outlets": 6,
+        "published": "2026-11-23T22:25:12+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/technology/2026/nov/23/jensen-huang-reinstated-as-nvidia-chief-executive"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/23/business/trump-jensen-huang-nvidia.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/jensen-huang-nvidia-return-trump-altered-assassination-attempt-photo-red-bra-3045489-2026-11-23?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "How Huang's resignation and return unfolded at Nvidia",
+        "summary": "Jensen Huang's shocking exit as CEO of Nvidia unspooled suddenly, yet signs of trouble had emerged much earlier.",
+        "outlets": 6,
+        "published": "2026-11-23T21:18:41+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-resignation-scandal-timeline/"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/nvidia-board-reinstates-jensen-huang-president-ceo-board-director-live-updates-live-updates-nvidia-stock-jumps-30-after-jensen-huang-returns-as-ceo-12367017#publisher=newsstand"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/technology/video/nvidia-reinstates-jensen-huang-as-ceo-and-board-director-after-resignation-reversal-ytvd-3045517-2026-11-23?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Uttar Pradesh polls: SP, Congress kick off seat-sharing talks",
+        "summary": "The meeting held at the residence of Congress Rajya Sabha MP Pramod Tiwari in New Delhi lasted just about 20 minutes, and the two sides are likely meet again November 24 to take the negotiations forward",
+        "outlets": 4,
+        "published": "2026-11-23T17:14:02+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/uttar-pradesh/sp-congress-kick-off-seat-sharing-talks-for-up-polls/article71735827.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/will-lose-badly-keshav-maurya-says-sp-congress-alliance-no-problem-for-bjp-amid-seat-sharing-talks/articleshow/136106467.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/sp-congress-seat-sharing-talks-uttar-pradesh-polls-2027-cordial-atmosphere-will-work-out-formula-samajwadi-party-up-news-101795418614893.html"
+          },
+          {
+            "source": "The New Indian Express",
+            "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQazNLU0FhQW8zbmROM2ZNMW1HR2xySFZYNUNxNlZOX2dqN3Roa19nNHdBTUZJMWNSTVpRd3ltRFlwd0phWXVsNE1teFFQa1dnUjRYcUVUMlZHeWFMMWt0a3ppdU5DTUhzancwakg2OU9LbE13b0ZhYUFuQ1lQLVh6Sk5sZGV5SUZ3eFBxV0xUcVhRYkhrbU9QWGRiSmRMbWVmZ25ZalgyWjVoT3QzNk9TNjBfUFhSV09xRzNGWDBEYlRxN01zbF9RcXV4YVZwXzZQbkwteEVTT1RYdlhGQkNTYlZwdGZVdw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Why I’m Not Surprised Jensen Huang Is Back",
+        "summary": "The Opinion contributing writer Natasha Sarin explains why the Nvidia chief is so important to the A.I. industry as a whole.",
+        "outlets": 4,
+        "published": "2026-11-23T22:24:59+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/23/opinion/jensen-huang-nvidia-economy-ai.html"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/jensen-huang-alice-huang-nvidia-jensen-huang-is-back-at-nvidia-but-where-is-alice-huang-12367715#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/technology/talking-points/story/jensen-huang-is-back-as-nvidia-ceo-because-it-was-never-about-his-sex-affairs-3045387-2026-11-23?utm_source=rss"
+          }
+        ]
+      }
+    ],
+    "us": [
+      {
+        "headline": "What Russian warship did Ukraine just sink?",
+        "summary": "Ukraine says it sank the Russian warship Merkury off the coast of Libya. Here's why the vessel is significant.",
+        "outlets": 4,
+        "published": "2026-11-23T18:25:55+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/what-russian-warship-did-ukraine-just-sink?traffic_source=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/zelenskyy-hails-ukraines-attack-on-a-russian-warship-docked-at-a-naval-base-in-libya"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/ukraine-drone-strike-sinks-russian-warship-merkury-libya-zelenskyy-itspc-3045031-2026-11-23?utm_source=rss"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/23/g-s1-155017/ukraine-attack-russian-warship-libya"
+          }
+        ]
+      },
+      {
+        "headline": "Jimmy Gomez to resign after House ethics panel finds evidence of sexual misconduct",
+        "summary": "Democrat, who lost re-election bid, found to have made ‘unwelcome sexual advances’ towards House staffer Jimmy Gomez will resign from Congress after a House ethics report released on Monday found “substantial evidence” that the California Democrat had “engaged in sexual…",
+        "outlets": 4,
+        "published": "2026-11-23T22:21:45+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/23/jimmy-gomez-congress-investigation-sexual-misconduct"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/ethics-probe-finds-democratic-rep-jimmy-gomez-made-unwelcome-sexual-advances-to-a-staffer"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/house-ethics-investigation-jimmy-gomez-sexual-misconduct/"
+          },
+          {
+            "source": "Politico",
+            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQ1FaNUp1Rno2b3F5Wk5zYndJSTJjajNrT3BYYllDX3lENlpOUG5MeWtBZGwtUWw2Y0FSNHNVNVZwaHYyZXZJNDlMYlVpR2QxM1I0RkxFVmJQbnY4WThoeXdOTHBZTXM5UGhibzh5ejhyR2JEUmJ2Z2Fva3RXQnBQZWxvSXRoZzJ1QWU5T2Fkc1c?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Trump Administration Imposes Sanctions on Megaspeed, Singaporean Firm at Center of Nvidia Scandal",
+        "summary": "The administration added Megaspeed to the entity list, a trade blacklist, after weeks of sparring among top officials on the decision.",
+        "outlets": 4,
+        "published": "2026-11-23T22:18:30+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/23/business/trump-administration-megaspeed-trade-blacklist-nvidia.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/megaspeed-trade-blacklist-nvidia-jensen-huang/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/us-to-blacklist-megaspeed-chip-firm-linked-to-nvidia-scandal-report-12368237#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Trump tells Army to halt detonation for now in Iowa this week",
+        "summary": "President Trump said he will wait for the courts and Iowa Gov.-elect Rob Sand to agree with the Army's plan.",
+        "outlets": 3,
+        "published": "2026-11-23T22:36:20+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-tells-army-to-halt-detonation-in-iowa-this-week/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/trump-ordered-military-hold-off-iowa-explosives-detonation/story?id=138384845"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/trump-told-the-army-to-pause-the-detonation-of-9500-pounds-of-lead-azide-in-iowa-heres-what-to-know"
+          }
+        ]
+      },
+      {
+        "headline": "Trump defers to appeals court over army plan to detonate bomb-making material in Iowa",
+        "summary": "Environmentalists sued last week to stop detonation of 68 barrels of lead azide over health and pollution concerns Donald Trump on Monday halted the planned detonation of several tons of degraded bomb-making material at an Iowa ammunition plant, urging a federal appeals court…",
+        "outlets": 3,
+        "published": "2026-11-23T22:22:12+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/23/iowa-lead-bomb-appeals-court"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/lead-azide-detonation-iowa-army-explosives/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/trump-says-army-will-not-detonate-bomb-making-chemicals-in-iowa-without-court-approval"
+          }
+        ]
+      },
+      {
+        "headline": "Republican senators criticize Nvidia’s decision to reinstate Jensen Huang",
+        "summary": "Outcry builds over Trump-backed move to bring back CEO as lawmakers call for Huang’s testimony before Congress US politics – live updates Republican lawmakers roundly criticized the Nvidia board’s decision to reinstate chief executive Jensen Huang, even after Donald Trump said…",
+        "outlets": 3,
+        "published": "2026-11-23T21:09:10+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/technology/2026/nov/23/trump-jensen-huang-nvidia-reinstated"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/nvidia-jensen-huang-trump-comment-national-security-risk/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/made-deal-trump-convinced-nvidia-board-reinstate-jensen/story?id=138373104"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Nvidia shares jump over 30%, log biggest single-day gain since 2003 as CEO Huang returns",
+        "summary": "Nvidia's shares increased significantly after Jensen Huang returned as CEO, leading to a rise in AI stocks. The S&P 500 and the Nasdaq Composite saw their largest single-day gains since April 2025. Many other technology and semiconductor companies, including Amazon and Oracle,…",
+        "outlets": 3,
+        "published": "2026-11-23T21:45:24+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/business/international-business/nvidia-shares-jump-31-5-log-biggest-single-day-gain-since-2003-as-ceo-jensen-huang-returns/articleshow/136113905.cms"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/ceo-jensen-huang-returns-to-nvidias-office?traffic_source=rss"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/nvidia-shares-jump-30-after-jensen-huang-returns-as-ceo-3045312-2026-11-23?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "CJP’s Saurav Das claims he was stopped at Delhi airport from travelling to U.K.",
+        "summary": "In posts on X, Mr. Das said he was stopped at the immigration counter at the Delhi airport before boarding his 1 a.m. flight to London",
+        "outlets": 3,
+        "published": "2026-11-23T19:49:46+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/cjps-saurav-das-claims-he-was-stopped-at-delhi-airport-from-travelling-to-uk/article71736209.ece"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/coward-government-cjps-saurav-das-says-he-was-stopped-from-flying-for-lecture-at-university-of-oxford/articleshow/136112962.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/cjps-saurav-das-says-stopped-at-delhi-airport-barred-from-flying-to-london-lecture-at-oxford-university-101795456221713.html"
+          }
+        ]
+      },
+      {
+        "headline": "WhatsApp Web users beware! Govt warns against leaving accounts logged in on shared computers; here’s why",
+        "summary": "The Indian government has warned WhatsApp Web users against leaving their accounts logged in on shared or public computers. The I4C says active sessions could expose private chats and allow criminals to impersonate users and carry out fraud.",
+        "outlets": 3,
+        "published": "2026-11-23T20:24:32+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/log-out-of-whatsapp-web-on-shared-computers-to-avoid-misuse-govt/articleshow/136113691.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/whatsapp-web-users-beware-govt-warns-against-leaving-accounts-logged-in-on-shared-computers-here-s-why-11795432349801.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/avoid-whatsapp-web-for-sensitive-official-work-ministry-of-home-affairs-flags-cybersecurity-risks-101795429926189.html"
+          }
+        ]
+      },
+      {
+        "headline": "India announces ₹15k-cr package for Nepal as PM Shah wraps up maiden visit",
+        "summary": "The development cooperation package is aimed at supporting Nepal’s reconstruction efforts following the devastating floods in August, strengthening its long-term development and improving its capacity to deal with future disasters.",
+        "outlets": 3,
+        "published": "2026-11-23T13:49:32+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/india-announces-rs-15k-cr-package-for-nepal-as-pm-shah-wraps-up-maiden-visit-11795437079875.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-unveils-1-6-billion-development-package-for-nepal-as-both-step-up-cooperation-101795429639378.html"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BSHRycnFnTGJEUzFNUElLc1NZSV8yczlGNnFXdWJKa2NhRDBZb2R0bkhsZF9RRXpmOG42LW9kYjdKbUIzamZMcno0ajlJa1l5V2dxbmdVVnA4RUk?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Bisleri-FSSAI row: How can prolonged exposure to bromate and PAHs in drinking water affect your health?",
+        "summary": "WHO guidance warns that prolonged exposure to bromate and certain PAHs in drinking water may pose health risks, including cancer. This comes as FSSAI pursues prosecution against Bisleri over a facility sample reportedly exceeding the bromate limit.",
+        "outlets": 3,
+        "published": "2026-11-23T12:14:36+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/health/story/bisleri-water-sample-row-packaged-drinking-water-vs-natural-mineral-water-3045164-2026-11-23?utm_source=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/bislerifssai-row-how-can-prolonged-exposure-to-bromate-and-pahs-in-drinking-water-affect-your-health-11795426935207.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/fssai-sanctions-prosecution-against-bisleri-international-flags-unsafe-packaged-drinking-water-101795360763420.html"
+          }
+        ]
+      },
+      {
+        "headline": "Bromate in Bisleri: How safe is your bottled water?",
+        "summary": "Bromate in Bisleri How safe is your bottled water",
+        "outlets": 3,
+        "published": "2026-11-23T06:34:09+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/health/story/bisleri-bromate-case-fssai-prosecution-packaged-water-sample-3044851-2026-11-23?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/safe-for-consumption-bisleri-after-fssai-orders-prosecution-over-unsafe-packaged-drinking-water-101795409576518.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQVnJGLVRSX3FReWkzUjVCNHg2eHlMdmN3TjRvREN1ZkR5TEw1Qi0tUlFVNzVVQWpoWVBSSll2WUp5OVZoN0NSaVBkbENOeFhQYzIxSUZWaVlJZGc5NTJtZzRmaDJld0hiR0JTTkFEbm1jWW8yWXc2V3c4MWphSzhFMHZnWUIyNHcwY1o1OUMxaV84dGgwek1ZN2dZT2JLVzhGOExFYzhRSDZOZUFWZjg5Y3N4a3FsZU5kLWhIOWF5UnNpX0FXUnEyd2g3SzFQVnlhMzZ2QmRYSWtSRjRuYU0xZ1N1c1ZORU5QZS02VDNabVNHaXFJTGFOcXlFc3ZiZ9IBhAJBVV95cUxNSmZGMDBaaHY0VnZTNER0MmZ3YVFMWkZBU2RwMU5wMGlGYzJGbEQwQ0dpbGV4dWRGX2hTM1hTbktpS1NjWUpwbjlCcWtsb1NocFBSOHpOTHNVcE83UnRrb3ZLaVBzdWR0dVJ2anlCYUlRYjFjQU42NTRZaEhxSm9RajIyd1didWg0QmNSdUdPSEd0UTdsdVg4ZjRxMmNpY1ZoeTB3RWs4QkRIOWktSmxzSHk3TmZiRklsUjNaWXlxejhha1NCdXNYV0NWYzRXVGNzMUlFZFQ5NXhYMU5RWFJhOVd4dTVCOUJMY1F5Vzh1YTRVNi1PTDhDX2NVQlo2RmNhaUdzVA?oc=5"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Cop31 collapses: why did climate talks fall apart? - The Latest",
+        "summary": "Countries at the Cop31 climate summit failed to reach a keystone agreement for the first time in 17 years. The talks, co-chaired by Turkey and Australia, were intended to produce a pact that would have injected urgency into climate action and financing for vulnerable states.…",
+        "outlets": 4,
+        "published": "2026-11-23T17:19:55+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/news/audio/2026/nov/23/cop31-collapses-why-did-climate-talks-fall-apart-the-latest"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/why-did-cop31-climate-talks-collapse-without-a-deal?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/23/climate/cop31-collapse-what-next.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm75237wlp3lo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Iranian singer and four others receive lashes after performance without hijab",
+        "summary": "Western governments and rights groups have criticised flogging as torture and a violation of international law An Iranian singer and four members of her production team ⁠have each received 74 lashes after being sentenced for “offending public decency by producing and…",
+        "outlets": 3,
+        "published": "2026-11-23T20:56:17+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/23/iranian-singer-lashes-performing-without-hijab"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9hRzlreTljb2FzdW4tYWs1TW00Y05KZWU3MFNiblljV18wcWpZSExVOF9fSG5aZlJwQjIzQ0ZLTFhqVWw0Xy1VLXE4bzZISnpyT1FvWEtPMWVHeU0?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "What strike on Russian ship in Libya says about spread of Ukraine war",
+        "summary": "Ukraine's sinking of a Russian battleship at a port in Libya raises the stakes of the war a notch, writes Frank Gardner.",
+        "outlets": 3,
+        "published": "2026-11-23T20:48:35+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/europe/no-safe-waters-for-russian-ships-how-ukraine-pulled-off-2400-km-drone-strike-in-libya/articleshow/136098386.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Burnham says it would be ‘unthinkable’ to rejoin EU without referendum",
+        "summary": "Prime minister also says former Tory premiers who have criticised revival of Brexit debate are ‘stuck in the past’ Andy Burnham has said it would be “unthinkable” for the UK to rejoin the EU without holding another referendum, offering his strongest commitment yet to directly…",
+        "outlets": 2,
+        "published": "2026-11-23T19:26:01+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/politics/2026/nov/23/andy-burnham-brexit-deal-eu"
+          },
+          {
+            "source": "Financial Times",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWEZlRk9DTzcwQUwyQnBpTC1wbmFxTnlLZWNGdHlQSUFmWTVKNEtSemczZzNFanNXX01yV2pwaW5QeXNQTEFJbDgzeDNVVm1JYmtjUUt0NlF1cmZJa2ZrdkhHS25Qd1Y0Z3ZNd05VcHJoSUF3U2N3Ym5TY1ByS0p3U01KQS0?oc=5"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "What’s inside India’s ₹15,000-crore Nepal package? What PM Modi-Balen Shah meet means for trade, investment and infra",
+        "summary": "PM Modi announced a ₹15,000-crore package for Nepal as he met PM Balen Shah in Delhi. The two sides signed eight pacts covering trade, infrastructure, energy and technology, with new port access, rail links, hydropower projects and an IIT campus planned.",
+        "outlets": 4,
+        "published": "2026-11-23T17:49:22+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/whats-inside-india-s-15-000-crore-nepal-package-what-pm-modi-balen-shah-meet-means-for-trade-investment-and-infra-11795454711354.html"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/india-announces-development-package-of-24000-crore-nepalese-rupees-for-nepals-development/article71734100.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-nepal-sign-mous-from-space-to-security-as-pm-modi-hosts-balen-shah-projects-new-delhi-101795422134990.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-nepal-seek-a-new-beginning-what-it-means-for-indian-power-infra-companies-balen-shah-narendra-modi/articleshow/136092621.cms"
+          }
+        ]
+      },
+      {
+        "headline": "India pledges $1.6bn in flood relief for Nepal as Balendra Shah visits Modi",
+        "summary": "Nepal's Prime Minister Balendra Shah is in New Delhi for a two-day visit — his first since coming to power in March.",
+        "outlets": 3,
+        "published": "2026-11-23T18:12:55+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/23/india-pledges-1-6bn-in-flood-relief-for-nepal?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwx2ervemj4ko?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/pm-modi-meets-nepal-pm-balendra-shah-announces-1-6-billion-aid-package-for-himalayan-nations-flood-recovery-11795425668391.html"
+          }
+        ]
+      },
+      {
+        "headline": "Nvidia investors ride roller-coaster as Jensen Huang quits, returns in 11 days",
+        "summary": "Nvidia investors ride rollercoaster as Jensen Huang quits returns in days",
+        "outlets": 3,
+        "published": "2026-11-23T16:33:59+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/business/story/nvidia-shares-surge-35-percent-jensen-huang-returns-ceo-after-11-day-exit-3045442-2026-11-23?utm_source=rss"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/world/us/winners-and-losers-from-jensen-huangs-return-to-nvidia-after-a-1-4-trillion-market-value-loss-who-still-has-reason-to-worry/articleshow/136107384.cms"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/23/nx-s1-6050910/nvidias-jensen-huang-trump"
+          }
+        ]
+      },
+      {
+        "headline": "U.S. stocks see best day in more than a year, as return of Jensen Huang revives AI enthusiasm",
+        "summary": "Jensen Huang’s return as CEO of Nvidia powered a massive bounce in the U.S. stock market on Monday by helping to restore faith in the artificial-intelligence trade.",
+        "outlets": 2,
+        "published": "2026-11-23T21:51:00+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/u-s-stocks-see-best-day-in-more-than-a-year-as-return-of-jensen-huang-revives-ai-enthusiasm-c3b9d274?mod=mw_rss_topstories"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/23/world/jensen-huang-return-nvidia-ukraine.html"
+          }
+        ]
+      }
+    ]
+  }
+}
