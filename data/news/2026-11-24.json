@@ -1,0 +1,510 @@
+{
+  "date": "2026-11-24",
+  "generated_at": "2026-11-24T21:12:13+00:00",
+  "status": "fallback",
+  "model": null,
+  "error": "gemini-flash-lite-latest: HTTP 503 [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Jensen Huang Apologizes to Nvidia Employees, Says He Is in Therapy",
+        "summary": "A day after returning to his company, Mr. Huang acknowledged that he had violated Nvidia’s code of conduct and “made some terrible mistakes.”",
+        "outlets": 16,
+        "published": "2026-11-24T20:34:13+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/24/technology/jensen-huang-apology-nvidia-ceo.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/technology/2026/nov/24/jensen-huang-nvidia-apologizes-staff"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/nvidia-board-under-scrutiny-after-reinstating-jensen-huang-as-ceo-12372684#publisher=newsstand"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/us-news/story/jensen-huang-says-he-is-in-therapy-clears-air-on-nvidia-succession-planning-at-his-first-all-hands-back-meet-3046225-2026-11-25?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Trump Awards Rudy Giuliani Presidential Medal of Freedom",
+        "summary": "The award honored a Trump ally who was once known as “America’s mayor” but whose reputation was tarnished by his efforts to overturn the 2020 election on behalf of the president.",
+        "outlets": 5,
+        "published": "2026-11-24T21:01:40+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/24/us/politics/trump-rudy-giuliani-presidential-medal-of-freedom.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-rudy-giuliani-presidential-medal-of-freedom-white-house/"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/Politics/trump-award-medal-freedom-former-nyc-mayor-rudy/story?id=138411544"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-will-give-medal-of-freedom-to-giuliani-a-fierce-political-ally-who-led-new-york-through-9-11"
+          }
+        ]
+      },
+      {
+        "headline": "A bipartisan backlash is hitting Nvidia in Washington in the wake of Trump’s push for Huang’s return",
+        "summary": "Congress appears even more likely to OK new restrictions on the chip giant’s dealings with China — and it’s calling for more investigations, additional hearings and briefings",
+        "outlets": 4,
+        "published": "2026-11-24T20:42:00+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/a-bipartisan-backlash-is-hitting-nvidia-in-washington-in-the-wake-of-trumps-push-for-huangs-return-565626f2?mod=mw_rss_topstories"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/23/technology/jensen-huang-nvidia-board-trump.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c63rgpy50x98o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/why-trump-pushed-for-jensen-huangs-return-to-nvidia"
+          }
+        ]
+      },
+      {
+        "headline": "US Army to detonate more than 4 tonnes of lead azide in Iowa on Wednesday",
+        "summary": "Despite alarm about toxic lead, federal officials say destroying the unstable explosives is the safest course of action.",
+        "outlets": 4,
+        "published": "2026-11-24T20:28:40+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/24/us-army-to-detonate-more-than-4-tonnes-of-lead-azide-in-iowa-on-wednesday?traffic_source=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/army-iowa-explosives-trump-appeals-court/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/getting-court-approval-u-s-army-to-detonate-degraded-bomb-making-material-in-iowa-on-wednesday"
+          },
+          {
+            "source": "The Washington Post",
+            "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOMk9hWGY4bXNvTUVpWWNkZHU2S3I1b0U5RUV4a3M1RVBHLVBPX2ZiSmpBSkk0Znd5Qjh3SzBPX1l2dzFFdVJNYmZPZk9CNFRkYmpEempxZlkyWlhQSGVybnpVVmR6bmg0cUJKbmt5TDZaQWlxMDlGMW8zS3pndXJXbENwWlZUSExtMG9OeUlpQmZGUGgxcDJFUlZncXRvMFB6U0ppeDBnWC01Q3BSd2tSeW1UMGRVWFR3ellKTWpTeWFjV3c4QVIzZ1NHY3Fzbl9QNmc?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Bangladesh's ex-PM Sheikh Hasina says she plans to return on 16 December",
+        "summary": "Hasina has spoken several times of her desire to return, but this is the first time she has set a date.",
+        "outlets": 4,
+        "published": "2026-11-24T06:23:01+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c60rk1yj07xeo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/sheikh-hasina-seeks-to-return-to-bangladesh-on-victory-day-asks-for-biman-flight-from-delhi-11795495923829.html"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/ht-morning-news-brief-nov-24-madurai-security-tightened-hasina-seeks-return-to-bangladesh-vijay-sethupathi-at-emmys-101795491706997.html"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5FQWpjSnU2cHlDQTZNSDJTNHFKbGJKSFNGS3ZKdkZsTS02Wk5tRFNRV0JEd2Iyd3d3LTRWLUVUY096aTFqMGhaVW81Ql9mMVNQdGtsV3hYdHQ2Mm8?oc=5"
+          }
+        ]
+      }
+    ],
+    "us": [
+      {
+        "headline": "Will wind ground your favorite balloon in Macy's Thanksgiving Day Parade?",
+        "summary": "Local officials are wary of the balloons getting blown off course and into spectators. Macy's says it'll make the decision Thursday morning.",
+        "outlets": 3,
+        "published": "2026-11-24T18:47:16+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/arts/will-wind-ground-your-favorite-balloon-in-macys-thanksgiving-day-parade"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/video/138392581/"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTWsxdE5RZmRXRzNRejQ2QXJKS0I4MUtfQ2kxNFZWSWZZOEl2azVUT2h1VW9BR3pPR2FHMnpqVVZyYy1EUnYwMmJyMkhzX0RaMm5NVVRidXZMSHA3NEF6bThHRXVuc2RIWVo3YXVOWi1yRWtHS0FGN2VjZmxtS1F0MUVxa3pGc2VjeExZQzhyLUhFZFlrMHhmYTVQQXVSbFAyYlBTUzVZdUkwRXZDajFCYmpBTkhVWGJ1?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Francis' private diary reveals pope grappling with spiritual crisis and encounters with the devil",
+        "summary": "Pope Francis saw the \"gates of hell\" when he realized the depths of the clergy sexual abuse scandal and experienced mystical visions of the devil throughout his ministry, according to excerpts of his personal diary published Tuesday by the Vatican.",
+        "outlets": 3,
+        "published": "2026-11-24T15:40:12+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/francis-private-diary-reveals-pope-grappling-with-spiritual-crisis-and-encounters-with-the-devil"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm78270l4z7no?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/24/world/europe/pope-francis-diary.html"
+          }
+        ]
+      },
+      {
+        "headline": "Watch: Trump pardons turkeys Freedom and Feathers at White House",
+        "summary": "President Trump spoke at the White House before pardoning two turkeys, Freedom and Feathers, ahead of Thanksgiving.",
+        "outlets": 2,
+        "published": "2026-11-24T20:18:14+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/watch-trump-pardons-turkeys-freedom-and-feathers-at-white-house/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/watch-live-trump-holds-2026-white-house-turkey-pardon-with-freedom-and-feathers"
+          }
+        ]
+      },
+      {
+        "headline": "Armed men take hostages at supermarket in Cartagena, Colombia",
+        "summary": "Colombian President Abelardo de la Espriella said that the men were \"common criminals\" who fled into the supermarket after a failed attempt to hold up an armored truck.",
+        "outlets": 2,
+        "published": "2026-11-24T20:59:44+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/cartagena-colombia-hostages-supermarket/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/24/cartagena-colombia-hostages-supermarket"
+          }
+        ]
+      },
+      {
+        "headline": "Army says planned detonation in Iowa is necessary to avoid spontaneous explosion",
+        "summary": "The Army is set to detonate unstable explosives at an Iowa munitions plant on Wednesday morning, saying it's necessary to avoid a future spontaneous explosion. CBS News' Ian Lee has more.",
+        "outlets": 2,
+        "published": "2026-11-24T18:49:07+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/army-says-planned-detonation-in-iowa-is-necessary-to-avoid-spontaneous-explosion/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/21/climate/what-to-know-about-the-planned-explosion-in-iowa.html"
+          }
+        ]
+      },
+      {
+        "headline": "Iranian women praise singer lashed for not wearing a hijab",
+        "summary": "Parastoo Ahmadi was lashed 74 times for the crime of \"outraging public decency\" after she livestreamed a concert without her hair covered.",
+        "outlets": 2,
+        "published": "2026-11-24T17:40:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/iran-singer-parastoo-ahmadi-lashed-performing-no-hijab/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/24/world/middleeast/iran-singer-parastoo-ahmadi-flogging-lashes.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Indians among 13 killed in UAE bus-truck crash, 14 injured",
+        "summary": "In a heartbreaking incident in Ras Al Khaimah, thirteen lives were tragically lost, including several Indian nationals, as confirmed by the Indian consulate in Dubai. A bus with 41 passengers collided with a parked truck, resulting in this devastating accident. Emergency teams…",
+        "outlets": 3,
+        "published": "2026-11-24T16:33:49+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/indians-among-13-killed-in-uae-bus-truck-crash-14-injured/articleshow/136136806.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/indians-among-13-killed-in-uae-accident-indian-consulate-assures-all-possible-assistance-101795534235905.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/indians-among-13-killed-in-uae-bus-truck-collision-second-accident-in-2-weeks-3046127-2026-11-24?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "2 men arrested over suspected burglary at Prince William and Kate's country home",
+        "summary": "Police said that \"the property was unoccupied at the time of the incident.\"",
+        "outlets": 3,
+        "published": "2026-11-24T16:37:03+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/2-men-arrested-over-suspected-burglary-at-prince-william-and-kates-country-home"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/24/world/europe/prince-william-kate-home-break-in-anmer-hall-uk.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/uk/intruders-break-into-prince-williams-country-home-two-men-arrested/articleshow/136129465.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Priyanka Gandhi slapped boy who called her uncle Sanjay Gandhi a ‘chor’ in school after Emergency",
+        "summary": "Priyanka Gandhi narrated the incident during a conversation with her mother Sonia Gandhi and her brother Rahul Gandhi,",
+        "outlets": 3,
+        "published": "2026-11-24T10:24:12+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/newsmo/short-videos/when-priyanka-gandhi-slapped-a-boy-over-sanjay-gandhi-3045880-2026-11-24?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/priyanka-gandhi-slapped-boy-who-called-her-uncle-sanjay-gandhi-a-chor-in-school-after-emergency-101795513629852.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/chor-hai-tera-chacha-when-priyanka-gandhi-slapped-a-boy-in-school-over-emergency-taunts/articleshow/136126198.cms"
+          }
+        ]
+      },
+      {
+        "headline": "SP-Congress talks ‘began with 26 seats, will move forward’: Akhilesh signals unity amid UP seat-sharing discussions",
+        "summary": "The Congress and SP held detailed, seat-by-seat discussions on Tuesday, with the SP offering 26 seats to its INDIA bloc ally",
+        "outlets": 2,
+        "published": "2026-11-24T16:51:33+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/hold-serious-discussions-with-us-akhileshs-public-message-to-congress-on-up-seat-sharing/articleshow/136137206.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/spcongress-talks-began-with-26-seats-will-move-forward-akhilesh-signals-unity-amid-up-seat-sharing-discussions-101795533839403.html"
+          }
+        ]
+      },
+      {
+        "headline": "India’s space economy projected to rise to $40-45 billion by 2036: Science minister",
+        "summary": "India's space economy is expected to significantly increase, rising from nearly $9 billion to $40-45 billion by 2036. This growth will largely be driven by private companies contributing to the space sector. Space, Science and Technology Minister Jitendra Singh highlighted key…",
+        "outlets": 2,
+        "published": "2026-11-24T20:44:53+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/science/indias-space-economy-projected-to-rise-to-40-45-billion-by-2036-minister-jitendra-singh/articleshow/136141817.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/science/story/india-space-economy-usd-45-billion-private-sector-growth-ptag-3046005-2026-11-24?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "World Chess Championship 2026 Game 1: Gukesh Dommaraju and Javokhir Sindarov play to 38-move draw – as it happened",
+        "summary": "Sindarov and Gukesh play to 38-move draw in Game 1 Explainer: all your pre-match questions, answered Sindarov interview: ‘I can’t play games just for fun’ Play through 22 famous world championship games The players have shaken hands and we’re off! We have a Berlin defense of…",
+        "outlets": 2,
+        "published": "2026-11-24T20:33:16+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/sport/live/2026/nov/24/chess-world-championship-gukesh-sindarov-game-1-updates"
+          },
+          {
+            "source": "Chess.com",
+            "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9JNFZPLTctTkQ4Qk1abDI4UHR6QlNuT1hnR3pmWDRINGx1UTkxRjRvb2lNcHg3RTA4SUFrODdhRnJ0Z0VyWEY3LVpiNldaQ3p2bkxrYnlzb3VlU05OQ0IzelFHRzhLQWoxUi1mUEM2ZF9JRmx2LV9aaVZEOWs4Zw?oc=5"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Ukraine confirms it used naval drones to strike two Russian ships off Libya",
+        "summary": "Ukraine’s security service says seven drones were launched from mothership in operation that sank Merkury warship Ukraine has confirmed it deployed naval drones in strikes on two Russian vessels off Libya on Sunday, including one that sank the corvette Merkury, one of Russia’s…",
+        "outlets": 3,
+        "published": "2026-11-24T18:36:07+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/videos/c6wy93q5wwqvo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTzIzWjZLTEdiVXRtR0I1cEJ3MFVCUzF5ZktKdWRUQlNtMEVDTnQ4Mk5xU2tvODVlRUJFeE5KOGlieGxsYkp5c1dhZklONzRZNW1VWTR4OVM1MGFQM0cxRXBaQm93b1lhWG1qR3F0ZGV2VTRRRGxtbTRkU1VYQ2c2dEtHckpXQmJCbmpYZlNKeFVrNW8zVjBldDFEWGc1TmIzRTJTM0ozNy1yanVq?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Iranian Singer Parastoo Ahmadi, 4 others flogged 74 times each for performing without ‘hijab’ in YouTube video: Details",
+        "summary": "Iranian singer Parastoo Ahmadi and four members of her production team have reportedly each been flogged 74 times over a video showing her performing without a hijab alongside male musicians.",
+        "outlets": 3,
+        "published": "2026-11-24T05:09:39+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/iranian-singer-parastoo-ahmadi-4-others-flogged-74-times-each-for-performing-without-hijab-in-youtube-video-details-11795496638508.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/23/iranian-singer-lashes-performing-without-hijab"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cq1j6585l5g6o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Is Libya a new front in the Ukraine war?",
+        "summary": "Ukraine's President Volodymyr Zelenskyy says two Russian vessels were targeted in Libya's waters.",
+        "outlets": 2,
+        "published": "2026-11-24T18:38:49+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/inside-story/2026/11/24/is-libya-a-new-front-in-the-ukraine-war?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Butt of the joke: Trump impersonator mocks president at Canada press dinner",
+        "summary": "Carney watches on as comedian lampoons US leader and his interest in men’s backsides at correspondents’ event Ottawa Canada’s prime minister, Mark Carney, was joined on stage in Ottawa by a Donald Trump impersonator who mocked the US president to raucous laughter from a crowd…",
+        "outlets": 2,
+        "published": "2026-11-23T22:41:48+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/23/canada-trump-impersonator-press-dinner"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cr930y92dyx4o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "Why US stocks are falling today: Nasdaq drops over 1% as Nvidia-fueled AI rally fades; Anthropic shares decline 8%",
+        "summary": "Wall Street’s major indexes opened lower on Tuesday as AI-linked stocks pulled back from a rally driven by Nvidia, while investors awaited key inflation data due later this week for further clues on the Federal Reserve’s monetary policy ahead of its December meeting.At the…",
+        "outlets": 2,
+        "published": "2026-11-24T20:57:00+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/why-us-stocks-are-falling-today-nasdaq-drops-over-1-as-nvidia-fueled-ai-rally-fades-anthropic-shares-decline-8/articleshow/136134963.cms"
+          },
+          {
+            "source": "CNBC",
+            "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE11bVhzTUlmU0hLLW0wRklRekw2eURvelhVMlZ3YThhUm5kNkctUE81eHlyNkRVQkRqTkc1enU3TWZZT0RKY2I1YWNTTmVpaDZkdlJYRGtqYkhFSGViT2NQN1A2MEVxNXEwbkNRMXlaejlRbzhtY2g40gF8QVVfeXFMTzg5Wkp0R2RYWWl3cUFWVjR1MzhPYlcwbzBsTGFFZVN0Z1QybjdvcThKTzBSd2NoOG51TU1JbkpKbUoyaWYtMGVGN2JKMWFkOWc2X3ZFODBBT3VBYkhzTmN3ZXNNTnlfUE5hRlZlM3pEaUgycEtwbWdNNlhuVw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Schumer accuses Huang of violating US export control laws amid shipments of chips to China",
+        "summary": "Senate minority leader joins lawmakers from both parties outraged over Nvidia CEO’s reinstatement Chuck Schumer, the current Senate minority leader vying to lead the Democratic majority in the next Congress, accused Jensen Huang, the newly reinstated Nvidia CEO, of shipping…",
+        "outlets": 2,
+        "published": "2026-11-24T20:05:09+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/technology/2026/nov/24/nvidia-jensen-huang-congress"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/nvidias-huang-returns-to-cheers-in-china-but-political-hurdles-mount-on-both-sides/articleshow/136132570.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Anthropic’s stock just broke below its IPO price for the first time",
+        "summary": "Shares are trading below their IPO price of $83 on Tuesday, less than a week after their debut on the Nasdaq.",
+        "outlets": 2,
+        "published": "2026-11-24T19:31:00+00:00",
+        "links": [
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/anthropics-stock-just-broke-below-its-ipo-price-for-the-first-time-5dc82668?mod=mw_rss_topstories"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/anthropic-stock-drops-below-83-ipo-price-on-day-4-of-trading-12372365#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Rahul Gandhi says Rajiv Gandhi's security was removed ‘so that he could be killed’",
+        "summary": "Rahul Gandhi also recalled how Sonia Gandhi used go around their house checking the security and the barbed wires.",
+        "outlets": 2,
+        "published": "2026-11-24T18:52:54+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/security-was-removed-on-purpose-rahul-gandhi-alleges-plot-behind-rajiv-gandhis-assassination/articleshow/136140353.cms"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/rahul-gandhi-says-rajiv-gandhi-security-was-removed-so-that-he-could-be-killed-congress-vp-singh-govt-bjp-sonia-gandhi-101795498944091.html"
+          }
+        ]
+      }
+    ]
+  }
+}
