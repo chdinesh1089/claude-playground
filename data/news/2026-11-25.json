@@ -1,0 +1,503 @@
+{
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T20:28:34+00:00",
+  "status": "ok",
+  "model": "gemini-flash-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "US proposes up to 25% tariffs on Indian goods",
+        "summary": "The United States proposed tariffs of up to 25 percent on Indian goods without a trade deal, while India stated the notice is currently under examination.",
+        "outlets": 5,
+        "published": "2026-11-25T18:06:38+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/us-proposes-25-tariffs-on-india-centre-says-notice-under-examination-12377430#publisher=newsstand"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/trump-administration-plans-to-raise-tariffs-on-china-eu-brazil-others-over-subsidised-production-report-11795614548467.html"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/us-proposes-tariffs-of-up-to-25-on-india-6-other-nations-china-faces-40-rate-3046790-2026-11-25?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/us-proposes-25-per-cent-excess-capacity-tariff-on-india-says-it-won-t-stack-on-existing-duties-101795612473250.html"
+          }
+        ],
+        "why": "Directly impacts bilateral trade, export pricing, and economic relations between the US and India."
+      },
+      {
+        "headline": "US plans new tariffs on China, European Union, and other economies",
+        "summary": "The United States announced an additional 20 percent tariff on Chinese goods alongside increased import taxes on goods from other major economies following an eight-month trade investigation.",
+        "outlets": 6,
+        "published": "2026-11-25T19:11:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-administration-tariffs-14-trading-partners/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-administration-to-raise-tariffs-on-china-eu-brazil-and-others"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/business/trump-tariffs-trade.html"
+          }
+        ],
+        "why": "Escalates global trade tensions and increases import costs across major world economies."
+      },
+      {
+        "headline": "Federal Reserve signals interest rate hike amid persistent inflation",
+        "summary": "The Federal Reserve reported that stubborn inflation accelerated in October, keeping the central bank on track to increase borrowing costs at its pivotal December meeting.",
+        "outlets": 2,
+        "published": "2026-11-25T19:13:30+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/business/economy/inflation-pce-interest-rates.html"
+          },
+          {
+            "source": "MarketWatch",
+            "url": "https://www.marketwatch.com/story/the-fed-says-inflation-hasnt-gotten-any-better-ahead-of-its-key-december-vote-to-raise-rates-65024d33?mod=mw_rss_topstories"
+          }
+        ],
+        "why": "Higher interest rates raise borrowing costs and influence financial markets and global currencies."
+      },
+      {
+        "headline": "US Army detonates stockpile of lead azide explosives in Iowa",
+        "summary": "The US Army completed a controlled detonation of its lead azide explosives stockpile at an Iowa munitions plant despite earlier resident concerns about toxic chemical exposure.",
+        "outlets": 8,
+        "published": "2026-11-25T18:03:57+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/iowa-army-ammunition-plant-unstable-explosives-detonation/"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/us-army-detonates-nearly-five-tonnes-of-toxic-explosives-in-iowa?traffic_source=rss"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/army-plans-explosive-detonation-in-iowa-despite-residents-concerns"
+          },
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/health/2026/11/army-detonates-tons-of-lead-azide-as-local-residents-brace-for-toxic-plume/"
+          }
+        ],
+        "why": "The military completed disposal of the nation's entire stockpile of the bomb-making chemical."
+      },
+      {
+        "headline": "Trump administration strategizes reinstatement of Jensen Huang as Nvidia chief executive",
+        "summary": "Trump administration officials offered assurances to Nvidia to help Jensen Huang return as chief executive, later telling congressional staff there was no foreign intelligence threat.",
+        "outlets": 4,
+        "published": "2026-11-25T14:25:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-jensen-huang-nvidia-ceo-reinstated/"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/how-trump-may-have-profited-from-huangs-return-to-nvidia"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/23/technology/jensen-huang-nvidia-board-trump.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/25/trump-open-to-pardoning-jensen-huang-nvidia"
+          }
+        ],
+        "why": "Reflects unprecedented White House involvement in the leadership of the premier artificial intelligence chipmaker."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Texas and Justice Department agree to keep border barrier for decades",
+        "summary": "A legal settlement between the Trump administration and outgoing Texas Republican officials bars the removal of the state border wire barrier for 30 years.",
+        "outlets": 1,
+        "published": "2026-11-25T20:19:48+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/us/politics/texas-border-legal-settlement-trump.html"
+          }
+        ]
+      },
+      {
+        "headline": "Mistakenly deported Salvadoran migrant leaves United States for Spain",
+        "summary": "Kilmar Abrego Garcia, an El Salvador native mistakenly deported last year, departed the United States for Spain after a 20-month legal battle with the Trump administration.",
+        "outlets": 7,
+        "published": "2026-11-25T20:14:00+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/kilmar-abrego-garcia-leaving-us-europe/"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/abrego-garcia-can-breathe-freely-after-he-arrives-in-spain-11795636419628.html"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/24/us/politics/abrego-garcia-leave-deportation.html"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/25/g-s1-155493/up-first-newsletter-iowa-detonation-kilmar-abrego-garcia-nvidia-jensen-huang"
+          }
+        ]
+      },
+      {
+        "headline": "Plane crash off Mississippi coast kills six people, including two children",
+        "summary": "Coast Guard divers recovered the bodies of three adults, a teenager, and two boys from a downed aircraft near Mississippi's Horn Island.",
+        "outlets": 4,
+        "published": "2026-11-25T20:04:47+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/us/mississippi-plane-crash-horn-island.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/small-plane-crash-off-mississippi-6-dead-2-children/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/c6z74l1017zpo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8taE9WNHpNMzI0WXpWcWJQUi1MUmJNbThoLUdBQ3ZYWlZVcWo1TFBpTEd5TWZkczgxcXNPUEEwZ2xLNk5iTVZ2WTNoNWlZX0hJYkc5UENrTVJCM00?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Fort Hood shooter requests delay of execution by firing squad",
+        "summary": "Nidal Malik Hasan, who killed 13 people at Fort Hood in 2009, asked a judge to delay his scheduled execution to challenge his conviction and sentence.",
+        "outlets": 2,
+        "published": "2026-11-25T18:25:04+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/us/nidal-malik-hasan-fort-hood-execution-stay.html"
+          },
+          {
+            "source": "The Washington Post",
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNaUdfQ3c2cEdta1Zud0w2STlzZGNzRy1QVXM3VjR1UmtZXzJnenA0THltX3VNY1VIQV9GUTFzM1U2TktELTRlU1lfazR3alRTbWlncGNrR3hpaTV3ZnlnZnFmblhYbklRSjl2bDhNU3gyUC0wZkJ3cENqNjlrNTZSUXA3QjBqay1tM3FSQ21lc3JqMW9hYkpQazhIRDNRcTEydXZFcDNRTFdiSWItNlA3Tw?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "September 11 defendants gain new opening to challenge death penalty",
+        "summary": "Defendants including Khalid Shaikh Mohammed received an opportunity to challenge the death penalty through a clause in a plea deal over the September 11 plot.",
+        "outlets": 1,
+        "published": "2026-11-25T19:52:53+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/us/politics/death-penalty-sept-11-case-guantanamo.html"
+          }
+        ]
+      },
+      {
+        "headline": "Declassified files suggest CIA waterboarded more detainees than acknowledged",
+        "summary": "Newly released files resulting from a lawsuit suggest the Central Intelligence Agency waterboarded more detainees than publicly admitted and shed light on officials' fears of prosecution.",
+        "outlets": 1,
+        "published": "2026-11-25T17:57:50+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/us/politics/cia-waterboarding.html"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "India separates Sheikh Hasina return plans from Bangladesh extradition request",
+        "summary": "India stated that Sheikh Hasina's planned December return to Bangladesh is separate from an extradition request from Dhaka that remains under examination.",
+        "outlets": 3,
+        "published": "2026-11-25T13:58:09+00:00",
+        "links": [
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/india-declines-to-comment-on-hasina-s-planned-homecoming-says-extradition-separate-from-voluntary-return-101795615090322.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/voluntary-return-plan-separate-from-bangladesh-extradition-request-india-on-sheikh-hasina/articleshow/136162397.cms"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/india/india-says-sheikh-hasinas-planned-return-to-bangladesh-separate-from-dhakas-extradition-request/articleshow/136161964.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court focuses on due process in Rahul Gandhi asset case",
+        "summary": "The Supreme Court examined whether investigative directions can be issued without hearing a person first, without ruling directly on allegations against Rahul Gandhi.",
+        "outlets": 2,
+        "published": "2026-11-25T17:46:47+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/videos/rahul-gandhi-asset-case-explained-what-the-supreme-court-actually-said/article71743856.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/supreme-court-sets-aside-allahabad-hc-order-directing-probe-into-rahul-gandhi-s-assets-orders-fresh-hearing-101795597229111.html"
+          }
+        ]
+      },
+      {
+        "headline": "Government approves six urea projects worth 54,000 crore rupees",
+        "summary": "The central government approved six brownfield urea projects across five states to expand domestic production capacity by 7.62 million tonnes annually.",
+        "outlets": 1,
+        "published": "2026-11-25T16:10:27+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/centre-six-brownfield-urea-manufacturing-projects-national-investment-policy-urea-domestic-production-capacity-import-11795620008666.html"
+          }
+        ]
+      },
+      {
+        "headline": "Nearly 44 lakh voters risk exclusion from Delhi electoral roll",
+        "summary": "Around 44 lakh voters face exclusion from Delhi's final electoral roll after authorities received only about 3.5 lakh Form 6 applications ahead of the deadline.",
+        "outlets": 2,
+        "published": "2026-11-25T17:44:49+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/delhi-sir-nearly-44-lakh-voters-may-remain-off-final-electoral-roll-after-low-form-6-turnout/articleshow/136169274.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/cities/delhi/story/delhi-electoral-roll-44-lakh-voters-may-remain-excluded-after-sir-ptag-3046949-2026-11-25?utm_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Delhi High Court upholds senior citizens' right to evict adult children",
+        "summary": "The Delhi High Court ruled that senior citizens can evict adult children from their self-acquired property without having to prove harassment or ill treatment.",
+        "outlets": 1,
+        "published": "2026-11-25T15:36:49+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/delhi-hc-says-senior-citizens-can-evict-children-from-own-property-without-proving-harassment-ill-treatment-11795618541006.html"
+          }
+        ]
+      },
+      {
+        "headline": "Bird flu outbreak in Tamil Nadu causes egg prices to crash",
+        "summary": "Egg prices in Namakkal dropped significantly after a confirmed bird flu outbreak in Cuddalore disrupted poultry exports from Tamil Nadu.",
+        "outlets": 2,
+        "published": "2026-11-25T11:43:41+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/industry/cons-products/food/pepsico-announces-rs-868-crore-investment-in-tamil-nadu-for-new-food-manufacturing-plant-by-2028/articleshow/136160063.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/egg-prices-crash-up-to-20-in-india-as-tamil-nadu-bird-flu-outbreak-disrupts-exports-poultry-farmers-hit-11795601866027.html"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Fuel vehicle fire kills 30 people in Egypt",
+        "summary": "At least 30 people died and 15 were injured when a vehicle carrying petroleum products overturned and caught fire in Egypt.",
+        "outlets": 4,
+        "published": "2026-11-25T19:41:14+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/aje-onl-nf_dozens-killed-in-egypt-vehicle-fire-251126?traffic_source=rss"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/world/story/30-killed-15-injured-as-vehicle-carrying-petroleum-products-overturns-catches-fire-in-egypt-3047042-2026-11-26?utm_source=rss"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/rest-of-world/30-killed-15-injured-in-deadly-blaze-on-cairo-ring-road-after-fuel-vehicle-overturns/articleshow/136171820.cms"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/30-killed-in-fire-in-cairos-densely-populated-area-12377651#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Colombian police storm Cartagena supermarket to end hostage siege",
+        "summary": "Colombian security forces stormed a Cartagena supermarket to rescue dozens of hostages and kill one gunman following an attempted robbery of an armored cash car.",
+        "outlets": 3,
+        "published": "2026-11-25T18:20:20+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/25/hostages-freed-colombia-security-forces-storm-cartagena-supermarket"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/colombian-forces-rescue-all-hostages-after-supermarket-siege?traffic_source=rss"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "China investigates Shanghai chief Chen Jining in anti-corruption purge",
+        "summary": "Chinese authorities launched an investigation into Shanghai Communist Party chief and Politburo member Chen Jining as part of President Xi Jinping's anti-corruption campaign.",
+        "outlets": 4,
+        "published": "2026-11-25T15:43:53+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/world/2026/nov/25/china-investigates-politburo-chen-jining-xi-jinping-purge"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/25/nx-s1-6053801/china-investigation-politburo-shanghai-party"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/24/world/asia/shanghai-party-leader-investigation-china-xi.html"
+          },
+          {
+            "source": "NBC News",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOME5kMWtTeDRDYjZaM1U0aWRDX2ZocDVKV3FxdDB5WnItTmJwRE5XNFd4amhXcTlxbzB1eXpWSWQtcTZTXzEwNzR1YksxRUtpbFFsLWlWb0dSWkV6ZHY2d2lGUlYzZFRZdWJKaHhxYW5ENm5ReWxkbnJXcjlweHdaUTBzUV95cUZpRWVWTk1wRDJ5dmNiYTNaRzN3MkRaRUpsOGc?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Israeli judges suggest dropping key corruption charges against Benjamin Netanyahu",
+        "summary": "Judges in Prime Minister Benjamin Netanyahu's corruption trial recommended dropping the most serious charges against him after assessing little chance of conviction.",
+        "outlets": 2,
+        "published": "2026-11-25T20:05:36+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/world/middleeast/judges-israel-corruption-case-netanyahu.html"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cxj05mv723r2o?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "US grants SpaceX approval for 1 million space data centres",
+        "summary": "Elon Musk hails FCC's approval of SpaceX's Starmind project as 'a great asset to America and the world.'",
+        "outlets": 3,
+        "published": "2026-11-25T19:13:02+00:00",
+        "links": [
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/25/us-grants-spacex-approval-for-1-million-space-data-centres?traffic_source=rss"
+          },
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"
+          },
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/"
+          }
+        ]
+      },
+      {
+        "headline": "Guilty: Huawei faces steep penalties for stealing T-Mobile, Cisco trade secrets",
+        "summary": "Huawei didn’t try very hard to hide thefts of US trade secrets, DOJ says.",
+        "outlets": 2,
+        "published": "2026-11-25T16:33:45+00:00",
+        "links": [
+          {
+            "source": "Ars Technica",
+            "url": "https://arstechnica.com/tech-policy/2026/11/jury-convicts-huawei-of-stealing-us-trade-secrets-evading-iran-sanctions/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Lukoil to Sell Foreign Assets, but Not to Kushner and Witkoff Associates",
+        "summary": "Valuable properties belonging to the Russian energy giant will be sold to an American-led consortium. But Middle Eastern business contacts of the two Trump envoys pulled out because of political winds.",
+        "outlets": 2,
+        "published": "2026-11-25T19:11:09+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/us/politics/lukoil-deal.html"
+          },
+          {
+            "source": "Reuters",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQM05VWXNudnhTWW1BY2VFUHpZRzdNSjU4TG1Ob3NYZTRKM0tNUWNGQmxyNEp6NW0yTEJWaTZabF9UNW9CUUZTclBhaGpnQmZ6WVRZTVhqS3dpOTBsZEtaOGZnMzFPQlR5MDRpZThJNmU0cXc5Q0trMDNhdWtxVjV4V1lMYzYyR1RHU0lBNDdWZDlzOWxBN1J1Wm0xWlJkNEVMaVNXUXdQcTRuUHlvczlnMTd1VGRWQQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Anthropic shares slide below IPO price, raising artificial intelligence valuation concerns",
+        "summary": "Anthropic stock declined below its initial public offering price, intensifying investor scrutiny over high valuations across the broader technology and artificial intelligence sectors.",
+        "outlets": 2,
+        "published": "2026-11-25T19:35:02+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/anthropics-ipo-slide-fuels-fresh-concerns-over-ai-valuations/articleshow/136171888.cms"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/technology/anthropic-stock-tech-start-ups.html"
+          }
+        ]
+      }
+    ]
+  }
+}
