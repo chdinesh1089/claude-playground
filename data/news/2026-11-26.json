@@ -1,0 +1,483 @@
+{
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T20:11:28+00:00",
+  "status": "ok",
+  "model": "gemini-flash-lite-latest",
+  "error": null,
+  "feeds_ok": [
+    "ABC News",
+    "Al Jazeera",
+    "Ars Technica",
+    "BBC News",
+    "CBS News",
+    "Economic Times",
+    "Google News India",
+    "Google News US",
+    "Hindustan Times",
+    "India Today",
+    "MarketWatch",
+    "Mint",
+    "NDTV",
+    "NPR",
+    "New York Times",
+    "PBS NewsHour",
+    "The Guardian",
+    "The Hindu",
+    "The Verge",
+    "Times of India"
+  ],
+  "feeds_failed": [],
+  "sections": {
+    "top": [
+      {
+        "headline": "Trump visits Arizona for high-stakes expansion of TSMC chip factories",
+        "summary": "President Donald Trump will travel to Arizona to speak at the groundbreaking for a new Taiwan Semiconductor Manufacturing Company facility.",
+        "outlets": 1,
+        "published": "2026-11-26T17:52:23+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/politics/trump-heads-to-arizona-next-week-for-a-high-stakes-expansion-of-tsmcs-computer-chip-factories"
+          }
+        ],
+        "why": "Crucial for US high-tech semiconductor manufacturing and AI supply chains."
+      },
+      {
+        "headline": "Trump demands investigation into US GDP figures after upward revision",
+        "summary": "President Trump demanded an investigation into the Commerce Department's recent GDP revision, which raised third-quarter growth to 4.3%.",
+        "outlets": 3,
+        "published": "2026-11-26T18:33:47+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/massive-purposeful-error-trump-seeks-probe-into-alleged-fake-us-gdp-figures-after-growth-revised-to-43-11795716885185.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/trump-thanksgiving-commerce-department-gdp-investigation/"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/26/trump-fake-economic-figures-midterms"
+          }
+        ],
+        "why": "Major US economic policy and political controversy involving official data."
+      },
+      {
+        "headline": "New York declares state of emergency as Thanksgiving storm hits East Coast",
+        "summary": "Governor Kathy Hochul's office declared a State of Emergency on Thanksgiving as a severe storm threatened the East Coast.",
+        "outlets": 2,
+        "published": "2026-11-26T19:53:41+00:00",
+        "links": [
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/US/new-york-declares-emergency-thanksgiving-storm-threatens-east/story?id=138464273"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/thanksgiving-storm-sweeps-east-coast-delays-macy-s-parade-11795718353391.html"
+          }
+        ],
+        "why": "Severe weather disruption affecting holiday travel across major US hubs."
+      },
+      {
+        "headline": "French actor Gérard Depardieu ordered to stand trial for rape",
+        "summary": "Gérard Depardieu has been ordered to stand trial on charges of raping and sexually assaulting a young actress.",
+        "outlets": 6,
+        "published": "2026-11-26T18:16:37+00:00",
+        "links": [
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/world/french-cinema-star-gerard-depardieu-ordered-to-stand-trial-for-rape-and-sexual-assault"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/26/paris-court-orders-gerard-depardieu-to-stand-trial-for-rape-sexual-assault?traffic_source=rss"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/gerard-depardieu-trial-alleged-rape-paris/"
+          },
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o?at_medium=RSS&at_campaign=rss"
+          }
+        ],
+        "why": "Major international legal development involving a prominent cultural figure."
+      },
+      {
+        "headline": "Deadly Cairo fuel tanker crash kills dozens of people",
+        "summary": "At least 31 people died in a large fire on a busy Cairo highway after a fuel tanker overturned.",
+        "outlets": 2,
+        "published": "2026-11-26T09:09:49+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/videos/c52e8ndplvemo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/world/middleeast/road-fire-near-cairo-kills-dozens-after-petroleum-laden-truck-crashes.html"
+          }
+        ],
+        "why": "Major international tragic accident with a significant death toll."
+      }
+    ],
+    "us": [
+      {
+        "headline": "Federal judge blocks FCC from early review of ABC licenses",
+        "summary": "US District Judge Loren AliKhan blocked the Federal Communications Commission from conducting an early review of ABC's broadcast licenses.",
+        "outlets": 4,
+        "published": "2026-11-26T16:38:00+00:00",
+        "links": [
+          {
+            "source": "The Verge",
+            "url": "https://www.theverge.com/policy/1043116/fcc-disney-abc-broadcast-licenses-review-early-judge-block"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/nation/judge-blocks-fcc-from-early-license-review-for-abc-which-network-says-has-had-a-chilling-effect"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/26/us-judge-blocks-trumps-fcc-attempt-to-target-disneys-abc-stations?traffic_source=rss"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/business/media/disney-fcc-abc-ruling.html"
+          }
+        ]
+      },
+      {
+        "headline": "US Army detonates lead azide explosive stockpile in Iowa",
+        "summary": "The US army successfully blew up the nation's entire stockpile of lead azide in Iowa to avoid uncontrollable explosions.",
+        "outlets": 3,
+        "published": "2026-11-26T17:05:02+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/26/iowa-chemical-lead-bomb-detonation-toxic-dust-fears"
+          },
+          {
+            "source": "PBS NewsHour",
+            "url": "https://www.pbs.org/newshour/show/what-the-armys-iowa-detonation-means-for-nearby-communities"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/video/no-lead-detected-in-iowa-air-after-armys-detonation-epa-says/"
+          }
+        ]
+      },
+      {
+        "headline": "JD Vance says Nvidia CEO Jensen Huang is not under investigation",
+        "summary": "US Vice President JD Vance stated that Nvidia CEO Jensen Huang is not under investigation and does not need a presidential pardon.",
+        "outlets": 2,
+        "published": "2026-11-26T16:58:45+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/us-news/jd-vance-says-nvidia-ceo-jensen-huang-is-not-under-investigation-rules-out-need-for-trump-pardon-11795659756810.html"
+          },
+          {
+            "source": "The Indian Express",
+            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZEhBX0lVWUVDeERWSUl3RW1pVTlGM3BubXJ3ZzhYU0RLUEZ0NEdLb0ZuQWExZ1ZNZ2lPdHVMMFgtNGdvazY4LUxwWkNoMXhST0VXaDMtaVlsenRrbnpabGN1a0JMdnFGZjZiaXp2d1BTMUxuV0NwcWk1cjZrX2JUamxuWDJkSy1ITG5oUldmakdhajNyeG5vVWJJaktKMmVsc1BWQjMyTEV0dVlMNjF5Sk44YmhUd3FKTHRDYktlYm9vaXNUX0hhc3pYU1lpd9IB1AFBVV95cUxPdkpRdV9oNTZScjdwYW1RZ2JOR2UyWWtmYTlMZmQ4MjVXVVlhb3NiWlpsNEZZRVl2cjRlejR0cVpvMGs2ZUpSWU1tTEZxbDZ5Q184RWs0Q2RsSU1lcG9xc0M0ODlKeFprLWFhTFEtZXJmLTg3dUxzUjZNSmpYWGpwZDk1QnVWNlUzelNSZTlfdURQdGt0ODVFSzl5MU5FeDlEYlUzaHQtNDJoSnVrdnJOUFUzdTV6RnBONmRoTlFTcG90R1dHYXQzNUNqdzB5cGU2YmFvUQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "Thousands of flights impacted as weather disrupts Thanksgiving travel",
+        "summary": "More than 1,000 flights were cancelled or delayed in the US as severe weather disrupted holiday travel.",
+        "outlets": 2,
+        "published": "2026-11-26T17:38:56+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/us/hundreds-of-flights-cancelled-as-storm-disrupts-us-on-thanksgiving/articleshow/136198860.cms"
+          },
+          {
+            "source": "BBC",
+            "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE45bUpwdlMwTTBqVE5uMnQ0TXQyQ0hnLUVlU1B2akk2bmxaMTQyUG9BOG1xaFE4RUpERmlMS3NQVGJ6ek84Um1UX25PTWJ5Z0Jzd1FaamtsWlZjcjg?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "ICE Arrests Man in Boston Days After He Wins $1 Million Lottery Prize",
+        "summary": "Ariel Velasquez-Morales, a native of El Salvador, smiled in a picture with a giant check. The image led immigration agents to him, and he is set for deportation.",
+        "outlets": 3,
+        "published": "2026-11-26T10:21:16+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/25/us/ice-arrest-boston-lottery-winner.html"
+          },
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/news/ice-arrest-lottery-winnings-massachusetts/"
+          },
+          {
+            "source": "6abc Philadelphia",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUWhuaGtPQVpicjU2b3I3YkJ1d1pHM3U0Qmo1bU9oUHM4N3NzclAtQV9NMnFvelhvZ0JPRkhUYjVmY3RPX3cxSksyY3R2eGxNSTNfMDRCaGFBSXpyb09iclR2RF9BSG9NVTIzaXJUMGtzMnEyNmt4eXBJM2xYaFRJZzRuc0tNRDlyTE9OLWx3VjNsb09Ldy1XZzFlcVc1WlQ4aGxlbXgtOWdncjlvT3Q5bEtmd3hoQ3czd3fSAb8BQVVfeXFMT1YtVzNCY2FGdWtibnhNNlh1d2xLU0JjSGdIYjRQeUJLM0lBZDgtUC1vVlZEZzQ3dWo2b3plNXdydDNjVVBuekpIMm9MaTlRd0JPWFM2YmUxZWJnQl9NVHl1MTJXb0VqRlhEcEZGZENNQ0cweTk0VWpJYmhhNTRsWjV3YUZxX1pTVTJTX3ZPdUVMRGUzNGEwUFI3ZGlvTzBIWUNwc1hMb3NUMTItcXFGYkJWM2VHaWVWNGJLRWU5RWM?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "US Senate permitting bill threatens clean water protections",
+        "summary": "A permitting bill approved by the US Senate would roll back key clean water protections to speed up energy projects.",
+        "outlets": 1,
+        "published": "2026-11-26T19:16:35+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/us-news/2026/nov/26/senate-permitting-bill-clean-water"
+          }
+        ]
+      }
+    ],
+    "india": [
+      {
+        "headline": "Special Parliament session revives buzz over delimitation and quota bills",
+        "summary": "A special Parliament sitting has revived discussions regarding upcoming delimitation and women's reservation legislation.",
+        "outlets": 6,
+        "published": "2026-11-26T18:25:35+00:00",
+        "links": [
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/special-parliament-session-buzz-delimitation-bill-women-reservation-bill-opposition-criticism-bjp-congress-ncp-ysrcp-dmk-3047900-2026-11-26?utm_source=rss"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/understanding-the-debate-over-delimitation-and-women-s-quota-as-centre-proposes-special-parliament-sitting-101795708434941.html"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/politics-and-nation/govt-proposes-reconvening-parliament-from-november-30-to-december-3/articleshow/136194553.cms"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/government-to-reconvene-parliament-from-november-30-to-december-3-kiren-rijiju/article71747089.ece"
+          }
+        ]
+      },
+      {
+        "headline": "Indigenous drone-swarm killer Bhargavastra clears key trials",
+        "summary": "The Bhargavastra defense system successfully passed trials at the Pokhran firing ranges in Rajasthan.",
+        "outlets": 3,
+        "published": "2026-11-26T16:33:30+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/defence/indias-answer-to-drone-swarms-bhargavastra-clears-key-trials/articleshow/136198050.cms"
+          },
+          {
+            "source": "India Today",
+            "url": "https://www.indiatoday.in/india/story/bhargavastra-counter-drone-system-completes-pokaran-development-trials-air-defence-3047615-2026-11-26?utm_source=rss"
+          },
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/india-news/indigenous-drone-swarm-killer-bhargavastra-passes-pokaran-trials-12382388#publisher=newsstand"
+          }
+        ]
+      },
+      {
+        "headline": "Germany assures India of sensitive tech transfer in submarine deal",
+        "summary": "Germany committed to vital technology transfer under the P-75I submarine project to enhance India's undersea capabilities.",
+        "outlets": 1,
+        "published": "2026-11-26T19:18:37+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/india/india-germany-submarine-partnership-can-act-as-a-catalyst-for-indo-pacific-security-german-envoy/articleshow/136202402.cms"
+          }
+        ]
+      },
+      {
+        "headline": "Supreme Court sets deadline for FSSAI to finalize food labels",
+        "summary": "The Supreme Court directed the FSSAI to establish stricter food labelling norms focusing on total sugars and saturated fat.",
+        "outlets": 2,
+        "published": "2026-11-26T17:09:26+00:00",
+        "links": [
+          {
+            "source": "The Hindu",
+            "url": "https://www.thehindu.com/news/national/supreme-court-directs-tightening-of-front-of-package-nutrition-labelling/article71746251.ece"
+          },
+          {
+            "source": "Hindustan Times",
+            "url": "https://www.hindustantimes.com/india-news/supreme-court-tightens-food-labelling-norms-gives-fssai-four-months-to-finalise-them-101795675947910.html"
+          }
+        ]
+      },
+      {
+        "headline": "TAPI gas pipeline moves closer to completion in Afghanistan",
+        "summary": "The TAPI gas pipeline progressed toward Herat, offering a potential route for Central Asian gas to reach India.",
+        "outlets": 1,
+        "published": "2026-11-26T17:04:07+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/world/tapi-pipeline-reaches-afghanistan-what-is-the-10-bn-project-and-can-central-asian-gas-reach-india-via-pakistan-11795707549785.html"
+          }
+        ]
+      },
+      {
+        "headline": "India presents 2036 Olympic vision to IOC Future Host Commission",
+        "summary": "India formally presented its roadmap and vision for hosting the 2036 Olympic Games with Ahmedabad at the center.",
+        "outlets": 1,
+        "published": "2026-11-26T15:13:00+00:00",
+        "links": [
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/sports/more-sports/others/india-presents-2036-olympic-vision-to-ioc-future-host-commission-in-virtual-meeting/articleshow/136193442.cms"
+          }
+        ]
+      }
+    ],
+    "world": [
+      {
+        "headline": "Iran accused of carrying out drone attack in Kuwait",
+        "summary": "Iran denied responsibility for a deadly attack on a Kuwaiti military facility that killed two Italian nationals.",
+        "outlets": 6,
+        "published": "2026-11-26T20:00:10+00:00",
+        "links": [
+          {
+            "source": "CBS News",
+            "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html"
+          },
+          {
+            "source": "ABC News",
+            "url": "https://abcnews.com/International/live-updates/iran-live-updates-tehran-strait-hormuz-safe-demands/?id=138369648"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/video/newsfeed/2026/11/26/two-dead-after-iranian-drone-attack-on-kuwait?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Net migration to UK falls sharply to lowest level since 1997",
+        "summary": "Latest official figures show UK net migration dropped significantly to 77,000 for the year ending June.",
+        "outlets": 4,
+        "published": "2026-11-26T20:01:47+00:00",
+        "links": [
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/uk-news/2026/nov/26/net-migration-to-uk-falls-to-lowest-level-since-1997-excluding-pandemic"
+          },
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/26/world/europe/uk-net-migration-data.html"
+          },
+          {
+            "source": "Times of India",
+            "url": "https://timesofindia.indiatimes.com/world/uk/net-migration-to-uk-tumbles-by-92-from-its-peak-but-indians-still-most-common-nationality-to-immigrate-to-britain/articleshow/136202553.cms"
+          },
+          {
+            "source": "The Hindu",
+            "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOTmVmdmxuaWJqMS1PbHZ1bDRma3FoNVBIYktQYnVBMEpuY0t4U1VDMGNlWFpFNzFjTk1hNnlTSXdzSnZzTDFwTTVzS2Z6aXp0NVIwVU9QalZ4eGR5b0Y1ZlRYZmNZM2Nrcy1OWG41UkJSMDRJNU91UjN0S3pVV2M3WFRiVF9PWks0RGF4bndiTW85MVB4aTJBSjFXNXpVVnJHSU5Obzl0cGlVeEc0ZFY2RDhhRUVzZ3c4a1lhOTdjUUUwTnNxRlFrSDc1VU1JcHdtZEFmcFJiVHpURHAwcmxkY0kzcmJWSnA2VGtxVXZDS2xpalp1VnBlZThGLTJKRUHSAYYCQVVfeXFMUFV0LWY4OXNITDR1TGZwNmxJRXBNVG9BZWtLaHJuQ1NNVXo5dEM5dm40NFJuVVkxaDFIRE8xYkNHTmRCblFBTWFGbEZPMU5ueGZFVGdFcDA1cVM0Z2RPemo2WXNTcEtPVjBNVl9RU1A0WUdVaGszVXhxX1JIUWh0TlQtY1VLdDduMWhxSk53cTlTclRYbFFyVlRjTG9zWGVsalQzUGhjaGVCVWlGb3J3WTNVUzJWMThnOTg2Mlh3dXlmMzU1dUsybXZHSlBuVVoxcGhPOXVlR1Y0ZzBCSzhRb29sUjQ2UzU0V0RjeUt4SXRvZnFmUTNNdnpXUWZBcVNjM0RhSS1JUQ?oc=5"
+          }
+        ]
+      },
+      {
+        "headline": "European Central Bank chooses Pablo Hernández de Cos as chief",
+        "summary": "Eurozone leaders selected Pablo Hernández de Cos as the next president of the European Central Bank.",
+        "outlets": 4,
+        "published": "2026-11-26T19:41:34+00:00",
+        "links": [
+          {
+            "source": "New York Times",
+            "url": "https://www.nytimes.com/2026/11/26/business/ecb-pablo-hernandez-de-cos.html"
+          },
+          {
+            "source": "The Guardian",
+            "url": "https://www.theguardian.com/business/2026/nov/26/spain-pablo-hernandez-de-cos-next-ecb-president"
+          },
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/ex-spain-central-bank-head-named-next-ecb-chief/articleshow/136202163.cms"
+          },
+          {
+            "source": "Al Jazeera",
+            "url": "https://www.aljazeera.com/news/2026/11/26/spanish-economist-to-become-new-european-central-bank-chief?traffic_source=rss"
+          }
+        ]
+      },
+      {
+        "headline": "Kim Jong Un vows to expand North Korea's nuclear arsenal",
+        "summary": "North Korean leader Kim Jong Un pledged to build more nuclear weapons after ignoring an American offer to meet.",
+        "outlets": 2,
+        "published": "2026-11-26T16:47:32+00:00",
+        "links": [
+          {
+            "source": "NDTV",
+            "url": "https://www.ndtv.com/world-news/kim-jong-un-vows-to-make-more-nuclear-weapons-after-ignoring-trumps-offer-to-meet-12379989#publisher=newsstand"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/26/g-s1-155955/north-korea-kim-nuclear-weapons-trump"
+          }
+        ]
+      }
+    ],
+    "business_tech": [
+      {
+        "headline": "SpaceX plan for million data satellites approved by regulators",
+        "summary": "Musk's Starmind constellation was approved to meet growing global demand for artificial intelligence computing power.",
+        "outlets": 2,
+        "published": "2026-11-26T09:27:44+00:00",
+        "links": [
+          {
+            "source": "BBC News",
+            "url": "https://www.bbc.co.uk/news/articles/cwp836l8n1jgo?at_medium=RSS&at_campaign=rss"
+          },
+          {
+            "source": "NPR",
+            "url": "https://www.npr.org/2026/11/26/g-s1-155940/fcc-spacex-satellites-data-centers-in-space"
+          }
+        ]
+      },
+      {
+        "headline": "Exporters warn US tariff uncertainty could squeeze India's edge",
+        "summary": "Trade bodies warned that proposed US tariff rates and Section 301 duties could challenge Indian export competitiveness.",
+        "outlets": 1,
+        "published": "2026-11-26T15:30:04+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/us-tariff-uncertainty-could-squeeze-indias-export-edge-say-trade-bodies-11795696496120.html"
+          }
+        ]
+      },
+      {
+        "headline": "Large stressed firms yield better recoveries under Indian IBC",
+        "summary": "Creditors recovered 31.1% of claims in large corporate insolvency cases, slightly outpacing overall recovery rates.",
+        "outlets": 1,
+        "published": "2026-11-26T16:51:21+00:00",
+        "links": [
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/india/large-stressed-assets-better-recoveries-ibc-delays-persist-prolonged-resolution-timelines-creditors-11795707348362.html"
+          }
+        ]
+      },
+      {
+        "headline": "GST registration cancellations to become automatic from December",
+        "summary": "The government announced automatic GST cancellations to eliminate manual reviews and speed up business exits.",
+        "outlets": 2,
+        "published": "2026-11-26T18:35:38+00:00",
+        "links": [
+          {
+            "source": "Economic Times",
+            "url": "https://economictimes.indiatimes.com/news/economy/policy/cancellation-of-gst-registration-to-get-automatic-from-december-1/articleshow/136201476.cms"
+          },
+          {
+            "source": "Mint",
+            "url": "https://www.livemint.com/news/gst-registration-cancellation-automatic-1-december-taxpayers-cag-audit-11795670869238.html"
+          }
+        ]
+      }
+    ]
+  }
+}
