@@ -982,5 +982,15 @@
       "Frontier"
     ],
     "outbound_stops": 0
+  },
+  {
+    "checked_at": "2026-11-26T22:02:18Z",
+    "weekend_start": "2026-11-27",
+    "weekend_end": "2026-11-29",
+    "from_airport": "DFW",
+    "to_airport": "ORD",
+    "currency": "USD",
+    "status": "error",
+    "error": "AttributeError: 'NoneType' object has no attribute 'text'"
   }
 ]
